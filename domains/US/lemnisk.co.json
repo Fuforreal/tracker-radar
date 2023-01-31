@@ -7,21 +7,22 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000289,
+    "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
         "cdn12-s",
         "mu-pl-s",
         "mu-pl",
         "mu-ax-s",
-        "cdn25"
+        "cdn25",
+        "sg-pl"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "lemnisk\\.co\\/analyze\\/pixel\\.php",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn12-s"
@@ -33,7 +34,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "cdbf30fee05d178addeafdcb369d9f3ce693baa46dd60b235ab287e0ca74e40c"
@@ -41,9 +42,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_vz": {
-                    "ttl": 31536008,
+                    "ttl": 31536004,
                     "length": 17,
-                    "prevalence": 0.000014450867052023121,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 }
             },
@@ -55,7 +56,7 @@
         },
         {
             "rule": "lemnisk\\.co\\/analyze\\/analyze\\.php",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "mu-pl-s",
@@ -66,19 +67,19 @@
                 "Document.cookie getter": 2
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "e34f32f4b7b19433a40b780f98db863710b7c3910909a11810ba20cb83144893",
+                "f23e9ce7e6caa3e857fabbbe4225eb71aaf5bcc7558e762aa1a7e44620c8b25f",
                 "58404bdf6dc25c24fedd979469e69bfb8dc9ebca64a469929a858a12b12b9c30"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_vz": 0.00002167630057803468,
-                "_ga": 0.000014450867052023121,
-                "usertype": 0.0000072254335260115605,
-                "tvc_user_a_live": 0.0000072254335260115605
+                "_vz": 0.000020344500203445003,
+                "_ga": 0.00001356300013563,
+                "usertype": 0.000006781500067815,
+                "tvc_user_a_live": 0.000006781500067815
             },
             "exampleSites": [
                 "axisbank.com",
@@ -88,14 +89,14 @@
         },
         {
             "rule": "lemnisk\\.co\\/analyze\\/cookieCallback\\.php",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "mu-pl-s"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -119,7 +120,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2753f563b272b91c4db665ad60f690690023bb24e20e6afda6a84405771da1ee"
@@ -141,7 +142,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -149,7 +150,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_vz": 0.000014450867052023121
+                "_vz": 0.00001356300013563
             },
             "exampleSites": [
                 "axisbank.com",
@@ -165,7 +166,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "fef65b9882d293a740c17facca0bf894a38e5c6edc3c2fd6959dd1f5a17e8e49"
@@ -177,33 +178,93 @@
                 "bajajfinserv.in",
                 "www.bajajfinserv.in"
             ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/optinInfo",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sg-pl",
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bajajfinserv.in",
+                "www.kotak.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/subMap",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sg-pl",
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bajajfinserv.in",
+                "www.kotak.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/error",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sg-pl",
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bajajfinserv.in",
+                "www.kotak.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000289,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9090909090909091
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 1
         }
     ],
     "types": {
         "Script": 6,
         "Document": 3,
         "XHR": 2,
-        "Other": 2
+        "Other": 2,
+        "Fetch": 6
     },
     "nameservers": [
-        "a3-66.akam.net",
         "a16-64.akam.net",
+        "a1-73.akam.net",
         "a2-65.akam.net",
         "a14-67.akam.net",
-        "a13-66.akam.net",
-        "a1-73.akam.net"
+        "a3-66.akam.net",
+        "a13-66.akam.net"
     ]
 }

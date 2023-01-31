@@ -4,14 +4,133 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
+        "dashboard",
         "launcher.api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "influence\\.io\\/scripts\\/widget\\/floating\\/dist\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dashboard"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.language": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0bf2a50d6b0d0852f7027eda15d18824ee33bebc5a65dc4f07d1f926787ebb67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "herb-pharm.com",
+                "www.herb-pharm.com"
+            ]
+        },
+        {
+            "rule": "influence\\.io\\/scripts\\/widget\\/floating\\/dist\\/main\\/157\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dashboard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1dfa2014d57c19f8bdc3b32dbaa19bb32274098f92a0f7559f80f71e4a22a272"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "herb-pharm.com",
+                "www.herb-pharm.com"
+            ]
+        },
+        {
+            "rule": "influence\\.io\\/api\\/shop\\/details",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dashboard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02fac3f41aa7fe3efbbc4fe7caeb728d83b83dda19f6ad15957994dfabc6409f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "herb-pharm.com",
+                "www.herb-pharm.com"
+            ]
+        },
+        {
+            "rule": "influence\\.io\\/scripts\\/widget\\/floating\\/dist\\/main\\/974\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dashboard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d0f97a77aa0589ed5a5967bc5a355643bfe0d66cb5d810467ea7caba29d4a3e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "herb-pharm.com",
+                "www.herb-pharm.com"
+            ]
+        },
+        {
+            "rule": "influence\\.io\\/scripts\\/widget\\/floating\\/dist\\/main\\/348\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dashboard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eadf64b3bfbf3c63028628dec90ebf46f01400f4d5765dfa4d18c47a305c10cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "herb-pharm.com",
+                "www.herb-pharm.com"
+            ]
+        },
         {
             "rule": "influence\\.io\\/launcher\\/shopify\\/customer",
             "cookies": 0,
@@ -21,7 +140,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "312575b994a40d630dbea8b81975dd501fca59fb8d9ea1f22f2d67038e0dd21d"
@@ -41,11 +160,16 @@
     "topInitiators": [
         {
             "domain": "shopify.com",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Fetch": 2
+        "Script": 8,
+        "Fetch": 4
     },
     "nameservers": [
         "ns09.domaincontrol.com",

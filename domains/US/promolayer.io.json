@@ -4,19 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "modules",
         "displaysdata"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "promolayer\\.io\\/index\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "modules"
             ],
@@ -25,13 +25,15 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
                 "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "29f349a97aa9ae3b87df905188dc5760c16992deeb6f415b3d3d4e88dbdcd8fc"
+                "a7f9774edc970606f308a45a774c756e1e0f84452679b0d9686ba028dd37af2a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -50,10 +52,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a1f8daccaa4ba42caee589b2a1734f595099bf3ea8a0024b36c439c4fa292ca8"
+                "c14454891418fabadb47de9741be1ab4ded198cd673f78ea69b7c8d75edcc369"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -70,7 +72,11 @@
     "topInitiators": [
         {
             "domain": "yottaa.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
@@ -78,7 +84,7 @@
         "Fetch": 2
     },
     "nameservers": [
-        "todd.ns.cloudflare.com",
-        "abby.ns.cloudflare.com"
+        "abby.ns.cloudflare.com",
+        "todd.ns.cloudflare.com"
     ]
 }

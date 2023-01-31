@@ -4,34 +4,52 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000723,
-    "sites": 1,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
-        "metrics"
+        "champagne-metrics.public.rtb-prod-eks-euw1",
+        "bordeaux-metrics.public.rtb-prod-eks-euw1"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "bordeaux-gateway.futureplc.com",
+            "resolved": "bordeaux-metrics.public.rtb-prod-eks-euw1.futureplc.engineering"
+        },
+        {
+            "original": "champagne-gateway.futureplc.com",
+            "resolved": "champagne-metrics.public.rtb-prod-eks-euw1.futureplc.engineering"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "futureplc\\.engineering\\/metrics\\/job\\/vanilla_fte",
+            "rule": "futureplc\\.engineering\\/push_metrics\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "metrics"
+                "champagne-metrics.public.rtb-prod-eks-euw1",
+                "bordeaux-metrics.public.rtb-prod-eks-euw1"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "champagne-gateway.futureplc.com",
+                    "resolved": "champagne-metrics.public.rtb-prod-eks-euw1.futureplc.engineering"
+                },
+                {
+                    "original": "bordeaux-gateway.futureplc.com",
+                    "resolved": "bordeaux-metrics.public.rtb-prod-eks-euw1.futureplc.engineering"
+                }
             ],
+            "responseHashes": [],
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "creativebloq.com",
-                "www.creativebloq.com"
+                "t3.com",
+                "www.whattowatch.com"
             ]
         }
     ],
@@ -47,10 +65,5 @@
     "types": {
         "Ping": 2
     },
-    "nameservers": [
-        "ns-671.awsdns-19.net",
-        "ns-1333.awsdns-38.org",
-        "ns-423.awsdns-52.com",
-        "ns-1874.awsdns-42.co.uk"
-    ]
+    "nameservers": []
 }

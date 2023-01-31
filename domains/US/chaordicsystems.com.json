@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000939,
-    "sites": 13,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
         "static",
         "onsite",
         "events",
         "recs",
+        "static-banner",
         "collect"
     ],
     "cnames": [],
@@ -21,29 +22,29 @@
     "resources": [
         {
             "rule": "chaordicsystems\\.com\\/static\\/loader\\.js",
-            "cookies": 0.0000506,
+            "cookies": 0.0000543,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTime": 7,
-                "Document.cookie getter": 7,
-                "window.localStorage": 7,
-                "Navigator.prototype.userAgent": 7,
-                "Document.cookie setter": 7,
-                "Navigator.prototype.appVersion": 7,
-                "Navigator.prototype.appName": 7,
-                "Navigator.prototype.platform": 7,
-                "Navigator.prototype.maxTouchPoints": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4,
-                "window.innerHeight": 4,
-                "Event.prototype.timeStamp": 5,
+                "Date.prototype.getTime": 9,
+                "Document.cookie getter": 9,
+                "window.localStorage": 9,
+                "Navigator.prototype.userAgent": 9,
+                "Document.cookie setter": 8,
+                "Navigator.prototype.appVersion": 8,
+                "Navigator.prototype.appName": 8,
+                "Navigator.prototype.platform": 8,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 3,
                 "window.innerWidth": 4
             },
-            "sites": 7,
-            "prevalence": 0.0000506,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
                 "e221adc74657ec607fb5dda377a8ca922ba4f71bdd86dec5b6d33bb9a96a5947"
@@ -51,45 +52,51 @@
             "type": "Script",
             "firstPartyCookies": {
                 "chaordic_realUserId": {
-                    "ttl": -1674540493,
+                    "ttl": -1674842277,
                     "length": 1,
-                    "prevalence": 0.00005057803468208093,
-                    "uniqueness": 0.14285714285714285
+                    "prevalence": 0.00005425200054252,
+                    "uniqueness": 0.125
                 },
                 "chaordic_browserId": {
                     "ttl": 31536000,
-                    "length": 53,
-                    "prevalence": 0.00005057803468208093,
+                    "length": 51,
+                    "prevalence": 0.00005425200054252,
                     "uniqueness": 1
                 },
                 "chaordic_anonymousUserId": {
                     "ttl": 31536000,
-                    "length": 58,
-                    "prevalence": 0.00005057803468208093,
+                    "length": 56,
+                    "prevalence": 0.00005425200054252,
                     "uniqueness": 1
                 },
                 "chaordic_session": {
                     "ttl": 1800,
                     "length": 32,
-                    "prevalence": 0.00005057803468208093,
+                    "prevalence": 0.000047470500474705005,
                     "uniqueness": 1
                 },
                 "chaordic_testGroup": {
                     "ttl": 604800,
-                    "length": 226,
-                    "prevalence": 0.00005057803468208093,
-                    "uniqueness": 0.7142857142857143
+                    "length": 213,
+                    "prevalence": 0.00005425200054252,
+                    "uniqueness": 0.625
                 },
                 "lx_sales_channel": {
-                    "ttl": -1674540493,
-                    "length": 1,
-                    "prevalence": 0.00005057803468208093,
-                    "uniqueness": 0.14285714285714285
+                    "ttl": -1674848880,
+                    "length": 3,
+                    "prevalence": 0.00005425200054252,
+                    "uniqueness": 0.25
                 },
                 "buscaHomolog": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.0000072254335260115605,
+                    "prevalence": 0.000006781500067815,
+                    "uniqueness": 1
+                },
+                "impulsesuite_session": {
+                    "ttl": 1800,
+                    "length": 32,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 }
             },
@@ -97,10 +104,12 @@
             "exampleSites": [
                 "casasbahia.com.br",
                 "www.casasbahia.com.br",
+                "www.centauro.com.br",
                 "www.elo7.com.br",
                 "www.extra.com.br",
                 "www.lojadomecanico.com.br",
                 "www.netshoes.com.br",
+                "www.nike.com.br",
                 "www.ultrafarma.com.br"
             ]
         },
@@ -113,7 +122,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "101ead936a2281d53dcc064b7e2a2ab0d53b92ef3ef7b34b668673007895c860"
@@ -135,7 +144,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5ecc67ac30ec2bbe4e8218d135f62b28f09b3d58c30e286ace66422e37579833"
@@ -150,20 +159,21 @@
         },
         {
             "rule": "chaordicsystems\\.com\\/datakeeper\\/acquireBrowserId",
-            "cookies": 0.0000361,
+            "cookies": 0.0000407,
             "fingerprinting": 0,
             "subdomains": [
                 "onsite"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
-                "6d9eb2db1a2da89f03b82d2e326dec5eb8d503605d9606eb1a3cc00c86c9d3a0",
-                "c10cefcf3bb6039c957bca9d6308287257d54a611cf9db1c588ff8e2d2731a43",
-                "167f36cba3a32467d94e15949482bf9360d7b18b2a4448996a84254f2a652153",
-                "e887f5f7f5c049591ea3d92f1935b0d6c00e9ee47aee04b7b9cd8302cf86ac78"
+                "5de7ff4a5dbb737049e68c4d812e81c8d14ddff76965bd1f7dbb1da9ac611fd9",
+                "573b150261ad366f86313d5e296d483249d94c2a287f2bd1703290423f8f0ea8",
+                "54e57e86f96d3c2605b2a1a0edc4b4f86c5862faa1957ec761557d3855296b16",
+                "9d8148083704d1fd6dc176a41a01c785a3cacd019c1d95b441ca64329cc946b2",
+                "22619cbf1198ba7f2c89f56d084e556440b49670a74d1668e93ae1e47f84edf3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -171,6 +181,7 @@
             "exampleSites": [
                 "casasbahia.com.br",
                 "www.casasbahia.com.br",
+                "www.centauro.com.br",
                 "www.elo7.com.br",
                 "www.extra.com.br",
                 "www.netshoes.com.br"
@@ -184,16 +195,18 @@
                 "onsite"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000506,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
-                "1906aef72abb1050727c9234803cb410395ed3984e433ead0998ef18696575a5",
-                "1844188bb192f7a40bb081c5f48c08113468cb5669c327cf66cdce7bee006571",
-                "7f9d196b4b621149c956cc2b8c773ef13e373cf74a8f7dfb57494b690c7cfa7a",
-                "b93beeeacf7e0ce8892fb3cec537778cae0eb3b5fc51cfe03d139c89e68c8fa3",
-                "e36dea8011c9e4d888dde7a63b7646bcd8371db30e4b93be813d162edcbd2a6b",
-                "1d9616f1adb4b97ffbf0efdd0a66d8077f97dd742021a1a728ae77d2415e3145"
+                "f715dd86c4d01129191af9f937bd78e9df56e9f9e46add91c7f0e7f505eaca58",
+                "d8a9c2d0996dc16f9511a3361490c4b1b2258f3ef44ba6657ff497fce75bbb4c",
+                "58f6c75513dfe9dba878fd0a9974462e23097b51561e4731a1510c132c8ea3e0",
+                "8e578ccd202d354925b787556707a7201d549a77cac798c4ab822286fdcc6b59",
+                "c869990dcf7b0030e5c71ccc4bd551eddc8145c39e4a9635018083209d36515e",
+                "ae66be55a9f7bbe98243ca4f0b1f70f836596c44232d4edd34c067534395bfdc",
+                "f97577f6d728068e9ff6b32d17b6971376cad4824b3d2740d7819d245a5ff0fa",
+                "98df4a229772503de790acc03aae836dae58b979339bded0a294147dc0666a54"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -201,10 +214,12 @@
             "exampleSites": [
                 "casasbahia.com.br",
                 "www.casasbahia.com.br",
+                "www.centauro.com.br",
                 "www.elo7.com.br",
                 "www.extra.com.br",
                 "www.lojadomecanico.com.br",
                 "www.netshoes.com.br",
+                "www.nike.com.br",
                 "www.ultrafarma.com.br"
             ]
         },
@@ -217,8 +232,8 @@
                 "onsite"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000578,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
                 "059a4e8d4d2207ecf4b704e202d1eb26fe5d82e3a8712f67b7407b2c51ed7ef4"
@@ -230,6 +245,7 @@
                 "casasbahia.com.br",
                 "m.casasbahia.com.br",
                 "www.casasbahia.com.br",
+                "www.centauro.com.br",
                 "www.elo7.com.br",
                 "www.extra.com.br",
                 "www.lojadomecanico.com.br",
@@ -245,27 +261,37 @@
                 "onsite"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
-                "b35434a60f872889999365c037c3ca322fe5fc33d02b49f02f25eedfcc91a53c",
-                "2eb1a5cad38e5c39f879546abd069f6b11717993b814c4987c2b5a1cca22e2e2",
-                "204361ee15d8e88088a1ede3bde9965b8209e7aa492de2fbe13dc71df324529e"
+                "6941fdb42d92151fa03609dc82c3eba91d2ce481dac68c0002658ab267e64ac1",
+                "abbcea1388f74770d7ee4259ca4f871db71ac6d222dfa2f3497f9d2250e150ca",
+                "debae0364d78d86ad7377d708ffc5c407453dad65e273b8d5ea72441d2d8d2a8",
+                "35e25f6c3da2c09ed425bdbb74cc9d29158c3998189acb2add5842c8cd9d9cf9",
+                "a44347dee89ed7d25e27bc0e6f1a41875d77d0abca28165a15323f4e1c1cf72a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "chaordic_browserId": 0.000028901734104046242,
-                "chaordic_anonymousUserId": 0.000028901734104046242,
-                "chaordic_session": 0.000028901734104046242,
-                "chaordic_testGroup": 0.000028901734104046242
+                "chaordic_browserId": 0.000047470500474705005,
+                "chaordic_anonymousUserId": 0.000040689000406890006,
+                "chaordic_session": 0.000033907500339075,
+                "chaordic_testGroup": 0.000040689000406890006,
+                "sInit": 0.000006781500067815,
+                "nav_id": 0.000006781500067815,
+                "legacy_p": 0.000006781500067815,
+                "legacy_c": 0.000006781500067815,
+                "legacy_s": 0.000006781500067815,
+                "impulsesuite_session": 0.00001356300013563
             },
             "exampleSites": [
                 "casasbahia.com.br",
                 "www.casasbahia.com.br",
+                "www.centauro.com.br",
                 "www.extra.com.br",
-                "www.netshoes.com.br"
+                "www.netshoes.com.br",
+                "www.nike.com.br"
             ]
         },
         {
@@ -277,7 +303,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "cb841c47ec77abe09fc8c7f6ef76fb8b01b7e336cf95530fb1ac685cfc3db953"
@@ -300,7 +326,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "ae1da57e1d9d87b5befb301992ded5fe1fd4751676e0aa14b0009d732840dc8a"
@@ -323,7 +349,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "78ed10eb5db62a05a013f1713defae23177744444ed3bcab7ff8d68fd85b41b3"
@@ -346,7 +372,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "0d5b57be25ce490a954daabbe3ac754ada88b65624e0227d87afdd2c7e54cf49"
@@ -369,7 +395,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d305f96449128398d79265a96dc88ed39c71e79a41a4589286875a4866caa2d4"
@@ -391,7 +417,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "1869bd3e93091f32aaba925b73c4b97904a7121082ff3e6625b1df28e483a0e0"
@@ -412,20 +438,22 @@
                 "recs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "87bf5325bd20f58682ffb9ec0d554df33d2f4bc500a06ff7a4d062a212ad4b7a"
+                "7aa02693810fdbef523aab297b73627743002bfa9a6d2083fe62a2a8f24e2447",
+                "cac29b7699f5b91c62a1376d33e99f00eb548e8add9cbfef388e8c63daeae128"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "chaordic_browserId": 0.000014450867052023121
+                "chaordic_browserId": 0.000020344500203445003
             },
             "exampleSites": [
                 "casasbahia.com.br",
-                "www.casasbahia.com.br"
+                "www.casasbahia.com.br",
+                "www.centauro.com.br"
             ]
         },
         {
@@ -436,8 +464,8 @@
                 "recs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -447,7 +475,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "casasbahia.com.br",
-                "www.casasbahia.com.br"
+                "www.casasbahia.com.br",
+                "www.centauro.com.br"
             ]
         },
         {
@@ -459,7 +488,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000434,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -477,6 +506,31 @@
             ]
         },
         {
+            "rule": "chaordicsystems\\.com\\/v5\\/viewRecommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "onsite"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "5c0a365c0f925f68c22177b0f8f8da5c8de4c2467285067f0bad87506e2a2012"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "casasbahia.com.br",
+                "m.casasbahia.com.br",
+                "www.casasbahia.com.br",
+                "www.centauro.com.br",
+                "www.extra.com.br"
+            ]
+        },
+        {
             "rule": "chaordicsystems\\.com\\/datakeeper\\/trace",
             "cookies": 0,
             "fingerprinting": 0,
@@ -485,31 +539,11 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "casasbahia.com.br",
-                "m.casasbahia.com.br",
-                "www.casasbahia.com.br",
-                "www.extra.com.br"
-            ]
-        },
-        {
-            "rule": "chaordicsystems\\.com\\/v5\\/viewRecommendations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "onsite"
+            "responseHashes": [
+                "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
-            "cnames": [],
-            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -529,7 +563,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -543,6 +577,166 @@
             ]
         },
         {
+            "rule": "chaordicsystems\\.com\\/static\\/centauro-v5\\/current\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c7ce107f9b54b2a12dba2a5a0b0ed8c17817c98518359908f91ae4e7fd865813"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centauro.com.br",
+                "www.centauro.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/banner\\/banner\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-banner"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "4713d5e6754dd36e7b6637e253f090c72917d3c92590701928f1fe5eb16baf60"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centauro.com.br",
+                "www.centauro.com.br",
+                "www.lojadomecanico.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/v5\\/page\\/view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "c0dfa8c3dce88630d06ee74982afecb96f745504fc3ed34047a3b4f2909c8d3a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centauro.com.br",
+                "www.centauro.com.br",
+                "www.netshoes.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/static\\/centauro-v5\\/v2\\.4\\.17\\/src\\/images\\/loading-ecom\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d37eb4b59e66973b58d3882b11d7c2992143ac58bafcfe33b038f10a4fa980bf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centauro.com.br",
+                "www.centauro.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/static\\/centauro-v5\\/v2\\.4\\.17\\/src\\/svg\\/heart-line\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "03e247b959fbdbfcdf02a0e99ef4fe3a284d35fd351f4d5ed55dbb9bc52a4120"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centauro.com.br",
+                "www.centauro.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/static\\/centauro-v5\\/v2\\.4\\.17\\/src\\/svg\\/estrela-off\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e26ee74f1a2a16de46c40a2abd684159752776680e9797231e15eb3a93e1f998"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centauro.com.br",
+                "www.centauro.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/static\\/centauro-v5\\/v2\\.4\\.17\\/src\\/svg\\/estrela\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f624fc16bf0eeedc54819a1b6d518f2553574e4c582adfc1064513ad920089b9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centauro.com.br",
+                "www.centauro.com.br"
+            ]
+        },
+        {
             "rule": "chaordicsystems\\.com\\/search\\/generated\\/extra\\/loader\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -551,7 +745,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -573,7 +767,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "9b97f8a348fb388f9c2095eae7a68dd6cf9e5e80874a1153db7240c2cbd2fe17"
@@ -595,7 +789,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "cb841c47ec77abe09fc8c7f6ef76fb8b01b7e336cf95530fb1ac685cfc3db953"
@@ -617,7 +811,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ae1da57e1d9d87b5befb301992ded5fe1fd4751676e0aa14b0009d732840dc8a"
@@ -639,7 +833,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "9c4c65e8fba09137e02eeebca5c277d24f918d86e162f104f4e3bdf9c135cd23"
@@ -661,7 +855,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4bd2233ce5d65cb037a2e5f32804602506da0d26cc81c940b044cdf41f4e3601"
@@ -683,7 +877,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "60322d404bd000b1a1fc2a5924bf87589539442efc07d3bfb771a56c706f8537"
@@ -705,7 +899,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0c824ec99c354371cfaa1e8848b8230b3b2ea73c25a2cb79dc46edeb87e76e9c"
@@ -727,7 +921,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "833286ee0317c9163d07afdd4fd37668a24fd043582051ba31fb4b2df4e3ab9c"
@@ -749,7 +943,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "28af830b8570f9fbe3757a428252af2c07ac0d4b75762da92c60622eaf19cad1"
@@ -771,7 +965,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "57b758885383e38c72d9a52be9de6ca16ca7bc9b23ceef61c1394af949cf9e2f"
@@ -792,16 +986,18 @@
                 "collect"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gsuplementos.com.br",
-                "www.gsuplementos.com.br"
+                "www.gsuplementos.com.br",
+                "www.nike.com.br",
+                "www.paguemenos.com.br"
             ]
         },
         {
@@ -812,28 +1008,8 @@
                 "collect"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gsuplementos.com.br",
-                "www.gsuplementos.com.br"
-            ]
-        },
-        {
-            "rule": "chaordicsystems\\.com\\/v7\\/events\\/views\\/other",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -841,7 +1017,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gsuplementos.com.br",
-                "www.gsuplementos.com.br"
+                "www.gsuplementos.com.br",
+                "www.nike.com.br",
+                "www.paguemenos.com.br"
             ]
         },
         {
@@ -852,8 +1030,29 @@
                 "events"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gsuplementos.com.br",
+                "www.gsuplementos.com.br",
+                "www.nike.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/v7\\/events\\/views\\/other",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -863,7 +1062,114 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gsuplementos.com.br",
-                "www.gsuplementos.com.br"
+                "www.gsuplementos.com.br",
+                "www.nike.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/search\\/generated\\/lojadomecanico\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f67bbea62574cfc0a4e36513e9e082354413effd1cfb881d53d16abad9a8bd20"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lojadomecanico.com.br",
+                "www.lojadomecanico.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/static\\/lojadomecanico\\/current\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "77c4bb8800fa00b89674b61a02c2474b01b5328c08eb28a31126b46666990444"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lojadomecanico.com.br",
+                "www.lojadomecanico.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/static\\/lojadomecanico\\/neemu\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "079c01853dd418494ba88aa6e6587f71f638d094ad62fed036e19d2acc9ddafe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "neemu_sid": {
+                    "ttl": 251727451099,
+                    "length": 12,
+                    "prevalence": 0.00001356300013563,
+                    "uniqueness": 1
+                },
+                "click_list": {
+                    "ttl": 2592013,
+                    "length": 4,
+                    "prevalence": 0.000006781500067815,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lojadomecanico.com.br",
+                "www.lojadomecanico.com.br"
+            ]
+        },
+        {
+            "rule": "chaordicsystems\\.com\\/v7\\/events\\/views\\/product",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lojadomecanico.com.br",
+                "www.ultrafarma.com.br"
             ]
         },
         {
@@ -875,14 +1181,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "101ead936a2281d53dcc064b7e2a2ab0d53b92ef3ef7b34b668673007895c860"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "__uzmdj3": 0.000006781500067815
+            },
             "exampleSites": [
                 "netshoes.com.br",
                 "www.netshoes.com.br"
@@ -897,14 +1205,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8053be5fad952e88b1a1bd8433e66715ee86131a360f6fdc7c7478229696368e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "__uzmdj3": 0.000006781500067815
+            },
             "exampleSites": [
                 "netshoes.com.br",
                 "www.netshoes.com.br"
@@ -919,7 +1229,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "1d4b715d509c1959b2cc5b3cfb48b28450fcbc39a1a3c6fd701d5d23cdaa8f46"
@@ -941,11 +1251,9 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "3e5ceabb35c6764c07e76024dcf0ea5bc77099a09bfe870cada00275ce9a3c67"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -963,11 +1271,9 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "25e93cd29ca1ab3824315d5a5c80653b04b1ef7ac07aa872a2001011013315b8"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -985,11 +1291,9 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "7163339c3ca58c4b18c6bb58e30134c47757d08883a2413ec7f61577e51c6bf2"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1007,7 +1311,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "101ead936a2281d53dcc064b7e2a2ab0d53b92ef3ef7b34b668673007895c860"
@@ -1029,7 +1333,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f93c13282217a19a35514e177b4dabdf2fdfe762a39611dbbc22e9fe11d512eb"
@@ -1051,18 +1355,18 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6954e276166bc0a92911495df9cb492c15d4806946c562b85f11b74f1ff530f6"
+                "a9c8cb437b3ee9f0307e7b3cb4f59bdd811cab295e651796c2747501df13c329"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "chaordic_browserId": 0.000014450867052023121,
-                "chaordic_anonymousUserId": 0.000014450867052023121,
-                "chaordic_session": 0.000014450867052023121,
-                "chaordic_testGroup": 0.000014450867052023121
+                "chaordic_browserId": 0.00001356300013563,
+                "chaordic_anonymousUserId": 0.00001356300013563,
+                "chaordic_session": 0.00001356300013563,
+                "chaordic_testGroup": 0.00001356300013563
             },
             "exampleSites": [
                 "ultrafarma.com.br",
@@ -1071,22 +1375,22 @@
         },
         {
             "rule": "chaordicsystems\\.com\\/v0\\/pages\\/recommendations",
-            "cookies": 0.00000723,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "recs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "368bef82b0a5ae291f6fe55f6fdaddcb4e8c5852583eb558a6140e31dd38b5a2"
+                "486b5832693b8ff85b9195d3ee52969c1fa54abe8e06921c9abbdee18eaf8b05"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "chaordic_browserId": 0.0000072254335260115605
+                "chaordic_browserId": 0.00001356300013563
             },
             "exampleSites": [
                 "ultrafarma.com.br",
@@ -1102,7 +1406,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1118,37 +1422,53 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000795,
+    "cookies": 0.0000949,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.825
+            "prevalence": 0.6548672566371682
+        },
+        {
+            "domain": "akamaihd.net",
+            "prevalence": 0.17699115044247787
         },
         {
             "domain": "neemu.com",
-            "prevalence": 0.15
+            "prevalence": 0.10619469026548672
+        },
+        {
+            "domain": "linximpulse.net",
+            "prevalence": 0.017699115044247787
+        },
+        {
+            "domain": "logrocket.io",
+            "prevalence": 0.017699115044247787
         },
         {
             "domain": "casasbahia-imagens.com.br",
-            "prevalence": 0.0125
+            "prevalence": 0.008849557522123894
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.0125
+            "prevalence": 0.008849557522123894
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.008849557522123894
         }
     ],
     "types": {
-        "Script": 27,
-        "XHR": 44,
-        "Document": 8,
+        "Script": 39,
+        "XHR": 61,
+        "Document": 9,
         "Font": 20,
-        "Image": 20,
-        "Preflight": 4
+        "Image": 28,
+        "Preflight": 7
     },
     "nameservers": [
         "ns-232.awsdns-29.com",
-        "ns-823.awsdns-38.net",
         "ns-1556.awsdns-02.co.uk",
+        "ns-823.awsdns-38.net",
         "ns-1521.awsdns-62.org"
     ]
 }

@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00113,
-    "sites": 157,
+    "prevalence": 0.00125,
+    "sites": 184,
     "subdomains": [
         "pixel",
-        "www",
         "ssp",
+        "www",
+        "px",
         "rek.www"
     ],
     "cnames": [],
@@ -20,48 +21,61 @@
     "resources": [
         {
             "rule": "wp\\.pl\\/w\\/tr\\.js",
-            "cookies": 0,
+            "cookies": 0.00000678,
             "fingerprinting": 1,
             "subdomains": [
                 "pixel"
             ],
             "apis": {
-                "window.localStorage": 10,
-                "Date.prototype.getTime": 9,
-                "Document.cookie getter": 9
+                "window.localStorage": 15,
+                "Document.cookie getter": 15,
+                "Date.prototype.getTime": 14,
+                "Document.cookie setter": 1
             },
-            "sites": 10,
-            "prevalence": 0.0000723,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
                 "45dc6662bc7ac44dab7bdaed869a5d9bc4c015acb8c152be5f097b397cd4118a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "WPcpx": {
+                    "ttl": 63072003,
+                    "length": 1,
+                    "prevalence": 0.000006781500067815,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4f.com.pl",
                 "ccc.eu",
                 "mediamarkt.pl",
+                "modivo.pl",
+                "obsessive.com",
+                "www.apart.pl",
                 "www.e-podroznik.pl",
                 "www.eobuwie.com.pl",
                 "www.hebe.pl",
                 "www.mediaexpert.pl",
                 "www.nocowanie.pl",
+                "www.notino.ro",
                 "www.notino.pl",
+                "www.superpharm.pl",
                 "www.wakacje.pl"
             ]
         },
         {
             "rule": "wp\\.pl\\/api\\/collect",
-            "cookies": 0.000065,
+            "cookies": 0.000102,
             "fingerprinting": 0,
             "subdomains": [
                 "pixel"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -73,52 +87,139 @@
                 "4f.com.pl",
                 "ccc.eu",
                 "mediamarkt.pl",
+                "modivo.pl",
+                "obsessive.com",
+                "www.apart.pl",
                 "www.e-podroznik.pl",
                 "www.eobuwie.com.pl",
                 "www.hebe.pl",
                 "www.mediaexpert.pl",
                 "www.nocowanie.pl",
-                "www.notino.pl"
+                "www.notino.ro",
+                "www.notino.pl",
+                "www.superpharm.pl",
+                "www.wakacje.pl"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/bidder\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 83,
+            "prevalence": 0.000563,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "publicbiography.com",
+                "www.vivendobauru.com.br",
+                "warbletoncouncil.org",
+                "du-lya.ru",
+                "netigor.ru",
+                "www.mniammniam.com",
+                "www.danas.rs",
+                "stylzycia.radiozet.pl",
+                "www.ac24.cz",
+                "www.telepolis.pl",
+                "m.jbzd.com.pl",
+                "sport.radiozet.pl",
+                "www.twoplayergames.org",
+                "www.activenews.ro",
+                "rs.n1info.com",
+                "de.nextews.com",
+                "wiki5.ru",
+                "communityliteracy.org",
+                "synonim.net",
+                "designyoutrust.com"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/bidder\\/usersync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 61,
+            "prevalence": 0.000414,
+            "cnames": [],
+            "responseHashes": [
+                "636c486cc865655e882b671daac5c2edad7fa375be58a343d57364e385f6ebf6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport.radiozet.pl",
+                "jaksiepisze.pl",
+                "www.twoplayergames.org",
+                "www.tuazar.com",
+                "littlealchemy.com",
+                "de.nextews.com",
+                "www.ac24.cz",
+                "communityliteracy.org",
+                "fr.nextews.com",
+                "hultafors-russia.ru",
+                "wiki5.ru",
+                "www.rodzice.pl",
+                "comment-reparer.com",
+                "www.telepolis.pl",
+                "www.delfi.lt",
+                "tekdeeps.com",
+                "zdrowie.radiozet.pl",
+                "ksiegowosc.infor.pl",
+                "jbzd.com.pl",
+                "www.wroclaw.pl"
             ]
         },
         {
             "rule": "wp\\.pl\\/L2h1Yi5oY1MJUy9aGhRuRkoLewpFBxNBHFV7RRcwbghKbgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATEEQTLEsPTWNFGFsqBVwNeh0ARDtHXRshXkpM",
-            "cookies": 0.0000723,
+            "cookies": 0.0000814,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie setter": 10,
-                "window.localStorage": 10,
-                "Document.cookie getter": 7,
-                "Navigator.prototype.userAgent": 6
+                "Document.cookie setter": 12,
+                "window.localStorage": 12,
+                "Document.cookie getter": 9,
+                "Navigator.prototype.userAgent": 9
             },
-            "sites": 10,
-            "prevalence": 0.0000723,
+            "sites": 12,
+            "prevalence": 0.0000814,
             "cnames": [],
             "responseHashes": [
-                "43bd4e907c026427687ac157708c4b606225c9a0c6cd957909f37bfce78a6112",
-                "f044b6e14e606efbcf53638e21fb900ecf88232526ae345d1732c28899970220"
+                "28e924cf9c6973870643d398369ba325a4dbbbd9ed87d6ab45ca2c71e2276bc6"
             ],
             "type": "Document",
             "firstPartyCookies": {
                 "_X_": {
-                    "ttl": -1674537494,
+                    "ttl": -1674847401,
                     "length": 1,
-                    "prevalence": 0.000028901734104046242,
-                    "uniqueness": 0.25
+                    "prevalence": 0.000040689000406890006,
+                    "uniqueness": 0.16666666666666666
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autokult.pl",
                 "domodi.pl",
+                "forum.abczdrowie.pl",
                 "jastrzabpost.pl",
                 "parenting.pl",
                 "portal.abczdrowie.pl",
                 "www.benchmark.pl",
                 "www.extradom.pl",
+                "www.homebook.pl",
                 "www.nocowanie.pl",
                 "www.wakacje.pl",
                 "zywienie.abczdrowie.pl"
@@ -132,8 +233,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.0000939,
+            "sites": 14,
+            "prevalence": 0.0000949,
             "cnames": [],
             "responseHashes": [
                 "94d013737400eda4f949a4f06528df9a06cd4fe20fc8ab4afc5b65b58cd4d2eb"
@@ -144,6 +245,7 @@
             "exampleSites": [
                 "autokult.pl",
                 "domodi.pl",
+                "forum.abczdrowie.pl",
                 "jastrzabpost.pl",
                 "parenting.pl",
                 "portal.abczdrowie.pl",
@@ -151,183 +253,27 @@
                 "www.autocentrum.pl",
                 "www.benchmark.pl",
                 "www.extradom.pl",
+                "www.homebook.pl",
                 "www.nocowanie.pl",
-                "www.totalmoney.pl",
                 "www.wakacje.pl",
                 "zywienie.abczdrowie.pl"
             ]
         },
         {
-            "rule": "wp\\.pl\\/bidder\\/",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsaEmJmPBJ3dmpAPCErWSk1NVl4azlCKDYsVC80IB4nJ2dN",
             "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp"
-            ],
-            "apis": {},
-            "sites": 76,
-            "prevalence": 0.000549,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.tuazar.com",
-                "ksiegowosc.infor.pl",
-                "wpolityce.pl",
-                "m.jbzd.com.pl",
-                "krzyzowki123.pl",
-                "www.twoplayergames.org",
-                "ising.pl",
-                "joemonster.org",
-                "m.kwejk.pl",
-                "samequizy.pl",
-                "tekdeeps.com",
-                "demotywatory.pl",
-                "matematyka.pl",
-                "www.lyrics.co.kr",
-                "www.esky.pl",
-                "kadry.infor.pl",
-                "forumprawne.org",
-                "jaksiepisze.pl",
-                "www.infor.pl",
-                "deon.pl"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/bidder\\/usersync",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp"
-            ],
-            "apis": {},
-            "sites": 56,
-            "prevalence": 0.000405,
-            "cnames": [],
-            "responseHashes": [
-                "636c486cc865655e882b671daac5c2edad7fa375be58a343d57364e385f6ebf6"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.lyrics.co.kr",
-                "zdrowie.radiozet.pl",
-                "m.meteo.pl",
-                "stylzycia.radiozet.pl",
-                "samequizy.pl",
-                "nyheteridag.se",
-                "wiki5.ru",
-                "kadry.infor.pl",
-                "forsal.pl",
-                "designyoutrust.com",
-                "fotka.com",
-                "projectsports.nl",
-                "www.infor.pl",
-                "de.thpanorama.com",
-                "tekdeeps.com",
-                "www.twoplayergames.org",
-                "du-lya.ru",
-                "hultafors-russia.ru",
-                "dmcoffee.blog",
-                "sweetishhill.com"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/bidder\\/notify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp"
-            ],
-            "apis": {},
-            "sites": 37,
-            "prevalence": 0.000267,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "samequizy.pl",
-                "rs.n1info.com",
-                "defence24.pl",
-                "fr.nextews.com",
-                "www.delfi.lt",
-                "www.wyborkierowcow.pl",
-                "forumdacasa.com",
-                "mojafirma.infor.pl",
-                "www.lyrics.co.kr",
-                "www.activenews.ro",
-                "klp.pl",
-                "de.thpanorama.com",
-                "www.danas.rs",
-                "kwejk.pl",
-                "jaksiepisze.pl",
-                "comment-reparer.com",
-                "sciaga.pl",
-                "hmong.es",
-                "www.ac24.cz",
-                "m.meteo.pl"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/bidder\\/notify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp"
-            ],
-            "apis": {},
-            "sites": 35,
-            "prevalence": 0.000253,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.wyborkierowcow.pl",
-                "placowki.mp.pl",
-                "warbletoncouncil.org",
-                "jaksiepisze.pl",
-                "www.rodzice.pl",
-                "dmcoffee.blog",
-                "www.mgsm.pl",
-                "de.nextews.com",
-                "www.delfi.lt",
-                "www.twoplayergames.org",
-                "www.activenews.ro",
-                "www.delfi.ee",
-                "www.tuazar.com",
-                "hmong.es",
-                "mojafirma.infor.pl",
-                "www.lyrics.co.kr",
-                "m.kwejk.pl",
-                "samequizy.pl",
-                "fr.nextews.com",
-                "www.ac24.cz"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaWGJ2NFp3dmoKPDEjESk1NRN4ezEKKDYsHi8kKFYnJ2cH",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3923fbbc61bd100197b3606a0743fdd06dd9c0c48cdccc86caad6143820e1feb"
+                "9efc247c915028929740ec722113a2d4ea4f9304d76f66dfb4aed85a6f215e94"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -338,7 +284,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSC2dWbCFjQm97Mgo-NisLYiQ3Hyw9JVYnJ2cH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SC2ccbDFrCm97MkA-JiNDYiQ3VSwtLR4nJ2dN",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -352,10 +298,10 @@
                 "Date.prototype.getTimezoneOffset": 3
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "ec03ab4836b86633a81a520edbc89df03699b260bf49e478f46dfa6e92cefe0b"
+                "7e1db51fb714956f3ed5306316d6e74743c829d48bb09f1b546df869168f3b8b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -367,18 +313,18 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEXZtWjh2f1hhIzESPjgsGHh7c1Z5enJKfns2CCcnKRMseSIQODouVy81I1YnJ2cH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvEWZlEjh2fxJhMzlaPjgsUnhrex55enIAfWs-QCcnKVksaSpYODouHS8lKx4nJ2dN",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
-                "35b80a948aaff6e38524b25ebc7f2f203a385dfcb0f517c0a97b79cbe4ff36fb"
+                "5a9a67136cde755fb47a5207426f554a8e96ebcb3ba411c4b61859d8a5a3527a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -386,22 +332,26 @@
             "exampleSites": [
                 "domodi.pl",
                 "jastrzabpost.pl",
-                "www.extradom.pl"
+                "www.benchmark.pl",
+                "www.extradom.pl",
+                "www.homebook.pl",
+                "www.nocowanie.pl",
+                "www.wakacje.pl"
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJWx4Yw1vbmdVOSQrCyE9J0xhZm9MY2N1SmEjMRI-OCwYYzcpDSM_aBQhICgeJDckDic7L1YnJ2cH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsab2xoa0VvbmcfOTQjQyE9JwZhdmcEY2N1A2EzOVo-OCxSYychRSM_aF4hMCBWJDckRCcrJx4nJ2dN",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
-                "b996a3e8972dc4c9a91942a615e80a6d393a3af7af8b3cb9cf0479360a7febd5"
+                "70b346bc1cd79ed7a06a33e506e2a0d4bc3a7395cbc553e636fda14a7a91dbfa"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -409,11 +359,15 @@
             "exampleSites": [
                 "domodi.pl",
                 "jastrzabpost.pl",
-                "www.extradom.pl"
+                "www.benchmark.pl",
+                "www.extradom.pl",
+                "www.homebook.pl",
+                "www.nocowanie.pl",
+                "www.wakacje.pl"
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgtnVmwhY0JveyIePiZuFzk8IAhjJCAKOTogCD16KwsiOmcH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgtnHGwxawpveyJUPjZmXzk8IEJjNChCOTogQj1qI0MiOmdN",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -421,7 +375,7 @@
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.0000578,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "79bcd449ad7ea33556604aa3e6c36ec95392f44f9af1259c89c5aec46e099c36"
@@ -435,13 +389,13 @@
                 "www.autocentrum.pl",
                 "www.benchmark.pl",
                 "www.extradom.pl",
+                "www.homebook.pl",
                 "www.nocowanie.pl",
-                "www.totalmoney.pl",
                 "www.wakacje.pl"
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgtnVmwhY0JveyIePiZuDig6IRU8eS0RPiBoCiJ6KwsiOmcH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgtnHGwxawpveyJUPjZmRig6IV88aSVZPiBoQCJqI0MiOmdN",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -449,11 +403,11 @@
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.0000578,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
-                "8056b341e71bcd8b4119aab313475808751329b9f43dccf7815e09bb9c70f976",
-                "b2cb9334cab298632a834d6787ee6fb0da889548969589b1308db4954072ed14"
+                "663df7ea9f97cba908adf9814657d9bca4c713e3c6164ad054d910fdabcdd885",
+                "8056b341e71bcd8b4119aab313475808751329b9f43dccf7815e09bb9c70f976"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -464,9 +418,71 @@
                 "www.autocentrum.pl",
                 "www.benchmark.pl",
                 "www.extradom.pl",
+                "www.homebook.pl",
                 "www.nocowanie.pl",
-                "www.totalmoney.pl",
                 "www.wakacje.pl"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/bidder\\/notify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000814,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fotka.com",
+                "jbzd.com.pl",
+                "kwejk.pl",
+                "m.kwejk.pl",
+                "publicbiography.com",
+                "tekdeeps.com",
+                "www.danas.rs",
+                "www.delfi.ee",
+                "www.delfi.lt",
+                "www.tportal.hr",
+                "www.wirtualnemedia.pl",
+                "www.wyborkierowcow.pl"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/bidder\\/notify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000814,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fotka.com",
+                "jbzd.com.pl",
+                "kwejk.pl",
+                "m.kwejk.pl",
+                "publicbiography.com",
+                "tekdeeps.com",
+                "www.danas.rs",
+                "www.delfi.ee",
+                "www.delfi.lt",
+                "www.tportal.hr",
+                "www.wirtualnemedia.pl",
+                "www.wyborkierowcow.pl"
             ]
         },
         {
@@ -482,10 +498,10 @@
                 "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "be76c3098ecc59fb4ce79023f09dfa956c9cac3ca5ae8897dcd1b07f4b802862"
+                "4f1fdc5be38379716919056893dfe7cb6e6c2f50e7c8723609cb20167a8c9e8f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -504,8 +520,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8e425348a9e0687e1a4f0b305f39e42e501d31148d5d3fa26bce1614d6d3d730"
@@ -515,8 +531,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "parenting.pl",
-                "portal.abczdrowie.pl",
-                "zywienie.abczdrowie.pl"
+                "portal.abczdrowie.pl"
             ]
         },
         {
@@ -527,10 +542,10 @@
                 "www"
             ],
             "apis": {
-                "window.localStorage": 3
+                "window.localStorage": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c0f4ba7af5a941f11ae4f75ef835ad58642fcd063c8e55665c6436e186b1619a"
@@ -540,20 +555,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "parenting.pl",
-                "portal.abczdrowie.pl",
-                "zywienie.abczdrowie.pl"
+                "portal.abczdrowie.pl"
             ]
         },
         {
             "rule": "wp\\.pl\\/getcookie\\.html",
-            "cookies": 0.0000217,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "0a74443af1e704a0b0d70695e71e84d65d02b23f0134f51cc854394a2e1b208b"
@@ -569,31 +583,30 @@
         },
         {
             "rule": "wp\\.pl\\/aHViLmh0Tik3CzpeR0tDPHRTbg4YWD47Ig1uQUpvQ3J0NhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-F3RFbhhKCkNnIRkmHgRZA2c-HC5DAEQMJHQU",
-            "cookies": 0.0000361,
+            "cookies": 0.0000271,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Document.cookie setter": 5,
-                "Document.cookie getter": 4,
-                "window.localStorage": 5
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie setter": 4,
+                "window.localStorage": 4,
+                "Document.cookie getter": 3
             },
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "2f6e7af19f929f255a45b5d43ce5e6f270e811e81907ec30fa668eb46309d958",
-                "5906f99d6398f57b78deecf243ef2e68f8c658d89cbbdc3bba460d51fa693d0d"
+                "bc489cf6e29855e1486a9f2ff8ed32a41f5bee96557aeb6ea119643ee851f2de"
             ],
             "type": "Document",
             "firstPartyCookies": {
                 "_X_": {
-                    "ttl": -1674182150,
+                    "ttl": -1674847401,
                     "length": 1,
-                    "prevalence": 0.000028901734104046242,
-                    "uniqueness": 0.25
+                    "prevalence": 0.00001356300013563,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -601,28 +614,73 @@
                 "abczdrowie.pl",
                 "pytania.abczdrowie.pl",
                 "www.autocentrum.pl",
-                "www.nocowanie.pl",
-                "www.totalmoney.pl"
+                "www.nocowanie.pl"
             ]
         },
         {
-            "rule": "wp\\.pl\\/bidder\\/notify",
+            "rule": "wp\\.pl\\/\\/exdotdynamic\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ssp"
+                "px"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "warbletoncouncil.org",
-                "www.ac24.cz"
+                "apart.pl",
+                "www.apart.pl"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/r1674836764\\/wppixeln",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apart.pl",
+                "www.apart.pl"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/r1674836765\\/wppixeln",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apart.pl",
+                "www.apart.pl"
             ]
         },
         {
@@ -636,10 +694,10 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "58384a705b2aa5633370f2bd7e6fac46096581310728a715c68f0fe5a3685dec"
+                "55174180117c077b3d0ecd63541d57357405c3dd3fd58b97c760256d59d3aa69"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -650,18 +708,20 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJWx4Yw1vbmdVPiYkGiQwJAonezEKKDYsHi8kKFYnJ2cH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsab2xoa0VvbmcfPjYsUiQwJEAnazlCKDYsVC80IB4nJ2dN",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3117ac0c870d3dbe76b7d79b20f9ff1ccdf1249137aef47242a17f2a6d53f3e5"
+                "97454576aa723b616398dac9bd2e77fc2afeffcadedac4a2fa41a4df6b919a34"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -672,7 +732,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQtjVG8hZ0BsezYIJycpEyx7c1Z5enNDd3s2CCcnKRMseSIQODouVy81I1YnJ2cH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERtrHG8hZwpsaz5AJycpWSxrex55enIAfWs-QCcnKVksaSpYODouHS8lKx4nJ2dN",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -680,10 +740,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "f55bec76bb4b9d5b72024f9ac844f520326268b9a394449a53be1e2bc6f71feb"
+                "273138a1afcec23406cec0dcb16ad04ebefa2a04da106804fa58e817f0792506"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -695,7 +755,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRF2bVo4dn9YYSMxEj44LBhhZm9MY2J8Q2EjMRI-OCwYYzcpDSM_aBQhICgeJDckDic7L1YnJ2cH",
+            "rule": "wp\\.pl\\/MTE0NDI0YjUkUjh3ZktvIGcKbCc5WBInMVRsaGtvb25nbxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxEbFm8SCxpvERsWbxILGm8RGxZvEgsabxFmZRI4dn8SYTM5Wj44LFJhdmcEY2N1A2EzOVo-OCxSYychRSM_aF4hMCBWJDckRCcrJx4nJ2dN",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -703,10 +763,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "0f61b47e107ce31d64f88dad7e2ddfba685ae07360bad9f28c27575e7ff067b4"
+                "67678f23af90a56443436ba59a6a07f0e0f2dc60f58af14e656afe5b9923d41b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -718,53 +778,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEXZtWjh2f1hhIzESPjgsGHh7c1Z5enNDd3s2CCcnKRMseSIQODouVy81I1YnJ2cH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "53f97ab12a6202a3aa7947582452533482e3650ff8600509d748f16c80c221ce"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benchmark.pl",
-                "www.nocowanie.pl",
-                "www.wakacje.pl"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJWx4Yw1vbmdVOSQrCyE9J0xhZm9MY2J8Q2EjMRI-OCwYYzcpDSM_aBQhICgeJDckDic7L1YnJ2cH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "813122fe614f099e6d88bed5fda2ac598ad1f4f4944ea0d4da70a4c202a32106"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benchmark.pl",
-                "www.nocowanie.pl",
-                "www.wakacje.pl"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/r1674273013\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674811911\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -772,7 +786,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -786,7 +800,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674273011\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674811907\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -794,7 +808,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -808,7 +822,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674279655\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674803670\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -816,7 +830,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -830,7 +844,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674279657\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674803672\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -838,7 +852,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -852,7 +866,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674540822\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674830422\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -860,7 +874,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -874,7 +888,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674169679\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674774929\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -882,7 +896,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -896,7 +910,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674279380\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674774930\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -904,7 +918,29 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediaexpert.pl",
+                "www.mediaexpert.pl"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/r1674847404\\/wppixeln",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -918,7 +954,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674540973\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674853012\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -926,7 +962,51 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "notino.ro",
+                "www.notino.ro"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/r1674853011\\/wppixeln",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "notino.ro",
+                "www.notino.ro"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/r1674806318\\/wppixeln",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -940,7 +1020,7 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/r1674540971\\/wppixeln",
+            "rule": "wp\\.pl\\/r1674806314\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -948,7 +1028,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -962,64 +1042,42 @@
             ]
         },
         {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQtjVG8hZ0BsezYIJycpEyx7c1Z5enJKfns2CCcnKRMseSIQODouVy81I1YnJ2cH",
+            "rule": "wp\\.pl\\/r1674875502\\/wppixeln",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "www"
+                "pixel"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "adb84ca74463bf2dec721d5bc41c9e1cdc8b91747fc115adc9a4d2d2a30c4548"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "totalmoney.pl",
-                "www.totalmoney.pl"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/MTEzNTAxYjUkGDhnbgNvIGdAbDcxEBInMR5seGMnb25nJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRELHicSCxolEQseJxILGiURCx4nEgsaJRF2bVo4dn9YYSMxEj44LBhhZm9MY2N1SmEjMRI-OCwYYzcpDSM_aBQhICgeJDckDic7L1YnJ2cH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "7e381262781d300d2186555decc32b736055165251ee63abcd10ed6fe799fc0e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "totalmoney.pl",
-                "www.totalmoney.pl"
-            ]
-        },
-        {
-            "rule": "wp\\.pl\\/10551244HlFUV0cBG08TRRcPE24bRgAGAgEDBQYNCAZpGkJaW0NfD0ZHRw9DVVpRVl9UQlgSXFIIBRdTV0BYX1sIVERRWkUWRVkMV1dbXBZGQgwKBAQXQ10IBwIEEkFXCF1FRkRHFAN0EAN0EQZ3R0JCH0VVX1BTX1AfQlgRA3ZZVEJGWV1fRUFQFAByEkNWE0dUWV1QDAcCAAYUQgkEHgETQURdUAxUDAYHAgcMCFUMBwVWUVdTUQwDBxRQWgwAE1JcW1AJU2YEc0trRlpcUUV-VQN2Z1RGG1pQeWR5Q1t-cmZLV1d6BHpvd3R3VmRHUxtWBRYYE0QXDxNWWxZM\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Ping",
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "superpharm.pl",
+                "www.superpharm.pl"
+            ]
+        },
+        {
+            "rule": "wp\\.pl\\/r1674846065\\/wppixeln",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1030,61 +1088,59 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000282,
+    "cookies": 0.000346,
     "topInitiators": [
         {
             "domain": "optad360.io",
-            "prevalence": 0.41676942046855736
+            "prevalence": 0.4188861985472155
         },
         {
             "domain": "wpcdn.pl",
-            "prevalence": 0.2379778051787916
+            "prevalence": 0.24455205811138014
         },
         {
             "domain": "first party",
-            "prevalence": 0.11344019728729964
+            "prevalence": 0.10290556900726393
         },
         {
             "domain": "wtg-ads.com",
-            "prevalence": 0.08877928483353884
+            "prevalence": 0.0774818401937046
         },
         {
             "domain": "qwtag.com",
-            "prevalence": 0.05425400739827373
-        },
-        {
-            "domain": "dimatter.ai",
-            "prevalence": 0.032059186189889025
-        },
-        {
-            "domain": "spolecznosci.net",
-            "prevalence": 0.025893958076448828
+            "prevalence": 0.05084745762711865
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.014796547472256474
+            "prevalence": 0.04116222760290557
         },
         {
-            "domain": "yieldbird.com",
-            "prevalence": 0.004932182490752158
+            "domain": "dimatter.ai",
+            "prevalence": 0.023002421307506054
+        },
+        {
+            "domain": "spolecznosci.net",
+            "prevalence": 0.021791767554479417
         },
         {
             "domain": "adnet.lt",
-            "prevalence": 0.0036991368680641184
+            "prevalence": 0.006053268765133172
+        },
+        {
+            "domain": "iplsc.com",
+            "prevalence": 0.004842615012106538
         }
     ],
     "types": {
-        "Script": 53,
-        "Image": 40,
-        "Document": 71,
-        "XHR": 129,
-        "Preflight": 35,
-        "Other": 2,
-        "Ping": 2
+        "Script": 56,
+        "Image": 61,
+        "XHR": 111,
+        "Document": 77,
+        "Preflight": 12
     },
     "nameservers": [
-        "ns1.task.gda.pl",
         "ns1.wp.pl",
+        "ns1.task.gda.pl",
         "ns2.wp.pl"
     ]
 }

@@ -9,14 +9,65 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000303,
-    "sites": 42,
+    "prevalence": 0.000217,
+    "sites": 32,
     "subdomains": [
+        "connect",
         "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "scroll\\.com\\/amp\\/access",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "amp-access": 0.00001356300013563,
+                "scroll1": 0.00001356300013563
+            },
+            "exampleSites": [
+                "9to5toys.com",
+                "dronedj.com"
+            ]
+        },
+        {
+            "rule": "scroll\\.com\\/amp\\/pingback",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "amp-access": 0.00001356300013563,
+                "scroll1": 0.00001356300013563
+            },
+            "exampleSites": [
+                "9to5toys.com",
+                "dronedj.com"
+            ]
+        },
         {
             "rule": "scroll\\.com\\/js\\/scroll\\.js",
             "cookies": 0,
@@ -25,11 +76,11 @@
                 "static"
             ],
             "apis": {
-                "window.localStorage": 24,
-                "Document.cookie getter": 14
+                "window.localStorage": 12,
+                "Document.cookie getter": 12
             },
-            "sites": 26,
-            "prevalence": 0.000188,
+            "sites": 14,
+            "prevalence": 0.0000949,
             "cnames": [],
             "responseHashes": [
                 "d7685d961a175a9df933dc1ecc9bb703db5496c5c442961232c2c204b126fcb3"
@@ -39,25 +90,41 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "slate.com",
-                "washingtonpost.com",
-                "www.huffingtonpost.com",
-                "www.washingtonpost.com",
-                "www.idahostatesman.com",
-                "www.huffingtonpost.co.uk",
-                "www.theverge.com",
-                "abc-7.com",
-                "www.huffpost.com",
-                "www.thestate.com",
                 "theintercept.com",
-                "www.neowin.net",
-                "www.thedailybeast.com",
-                "www.newsobserver.com",
-                "www.kansascity.com",
-                "www.kentucky.com",
-                "www.motherjones.com",
-                "www.kansas.com",
+                "www.boredpanda.com",
                 "www.dallasnews.com",
-                "img.washingtonpost.com"
+                "www.huffingtonpost.co.uk",
+                "www.huffingtonpost.com",
+                "www.huffpost.com",
+                "www.motherjones.com",
+                "www.neowin.net",
+                "www.reuters.com",
+                "www.slate.com",
+                "www.thedailybeast.com",
+                "www.theverge.com",
+                "www.washingtonpost.com"
+            ]
+        },
+        {
+            "rule": "scroll\\.com\\/js\\/scroll-smart\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usatoday.com",
+                "www.usatoday.com"
             ]
         }
     ],
@@ -67,28 +134,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "ampproject.org",
-            "prevalence": 0.14285714285714285
-        },
-        {
-            "domain": "huffpost.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.03571428571428571
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "huffpost.com",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Script": 26
+        "Fetch": 4,
+        "Script": 16
     },
     "nameservers": [
-        "ns-cloud-c2.googledomains.com",
-        "ns-cloud-c3.googledomains.com",
+        "ns-cloud-c1.googledomains.com",
         "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c1.googledomains.com"
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c3.googledomains.com"
     ]
 }

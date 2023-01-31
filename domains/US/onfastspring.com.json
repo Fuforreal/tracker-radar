@@ -7,12 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000101,
-    "sites": 14,
+    "prevalence": 0.000115,
+    "sites": 17,
     "subdomains": [
         "futuremark",
         "audinate",
-        "captureone"
+        "captureone",
+        "on1store",
+        "sbl",
+        "ppsspp"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -26,10 +29,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a0963ee7d2e35dd688614da69cf66d7b4c06d94ca093a373aa7f30176575b6c4"
+                "291e65d860d0086b7f33dadad06a5761bff09295b837ba6b4587184f401626fc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -48,10 +51,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "488b94f9300c62aadcb0bbad1a32e754b0bfd3b0fdd72a53cf7bea5776f5f9d6"
+                "4da3d6ae7f21c9d382519111d576b6e0b0f9b0aba62a553e2262004a6e86c273"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -70,10 +73,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3ddc15b9180190b73993d5823a0ba0f3a82451da6147c6e842722ae7eb2df9fc"
+                "df034537ed75884f86e1324315ca9d37c40ae9688b4053d86f261b7c7d367b9c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -81,6 +84,72 @@
             "exampleSites": [
                 "captureone.com",
                 "www.captureone.com"
+            ]
+        },
+        {
+            "rule": "onfastspring\\.com\\/popup-on1store\\/builder",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "on1store"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c1760e64616fcf29b570f1576682d8f16102ced98661f75ae4d644e9e837cee"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "on1.com",
+                "www.on1.com"
+            ]
+        },
+        {
+            "rule": "onfastspring\\.com\\/pinhole\\/spin\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sbl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e2ea9a55b25162f88177141d074841f48a6883ae24c6c6560b163bfac705013a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "on1.com",
+                "www.on1.com"
+            ]
+        },
+        {
+            "rule": "onfastspring\\.com\\/popup-gold\\/builder",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ppsspp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f2f0bcbe3b8b30a5eab329b6b50cf45c3ce07cdae50972b8ca86f2ec6a98911b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ppsspp.org",
+                "www.ppsspp.org"
             ]
         }
     ],
@@ -90,24 +159,25 @@
     "topInitiators": [
         {
             "domain": "d1f8f9xcsvx3ha.cloudfront.net",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.6190476190476191
         },
         {
             "domain": "first party",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.38095238095238093
         }
     ],
     "types": {
-        "XHR": 6
+        "XHR": 10,
+        "Image": 2
     },
     "nameservers": [
+        "ns-1988.awsdns-56.co.uk",
         "ns-1039.awsdns-01.org",
+        "ns-503.awsdns-62.com",
+        "ns-596.awsdns-10.net",
+        "ns-770.awsdns-32.net",
         "ns-152.awsdns-19.com",
         "ns-1179.awsdns-19.org",
-        "ns-770.awsdns-32.net",
-        "ns-1905.awsdns-46.co.uk",
-        "ns-596.awsdns-10.net",
-        "ns-503.awsdns-62.com",
-        "ns-1988.awsdns-56.co.uk"
+        "ns-1905.awsdns-46.co.uk"
     ]
 }

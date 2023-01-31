@@ -9,14 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000289,
-    "sites": 40,
+    "prevalence": 0.000359,
+    "sites": 53,
     "subdomains": [
-        "lb7b5fiod9.execute-api",
+        "uvbscqvnyb.execute-api",
         "j5qjalwk0b.execute-api",
         "rxgh4jurki.execute-api",
+        "f51pu8ydr9.execute-api",
+        "rg8puyp4nf.execute-api",
         "076ljuz5nk.execute-api",
-        "a3cqdmlf2w0n8d-ats.iot",
+        "00lpc7tdyj.execute-api",
         "3vo7ofc61k.execute-api",
         "d-ra0inwglq0.execute-api",
         "8dkfarln27.execute-api",
@@ -24,9 +26,10 @@
         "k8hgmyhvic.execute-api",
         "503d42zic5.execute-api",
         "db0y8smio0.execute-api",
+        "dhukrzx4tb.execute-api",
         "ln8x2sqiz4.execute-api",
-        "ko4wyzp0uk.execute-api",
-        "dhukrzx4tb.execute-api"
+        "kinesis",
+        "ko4wyzp0uk.execute-api"
     ],
     "cnames": [
         {
@@ -37,25 +40,25 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "us-east-2\\.amazonaws\\.com\\/live\\/user-tracking\\/add-user-action",
+            "rule": "us-east-2\\.amazonaws\\.com\\/Prod\\/script",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "lb7b5fiod9.execute-api"
+                "uvbscqvnyb.execute-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "b17c5e483b8c1e4d7f0f13901797cc55eb55466d72634c391d6b2ede0caadfab"
             ],
-            "type": "Ping",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gunwatcher.com",
-                "truegunvalue.com"
+                "photobucket.com",
+                "app.photobucket.com"
             ]
         },
         {
@@ -67,7 +70,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -89,10 +92,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e39512bd181cba4061098a6fec1eaf9746d59701926a6e52dcc2f46b10c55847"
+                "ebf110420c7c1b921b3ab999239beaeb02ab8a4c20068fee5f9a61b8ecf3cc95"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -111,7 +114,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -123,6 +126,70 @@
             ]
         },
         {
+            "rule": "us-east-2\\.amazonaws\\.com\\/prod\\/public\\/get-widget-data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f51pu8ydr9.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e16e3a5f9d55c713f8e31c644788418f51a7e4283d2368de2fb46b2845351fba"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugsleep.com",
+                "www.goodamerican.com"
+            ]
+        },
+        {
+            "rule": "us-east-2\\.amazonaws\\.com\\/prod\\/statistics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rg8puyp4nf.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugsleep.com",
+                "www.goodamerican.com"
+            ]
+        },
+        {
+            "rule": "us-east-2\\.amazonaws\\.com\\/prod\\/statistics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rg8puyp4nf.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugsleep.com",
+                "www.goodamerican.com"
+            ]
+        },
+        {
             "rule": "us-east-2\\.amazonaws\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -131,7 +198,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -153,11 +220,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "906eaded46b1624b7d358e6d0ec70146a680e6cc5ca1e8a4d899b9b5f335fab7",
-                "361dee61ea5afb42d9f1e08a0182fc9f89b6c90a859a102b38c5203eaa22855a"
+                "28c995ad8c485ebc9a3197230554731feda5fbc56658da941709208ee908f4e5",
+                "f42a9e97e9f2bd7372e094fec9258b648ebd3bd04d6cdd3b6d3fc0b0a5bf7b81"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -177,7 +244,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -190,23 +257,25 @@
             ]
         },
         {
-            "rule": "us-east-2\\.amazonaws\\.com\\/mqtt",
+            "rule": "us-east-2\\.amazonaws\\.com\\/prod\\/public\\/cart",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "a3cqdmlf2w0n8d-ats.iot"
+                "00lpc7tdyj.execute-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
+            "responseHashes": [
+                "7ea2e0f6f05b6ac6b434395275248d8381cf555b3478a5b5e8de76f8a26d4126"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nhlottery.com",
-                "www.nhlottery.com"
+                "oxy-shop.com",
+                "swiftpaws.com"
             ]
         },
         {
@@ -218,7 +287,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -238,7 +307,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ccb6f35a46c5dfac8c27b7d0940f9bee8ff033feabe263875a7dd09049690b57"
@@ -253,14 +322,14 @@
         },
         {
             "rule": "us-east-2\\.amazonaws\\.com\\/secapi\\/oauth",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "d-ra0inwglq0.execute-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "eastapi.conns.com",
@@ -268,7 +337,7 @@
                 }
             ],
             "responseHashes": [
-                "da80ff3570c54e128a9578c334789cf8be7d1c3b39842179f63230376284cbc1"
+                "d3f638f9a938f60e5e576886f224fb9ed9aa42d5cdb6c8e962598fb69adcb2cf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -287,7 +356,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "eastapi.conns.com",
@@ -314,7 +383,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "eastapi.conns.com",
@@ -341,7 +410,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "eastapi.conns.com",
@@ -366,7 +435,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f117f13d4cc0fb7d0713e4d64219eba9200d699e7778e9c486a8756ffbefae9c"
@@ -388,10 +457,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9c49e05f451a1086e36c07c2c9cc4905d0ba4742aef35b7e6937937438f39186"
+                "57d88f5aa9a0decd92ef7978bafb033b28176da371fe047455b60561da55e148"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -410,7 +479,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -430,7 +499,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7f1b9ba75a927faeee105a1b3a36d35ab58a3cba48f48a792c2475f747120362"
@@ -452,10 +521,14 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e407b21c84987b05090533ffd6641121cba0b32317abfb024831e1c855dec20c",
+                "2518ceb873bc776b0caec68f66da58807b30e79361e5c42eb962aa36bcd4658f",
+                "19d084be1c88fa32c91ea200611f5652935f374d370b17ac8873d2d22740a543"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -474,14 +547,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [
-                "693da02cbeaab103d4d24993deb034ff58e468c3b27a16b085dd54e4f01e1975",
-                "9eda41eadfbd8ba8d223b1d9e2542f218171e38fcc65be00d5e8316529a4b189",
-                "912458214a7766ebc975276aac42307c1b905a4a2452a32153f33d54b8c21536"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -500,7 +569,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -514,6 +583,30 @@
             ]
         },
         {
+            "rule": "us-east-2\\.amazonaws\\.com\\/prod",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dhukrzx4tb.execute-api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kezi.com",
+                "www.kxxv.com",
+                "www.theadvocate.com",
+                "www.wtva.com"
+            ]
+        },
+        {
             "rule": "us-east-2\\.amazonaws\\.com\\/master\\/api\\/CampaignById",
             "cookies": 0,
             "fingerprinting": 0,
@@ -522,7 +615,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e0c8bf3e601304fdf6d7fc7f30d970487d05095b66a11961f742ef5e80e2a53d"
@@ -544,7 +637,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -564,15 +657,62 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9210f0a863ba88ec1c7b021a2a9217de74051141463f00a60a02597e42c0ccfd"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petinsurance.com",
                 "www.petinsurance.com"
+            ]
+        },
+        {
+            "rule": "us-east-2\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kinesis"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "accf5b45b2ae2e4bff0d8edb7af38fee7cf9ed85b91c0e251d6f1fcea28b2fb5",
+                "c4bceaecff6645dacc8f6e24e339ecbd6a189da15936fd2d3952148922d1c62f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pravda.com.ua",
+                "www.pravda.com.ua",
+                "www.sozcu.com.tr"
+            ]
+        },
+        {
+            "rule": "us-east-2\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kinesis"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pravda.com.ua",
+                "www.pravda.com.ua",
+                "www.sozcu.com.tr"
             ]
         },
         {
@@ -584,7 +724,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -592,34 +732,12 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "initialTrafficSource": 0.0000072254335260115605,
-                "_ga": 0.000028901734104046242
+                "initialTrafficSource": 0.00001356300013563,
+                "_ga": 0.00002712600027126
             },
             "exampleSites": [
                 "rategenius.com",
                 "www.rategenius.com"
-            ]
-        },
-        {
-            "rule": "us-east-2\\.amazonaws\\.com\\/prod",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dhukrzx4tb.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rep-am.com",
-                "www.wftv.com"
             ]
         }
     ],
@@ -627,70 +745,69 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000145,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.2721518987341772
-        },
-        {
-            "domain": "cdngain.com",
-            "prevalence": 0.0949367088607595
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.08860759493670886
-        },
-        {
-            "domain": "bing.com",
-            "prevalence": 0.06329113924050633
-        },
-        {
-            "domain": "force.com",
-            "prevalence": 0.056962025316455694
-        },
-        {
-            "domain": "thepointyspritesclub.com",
-            "prevalence": 0.05063291139240506
-        },
-        {
-            "domain": "google-analytics.com",
-            "prevalence": 0.05063291139240506
-        },
-        {
-            "domain": "bigcommerce.com",
-            "prevalence": 0.04430379746835443
+            "prevalence": 0.2803738317757009
         },
         {
             "domain": "addthis.com",
-            "prevalence": 0.04430379746835443
+            "prevalence": 0.08878504672897196
         },
         {
-            "domain": "fullstory.com",
-            "prevalence": 0.04430379746835443
+            "domain": "cdngain.com",
+            "prevalence": 0.07009345794392523
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.056074766355140186
+        },
+        {
+            "domain": "google-analytics.com",
+            "prevalence": 0.056074766355140186
+        },
+        {
+            "domain": "bing.com",
+            "prevalence": 0.04672897196261682
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.04672897196261682
+        },
+        {
+            "domain": "force.com",
+            "prevalence": 0.04205607476635514
+        },
+        {
+            "domain": "thepointyspritesclub.com",
+            "prevalence": 0.037383177570093455
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.03271028037383177
         }
     ],
     "types": {
-        "Ping": 8,
+        "XHR": 25,
         "Other": 4,
-        "XHR": 21,
-        "Preflight": 17,
-        "WebSocket": 2,
-        "Fetch": 6
+        "Preflight": 22,
+        "Fetch": 13,
+        "Ping": 8
     },
     "nameservers": [
-        "ns2.p31.dynect.net",
-        "u2.amazonaws.com",
+        "pdns1.ultradns.net",
         "pdns3.ultradns.org",
-        "u3.amazonaws.com",
-        "u5.amazonaws.com",
+        "ns1.p31.dynect.net",
+        "ns2.p31.dynect.net",
         "u4.amazonaws.com",
-        "u6.amazonaws.com",
-        "pdns5.ultradns.info",
         "u1.amazonaws.com",
         "ns3.p31.dynect.net",
-        "ns1.p31.dynect.net",
-        "ns4.p31.dynect.net",
-        "pdns1.ultradns.net"
+        "u6.amazonaws.com",
+        "u3.amazonaws.com",
+        "u2.amazonaws.com",
+        "u5.amazonaws.com",
+        "pdns5.ultradns.info",
+        "ns4.p31.dynect.net"
     ]
 }

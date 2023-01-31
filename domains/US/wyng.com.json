@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000361,
-    "sites": 5,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "badcock",
         "services-api",
-        "experiences"
+        "experiences",
+        "mx"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,7 +24,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c1266b69b31ee1f39180cff01dd67624e46b3896e806091944f3515305d10828"
@@ -45,7 +46,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "269ab71d4316511d4dfc6808fbe6a4085cd0254ab439270a311d5af283ad46a6"
@@ -67,7 +68,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000361,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
@@ -82,6 +83,70 @@
                 "www.ncaa.com",
                 "www.whitestuff.com"
             ]
+        },
+        {
+            "rule": "wyng\\.com\\/js\\/agent\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb3fb4f3552f69432fafbf11f098fcaef502117db9f425f560a130d0fc7c2d88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ncaa.com",
+                "www.ncaa.com"
+            ]
+        },
+        {
+            "rule": "wyng\\.com\\/clients\\/91876\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7bf7e5fd2cd0ad26872ab22963dcbe3b3a368e8288db491517feb39c075e93be"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ncaa.com",
+                "www.ncaa.com"
+            ]
+        },
+        {
+            "rule": "wyng\\.com\\/clients\\/91876\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ncaa.com",
+                "www.ncaa.com"
+            ]
         }
     ],
     "categories": [],
@@ -90,21 +155,27 @@
     "topInitiators": [
         {
             "domain": "dnsl4xr6unrmf.cloudfront.net",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.5263157894736842
         },
         {
             "domain": "first party",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.4473684210526316
+        },
+        {
+            "domain": "d1khm0eduvht21.cloudfront.net",
+            "prevalence": 0.02631578947368421
         }
     ],
     "types": {
         "Document": 2,
-        "Fetch": 7
+        "Fetch": 9,
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1433.awsdns-51.org",
-        "ns-192.awsdns-24.com",
         "ns-1947.awsdns-51.co.uk",
-        "ns-907.awsdns-49.net"
+        "ns-1433.awsdns-51.org",
+        "ns-907.awsdns-49.net",
+        "ns-192.awsdns-24.com"
     ]
 }

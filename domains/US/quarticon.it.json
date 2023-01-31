@@ -4,25 +4,176 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000543,
+    "sites": 8,
     "subdomains": [
-        "api-ir",
-        "qsdw1-ir"
+        "search",
+        "qjs",
+        "api",
+        "qcs",
+        "qsdw1-ir",
+        "api-ir"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "quarticon\\.it\\/smartSearch\\/popularQueries\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6e47c7073cfcc03338b3be54d19b2e00bacac07a711850cbed7680963ebc9d22"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sklepmartes.pl",
+                "www.auchan.pl"
+            ]
+        },
+        {
+            "rule": "quarticon\\.it\\/smartSearch\\/popular\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f87f1c81dbf7fa6ea9d3a4e323e64e1f76e4b4db643ae27cf377d1c92eb9faff"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sklepmartes.pl",
+                "www.auchan.pl"
+            ]
+        },
+        {
+            "rule": "quarticon\\.it\\/qjs\\/304eecd8d46377d9\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "qjs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2701333bcf7e51581e3a85c1416e86b89760da2bc8fbd3fc6fa5696f46cbfede"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apart.pl",
+                "www.apart.pl"
+            ]
+        },
+        {
+            "rule": "quarticon\\.it\\/api\\/v1\\/callAi\\/304eecd8d46377d9",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6edccb3eeb3b625ad059f5e5aeaa68d43bebdd9bf68b87cd6d4a65ff6ff6aeca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apart.pl",
+                "www.apart.pl"
+            ]
+        },
+        {
+            "rule": "quarticon\\.it\\/creation\\/snippetHtml",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "qcs",
+                "qsdw1-ir"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f29ca73e6cbff87376d1603ccd6fb06338484ad4f5bcc4e3e1d850c1835a84d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apart.pl",
+                "www.helikon-tex.com"
+            ]
+        },
+        {
+            "rule": "quarticon\\.it\\/qjs\\/4e6ee222535d8452\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "qjs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "176115c4407d0e1935a97736d98325c9b24943d792e97814db5cc3ff1c76b036"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auchan.pl",
+                "www.auchan.pl"
+            ]
+        },
+        {
             "rule": "quarticon\\.it\\/api\\/cp\\/",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "api-ir"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
@@ -34,45 +185,28 @@
                 "helikon-tex.com",
                 "www.helikon-tex.com"
             ]
-        },
-        {
-            "rule": "quarticon\\.it\\/creation\\/snippetHtml",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "qsdw1-ir"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "83a8fac249fe725ed356bd738783a98e6921d562f6e280cf194fb18fc9aab654"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "helikon-tex.com",
-                "www.helikon-tex.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000145,
+    "cookies": 0.0000475,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8947368421052632
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.10526315789473684
         }
     ],
     "types": {
-        "XHR": 2,
-        "Script": 2
+        "Fetch": 4,
+        "Script": 8,
+        "XHR": 2
     },
     "nameservers": [
-        "gene.ns.cloudflare.com",
-        "todd.ns.cloudflare.com"
+        "todd.ns.cloudflare.com",
+        "gene.ns.cloudflare.com"
     ]
 }

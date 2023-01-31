@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000723,
-    "sites": 10,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "gwiqcdn",
+        "gwiq",
         "gwiq-v3"
     ],
     "cnames": [],
@@ -21,8 +22,8 @@
                 "gwiqcdn"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
                 "6aa7c3edbc1ee1fe66d4db0fea18aa2d0bbe0dfae05d228c9ffeeaeacb6f1c53"
@@ -36,19 +37,45 @@
                 "www.dazeddigital.com",
                 "www.empireonline.com",
                 "www.fiba.basketball",
-                "www.highsnobiety.com"
+                "www.highsnobiety.com",
+                "www.reuters.com"
+            ]
+        },
+        {
+            "rule": "globalwebindex\\.net\\/gwiq\\/img\\/",
+            "cookies": 0.0000339,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gwiq"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elledecor.com",
+                "www.housebeautiful.com",
+                "www.oprahdaily.com",
+                "www.womansday.com",
+                "www.womenshealthmag.com"
             ]
         },
         {
             "rule": "globalwebindex\\.net\\/v2\\/gwiq\\/campaign\\/c0086",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "gwiq-v3"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -70,7 +97,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -79,60 +106,18 @@
             "exampleSites": [
                 "empireonline.com",
                 "www.empireonline.com"
-            ]
-        },
-        {
-            "rule": "globalwebindex\\.net\\/v2\\/gwiq\\/campaign\\/c3c3fc5d",
-            "cookies": 0.0000145,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gwiq-v3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fiba.basketball",
-                "www.fiba.basketball"
-            ]
-        },
-        {
-            "rule": "globalwebindex\\.net\\/v2\\/gwiq\\/campaign\\/c3c3fc5d",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gwiq-v3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fiba.basketball",
-                "www.fiba.basketball"
             ]
         },
         {
             "rule": "globalwebindex\\.net\\/v2\\/gwiq\\/campaign\\/c0298",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "gwiq-v3"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -154,7 +139,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -168,30 +153,43 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000434,
+    "cookies": 0.0000678,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5
+            "domain": "googletagmanager.com",
+            "prevalence": 0.35
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.375
+            "domain": "first party",
+            "prevalence": 0.3
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.15
         },
         {
             "domain": "privacy-mgmt.com",
-            "prevalence": 0.125
+            "prevalence": 0.1
+        },
+        {
+            "domain": "d8lbw3ldtkqzy.cloudfront.net",
+            "prevalence": 0.05
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.05
         }
     ],
     "types": {
-        "Script": 6,
-        "XHR": 6,
-        "Preflight": 6
+        "Script": 7,
+        "Image": 5,
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
-        "ns-cloud-a1.googledomains.com",
+        "ns-cloud-a3.googledomains.com",
         "ns-cloud-a4.googledomains.com",
-        "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a3.googledomains.com"
+        "ns-cloud-a1.googledomains.com",
+        "ns-cloud-a2.googledomains.com"
     ]
 }

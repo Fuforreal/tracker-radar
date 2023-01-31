@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000434,
-    "sites": 6,
+    "prevalence": 0.000061,
+    "sites": 9,
     "subdomains": [
         "api.europe-west1.gcp",
+        "auth.us-central1.gcp",
         "api.us-central1.gcp"
     ],
     "cnames": [],
@@ -22,7 +23,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -42,7 +43,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "109ebe975b93f437cd8c7ffa56721ed2c39c259ee78d92187f90adc2c0ad5636"
@@ -56,6 +57,90 @@
             ]
         },
         {
+            "rule": "commercetools\\.com\\/oauth\\/na-gdam-prd\\/anonymous\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth.us-central1.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f000e0607e8041ab7f13c44912216fef73b268c5f48e3e1fef0b0ffa1394bc5c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glendimplexamericas.com",
+                "www.dimplex.glendimplexamericas.com"
+            ]
+        },
+        {
+            "rule": "commercetools\\.com\\/oauth\\/na-gdam-prd\\/anonymous\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth.us-central1.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glendimplexamericas.com",
+                "www.dimplex.glendimplexamericas.com"
+            ]
+        },
+        {
+            "rule": "commercetools\\.com\\/na-gdam-prd\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.us-central1.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5928d113746d6a659c610f727315721a01dcd84f55b7e30d4553d93c984fdbe8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glendimplexamericas.com",
+                "www.dimplex.glendimplexamericas.com"
+            ]
+        },
+        {
+            "rule": "commercetools\\.com\\/na-gdam-prd\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.us-central1.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glendimplexamericas.com",
+                "www.dimplex.glendimplexamericas.com"
+            ]
+        },
+        {
             "rule": "commercetools\\.com\\/sharperimage\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
@@ -64,7 +149,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -84,7 +169,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2a736392a71d162e7a6de7dc9682b18657110c7fd6401e36880b3c631f7305cf"
@@ -104,17 +189,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7333333333333333
+        },
+        {
+            "domain": "gd-commerce-services.net",
+            "prevalence": 0.26666666666666666
         }
     ],
     "types": {
-        "Preflight": 4,
-        "Fetch": 4
+        "Preflight": 8,
+        "Fetch": 8
     },
     "nameservers": [
-        "ns-240.awsdns-30.com",
-        "ns-1660.awsdns-15.co.uk",
         "ns-722.awsdns-26.net",
-        "ns-1285.awsdns-32.org"
+        "ns-1285.awsdns-32.org",
+        "ns-240.awsdns-30.com",
+        "ns-1660.awsdns-15.co.uk"
     ]
 }

@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000434,
-    "sites": 6,
-    "subdomains": [],
+    "prevalence": 0.0000678,
+    "sites": 10,
+    "subdomains": [
+        "scriptapi"
+    ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "adwisedfs\\.com\\/adwised-webpush-2\\.4\\.min\\.js",
@@ -17,7 +19,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -27,6 +29,26 @@
                 "melovy.ir",
                 "miniroid.com"
             ]
+        },
+        {
+            "rule": "adwisedfs\\.com\\/api\\/webpush\\/1fa3ab30-fa06-4595-a811-ea4dfbc374d3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scriptapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farsroid.com",
+                "www.farsroid.com"
+            ]
         }
     ],
     "categories": [],
@@ -35,14 +57,18 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
-        "y.ns.arvancdn.ir",
-        "g.ns.arvancdn.ir"
+        "g.ns.arvancdn.ir",
+        "y.ns.arvancdn.ir"
     ]
 }

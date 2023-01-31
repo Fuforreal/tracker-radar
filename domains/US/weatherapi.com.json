@@ -4,36 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "weatherapi\\.com\\/v1\\/forecast\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "c514f5131b86111ff9122bc9406ced39f40f2d703b36ca42b4fb6f37508deda4"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aqi.in",
-                "www.hss.com"
-            ]
-        },
         {
             "rule": "weatherapi\\.com\\/v1\\/current\\.json",
             "cookies": 0,
@@ -43,17 +22,61 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "18a7b485d9559acc6e86df291688a6f0498f5e0510b21a07012da7a1c01201eb"
+                "2a23110066652c2b35bb3d7f9127da020bd5850f71a3bad9242f78489a3bc2c8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aqi.in",
+                "hss.com",
                 "www.hss.com"
+            ]
+        },
+        {
+            "rule": "weatherapi\\.com\\/v1\\/forecast\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fea9bf7b3a998020263da2e40abc01a14b3fb05afe70b327478b97cdfd60183e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hss.com",
+                "www.hss.com"
+            ]
+        },
+        {
+            "rule": "weatherapi\\.com\\/weather\\/64x64\\/night\\/296\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a46d5c4c0204627f84b5182e1415e3f352579759d525e5f612f129234579f1ef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skibowl.com",
+                "www.skibowl.com"
             ]
         }
     ],
@@ -62,16 +85,17 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5555555555555556
+            "domain": "exponea.com",
+            "prevalence": 0.6666666666666666
         },
         {
-            "domain": "exponea.com",
-            "prevalence": 0.4444444444444444
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "XHR": 4
+        "XHR": 4,
+        "Image": 2
     },
     "nameservers": [
         "pdns05.domaincontrol.com",

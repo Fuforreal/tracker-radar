@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000867,
-    "sites": 12,
+    "prevalence": 0.0000746,
+    "sites": 11,
     "subdomains": [
         "www.account",
+        "shop",
         "www.servicescache",
         "www.gpas-cache",
         "www.globalowneraem"
     ],
     "cnames": [
+        {
+            "original": "shop.ford.com",
+            "resolved": "shop.ford.com.edgekey.net"
+        },
         {
             "original": "www.account.ford.com",
             "resolved": "www.account.ford.com.edgekey.net"
@@ -39,14 +44,14 @@
     "resources": [
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/etc\\/fd\\/fma\\/bundle\\.js",
-            "cookies": 0.0000361,
+            "cookies": 0.0000407,
             "fingerprinting": 1,
             "subdomains": [
                 "www.account"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [
                 {
                     "original": "www.account.ford.com",
@@ -59,10 +64,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "fma_YmFuYW5h": {
-                    "ttl": 86408,
+                    "ttl": 86406,
                     "length": 4,
-                    "prevalence": 0.000014450867052023121,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000020344500203445003,
+                    "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
@@ -71,19 +76,20 @@
                 "shop.ford.com",
                 "www.ford.ca",
                 "www.ford.com",
+                "www.ford.de",
                 "www.lincoln.com"
             ]
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/etc\\/fd\\/fma\\/sguid\\.html",
-            "cookies": 0.0000361,
+            "cookies": 0.0000407,
             "fingerprinting": 1,
             "subdomains": [
                 "www.account"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [
                 {
                     "original": "www.account.ford.com",
@@ -101,19 +107,20 @@
                 "shop.ford.com",
                 "www.ford.ca",
                 "www.ford.com",
+                "www.ford.de",
                 "www.lincoln.com"
             ]
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/etc\\/fd\\/fma\\/sso\\.html",
-            "cookies": 0.0000434,
+            "cookies": 0.0000407,
             "fingerprinting": 1,
             "subdomains": [
                 "www.account"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000434,
+            "prevalence": 0.0000407,
             "cnames": [
                 {
                     "original": "www.account.ford.com",
@@ -128,11 +135,38 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ford.com",
-                "accountmanager.ford.com",
                 "shop.ford.com",
                 "www.ford.ca",
                 "www.ford.com",
+                "www.ford.de",
                 "www.lincoln.com"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\.edgekey\\.net\\/aemservices\\/common\\/api\\/attributes\\/proxy",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shop"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "shop.ford.com",
+                    "resolved": "shop.ford.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "396c2e92ac90f0393a86bc86806fc40ff17a5be0e17e83dafb709018c2eccf2d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "www.ford.com"
             ]
         },
         {
@@ -144,7 +178,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.servicescache.ford.com",
@@ -152,45 +186,72 @@
                 }
             ],
             "responseHashes": [
-                "bd69a7eb4b99b7b5c4a9af55bbcf9a2b1453dceb79cfafe180cc374eebd1191d"
+                "124917f60281a0336ddf3b8f063fd2504a13b5187c7f3d2a17178fd303cbd6a1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "ford.de",
+                "www.ford.co.uk"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/ead09964-d1c8-3c01-aa1b-3058c3aef0c5\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.gpas-cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www.gpas-cache.ford.com",
+                    "resolved": "www.gpas-cache.ford.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8691ef051f5ed5439cf95d6eb190c23ea5b3407a2c587d12b4b96e908b3f450a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "ford.co.uk",
-                "www.ford.de"
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/api\\/vehicle-model\\/v1\\/describe",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/f770be99-f2ce-3f56-b78a-6b31b8b39d13\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "www.servicescache"
+                "www.gpas-cache"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "www.servicescache.ford.com",
-                    "resolved": "www.servicescache.ford.com.edgekey.net"
+                    "original": "www.gpas-cache.ford.com",
+                    "resolved": "www.gpas-cache.ford.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "481c00bbca109d3f4ccb21dd85d9efcfafba2346ed6bcdf98b59cfcd15370001"
+                "82ee447b8ef87c539a363c4378e5cb62a8e491ed2ae5739d3fce47b87c6bc956"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ford.co.uk",
-                "www.ford.de"
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/529b0d9d-6525-383a-a1f1-f94a1242f80f\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/dd69a802-c5cd-38c6-8ed8-069edade85ef\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -198,7 +259,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -206,18 +267,18 @@
                 }
             ],
             "responseHashes": [
-                "f31f49213f6d7f3341b8b5aa7f1ac11f6c4bccfa3db1999acec41d2c9e52f0d5"
+                "7f0ad9034bc59ca60bdf6f27777a1e1f4af06ef90ea05b9fd268813373aac1b0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/033d5109-3425-37ad-8dbf-aeec15eafb8a\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/7315cb13-7b9f-32e2-9bef-c5c30f35a6c8\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -225,7 +286,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -233,18 +294,18 @@
                 }
             ],
             "responseHashes": [
-                "13c0eddb133aa5b14e43db7ea453e0567d454bc5f0d1a434bb6b5e886f9f4f45"
+                "c602682b8270bcc1c326a0fb7fc3fe6658f3685235bd23bf8c1bb58afc3218c0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/f08e3abd-826b-3d47-9ead-aaee9e7825ce\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/d202ff3e-dffa-3217-a28f-4b16d81d41c2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -252,7 +313,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -260,18 +321,18 @@
                 }
             ],
             "responseHashes": [
-                "656a8399fe7ff37e0f01113425fa188b33d9031c84eed899bc01feae6ef8a233"
+                "12700ae363161f235669072a3a2deca6f8956c67740aa4e47e39476d3d3fba6f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/ece8b1c5-1848-3962-8225-18a11c2c7a0c\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/18969e41-bcd9-3a5d-8cb4-73aee5d64bbe\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -279,7 +340,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -287,18 +348,18 @@
                 }
             ],
             "responseHashes": [
-                "12c25baee0b5203a2dffadf7d34db4cfe0be152490254f5544623fe67801b059"
+                "17015c436d86b3d77c8567877e6fd416f6ceafbb028f2cddfcfa3cc207c6156d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/a7b4f08c-305e-3d61-b09d-79fb5aee19de\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/1b065a55-e69e-3879-9eab-30ab963820f0\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -306,7 +367,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -314,18 +375,18 @@
                 }
             ],
             "responseHashes": [
-                "307b0ee6785541df96b54c998995f3823fe53ce84c428f3348d9a2ecfe79d337"
+                "d48bdd8099ec1976c2349b71abe8adfee3b9b9e9b791ec6d0e1278c708cec15d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/35e09556-cc85-3ecb-8316-e3e2e8bba72c\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/98d2d0cb-8d30-3142-bee3-48c67a83c958\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -333,7 +394,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -341,18 +402,18 @@
                 }
             ],
             "responseHashes": [
-                "f70b774ab9c922536e0a8027f3f0e02f522c276d1e13ab8cf049205293831d9b"
+                "ee338d031206c793453b5be4558a1dc659619b813314e85ee755a196cec0f40e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/be247cc4-3202-3a91-9c01-0c9ece5fbb38\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/8565a0aa-f763-3ab6-a604-70d821e8ccc9\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -360,7 +421,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -368,18 +429,18 @@
                 }
             ],
             "responseHashes": [
-                "f5093de81773ef5df191954b6a44d59ddbc41686d3c0b63455ead497b8d4d388"
+                "1b85733772690bfee83678c052daf0e00cf3af71bb1058483ed1a133a11ca99b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/f1b79327-8108-3ed3-a17c-709f684716ba\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/86668f05-eb76-3e4f-a967-cb70035ddccd\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -387,7 +448,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -395,18 +456,18 @@
                 }
             ],
             "responseHashes": [
-                "d3c36a11ce06cb51d5caa912e053685052155219a5a6acc8e8b6fe076d92a2de"
+                "1334557484e9dec8d601d2b5102b1273c4999c6742881a03abed2f3c3689e71d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/d61c62f7-511e-35e0-84bb-6141d6b0dff5\\.png",
+            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/1fe40369-9afe-352e-a4be-d17302cba034\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -414,7 +475,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.gpas-cache.ford.com",
@@ -422,107 +483,26 @@
                 }
             ],
             "responseHashes": [
-                "5c9557899cd42eaf9afca96b6a9e15a48392b1d5ee48f72c473db1e6ada41ab1"
+                "53ed3f6127f78a3164c0ae9550b09e000c0fbd3ddf3e111d8f8e8aef42f9d7b9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.de",
-                "www.ford.de"
+                "ford.co.uk",
+                "www.ford.co.uk"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/8934be47-2dbe-3539-a427-169185e03f93\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www.gpas-cache"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "www.gpas-cache.ford.com",
-                    "resolved": "www.gpas-cache.ford.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "a315aee7d83905eec950f51f9460ad17eac5b774976164322a0bff6a48f1dd47"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.de",
-                "www.ford.de"
-            ]
-        },
-        {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/899edeef-5ba1-30b2-81dd-b4a082241bc5\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www.gpas-cache"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "www.gpas-cache.ford.com",
-                    "resolved": "www.gpas-cache.ford.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "b184c2272c02d13dcf48a1fcc01943ece11b0ee40a2a97089300c969bd534535"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.de",
-                "www.ford.de"
-            ]
-        },
-        {
-            "rule": "ford\\.com\\.edgekey\\.net\\/guid\\/fa30a495-6009-33cf-a6c6-9c25b225e844\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www.gpas-cache"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "www.gpas-cache.ford.com",
-                    "resolved": "www.gpas-cache.ford.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "7086979ce3d472c88504fc23cc5e7b3a668e444f9ae5f8e8901f9b953f3be675"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.de",
-                "www.ford.de"
-            ]
-        },
-        {
-            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/us\\/en-us\\/content-fragments\\/emplifi\\/experience-notification-banner\\.global-owner-model\\.json",
-            "cookies": 0.0000145,
+            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/de\\/de-de\\/content-fragments\\/emplifi\\/experience-notification-banner\\.global-owner-model\\.json",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -536,20 +516,20 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "ford.de",
+                "www.ford.de"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/us\\/en-us\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.search\\.json",
-            "cookies": 0.00000723,
+            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/de\\/de-de\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.search\\.json",
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -557,26 +537,26 @@
                 }
             ],
             "responseHashes": [
-                "5b4783bd979321700e116970a1cb4e5a6de0760ea66cec40c1f5a5bbdf0d4d0a"
+                "821d27452b7e273d08b8fdbd0d7ba2032fb5d922437ebce5f964b35d8e26a530"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "ford.de",
+                "www.ford.de"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/us\\/en-us\\/content-fragments\\/common\\/app-information\\.global-owner-model\\.json",
-            "cookies": 0.00000723,
+            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/de\\/de-de\\/content-fragments\\/emplifi\\/emplifi-feedback\\.global-owner-model\\.json",
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -584,26 +564,26 @@
                 }
             ],
             "responseHashes": [
-                "53b75ef3b9a8d683095d74a23e5e63b338d1b951b801670489fec613f5dec4fb"
+                "140a3b70670498065be57a8cc0add162bcf584a674b07287907e7e45cd18bde6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "ford.de",
+                "www.ford.de"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/us\\/en-us\\/content-fragments\\/emplifi\\/emplifi-feedback\\.global-owner-model\\.json",
-            "cookies": 0.00000723,
+            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/de\\/de-de\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.help-cards\\.json",
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -611,26 +591,26 @@
                 }
             ],
             "responseHashes": [
-                "e592d1bb3cccda82f46c7f2c0c2b6df6f25d98ab0b8e487f5c9b8a01edda8b62"
+                "f727680e629a39b2f0c42a55234de419cd43000c6c4c799744a59f33f23ebc44"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "ford.de",
+                "www.ford.de"
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/us\\/en-us\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.help-cards\\.json",
-            "cookies": 0.00000723,
+            "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/ford\\/de\\/de-de\\/content-fragments\\/common\\/disclosures\\.global-owner-model\\.json",
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -638,26 +618,26 @@
                 }
             ],
             "responseHashes": [
-                "9498adb1674a22f0cac89786162222426fb43936ec15796844ca2f5b561f537f"
+                "795f92561bd525b51e049f7bc303b810b26589c9d45382cad6a3c9754c20374a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "ford.de",
+                "www.ford.de"
             ]
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/\\/global-notification-banner\\.global-owner-model\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -677,14 +657,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/recalls\\/video-content\\.global-owner-model\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -704,14 +684,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/recalls\\/experience-notification-banner\\.global-owner-model\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -731,14 +711,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.search\\.json",
-            "cookies": 0.00000723,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -746,7 +726,7 @@
                 }
             ],
             "responseHashes": [
-                "98f3943eb704bb5e4cc1c523c7d0e283fe27fa1831a411441c677571c3611482"
+                "523c08aba4e9a747e3a40fa3004062f62255a675578e45d7e1f15969d067d492"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -758,14 +738,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/experience-fragments\\/global-owner\\/lincoln\\/us\\/en-us\\/img-cx-ymm\\/cx-ymm\\/master\\.model\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -785,14 +765,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/common\\/vin-form\\.global-owner-model\\.json",
-            "cookies": 0.00000723,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -800,7 +780,7 @@
                 }
             ],
             "responseHashes": [
-                "80fec10e9677240da72621d173ce3c0aaa53b1c7eae5a9a2e24a3d0f32f83c52"
+                "1f6c6e9f52f52b106ad69b5fee0764394b0c589760c507aa43927428c3746d58"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -812,14 +792,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/common\\/confirm-modal\\.global-owner-model\\.json",
-            "cookies": 0.00000723,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -839,14 +819,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/common\\/fma-login\\.global-owner-model\\.json",
-            "cookies": 0.00000723,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -854,7 +834,7 @@
                 }
             ],
             "responseHashes": [
-                "9c77635568c69c58eaa76bd189f35977cee7e1f75118870a3721da1da25c06c6"
+                "78dac7d175c49225d5a9781cb6030118d1e34b92a9dc3814e5f41f6c29d1dc0a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -866,14 +846,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/experience-fragments\\/global-owner\\/lincoln\\/us\\/en-us\\/recalls\\/recallsAccordion\\/master\\.model\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -893,14 +873,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.help-cards\\.json",
-            "cookies": 0.00000723,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -908,7 +888,7 @@
                 }
             ],
             "responseHashes": [
-                "1d580fff332c482663fe8645e4efe68dcacff5ad17ef0ca05b9f21c722bb9630"
+                "ec0a311c5156343a23d12f15d04364ef7c23c66cdef133e2b8fb967e18ec58c1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -920,14 +900,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/recalls\\/important-info-accordion\\.global-owner-model\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -947,14 +927,14 @@
         },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/content\\/dam\\/global-owner\\/lincoln\\/us\\/en-us\\/content-fragments\\/recalls\\/recall-disclaimers-section\\.global-owner-model\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.globalowneraem"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.globalowneraem.ford.com",
@@ -975,26 +955,27 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000065,
+    "cookies": 0.000061,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9629629629629629
-        },
-        {
-            "domain": "contentsquare.net",
-            "prevalence": 0.024691358024691357
+            "prevalence": 0.94
         },
         {
             "domain": "dynatrace.com",
-            "prevalence": 0.012345679012345678
+            "prevalence": 0.04
+        },
+        {
+            "domain": "contentsquare.net",
+            "prevalence": 0.02
         }
     ],
     "types": {
-        "Script": 5,
-        "Document": 11,
-        "XHR": 38,
-        "Image": 24
+        "Script": 6,
+        "Document": 12,
+        "Fetch": 2,
+        "XHR": 36,
+        "Image": 22
     },
     "nameservers": []
 }

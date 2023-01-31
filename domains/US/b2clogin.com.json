@@ -9,24 +9,71 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000434,
-    "sites": 6,
+    "prevalence": 0.0000543,
+    "sites": 8,
     "subdomains": [
+        "analogb2c",
         "waresourcesidp"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "b2clogin\\.com\\/tfp\\/analogb2c\\.onmicrosoft\\.com\\/\\/b2c_1a_adi_signuporsigninsocial\\/v2\\.0\\/\\.well-known\\/openid-configuration",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analogb2c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "ab282f1d70a9965ed38e45e499e384b5af36b43a651460e4f4b67bc6d8117df5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com",
+                "www.maximintegrated.com"
+            ]
+        },
+        {
+            "rule": "b2clogin\\.com\\/analogb2c\\.onmicrosoft\\.com\\/b2c_1a_adi_signuporsigninsocial\\/oauth2\\/v2\\.0\\/authorize",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analogb2c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gpv_Page": 0.00001356300013563
+            },
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com",
+                "www.maximintegrated.com"
+            ]
+        },
+        {
             "rule": "b2clogin\\.com\\/89425fd0-c16a-4605-8605-77c155c2ab6e\\/b2c_1a_signup_signin\\/discovery\\/v2\\.0\\/keys",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "waresourcesidp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "483a7382be315eba40eba9437a2fe3abd89b6d186e2ade15c6a1694f755c3e0c"
@@ -42,14 +89,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000434,
+    "cookies": 0.0000543,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "analog.com",
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
+        "Fetch": 3,
+        "Document": 3,
         "XHR": 2
     },
     "nameservers": [

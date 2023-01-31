@@ -4,14 +4,60 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000361,
-    "sites": 5,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
+        "omt-cdn",
+        "omt",
         "img"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "ecmaps\\.de\\/api\\/tiles\\/maptiler-osm\\/tiles\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omt-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "461bc7a153be0b5f713b845c9a4ecad6679fc8c9b9df007cb9b56be3d4e699bc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oberoesterreich.at",
+                "www.oberoesterreich.at"
+            ]
+        },
+        {
+            "rule": "ecmaps\\.de\\/fonts\\/Open%20Sans%20Bold\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2e1d246cb6960fa3868a6b40a172b44a804ccce7f6e692e6aacbe97057801ead"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oberoesterreich.at",
+                "www.oberoesterreich.at"
+            ]
+        },
         {
             "rule": "ecmaps\\.de\\/remote\\/\\.jpg",
             "cookies": 0,
@@ -20,22 +66,15 @@
                 "img"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "9ea763d8fa7ad09c18c843c9696d42dcfc9a0263850d92a9417bbd1c02be6754",
-                "5c700f396bcf58cd89d612647144f7e42dacd3bac23dd5aa25ae8dd75047d3cc",
-                "f4510bf74104e89b597c88b7d5ba3cd4b0c206d9142f9ce9127c40bfcc121c0a"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aletscharena.ch",
-                "www.aletscharena.ch",
-                "www.goms.ch",
-                "www.sylt.de",
+                "winterberg.de",
                 "www.winterberg.de"
             ]
         }
@@ -45,16 +84,21 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "destination.one",
+            "prevalence": 0.7
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.9302325581395349
+            "prevalence": 0.2
         },
         {
             "domain": "cookiebot.com",
-            "prevalence": 0.06976744186046512
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Image": 5
+        "Fetch": 4,
+        "Image": 2
     },
     "nameservers": [
         "rick.ns.cloudflare.com",

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "capig"
+        "capig",
+        "emea.api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +21,8 @@
                 "capig"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -31,7 +32,50 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "amplifon.com",
+                "www.earpros.com",
                 "www.miracle-ear.com"
+            ]
+        },
+        {
+            "rule": "amplifoninternal\\.com\\/b2c-emea\\/agenda\\/v2\\/search-preview\\/2023-01-28T09:00:36+01:00\\/28\\/00000017\\/100\\/001\\/455\\/S\\/3\\/001\\/30",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "emea.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amplifon.com",
+                "www.amplifon.com"
+            ]
+        },
+        {
+            "rule": "amplifoninternal\\.com\\/b2c-emea\\/agenda\\/v2\\/search-preview\\/2023-01-28T09:00:36+01:00\\/28\\/00000017\\/100\\/001\\/455\\/S\\/3\\/001\\/30",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "emea.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5b5b66bfec62795d74ea04e07d2c5ee459b031abf1500f7414c1f94094e2dcf6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amplifon.com",
+                "www.amplifon.com"
             ]
         }
     ],
@@ -40,21 +84,22 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "facebook.net",
-            "prevalence": 0.8
+            "domain": "first party",
+            "prevalence": 0.5
         },
         {
-            "domain": "first party",
-            "prevalence": 0.2
+            "domain": "facebook.net",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 5,
+        "Preflight": 2
     },
     "nameservers": [
+        "ns-613.awsdns-12.net",
         "ns-412.awsdns-51.com",
         "ns-1482.awsdns-57.org",
-        "ns-613.awsdns-12.net",
         "ns-1954.awsdns-52.co.uk"
     ]
 }

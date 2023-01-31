@@ -4,15 +4,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
+    "prevalence": 0.0000203,
     "sites": 3,
     "subdomains": [
-        "olxin.edge"
+        "olxin.edge",
+        "olxid.edge"
     ],
     "cnames": [
         {
             "original": "api.olx.in",
             "resolved": "olxin.edge.olx.net"
+        },
+        {
+            "original": "statics.olx.co.id",
+            "resolved": "olxid.edge.olx.net"
         },
         {
             "original": "statics.olx.in",
@@ -22,30 +27,67 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "olx\\.net\\/",
-            "cookies": 0.0000145,
+            "rule": "olx\\.net\\/external\\/base\\/img\\/playstore\\.webp",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "olxin.edge"
+                "olxin.edge",
+                "olxid.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "statics.olx.in",
                     "resolved": "olxin.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.co.id",
+                    "resolved": "olxid.edge.olx.net"
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "b3a0901ed8e2df4b4afa047fcc81937223aa9057bc10b143c13f8440ec99bab3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "olx.in",
-                "www.olx.in"
+                "www.olx.co.id"
+            ]
+        },
+        {
+            "rule": "olx\\.net\\/external\\/base\\/img\\/appstore\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olxin.edge",
+                "olxid.edge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "statics.olx.in",
+                    "resolved": "olxin.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.co.id",
+                    "resolved": "olxid.edge.olx.net"
+                }
+            ],
+            "responseHashes": [
+                "08116838fec367e885073ac927439995bdf587c0992e6f3494e4bea3b489fa30"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.in",
+                "www.olx.co.id"
             ]
         },
         {
@@ -57,7 +99,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.olx.in",
@@ -65,7 +107,7 @@
                 }
             ],
             "responseHashes": [
-                "2d34b714d1ad626a8177b91e3f857cd2f8be8bf7c662c806a6cdaed260860da6"
+                "2e8e4f135ff1bc32ad6ae03031ac4272d642938b61f40071424892b54369508f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -84,7 +126,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.olx.in",
@@ -103,15 +145,15 @@
             ]
         },
         {
-            "rule": "olx\\.net\\/olxin\\/banners\\/hero_bg_in_v4@1x\\.png",
-            "cookies": 0,
+            "rule": "olx\\.net\\/",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "olxin.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "statics.olx.in",
@@ -119,7 +161,7 @@
                 }
             ],
             "responseHashes": [
-                "e395c0c0b2e6d1b616df84ff3b40f793fdb740951aebfe1da5afe884570265a8"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -132,9 +174,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000217,
+    "cookies": 0.0000136,
     "types": {
-        "Image": 4,
+        "Image": 6,
         "Script": 2,
         "Stylesheet": 2
     },

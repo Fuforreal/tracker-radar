@@ -4,13 +4,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000578,
-    "sites": 8,
+    "prevalence": 0.000109,
+    "sites": 16,
     "subdomains": [
+        "v2.pixel.nypp.data",
         "content.capi",
         "v2.pixel.nukp.data"
     ],
     "cnames": [
+        {
+            "original": "sac.decider.com",
+            "resolved": "v2.pixel.nypp.data.newscorp.com"
+        },
+        {
+            "original": "sac.nypost.com",
+            "resolved": "v2.pixel.nypp.data.newscorp.com"
+        },
+        {
+            "original": "sac.pagesix.com",
+            "resolved": "v2.pixel.nypp.data.newscorp.com"
+        },
         {
             "original": "sac.the-sun.com",
             "resolved": "v2.pixel.nukp.data.newscorp.com"
@@ -31,6 +44,66 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "newscorp\\.com\\/i",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2.pixel.nypp.data"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "sac.decider.com",
+                    "resolved": "v2.pixel.nypp.data.newscorp.com"
+                },
+                {
+                    "original": "sac.nypost.com",
+                    "resolved": "v2.pixel.nypp.data.newscorp.com"
+                },
+                {
+                    "original": "sac.pagesix.com",
+                    "resolved": "v2.pixel.nypp.data.newscorp.com"
+                }
+            ],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_dor": 0.000020344500203445003
+            },
+            "exampleSites": [
+                "decider.com",
+                "nypost.com",
+                "pagesix.com"
+            ]
+        },
+        {
+            "rule": "newscorp\\.com\\/images\\/07e246b2dbd52d0c87437f1da06ebe88",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content.capi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "591d6ddc7e093a85fc7d452066ce464c9e382162e1fec2115824bb6f8edab4a1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mansionglobal.com",
+                "www.mansionglobal.com"
+            ]
+        },
+        {
             "rule": "newscorp\\.com\\/images\\/92f38a9e0e2a29b35714531e46b219ba",
             "cookies": 0,
             "fingerprinting": 0,
@@ -39,7 +112,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "3932ac81020f68bde43cea026984de685b6d3fde963b0753e48796bc60860c4a"
@@ -54,14 +127,14 @@
         },
         {
             "rule": "newscorp\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
-            "cookies": 0.0000289,
+            "cookies": 0.0000339,
             "fingerprinting": 0,
             "subdomains": [
                 "v2.pixel.nukp.data"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [
                 {
                     "original": "sac.the-sun.com",
@@ -88,6 +161,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "the-sun.com",
+                "www.the-sun.com",
                 "www.thescottishsun.co.uk",
                 "www.thesun.co.uk",
                 "www.thesun.ie"
@@ -101,8 +175,8 @@
                 "v2.pixel.nukp.data"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [
                 {
                     "original": "sac.the-sun.com",
@@ -127,6 +201,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "the-sun.com",
+                "www.the-sun.com",
                 "www.thescottishsun.co.uk",
                 "www.thesun.co.uk",
                 "www.thesun.ie"
@@ -135,30 +210,30 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000434,
+    "cookies": 0.0000949,
     "topInitiators": [
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.3684210526315789
+            "prevalence": 0.5384615384615384
         },
         {
             "domain": "first party",
-            "prevalence": 0.3157894736842105
+            "prevalence": 0.23076923076923078
         },
         {
             "domain": "vidora.com",
-            "prevalence": 0.3157894736842105
+            "prevalence": 0.23076923076923078
         }
     ],
     "types": {
-        "Image": 2,
-        "XHR": 4,
-        "Preflight": 4
+        "XHR": 8,
+        "Image": 4,
+        "Preflight": 5
     },
     "nameservers": [
-        "ns-1522.awsdns-62.org",
-        "ns-990.awsdns-59.net",
         "ns-1775.awsdns-29.co.uk",
-        "ns-358.awsdns-44.com"
+        "ns-990.awsdns-59.net",
+        "ns-358.awsdns-44.com",
+        "ns-1522.awsdns-62.org"
     ]
 }

@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000723,
+    "prevalence": 0.0000678,
     "sites": 10,
     "subdomains": [
         "tag",
@@ -27,7 +27,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "f41fd6147512cddc3649d20e974dfd030850b294fa48f064298941e9c4e5f040",
@@ -51,14 +51,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [
-                "17540a87d0ddc8a0e89724f916c62f0ec3c627339eacc99d97e8853606f0f9ea",
-                "221028d55a79af1b2722ad867f8e5429a5bb3046f02fd2c51d73df544fb2d5ec",
-                "ccae9163bf035177e059f3e874b48fc4bb71b2ccc66b97abe4876df89e35b510"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -77,10 +73,14 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "9bf9f29c7e1253c2e7a9c97557e8e2d3e6cfccda9556a48b0eabd78b70d27a62",
+                "f278e52afe3b2cb6900f859fefc99a3ecee6db275de043439d25e61fb27ba024",
+                "d6f3da0ed618516371fa87431c2af8c84b4252552f5168ba82baaf49804fa32f"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -100,13 +100,13 @@
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.appVersion": 3,
-                "window.innerWidth": 3,
-                "window.innerHeight": 3,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Date.prototype.getTime": 3,
                 "Event.prototype.timeStamp": 1
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "4a9b8df50505d979ad372bc52b61a160f7b00f4650927d16a97a6bb04564c337"
@@ -123,13 +123,18 @@
         {
             "rule": "uplift\\.com\\/client\\/prequal\\/v1\\/1\\.0\\.3\\/index\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8d23e4b79e2fc6cb86cc83f845297dd269edd78e1b915798d2ffdbd7ae87d6da"
@@ -162,14 +167,14 @@
     ],
     "types": {
         "Script": 3,
-        "XHR": 4,
         "Preflight": 4,
+        "XHR": 4,
         "Document": 5
     },
     "nameservers": [
-        "ns-1322.awsdns-37.org",
         "ns-1882.awsdns-43.co.uk",
-        "ns-863.awsdns-43.net",
-        "ns-282.awsdns-35.com"
+        "ns-282.awsdns-35.com",
+        "ns-1322.awsdns-37.org",
+        "ns-863.awsdns-43.net"
     ]
 }

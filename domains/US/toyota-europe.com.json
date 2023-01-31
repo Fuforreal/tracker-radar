@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000434,
+    "prevalence": 0.0000407,
     "sites": 6,
     "subdomains": [
-        "cp-toyota"
+        "cp-toyota",
+        "kong-proxy-aws"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -26,7 +27,7 @@
                 "window.localStorage": 4
             },
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "b0597ac8e930329c2238d94a49ddcc0fdcfb5a7eeae36e211d4b93b2cb8c2ff5"
@@ -40,11 +41,53 @@
                 "www.toyota.es",
                 "www.toyota.it"
             ]
+        },
+        {
+            "rule": "toyota-europe\\.com\\/t1-finance\\/tfs\\/cars\\/gb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kong-proxy-aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lexus.co.uk",
+                "www.lexus.co.uk"
+            ]
+        },
+        {
+            "rule": "toyota-europe\\.com\\/t1-finance\\/tfs\\/cars\\/gb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kong-proxy-aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lexus.co.uk",
+                "www.lexus.co.uk"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.00000678,
     "topInitiators": [
         {
             "domain": "first party",
@@ -52,11 +95,13 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "pdns2.cscdns.net",
         "pdns1.cscdns.net",
-        "ns1.toyota-europe.com"
+        "ns1.toyota-europe.com",
+        "pdns2.cscdns.net"
     ]
 }

@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000173,
-    "sites": 24,
+    "prevalence": 0.00019,
+    "sites": 28,
     "subdomains": [
         "stc",
-        "api.cotacoes"
+        "api.cotacoes",
+        "rtw"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,8 +22,8 @@
                 "stc"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.000101,
+            "sites": 16,
+            "prevalence": 0.000109,
             "cnames": [],
             "responseHashes": [
                 "015784ec9ffde95c957f3dfe9d5f5e8bfc1c7d1a21023500693d2ed22dc4821d"
@@ -35,6 +36,7 @@
                 "brasilescola.uol.com.br",
                 "drauziovarella.uol.com.br",
                 "economia.uol.com.br",
+                "interior.ne10.uol.com.br",
                 "jc.ne10.uol.com.br",
                 "m.brasilescola.uol.com.br",
                 "mundoeducacao.uol.com.br",
@@ -44,6 +46,7 @@
                 "www.band.uol.com.br",
                 "www.bol.uol.com.br",
                 "www.folha.uol.com.br",
+                "www.uol.com.br",
                 "www1.folha.uol.com.br"
             ]
         },
@@ -55,8 +58,8 @@
                 "stc"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000108,
+            "sites": 16,
+            "prevalence": 0.000109,
             "cnames": [],
             "responseHashes": [
                 "cb9cdd32e15f52d9fe70cf12599f64a08e12b2033f0d728175c6b61f3c7931b0"
@@ -69,6 +72,7 @@
                 "brasilescola.uol.com.br",
                 "drauziovarella.uol.com.br",
                 "economia.uol.com.br",
+                "interior.ne10.uol.com.br",
                 "jc.ne10.uol.com.br",
                 "m.brasilescola.uol.com.br",
                 "mundoeducacao.uol.com.br",
@@ -91,7 +95,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "84cb7fab1b237d5078de466e1fc8d7857ac3858b799cfa2465bed7876e34f155"
@@ -115,7 +119,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000361,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "6d97b84e1e573d4d7e0e8f3fab47948113585b4f0654ec49f7728d88374c7481"
@@ -139,10 +143,10 @@
                 "stc"
             ],
             "apis": {
-                "window.localStorage": 4
+                "window.localStorage": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "42aa6c75c2f75c3e8ac6638bbe0203886a7ca49b2b3848d8f52115575cc2fd20"
@@ -154,7 +158,8 @@
                 "uol.com.br",
                 "economia.uol.com.br",
                 "noticias.uol.com.br",
-                "www.bol.uol.com.br"
+                "www.bol.uol.com.br",
+                "www.uol.com.br"
             ]
         },
         {
@@ -166,10 +171,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7ac7efda1e5a9db9c30d8f9862442da71da2e2fd6df5ad2307f4c6d7eec99310"
+                "7dadb8416cda25850148875fe717151d399f5073b2095c7601655eb9ea1f298f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -188,12 +193,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2a816efede23c82c241af27d4e6ae3c8aedc30b075b703e1f8f8f903907716e2"
             ],
             "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uol.com.br",
+                "www.uol.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\/sub",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -208,25 +233,25 @@
     "topInitiators": [
         {
             "domain": "jsuol.com.br",
-            "prevalence": 0.6419753086419753
+            "prevalence": 0.6019417475728155
         },
         {
             "domain": "first party",
-            "prevalence": 0.30864197530864196
+            "prevalence": 0.32038834951456313
         },
         {
             "domain": "tinypass.com",
-            "prevalence": 0.04938271604938271
+            "prevalence": 0.07766990291262135
         }
     ],
     "types": {
-        "Font": 40,
-        "Document": 4,
-        "Script": 2
+        "Font": 43,
+        "Document": 5,
+        "Script": 2,
+        "WebSocket": 2
     },
     "nameservers": [
         "borges.uol.com.br",
-        "charles.uol.com.br",
         "eliot.uol.com.br"
     ]
 }

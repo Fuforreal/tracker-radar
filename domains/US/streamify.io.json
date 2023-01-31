@@ -4,26 +4,32 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "streamify\\.io\\/liveshopping\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "7be8a9cd8f4652579958d05d32d6add1f57890d6a9edd8f469170f80a1928882"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -46,9 +52,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-cloud-d3.googledomains.com",
-        "ns-cloud-d1.googledomains.com",
         "ns-cloud-d2.googledomains.com",
-        "ns-cloud-d4.googledomains.com"
+        "ns-cloud-d3.googledomains.com",
+        "ns-cloud-d4.googledomains.com",
+        "ns-cloud-d1.googledomains.com"
     ]
 }

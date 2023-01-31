@@ -4,18 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000289,
-    "sites": 4,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "emmezetahr",
-        "rodzicepl"
+        "rodzicepl",
+        "skalnikpl"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "savecart\\.pl\\/samito\\.js",
-            "cookies": 0.0000217,
+            "cookies": 0.0000203,
             "fingerprinting": 2,
             "subdomains": [
                 "emmezetahr",
@@ -34,7 +35,7 @@
                 "Document.cookie getter": 1
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "02dbb35a3ecf1f0030d5fda4fec90e204f6711f8e6f9a1c2160722665a168436"
@@ -50,7 +51,7 @@
         },
         {
             "rule": "savecart\\.pl\\/d\\/runner\\.php",
-            "cookies": 0.0000217,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "emmezetahr",
@@ -58,11 +59,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "4aaaef8e0ca48c576e298d4ad7bba9ce2f1fc60bfffe441cbaa5101d6ef9c134",
-                "d444de745582bf34dfa770b625bfd1b751902fe141c65536dee54848ebb8e564"
+                "1257243800f8d97a6cad977119a9d9ee1757a3215da561b51ea088891a3a6714",
+                "68504f35439e68d8d7c17ff926cf79cdf5d7dd8db8af020753abc75dcf223ebc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -75,19 +76,21 @@
         },
         {
             "rule": "savecart\\.pl\\/d\\/savecart\\.php",
-            "cookies": 0.0000217,
+            "cookies": 0.0000271,
             "fingerprinting": 0,
             "subdomains": [
                 "emmezetahr",
-                "rodzicepl"
+                "rodzicepl",
+                "skalnikpl"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "db0264165b638be336f76eed48c898ab560b9b0f4ad775ba2c6a522bde9ef9e7",
-                "d97bf620f62814e6023eb98258cec0e8cf70317b895e4138ded7d9c4cfa721f1"
+                "550c50d6a6d4fd3bd24d068696f5f69eea9a2a77a2ec8a9ac8d5cb6ea86a6179",
+                "97b804d3ec6307b3a0e9dc08c5832853cd4adb33c77949b64527a90c0d33e198",
+                "509fa8c2bc621b29d9e6f0bdeb8d0e2fb3174b56de3ca5793c4273816abec6a5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -95,41 +98,45 @@
             "exampleSites": [
                 "emmezeta.hr",
                 "www.emmezeta.hr",
-                "www.rodzice.pl"
+                "www.rodzice.pl",
+                "www.skalnik.pl"
             ]
         },
         {
             "rule": "savecart\\.pl\\/d\\/prodName\\.php",
-            "cookies": 0.0000145,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
-                "emmezetahr"
+                "emmezetahr",
+                "skalnikpl"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "1ee9c03bee5c89a187537f73632a391c22d9e9e027f4f02488883eb164439bf7"
+                "1ee9c03bee5c89a187537f73632a391c22d9e9e027f4f02488883eb164439bf7",
+                "a7d6b8c2b35480ad77004ff464218051d814dcb63e72029c8cd9267e0af21e67"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "emmezeta.hr",
-                "www.emmezeta.hr"
+                "www.emmezeta.hr",
+                "www.skalnik.pl"
             ]
         },
         {
             "rule": "savecart\\.pl\\/d\\/web\\/push\\/manifest\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "rodzicepl"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "94d56995cd8c6cef19cb87919139981fdaf11ab2eb8625a763c5c3e6d1924b29"
@@ -141,11 +148,44 @@
                 "rodzice.pl",
                 "www.rodzice.pl"
             ]
+        },
+        {
+            "rule": "savecart\\.pl\\/d\\/script\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "skalnikpl"
+            ],
+            "apis": {
+                "Navigator.prototype.plugins": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "19066761cbb784f2a785755e8db9d1755e45ec88f9d2eb3ca7b7800ace445dc4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skalnik.pl",
+                "www.skalnik.pl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000289,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
@@ -153,12 +193,12 @@
         }
     ],
     "types": {
-        "Script": 3,
-        "XHR": 8,
+        "Script": 5,
+        "XHR": 10,
         "Manifest": 2
     },
     "nameservers": [
-        "konnor.ns.cloudflare.com",
-        "kelly.ns.cloudflare.com"
+        "kelly.ns.cloudflare.com",
+        "konnor.ns.cloudflare.com"
     ]
 }

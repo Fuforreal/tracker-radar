@@ -4,12 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000173,
-    "sites": 24,
+    "prevalence": 0.000183,
+    "sites": 27,
     "subdomains": [
         "spa",
         "cdnbspa",
-        "cdnbevi"
+        "conditional-redirect",
+        "cdnbevi",
+        "evi"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -25,7 +27,7 @@
                 "window.indexedDB": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a0634a3c80948c25b4c2dce266422178087d5e0877e377f9a0ce23e1431add0b"
@@ -47,7 +49,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a0634a3c80948c25b4c2dce266422178087d5e0877e377f9a0ce23e1431add0b"
@@ -61,6 +63,30 @@
             ]
         },
         {
+            "rule": "spicegems\\.com\\/js\\/scripttags\\/bape\\/static\\/country-redirect\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "conditional-redirect"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6e601bf14cb8de8fda38d40937a08f2902483491d56930bd379017ea9868e8f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bape.com",
+                "us.bape.com"
+            ]
+        },
+        {
             "rule": "spicegems\\.com\\/js\\/serve\\/100-pure\\.myshopify\\.com\\/v1\\/index_99602e25ae2e7e10924237471ecaa82a862e256a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -69,7 +95,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6fee19819c03dffa1b95df1a2e54fcb2e849e3c4999c038a7699d06d48164822"
@@ -83,7 +109,7 @@
             ]
         },
         {
-            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/sexyland-2\\.myshopify\\.com\\/index_736cbcf02c5bacfb6df25d2f28071b6fd9d957a4\\.js",
+            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/ayn-odin\\.myshopify\\.com\\/index_270cf0917d188432cb882d53ef033d7bb140cfd5\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -91,20 +117,67 @@
             ],
             "apis": {
                 "Navigator.prototype.cookieEnabled": 2,
-                "window.indexedDB": 2
+                "window.indexedDB": 2,
+                "Document.cookie getter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "45a15712a9540fcc542b95e2e7e81c9d45bc8bc8423ebeebb67d3038d8357bf6"
+                "4c2ae3b326a344df0614381b87301df952583e4dd3ea55511d73555ffaef3692"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sexyland.com.au",
-                "www.sexyland.com.au"
+                "ayntec.com",
+                "www.ayntec.com"
+            ]
+        },
+        {
+            "rule": "spicegems\\.com\\/js\\/serve\\/cmpmor\\.myshopify\\.com\\/v1\\/index_c36a5b1852982a4081cdc135bff4af52b0c01d48\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "evi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "45bfd7dfceb0f5fa7e49020ddc66d3fa79393519f40cfdf7fa10046033bbf4a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "campmor.com",
+                "www.campmor.com"
+            ]
+        },
+        {
+            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/indiemerchstore\\.myshopify\\.com\\/index_16572e5d093f7ada7594a9d8f22f776485602eec\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdnbspa"
+            ],
+            "apis": {
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8345231566b58e6247c1ae3ff0c837037b93b2e659073a0100836fb0c9062c47"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiemerchstore.com",
+                "www.indiemerchstore.com"
             ]
         }
     ],
@@ -118,13 +191,10 @@
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 14
     },
     "nameservers": [
-        "ns4.linode.com",
-        "ns5.linode.com",
-        "ns3.linode.com",
-        "ns2.linode.com",
-        "ns1.linode.com"
+        "ns1.linode.com",
+        "ns2.linode.com"
     ]
 }

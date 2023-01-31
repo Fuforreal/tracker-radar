@@ -7,13 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000116,
-    "sites": 16,
+    "prevalence": 0.000122,
+    "sites": 18,
     "subdomains": [
         "assetscdn",
+        "goconnect",
         "widget",
         "trackla",
-        "staging-assetscdn"
+        "staging-assetscdn",
+        "uploads-cdn",
+        "media-library",
+        "content-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -26,35 +30,209 @@
                 "assetscdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 12,
-                "Date.prototype.getTime": 8,
-                "Event.prototype.timeStamp": 12,
-                "console.memory": 7,
-                "Element.prototype.getClientRects": 5
+                "Navigator.prototype.userAgent": 14,
+                "Date.prototype.getTime": 11,
+                "Event.prototype.timeStamp": 14,
+                "console.memory": 11,
+                "Element.prototype.getClientRects": 2
             },
-            "sites": 13,
-            "prevalence": 0.0000939,
+            "sites": 14,
+            "prevalence": 0.0000949,
             "cnames": [],
             "responseHashes": [
-                "be55e0277ac1d286e8ad719ba707dac51e769ec3f0adf380677349e889437f80"
+                "0c3bbf4ec3359ae5603e318c2b12c27c8c046c58a6ae3a49009735e8c0224258"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
+                "nbcmontana.com",
                 "www.canon.com.au",
-                "www.chubbiesshorts.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gordonramsayrestaurants.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
-                "www.memphistravel.com",
                 "www.millerwelds.com",
-                "www.selina.com",
+                "www.milwaukeetool.com.au",
+                "www.thecure.com",
+                "www.thewho.com",
                 "www.visitdelaware.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/common\\/plugin_goconnect_embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assetscdn",
+                "goconnect"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 3,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "df454a7bd9674e9130fa83856bad6e873414c4ed1824c6baddd16b4133b37a46"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.gate1travel.com",
+                "www.trafalgar.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/components\\/stackla-uikit\\/dist\\/uikit-widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000814,
+            "cnames": [],
+            "responseHashes": [
+                "42541f96544965159a37715504d9ca67a4cbe06bea87641b3723ce09516fa78d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.fast-growing-trees.com",
+                "www.gate1travel.com",
+                "www.gsb.stanford.edu",
+                "www.jameshardie.com",
+                "www.jojomamanbebe.co.uk",
+                "www.kappahl.com",
+                "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
+                "www.trafalgar.com",
+                "www.visitdelaware.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/widget\\/show",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "goconnect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "2357365195e806253695a19d147b5ed89d2921cfa660ff19a952f204553599ef",
+                "74ba23688b3aec91e0f16f6e3fda1afddc48987fb2792336604c4f1c71d95f14"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.gate1travel.com",
+                "www.trafalgar.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/widget\\/show\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000746,
+            "cnames": [],
+            "responseHashes": [
+                "809107c62634d7f5f2e4ecee6330f37f75af754233a2d4b11caa23dba39fb063",
+                "c1891ca1b24a53a358a9965aa44ac890466bca18c841893114892430deb585a9",
+                "82f05ebe867914172a72bb420ce07251acf5c11e726a7019a6ef23d7ca32af51",
+                "22e2cf141770b5deafdb33090d747e0b56136b1d3e4e90b30e7917bca30c17a7",
+                "922d35fd2804c962fef6ff5f57145c98c4ce70e8872bebc2ca7955693c1cefe9",
+                "b453ffae8d5be9e740c47cbf04b44636efe0db48f9762dacbaa26acc4ef115f4",
+                "6948d3dd3e8cc76c739e4eac7d8cb65a4696f73909e1b2f7f0c8f9d17e7a966f",
+                "7686ab14e1ee1ca0b68ac9f9a3382d2fe98b147beaf5a20eb7fc57db82086cb4"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.fast-growing-trees.com",
+                "www.gate1travel.com",
+                "www.gsb.stanford.edu",
+                "www.jameshardie.com",
+                "www.jojomamanbebe.co.uk",
+                "www.kappahl.com",
+                "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
+                "www.visitdelaware.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/css\\/plugins\\/widget\\/go_connect\\/goconnect\\.combine\\.5b26e427\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "a9d756e9989ca7ec8c139ca1c33c2b52e369fe1ee8c04bc433883f753f9dd504"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.gate1travel.com",
+                "www.trafalgar.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/plugins\\/widget\\/go_connect\\/goconnect\\.combine\\.8520e980\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
+                "Element.prototype.getClientRects": 3,
+                "Navigator.prototype.vendor": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "cb6b15248615ba35bb48fd440c0ffb2104e7d06ce425300e7bfdf1ab6d95084e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.gate1travel.com",
+                "www.trafalgar.com"
             ]
         },
         {
@@ -65,8 +243,8 @@
                 "assetscdn"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
                 "66d48f0400822868e02a89080d8def660823b517292f6def8324790c38ced389"
@@ -75,14 +253,16 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
@@ -94,8 +274,8 @@
                 "assetscdn"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
                 "9bb4335abf91008a3cf72dc2f31e2bb2254592edef3b5af5a06b4a27c2cf9e03"
@@ -104,218 +284,157 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/media\\/js\\/https\\/https-rules\\.1674105929\\.min\\.gz\\.js",
+            "rule": "stackla\\.com\\/media\\/js\\/https\\/https-rules\\.1674634114\\.min\\.gz\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assetscdn"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
-                "4e6b4ea07627457226e1814fe39722bc58b2ac86fa86e7cdf98873ef7287d959"
+                "147b3b75357efac96cf98856fc8db6a8e5e51e3e9788fd6fed54e0ae90988973"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base-common\\.combine\\.5385dcad\\.js",
-            "cookies": 0,
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base-common\\.combine\\.e9988bfa\\.js",
+            "cookies": 0.00000678,
             "fingerprinting": 1,
             "subdomains": [
                 "assetscdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Date.prototype.getTime": 8,
+                "Navigator.prototype.userAgent": 11,
+                "Date.prototype.getTime": 11,
                 "Navigator.prototype.appVersion": 6,
+                "Document.cookie getter": 5,
                 "Element.prototype.getClientRects": 3,
-                "Document.cookie getter": 2
+                "Document.cookie setter": 1
             },
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
-                "adb0950d838b5821615d8532cc0b861ef4c956f3fffbc4bf0cfdae53ab9e396e"
+                "410c996a47a4bbc580f9042c2438f2b604d8a27ba9cc4fb994e2ac777c463954"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "csHistory": {
+                    "ttl": 604804,
+                    "length": 27,
+                    "prevalence": 0.000006781500067815,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/media\\/js\\/dist\\/trackla\\.combine\\.19f0f7e5\\.js",
+            "rule": "stackla\\.com\\/media\\/js\\/dist\\/trackla\\.combine\\.df5cffdb\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assetscdn"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
-                "87e0af0ff416879348e4feb080e833da0bb9c9b67fbb7859c3b27f517276b726"
+                "5ae64f5b4e44a060d54b095b99bc7100bed33c28e8d7bb80307b2c0dde7b0954"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_grid\\.combine\\.dc3d930b\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assetscdn"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000506,
-            "cnames": [],
-            "responseHashes": [
-                "708d255f491aa4e483bcdf90c1fe5bc8a0bcf831901f6fda4fdf30b2ba179383"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
-                "www.fast-growing-trees.com",
-                "www.jameshardie.com",
-                "www.jojomamanbebe.co.uk",
-                "www.kappahl.com",
-                "www.visitdelaware.com"
-            ]
-        },
-        {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_grid\\/base_grid_old\\.combine\\.76527644\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assetscdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "64bc271627aeadfd86f1dd2766964a2319e243d8655d96f94d0261377a6bb1b1"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "borderlands.com",
-                "www.jameshardie.com",
-                "www.visitdelaware.com"
-            ]
-        },
-        {
-            "rule": "stackla\\.com\\/media\\/js\\/dist\\/base_grid\\.combine\\.7bfe9a6e\\.js",
+            "rule": "stackla\\.com\\/media\\/js\\/dist\\/impressions\\.combine\\.5ce59ed0\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "assetscdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6
+                "Navigator.prototype.userAgent": 11,
+                "Navigator.prototype.doNotTrack": 3
             },
-            "sites": 7,
-            "prevalence": 0.0000506,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
-                "87311b1b16ac44ce03fa99afb00c9b705875b5841d9df6bab95e943ca8b65480"
+                "9a503e09e93fecdfb9523c4a953d4d1ef84ea9a1f5e9749fe30925ff719c3412"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
-                "www.jameshardie.com",
-                "www.jojomamanbebe.co.uk",
-                "www.kappahl.com",
-                "www.visitdelaware.com"
-            ]
-        },
-        {
-            "rule": "stackla\\.com\\/media\\/js\\/dist\\/impressions\\.combine\\.4da07251\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "assetscdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 8,
-                "Navigator.prototype.doNotTrack": 2
-            },
-            "sites": 9,
-            "prevalence": 0.000065,
-            "cnames": [],
-            "responseHashes": [
-                "fe8cefdbee36975c1884e10cd7f645a915fc72a47f6539668b2366b3673f0c39"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
-                "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
@@ -327,27 +446,29 @@
                 "widget"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-                "523183a8d340261af8a9c3de370ecca1af350faa6860d0294326bf42493ee234"
+                "7d9c1721af681b83b5b2304ffd37770885f0ad621be796962c079d5450e86e30"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "smartrfi_external_id": 0.0000072254335260115605
+                "smartrfi_external_id": 0.000006781500067815
             },
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
@@ -359,59 +480,35 @@
                 "widget"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
-                "dad9002c136bb26dd9cdd3d66d6a9ae9b35a2438ed3e64c51aaf1332eafa2bcd",
-                "d6bc9e44718229f0d45fac722c17304f14fefc1e4160c6d41c1e72abfa1fa6fc",
-                "89b182dde877a8907e2f802b5f932b769fc069f0b2223552a80f500637457818",
-                "a88e29ff35ddf5d217205782e00db7e24f489ddceed6a8c83a846a391026e275",
-                "70dce95952a3f2b736eebbf0da44ab080a3a4e8a808e51b80ca3c0e9c0a2aaaf",
-                "a4e4fdef86f5b31bb6c6af899e69d7312fcdff5e705fae86e9a08587d5cc0344",
-                "68ed3aa4eaaa9a86177e38247666237c5a5e2dc7dbd1bbcc40d31b710303aef5"
+                "d447158713fdc1fb88ac12ffb84856bdfee0e65d5ff36c34a58ed3f058824aa0",
+                "61d7bcec90ea7cf95699dc5b5fccafdc9d35161262376c362db9950cf392c504",
+                "1a14517f532c7c2d36d5f7c68a2707722f6a8dd19cd2d4b93f34aa8f8f0568a2",
+                "bd4fb32b5ce68ea933a29aa64277849f864fe682d213a09cf6db63e6371df376",
+                "adb822bc41799ab4287603d38709540b530dadecd01658a806285e5bb2822da1",
+                "bf223d1c887c3862be704736961ddb8cc1064011d40b3c11403dd63d6970d9d4",
+                "14e41a41e77fdd35415afeef945b5f29788826bd1e35e408c14e1452da979990",
+                "125d3e082d3a81a122dccf5fa276047c1ec6829f9971f2a4aa539d57d781bbd1",
+                "90dc240a980dac1fdaa09e0956269faee7667d6c1453ee588154bb89aa8396d5",
+                "586c98a89e622f9f4760af8dea7a6009f5851ecdc86c7e27d7708f4521f87b29"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
-                "www.chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
-                "www.visitdelaware.com"
-            ]
-        },
-        {
-            "rule": "stackla\\.com\\/media\\/components\\/stackla-uikit\\/dist\\/uikit-widget\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assetscdn"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
-            "cnames": [],
-            "responseHashes": [
-                "42541f96544965159a37715504d9ca67a4cbe06bea87641b3723ce09516fa78d"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "borderlands.com",
-                "www.fast-growing-trees.com",
-                "www.gsb.stanford.edu",
-                "www.jameshardie.com",
-                "www.jojomamanbebe.co.uk",
-                "www.kappahl.com",
-                "www.millerwelds.com",
-                "www.trafalgar.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
@@ -423,8 +520,8 @@
                 "trackla"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000578,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -433,13 +530,16 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
@@ -451,54 +551,147 @@
                 "trackla"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000578,
+            "sites": 11,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "borderlands.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
+                "www.gate1travel.com",
                 "www.gsb.stanford.edu",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
                 "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com",
                 "www.visitdelaware.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/widget\\/show\\/",
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.909\\.8e199bfc1c008c8fd517\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "widget"
+                "staging-assetscdn"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000578,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "f49197ba2cd0ac12c448b8093d86cf6046b411c6924934e14449ef8a6eba109b",
-                "6f0f93022d3f55378c6e0292a3bc43ecb18e1b788ed115aa795041a943373a31",
-                "958bbc718d626797e648d11d1e758208176fcc8200d352de05a0e8b3f3376f81",
-                "4f754ebd7dbec7c3d0a9228e2657606802ddc9de1a0a5253b1684834911a40a9",
-                "f26b307c1b9d0916da83f570758bea1f094dd252e774a800421e2710521ded35",
-                "fb2aee72df0dfead76c6b813fd1b4d12a7a212180e1683169abb6324e507b119"
+                "b4bf43437e3eee49aee31ec2523a965493dea933462af47b9bd9c667171cbd6a"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chubbiesshorts.com",
+                "nbcmontana.com",
                 "www.fast-growing-trees.com",
-                "www.gsb.stanford.edu",
+                "www.jojomamanbebe.co.uk"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.68\\.ff23b03c5d3a43c7f774\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "staging-assetscdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "7c91b1fc8b2770604b4033359e19c60dc988643a629137606ade812bcc05a586"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.fast-growing-trees.com",
+                "www.jojomamanbebe.co.uk"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.709\\.f52f71770019dd505c10\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "staging-assetscdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "2e575a6f6ed6c36e77c8d895f4fa9f43c993e97f192b97b227700357eb10cd49"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.fast-growing-trees.com",
+                "www.jojomamanbebe.co.uk"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.expanded-tile\\.6b7d1a4745311ea1a928\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "staging-assetscdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "6e5c06addae3b5d069ee0ae6c08837b954f3173d2c4b2453a21c3fa98be15d89"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcmontana.com",
+                "www.fast-growing-trees.com",
+                "www.jojomamanbebe.co.uk"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_grid\\.combine\\.75d9866f\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "98712a2f54454ba71a00b3279e11bb9515c0c509000bb16480bcc7e0c12efa85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fast-growing-trees.com",
                 "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
-                "www.millerwelds.com",
                 "www.visitdelaware.com"
             ]
         },
@@ -510,8 +703,8 @@
                 "assetscdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "4819950ce6afede94f844e0f202612992d55b5866d38dd60ce8797e2e377157f"
@@ -520,160 +713,132 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chubbiesshorts.com",
-                "www.fast-growing-trees.com",
+                "fast-growing-trees.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.909\\.8e199bfc1c008c8fd517\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "staging-assetscdn"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
-            "cnames": [],
-            "responseHashes": [
-                "b4bf43437e3eee49aee31ec2523a965493dea933462af47b9bd9c667171cbd6a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fast-growing-trees.com",
-                "www.gsb.stanford.edu",
-                "www.jojomamanbebe.co.uk",
-                "www.kappahl.com",
-                "www.millerwelds.com"
-            ]
-        },
-        {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.68\\.ff23b03c5d3a43c7f774\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "staging-assetscdn"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
-            "cnames": [],
-            "responseHashes": [
-                "7c91b1fc8b2770604b4033359e19c60dc988643a629137606ade812bcc05a586"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fast-growing-trees.com",
-                "www.gsb.stanford.edu",
-                "www.jojomamanbebe.co.uk",
-                "www.kappahl.com",
-                "www.millerwelds.com"
-            ]
-        },
-        {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.709\\.f52f71770019dd505c10\\.js",
+            "rule": "stackla\\.com\\/media\\/js\\/dist\\/base_grid\\.combine\\.eb42eede\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "staging-assetscdn"
+                "assetscdn"
             ],
             "apis": {
-                "Navigator.prototype.appVersion": 5,
                 "Navigator.prototype.userAgent": 5
             },
             "sites": 5,
-            "prevalence": 0.0000361,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "2e575a6f6ed6c36e77c8d895f4fa9f43c993e97f192b97b227700357eb10cd49"
+                "280e26f88c94da81548ec9afa75d37543b69dc2434a90252d681ab1f0bdb63f9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fast-growing-trees.com",
-                "www.gsb.stanford.edu",
+                "www.jameshardie.com",
                 "www.jojomamanbebe.co.uk",
                 "www.kappahl.com",
-                "www.millerwelds.com"
+                "www.visitdelaware.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/chunk\\.expanded-tile\\.6b7d1a4745311ea1a928\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "staging-assetscdn"
-            ],
-            "apis": {
-                "Navigator.prototype.appVersion": 5,
-                "Navigator.prototype.userAgent": 5
-            },
-            "sites": 5,
-            "prevalence": 0.0000361,
-            "cnames": [],
-            "responseHashes": [
-                "6e5c06addae3b5d069ee0ae6c08837b954f3173d2c4b2453a21c3fa98be15d89"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fast-growing-trees.com",
-                "www.gsb.stanford.edu",
-                "www.jojomamanbebe.co.uk",
-                "www.kappahl.com",
-                "www.millerwelds.com"
-            ]
-        },
-        {
-            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_carousel\\/base_carousel\\.combine\\.b8ec590c\\.js",
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_carousel\\/base_carousel_old\\.combine\\.fcdcfd91\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assetscdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "5597c725dbd4c882f4084d74a2f979d304b0ad68f5aabdde97d25d3807308df8"
+                "474614ee9fcf8f504744c74a39dd24a42c35beda26b6e4b6c84e22022aaf1fce"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stanford.edu",
-                "www.millerwelds.com"
+                "gate1travel.com",
+                "www.gsb.stanford.edu",
+                "www.thewho.com"
             ]
         },
         {
-            "rule": "stackla\\.com\\/media\\/js\\/dist\\/base_carousel\\.combine\\.67d37198\\.js",
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_carousel\\/base_carousel\\.combine\\.d161dcf7\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assetscdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "24a49bf6e3138bab72ef51aff8efb2785f3ac8a00e7f376d59e9573ef0dc7dcd"
+                "4f1aa63b7427700ffe461b7f18a42f53a070a10e8cd2e1ae6b1ce8f7f5bae893"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stanford.edu",
-                "www.millerwelds.com"
+                "gate1travel.com",
+                "www.gsb.stanford.edu",
+                "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/dist\\/base_carousel\\.combine\\.3b3ced22\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "d5fc911b6c03e145fe8231f5d77da1cc61e7bfe95f8514966280a0f9ff06ba20"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gate1travel.com",
+                "www.gsb.stanford.edu",
+                "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/images\\/widget\\/loading\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "66861515b357b250bd544ee3b194464d9af14d0fc695d11b38069ccb4d0a199d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gate1travel.com",
+                "www.gsb.stanford.edu",
+                "www.thewho.com"
             ]
         },
         {
@@ -684,8 +849,33 @@
                 "assetscdn"
             ],
             "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gate1travel.com",
+                "www.gsb.stanford.edu",
+                "www.millerwelds.com",
+                "www.milwaukeetool.com.au",
+                "www.thewho.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/images\\/avatar-mask\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -695,39 +885,500 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "stanford.edu",
-                "www.millerwelds.com"
+                "www.thewho.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_grid\\/base_grid_old\\.combine\\.76527644\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "64bc271627aeadfd86f1dd2766964a2319e243d8655d96f94d0261377a6bb1b1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jameshardie.com",
+                "www.visitdelaware.com"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/svg\\/reel\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a0df59f069cf795fc0e22b06ddd9066f88b0775014637021753bf2349731aa66"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jojomamanbebe.co.uk",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/cs\\/image",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dcda99494f3b25d95bc84b28a212d645ec667de6b26dd58e1adbf99014ddec15"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jojomamanbebe.co.uk",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/js\\/widget\\/base_carousel\\/base_carousel\\.combine\\.4967d129\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "abf51d58ad19cbdf5c49a14477203bf6c2bee61cefc576d6b675051c4b146afb"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "millerwelds.com",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/images\\/widget\\/ajax-loader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "13423c487b50f8efacbc2b7f7e23caecf4dbd732be5dfcbed434545cc2cf153b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "millerwelds.com",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2022-10-04\\/93e8f78efcbf4a41d16c1a48d663959b\\/original\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uploads-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a1917d6191ea9a2981fb96d6bd4705c2e3d772f733b4bad9d3ab56f5baabdf4"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63cd037a508ecd1b1278ebdc_084e2da0-9ab6-11ed-85c1-b736c3cc5aff\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6e46679009c26cfa00072e0a4f9313130e063ef8792d1a8d82cdc823627f5bb0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63cd037a5898c61b28932ef6_08854330-9ab6-11ed-85c1-b736c3cc5aff\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "776c8193780e64ec38948c140cfdf5b5136f7d84d7fcfa710d944627e7783962"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/3729\\/63cbb4d3335c5f0f5ca88cd3\\/image",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/media\\/images\\/video-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assetscdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e8680b3983a4070b4d05f733b3e009347ac82b9963101ca3b589084cd0cc5c45"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63c7ad799892ff671d7b4f2d_6e0b0f20-9780-11ed-b911-cf3723e2b879\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "00a4bf57f44723277b2ac32a4b6fe88896ce5823a401da76aba0b63479d67a40"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63c6686ae0a32562ee27e51d_dcfcfea0-96dd-11ed-a1f1-137e877f2300\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2d4b195e5786c779d6cf12f43b76690c54d3a50a549bd6f25f42751188c74d53"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63c3c9b74c6d9451f2ccb9a7_2af1d310-9535-11ed-88f7-3f803c5b366f\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "79a76cbf697b7775d078c11900a1d435c6bca4b2fef2455ab3350b2bed15bf4b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63c33e5ebdb67d1915c3bddc_eba86380-9535-11ed-88f7-3f803c5b366f\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9f44526a7abfb1e147aef19800016746e4b753e6efc2d10094b656e3b695ee9a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63c098e873454004c82caa53_148e9000-92fa-11ed-bd5b-13e7bf9e312b\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7eeaff6c3851a8aae4e8b0d8b0bb4a6ed5b6a87057587c7532ccb29f44a546f5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63bdfc30a6d6c7729ef5828f_f1cc5480-9173-11ed-a9c8-7be7ccc3744c\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "93bae8af586a08f38a59bf65b4794cec00ddf0bc779614a4e4577d75f74e50a1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63bd1f04ef5d1d179fdfabbc_3d676fa0-917a-11ed-a9c8-7be7ccc3744c\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "379e48f45d778b62f3bc641d4b794f57eb202b9240002d2f2e4497ee5a79ef05"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63bbef6ba80e4d1bd8a318fc_2edd1430-9099-11ed-b542-ab31a8bd914c\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b93950ec783f2dc882ffbd5c731b101f2772bf8685e1c94465aa9469bc9eee72"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63bb63075a796561626b6a01_ce876000-8fe3-11ed-a972-a1692c7149aa\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2cae073cc64b1cc54780a869b7cec3786b3b1e1cc7d56147562a746dbf8940c1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63b7a8c0c92a4c5a98c68c8f_0e4a6c60-8fe3-11ed-8a2d-377570aa9d96\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c23b098e27ad0f71e8b98145a0beeb4c3e779de9b2af3fe23d6471feca0e0147"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
+            ]
+        },
+        {
+            "rule": "stackla\\.com\\/10\\/milwaukeetoolsanz\\/2023-01\\/63b62b515cf9cd3f7c0aee3b_e7385c40-8fb0-11ed-a613-b59bb4e94378\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-library"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e49eeb51a9c302e95f5788203ccf1d41117799fc65338bd73a2903d7d8502ef2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milwaukeetool.com.au",
+                "www.milwaukeetool.com.au"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.952
+            "prevalence": 0.9454545454545454
+        },
+        {
+            "domain": "adlightning.com",
+            "prevalence": 0.03636363636363636
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.032
-        },
-        {
-            "domain": "transcend.io",
-            "prevalence": 0.016
+            "prevalence": 0.01818181818181818
         }
     ],
     "types": {
-        "Script": 96,
-        "Stylesheet": 25,
-        "XHR": 26,
-        "Preflight": 8,
-        "Document": 8,
-        "Image": 2
+        "Script": 107,
+        "Stylesheet": 36,
+        "Document": 14,
+        "XHR": 35,
+        "Preflight": 11,
+        "Image": 44,
+        "Font": 2
     },
     "nameservers": [
-        "ns-239.awsdns-29.com",
+        "ns-2019.awsdns-60.co.uk",
         "ns-633.awsdns-15.net",
         "ns-1333.awsdns-38.org",
-        "ns-2019.awsdns-60.co.uk"
+        "ns-239.awsdns-29.com"
     ]
 }

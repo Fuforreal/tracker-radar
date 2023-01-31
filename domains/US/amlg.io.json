@@ -4,15 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000475,
+    "sites": 7,
     "subdomains": [
+        "admiral",
         "splice",
         "media"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "amlg\\.io\\/api\\/v1\\/content_suitability_id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "admiral"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "565db93b3eaba9d5fce05508c41f7e1a96d39ce28b108fd6711d252af32ddb2d",
+                "c2830f7fbebbe35a7f096c59e4c0a1836a6112a1b76a216039f3bd00741d1b84"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbsnews.com",
+                "www.cbssports.com"
+            ]
+        },
         {
             "rule": "amlg\\.io\\/api\\/v2\\/video\\/Lc_fE_poLNWRLzcUlCHZx3bOylj0eVOO\\/preview\\/high69\\.mp4",
             "cookies": 0,
@@ -22,27 +47,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbs.com",
-                "www.cbs.com"
-            ]
-        },
-        {
-            "rule": "amlg\\.io\\/api\\/v2\\/video\\/bCEL5LKZd05QP1edPhs9tmaCXMx5O7of\\/preview\\/high69\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "splice"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -62,27 +67,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbs.com",
-                "www.cbs.com"
-            ]
-        },
-        {
-            "rule": "amlg\\.io\\/assets\\/splice_preview\\/2023\\/01\\/18\\/2151537219822\\/PPCBS_TOUGHASNAILS_404_1887062_1887062_3133\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -100,16 +85,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9142857142857143
+        },
+        {
+            "domain": "rum.us-east-1.amazonaws.com",
+            "prevalence": 0.05714285714285714
+        },
+        {
+            "domain": "cbsi.com",
+            "prevalence": 0.02857142857142857
         }
     ],
     "types": {
-        "Media": 8
+        "Fetch": 3,
+        "Media": 4
     },
     "nameservers": [
-        "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a3.googledomains.com",
         "ns-cloud-a1.googledomains.com",
-        "ns-cloud-a4.googledomains.com"
+        "ns-cloud-a3.googledomains.com",
+        "ns-cloud-a4.googledomains.com",
+        "ns-cloud-a2.googledomains.com"
     ]
 }

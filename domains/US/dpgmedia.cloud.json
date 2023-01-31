@@ -4,12 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000289,
-    "sites": 40,
+    "prevalence": 0.000292,
+    "sites": 43,
     "subdomains": [
         "advertising-cdn",
-        "amv-sst.data",
-        "advertising-module.api"
+        "advertising-module.api",
+        "amv-sst.data"
     ],
     "cnames": [
         {
@@ -30,13 +30,15 @@
         {
             "rule": "dpgmedia\\.cloud\\/web-advertising\\/11\\/8\\/1\\/advert-xandr\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "advertising-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e79f614e1b38aafccac680cf10df698fb867cfbed1e299b24b2356f0840173fc"
@@ -52,13 +54,21 @@
         {
             "rule": "dpgmedia\\.cloud\\/web-advertising\\/prebid\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "advertising-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d851dba0fe0decf8085d230fc0582327fbb1740fa4e936782c0b35270bf525f3"
@@ -80,7 +90,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e928560cf42a63679de0053e81978e54f844fa992de42eb2136af0cd93cab6fe"
@@ -101,13 +111,13 @@
                 "advertising-cdn"
             ],
             "apis": {
-                "window.localStorage": 11,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 11
+                "window.localStorage": 17,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.userAgent": 19
             },
-            "sites": 11,
-            "prevalence": 0.0000795,
+            "sites": 23,
+            "prevalence": 0.000156,
             "cnames": [],
             "responseHashes": [
                 "f86eaf714615dbb357aa0f7119e3d7345abb505d66caa0c0cdb813f26b7ecf42"
@@ -116,17 +126,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "viva.nl",
+                "www.skyradio.nl",
                 "www.autotrack.nl",
-                "www.autowereld.nl",
-                "www.gids.tv",
-                "www.hartvannederland.nl",
-                "www.huislijn.nl",
-                "www.kijk.nl",
+                "www.oudersvannu.nl",
+                "www.radio10.nl",
                 "www.schoolbank.nl",
+                "www.televizier.nl",
+                "www.24kitchen.nl",
+                "www.nu.nl",
+                "www.gids.tv",
                 "www.top40.nl",
+                "www.linda.nl",
+                "indebuurt.nl",
                 "www.vtwonen.nl",
-                "www.weer.nl"
+                "www.hartvannederland.nl",
+                "www.scholieren.com",
+                "viva.nl",
+                "www.autowereld.nl",
+                "www.weer.nl",
+                "www.startpagina.nl",
+                "www.gaspedaal.nl"
             ]
         },
         {
@@ -137,16 +156,16 @@
                 "advertising-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 13,
-                "Navigator.prototype.cookieEnabled": 13,
-                "window.sessionStorage": 13,
-                "Navigator.prototype.appName": 13,
-                "Date.prototype.getTime": 13,
-                "window.localStorage": 13,
-                "Document.cookie getter": 13
+                "Navigator.prototype.userAgent": 17,
+                "Navigator.prototype.cookieEnabled": 17,
+                "window.sessionStorage": 15,
+                "Navigator.prototype.appName": 17,
+                "Date.prototype.getTime": 18,
+                "window.localStorage": 15,
+                "Document.cookie getter": 15
             },
-            "sites": 18,
-            "prevalence": 0.00013,
+            "sites": 19,
+            "prevalence": 0.000129,
             "cnames": [],
             "responseHashes": [
                 "a0c7dc7fcca4e0a21721ddc47a72aa618e472d40c05aecde5d363d8831c3cf97"
@@ -156,6 +175,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "viva.nl",
+                "forum.viva.nl",
                 "indebuurt.nl",
                 "www.24kitchen.nl",
                 "www.autotrack.nl",
@@ -163,16 +183,38 @@
                 "www.gaspedaal.nl",
                 "www.gids.tv",
                 "www.hartvannederland.nl",
-                "www.huislijn.nl",
                 "www.linda.nl",
                 "www.nu.nl",
                 "www.oudersvannu.nl",
                 "www.scholieren.com",
                 "www.startpagina.nl",
+                "www.televizier.nl",
                 "www.top40.nl",
                 "www.tvgids.nl",
                 "www.vtwonen.nl",
                 "www.weer.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/viva\\/7b7e687034df9cf610f30bab895fa0d09d078f69\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "62bc2916e69452525b2462ddd001caeabd35e299648d8279a5508c4e608cbccf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "viva.nl",
+                "forum.viva.nl"
             ]
         },
         {
@@ -183,58 +225,25 @@
                 "advertising-cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "92ebdd68dffdac01fad96136cf494168ff256e54893a8c5470f827b1bf542ced"
+                "a83f7e944af81a61ec447fc6ce275bb1d3954ca8b006655898b398d011bd993a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "indebuurt.nl",
+                "www.autotrack.nl",
                 "www.nu.nl",
                 "www.oudersvannu.nl",
                 "www.vtwonen.nl"
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/web-advertising\\/13\\/35\\/1\\/advert-xandr\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "advertising-cdn"
-            ],
-            "apis": {
-                "window.localStorage": 6,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.userAgent": 6
-            },
-            "sites": 9,
-            "prevalence": 0.000065,
-            "cnames": [],
-            "responseHashes": [
-                "dc3224fc54224974921104c98da7936b1439a8cd4c201ef7ed476291f1f5e857"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "24kitchen.nl",
-                "www.24kitchen.nl",
-                "www.gaspedaal.nl",
-                "www.linda.nl",
-                "www.nu.nl",
-                "www.oudersvannu.nl",
-                "www.scholieren.com",
-                "www.startpagina.nl",
-                "www.tvgids.nl"
-            ]
-        },
-        {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/24kitchen\\/68f738fc02fe7935089628b2fab5ff88991961ea\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/24kitchen\\/2177920682ae556c709aad869adc9800803739a0\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -242,10 +251,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "afaa339d7435d4e8108c876701eff6b3138ac1d057f4472d8fad6f920fb0bf22"
+                "73b6bcad8ce5600876102dc3c5410e767cb1068f04b50f180f1027e03ec203d8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -256,15 +265,101 @@
             ]
         },
         {
+            "rule": "dpgmedia\\.cloud\\/web\\/autotrack",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "602836c45ff4312caea626bf4d6c9fbfc34a7a93f6f1b4ae02a4f6531c8b7ce8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autotrack.nl",
+                "www.autotrack.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/autotrack",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autotrack.nl",
+                "www.autotrack.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/autotrack\\/04f7f7213109f291fa741f4f0c2e9ebd5ccc872e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9454d3baa644348c1b830f88d2694604fff0e267b830c5434264c8cb72943100"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autotrack.nl",
+                "www.autotrack.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/native-templates\\/prod\\/autotrack\\/templates\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1097d584ccb57ce1677bde37b5291cffa46962572ab56286e038c9303b285680"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autotrack.nl",
+                "www.autotrack.nl"
+            ]
+        },
+        {
             "rule": "dpgmedia\\.cloud\\/i",
-            "cookies": 0.0000289,
+            "cookies": 0.0000271,
             "fingerprinting": 0,
             "subdomains": [
                 "amv-sst.data"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [
                 {
                     "original": "t.autotrack.nl",
@@ -285,77 +380,13 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00004335260115606936
+                "_ga": 0.00002712600027126
             },
             "exampleSites": [
                 "autotrack.nl",
                 "www.autotrack.nl",
                 "www.autowereld.nl",
                 "www.gaspedaal.nl"
-            ]
-        },
-        {
-            "rule": "dpgmedia\\.cloud\\/web\\/autotrack",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "advertising-module.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "6520302d9128cb675796a35abbdb61bbf182be7f9cdd55b3b685f4a8fb4f6158"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autotrack.nl",
-                "www.autotrack.nl"
-            ]
-        },
-        {
-            "rule": "dpgmedia\\.cloud\\/web\\/autotrack",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "advertising-module.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autotrack.nl",
-                "www.autotrack.nl"
-            ]
-        },
-        {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/autotrack\\/04f7f7213109f291fa741f4f0c2e9ebd5ccc872e\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "advertising-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "9454d3baa644348c1b830f88d2694604fff0e267b830c5434264c8cb72943100"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autotrack.nl",
-                "www.autotrack.nl"
             ]
         },
         {
@@ -367,7 +398,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2b52032eb4b72288129150ea6aff0bf12f8872e4d17c537fb57fa0dee61cfc74"
@@ -389,10 +420,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8b48cc30cea7a2db2082adfae8eef7e3eb76ee6aebf96cbabfb89a24e4bac5af"
+                "a7958cc4f53b8fe7d11e784207d9afaa8461a127fd7abfeb5a11686631467eb9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -411,7 +442,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -431,7 +462,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2b30a3314863a17b70c72084ca6804ae6776e0b5a28971ead38bdb201e8ea591"
@@ -445,7 +476,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/gids\\/bfc3930e2396668b7c571a44f1c418b6479e4faf\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/gids\\/1883b6684f3dc6a1ebcfd2789dcab41ffd708396\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -453,10 +484,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9a5ad8f243725b10c8f00628b16a1bf8bcd84ef21a9076ea6b964bbb51b63ff7"
+                "a770ae53c5374cf8ed030e15312e9068a0c35e154cde7b149ec784a0b520e543"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -475,7 +506,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -495,10 +526,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "995be1f5014178d95a6f723687a940d7fe9717711b2338a825e9d3e9722bf5ac"
+                "f30914c5ba2ce881f44d0d285d97709fc7c1f058243f3b9beb36f620026afcc3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -509,7 +540,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/hartvannederland\\/f2b45b521fc29752c01915e622fa7b3c37a2f534\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/hartvannederland\\/9a1265e42fb8a7591974125702a716e0a42787eb\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -517,10 +548,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c917bdba2f158987a384469ffb58e6937f1a71cd099f1a49c7c009188f782fad"
+                "03bc5171648312b99115941750f9f9c9a0b3294ea7beb9134dad52f6cd646a52"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -528,28 +559,6 @@
             "exampleSites": [
                 "hartvannederland.nl",
                 "www.hartvannederland.nl"
-            ]
-        },
-        {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/huislijn\\/5ee18f2dc1003e8fb0262ed816c2b17783c33eff\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "advertising-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "336d787ed2ce23cf3e75808934cc041e6f88bb4c6ab9d115a4f8489fbbfe3cc3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "huislijn.nl",
-                "www.huislijn.nl"
             ]
         },
         {
@@ -561,10 +570,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "b52b207527c14bb4d4251dc1527beae2f45aa9089c60b9f9139299466826083b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -581,12 +592,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "ace4ccb70425742a028555624599e6076359dce4d005cfb12a5f68b622278bbb"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -603,7 +612,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -623,10 +632,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0c242b51c42154ac7a62526166b1af084d148284a17f344b50369895ac3422e4"
+                "617d95ab5da070bbf02eab50957d10f4ae20ab58cb2a3a21a5d2b30688d7bae2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -637,7 +646,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/linda\\/f575da274fe762c76e0887cbb451c9f23323a3ac\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/linda\\/8fb08b49231c68b6572dbc84dc65ddee6775e32b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -645,10 +654,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "094c545f8528a2aaeeca8e87d0da7dcd65e9c9166d1397fe1366478374e7a966"
+                "8bb473f64f84b4a7d4e650f0093437d8d1f4b61ecf37408b51d16d8ca3ae7cc0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -667,10 +676,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "be09f04e097b6003c5680adc9d216b665826894eeb6d15eab7e09eaba9ec3830"
+                "d836eba695c84c89b780243fe225b4f00b0377e2579a98cb4e53ea213e58bf57"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -689,7 +698,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b63fb7b427f909596388d02845e93e6806cc90ce37f13bec78f7cda19b4c1aa6"
@@ -711,10 +720,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c70b43abba52f317aa1cd7ed488cd2fe792e817233dee55df6f687f6a61b1f9a"
+                "b1d136a518712bf7d991688aa5e5fd7e6cf6fbdcdde781becd2f10ea3bb63e76"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -733,7 +742,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "531f68e3a4e829c1baf3280cafc2b101c93a52177b07d0b98b9ab94462df0dcd"
@@ -755,10 +764,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "140f2f94c63fd238c60ea8a63a2ae9751ab3ce8860dfde871bbd33cf07007dd6"
+                "b25889907893ae29e6fc48527c83e1110ccf791f861a2607fcc80a070a5b809b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -777,7 +786,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -789,6 +798,28 @@
             ]
         },
         {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/televizier\\/27991e6c59ae6d00de59104d04af41d2e81b6442\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "df43f87cc997fcb8b3b7e9ad3c61b1b5b32f652d1a88cb7e4982dca1214d5f18"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "televizier.nl",
+                "www.televizier.nl"
+            ]
+        },
+        {
             "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/top40\\/a937b0475cd23b4c62003b5bbc7ac32230b42e7b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -797,7 +828,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e48c9f88c30ef183e20564d2e2c04f9a51b447b246f535c429d0d62ad5fdef0b"
@@ -819,7 +850,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "801fc180d5dda8d6120e4a0dccfbf66984f91eb5637db7490508a8aaee7047b4"
@@ -841,7 +872,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "37ac95d28359fb09461d3cb6ef7ded8829d1c34c323c25707ef63c24c2a57e98"
@@ -863,10 +894,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "17895fd29eca7ed85c9e22b23ac125d700cc10aeda68b82bbae54914f5b8a908"
+                "cdc3ea7d59ccf6eedfd598773148e7d950cdb4a7a56c21914a62e2030ae05e6e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -885,7 +916,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -905,10 +936,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4b2739577836977b0706d25fc18b0a310749bc1f937f141a8b53a8f35c66ce56"
+                "2ff0ff7b545f125c2e5303fc0c438d73931a544d55ce0d38d164ab2e2c82c618"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -919,7 +950,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/weer\\/3b12f8ba5646784eeeea4cdd4d5dfac54670aed4\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/weer\\/9df5997833d278be1661653f0906090ce1275de7\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -927,10 +958,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1d87b6ae88bdd1009fd1cb36979dcbe9519181238583a468b6093813988cf477"
+                "9a5661d2f5e711c86afd540e5212e2318331fe3590d7f9954f135f954f3798e0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -943,34 +974,30 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000434,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7987012987012987
+            "prevalence": 0.8176100628930818
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.1038961038961039
+            "prevalence": 0.12578616352201258
         },
         {
             "domain": "dpgmedia.net",
-            "prevalence": 0.05844155844155844
-        },
-        {
-            "domain": "cookiebot.com",
-            "prevalence": 0.03896103896103896
+            "prevalence": 0.05660377358490566
         }
     ],
     "types": {
-        "Script": 82,
+        "Script": 91,
         "XHR": 18,
         "Preflight": 14
     },
     "nameservers": [
         "ns-1934.awsdns-49.co.uk",
-        "ns-79.awsdns-09.com",
         "ns-780.awsdns-33.net",
+        "ns-79.awsdns-09.com",
         "ns-1120.awsdns-12.org"
     ]
 }

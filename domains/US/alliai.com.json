@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "static"
     ],
@@ -14,27 +14,83 @@
     "resources": [
         {
             "rule": "alliai\\.com\\/widget\\/v1\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "5bfd298e1214ac99bab1a1eba5d75f4a135bcb6a0ebf4f6799bf737b4b6b56d7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "alli-disabled": {
+                    "ttl": 2592003,
+                    "length": 21,
+                    "prevalence": 0.00001356300013563,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "twilio.com",
+                "mastgeneralstore.com",
+                "www.mastgeneralstore.com",
                 "www.twilio.com"
+            ]
+        },
+        {
+            "rule": "alliai\\.com\\/api\\/v3\\/widget\\/site_m6PnpErGUoXBdpn6\\/customizations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6280e1ceb34ee5db51cfa0db78f5122acec2af69562d0e2c9dad6f2c9b7a0fdb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "alli-disabled": 0.00001356300013563
+            },
+            "exampleSites": [
+                "mastgeneralstore.com",
+                "www.mastgeneralstore.com"
+            ]
+        },
+        {
+            "rule": "alliai\\.com\\/api\\/v3\\/widget\\/site_m6PnpErGUoXBdpn6\\/recommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "alli-disabled": 0.00001356300013563
+            },
+            "exampleSites": [
+                "mastgeneralstore.com",
+                "www.mastgeneralstore.com"
             ]
         },
         {
@@ -46,7 +102,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f3684edf76bb6dd2523dea581ab680487cee04c5822f93cda538bae532bde463"
@@ -68,10 +124,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6711187e828a3e9a11e759a3d0b8a4284daa4449d3220566a625bd2963f8a635"
+                "82dae6be4ed62ca42c38edd30c74e2f59d064ce4e25a6937bb3bafeefbff2185"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -84,7 +140,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "cloudflare.com",
@@ -92,13 +148,13 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "Fetch": 4
+        "Script": 3,
+        "Fetch": 8
     },
     "nameservers": [
-        "ns-1446.awsdns-52.org",
         "ns-538.awsdns-03.net",
         "ns-55.awsdns-06.com",
+        "ns-1446.awsdns-52.org",
         "ns-1994.awsdns-57.co.uk"
     ]
 }

@@ -9,13 +9,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000578,
-    "sites": 8,
+    "prevalence": 0.00017,
+    "sites": 25,
     "subdomains": [],
     "cnames": [
         {
             "original": "prod-m-node-1111.ssp.advertising.com",
-            "resolved": ".m-node-alb-ssl-1111-1982902297.us-east-1.elb.amazonaws.com"
+            "resolved": "m-node-alb-ssl-1111-1982902297.us-east-1.elb.amazonaws.com"
         }
     ],
     "fingerprinting": 0,
@@ -26,12 +26,12 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000506,
+            "sites": 17,
+            "prevalence": 0.000115,
             "cnames": [
                 {
                     "original": "prod-m-node-1111.ssp.advertising.com",
-                    "resolved": ".m-node-alb-ssl-1111-1982902297.us-east-1.elb.amazonaws.com"
+                    "resolved": "m-node-alb-ssl-1111-1982902297.us-east-1.elb.amazonaws.com"
                 }
             ],
             "responseHashes": [
@@ -42,11 +42,49 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
+                "au.yahoo.com",
+                "br.yahoo.com",
+                "ca.news.yahoo.com",
+                "ca.rogers.yahoo.com",
+                "ca.sports.yahoo.com",
+                "ca.style.yahoo.com",
+                "ca.yahoo.com",
+                "es-us.deportes.yahoo.com",
                 "es-us.vida-estilo.yahoo.com",
-                "malaysia.news.yahoo.com",
+                "espanol.yahoo.com",
+                "id.berita.yahoo.com",
+                "my.yahoo.com",
                 "n.rivals.com",
                 "ph.news.yahoo.com",
                 "sg.finance.yahoo.com",
+                "sg.style.yahoo.com"
+            ]
+        },
+        {
+            "rule": "m-node-alb-ssl-1111-1982902297\\.us-east-1\\.elb\\.amazonaws\\.com\\/admax\\/adEvent\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [
+                {
+                    "original": "prod-m-node-1111.ssp.advertising.com",
+                    "resolved": "m-node-alb-ssl-1111-1982902297.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yahoo.com",
+                "br.yahoo.com",
+                "hk.yahoo.com",
+                "ph.news.yahoo.com",
                 "sg.news.yahoo.com"
             ]
         }
@@ -59,15 +97,16 @@
     "topInitiators": [
         {
             "domain": "yimg.com",
-            "prevalence": 0.875
+            "prevalence": 0.9473684210526315
         },
         {
-            "domain": "geoedge.be",
-            "prevalence": 0.125
+            "domain": "first party",
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
-        "Image": 7
+        "Image": 17,
+        "XHR": 5
     },
     "nameservers": []
 }

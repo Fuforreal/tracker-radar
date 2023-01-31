@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,13 +21,14 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e0784209e1aa01a6c988c48f6d2400b0a6a5adacac1cf96038b0a62fbf3e4d5a"
+                "e20d451356ae2d68a2a2079d5c24267c5098fd4425218f7664a940b9c26e5a18"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -44,7 +45,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "eb3ad40246ebc5fca0272e332983e031c8cd40419b4ac61ffdfd2b0f07bc9f1a"
@@ -65,7 +66,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "213970013817b5647c1804a9e4a5609d1223cbff2489c16e111239fd64ee22d5"
@@ -86,7 +87,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "577df11639f73ddd98d1ae0ba6842f34c09db2a1c9985640776fec24849bb91d"
@@ -107,9 +108,11 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "98485e2cb3f660a82c3473950c6f4cd88dde035f9dc03c23378efbff81dcdec7"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -125,10 +128,10 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e69f41cf0e236bc9b5b88be30413b76391914a62ca67ce0812bf72ac1b84c551"
+                "8fa40af48ca052b412ae8d110df8b2db064c3b0d25c3002f00273e6166f6fe12"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -136,6 +139,69 @@
             "exampleSites": [
                 "straighttalk.com",
                 "support.straighttalk.com"
+            ]
+        },
+        {
+            "rule": "website-production-bot-assets\\.s3\\.amazonaws\\.com\\/tracfone\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "903120637042ffda24f77f39f81d5fb324cd2509cde63e47becb9a7cf8608b2e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tracfone.com",
+                "support.tracfone.com"
+            ]
+        },
+        {
+            "rule": "website-production-bot-assets\\.s3\\.amazonaws\\.com\\/tracfone\\/stylesheets\\/web\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d75c33a4113f99075354a4ed1b0001358262003855cc51eba94da6087eb05654"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tracfone.com",
+                "support.tracfone.com"
+            ]
+        },
+        {
+            "rule": "website-production-bot-assets\\.s3\\.amazonaws\\.com\\/tracfone\\/images\\/BOT%20icon%20blue\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5db2c9f40da8b2cac6965c5d958cc251d08cf0f8f05c657ee6e8f207ea65363"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tracfone.com",
+                "support.tracfone.com"
             ]
         }
     ],
@@ -147,22 +213,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.5555555555555556
         },
         {
             "domain": "botpress.cloud",
-            "prevalence": 0.5
+            "prevalence": 0.4444444444444444
         }
     ],
     "types": {
-        "Script": 5,
-        "Stylesheet": 8,
-        "Image": 2
+        "Script": 7,
+        "Stylesheet": 10,
+        "Image": 4
     },
     "nameservers": [
         "ns-1173.awsdns-18.org",
-        "ns-328.awsdns-41.com",
+        "ns-674.awsdns-20.net",
         "ns-1620.awsdns-10.co.uk",
-        "ns-674.awsdns-20.net"
+        "ns-328.awsdns-41.com"
     ]
 }

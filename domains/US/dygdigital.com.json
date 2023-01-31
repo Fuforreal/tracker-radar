@@ -7,15 +7,112 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "dygassets",
+        "dygvideo",
+        "ads",
         "dogus-ads-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "dygdigital\\.com\\/Rep\\/dygtag-ntv\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dygassets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d42fa4907eb1ee1c8924e35b6d815568415ccf942bc4533e9b462598b3342c6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.com.tr",
+                "www.ntv.com.tr"
+            ]
+        },
+        {
+            "rule": "dygdigital\\.com\\/api\\/video_info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dygvideo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "00d5dad16f9f2946b279024d8327e675eb10b802fde53d9986a5f1588a95a81b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.com.tr",
+                "www.startv.com.tr"
+            ]
+        },
+        {
+            "rule": "dygdigital\\.com\\/services\\/pauseroll",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.com.tr",
+                "www.startv.com.tr"
+            ]
+        },
+        {
+            "rule": "dygdigital\\.com\\/Rep\\/dygtag-ntvspor\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dygassets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "45c048291b6212b143c280413a2ad1d8485748325371bde821133072d2e7a57a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntvspor.net",
+                "www.ntvspor.net"
+            ]
+        },
         {
             "rule": "dygdigital\\.com\\/ads\\.js",
             "cookies": 0,
@@ -25,7 +122,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a45340be77c5a67bb036cc65490d3a0c8871ba7da2d276f0ff990be08d10b41c"
@@ -40,7 +137,7 @@
         },
         {
             "rule": "dygdigital\\.com\\/Rep\\/dygtag-startv\\.js",
-            "cookies": 0.00000723,
+            "cookies": 0.00000678,
             "fingerprinting": 1,
             "subdomains": [
                 "dygassets"
@@ -53,7 +150,7 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d22a7ed038878e634cc8f266a4365f5d937a604c9ad838f50eaee9a27b2450a2"
@@ -63,7 +160,7 @@
                 "connectFrame": {
                     "ttl": 1209603,
                     "length": 40,
-                    "prevalence": 0.0000072254335260115605,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 }
             },
@@ -82,7 +179,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ad8a666b4ebdbe818d3e57840e97a3d36d51a2ab05e9f954249362c02a2f264d"
@@ -98,7 +195,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000145,
+    "cookies": 0.0000203,
     "topInitiators": [
         {
             "domain": "first party",
@@ -106,12 +203,13 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 10,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-1688.awsdns-19.co.uk",
-        "ns-456.awsdns-57.com",
         "ns-870.awsdns-44.net",
-        "ns-1035.awsdns-01.org"
+        "ns-1688.awsdns-19.co.uk",
+        "ns-1035.awsdns-01.org",
+        "ns-456.awsdns-57.com"
     ]
 }

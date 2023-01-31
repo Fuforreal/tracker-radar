@@ -4,29 +4,86 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
+        "jellybelly-geo",
         "knoxvilletvacu-geo"
     ],
     "cnames": [
         {
             "original": "olb.tvacreditunion.com",
             "resolved": "knoxvilletvacu-geo.txproxy.com"
+        },
+        {
+            "original": "websvc.jellybelly.com",
+            "resolved": "jellybelly-geo.txproxy.com"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "txproxy\\.com\\/geoip\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jellybelly-geo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "websvc.jellybelly.com",
+                    "resolved": "jellybelly-geo.txproxy.com"
+                }
+            ],
+            "responseHashes": [
+                "6599f13159754f967dacc9be3ed1092b95d8f26e89af9860a26a781df16bbeb8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jellybelly.com",
+                "www.jellybelly.com"
+            ]
+        },
+        {
+            "rule": "txproxy\\.com\\/geoip\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jellybelly-geo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "websvc.jellybelly.com",
+                    "resolved": "jellybelly-geo.txproxy.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jellybelly.com",
+                "www.jellybelly.com"
+            ]
+        },
+        {
             "rule": "txproxy\\.com\\/login\\/loginsmall\\.aspx",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "knoxvilletvacu-geo"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "olb.tvacreditunion.com",
@@ -34,7 +91,7 @@
                 }
             ],
             "responseHashes": [
-                "fc6950fc7684ae89a03994d0f86a9b89754728bd3798bfe481416e8716c184ec"
+                "86e310394224df97169f367421c05c91862cfc4a7d877f2bd577bd9bc317649f"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -45,15 +102,15 @@
             ]
         },
         {
-            "rule": "txproxy\\.com\\/Assets\\/components\\/jquery\\/jquery-1\\.12\\.4\\.min\\.js",
-            "cookies": 0.0000145,
+            "rule": "txproxy\\.com\\/Assets\\/components\\/jquery\\/jquery-3\\.3\\.1\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "knoxvilletvacu-geo"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "olb.tvacreditunion.com",
@@ -61,7 +118,7 @@
                 }
             ],
             "responseHashes": [
-                "668b046d12db350ccba6728890476b3efee53b2f42dbb84743e5e9f1ae0cc404"
+                "d8aa24ecc6cecb1a60515bc093f1c9da38a0392612d9ab8ae0f7f36e6eee1fad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -73,14 +130,14 @@
         },
         {
             "rule": "txproxy\\.com\\/assets\\/css\\/clients\\/ktva-mini-login\\.css",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "knoxvilletvacu-geo"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "olb.tvacreditunion.com",
@@ -100,14 +157,14 @@
         },
         {
             "rule": "txproxy\\.com\\/Assets\\/js\\/page-specific\\/UserDeviceInfo\\.js",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "knoxvilletvacu-geo"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "olb.tvacreditunion.com",
@@ -128,7 +185,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000145,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "noibu.com",
@@ -136,6 +193,8 @@
         }
     ],
     "types": {
+        "XHR": 2,
+        "Preflight": 2,
         "Document": 2,
         "Script": 4,
         "Stylesheet": 2

@@ -9,13 +9,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "pdt",
         "pokus"
     ],
     "cnames": [
+        {
+            "original": "dexter.goibibo.com",
+            "resolved": "goibibo.com.edgekey.net"
+        },
+        {
+            "original": "gos3.ibcdn.com",
+            "resolved": "goibibo.com.edgekey.net"
+        },
         {
             "original": "pdt.goibibo.com",
             "resolved": "pdt.goibibo.com.edgekey.net"
@@ -28,6 +36,56 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "goibibo\\.com\\.edgekey\\.net\\/giHappyheaderSprite-1618386531\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gos3.ibcdn.com",
+                    "resolved": "goibibo.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8501af819d88e2fb7e35add40acf17538806cd8d8a97245be13978f4692814a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goibibo.com",
+                "www.goibibo.com"
+            ]
+        },
+        {
+            "rule": "goibibo\\.com\\.edgekey\\.net\\/common\\/ping\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "dexter.goibibo.com",
+                    "resolved": "goibibo.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e1fa91d104e2dfd6bf22e3bbb679d6317bb628370f0a03ab635fd5ded7b4c845"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goibibo.com",
+                "www.goibibo.com"
+            ]
+        },
+        {
             "rule": "goibibo\\.com\\.edgekey\\.net\\/dts\\/s\\/da\\/n",
             "cookies": 0,
             "fingerprinting": 0,
@@ -36,7 +94,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "pdt.goibibo.com",
@@ -61,7 +119,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "pokus.goibibo.com",
@@ -79,14 +137,14 @@
         },
         {
             "rule": "goibibo\\.com\\.edgekey\\.net\\/experiment\\/assignVariant",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "pokus"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "pokus.goibibo.com",
@@ -94,7 +152,7 @@
                 }
             ],
             "responseHashes": [
-                "94d17febb763e881b6720b66ff87d8ed57f6a143d15a40703341f6418210e131"
+                "fe92cfc130e07701bdcd22bc0cfd70befc1509f73b420a168c41fa86483ccc17"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -107,14 +165,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9583333333333334
+        },
+        {
+            "domain": "ibcdn.com",
+            "prevalence": 0.041666666666666664
         }
     ],
     "types": {
+        "Image": 2,
+        "XHR": 2,
         "Fetch": 4,
         "Preflight": 2
     },

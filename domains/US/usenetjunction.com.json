@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "usenetjunction\\.com\\/scripts\\/imp\\.php",
@@ -21,9 +21,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "2577fd1470fa192497cc292750833b14ebbc8cb92283449b928b9edc36de5df8"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -31,11 +33,63 @@
                 "binsearch.info",
                 "www.binsearch.info"
             ]
+        },
+        {
+            "rule": "usenetjunction\\.com\\/scripts\\/7j141aw",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0347dbd8efc570849074df13d412889e88f9e4afa71d2bba176857edf1956c09"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "PAPVisitorId": {
+                    "ttl": 31536000,
+                    "length": 32,
+                    "prevalence": 0.00001356300013563,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easynews.com",
+                "www.easynews.com"
+            ]
+        },
+        {
+            "rule": "usenetjunction\\.com\\/scripts\\/7r141aw",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9294c7992e8f604bf59c6bfe5e452cc1bfd1816d478f56e0808ee6d5c0832491"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easynews.com",
+                "www.easynews.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000217,
+    "cookies": 0.0000339,
     "topInitiators": [
         {
             "domain": "first party",
@@ -43,7 +97,8 @@
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 2,
+        "Script": 4
     },
     "nameservers": [
         "ns1.usenetpassport.com",
