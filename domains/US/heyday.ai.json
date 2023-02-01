@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000795,
-    "sites": 11,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "api",
         "webchat",
@@ -17,6 +17,28 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "heyday\\.ai\\/v130\\/4099689688\\/9037420771\\/en\\/setupchat\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "158f7cb1d1b28d171b55bfb230cbc6ab12f72ff69c719a7d87ac0fc527fe58db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simons.ca",
+                "www.simons.ca"
+            ]
+        },
+        {
             "rule": "heyday\\.ai\\/v130\\/4099689688\\/9037420771\\/fr\\/setupchat\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -25,7 +47,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "dd35b9d5b0fa39cf7d6ed9ec062998292e247a7ea5ec4a81ce6bf36b6ae43784"
@@ -40,20 +62,20 @@
         },
         {
             "rule": "heyday\\.ai\\/scripts\\/heyday-track\\.js",
-            "cookies": 0.0000434,
+            "cookies": 0.0000543,
             "fingerprinting": 1,
             "subdomains": [
                 "webchat",
                 "webchat.eu"
             ],
             "apis": {
-                "Document.cookie getter": 6,
-                "window.localStorage": 6,
+                "Document.cookie getter": 8,
+                "window.localStorage": 8,
                 "Date.prototype.getTime": 3,
-                "Document.cookie setter": 6
+                "Document.cookie setter": 8
             },
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 8,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "d8148955c47bf24db719592babe35d35ca79295f705f3d11162fe22ecddab2af"
@@ -63,7 +85,7 @@
                 "_hdtid": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.00004335260115606936,
+                    "prevalence": 0.00005425200054252,
                     "uniqueness": 1
                 }
             },
@@ -71,6 +93,8 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
+                "www.garageclothing.com",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -79,25 +103,39 @@
         },
         {
             "rule": "heyday\\.ai\\/scripts\\/setup\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000678,
+            "fingerprinting": 1,
             "subdomains": [
                 "webchat",
                 "webchat.eu"
             ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "apis": {
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "16859ff3466c9282c823d3056e1561d6834a71ebf49d455e3e8f26de87b2a539"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_hdWS": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000006781500067815,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
+                "www.garageclothing.com",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -113,12 +151,13 @@
                 "api.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 8,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "7a110b6378f7be92e11bbea42d0b45bf6ec1b3a8eb27635f7cdaa2b57ee246b3",
-                "b61ae62aa3ae9668832bc72ec6c140e29949eef78997fd11e44ed3a2b9e4e57f"
+                "b61ae62aa3ae9668832bc72ec6c140e29949eef78997fd11e44ed3a2b9e4e57f",
+                "5925d46da659cb393bd8fd7441bb777d4d437e9a8969d58ae278c0b156736a4f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -126,6 +165,8 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
+                "www.garageclothing.com",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -141,26 +182,30 @@
                 "api.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 8,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
-                "807d53680aa61e4b7641c26161026bda3f8da19acd6d800a57333f8aa6dafd1e",
-                "b260de125b78ded377f45be8bba118a75a612bced4a7206aae23c909c3b2c2f5",
-                "6d7394dd9dacd2d29a0a86a37c7134c15754b0a18a0e53d25b08451b7ca4c658",
-                "b71f29172ff4d20c425fe9be8bd922d4aceaf2cd66898bc15e8ca7fc617d73d2",
-                "017cd7eb884eb7f398b7fd738f0f8227ae0829c8f2788cc61f39ab55afa0bea5"
+                "2bae7207a5e1cb218c03c90f43efb96331058b10598e5f6522ef76cc36540959",
+                "f270c5108f62b66e6d2c4a9f095b9f5570af2050ba9a0efc0a0d95f4f80ee73c",
+                "2c6bb06ca54abb0f7a5e911845cf6facf1b38b16035994f8ed0335111d4337b7",
+                "587d6efe51edac7b7cb4597beb213e2e4b2fcd718eba89f939e164fa8877c1c9",
+                "18991693ac732d5469c42c0be50ef530fb74047593ff754311c1a1cf489cabfa",
+                "717c5f62c649da2a33836ca4f9c0d7caf633ba36962ce24c17ded977396de8aa",
+                "8c2dc7df1ee9962bc4a76715e4dc7749e7eef26c2ecd939e30bf9459fdae8453"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00002167630057803468,
-                "_hdtid": 0.00004335260115606936,
-                "dy_fs_page": 0.0000072254335260115605
+                "IR_gbd": 0.00002712600027126,
+                "_hdtid": 0.00005425200054252,
+                "dy_fs_page": 0.000006781500067815
             },
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
+                "www.garageclothing.com",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -169,7 +214,7 @@
         },
         {
             "rule": "heyday\\.ai\\/scripts\\/heyday-chat\\.js",
-            "cookies": 0.0000361,
+            "cookies": 0.0000407,
             "fingerprinting": 1,
             "subdomains": [
                 "webchat",
@@ -177,12 +222,12 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 3,
-                "window.localStorage": 6,
-                "Document.cookie setter": 5,
-                "Document.cookie getter": 6
+                "window.localStorage": 7,
+                "Document.cookie setter": 6,
+                "Document.cookie getter": 7
             },
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
                 "f8b801c337237437ac9c69b43ed1c4cac006888c2e6c1cc3bb6e8545d80a8d5c"
@@ -190,16 +235,17 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_hd": {
-                    "ttl": 472937343,
-                    "length": 55,
-                    "prevalence": 0.000036127167630057806,
-                    "uniqueness": 0.8
+                    "ttl": null,
+                    "length": 51,
+                    "prevalence": 0.000040689000406890006,
+                    "uniqueness": 0.6666666666666666
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -215,8 +261,8 @@
                 "webchat.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
                 "280e33ff3c2a74ed296dd0c128929c702a809cdd1b6728a5b8ebb62376b3d7e0",
@@ -228,6 +274,7 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -243,7 +290,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "71091a7084ce8a3d195aadf76f74643ae01983120bd89eadbc7570cf2c22e86b"
@@ -266,8 +313,8 @@
                 "webchat.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
                 "3e1692697eb0ec45f17777a40577d15625d75e26d16fc11ca6d957e2f5afab94"
@@ -278,6 +325,7 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -293,8 +341,8 @@
                 "webchat.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
                 "6c5acbb82a46a4971660f65131241dffcc28828f4dbd76b8ec7bab0b468250f8"
@@ -305,6 +353,7 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -320,10 +369,10 @@
                 "webchat.eu"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
                 "05beea7e4adf5a0e5b979e8e9cfc24479a77bf914c0fb37bc80b9a6eb18688d8"
@@ -334,6 +383,7 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
                 "www.lacoste.com",
                 "www.lavieenrose.com",
                 "www.simons.ca",
@@ -349,13 +399,13 @@
             ],
             "apis": {
                 "Navigator.prototype.product": 4,
-                "window.localStorage": 4,
-                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 6,
                 "Navigator.prototype.hardwareConcurrency": 4,
-                "PerformanceTiming.prototype.navigationStart": 4
+                "PerformanceTiming.prototype.navigationStart": 3
             },
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "8a1809af2b8fd19085ebb207145b5e40a6e018a7b18dad9cc36dde21d4083d68"
@@ -366,6 +416,7 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
                 "www.lavieenrose.com",
                 "www.simons.ca",
                 "www.sportsexperts.ca"
@@ -379,8 +430,8 @@
                 "webchat"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "edbb1beed16faa16c1fa22844859d5876ee69709d0f3acfe98bb940bef00855a"
@@ -391,13 +442,14 @@
             "exampleSites": [
                 "simons.ca",
                 "m.simons.ca",
+                "www.deserres.ca",
                 "www.lavieenrose.com",
                 "www.simons.ca",
                 "www.sportsexperts.ca"
             ]
         },
         {
-            "rule": "heyday\\.ai\\/v130\\/4099689688\\/9037420771\\/en\\/setupchat\\.js",
+            "rule": "heyday\\.ai\\/v130\\/8698279554\\/8958073480\\/en\\/setupchat\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -405,17 +457,39 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "158f7cb1d1b28d171b55bfb230cbc6ab12f72ff69c719a7d87ac0fc527fe58db"
+                "4956388166f1864a1b3e93195a0786f1d40ee1dad059dfbad4aca6c9de61acee"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "simons.ca",
-                "www.simons.ca"
+                "deserres.ca",
+                "www.deserres.ca"
+            ]
+        },
+        {
+            "rule": "heyday\\.ai\\/v130\\/2388400384\\/60620847134,5195835354\\/en\\/setupchat\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1dd309a8957367d19046e89b881023fa6ac871a63f19c52740f009ec0346ff9c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garageclothing.com",
+                "www.garageclothing.com"
             ]
         },
         {
@@ -427,7 +501,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -449,7 +523,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "91337588b2e5cdf1affcb0a0567a979280e3b7d7ec8466285e5db87844b51556"
@@ -471,7 +545,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "353210241e7f6de9bb05fa9fa93c4f3a54122e5a2b5e56468f414bd8aec8825d"
@@ -493,7 +567,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5592860c3b6563035cdd81ad7dd34e0474ade23f86ff916d4c1549d2b401fcd3"
@@ -515,7 +589,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6c573c7d3ff6b31ccdb95a8a62561b4e382f2f26b529fcfce3ef433e26508853"
@@ -531,45 +605,57 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000065,
+    "cookies": 0.0000882,
     "topInitiators": [
         {
             "domain": "noibu.com",
-            "prevalence": 0.3157894736842105
+            "prevalence": 0.20689655172413793
         },
         {
             "domain": "msecnd.net",
-            "prevalence": 0.3157894736842105
+            "prevalence": 0.20689655172413793
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.21052631578947367
+            "prevalence": 0.1724137931034483
         },
         {
-            "domain": "contentsquare.net",
-            "prevalence": 0.07894736842105263
+            "domain": "shopify.com",
+            "prevalence": 0.10344827586206896
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.10344827586206896
         },
         {
             "domain": "first party",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "contentsquare.net",
+            "prevalence": 0.05172413793103448
         },
         {
             "domain": "dynamicyield.com",
-            "prevalence": 0.02631578947368421
+            "prevalence": 0.017241379310344827
         }
     ],
     "types": {
-        "Script": 45,
-        "XHR": 12,
-        "Document": 6,
+        "Script": 57,
+        "XHR": 16,
+        "Document": 7,
         "Image": 7,
-        "Stylesheet": 6,
-        "Font": 5
+        "Stylesheet": 7,
+        "Font": 6
     },
     "nameservers": [
-        "ns-41.awsdns-05.com",
         "ns-1550.awsdns-01.co.uk",
         "ns-1362.awsdns-42.org",
+        "ns-41.awsdns-05.com",
         "ns-734.awsdns-27.net"
     ]
 }

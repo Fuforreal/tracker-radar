@@ -4,12 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
-        "prod-cdn-candy-hoover.haier"
+        "prod-cdn-candy-hoover.haier",
+        "servicecommerce.lavazza"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "servicecommerce.lavazza.com",
+            "resolved": "servicecommerce.lavazza.stormreply.com"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -21,7 +27,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0fb44e2faa71b24c76001aa25276887985902af116e4399c6f35ece2fc8352eb"
@@ -32,6 +38,58 @@
             "exampleSites": [
                 "haier-europe.com",
                 "www.haier-europe.com"
+            ]
+        },
+        {
+            "rule": "stormreply\\.com\\/rest\\/v2\\/lavazzastoreGeneric\\/products\\/athena\\/prices",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servicecommerce.lavazza"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "servicecommerce.lavazza.com",
+                    "resolved": "servicecommerce.lavazza.stormreply.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lavazza.com",
+                "www.lavazza.com"
+            ]
+        },
+        {
+            "rule": "stormreply\\.com\\/rest\\/v2\\/lavazzastoreGeneric\\/products\\/athena\\/prices",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servicecommerce.lavazza"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "servicecommerce.lavazza.com",
+                    "resolved": "servicecommerce.lavazza.stormreply.com"
+                }
+            ],
+            "responseHashes": [
+                "e567e0bef25043c4f40053c9332bb7840dae8ce6014ad4d6d22486300deb9a8e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lavazza.com",
+                "www.lavazza.com"
             ]
         }
     ],
@@ -45,12 +103,14 @@
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-811.awsdns-37.net",
+        "ns-1524.awsdns-62.org",
         "ns-1567.awsdns-03.co.uk",
         "ns-196.awsdns-24.com",
-        "ns-1524.awsdns-62.org"
+        "ns-811.awsdns-37.net"
     ]
 }

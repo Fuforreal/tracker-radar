@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000152,
-    "sites": 21,
+    "prevalence": 0.000176,
+    "sites": 26,
     "subdomains": [
         "agi-static",
         "jssocdn",
@@ -18,15 +18,23 @@
         "frontend-api-navik",
         "timesofindia",
         "toiassets",
+        "myt",
+        "api-newscard",
+        "locate",
+        "static.nbt",
         "navbharattimesfeeds",
-        "langnetstorage",
         "nbtfeed",
+        "langnetstorage",
         "slike"
     ],
     "cnames": [
         {
             "original": "agi-static.indiatimes.com",
             "resolved": "agi-static.indiatimes.com.edgekey.net"
+        },
+        {
+            "original": "api-newscard.indiatimes.com",
+            "resolved": "api-newscard.indiatimes.com.edgekey.net"
         },
         {
             "original": "frontend-api-navik.indiatimes.com",
@@ -45,6 +53,14 @@
             "resolved": "langnetstorage.indiatimes.com.edgekey.net"
         },
         {
+            "original": "locate.indiatimes.com",
+            "resolved": "locate.indiatimes.com.edgekey.net"
+        },
+        {
+            "original": "myt.indiatimes.com",
+            "resolved": "myt.indiatimes.com.edgekey.net"
+        },
+        {
             "original": "navbharattimesfeeds.indiatimes.com",
             "resolved": "navbharattimesfeeds.indiatimes.com.edgekey.net"
         },
@@ -57,6 +73,10 @@
             "resolved": "slike.indiatimes.com.edgekey.net"
         },
         {
+            "original": "static.nbt.indiatimes.com",
+            "resolved": "static.nbt.indiatimes.com.edgekey.net"
+        },
+        {
             "original": "timesofindia.indiatimes.com",
             "resolved": "timesofindia.indiatimes.com.edgekey.net"
         },
@@ -65,18 +85,18 @@
             "resolved": "toiassets.indiatimes.com.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "indiatimes\\.com\\.edgekey\\.net\\/cms-common\\/ibeat\\.min\\.js",
-            "cookies": 0.0000578,
+            "cookies": 0.0000475,
             "fingerprinting": 1,
             "subdomains": [
                 "agi-static"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000578,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [
                 {
                     "original": "agi-static.indiatimes.com",
@@ -91,14 +111,14 @@
                 "_iibeat_session": {
                     "ttl": 15768003,
                     "length": 36,
-                    "prevalence": 0.000028901734104046242,
+                    "prevalence": 0.000020344500203445003,
                     "uniqueness": 1
                 },
                 "_iibeat_vt": {
                     "ttl": 2592003,
                     "length": 8,
-                    "prevalence": 0.000028901734104046242,
-                    "uniqueness": 0.75
+                    "prevalence": 0.000020344500203445003,
+                    "uniqueness": 0.6666666666666666
                 }
             },
             "firstPartyCookiesSent": {},
@@ -107,22 +127,24 @@
                 "health.economictimes.indiatimes.com",
                 "m.photos.timesofindia.com",
                 "m.recipes.timesofindia.com",
+                "m.timesofindia.com",
                 "navbharattimes.indiatimes.com",
                 "photogallery.indiatimes.com",
                 "recipes.timesofindia.com",
+                "timesofindia.indiatimes.com",
                 "www.gadgetsnow.com"
             ]
         },
         {
             "rule": "indiatimes\\.com\\.edgekey\\.net\\/crosswalk_sdk\\/sdk\\/jsso_crosswalk_legacy_0\\.6\\.11\\.min\\.js",
-            "cookies": 0.0000289,
+            "cookies": 0.0000271,
             "fingerprinting": 1,
             "subdomains": [
                 "jssocdn"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [
                 {
                     "original": "jssocdn.indiatimes.com",
@@ -151,7 +173,7 @@
             ],
             "apis": {},
             "sites": 13,
-            "prevalence": 0.0000939,
+            "prevalence": 0.0000882,
             "cnames": [
                 {
                     "original": "geoapi.indiatimes.com",
@@ -189,17 +211,15 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
                     "resolved": "frontend-api-navik.indiatimes.com.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "1141b2d70a212cbf052fb7bd4875a8fe783a9e2f71c684fcb15ac801a21025f5"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -217,33 +237,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [
-                {
-                    "original": "frontend-api-navik.indiatimes.com",
-                    "resolved": "frontend-api-navik.indiatimes.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "indiatimes.com",
-                "m.indiatimes.com",
-                "www.indiatimes.com"
-            ]
-        },
-        {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/v1\\/api\\/content\\/trending",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "frontend-api-navik"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
@@ -251,8 +245,7 @@
                 }
             ],
             "responseHashes": [
-                "2a5ee51bf1a3ba1b0097db80b334eb886010c6a113d5608bec6bb77fc9ceeade",
-                "d5060f9f6978c4312993e50c6d75dba88e6e1125dd599527c9e55b81beeafd49"
+                "ff256cbec45b3f5c16d0bb142b6692dbbd44176ff032a9c50dae6320dae981e8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -272,7 +265,36 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "frontend-api-navik.indiatimes.com",
+                    "resolved": "frontend-api-navik.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "80db9c12bad4853c8f8da7284d529cff2279514b13edff146ef843c663d13239",
+                "3a86db5368e909d234eea3fa99bb3df09c3182b652316bc543df8a1992c9b63d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "m.indiatimes.com",
+                "www.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/v1\\/api\\/content\\/trending",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frontend-api-navik"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
@@ -298,7 +320,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
@@ -323,7 +345,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
@@ -331,7 +353,7 @@
                 }
             ],
             "responseHashes": [
-                "07214bdb8d159c82f355e88ecfb312b31969c03cb3aac3265ecccdc151cb1e79"
+                "53446b6d52a80597f4203fe6caa0da4712325ba92fa52d0bc3d43221ec853fc6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -350,7 +372,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
@@ -375,7 +397,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
@@ -402,36 +424,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [
-                {
-                    "original": "frontend-api-navik.indiatimes.com",
-                    "resolved": "frontend-api-navik.indiatimes.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "28ebe282ad1dfc4396adb8bd463a4d7156feb0a5ce12a08a1cb56b908a6f0111",
-                "6c5141957babe894805efd93ddad18120ab437314335153cdfd90349a4712827"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "indiatimes.com",
-                "m.indiatimes.com",
-                "www.indiatimes.com"
-            ]
-        },
-        {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/v1\\/api\\/content\\/latest",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "frontend-api-navik"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "frontend-api-navik.indiatimes.com",
@@ -449,15 +442,44 @@
             ]
         },
         {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/v1\\/api\\/content\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frontend-api-navik"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "frontend-api-navik.indiatimes.com",
+                    "resolved": "frontend-api-navik.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d1ae116e53e22b4d08ced9d2e4abc2743894129f0589c0d151234dd6c4b05fa9",
+                "2e911bb090270a354cb07260ecf70424474732cc0d853c71f18e9d3ee0fcd7b7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "m.indiatimes.com",
+                "www.indiatimes.com"
+            ]
+        },
+        {
             "rule": "indiatimes\\.com\\.edgekey\\.net\\/crosswalk\\/jsso_crosswalk_legacy_0\\.5\\.3\\.min\\.js",
-            "cookies": 0.0000361,
+            "cookies": 0.0000339,
             "fingerprinting": 1,
             "subdomains": [
                 "jssocdn"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [
                 {
                     "original": "jssocdn.indiatimes.com",
@@ -475,19 +497,20 @@
                 "m.photos.timesofindia.com",
                 "m.recipes.timesofindia.com",
                 "photogallery.indiatimes.com",
-                "recipes.timesofindia.com"
+                "recipes.timesofindia.com",
+                "www.gadgetsnow.com"
             ]
         },
         {
             "rule": "indiatimes\\.com\\.edgekey\\.net\\/toiads\\.cms",
-            "cookies": 0.0000289,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "timesofindia"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000361,
+            "prevalence": 0.0000339,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
@@ -495,26 +518,11 @@
                 }
             ],
             "responseHashes": [
-                "9164c85935a427b2ea84fe555984698866b029a5ef7f84eff3185761cd38854c",
-                "03972b3e2759b9fb4fad25ab1f0d450402078fdfe1a39e18257c025309ece9d4",
-                "e203c236504bba702a190fbaa68217e642bf4d77484ac64a057f898042a9aa3f",
-                "01f9e00b8ed58e34b657f078a98c2b1241843bd0db1e8d6c8d6221f79affadf5"
+                "385c71b8c506596dd510597047bb1b6c00d56ec29b9b351b1bf958e0bcd63a05",
+                "f39fb9ee15fde7dc42e82fe2b280c6501d6888812398b460adc9018bd9e360a5"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "CPD_Reach20": {
-                    "ttl": 86405,
-                    "length": 1,
-                    "prevalence": 0.0000072254335260115605,
-                    "uniqueness": 1
-                },
-                "CPD_Reach23": {
-                    "ttl": 86406,
-                    "length": 1,
-                    "prevalence": 0.0000072254335260115605,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "timesofindia.com",
@@ -525,28 +533,23 @@
             ]
         },
         {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/montserrat-v14-latin-700\\.woff2",
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/montserrat-v14-latin-regular\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "timesofindia",
-                "toiassets"
+                "timesofindia"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000506,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
                     "resolved": "timesofindia.indiatimes.com.edgekey.net"
-                },
-                {
-                    "original": "toiassets.indiatimes.com",
-                    "resolved": "toiassets.indiatimes.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "389e79364b038d05143b56595b434224e60932c0b61f9fa87528799688612b2d"
+                "d109d2663d3381af49cb672689e27be667a5c925728f53beeeb7f30f106b921c"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -555,10 +558,37 @@
                 "timesofindia.com",
                 "m.photos.timesofindia.com",
                 "m.recipes.timesofindia.com",
-                "m.timesofindia.com",
                 "photogallery.indiatimes.com",
-                "recipes.timesofindia.com",
-                "www.gadgetsnow.com"
+                "recipes.timesofindia.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/montserrat-v14-latin-500\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "timesofindia"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [
+                {
+                    "original": "timesofindia.indiatimes.com",
+                    "resolved": "timesofindia.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "953c2ae7d1d53f032d3b0614c53b2b7db13bf0f713229aae06b74221b897949e"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "m.recipes.timesofindia.com",
+                "photogallery.indiatimes.com",
+                "recipes.timesofindia.com"
             ]
         },
         {
@@ -570,8 +600,8 @@
                 "toiassets"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000506,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
@@ -592,14 +622,13 @@
                 "timesofindia.com",
                 "m.photos.timesofindia.com",
                 "m.recipes.timesofindia.com",
-                "m.timesofindia.com",
                 "photogallery.indiatimes.com",
                 "recipes.timesofindia.com",
                 "www.gadgetsnow.com"
             ]
         },
         {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/montserrat-v14-latin-regular\\.woff2",
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/montserrat-v14-latin-700\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -608,7 +637,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000434,
+            "prevalence": 0.0000407,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
@@ -620,7 +649,7 @@
                 }
             ],
             "responseHashes": [
-                "d109d2663d3381af49cb672689e27be667a5c925728f53beeeb7f30f106b921c"
+                "389e79364b038d05143b56595b434224e60932c0b61f9fa87528799688612b2d"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -629,44 +658,9 @@
                 "timesofindia.com",
                 "m.photos.timesofindia.com",
                 "m.recipes.timesofindia.com",
-                "m.timesofindia.com",
                 "photogallery.indiatimes.com",
-                "recipes.timesofindia.com"
-            ]
-        },
-        {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/montserrat-v14-latin-500\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "timesofindia",
-                "toiassets"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
-            "cnames": [
-                {
-                    "original": "timesofindia.indiatimes.com",
-                    "resolved": "timesofindia.indiatimes.com.edgekey.net"
-                },
-                {
-                    "original": "toiassets.indiatimes.com",
-                    "resolved": "toiassets.indiatimes.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "953c2ae7d1d53f032d3b0614c53b2b7db13bf0f713229aae06b74221b897949e"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "timesofindia.com",
-                "m.recipes.timesofindia.com",
-                "m.timesofindia.com",
-                "photogallery.indiatimes.com",
-                "recipes.timesofindia.com"
+                "recipes.timesofindia.com",
+                "www.gadgetsnow.com"
             ]
         },
         {
@@ -677,8 +671,8 @@
                 "toiassets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "toiassets.indiatimes.com",
@@ -693,6 +687,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "timesofindia.com",
+                "photogallery.indiatimes.com",
                 "www.gadgetsnow.com"
             ]
         },
@@ -704,20 +699,23 @@
                 "toiassets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "toiassets.indiatimes.com",
                     "resolved": "toiassets.indiatimes.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "0ec46cd32a110ff2fb71f663a774aa8a5a80dd484a7bb140e2a6028bf7c51177"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "timesofindia.com",
+                "photogallery.indiatimes.com",
                 "www.gadgetsnow.com"
             ]
         },
@@ -729,20 +727,107 @@
                 "timesofindia"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
                     "resolved": "timesofindia.indiatimes.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "1fa5c2337df7f7e8b24d43486ec2fe218fdc2f8083abe02ce36ff10559623434"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "timesofindia.com",
+                "photogallery.indiatimes.com",
+                "www.gadgetsnow.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/affiliates\\/library\\/vendors\\.commons\\.474c6ff1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toiassets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "toiassets.indiatimes.com",
+                    "resolved": "toiassets.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4fbb95acd2b894f6fb2c38d56792f70940e46a009a09856886391bd5b336496d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "photogallery.indiatimes.com",
+                "www.gadgetsnow.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/affiliates\\/library\\/library\\.commons\\.d78bbd18\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toiassets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "toiassets.indiatimes.com",
+                    "resolved": "toiassets.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "35fd1a8fcb48c6830d19d446d89996b80964533f71d0702f3a0f8f01757d8e93"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "photogallery.indiatimes.com",
+                "www.gadgetsnow.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/affiliates\\/library\\/helpers_Renderer_desktop_js\\.411a7655\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toiassets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "toiassets.indiatimes.com",
+                    "resolved": "toiassets.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9d1569185b9148665d2b53787a10c4757e8b3049b9190f832b7cd86137e9ea79"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "photogallery.indiatimes.com",
                 "www.gadgetsnow.com"
             ]
         },
@@ -755,7 +840,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
@@ -783,7 +868,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
@@ -811,7 +896,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "timesofindia.indiatimes.com",
@@ -831,28 +916,81 @@
             ]
         },
         {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/assets\\/articleshow_v2_desktop\\.66e57dfb\\.chunk\\.css",
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/mytimes\\/sharedEntity",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "toiassets"
+                "myt"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "toiassets.indiatimes.com",
-                    "resolved": "toiassets.indiatimes.com.edgekey.net"
+                    "original": "myt.indiatimes.com",
+                    "resolved": "myt.indiatimes.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Stylesheet",
+            "responseHashes": [
+                "171327eee062a17ce6507001fb4ab6e64841c24741fbcfe95b290f9c1212b030"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "timesofindia.com",
-                "m.timesofindia.com"
+                "recipes.timesofindia.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/crosswalk_sdk\\/sdk\\/jsso_crosswalk_legacy_0\\.6\\.22\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "jssocdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "jssocdn.indiatimes.com",
+                    "resolved": "jssocdn.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "m.timesofindia.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/card-inserts\\/web\\/us_lite\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-newscard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-newscard.indiatimes.com",
+                    "resolved": "api-newscard.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "timesofindia.indiatimes.com"
             ]
         },
         {
@@ -864,7 +1002,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "agi-static.indiatimes.com",
@@ -878,7 +1016,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "indiatimes.com",
+                "timesofindia.com",
                 "navbharattimes.indiatimes.com"
             ]
         },
@@ -891,7 +1029,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "agi-static.indiatimes.com",
@@ -900,6 +1038,1516 @@
             ],
             "responseHashes": [
                 "0931d76d58ff63349d1430c9277ddc880d8bb1b8170c3b8d17b9811ae0f4e38f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/service\\/locate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "locate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "locate.indiatimes.com",
+                    "resolved": "locate.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/NotoSansDevanagari-Regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "55dba952b645d638d2bab4b1e806de869d5fe2b69afcfdaf661ea2281cc5cfa4"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/bootstrap\\.d79f143c14693a69937b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8e6338bed878bcd4a01874ef90d2f99eaa08696c859a9cac20311ed31017485f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/vendor\\.697f487f95806edf9368\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7a5ba48b46b569773508d0e35513faf58da14f311524199dda979a408bd12bca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/client\\.618fa5174fc04167397a6147f1b33265\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/wb-manifest\\.b273a9a6721dbf8b0e8aa4d281f7c735\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7a6cef22b5a52b1db71b49013a3005928f8bd6e32fbcc2a3c288329933a509e8"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/0\\.838ef17211e76e8972ec\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "33d090fd2a5f95379d3ee1a18a3f0ae1c244606fdda6ad48a6853fdfdc363d2b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/AS\\.673903c26952c17cb89d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "890be51c9f315c468daab9231b26650d06b3b8430cfe1524062a90dde8c91edf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/Home\\.8dad7c7316ce7b182604\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "82ebbf08ef9fe91a079896f2e6dcb28aa6cdc52649e00d3eadb7378faa64240b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/3\\.c941df48ccb6140435cf\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8143aca824bf8a0fab98fcbd76fe912083ee7b65b3756fb2046ea47f0cf80ff7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/WC\\.03d10a4d4ef9caa958b1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b9d4fab3e67e82250fb342d5cca13b625a852b8a6586af46b097639f4f49c913"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/SC\\.569ced9890316128d0fe\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "64cf434d7a8cfcbcd9a06cfbd654063d43c114eca206a566678d6984b7692ecc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/PCV2\\.83c60c42d19a9c102473\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "dc0cc2ffa9cab1a940f2fa721e4485f18bdc934c42fcaa4fee471c2cc1063ae1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/List\\.5f39a29f3b326378c2dc\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/8\\.964632fddd7afbbdc307\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/9\\.ae02720de7d4ec675f16\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/10\\.15dd84c90cbd6f0ed82b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/11\\.48040df5a04ccf5b00f4\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/12\\.976d71fa6a7b3a3663e0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8cf3f536a01a66bfa69a4ba35d316d9d9afb740f5ca19167621b1cd5bc545911"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/PS\\.f1b33d45ffdc16959a69\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ca44c5052af0156738d61ea2f75065e5cdff2b245aaa4af16d3c503fcdc8fde2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/14\\.65dd3c3ac32fe12dd2cb\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ec98c50131a1a33b2c56610fe61da66e7337a23a68e87ea94a57c31c32a65d8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/15\\.bb7149c0145f6e75d309\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "608822857b3117cf213d5028afa6c0cfaf19ed46b5150045eb606b9ba58ee6d8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/VS\\.b9013bd921a4a48c5992\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bbb4d936edeea1ed8deedc20cb31d0ca927ec94ecd05a65b3a7972f7284d1084"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/17\\.fd148449e77d861f45d4\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "43aff983488a96e4735f7a1d29927acb181788938b00d6faedd121b0d268b3d6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/18\\.39c23d583165097ec819\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "95f57845dc9057c8326c84920142489a9fa68ef4a4851e7c8a4c0e9bb4776358"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/19\\.2df9d00a1a864318d737\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6bd3cd3d9b96da64dff58919735bba4001a1fd4736aa11be6e164395e53f6632"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/20\\.89c87647883c76238c06\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/21\\.a436a75c36050c9dce0a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/22\\.28f9925a0d99ae13d5b1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a58b4c76bfc4d3925c31b202c58929ccd1793c85e6323757b4598a3231e8eeeb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/DP\\.8b20b2ca78ef649d5e26\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/Topic\\.d6c738d6cd6fe44b0612\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9a724bb91def7e910b6fe0f1a23451d7c03f37b24f8fb2bde039646958f6c733"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/25\\.3a85f21e14bf81829d9b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/26\\.b1c3ac8ff1bc8930f7ea\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/27\\.720eb81f8db679101370\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/28\\.e0038e6fd8aa4f1480f1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "789f706ecf1d26c4c35aaf58960f612e032d1d8ef9e8070d3b42f7578bdc1087"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/29\\.dd3caba8559247f7a092\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "fa7d5eac09094ec10d5033f3232095792866d7570f87db88eb1c9a11738ebeb1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/30\\.8e897643cf3f1eaa83fe\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "24fc4075cd1e00208ae296bcc1bfa212a0eb50776b2b0a3d1fbbe7ffb3be07af"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/31\\.4aa2d0b2bc1fa3290abb\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7ac5cb9538d98f4a3bef3c56f5c410aeb098298fc514b29ae1b9ead64fb482b7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/32\\.1efd28ec10a38219fb17\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e0878a406bae7d0ad7641ff9afd98c6e52c68adf1cc8de8a4bfaebda8d9436d2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/33\\.206dfbf950c4091108b6\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7f826595950c838dcad457410ab5705399550f4c26039907c55ff09e3454b5b7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/34\\.9daad1546f0f184d14b5\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e674b4a5e76e6766c0944d651d6ae6493180bfe37dc3384088f7315aeaf02443"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/35\\.c2fe09bfec26ae181198\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d4653c8aac9268ea200271314d2d5af7229d43571fc842c3c377d9e1590031fd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/36\\.f4159325b467c2cc8405\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8439c11a2c895f4e2a0bbc07dd373c7ac5e16c28369e7005f66047b93e0d1337"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/37\\.34d50da267a33a14ffb3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b015eb385172318d61a163f6c1cc788d8257f57a1bc9743cb2d32a60ebece64e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/38\\.4e46a67696142ad1fade\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f1c1f6546d6e94198925fe15e64efa9627f86f6cfc845843f30742999c89c3e8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/39\\.b5d8a3e947d2ac6bcb78\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a656854ce0abe76abb67ca171005e7c05beb7010a8889f7f2862c78ef4ceabe2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/vendor\\.697f487f95806edf9368\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/client\\.368975e6c2a86958a516\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "aa06062ef6ec7f044e06f18c6cb787b7def08c10f0e35897e7b2fa7c2b06c519"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/MP\\.b082c6241194b21d8238\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ec055c8d7b7ae1cda197a2885fa3c95819e36e531fb721fa86604a37650140dc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/43\\.7255f385f1654f00fe9d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a5d47d2bbdc45302faa41edc8c4b975ff532c249c9313ffa48f7e765c6983aca"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/TPW\\.bac6a710a0a17a291bca\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1587b891da8d49ea7abab390ce984f8c6d885832e4b4824fc4e5f81878d4a5cf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/HCard\\.a7c143ccc7d2784bcd4d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "61bb0f0323b4f535d52536748a00e1956ec203af41ad3b9b1a1900c9b81ef401"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/GNVW\\.8ffeb42f1c87f41f3a84\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "0dda045ffde440aa455a3a4812d91eca550bb0fc9742fade9b064c11275f7efd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/GR\\.07df2ccf9bc1889cdb71\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2ac036ad6aa21a60e76d6e4775e207bc01dd71998dc5d130969f408bdb865ae3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/GNGFC\\.423255f88953bf23a6c5\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a60e724d9efa9d53f43ec40dc8f6f93cffc05dc31ec2b9bf6a5d5fbb63b5ad61"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/bootstrap\\.d79f143c14693a69937b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8e6338bed878bcd4a01874ef90d2f99eaa08696c859a9cac20311ed31017485f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -918,7 +2566,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "agi-static.indiatimes.com",
@@ -937,6 +2585,87 @@
             ]
         },
         {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/img\\/pwa_desktop_sprite\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "cef6a66d99b12c179549fdf9fc3370d1985e183769339255e91aedc300496cf1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/client\\.368975e6c2a86958a516\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "aa06062ef6ec7f044e06f18c6cb787b7def08c10f0e35897e7b2fa7c2b06c519"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/36\\.f4159325b467c2cc8405\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8439c11a2c895f4e2a0bbc07dd373c7ac5e16c28369e7005f66047b93e0d1337"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
             "rule": "indiatimes\\.com\\.edgekey\\.net\\/crosswalk\\/jsso_crosswalk_legacy_0\\.6\\.8\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -945,7 +2674,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "jssocdn.indiatimes.com",
@@ -972,7 +2701,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "navbharattimesfeeds.indiatimes.com",
@@ -991,23 +2720,23 @@
             ]
         },
         {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/pwafeeds\\/sc_homelist\\.cms",
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/langapi\\/listing\\.cms",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "navbharattimesfeeds"
+                "nbtfeed"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "navbharattimesfeeds.indiatimes.com",
-                    "resolved": "navbharattimesfeeds.indiatimes.com.edgekey.net"
+                    "original": "nbtfeed.indiatimes.com",
+                    "resolved": "nbtfeed.indiatimes.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "e0d1c519b10cf0d58bfb2695d2542e3bf36ff4af0a9af994f12aaad2c8d3832c"
+                "526ff890bc4f02d57db90adacad2af4ef9f16ddc07090dae5c57e5051079aacb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1026,7 +2755,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "langnetstorage.indiatimes.com",
@@ -1034,7 +2763,7 @@
                 }
             ],
             "responseHashes": [
-                "7f288ed92e6e97e9d373082b9d2a4a3c0b954f5749b080044a7082a4ee1dedd1"
+                "d0e43287f2d2b397b8319317f31d54888cf202e1f654b041fb92485cf14d663e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1053,7 +2782,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "langnetstorage.indiatimes.com",
@@ -1080,7 +2809,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "nbtfeed.indiatimes.com",
@@ -1088,7 +2817,7 @@
                 }
             ],
             "responseHashes": [
-                "62d85b0d5678158ef77f03fe98ed0d313d0abb6683803c70dfc96421b9529306"
+                "6b6e9d30b4a1e2d11725027db43dae2527f208aacb229fdc9e3f85c43e1f87fa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1107,7 +2836,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "navbharattimesfeeds.indiatimes.com",
@@ -1115,7 +2844,7 @@
                 }
             ],
             "responseHashes": [
-                "2edca35565d5699f096ea89ec107d516012d50c9d802317d6f7a980fdd9e0156"
+                "716996f215cdd5c4da487d898efd49bc8bb2d04731b66fb2594de1726e70ee53"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1134,7 +2863,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "langnetstorage.indiatimes.com",
@@ -1142,7 +2871,7 @@
                 }
             ],
             "responseHashes": [
-                "cada3f73bc2dc44f6d4b79894bf9d02f1ae8b0a8372b5a8e8b578cd8c46927f3"
+                "f209e49d552ae0966f121c2559183252bf686673713a7832c06270bdde41afdd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1161,7 +2890,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "langnetstorage.indiatimes.com",
@@ -1169,9 +2898,63 @@
                 }
             ],
             "responseHashes": [
-                "2076c327707feba6a722432b554dbbc0568f1652f398ad360b6573d2865455f6"
+                "e231d536c88b4e118bdf5707e49e5e055f276e941bb0bc5ebd6fcb6eac66ca1b"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/css\\/csrcritical\\.24jan2023Desktop\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "688a10e63fef3eeb247151e2e185fb0cc8011ae43d947678aa04674b2b756e46"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/css\\/csrcritical\\.24jan2023Desktop\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.nbt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.nbt.indiatimes.com",
+                    "resolved": "static.nbt.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "688a10e63fef3eeb247151e2e185fb0cc8011ae43d947678aa04674b2b756e46"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1188,14 +2971,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "jssocdn.indiatimes.com",
                     "resolved": "jssocdn.indiatimes.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "a35bf1b705312670528f139efc53783d63f2d06762ae6ce4d0b0700364351f4a"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1205,7 +2990,7 @@
             ]
         },
         {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/crosswalk\\/29\\/widget\\/sso\\.css",
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/crosswalk\\/29\\/widget\\/version\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1213,7 +2998,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "jssocdn.indiatimes.com",
@@ -1221,9 +3006,9 @@
                 }
             ],
             "responseHashes": [
-                "d758da68324024da658fb0f23b8b571e3cb5b431329a8284955e24319f799612"
+                "141079d64e43cc565dd9b2082ab5419da2b047a6cc43cba248ac3a8bb702f8d3"
             ],
-            "type": "Stylesheet",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1240,7 +3025,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "slike.indiatimes.com",
@@ -1259,6 +3044,60 @@
             ]
         },
         {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/pwafeeds\\/sc_homelist\\.cms",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "navbharattimesfeeds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "navbharattimesfeeds.indiatimes.com",
+                    "resolved": "navbharattimesfeeds.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7451cca365ef0751ca1601d4c916a93a84e343ecdc397a85b23cd4d831f3b492"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "navbharattimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/gnads\\/minify-1\\.cms",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "timesofindia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "timesofindia.indiatimes.com",
+                    "resolved": "timesofindia.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bedf54ed7645afacef94ee0a8ab6e118c481912ca1a239f98428d755731b1f6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gadgetsnow.com",
+                "www.gadgetsnow.com"
+            ]
+        },
+        {
             "rule": "indiatimes\\.com\\.edgekey\\.net\\/fonts\\/montserrat-v14-latin-regular\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1267,7 +3106,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "toiassets.indiatimes.com",
@@ -1294,7 +3133,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "toiassets.indiatimes.com",
@@ -1311,37 +3150,73 @@
                 "gadgetsnow.com",
                 "www.gadgetsnow.com"
             ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/affiliates\\/sdk\\/v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "toiassets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "toiassets.indiatimes.com",
+                    "resolved": "toiassets.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5876459329faaba6b02fc6bcf2c5139263148a35030014cf3a028eaa8c186d3c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gadgetsnow.com",
+                "www.gadgetsnow.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00013,
+    "cookies": 0.000129,
     "topInitiators": [
         {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.5141509433962265
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.8552631578947368
+            "prevalence": 0.419811320754717
+        },
+        {
+            "domain": "toiimg.com",
+            "prevalence": 0.03773584905660377
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.014150943396226415
         },
         {
             "domain": "tvid.in",
-            "prevalence": 0.02631578947368421
+            "prevalence": 0.009433962264150943
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.013157894736842105
+            "prevalence": 0.0047169811320754715
         }
     ],
     "types": {
-        "Script": 51,
-        "Fetch": 21,
+        "Script": 84,
         "Preflight": 13,
-        "Font": 29,
-        "Image": 5,
-        "Stylesheet": 4,
-        "XHR": 14
+        "Fetch": 126,
+        "Font": 27,
+        "Image": 7,
+        "XHR": 20,
+        "Other": 2,
+        "Stylesheet": 2
     },
     "nameservers": []
 }

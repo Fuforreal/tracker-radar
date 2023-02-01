@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000361,
-    "sites": 5,
-    "subdomains": [],
+    "prevalence": 0.0000949,
+    "sites": 14,
+    "subdomains": [
+        "img"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
@@ -16,8 +18,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -27,10 +29,96 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kimyadong.net",
+                "yadongkorea.org",
                 "yadongpang.net",
                 "yadongshow.org",
                 "yadongtube.net",
                 "yadongwang.org"
+            ]
+        },
+        {
+            "rule": "hellocdn1\\.net\\/stream\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000475,
+            "cnames": [],
+            "responseHashes": [
+                "ee287c9e922d78e34167b478fc306e57ffc36a23b0228d12dc7a97c4dfa9428a",
+                "19a23e6b275035491a1ab1cf96f2dd888b8321090a0bf6b34d47cc9d96df46aa",
+                "3048b4ebf96be365637b9c7220c889bd43047c3aeb3491e6e7a445332bfab337",
+                "259f6b003f301659c247c4fbd5706930f4417e2bba4a45354a910ca76e529475",
+                "af6bd7618bc1104bef7f2a7992e38ccae631fae9bd9b9435f98682e049b7af74",
+                "2e5241b778fce3055b02f2d6d9254f21e0c8e39e1b53909dcce469bab93fded2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kimyadong.net",
+                "yadongbada.com",
+                "yadongpang.net",
+                "yadongshow.org",
+                "yadongtube.net",
+                "yadongwang.org",
+                "yatv.net"
+            ]
+        },
+        {
+            "rule": "hellocdn1\\.net\\/banner\\/pa\\/banner\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.platform": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "8157770e5c7836dcfdc5f571a03e8382bb35913d31735e75c7e7de605484b857"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kimyadong.net",
+                "yadongpang.net",
+                "yadongshow.org",
+                "yadongwang.org"
+            ]
+        },
+        {
+            "rule": "hellocdn1\\.net\\/player\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 8,
+            "prevalence": 0.0000543,
+            "cnames": [],
+            "responseHashes": [
+                "6cf1f572a342583be92df123b424a32849b7fb552f91d8acf9dfa13c9c706b92"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kimyadong.net",
+                "yadongbada.com",
+                "yadongkorea.org",
+                "yadongpang.net",
+                "yadongshow.org",
+                "yadongtube.net",
+                "yadongwang.org",
+                "yatv.net"
             ]
         },
         {
@@ -39,12 +127,12 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.platform": 6,
                 "Date.prototype.getTime": 5
             },
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "7ab5d9bdfb5647b4dd72d1c698d4b68a4984be5e58b43e10b9bb6fadd0a06f44"
@@ -54,6 +142,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kimyadong.net",
+                "yadongkorea.org",
                 "yadongpang.net",
                 "yadongshow.org",
                 "yadongtube.net",
@@ -67,14 +156,19 @@
     "topInitiators": [
         {
             "domain": "cloudflare.com",
-            "prevalence": 1
+            "prevalence": 0.7435897435897436
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2564102564102564
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 24,
+        "Document": 7
     },
     "nameservers": [
-        "braelyn.ns.cloudflare.com",
-        "stan.ns.cloudflare.com"
+        "stan.ns.cloudflare.com",
+        "braelyn.ns.cloudflare.com"
     ]
 }

@@ -4,12 +4,59 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000506,
-    "sites": 7,
-    "subdomains": [],
+    "prevalence": 0.0000678,
+    "sites": 10,
+    "subdomains": [
+        "euro"
+    ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "trafficscanner\\.pl\\/ws2\\/script\\/2384\\/koniec\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "217d5fcacd5c8403e2b474af94614209e5ff8ac69c56f370b67d943d8e4bdf17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bricomarche.pl",
+                "www.bricomarche.pl"
+            ]
+        },
+        {
+            "rule": "trafficscanner\\.pl\\/ws2\\/index\\.php\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "euro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "euro.com.pl",
+                "www.euro.com.pl"
+            ]
+        },
         {
             "rule": "trafficscanner\\.pl\\/ws2\\/script\\/821\\/koniec\\.js",
             "cookies": 0,
@@ -17,7 +64,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2479ea6f93b5bb539c31f8667114b27b6107e6f1d58664af7fb66e6eb6eb4672"
@@ -37,7 +84,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "9e71a2469e06eb2bde48a362cbd5b93ed59ac3c7932ded4a2dc8a862b352e4ee"
@@ -53,19 +100,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.6
         },
         {
             "domain": "first party",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 6,
+        "Image": 2
     },
     "nameservers": [
         "ns19.ovh.net",

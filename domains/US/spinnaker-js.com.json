@@ -4,15 +4,91 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000475,
+    "sites": 7,
     "subdomains": [
         "cdn",
+        "polyfill",
         "apil1"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "spinnaker-js\\.com\\/rc\\/59401\\/scripts\\/s\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dea1e55775800b121ea2acf9c8bec0f8ee36ed20f263bb6170d0c690485e2ff5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bergans.com",
+                "www.bergans.com"
+            ]
+        },
+        {
+            "rule": "spinnaker-js\\.com\\/v2\\/polyfill\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "polyfill"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cae897bdde94867960ad284a56b1631296eaceddf5710a2857127ca0aa2777d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bergans.com",
+                "www.bergans.com"
+            ]
+        },
+        {
+            "rule": "spinnaker-js\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apil1"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bergans.com",
+                "www.bergans.com",
+                "www.huseierne.no",
+                "www.kappahl.com"
+            ]
+        },
         {
             "rule": "spinnaker-js\\.com\\/rc\\/11197\\/scripts\\/s\\.js",
             "cookies": 0,
@@ -29,7 +105,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "227442d3af5d949e9bc61428f99d6c1c324c031b5e343db8a5d8240be04f7baf"
@@ -41,28 +117,6 @@
                 "finansavisen.no",
                 "www.finansavisen.no"
             ]
-        },
-        {
-            "rule": "spinnaker-js\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apil1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kappahl.com",
-                "www.kappahl.com"
-            ]
         }
     ],
     "categories": [],
@@ -70,20 +124,24 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.35714285714285715
+        },
+        {
             "domain": "d2df291ti5v5sq.cloudfront.net",
-            "prevalence": 0.6
+            "prevalence": 0.35714285714285715
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.4
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Script": 2,
-        "Ping": 2
+        "Script": 6,
+        "Ping": 4
     },
     "nameservers": [
-        "skrue.drlinux.no",
-        "magica.drlinux.no"
+        "magica.drlinux.no",
+        "skrue.drlinux.no"
     ]
 }

@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
+    "prevalence": 0.0000203,
     "sites": 3,
     "subdomains": [
         "keytarget"
@@ -14,7 +14,7 @@
     "resources": [
         {
             "rule": "adnet\\.lt\\/stable\\/keytarget-delfiee\\.min\\.js",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "keytarget"
@@ -37,14 +37,14 @@
                 "window.innerWidth": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.doNotTrack": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "Navigator.prototype.connection": 2,
                 "Navigator.prototype.deviceMemory": 2,
                 "window.devicePixelRatio": 2,
-                "NavigatorUAData.prototype.brands": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "NavigatorUAData.prototype.brands": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "84ac0b3de75379ac18a3c44f3bdc84b325940431cd154005fafba6865ab09133"
@@ -52,24 +52,64 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592028,
+                    "ttl": 2592022,
                     "length": 16,
-                    "prevalence": 0.000014450867052023121,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
                     "ttl": 33696019,
-                    "length": 180,
-                    "prevalence": 0.000014450867052023121,
+                    "length": 186,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 0.5
                 },
                 "cto_bidid": {
                     "ttl": 33696019,
                     "length": 132,
-                    "prevalence": 0.000014450867052023121,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 0.5
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delfi.ee",
+                "www.delfi.ee"
+            ]
+        },
+        {
+            "rule": "adnet\\.lt\\/stable\\/jquery\\/3\\.4\\.1\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "keytarget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delfi.ee",
+                "www.delfi.ee"
+            ]
+        },
+        {
+            "rule": "adnet\\.lt\\/stable\\/assets\\/di_symbol_white\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "keytarget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "delfi.ee",
@@ -79,19 +119,24 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000217,
+    "cookies": 0.0000203,
     "topInitiators": [
         {
-            "domain": "first party",
+            "domain": "doubleclick.net",
             "prevalence": 0.5
         },
         {
+            "domain": "first party",
+            "prevalence": 0.25
+        },
+        {
             "domain": "nh.ee",
-            "prevalence": 0.5
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Image": 2
     },
     "nameservers": [
         "hal.ns.cloudflare.com",

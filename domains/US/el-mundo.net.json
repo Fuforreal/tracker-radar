@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000289,
-    "sites": 4,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "pixelcounter",
         "dmpcdn"
@@ -27,14 +27,14 @@
     "resources": [
         {
             "rule": "el-mundo\\.net\\/pixelcontabilizacion\\/pixelcontabilizacion\\.gifctl",
-            "cookies": 0.0000217,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "pixelcounter"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "pixelcounter.expansion.com",
@@ -51,8 +51,9 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "ga4_ses_page_section": 0.000014450867052023121,
-                "ga4_ses_page_newsID": 0.000014450867052023121
+                "ga4_ses_page_section": 0.00001356300013563,
+                "ga4_ses_page_subsection": 0.000006781500067815,
+                "ga4_ses_page_newsID": 0.00001356300013563
             },
             "exampleSites": [
                 "expansion.com",
@@ -61,8 +62,33 @@
             ]
         },
         {
+            "rule": "el-mundo\\.net\\/cdn\\/1ltq\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dmpcdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1369c2d52e26f4d0c04f215077253d1da676e7cde0503cd6a7ec7392352e37ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leitv.it",
+                "www.leitv.it"
+            ]
+        },
+        {
             "rule": "el-mundo\\.net\\/cdn\\/libtrc\\/tfa\\.js",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "dmpcdn"
@@ -75,7 +101,7 @@
                 "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "af135259a07a4a6a6bc8be851b6b2f1f4e09d4bbcdbbedfbb4a3844ecbdf242e"
@@ -91,21 +117,25 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000289,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
+            "domain": "rcsobjects.it",
+            "prevalence": 0.5
+        },
+        {
             "domain": "tiqcdn.com",
-            "prevalence": 1
+            "prevalence": 0.5
         }
     ],
     "types": {
         "Image": 3,
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
-        "ns1-05.azure-dns.com",
-        "ns2-05.azure-dns.net",
         "ns3-05.azure-dns.org",
-        "ns4-05.azure-dns.info"
+        "ns4-05.azure-dns.info",
+        "ns1-05.azure-dns.com",
+        "ns2-05.azure-dns.net"
     ]
 }

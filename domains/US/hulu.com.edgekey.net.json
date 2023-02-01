@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
-        "wildcard-dual"
+        "wildcard-dual",
+        "wildcard"
     ],
     "cnames": [
+        {
+            "original": "play.hulu.com",
+            "resolved": "wildcard.hulu.com.edgekey.net"
+        },
         {
             "original": "signup.hulu.com",
             "resolved": "wildcard-dual.hulu.com.edgekey.net"
@@ -24,14 +29,14 @@
     "resources": [
         {
             "rule": "hulu\\.com\\.edgekey\\.net\\/",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "wildcard-dual"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "signup.hulu.com",
@@ -48,11 +53,38 @@
                 "disneyplus.com",
                 "www.disneyplus.com"
             ]
+        },
+        {
+            "rule": "hulu\\.com\\.edgekey\\.net\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wildcard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "play.hulu.com",
+                    "resolved": "wildcard.hulu.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "0f15b5906b9831927504b639c8130ec2c62cc1e83cc6a92079bf0d9579134b33"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hulu.com",
+                "www.hulu.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000145,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "disney-plus.net",
@@ -60,7 +92,8 @@
         }
     ],
     "types": {
-        "Other": 2
+        "Other": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

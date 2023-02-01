@@ -7,15 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000795,
-    "sites": 11,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
         "cdn-aitg",
         "astg",
-        "ax-tg",
         "adtg",
-        "cdp-web",
-        "altg"
+        "ax-tg",
+        "altg",
+        "cdp-web"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -28,13 +28,13 @@
                 "cdn-aitg"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Date.prototype.getTime": 9,
-                "Navigator.prototype.language": 5,
-                "window.localStorage": 7
+                "Navigator.prototype.userAgent": 8,
+                "Date.prototype.getTime": 8,
+                "window.localStorage": 6,
+                "Navigator.prototype.language": 2
             },
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 8,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "90db70e496ef140375f9fabdf16ef7e78b59707d9e41d181c2687583a31a52f7",
@@ -49,7 +49,6 @@
                 "m.fmkorea.com",
                 "news.nate.com",
                 "pann.nate.com",
-                "www.etoland.co.kr",
                 "www.fmkorea.com",
                 "www.pandora.tv",
                 "www.ppomppu.co.kr",
@@ -58,14 +57,16 @@
         },
         {
             "rule": "widerplanet\\.com\\/delivery\\/storage",
-            "cookies": 0.0000578,
-            "fingerprinting": 0,
+            "cookies": 0.0000543,
+            "fingerprinting": 1,
             "subdomains": [
                 "astg"
             ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000723,
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
                 "e270f53080812a5da2b2e937ce48dbc794f3442b872f1f2003e3bdd2d2d901dc"
@@ -79,7 +80,6 @@
                 "news.nate.com",
                 "pann.nate.com",
                 "www.airasia.com",
-                "www.etoland.co.kr",
                 "www.fmkorea.com",
                 "www.pandora.tv",
                 "www.ppomppu.co.kr",
@@ -87,20 +87,46 @@
             ]
         },
         {
+            "rule": "widerplanet\\.com\\/delivery\\/wjs\\.php",
+            "cookies": 0.0000271,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adtg"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "81937d6a69033f38f2abde3f6c1c220895d8b1f61c5f6611e21d79af9cf73588",
+                "385582de76b0f2ad834212acba872bcbbacb6246cdfcde9dac96740055520fb2",
+                "82c74e97da411224d225598138bd5ee8a89184ad0f0ef6458443cfb3ca01018f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fmkorea.com",
+                "news.nate.com",
+                "pann.nate.com",
+                "www.fmkorea.com"
+            ]
+        },
+        {
             "rule": "widerplanet\\.com\\/delivery\\/bid_common_tg",
-            "cookies": 0.0000289,
+            "cookies": 0.0000271,
             "fingerprinting": 0,
             "subdomains": [
                 "ax-tg"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "a392c5b9301935896ca6c28ff2a4416e54d1940968a48d8151c846a850f6b936",
-                "5072c66f9aa229a7f4ef5e173ecd639f6a4924d2304789063be3213850af8cd0",
-                "18459ae14ff5a6297395b28c19374a02f4a0e489a8b4bbb49acda0ae8a2f0c50"
+                "3fa3b49fe5f5a9d67fe4bc9c6eac34883d4c0c380bc38ab96246de5181e8cd5a",
+                "1dc56ca232cf12240ee338b782ebf19af77c591fa55f626ee53f494a53dde7ce",
+                "5da3832d58f46de3b4017ad0295066b74bad88b21f352f3c6e1918813124d761"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -121,7 +147,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -135,27 +161,91 @@
             ]
         },
         {
-            "rule": "widerplanet\\.com\\/delivery\\/wjs\\.php",
-            "cookies": 0.0000217,
+            "rule": "widerplanet\\.com\\/delivery\\/wpg\\.php",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "adtg"
+                "astg"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "81937d6a69033f38f2abde3f6c1c220895d8b1f61c5f6611e21d79af9cf73588",
-                "385582de76b0f2ad834212acba872bcbbacb6246cdfcde9dac96740055520fb2"
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fmkorea.com",
-                "news.nate.com",
-                "pann.nate.com"
+                "nate.com",
+                "www.airasia.com"
+            ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/wpp\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "astg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nate.com",
+                "www.airasia.com"
+            ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/wpg_a\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "astg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nate.com",
+                "www.airasia.com"
+            ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "altg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dable_uid": 0.000006781500067815
+            },
+            "exampleSites": [
+                "nate.com",
+                "www.airasia.com"
             ]
         },
         {
@@ -172,7 +262,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "55f8facf2ac52743eb005e5b57dcb1572afe9198254c16e2f9ef2cbce12be281"
@@ -187,7 +277,7 @@
         },
         {
             "rule": "widerplanet\\.com\\/delivery\\/wpc\\.php",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "astg"
@@ -198,17 +288,17 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3fc2c37a1839d317b22edd6cf5a7b59a80a91d1dfd42241fec1d7b09f0b5fde3"
+                "6bce1bc71cd4325aef90537f35a4c5c7978a482adcadccf3643851aff4b6d7eb"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_wp_uid": {
-                    "ttl": 31536032,
-                    "length": 76,
-                    "prevalence": 0.000014450867052023121,
+                    "ttl": 31536015,
+                    "length": 75,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 }
             },
@@ -232,7 +322,7 @@
                 "window.innerWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5012da0a95096cdff89cda0cab33086576ba0965eb0ad1b5e82844819c5af0a8"
@@ -254,7 +344,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7d18f8bf74d5f8cfe25ff22f3655eec868ca3f1bd1aa965153653917331253dd"
@@ -266,123 +356,19 @@
                 "airasia.com",
                 "www.airasia.com"
             ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/wpg\\.php",
-            "cookies": 0.0000145,
-            "fingerprinting": 0,
-            "subdomains": [
-                "astg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airasia.com",
-                "www.airasia.com"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/wpg_a\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "astg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airasia.com",
-                "www.airasia.com"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/wpp\\.php",
-            "cookies": 0.00000723,
-            "fingerprinting": 0,
-            "subdomains": [
-                "astg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airasia.com",
-                "www.airasia.com"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/info",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "altg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airasia.com",
-                "www.airasia.com"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/wfr\\.php",
-            "cookies": 0.0000145,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adtg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "dd52c8278b5b8df2925d3d568125bd48e69430fa5c0e6484aa505cb8030e318f"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "etoland.co.kr",
-                "www.ppomppu.co.kr"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000795,
+    "cookies": 0.0000678,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.5625
         },
         {
             "domain": "ednplus.com",
-            "prevalence": 0.25
+            "prevalence": 0.1875
         },
         {
             "domain": "googletagmanager.com",
@@ -390,24 +376,20 @@
         },
         {
             "domain": "mathtag.com",
-            "prevalence": 0.0625
-        },
-        {
-            "domain": "aceplanet.co.kr",
-            "prevalence": 0.0625
+            "prevalence": 0.125
         }
     ],
     "types": {
         "Script": 18,
-        "Document": 12,
+        "Document": 9,
         "XHR": 6,
         "Preflight": 4,
         "Image": 8
     },
     "nameservers": [
         "ns-409.awsdns-51.com",
-        "ns-1687.awsdns-18.co.uk",
         "ns-854.awsdns-42.net",
-        "ns-1063.awsdns-04.org"
+        "ns-1063.awsdns-04.org",
+        "ns-1687.awsdns-18.co.uk"
     ]
 }

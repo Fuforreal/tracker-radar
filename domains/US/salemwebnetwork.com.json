@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000361,
-    "sites": 5,
+    "prevalence": 0.0000475,
+    "sites": 7,
     "subdomains": [
         "allpass",
         "media"
@@ -18,36 +18,38 @@
     "resources": [
         {
             "rule": "salemwebnetwork\\.com\\/newsletters\\/init",
-            "cookies": 0.00000723,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "allpass"
             ],
             "apis": {
+                "window.localStorage": 4,
                 "Document.cookie getter": 3,
-                "window.localStorage": 3,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "b43e9e480c858af92e9053111ddb685ac84b64f1ef436eb15c3e9f923f8efc5b",
-                "6fa606b45bcf9cd8eb20cad37ffe35d5efc196133b91a93728f21fb266bbd2ee"
+                "eb61ce9981b064517247e9772f75537af671cabc9824d520ed714894679d57f2",
+                "64f63ef6ce8d926b7e0ff7573ef2d008a8e8cfaa40d3a84def7e9841bc365e28",
+                "5b64a899ba241ffb1f100d871d7a5b5203244123dff7cdb2706c68d935619996"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "pvc": {
-                    "ttl": 15891,
+                    "ttl": 25690,
                     "length": 1,
-                    "prevalence": 0.0000072254335260115605,
-                    "uniqueness": 1
+                    "prevalence": 0.00001356300013563,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "christianradio.com",
                 "www.christianradio.com",
+                "www.crosscards.com",
                 "www.godtube.com"
             ]
         },
@@ -59,8 +61,8 @@
                 "media"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "3bd8685ba939395aa62bb5e14872591312a4948e65047eae612372fc70666509"
@@ -71,6 +73,7 @@
             "exampleSites": [
                 "christianradio.com",
                 "www.christianradio.com",
+                "www.crosscards.com",
                 "www.godtube.com"
             ]
         },
@@ -83,10 +86,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b1aa3335f6071a73ee48ceeebe54aefbf8deeb4101fdbe4992e98830f05b5a78"
+                "c2952358a8bfbcd5c0a8e92bd33e5d0d72fe578ef880fb0beef97f9591db39d5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -104,10 +107,10 @@
                 "allpass"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 3
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "7f9252d36a966630aa25574186c5c0790e109600ce480512fe4315d99f1b3f80"
@@ -118,7 +121,32 @@
             "exampleSites": [
                 "christianradio.com",
                 "www.christianradio.com",
+                "www.crosscards.com",
                 "www.godtube.com"
+            ]
+        },
+        {
+            "rule": "salemwebnetwork\\.com\\/newsletters\\/api\\/www\\.crosscards\\.com\\/getEmbedData\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "allpass"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9c0c4164e4d986072b60b0a3737ee94b7535cfe4d07b832e64bb9b6cddc38942"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.00001356300013563
+            },
+            "exampleSites": [
+                "crosscards.com",
+                "www.crosscards.com"
             ]
         },
         {
@@ -130,7 +158,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "85c469ae0b3bce3acde4fe7aa1d42b421c3115caeb097f4164e6b02930316746"
@@ -138,7 +166,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000014450867052023121
+                "_li_dcdm_c": 0.00001356300013563
             },
             "exampleSites": [
                 "godtube.com",
@@ -148,18 +176,22 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000145,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8064516129032258
+        },
+        {
+            "domain": "d22rfa5yh9r2bo.cloudfront.net",
+            "prevalence": 0.1935483870967742
         }
     ],
     "types": {
-        "Script": 13
+        "Script": 18
     },
     "nameservers": [
-        "pat.ns.cloudflare.com",
-        "jack.ns.cloudflare.com"
+        "jack.ns.cloudflare.com",
+        "pat.ns.cloudflare.com"
     ]
 }

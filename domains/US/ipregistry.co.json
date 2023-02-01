@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000289,
+    "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
         "api"
@@ -21,7 +21,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -40,40 +40,20 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "6e9926c52c35b5860d67a7c5492c61a44b26b94bb722e1c5f4e84292748cc77c"
+                "6e9926c52c35b5860d67a7c5492c61a44b26b94bb722e1c5f4e84292748cc77c",
+                "5e16cf2829ead4b338819806ef6814bc5841bb1589e9e826718f81c5d29e775a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "clinicspots.com",
-                "www.clinicspots.com"
-            ]
-        },
-        {
-            "rule": "ipregistry\\.co\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "c3643780dc9f816efcc403a44bddd031151d97ab16a690ac505a08a09bfbf31e"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "omaze.com",
-                "www.omaze.com"
+                "www.clinicspots.com",
+                "www.metalsupermarkets.com"
             ]
         }
     ],
@@ -83,16 +63,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
         "Preflight": 2,
-        "XHR": 2,
-        "Fetch": 2
+        "XHR": 3
     },
     "nameservers": [
-        "lakas.ns.cloudflare.com",
-        "robin.ns.cloudflare.com"
+        "robin.ns.cloudflare.com",
+        "lakas.ns.cloudflare.com"
     ]
 }

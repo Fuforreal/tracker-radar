@@ -4,21 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000361,
-    "sites": 5,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "parisv4-uk",
-        "n-py",
+        "json-avisclient",
+        "quota",
         "parisv4-fr"
     ],
     "cnames": [
         {
             "original": "booking.parisinfo.com",
             "resolved": "parisv4-uk.for-system.com"
-        },
-        {
-            "original": "reservation.n-py.com",
-            "resolved": "n-py.for-system.com"
         },
         {
             "original": "reservation.parisinfo.com",
@@ -29,14 +26,14 @@
     "resources": [
         {
             "rule": "for-system\\.com\\/index_uk\\.aspx",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "parisv4-uk"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "booking.parisinfo.com",
@@ -44,7 +41,7 @@
                 }
             ],
             "responseHashes": [
-                "d24c6d967f7a010ec8a7dae905371f3f4493c4970093e09ed6a158c19538121b"
+                "33bb0f71700374b0dd55705ee87b74dc3cea2c3ee5abd1e63ec440b8d3d1d7d4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -56,40 +53,39 @@
         },
         {
             "rule": "for-system\\.com\\/index\\.aspx",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "n-py",
+                "json-avisclient",
+                "quota",
                 "parisv4-fr"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
-                {
-                    "original": "reservation.n-py.com",
-                    "resolved": "n-py.for-system.com"
-                },
                 {
                     "original": "reservation.parisinfo.com",
                     "resolved": "parisv4-fr.for-system.com"
                 }
             ],
             "responseHashes": [
-                "9815c7c99aa49f426f09d3c1c4f04eee3767568252a28368a9c2c621743e42b4"
+                "626e99ee84d8fb8e166af38957ab1070abf206009dce208ecfcf1bf028a97b76",
+                "d840b3df8645939382e2f8e4d6dab6a6f9f9d756fb0ddfd7908d179e583dd378"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "n-py.com",
+                "parisinfo.com",
+                "en.parisinfo.com",
                 "www.parisinfo.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000361,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "open-system.fr",
@@ -97,7 +93,10 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 5
     },
-    "nameservers": []
+    "nameservers": [
+        "ns200.anycast.me",
+        "dns200.anycast.me"
+    ]
 }

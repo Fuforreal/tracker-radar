@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000361,
-    "sites": 5,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "d",
-        "c"
+        "c",
+        "t"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,10 +23,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "2d287ec1f209977cd2ff4dab91d8c673424d706add7480d8fb381eb2c3593a59"
+                "89dd0160400af6c13a7389e0cfe3e5413a242dc77f2b42af8456567372d34d58"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -46,7 +47,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "32ef14bfb979169d1311f927ca6d904d9728c760efe45ee2f6ad5fcbfe5ffdcc"
@@ -60,11 +61,124 @@
                 "www.btc-echo.de",
                 "www.finanznachrichten.de"
             ]
+        },
+        {
+            "rule": "finative\\.cloud\\/cds\\/delivery\\/init\\/gdpr\\/0\\/gdpr_consent\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "82fcbd868d10c7c73de5fb4e934c47075f041ed58d14060ef1f0b2d1266ec422"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finanznachrichten.de",
+                "www.finanznachrichten.de"
+            ]
+        },
+        {
+            "rule": "finative\\.cloud\\/cdn\\/asset\\/js\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f71ca9a8d0abfe97f0a05417946ab88d18bfa690560b883fa2bfe86ccb1da781"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finanznachrichten.de",
+                "www.finanznachrichten.de"
+            ]
+        },
+        {
+            "rule": "finative\\.cloud\\/cdn\\/asset\\/css\\/nativendo\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "776647f157b8de7a0efbdf5cbdee9871b96111519a4ed6606b9a74ece88c6f60"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finanznachrichten.de",
+                "www.finanznachrichten.de"
+            ]
+        },
+        {
+            "rule": "finative\\.cloud\\/cds\\/delivery\\/get\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "71df3129b1aff52eb1ef6b237be9fd9fae005481166ca0a9b280ea35c4e4e91d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finanznachrichten.de",
+                "www.finanznachrichten.de"
+            ]
+        },
+        {
+            "rule": "finative\\.cloud\\/cds\\/log\\/ingest\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finanznachrichten.de",
+                "www.finanznachrichten.de"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -72,10 +186,12 @@
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 12,
+        "Stylesheet": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "roan.ns.cloudflare.com",
-        "mary.ns.cloudflare.com"
+        "mary.ns.cloudflare.com",
+        "roan.ns.cloudflare.com"
     ]
 }

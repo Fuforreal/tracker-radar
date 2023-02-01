@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
-        "rek"
+        "rek",
+        "panel",
+        "istr"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,7 +23,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -31,6 +33,48 @@
                 "doviz.com",
                 "www.doviz.com"
             ]
+        },
+        {
+            "rule": "izlesene\\.com\\/api\\/player\\/npm_nedir_org\\/10687934",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "panel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5095903cce24de818ce982c3e21e77c6e1e37d3d6a7f9dfa88a14baf79c45b0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nedir.org",
+                "www.nedir.org"
+            ]
+        },
+        {
+            "rule": "izlesene\\.com\\/data\\/videos\\/10687\\/10687934-480_2-170k\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "istr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nedir.org",
+                "www.nedir.org"
+            ]
         }
     ],
     "categories": [],
@@ -39,11 +83,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "imgiz.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Media": 2
+        "Media": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns2.nokta.com",

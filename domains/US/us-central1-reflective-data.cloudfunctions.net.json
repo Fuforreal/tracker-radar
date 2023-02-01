@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 0,
@@ -22,7 +22,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -30,11 +30,33 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000028901734104046242
+                "_ga": 0.00002712600027126
             },
             "exampleSites": [
                 "caminofinancial.com",
                 "www.caminofinancial.com"
+            ]
+        },
+        {
+            "rule": "us-central1-reflective-data\\.cloudfunctions\\.net\\/sasb-rd-clickstream-tracker\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00001356300013563
+            },
+            "exampleSites": [
+                "sportsadda.com",
+                "www.sportsadda.com"
             ]
         }
     ],
@@ -46,11 +68,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.3
+        },
+        {
+            "domain": "google-analytics.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

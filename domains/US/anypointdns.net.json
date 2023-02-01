@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000289,
-    "sites": 4,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
+        "splunk-elb.lb",
         "freedom-exp.lb",
         "honda-production-lb.lb"
     ],
@@ -18,35 +19,91 @@
         {
             "original": "api.services.honda.ca",
             "resolved": "honda-production-lb.lb.anypointdns.net"
+        },
+        {
+            "original": "apps-api.splunk.com",
+            "resolved": "splunk-elb.lb.anypointdns.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "anypointdns\\.net\\/customer-web\\/api\\/unauth\\/maintenance-banner",
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "freedom-exp.lb"
+                "splunk-elb.lb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "api.freedommortgage.com",
-                    "resolved": "freedom-exp.lb.anypointdns.net"
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com"
+            ]
+        },
+        {
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk-elb.lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
                 }
             ],
             "responseHashes": [
-                "8a4b9d45a64de8cff340ba005ec4f14baf5b11eb2d46291dff3d12ac21c79a25"
+                "5b4a8b3053b5f58245e73f9a10957ced19e5da37116497004b8652f78285c1ee"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com"
+            ]
+        },
+        {
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/track",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk-elb.lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [
+                "04d4007fb96e028005efa9b90d7d79016e2a6ea64c8131f4798e3faf9b48c03e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freedommortgage.com",
-                "mylogin.freedommortgage.com"
+                "splunk.com",
+                "docs.splunk.com"
             ]
         },
         {
@@ -58,7 +115,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.freedommortgage.com",
@@ -75,6 +132,33 @@
             ]
         },
         {
+            "rule": "anypointdns\\.net\\/customer-web\\/api\\/unauth\\/maintenance-banner",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "freedom-exp.lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.freedommortgage.com",
+                    "resolved": "freedom-exp.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [
+                "7ea7b795ae02b19a5fccc62a8bb2abece7d89199431903219690e597c31bf962"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freedommortgage.com",
+                "mylogin.freedommortgage.com"
+            ]
+        },
+        {
             "rule": "anypointdns\\.net\\/api-honda-hondaweb-exp-api\\/hondaweb-exp-api\\/v1\\/credentials\\/google-maps-javascript-api",
             "cookies": 0,
             "fingerprinting": 0,
@@ -83,7 +167,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.services.honda.ca",
@@ -108,7 +192,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.services.honda.ca",
@@ -116,7 +200,7 @@
                 }
             ],
             "responseHashes": [
-                "75772628a6c488e9dc2561e748245b1969a93165b0bbd507fd843848e6a60c0e"
+                "71c38272ea4374aab58a73aa75e2214c0fc08684fc418f92438760a4817e0d43"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -129,7 +213,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "d7koym0rxduxm.cloudfront.net",
@@ -137,8 +221,14 @@
         }
     ],
     "types": {
-        "XHR": 4,
-        "Preflight": 4
+        "Preflight": 6,
+        "Fetch": 2,
+        "XHR": 6
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-1546.awsdns-01.co.uk",
+        "ns-1343.awsdns-39.org",
+        "ns-180.awsdns-22.com",
+        "ns-975.awsdns-57.net"
+    ]
 }

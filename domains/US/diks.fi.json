@@ -4,14 +4,98 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000723,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
+        "sso.prod",
         "coral"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "sso.ksml.fi",
+            "resolved": "sso.prod.diks.fi"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "diks\\.fi\\/assets\\/jankko-sso-client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sso.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.ksml.fi",
+                    "resolved": "sso.prod.diks.fi"
+                }
+            ],
+            "responseHashes": [
+                "288085e4a75bf5311bcf60111f9537dbfe0d1c1c198f944f56b7e19ba8e66b1f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ksml.fi",
+                "www.ksml.fi"
+            ]
+        },
+        {
+            "rule": "diks\\.fi\\/assets\\/js\\/count\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "coral"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "305705fc54f335a4cce39cb68ab059e7202c19f0ff03d3336ebd3e6fcdcf0518"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ksml.fi",
+                "www.ksml.fi"
+            ]
+        },
+        {
+            "rule": "diks\\.fi\\/refreshSession",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.ksml.fi",
+                    "resolved": "sso.prod.diks.fi"
+                }
+            ],
+            "responseHashes": [
+                "10028f5fa72c9ddcc40101b3db718bff6442da50b82f1f81cc8f0898b2db8850"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ksml.fi",
+                "www.ksml.fi"
+            ]
+        },
         {
             "rule": "diks\\.fi\\/api\\/story\\/count\\.js",
             "cookies": 0,
@@ -21,10 +105,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "073df85770819f332bf5ca67abc63d2a5a5fe0a044e2a47c9a5ad0c8073d8e16"
+                "3741cd9e65214756b2d73aaea56924e93d30d4957e33f67840c95f7623540a11"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,7 +121,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -45,12 +129,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-1887.awsdns-43.co.uk",
         "ns-1069.awsdns-05.org",
-        "ns-458.awsdns-57.com",
-        "ns-945.awsdns-54.net"
+        "ns-1887.awsdns-43.co.uk",
+        "ns-945.awsdns-54.net",
+        "ns-458.awsdns-57.com"
     ]
 }

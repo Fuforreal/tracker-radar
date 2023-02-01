@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000101,
+    "prevalence": 0.0000949,
     "sites": 14,
     "subdomains": [
         "cdn"
@@ -18,17 +18,21 @@
         {
             "rule": "tiny\\.cloud\\/1\\/no-api-key\\/tinymce\\/6\\/tinymce\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "a20bf08e64951c3ff03ebd281a8fe01bfb7702ad10347b1114b209d9273c4530"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -46,7 +50,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a20bf08e64951c3ff03ebd281a8fe01bfb7702ad10347b1114b209d9273c4530"
@@ -74,7 +78,7 @@
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 3
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -95,10 +99,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "75bac4ef5ef2db81c16b100e15c6e678f9434ac522345027d50d6d3c14cef6b2"
+                "f91e87cd8ff5775ef4f4be8c1aa73dc2b75b7eb8b54f29f002211c881a0997e4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -118,7 +122,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "75bac4ef5ef2db81c16b100e15c6e678f9434ac522345027d50d6d3c14cef6b2"
@@ -141,7 +145,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "38b185d059db5a040f5741013be75c4d3788361b9104e649eb592c48b451e4ac"
@@ -163,7 +167,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7ad6ae098cc766c95a1f7c58b2d47adab7e37d68ecaa5bd01e3213ec3c5bd29b"
@@ -185,7 +189,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "38b185d059db5a040f5741013be75c4d3788361b9104e649eb592c48b451e4ac"
@@ -197,56 +201,6 @@
                 "waterwayguide.com",
                 "www.waterwayguide.com"
             ]
-        },
-        {
-            "rule": "tiny\\.cloud\\/1\\/993v9c75sk7cb8gb7dkytkz9r1sp1wl1nqg363mip64zyj3x\\/tinymce\\/6\\/tinymce\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "NavigatorUAData.prototype.brands": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "c23e35f8d742c53f1fabc239a960d1e90a2e340ef621da07343b044b3cb41ae9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wrestlestat.com",
-                "www.wrestlestat.com"
-            ]
-        },
-        {
-            "rule": "tiny\\.cloud\\/1\\/993v9c75sk7cb8gb7dkytkz9r1sp1wl1nqg363mip64zyj3x\\/tinymce\\/6\\.3\\.1-12\\/tinymce\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "c23e35f8d742c53f1fabc239a960d1e90a2e340ef621da07343b044b3cb41ae9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wrestlestat.com",
-                "www.wrestlestat.com"
-            ]
         }
     ],
     "categories": [],
@@ -255,17 +209,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9743589743589743
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.02564102564102564
         }
     ],
     "types": {
-        "Script": 17,
+        "Script": 13,
         "Stylesheet": 6
     },
     "nameservers": [
         "ns-1757.awsdns-27.co.uk",
+        "ns-1255.awsdns-28.org",
         "ns-312.awsdns-39.com",
-        "ns-745.awsdns-29.net",
-        "ns-1255.awsdns-28.org"
+        "ns-745.awsdns-29.net"
     ]
 }

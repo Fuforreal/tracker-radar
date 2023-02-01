@@ -4,15 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "tg1",
         "servt",
-        "servs"
+        "player",
+        "serv",
+        "servs",
+        "servr"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "stoic-media\\.com\\/api\\/adserver\\/spt",
@@ -22,20 +25,22 @@
                 "tg1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "cb5c3f9c6fc7775b1d062e9e11140699ebb7b2de146fad51e424ee67a6605cd5"
+                "b57be669b051c0af44aa09893d6f2d63933f3eae78e9b864e656bf168634f6cf",
+                "304120a311b2db791cbd65f2eed9f2c81e2771f46f41ab354f59b72e3cc4fae2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "forbes.com.mx",
+                "adn40.mx",
+                "www.eleconomista.com.mx",
                 "www.forbes.com.mx"
             ]
         },
@@ -47,8 +52,8 @@
                 "servt"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -57,20 +62,80 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "forbes.com.mx",
+                "adn40.mx",
+                "www.adn40.mx",
+                "www.eleconomista.com.mx",
+                "www.forbes.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/script\\/6\\.1\\/AVmanager\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.vendor": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ef40402cb2f4c42aeeb00d51bf17ef4af82e75da9f5275aec910e5ee1f33b0d9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/api\\/adserver\\/tag\\/",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serv"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "b3d8ad91e358c6f0dce671e3aa0ce0e8eee8dbde86b7325abe5aea2693760374",
+                "c297f422775f29d7fda4dbe27a023ffd40e24fb886bc1b0983de1612d5dd1a8b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx",
                 "www.forbes.com.mx"
             ]
         },
         {
             "rule": "stoic-media\\.com\\/cookiesyncendpoint",
-            "cookies": 0.00000723,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "servs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -79,32 +144,189 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "forbes.com.mx",
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx",
+                "www.forbes.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.12\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1d0bcc4ebfb3f326f655d27586ea79f39448ca371dfd90815f187e4d716f2e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.12\\.0a3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9f86db3b33fc10e0a819b62bca6d0be870c8ec2eb07aa342bddc8354a98ec049"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.12\\.0a1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fb2a3185b8a550b167ef6b3a84e7820b82de0f0d51acd770e62cf0e83c655f57"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.12\\.0a0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e0b10948c8f8424409e72354023bb956d7a6d000840271dae5bcc642c73906d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/script\\/6\\.1\\/libs\\/prebid\\/avpb7\\.12\\.0a4\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b2e12a86226fc0e27317e478f99340cab7a74240dd75db4535bc2cee8029f036"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx"
+            ]
+        },
+        {
+            "rule": "stoic-media\\.com\\/api\\/adserver\\/s2s",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servr"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eleconomista.com.mx",
+                "www.eleconomista.com.mx",
                 "www.forbes.com.mx"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.7708333333333334
+        },
+        {
             "domain": "aniview.com",
-            "prevalence": 0.625
+            "prevalence": 0.125
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.25
+            "prevalence": 0.0625
         },
         {
             "domain": "pubmatic.com",
-            "prevalence": 0.125
+            "prevalence": 0.041666666666666664
         }
     ],
     "types": {
-        "Script": 2,
-        "Image": 2,
-        "Document": 2
+        "Script": 15,
+        "Image": 4,
+        "XHR": 3,
+        "Document": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "ns11.wixdns.net",

@@ -7,27 +7,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000361,
-    "sites": 5,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
-        "usafp"
+        "usafp",
+        "usfp",
+        "behavior"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "tongdun\\.net\\/fp3\\/profile\\.json",
-            "cookies": 0.0000145,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "usafp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "16236c92bfeed322903d61fddc986b5f7f1e53e582b7767392f758018ab5972e"
+                "ee7a3d62313fa3957ebc04a5cc747ea21b5fe38181021949bd2b6589067d390b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -36,23 +38,68 @@
                 "nothing.tech",
                 "us.nothing.tech"
             ]
+        },
+        {
+            "rule": "tongdun\\.net\\/web3_8\\/profile\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usfp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a8eeeca96dd053c29af39a9cd5e44b79c1bac9c7eb96c6ba53a828688ddd1791"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liveme.com",
+                "www.liveme.com"
+            ]
+        },
+        {
+            "rule": "tongdun\\.net\\/behavior\\/upload\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "behavior"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "edbeba48fd328dcd6eb5df1a050a1eaec70f99378c43d6a72cdfd093c67fc375"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liveme.com",
+                "www.liveme.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000361,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "shopify.com",
-            "prevalence": 0.75
+            "prevalence": 0.5
         },
         {
             "domain": "first party",
-            "prevalence": 0.25
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns4.dnsv5.com",

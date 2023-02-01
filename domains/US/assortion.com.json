@@ -4,40 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "assortion\\.com\\/app\\.js",
-            "cookies": 0.0000217,
+            "cookies": 0.0000271,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "3921df72b804bbc295b1f74887bc1ff3c692634aa517eed84c27d0deb4f32e87",
-                "0463bf633a17729f74ef48fce96b7fc6238431449b2a5e6be08be60b407ca6b2"
+                "f44f4b83da4ef8c83230db1c61d746ebabd1455017001720e9b73ce888c09286"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "assortion": {
-                    "ttl": 157766412,
+                    "ttl": 157766407,
                     "length": 36,
-                    "prevalence": 0.00002167630057803468,
+                    "prevalence": 0.00002712600027126,
                     "uniqueness": 1
                 }
             },
@@ -45,6 +45,47 @@
             "exampleSites": [
                 "anycubic.com",
                 "www.anycubic.com",
+                "www.toyworld.co.nz",
+                "www.xtool.com"
+            ]
+        },
+        {
+            "rule": "assortion\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anycubic.com",
+                "www.xtool.com"
+            ]
+        },
+        {
+            "rule": "assortion\\.com\\/offers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anycubic.com",
                 "www.xtool.com"
             ]
         },
@@ -56,11 +97,11 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "588e27e1a3430cb524dbb082d53fe22dfcb254795d1009c47ba03327a5e52660"
+                "00ad98e9ffb7e4d1f42d7d2fdf9ff1f4b9069be7c0037038937ff814bd6a7d4c"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -68,27 +109,82 @@
             "exampleSites": [
                 "anycubic.com",
                 "www.anycubic.com",
+                "www.toyworld.co.nz",
+                "www.xtool.com"
+            ]
+        },
+        {
+            "rule": "assortion\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anycubic.com",
+                "www.xtool.com"
+            ]
+        },
+        {
+            "rule": "assortion\\.com\\/offers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6f5866cc199c68065bc31096afe78a184b5c3dd0f4d5b6376a94e2d0206af035"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anycubic.com",
                 "www.xtool.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000217,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 3,
-        "Stylesheet": 3
+        "Script": 4,
+        "Preflight": 4,
+        "Stylesheet": 4,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-838.awsdns-40.net",
         "ns-2026.awsdns-61.co.uk",
-        "ns-268.awsdns-33.com",
-        "ns-1473.awsdns-56.org"
+        "ns-1473.awsdns-56.org",
+        "ns-268.awsdns-33.com"
     ]
 }

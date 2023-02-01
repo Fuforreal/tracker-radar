@@ -9,14 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000578,
-    "sites": 8,
+    "prevalence": 0.0000746,
+    "sites": 11,
     "subdomains": [
         "geo",
+        "mps",
+        "fm",
         "gdsapi",
         "quote"
     ],
     "cnames": [
+        {
+            "original": "fm.cnbc.com",
+            "resolved": "fm.cnbc.com.edgekey.net"
+        },
         {
             "original": "gdsapi.cnbc.com",
             "resolved": "gdsapi.cnbc.com.edgekey.net"
@@ -24,6 +30,10 @@
         {
             "original": "geo.cnbc.com",
             "resolved": "geo.cnbc.com.edgekey.net"
+        },
+        {
+            "original": "mps.cnbc.com",
+            "resolved": "mps.cnbc.com.edgekey.net"
         },
         {
             "original": "quote.cnbc.com",
@@ -34,14 +44,14 @@
     "resources": [
         {
             "rule": "cnbc\\.com\\.edgekey\\.net\\/info\\/",
-            "cookies": 0.0000434,
+            "cookies": 0.0000475,
             "fingerprinting": 0,
             "subdomains": [
                 "geo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 7,
+            "prevalence": 0.0000475,
             "cnames": [
                 {
                     "original": "geo.cnbc.com",
@@ -55,12 +65,121 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "msnbc.com",
+                "today.com",
+                "deals.today.com",
                 "www.cnbc.com",
                 "www.msnbc.com",
                 "www.nbcnews.com",
                 "www.telemundo.com",
                 "www.today.com"
+            ]
+        },
+        {
+            "rule": "cnbc\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-cnbc-web\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "mps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.cnbc.com",
+                    "resolved": "mps.cnbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "98899206f450b66d6e8eddb98d1568d131d234bc48fbae3a1df41f2888498180"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnbc.com",
+                "www.cnbc.com"
+            ]
+        },
+        {
+            "rule": "cnbc\\.com\\.edgekey\\.net\\/request\\/page\\/json\\/params\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.cnbc.com",
+                    "resolved": "mps.cnbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a0393d70b93f0c87e424772ff62e7dff264284bd0749a9ea7e4ffacd85cefc3b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnbc.com",
+                "www.cnbc.com"
+            ]
+        },
+        {
+            "rule": "cnbc\\.com\\.edgekey\\.net\\/applications\\/cnbc\\.com\\/resources\\/files\\/2021\\/09\\/23\\/visitorapi\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "fm.cnbc.com",
+                    "resolved": "fm.cnbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c7b3719d62a8f05589a3a6d5f72afaa9f0ec12abf74822e7506c5fbecf30d76b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnbc.com",
+                "www.cnbc.com"
+            ]
+        },
+        {
+            "rule": "cnbc\\.com\\.edgekey\\.net\\/applications\\/cnbc\\.com\\/resources\\/files\\/2021\\/09\\/23\\/AppMeasurement\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "fm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "fm.cnbc.com",
+                    "resolved": "fm.cnbc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "61f021263383c160f4d0b70f34e77c300936c2f60574c5c27cc366b020d366b0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnbc.com",
+                "www.cnbc.com"
             ]
         },
         {
@@ -72,7 +191,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "gdsapi.cnbc.com",
@@ -80,7 +199,7 @@
                 }
             ],
             "responseHashes": [
-                "5fa4067bee4687554977faf7bc80f3a6c29763dfcd0be8d3c71b79083f0d7102"
+                "3eca20d67b70f26f6d2189171bbe4f303e741b7736e3a75971e08892e53b3139"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -99,7 +218,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "gdsapi.cnbc.com",
@@ -107,7 +226,7 @@
                 }
             ],
             "responseHashes": [
-                "d32108bff28daa5ecf7080d1faafaa47c0d2bfeb5d3e6c38bcf0c0b1298e5784"
+                "a949ec96d4c31c22a4e644b617d1e56522a8533802598ba37c099af07c38b308"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -126,7 +245,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "quote.cnbc.com",
@@ -134,7 +253,7 @@
                 }
             ],
             "responseHashes": [
-                "15f143e6947951890dbac3e100ad24cecfd55bd494afe6da50000d322549983c"
+                "8d2e2b63d88b4100562e66bcf627b1c00b6aaab0ba8273fbb4be56e67f492df1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -153,7 +272,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "quote.cnbc.com",
@@ -161,7 +280,7 @@
                 }
             ],
             "responseHashes": [
-                "4f7706538d4b590483649aa196938abf7381964d235850e8b4cc64c1dc935ec9"
+                "9b67d22d03f11f7e73ef6d34914a31113cc7af7f26524d35e21a86d103af5caf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -174,20 +293,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000578,
+    "cookies": 0.0000746,
     "topInitiators": [
         {
             "domain": "cnbcfm.com",
-            "prevalence": 0.7241379310344828
+            "prevalence": 0.6470588235294118
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.27586206896551724
+            "prevalence": 0.2647058823529412
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.058823529411764705
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.029411764705882353
         }
     ],
     "types": {
-        "Fetch": 8,
-        "XHR": 6
+        "Fetch": 9,
+        "Script": 6,
+        "XHR": 8
     },
     "nameservers": []
 }

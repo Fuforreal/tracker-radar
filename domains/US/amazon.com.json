@@ -9,17 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00123,
-    "sites": 170,
+    "prevalence": 0.00129,
+    "sites": 190,
     "subdomains": [
-        "read",
-        "unagi",
-        "unagi-eu",
-        "fls-na",
-        "fls-eu",
         "unagi-na",
+        "unagi-eu",
         "www",
         "completion",
+        "unagi",
+        "fls-na",
+        "fls-eu",
         "vs.aws",
         "g-images",
         "payments",
@@ -30,14 +29,11 @@
         "payments-fe",
         "code.buywithprime",
         "order.buywithprime",
+        "read",
         "ws",
         "api-cdn"
     ],
     "cnames": [
-        {
-            "original": "fls-eu.amazon.com.be",
-            "resolved": "fls-eu.amazon.com"
-        },
         {
             "original": "fls-eu.amazon.eg",
             "resolved": "fls-eu.amazon.com"
@@ -49,10 +45,6 @@
         {
             "original": "fls-eu.amazon.se",
             "resolved": "fls-eu.amazon.com"
-        },
-        {
-            "original": "unagi.amazon.com.be",
-            "resolved": "unagi-eu.amazon.com"
         },
         {
             "original": "unagi.amazon.eg",
@@ -67,295 +59,8 @@
             "resolved": "unagi-eu.amazon.com"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
-        {
-            "rule": "amazon\\.com\\/kp\\/card",
-            "cookies": 0.0000217,
-            "fingerprinting": 3,
-            "subdomains": [
-                "read"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3,
-                "Date.prototype.getTime": 4,
-                "window.innerHeight": 3,
-                "window.sessionStorage": 3,
-                "Navigator.prototype.connection": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.availWidth": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.availHeight": 3,
-                "Screen.prototype.colorDepth": 3,
-                "Screen.prototype.pixelDepth": 3,
-                "window.innerWidth": 3,
-                "PerformanceTiming.prototype.navigationStart": 4,
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "Navigator.prototype.hardwareConcurrency": 3,
-                "Navigator.prototype.deviceMemory": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Navigator.prototype.webdriver": 3,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.appName": 2,
-                "window.outerHeight": 2,
-                "window.outerWidth": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.appVersion": 2,
-                "window.name": 3
-            },
-            "sites": 4,
-            "prevalence": 0.0000289,
-            "cnames": [],
-            "responseHashes": [
-                "864a83216bee0ef173ee011829fac6be02fa910e4a3cf01c212fd7811e649791",
-                "318168c326d5bbf792c5073853eab08b16a83a3191c5f230240faee633b5b1e8",
-                "7ebbe45267fa95aedd0a5057e3aa817c00abd5631f6059e44cc132e977b70d13"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {
-                "csm-hit": {
-                    "ttl": 30240004,
-                    "length": 68,
-                    "prevalence": 0.00002167630057803468,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blood-pressure.org",
-                "readaloudrevival.com",
-                "www.hormonesmatter.com",
-                "www.tarotingie.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/service\\/web\\/content\\/uploadMetrics",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "read"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
-            "cnames": [],
-            "responseHashes": [
-                "63399381d17fc090a5db0c8a814dc3d806bdb5397feffa4ea16ebc5c9c977b89"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blood-pressure.org",
-                "readaloudrevival.com",
-                "www.hormonesmatter.com",
-                "www.tarotingie.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/kp\\/embed",
-            "cookies": 0.00000723,
-            "fingerprinting": 3,
-            "subdomains": [
-                "read"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.connection": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.appName": 2,
-                "window.outerHeight": 2,
-                "window.outerWidth": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Navigator.prototype.webdriver": 2,
-                "window.name": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "window.sessionStorage": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Screen.prototype.pixelDepth": 1,
-                "Navigator.prototype.deviceMemory": 1,
-                "Navigator.prototype.plugins": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "1f2d314960e3a5495333a8adb52966f01e2527be2186e50fbfcf4e37abb416ad"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {
-                "csm-hit": {
-                    "ttl": 30240007,
-                    "length": 68,
-                    "prevalence": 0.0000072254335260115605,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blood-pressure.org",
-                "readaloudrevival.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/kp\\/uedata\\/uedata",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "read"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blood-pressure.org",
-                "readaloudrevival.com",
-                "www.hormonesmatter.com",
-                "www.tarotingie.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.csa\\.prod",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unagi",
-                "unagi-eu"
-            ],
-            "apis": {},
-            "sites": 22,
-            "prevalence": 0.000159,
-            "cnames": [
-                {
-                    "original": "unagi.amazon.com.be",
-                    "resolved": "unagi-eu.amazon.com"
-                },
-                {
-                    "original": "unagi.amazon.eg",
-                    "resolved": "unagi-eu.amazon.com"
-                },
-                {
-                    "original": "unagi.amazon.pl",
-                    "resolved": "unagi-eu.amazon.com"
-                },
-                {
-                    "original": "unagi.amazon.se",
-                    "resolved": "unagi-eu.amazon.com"
-                }
-            ],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.abebooks.fr",
-                "www.amazon.com.be",
-                "boardgames.com",
-                "www.dymocks.com.au",
-                "us.macmillan.com",
-                "www.tarotingie.com",
-                "readaloudrevival.com",
-                "www.acx.com",
-                "www.fabric.com",
-                "www.iberlibro.com",
-                "www.abebooks.de",
-                "www.hormonesmatter.com",
-                "www.zvab.com",
-                "blood-pressure.org",
-                "www.amazon.eg",
-                "www.amazon.pl",
-                "www.shopbop.com",
-                "www.amazon.se",
-                "www.audible.com.au",
-                "www.leaksmirror.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/1\\/batch\\/1\\/OE\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fls-na",
-                "fls-eu"
-            ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.0000939,
-            "cnames": [
-                {
-                    "original": "fls-eu.amazon.com.be",
-                    "resolved": "fls-eu.amazon.com"
-                },
-                {
-                    "original": "fls-eu.amazon.eg",
-                    "resolved": "fls-eu.amazon.com"
-                },
-                {
-                    "original": "fls-eu.amazon.pl",
-                    "resolved": "fls-eu.amazon.com"
-                },
-                {
-                    "original": "fls-eu.amazon.se",
-                    "resolved": "fls-eu.amazon.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blood-pressure.org",
-                "boardgames.com",
-                "readaloudrevival.com",
-                "www.acx.com",
-                "www.amazon.com.be",
-                "www.amazon.eg",
-                "www.amazon.pl",
-                "www.amazon.se",
-                "www.audible.com.au",
-                "www.fabric.com",
-                "www.hormonesmatter.com",
-                "www.shopbop.com",
-                "www.tarotingie.com"
-            ]
-        },
         {
             "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.nexusclient\\.prod",
             "cookies": 0,
@@ -365,8 +70,8 @@
                 "unagi-eu"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -376,14 +81,15 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boardgames.com",
-                "www.amazon.com.be",
+                "leozagami.com",
                 "www.amazon.eg",
                 "www.amazon.pl",
                 "www.amazon.se",
                 "www.audible.com.au",
                 "www.fabric.com",
                 "www.leaksmirror.com",
-                "www.shopbop.com"
+                "www.shopbop.com",
+                "www.tarotingie.com"
             ]
         },
         {
@@ -395,30 +101,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boardgames.com",
-                "www.fabric.com",
-                "www.leaksmirror.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/api\\/2017\\/suggestions",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "completion"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -440,13 +123,35 @@
                 "www"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boardgames.com",
+                "www.fabric.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/api\\/2017\\/suggestions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "completion"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -464,13 +169,9 @@
                 "unagi-eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
+            "sites": 20,
+            "prevalence": 0.000136,
             "cnames": [
-                {
-                    "original": "unagi.amazon.com.be",
-                    "resolved": "unagi-eu.amazon.com"
-                },
                 {
                     "original": "unagi.amazon.eg",
                     "resolved": "unagi-eu.amazon.com"
@@ -487,16 +188,76 @@
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
-            "type": "XHR",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boardgames.com",
-                "www.amazon.com.be",
+                "leozagami.com",
+                "readaloudrevival.com",
+                "us.macmillan.com",
+                "www.abebooks.co.uk",
+                "www.abebooks.de",
+                "www.abebooks.com",
+                "www.abebooks.fr",
+                "www.acx.com",
                 "www.amazon.eg",
                 "www.amazon.pl",
                 "www.amazon.se",
-                "www.fabric.com"
+                "www.audible.com.au",
+                "www.dymocks.com.au",
+                "www.fabric.com",
+                "www.hormonesmatter.com",
+                "www.iberlibro.com",
+                "www.shopbop.com",
+                "www.tarotingie.com",
+                "www.zvab.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/1\\/batch\\/1\\/OE\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fls-na",
+                "fls-eu"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000814,
+            "cnames": [
+                {
+                    "original": "fls-eu.amazon.eg",
+                    "resolved": "fls-eu.amazon.com"
+                },
+                {
+                    "original": "fls-eu.amazon.pl",
+                    "resolved": "fls-eu.amazon.com"
+                },
+                {
+                    "original": "fls-eu.amazon.se",
+                    "resolved": "fls-eu.amazon.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boardgames.com",
+                "leozagami.com",
+                "readaloudrevival.com",
+                "www.acx.com",
+                "www.amazon.eg",
+                "www.amazon.pl",
+                "www.amazon.se",
+                "www.audible.com.au",
+                "www.fabric.com",
+                "www.hormonesmatter.com",
+                "www.shopbop.com",
+                "www.tarotingie.com"
             ]
         },
         {
@@ -507,8 +268,8 @@
                 "vs.aws"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -516,28 +277,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "calculator.aws",
+                "docs.amplify.aws",
                 "repost.aws"
             ]
         },
         {
             "rule": "amazon\\.com\\/token",
-            "cookies": 0.0000145,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "vs.aws"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "60d4744989390a1d80c4167eaef23a0ecaafe1b4ce91a25416352cba4f49c3f0"
+                "c7654375081057765732f81d66d440948154898d42845274687c17f03eebe46a",
+                "c65a20826c7ac7395c24300a0ce975996c89359410e497489cea33b0e02f24d0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "calculator.aws",
+                "docs.amplify.aws",
                 "repost.aws"
             ]
         },
@@ -550,7 +314,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000361,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "b1341b7a78a350944f1a578eb81330b41a19d5297275291f13fd331e54873e4b"
@@ -568,7 +332,7 @@
         },
         {
             "rule": "amazon\\.com\\/gp\\/widgets\\/sessionstabilizer",
-            "cookies": 0.000462,
+            "cookies": 0.000495,
             "fingerprinting": 0,
             "subdomains": [
                 "payments",
@@ -579,103 +343,112 @@
                 "payments-fe"
             ],
             "apis": {},
-            "sites": 64,
-            "prevalence": 0.000462,
+            "sites": 73,
+            "prevalence": 0.000495,
             "cnames": [],
             "responseHashes": [
-                "80333edb03eab14988a2fef55124b2d506e667ea135893dca1edf71e5049a4b0",
-                "cbf9df9976fbef0231da4a3f5052558be38ab5069917c3fd2d00bcc7a7a7b340",
-                "42ee1a69cdd7a2315c210b4a3e039d29623161b9302443e052934ac5a50e6b14",
-                "c3e4bbf9c380fdac0f772945011a68f42a727561c1c9ee1460acd8752e6e7a3f",
-                "ec7da98fc7de112a10d5fa1b0427607bf85d26694101f3efa768ae92efcf38ae",
-                "e6d7d9eaf6af4be190d6b8869fada7264951baf486cdfd5156a91a11209d780a",
-                "1955aa72b8accef0452755c4c840fbf34bffc6efa1dc0d631b7aea2037ed026d",
-                "e4d15bb1c3064f82910b9a4a57c8da33c471f1228cb9fca4c4aa40d448598f8a",
-                "a739bab78ef023ab10358e4f68cb5f96fc8416fc1ae2ba66f2471e26fd48a959",
-                "fcf400c28aedb22b65d8be855f0bf306d83543e2043b465249172bf60955d843",
-                "31169601d4d9d97a323106f565710850be360f2d90b80dcc802871575b7ac52a",
-                "f0563fd8f9e943f39db37f00d3711fdb40ce59836a93ca4ea01d5962cb1db988",
-                "0f030690149ebc1a655b92848efbfb8c84fd78f896c3d67e2f99b84a0df2ad80",
-                "45990d6aff3355d6023b2933639888fb1085476d054b1409cf86d518914584f8",
-                "47a9e1b003de0e311bf7f81d60919bcee515c43024d7e709b65df7c8f94133c7",
-                "1d52ea47bf2eb07587e69d8069ef4039ecffb4ecf311758f39ab068df8f2b02f",
-                "01ff2d0739b324566ebfb28df5017e1fd30b2cb60331be5e0b7d6c35f287fc61",
-                "6c0bde6bb8dd86581a1f182f1adb8235e51ecb16e97777fd05c12cc6c7fdfb9b",
-                "f1f202bfbdba407470b1169ca83773fa52c7cb4be113720c6be23525508db838",
-                "8428e70d2ed2943da7c398a8aad8cad13fd4e57811bacf93f216914459a0fdce",
-                "2d19ecc4377cbb0847b2539829b2b1ff464ba8ffd008ee54b420a9e474d2fa0d",
-                "76c2895dd10a58082f0f573bd5d62ab3bb9c1666e5c289f7e532ddd47cbb2eda",
-                "e502800edf4cb742d76ec351f0bdcfb3b104c7174257573bbc0acb6c2cf7859d",
-                "6a65a05807a3c8060d1be54fe6ecdff1735bfaef248ed331299729cced724310",
-                "f59376db8c8379f8e1cb9840f1b40af9673a573c495dec1e63f17fcc1855ebac",
-                "fdcbbefcba785685fc80d3f90e3f8667ba22e791b3a9f8dd0f9189bb507b7f92",
-                "d4180506fef85d456684a9baa8e2a8cc41863d5067bff3d1f339be2c15a47fc2",
-                "7270710ef645d59988ad16025287e26fea96d962f09359b3bf760775b1504cf3",
-                "c83acda74e3a9d33c37f19a21938eb8a75da3af83c3a05484b53808f7a34c13e",
-                "19d6d4d92527f2d0ced68540ebc7c39aa59c5975383f12482b76ca610f012b00",
-                "af2d7ca8c76e84913aa6c33288442a4fe2af4785796fce5b6727bdf98330996e",
-                "556ddd2479ae372038ba05c8a7e6acb7773883946b599ea9652d4da805b084a4",
-                "faa104b6baf1bc1f8133c0ce27c87192cb8d577edd261ccacdf95679ae135b7b",
-                "d80f59c91e82ba100d884c9906d161ca5634f681df6adb8e9ca40c277fad4ed4",
-                "d1c03c62d045d30e73d1ff985d9f520e21ae3d826bb24353aa2cce3859de234c",
-                "b51ed563f97972cd79dacad548a6f7f47bb719c705eeec7f681a07678f4937ab",
-                "2be8ceb4113fbd2054c5732ebca423796a20684779f69e11e981401058fcd42f",
-                "09e5598f021938e1a60a4080714b348a0d86ed875fb748a153897c2762a744b3",
-                "746576cf27f77e79e756b11cdf4c3b707bbe672ed680cd78b4aa664390918662",
-                "2632d404802f96cc46615e946920427e2a4c9332fd0e43bd2c45b697e0486c7b",
-                "6639aac22e88347c5ffa9bf008bceec8355c7610ace9b7e1b86abdd9b902eef5",
-                "feb00532bbac9f409166392db792f0a32d9127cefdafecc5c443ab71c5de6e7f",
-                "4a21baa2573c5fc34ca7e7de80a97362c1cf529d12220d0006f0f47256ceedb5",
-                "c3a7ad038db02c1d3cbe30f860439717900e24b9635338fc17e9a17fc984c2f7",
-                "5488bcaef02b0fa7d88e54eeeb485a40b175bbf0513939d1f7b391d662d905a2",
-                "d109d55e32a1eafac63f498b5d3ddf68c2569703ff5cf3a078fcbeb9ca6285c4",
-                "9162d850f87d0f683552300a3a0ee652f7289b1b7c809f194bc222abc0e43eac",
-                "6913182fb5fa8ca391a45b27f3a97147f4b13bd6ba556abbaf7564f2c3e17d1e",
-                "82a94f156d3baee9fbf3fde662b1080cac04939363393e2e436687bb35e4d951",
-                "e3f590078e2925f1051cc212435f64af50efd387a8eef33fd2ee934838346bce",
-                "79cca6b622f2b42edb447f63476b275c09e5934510ebc0c55fb4d1dbf4f57959",
-                "8ed813ae86d3eb56ac0eca3a5e77bf4671abadba5b724fc9da08b1b3aa33ea1c",
-                "2f954928ba2469e4d8fcc5460c462bdb20ba8cbb83f3b1614d7bb6f36bfa4f90",
-                "422376c8276f909b738416ca6f1567caf8585a529b67bfa3ae43ca83aa541980",
-                "23e373d7fe4785cb6b67ae036c3dd2509f2ec47b32b697243e21d447cbb4722c",
-                "50469fe42366774a37bb5da754001089caf4789d76d90878062cec1021cd3ba3",
-                "cbe05560cd4ed09c24775f0f8fa2024feede630bb021d0899134c73da09ac652",
-                "7f543941d4de5ac0b6ed47970c1c484308f6e8beb5bcc6b0747009fe82b8ae5e",
-                "e29dd22f853c693b817983c14fce964186185b3ca23c60bd86116a74d06736e9",
-                "2a6d310cdaf3fb1122cae8c6457e1a6c9963e21081d5626307d79ff9184e2eda",
-                "f7b1b34bad865acd0a0030e4fc2c13c7a852303429b246415e2f8289537c0fb3",
-                "a94443138efb78fc858d8779723260f77af601dcce7190d865395d6ae54d00e8",
-                "49a3027bd10cdbdbfa04210bca7623041739493489a026a3025fec5e98f73c55"
+                "b1ffa2c0e995e55c936e9dc71e1e6d971db87eee8d61fedadebb292bcf588283",
+                "ab72aba14a6c56b2cc336ae0b9aef6fe082b76e53258e1e73d68891d0c5d09f8",
+                "0e31525604d61815aa17f6d23ccde62cd647e6e0037b62ca3c2080dec017aa19",
+                "457560979bda59162809b056d901e7dbdf4b9bf5c39461835b5298eb9e77bda6",
+                "e34f7a95c86efdf8796ddc66d0abba9392336eda0b43e0f2b1612bdbd374f1bc",
+                "673413fd8f93317d9e4496185a8bebfd231b55b35685f81d1a322250b864cb6b",
+                "bb11e9c81fda3a1721436a7c6c6ec563c96c44bc0ffb1726fa9d00631b3ace31",
+                "6af9c76f673e1943cdc5bf83b6ba6ced33c1713c8eb21d86a0062610260aa9ca",
+                "d8b12ae381fed18327c21abb521abd210d9bb5b2345a27903aa8805761cb7f98",
+                "8a75be2d221215b4fbfee7592f93d09b03ac2945026239288e9a506abc6c462f",
+                "2b1b729e0cc8b30e6494e783f4ea8057e4ac8297577229f2e02a9c0e138c2225",
+                "7801efe3e7725d8d150f1e41827458b3b19a73ca8ebff30dc03b29215fc62c77",
+                "44dc12b96bbda35fb5b4d3c4d848d263e766e60c54368971addfa1dc80f507d4",
+                "0cf142585483797c663af6f6450a7e27e3f57ac013e5fbe61315f08c56338733",
+                "f11a9ddb400c8e023b41837d05b194d87399f3d952371e2ee146e3ca298dbee8",
+                "822fecab73078c36fd82382793135b03d9776bc4ffd9b7081c5105b0edd80201",
+                "a5906b8217ca09b6870278c3bafd817e5ce1924220c692c53f80a9094838aeb4",
+                "d157bbcbfa671205d663d02767abb87203e7fe75574137afdd3d25aa8e00f360",
+                "ea9a02245f7c53a091eef5dd767945be9ef04e97fe1d4f08742f5a164b08dd7c",
+                "5d14aa08e069aabc6862b109f292d1bf895c2ba91a8becc1f49ea7dbe8a0fda6",
+                "be6e278238a730477c723d109df85b8c0067be790c4d65a1f30157c8e66571b3",
+                "a57c3cc0fa25a907135c634942373ff01c44828eba4447270606e2f098138826",
+                "7285b6462f674051dbe4966a6f3603a84a7cc3010da7c37352830a7214a56413",
+                "6df8c00333e932c7c0559db8ec272d18184b0e3577574c0f8ab8dd146b0856a5",
+                "c1bf44d9beca884b8db40f1e4472b1f4ef3a71d85e92f3dcffdef9c3ec1207ce",
+                "ab0edd3f867bab2e6fc7e76a4a8b7b4469d7244a0a1a382b635b74548d6bbcc5",
+                "a32f40c3c84feeb9b45988f72b015711d46d34abeee5ecca1b46a5d7d0fdf0c4",
+                "17e5525b71bc61e9187bb69b15ff4aa1e6abbeb0be0dc0306022c76c8ad88fe7",
+                "418a2048ce0917101163a12f9d11c13b60e979f2d8167d45173a91e7f1f8385e",
+                "eaa34d81edde3163698b75e0cdeeac415f017267e0371e512ed518b047f20f9f",
+                "78e334025f5dee0613715278c02a80949df4ec3aff82bf567ab8ed37730df507",
+                "356ed76dd0396277c2f59db8169be3045968ac37450ceede02e9ac74904c4dba",
+                "e34222f2c773d7dbbfaaf614ba494686f5c92fc7d3c30651ea609cfec2dcbb50",
+                "03760f0c2e3e95599d9e7297e60a9b992a9f7f12cf3b7dee2757fe65ff8637ef",
+                "d5178dd4891bd2ab6be404122fe0768f48d9f68822c7bf8147cce2440b2a6849",
+                "378ab779bbf1a480bc04eddc9324bef0131ae3406fdf8451f9e67564db1907d0",
+                "2433080fad7cda33d54d53ab6ff15b52b47e3783f43cdd706a59c4c6790647aa",
+                "e828aaa8592b6693e1259508c11f8f8b890ebd54b1da1073066435403b92d52e",
+                "73e34dabc42ef6c1895c6d2bd66be67d6f6c2053002b0e10805e8788bc473560",
+                "1758d9ba2c695e2a6e0eb6ea60dce1b9411c679ae46ae65004ff3b089d171ac9",
+                "caac026236a811c85682fe5738fe8ecd79dcd1f455a3d53390da8ee5a6bb85d9",
+                "bbcc1c1e497a186be67fe8cba61264763366f616f65b40cdf97138d7eaea6a5f",
+                "126fecfc1327be77f821a93bcc1f8a4f1ca73071c2d9c0e62a8978657cf9342f",
+                "ee7e5772dd7fc8d703e0fe377e35aaf78cc63a6484499b95ac3b171134d08d5d",
+                "903820ad86fff651a6cb55dcbf126cfab64302184ac0891a6273286f48f7bbd0",
+                "7c91eeb14ad38f8939257b5cf6ddbc8e350bd32941b0a1bbc68974c2abda1b84",
+                "f45e64285c96b7ea3f924a638cbc0d7e8d0a2af2dcb32946aeb0780926dec451",
+                "c82cbf03a9b373254ba494b0ce6d69aad077dacce61343775c0d04c5c5bc9367",
+                "56e734478e89c3f6d0990c98361b2053a1b5ded1c1f815e19d50095511baf197",
+                "9ad4109a8766010d91dfbb3686e4c4ed106cf938d85272fbb3165dcffeef5dc0",
+                "65c790d704c8c66ac99e04d3dd0f111b540fb0e4d5186b4cc76331b7a3acd8d1",
+                "ce98a24e5ea4a240f3064b828463ed0324a525725945da689545a0452495536f",
+                "bd7f768120447bc53471b9928bc9e387c15f374735976d1769b03336c3706568",
+                "c6f3313b07f62fd5250e37758ac15cebba8302e6c7aa0866c3f588f2dc330424",
+                "a78d988f7d8af48c162c725d40ccc2fa12f1cdfd8dcc573e71c49310f715e386",
+                "24ea1408142d7f2bd89f709e4bb67d3ece1fcd1c7db5b60e823b9f6afbbe2eff",
+                "2501ce8217f2e2989be489f9a500b8edcc5a70883863935b6123a53ebfbe40ae",
+                "36f12f737da39c6a0743f809adfc8b7bceb6017cdf082611c213929aad1d0e26",
+                "f5458836729f0ac1bc09fe93dfb14d6c8e97207f214a42ec4c88620a1fa8ae93",
+                "a22b62bb375fa59a12cbdfe28f3e04c84aff47160cb6b3e38cdfc21c048b5b90",
+                "1a58208b3c6d84220bcf3ed92d6a8a9c1b1cbb0f665a09cc3f30815049b194cf",
+                "de6e5952f11c828cb35a42eb8cfacae5822fb162e8ccdc2c39973f38f6b19832",
+                "12267095de811af607743d8e5252c81d4d393dcfaaa36a6c9787a60c68fca426",
+                "d247e48e56c49aef432f608bfb71f6c70be82518c769ea89e35ab7d816314efc",
+                "dd00b2ef5d5bf12751c415cdd7d9826e25d623a25d2cc0df2957efccadae59d1",
+                "c895ca5740be6467e21ded0d70b0cabd343585d497cecb625f9448bb57867690",
+                "158447c7fa82a4fbae3b1029e4ae80aa3efe47757748bf34f52d8b10dce1c970",
+                "0fde95f54ea1a89d02ccfcdb20bcaec92e099c0a53718d6b1d112338a7162e14",
+                "a55df75c4a6f36ab58f47b857700a71a48d8e0224c572ecd26b253809ee7a3a6",
+                "380643a17f43744948bc9a8fabdbf759358ccf5915176583e92d6c52da4bcf19",
+                "d2abd4247d767c2c5c405ba81e0b8091b13c2a46c05fff31a5771473a6c8ab67",
+                "c00d3e15ce086944a242fc7d0d3cf43686dd4968f0655095ceabaab82fb0b4a5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.bestheating.com",
-                "www.aquasana.com",
-                "nicksboots.com",
-                "www.merrell.com",
-                "www.motea.com",
-                "www.fredhutch.org",
-                "www.befestigungsfuchs.de",
-                "monsterbolts.com",
-                "www.kirstein.de",
+                "www.sculpey.com",
+                "www.chacos.com",
+                "www.rasppishop.de",
                 "www.solutionsstores.com",
-                "www.dynafit.com",
-                "www.psseasoning.com",
-                "www.saucony.com",
-                "www.ofenseite.com",
-                "www.worldofwatches.com",
-                "jovialfoods.com",
-                "www.akkushop.de",
-                "shop.zweirad-stadler.de",
-                "www.alle-noten.de",
-                "www.zauberdergewuerze.de"
+                "www.bestheating.com",
+                "www.scandinavian-lifestyle.de",
+                "workingperson.com",
+                "www.johnnywas.com",
+                "www.spiceandtea.com",
+                "www.vineyardvines.com",
+                "www.zauberdergewuerze.de",
+                "www.bike-mailorder.de",
+                "www.thedressoutlet.com",
+                "www.uswatersystems.com",
+                "www.1000bulbs.com",
+                "www.alteserien.de",
+                "www.engelhorn.de",
+                "www.woodcraft.com",
+                "www.donaldrussell.com",
+                "filterking.com"
             ]
         },
         {
             "rule": "amazon\\.com\\/cs\\/uedata",
-            "cookies": 0.0000361,
+            "cookies": 0.0000407,
             "fingerprinting": 0,
             "subdomains": [
                 "apay-us",
@@ -683,8 +456,8 @@
                 "payments-de"
             ],
             "apis": {},
-            "sites": 47,
-            "prevalence": 0.00034,
+            "sites": 54,
+            "prevalence": 0.000366,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -693,31 +466,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.swansonvitamins.com",
-                "www.discountfilters.com",
-                "www.aquasana.com",
-                "www.wolverine.com",
-                "shop.teslarati.com",
-                "filterbuy.com",
-                "www.bike-mailorder.de",
-                "www.akkushop.de",
-                "www.fredhutch.org",
-                "monsterbolts.com",
-                "www.aquasabi.de",
-                "tartecosmetics.com",
-                "www.truereligion.com",
-                "viridianweapontech.com",
-                "www.sanicare.de",
-                "www.thermaltake.com",
-                "www.chacos.com",
+                "www.thedressoutlet.com",
+                "www.simon-o.com",
+                "www.psseasoning.com",
+                "www.dynafit.com",
                 "www.solutionsstores.com",
+                "www.berrybase.de",
+                "www.mathway.com",
+                "www.cartoys.com",
+                "www.spiceandtea.com",
+                "www.discountfilters.com",
+                "viridianweapontech.com",
+                "www.ofenseite.com",
+                "gfuel.com",
                 "www.samenhaus.de",
-                "www.dynafit.com"
+                "www.truereligion.com",
+                "www.bio-apo.de",
+                "filterking.com",
+                "www.haflinger.com",
+                "www.sculpey.com",
+                "www.orthoticshop.com"
             ]
         },
         {
             "rule": "amazon\\.com\\/abTestV2",
-            "cookies": 0.0000867,
+            "cookies": 0.0000882,
             "fingerprinting": 0,
             "subdomains": [
                 "payments",
@@ -726,85 +499,65 @@
                 "payments-fe"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.000123,
+            "sites": 20,
+            "prevalence": 0.000136,
             "cnames": [],
             "responseHashes": [
                 "0cbe35e4ebbf2abee40eeb8bf0a2a93da91b55485542c39ab35f91d0a0bf17cb",
                 "69ad59dd474ba76e1895f6135b85bf0f8490ed5e997a5a363b73cffd7bccbd5d",
-                "9eb929cda0af74f4f0a348df5d451ba4e76d3b196897ccbbb0b943c13e884b1b",
+                "ef783ddf3214504338e74ae68ad1cb5229f3e8519eb4a539bb964deb38864ca9",
                 "9f42583e17e9fc1e530f5d521ed117a773c327e2fa526576511163617b13d2d1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "filterking.com",
                 "filterbuy.com",
+                "filterking.com",
                 "nicksboots.com",
                 "r2-bike.com",
                 "workingperson.com",
                 "www.befestigungsfuchs.de",
-                "www.bogensportwelt.de",
+                "www.blauparts.com",
+                "www.donaldrussell.com",
                 "www.engelhorn.de",
                 "www.fredhutch.org",
                 "www.hifix.co.uk",
-                "www.justkampers.com",
+                "www.lammfell-onlineshop.de",
                 "www.motea.com",
                 "www.oxygenconcentratorstore.com",
+                "www.rasppishop.de",
+                "www.seiffen.com",
                 "www.sofmap.com",
-                "www.sportnahrung-engel.de",
+                "www.traderadiators.com",
                 "www.tuttofarma.it",
                 "www.zauberdergewuerze.de"
             ]
         },
         {
-            "rule": "amazon\\.com\\/favicon\\.ico",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "a74af1811fffb049de7e02acb5cb55e20ae3b1353f3b7f80cddafeba91e3110e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ih8mud.com",
-                "www.techno-science.net",
-                "www.worldwidedx.com"
-            ]
-        },
-        {
             "rule": "amazon\\.com\\/bwp\\.js",
-            "cookies": 0.0000217,
+            "cookies": 0.0000339,
             "fingerprinting": 1,
             "subdomains": [
                 "code.buywithprime"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 3,
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3
+                "PerformanceTiming.prototype.navigationStart": 5,
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "2c0781a92ff41b9bd1e184bcb41b0b2a9395a64103964ccea2eb206d91b68143"
+                "5b53e7b699e52ff4e089daa9474b6c9b96049a3e8b324caf40105f75318017ee"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ubid_ovr": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 36,
-                    "prevalence": 0.00002167630057803468,
+                    "prevalence": 0.000033907500339075,
                     "uniqueness": 1
                 }
             },
@@ -812,7 +565,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -824,7 +579,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e7f92670c2dde8f031771b4841fd16095cca04553641736e08551477bd10aa87"
@@ -838,18 +593,18 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/static\\/storefront-host\\/storefront-host\\.06b5b5f10943b78f421e\\.js",
+            "rule": "amazon\\.com\\/static\\/storefront-host\\/storefront-host\\.32c7319f5af5cd95419e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "e484f1106b4d84a3ccc1655dddbd31526bf6e7c50900c239e712579397c17224"
+                "5966da16501402b8788b51dad727e0847a27b82bc05641f34833411d0812e42e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -857,7 +612,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -868,13 +625,14 @@
                 "order.buywithprime"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 5,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "1659f806745c827608c582ab70eb2e032ce3b88a5602005bf842b17b4d262929"
+                "7a1129e1730da4e4e06a1fe36a0e89982b48296f16cdd697c646f6ef5dc0877c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -882,28 +640,30 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
             "rule": "amazon\\.com\\/static\\/storefront-host\\/clickstream\\.4fbc67750eb0bd573563\\.js",
-            "cookies": 0.0000217,
+            "cookies": 0.0000339,
             "fingerprinting": 1,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 3,
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.width": 3
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5,
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.doNotTrack": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "57c617b696b8487dd71b5f96805ffa1ec1c8e1045a489e6df4e7b94a35e10b0d"
@@ -914,24 +674,26 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
-            "rule": "amazon\\.com\\/static\\/storefront-host\\/377\\.6199cff93305bcda8fee\\.js",
+            "rule": "amazon\\.com\\/static\\/storefront-host\\/377\\.7be4e2d11f823e96647a\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "56c60f30af1186641755d560c2623cb97e6bc8edca9d2b92faf7fa5f9567eb15"
+                "b5229ff921a81e0638c66bc0681f77edff7fa2fbae9ee177e7b1fc6179b0550c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -939,7 +701,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -950,8 +714,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "8fa5266898eeb775244e8837e9f08b29b9fbea94890e0aa339fcdbaad2c28454"
@@ -962,7 +726,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -973,8 +739,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "c7d058dbceb1dc87015e37583e101955e978ad3e9357adf469182e8ce34b43e3"
@@ -985,29 +751,31 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
             "rule": "amazon\\.com\\/static\\/storefront-host\\/452\\.a8892f75efaac2b6ad2e\\.js",
-            "cookies": 0.0000217,
+            "cookies": 0.0000339,
             "fingerprinting": 2,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 3,
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.width": 3,
-                "Navigator.prototype.vendor": 2
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5,
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.doNotTrack": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5,
+                "Navigator.prototype.vendor": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "718fcf574e894c7a6b0a61560e453b8ce49c52667048faa7b67c768b30489e6a"
@@ -1018,7 +786,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1029,8 +799,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "5847800c169de46bbd23c682e9c9eb4690776c5a9c850d2c432c0b0e226ef2f5"
@@ -1041,7 +811,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1052,8 +824,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "61ec9821e83fa111af39403bfd349cd5999c0d5e9d39a7b313574a08728c3b1c"
@@ -1064,7 +836,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1075,8 +849,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "a3cfc66ac921a8899c7decd4d396742f3cbc847dab592642c0a989cbd1407a26"
@@ -1087,22 +861,24 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
-            "rule": "amazon\\.com\\/static\\/storefront-host\\/154\\.452327a9325061467c5b\\.js",
+            "rule": "amazon\\.com\\/static\\/storefront-host\\/154\\.6cfe46218697daf43c53\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "810f458089bf316eca35b4da7fd663fd3d5b8b59182263713fa3c6dece563e58"
+                "057b5e4d2709af4ec94778ae3f66376535af54d5791e6d2fa03d1080b5c87024"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1110,7 +886,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1121,8 +899,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "fd8d14a8f819c76b2aaf0ab50c68b46ea99567ef72a2c605ffbcef9f6fa092b0"
@@ -1133,7 +911,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1144,8 +924,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "500f310726507d737afdb99c55664451331a0cd761d874b4dc6df1ef79fb3d6d"
@@ -1156,25 +936,27 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
-            "rule": "amazon\\.com\\/static\\/storefront-host\\/342\\.7afb06bf8f123674bbe4\\.js",
+            "rule": "amazon\\.com\\/static\\/storefront-host\\/342\\.dcd33d2b14f569b0a362\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 3
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "991c437cf852eb52cf1d538c42b767394062c0316a873f420235a47d4df135ca"
+                "78b5b70c979c12df2d829b8db2e6d4584007fb7a81e23831f972d1a748fcf589"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1182,7 +964,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1193,8 +977,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "dec513cc124f44366a1d4a3b0c06acb34a5904c0ce9060463233c554bb78c4b2"
@@ -1205,7 +989,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1216,8 +1002,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "9c73a1928f5aaed3c8ec2009a90e0fbc693794aceb81c4f6e09667f555319d92"
@@ -1228,7 +1014,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1239,11 +1027,12 @@
                 "order.buywithprime"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "bafd86029ce547ce71d4b18d52646b9f4c70f5420c91cf40eaf97b4df68263c0"
@@ -1253,22 +1042,24 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ihealthlabs.com",
-                "infinity-cable-products.com"
+                "infinity-cable-products.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
-            "rule": "amazon\\.com\\/static\\/bwpWidget\\/3b09960be944319c2ecb\\.bundle\\.js",
+            "rule": "amazon\\.com\\/static\\/bwpWidget\\/a7709868c06915763600\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "5e1c158f2839a8b8a0a638f2df3201b95af2b1757bd7a05c3df9aaf64c41b93b"
+                "3910b335b4d9ed199296cb9b9c5dc0fb1c104dc118dff09e026e585348fda10f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1276,23 +1067,27 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
             "rule": "amazon\\.com\\/log",
-            "cookies": 0.0000217,
+            "cookies": 0.0000339,
             "fingerprinting": 0,
             "subdomains": [
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "144744b2fd7a542331b091e451c946799c8ffbede61759de9beffcee81aa9021",
-                "bf3c6ea107b79eb6f0ded2bc3fc1fc961452814be8eb34a5e60f106bfbe5ccea"
+                "1bed062d163af00822d877ae1549f396937a22efc467b0e7ba99c3e13ac06760",
+                "2fb763e52b7027fe9a0dbcc4651e241f6cb54cd7411d9f57cbfab5520c30f449",
+                "25b140ff58f713952779e14a7cb9fbf24f2a02fe485b52a60861bd93e3dd1c80",
+                "cff0ef7f77cf53707ab232f0ff4524c33885db70aa836a26612bf6fdad1db7a7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1300,7 +1095,9 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "sarasotaavionics.com",
+                "www.healthycell.com",
+                "www.ugreen.com"
             ]
         },
         {
@@ -1311,8 +1108,8 @@
                 "order.buywithprime"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -1323,7 +1120,203 @@
             "exampleSites": [
                 "ihealthlabs.com",
                 "infinity-cable-products.com",
-                "sarasotaavionics.com"
+                "www.healthycell.com",
+                "www.ugreen.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/log",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "order.buywithprime"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "996ca428042887778e0dfa95c344bbd31f9115303ac1a2dbc7e65b7e7de3a148"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "infinity-cable-products.com",
+                "www.healthycell.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/kp\\/card",
+            "cookies": 0.0000271,
+            "fingerprinting": 3,
+            "subdomains": [
+                "read"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Date.prototype.getTime": 4,
+                "window.innerHeight": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.connection": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Screen.prototype.pixelDepth": 4,
+                "window.innerWidth": 4,
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.doNotTrack": 4,
+                "Navigator.prototype.hardwareConcurrency": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.webdriver": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.appName": 3,
+                "window.outerHeight": 3,
+                "window.outerWidth": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.plugins": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
+                "Navigator.prototype.appVersion": 3,
+                "window.name": 3,
+                "Navigator.prototype.deviceMemory": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "21671dc5a2fc86039f0ceb67ea5f48d2fe58ac6a5c3c719f9cbc36f243f375f6",
+                "244076e2386b98ef662f28bdd8c077c6730631b1b8b342d55fc259b68e476e3c",
+                "388b1c2da2dc92565cea06deaddd53d63fd6c07e1df35c49b3e8320fb3e50bb4"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "csm-hit": {
+                    "ttl": 30240004,
+                    "length": 68,
+                    "prevalence": 0.00002712600027126,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leozagami.com",
+                "readaloudrevival.com",
+                "www.hormonesmatter.com",
+                "www.tarotingie.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/service\\/web\\/content\\/uploadMetrics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "read"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "63399381d17fc090a5db0c8a814dc3d806bdb5397feffa4ea16ebc5c9c977b89"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leozagami.com",
+                "readaloudrevival.com",
+                "www.hormonesmatter.com",
+                "www.tarotingie.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/kp\\/embed",
+            "cookies": 0.00000678,
+            "fingerprinting": 2,
+            "subdomains": [
+                "read"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 2,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.appVersion": 1,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a96e12f19054ab4037c5cc8ab35dc0f86d027c035d2d8ff858c8aa24ef52fb2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "csm-hit": {
+                    "ttl": 30240006,
+                    "length": 68,
+                    "prevalence": 0.000006781500067815,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leozagami.com",
+                "readaloudrevival.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/kp\\/uedata\\/uedata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "read"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leozagami.com",
+                "readaloudrevival.com",
+                "www.hormonesmatter.com",
+                "www.tarotingie.com"
             ]
         },
         {
@@ -1336,7 +1329,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "35ca93431b38c647a1060896db63a0c6cbd5f2ba66b901fb5b6543c62ddb19e9"
@@ -1351,7 +1344,7 @@
         },
         {
             "rule": "amazon\\.com\\/cs\\/uedata",
-            "cookies": 0.000101,
+            "cookies": 0.000115,
             "fingerprinting": 0,
             "subdomains": [
                 "apay-us",
@@ -1359,8 +1352,8 @@
                 "payments-fe"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.000101,
+            "sites": 17,
+            "prevalence": 0.000115,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1373,14 +1366,17 @@
                 "r2-bike.com",
                 "workingperson.com",
                 "www.befestigungsfuchs.de",
-                "www.bogensportwelt.de",
+                "www.blauparts.com",
+                "www.donaldrussell.com",
                 "www.engelhorn.de",
                 "www.hifix.co.uk",
-                "www.justkampers.com",
+                "www.lammfell-onlineshop.de",
                 "www.motea.com",
                 "www.oxygenconcentratorstore.com",
+                "www.rasppishop.de",
+                "www.seiffen.com",
                 "www.sofmap.com",
-                "www.sportnahrung-engel.de",
+                "www.traderadiators.com",
                 "www.tuttofarma.it",
                 "www.zauberdergewuerze.de"
             ]
@@ -1394,7 +1390,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1408,30 +1404,36 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/1\\/msa-vowels\\/1\\/OP\\/",
+            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.csa\\.prod",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fls-eu"
+                "unagi-eu",
+                "unagi"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
-                    "original": "fls-eu.amazon.pl",
-                    "resolved": "fls-eu.amazon.com"
+                    "original": "unagi.amazon.pl",
+                    "resolved": "unagi-eu.amazon.com"
+                },
+                {
+                    "original": "unagi.amazon.se",
+                    "resolved": "unagi-eu.amazon.com"
                 }
             ],
             "responseHashes": [
-                "eb69be7b93584bcd4f54b90cdbee282baea8b34fbf08dcd1d80875ae27601344"
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "amazon.pl",
-                "www.amazon.pl"
+                "www.amazon.se",
+                "www.shopbop.com"
             ]
         },
         {
@@ -1443,7 +1445,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
@@ -1457,6 +1459,28 @@
             ]
         },
         {
+            "rule": "amazon\\.com\\/merchantAccount\\/A22447U6OO5MJK\\/accountStatus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apay-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blauparts.com",
+                "www.blauparts.com"
+            ]
+        },
+        {
             "rule": "amazon\\.com\\/sdk\\/login1\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1464,8 +1488,8 @@
                 "api-cdn"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000506,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "526a3a30bbb62b013d2af9bdd052e26a74099a79faedba90dba53dc18f2f1ce6"
@@ -1479,8 +1503,29 @@
                 "www.humminbird.com",
                 "www.minnkotamotors.com",
                 "www.solar.com",
-                "www.testingmom.com",
                 "www.youtv.de"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/merchantAccount\\/A3NBXCPC6LVB8Y\\/accountStatus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donaldrussell.com",
+                "www.donaldrussell.com"
             ]
         },
         {
@@ -1490,7 +1535,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -1510,7 +1555,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
@@ -1524,30 +1569,7 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/ap\\/signin\\/178-4417027-1316064",
-            "cookies": 0.0000217,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ignitioncasino.eu",
-                "www.ignitioncasino.eu",
-                "www.tipsport.cz"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/merchantAccount\\/AD50O6P7K250G\\/accountStatus",
+            "rule": "amazon\\.com\\/merchantAccount\\/A3OLNEQS3G2T95\\/accountStatus",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1555,7 +1577,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
@@ -1564,8 +1586,70 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "justkampers.com",
-                "www.justkampers.com"
+                "lammfell-onlineshop.de",
+                "www.lammfell-onlineshop.de"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/gp\\/goldbox",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.connection": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.appName": 2,
+                "window.outerHeight": 2,
+                "window.outerWidth": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d45e7fb80c21cc06093690bd3c787390c7c0f69090ef334cc0e50655b92e1bf"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "csm-hit": {
+                    "ttl": 30240004,
+                    "length": 55,
+                    "prevalence": 0.000006781500067815,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leaksmirror.com",
+                "www.leaksmirror.com"
             ]
         },
         {
@@ -1577,12 +1661,50 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leaksmirror.com",
+                "www.leaksmirror.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.eel\\.amazonlive\\.metrics\\.nexus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unagi-na"
             ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leaksmirror.com",
+                "www.leaksmirror.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/hz\\/rhf",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1599,11 +1721,29 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leaksmirror.com",
+                "www.leaksmirror.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.DealsWidgetsHorizonteFrontend\\.NA\\.Prod\\.elsalog",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unagi-na"
             ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1621,7 +1761,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
@@ -1635,25 +1775,47 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.eel\\.katal\\.metrics\\.core\\.nexus",
+            "rule": "amazon\\.com\\/merchantAccount\\/A2EOY3TXA0XDZC\\/accountStatus",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "unagi-na"
+                "payments-eu"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
             ],
-            "type": "Ping",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shopbop.com",
-                "www.shopbop.com"
+                "rasppishop.de",
+                "www.rasppishop.de"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/merchantAccount\\/AJDEG0VHPCYDU\\/accountStatus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seiffen.com",
+                "www.seiffen.com"
             ]
         },
         {
@@ -1665,7 +1827,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
@@ -1679,7 +1841,29 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/merchantAccount\\/AA1X43QY99J27\\/accountStatus",
+            "rule": "amazon\\.com\\/favicon\\.ico",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a74af1811fffb049de7e02acb5cb55e20ae3b1353f3b7f80cddafeba91e3110e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techno-science.net",
+                "www.worldwidedx.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/merchantAccount\\/A365CDUDQMVK7Y\\/accountStatus",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1687,17 +1871,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00001356300013563
+            },
             "exampleSites": [
-                "sportnahrung-engel.de",
-                "www.sportnahrung-engel.de"
+                "traderadiators.com",
+                "www.traderadiators.com"
             ]
         },
         {
@@ -1709,7 +1895,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
@@ -1732,65 +1918,65 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000896,
+    "cookies": 0.00097,
     "topInitiators": [
         {
             "domain": "payments-amazon.com",
-            "prevalence": 0.43238993710691825
+            "prevalence": 0.47875354107648727
         },
         {
             "domain": "first party",
-            "prevalence": 0.1918238993710692
+            "prevalence": 0.15864022662889518
         },
         {
             "domain": "ssl-images-amazon.com",
-            "prevalence": 0.11635220125786164
+            "prevalence": 0.07932011331444759
         },
         {
             "domain": "media-amazon.com",
-            "prevalence": 0.0770440251572327
-        },
-        {
-            "domain": "audible.com",
-            "prevalence": 0.05188679245283019
-        },
-        {
-            "domain": "abebookscdn.com",
-            "prevalence": 0.02830188679245283
-        },
-        {
-            "domain": "amazon-adsystem.com",
-            "prevalence": 0.02358490566037736
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.015723270440251572
+            "prevalence": 0.07932011331444759
         },
         {
             "domain": "d3u8ewz6c11pt5.cloudfront.net",
-            "prevalence": 0.0110062893081761
+            "prevalence": 0.05099150141643059
+        },
+        {
+            "domain": "audible.com",
+            "prevalence": 0.043909348441926344
+        },
+        {
+            "domain": "abebookscdn.com",
+            "prevalence": 0.0169971671388102
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.0169971671388102
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.015580736543909348
         },
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.009433962264150943
+            "prevalence": 0.012747875354107648
         }
     ],
     "types": {
-        "Document": 8,
-        "XHR": 158,
-        "Image": 20,
-        "Ping": 60,
-        "Preflight": 2,
-        "Fetch": 14,
-        "Script": 64,
-        "Stylesheet": 3
+        "Ping": 61,
+        "XHR": 184,
+        "Image": 13,
+        "Preflight": 7,
+        "Fetch": 18,
+        "Script": 99,
+        "Stylesheet": 5,
+        "Document": 10
     },
     "nameservers": [
+        "ns3.p31.dynect.net",
+        "pdns6.ultradns.co.uk",
+        "ns1.p31.dynect.net",
         "ns4.p31.dynect.net",
         "ns2.p31.dynect.net",
-        "ns1.p31.dynect.net",
-        "pdns1.ultradns.net",
-        "ns3.p31.dynect.net",
-        "pdns6.ultradns.co.uk"
+        "pdns1.ultradns.net"
     ]
 }

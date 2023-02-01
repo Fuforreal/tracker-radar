@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000723,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
-        "personalize"
+        "personalize",
+        "cdpapi"
     ],
     "cnames": [
+        {
+            "original": "cdpapi.livemint.com",
+            "resolved": "cdpapi.livemint.com.edgesuite.net"
+        },
         {
             "original": "personalize.livemint.com",
             "resolved": "personalize.livemint.com.edgesuite.net"
@@ -22,6 +27,61 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "livemint\\.com\\.edgesuite\\.net\\/rfu",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "personalize"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "personalize.livemint.com",
+                    "resolved": "personalize.livemint.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "1f892dc1ad7e12f7ca623a780ab7fd3c85b246a4d1365af7cc849ef44736b7cf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livemint.com",
+                "www.livemint.com"
+            ]
+        },
+        {
+            "rule": "livemint\\.com\\.edgesuite\\.net\\/api\\/adserve\\/lm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdpapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdpapi.livemint.com",
+                    "resolved": "cdpapi.livemint.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_domain_fp_id": 0.00001356300013563,
+                "_ht_fp": 0.00001356300013563
+            },
+            "exampleSites": [
+                "livemint.com",
+                "www.livemint.com"
+            ]
+        },
         {
             "rule": "livemint\\.com\\.edgesuite\\.net\\/popular-story",
             "cookies": 0,
@@ -31,7 +91,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "personalize.livemint.com",
@@ -39,7 +99,7 @@
                 }
             ],
             "responseHashes": [
-                "e9be5219e4d17a3ae9dd77e3bcbeb3b7d4ef71e19f34cead842b5350a7fdacc6"
+                "913b8ee6433607d94105c869ccff1db9804f27ebde33357b996ffa0a64859fbb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -56,7 +116,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "XHR": 6
     },
     "nameservers": []
 }

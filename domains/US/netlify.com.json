@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000267,
-    "sites": 37,
+    "prevalence": 0.000217,
+    "sites": 32,
     "subdomains": [
         "www",
         "identity",
@@ -32,7 +32,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a539e587602ce2862e936ed53890618b5fcb6ce1e0a3cac27dae045ec601e84d"
@@ -54,7 +54,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "a539e587602ce2862e936ed53890618b5fcb6ce1e0a3cac27dae045ec601e84d"
@@ -69,15 +69,44 @@
             ]
         },
         {
+            "rule": "netlify\\.com\\/v1\\/netlify-identity-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "identity"
+            ],
+            "apis": {
+                "window.localStorage": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000475,
+            "cnames": [],
+            "responseHashes": [
+                "466954df58db08e3c508d1442f9b986738f2fafa52fa28a58cdfa855fa5f54c1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "financestrategists.com",
+                "learn.financestrategists.com",
+                "trustwallet.com",
+                "www.cockroachlabs.com",
+                "www.mrchadd.nl",
+                "www.perfecttechreviews.com",
+                "www.techiesmag.com"
+            ]
+        },
+        {
             "rule": "netlify\\.com\\/img\\/global\\/badges\\/netlify-light\\.svg",
-            "cookies": 0.00000723,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4303bd961c14e89aec7c680599d8242369b3e5fb3ccedd3e5510e1b87026e92a"
@@ -91,36 +120,6 @@
             ]
         },
         {
-            "rule": "netlify\\.com\\/v1\\/netlify-identity-widget\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "identity"
-            ],
-            "apis": {
-                "window.localStorage": 8
-            },
-            "sites": 8,
-            "prevalence": 0.0000578,
-            "cnames": [],
-            "responseHashes": [
-                "466954df58db08e3c508d1442f9b986738f2fafa52fa28a58cdfa855fa5f54c1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "polyfacefarms.com",
-                "streamlit.io",
-                "trustwallet.com",
-                "www.cockroachlabs.com",
-                "www.finefettle.com",
-                "www.ftso.au",
-                "www.mrchadd.nl",
-                "www.perfecttechreviews.com"
-            ]
-        },
-        {
             "rule": "netlify\\.com\\/v1\\/ip-source",
             "cookies": 0,
             "fingerprinting": 0,
@@ -129,7 +128,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "location-api.f-secure.com",
@@ -158,11 +157,9 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [
-                "a971b3cd49f377020809da4f9b99c2e6ae8fe344282e1fdd56fea90e9ff74cbe"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -175,30 +172,30 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000145,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9487179487179487
+            "prevalence": 0.9411764705882353
         },
         {
             "domain": "google-analytics.com",
-            "prevalence": 0.05128205128205128
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
         "Image": 7,
-        "Script": 11,
+        "Script": 10,
         "XHR": 2
     },
     "nameservers": [
-        "dns3.p04.nsone.net",
-        "dns4.p04.nsone.net",
-        "ns02.netlifydns.com",
         "ns01.netlifydns.com",
-        "ns03.netlifydns.com",
         "dns2.p04.nsone.net",
         "ns04.netlifydns.com",
-        "dns1.p04.nsone.net"
+        "dns4.p04.nsone.net",
+        "dns1.p04.nsone.net",
+        "dns3.p04.nsone.net",
+        "ns02.netlifydns.com",
+        "ns03.netlifydns.com"
     ]
 }

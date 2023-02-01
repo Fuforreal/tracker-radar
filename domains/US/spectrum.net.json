@@ -7,14 +7,145 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
+        "pi-lite",
+        "api",
+        "cdn.pi",
         "collector.pi"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "spectrum\\.net\\/tdcs\\/public\\/inform",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pi-lite"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spectrumbusiness.net",
+                "www.spectrumbusiness.net"
+            ]
+        },
+        {
+            "rule": "spectrum\\.net\\/tdcs\\/public\\/inform",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pi-lite"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "016419e9c5ddc48505c384a90df6f27935e298f263fc7144674aa5b148e012cc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spectrumbusiness.net",
+                "www.spectrumbusiness.net"
+            ]
+        },
+        {
+            "rule": "spectrum\\.net\\/tdcs\\/public\\/errors",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spectrumbusiness.net",
+                "www.spectrumbusiness.net"
+            ]
+        },
+        {
+            "rule": "spectrum\\.net\\/tdcs\\/public\\/errors",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d99b148f5dc477c2d03ee0d43469b0dd050ee994d36676ca850894f59b7f750f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spectrumbusiness.net",
+                "www.spectrumbusiness.net"
+            ]
+        },
+        {
+            "rule": "spectrum\\.net\\/SMB\\/Web\\/cfg_2\\.699\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.pi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d7db55814e11ef6fb2fd8f4be63ce860e539b62e67008e6eb34f1f81b323516"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spectrumbusiness.net",
+                "www.spectrumbusiness.net"
+            ]
+        },
+        {
+            "rule": "spectrum\\.net\\/SMB\\/Web\\/2\\.699\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.pi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e906a08b4d4c4a2725f4b5bec1c3815a6ec7728e333315ce421c3f1562c0c8f7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spectrumbusiness.net",
+                "www.spectrumbusiness.net"
+            ]
+        },
         {
             "rule": "spectrum\\.net\\/topics\\/sspp",
             "cookies": 0,
@@ -24,7 +155,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -44,7 +175,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -68,13 +199,14 @@
         }
     ],
     "types": {
-        "Preflight": 2,
+        "Preflight": 6,
+        "XHR": 8,
         "Fetch": 2
     },
     "nameservers": [
-        "ns-1572.awsdns-04.co.uk",
-        "ns-151.awsdns-18.com",
         "ns-1336.awsdns-39.org",
+        "ns-151.awsdns-18.com",
+        "ns-1572.awsdns-04.co.uk",
         "ns-960.awsdns-56.net"
     ]
 }

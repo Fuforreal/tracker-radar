@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
         "api"
     ],
@@ -20,20 +20,24 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "7a0e3f727384404812907d9f738263c7914b162bf9de6e57f91ca00059900371",
-                "80dc349cc342cee10385df3786f9a75ecd493c0cc3a16a89228146d24946d151"
+                "efb9008431681279e1f4c8d64ed898ed9c99ca8856e75e6c6c130d4963f31a0b",
+                "f66c14a449a4e48c20b845012dfb681344e23ee23615fafb172d4b52384c375c",
+                "7e521b5c1b0926d80cc5d265ffc243770f688e5b3fb01d52733adb8ff3ed248a",
+                "225828da5ae60b234f989a686c554cf77113bed3f9fd93c6ac9f93262b29bd66"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jemfix.se",
+                "coop.dk",
+                "opskrifter.coop.dk",
                 "www.jemfix.se",
-                "www.jemogfix.dk"
+                "www.jemogfix.dk",
+                "www.rema.no"
             ]
         },
         {
@@ -44,41 +48,89 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "3b75b39fe50d9464d33748d94602d0bb4e06777dd8d25c346533454023873873",
-                "0217366cc97be18ea41f869d380a54134accb64758b5a18babde27041237e246"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jemfix.se",
-                "www.jemfix.se",
-                "www.jemogfix.dk"
-            ]
-        },
-        {
-            "rule": "etilbudsavis\\.dk\\/v2\\/catalogs",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jemfix.se",
+                "coop.dk",
+                "opskrifter.coop.dk",
                 "www.jemfix.se",
-                "www.jemogfix.dk"
+                "www.jemogfix.dk",
+                "www.rema.no"
+            ]
+        },
+        {
+            "rule": "etilbudsavis\\.dk\\/v2\\/catalogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "8f33651cea9cf6458ca5792edffaa8e984338ad627ed61015ce86399e83e1c59",
+                "3b75b39fe50d9464d33748d94602d0bb4e06777dd8d25c346533454023873873",
+                "c544bedb21b1c1eb890da86bb02e01b7953d06a68d40c557f4c3f7cf7e8fb3e8",
+                "78a9bcae47e183c83ff90f71927a6f9d07e9f6796ec17251537e0fd4f39c9db7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coop.dk",
+                "opskrifter.coop.dk",
+                "www.jemfix.se",
+                "www.jemogfix.dk",
+                "www.rema.no"
+            ]
+        },
+        {
+            "rule": "etilbudsavis\\.dk\\/v2\\/offers\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coop.dk",
+                "opskrifter.coop.dk"
+            ]
+        },
+        {
+            "rule": "etilbudsavis\\.dk\\/v2\\/offers\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coop.dk",
+                "opskrifter.coop.dk"
             ]
         }
     ],
@@ -87,18 +139,22 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.8
+        },
+        {
             "domain": "msecnd.net",
-            "prevalence": 1
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "XHR": 6,
-        "Preflight": 3
+        "XHR": 12,
+        "Preflight": 7
     },
     "nameservers": [
-        "ns-1532.awsdns-63.org",
-        "ns-774.awsdns-32.net",
         "ns-1573.awsdns-04.co.uk",
+        "ns-774.awsdns-32.net",
+        "ns-1532.awsdns-63.org",
         "ns-177.awsdns-22.com"
     ]
 }

@@ -4,15 +4,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000578,
-    "sites": 8,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "cdn",
-        "app"
+        "app",
+        "sh"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "customily\\.com\\/shopify\\/static\\/customily\\.shopify\\.script\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "632e4e6c55bbbe52b4f472f2b4fac301ac73b66fa04bd1665fea7063054b3523",
+                "a781fdb78b7bd86c6bcb74fa1f8da71fdbbcfd909a80e567d263b291e438a60f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oldworldchristmas.com",
+                "wbshop.com",
+                "www.armedforcesgear.com",
+                "www.fenixlighting.com"
+            ]
+        },
         {
             "rule": "customily\\.com\\/clientSpecific\\/customily\\.bigcommerce\\.js",
             "cookies": 0,
@@ -23,11 +49,9 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "1ce1940b90e8ec7d37a7a6c537438a900973232adea259e2ceb2585343b7bd4f"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -45,11 +69,11 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.maxTouchPoints": 3,
-                "window.devicePixelRatio": 3
+                "Navigator.prototype.maxTouchPoints": 4,
+                "window.devicePixelRatio": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000217,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "a4bfa5aa403189f5f1ecffdb8483101e89737d5319cd43a7db9b26763bb2849c"
@@ -59,29 +83,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "utahairguns.com",
+                "www.danburymint.com",
                 "www.fenixlighting.com",
                 "www.papersource.com"
             ]
         },
         {
-            "rule": "customily\\.com\\/shopify\\/static\\/customily\\.shopify\\.script\\.js",
+            "rule": "customily\\.com\\/api\\/settings",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "sh"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "a781fdb78b7bd86c6bcb74fa1f8da71fdbbcfd909a80e567d263b291e438a60f"
+                "31100b02c03a3d86c91106f654dd7e6aa240a418bab5fe9a04294a113ce5c05c",
+                "51420fc6ed18bda9fb1ed9d829577a9c25a49b56fd6aa7bc4053be350de7526d"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fenixlighting.com",
+                "wbshop.com",
+                "www.armedforcesgear.com",
                 "www.fenixlighting.com"
             ]
         }
@@ -92,15 +119,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.5833333333333334
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.25
+            "prevalence": 0.4166666666666667
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 10,
+        "XHR": 3
     },
     "nameservers": [
         "ns19.domaincontrol.com",

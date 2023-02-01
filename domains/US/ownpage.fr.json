@@ -7,9 +7,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000795,
-    "sites": 11,
+    "prevalence": 0.000142,
+    "sites": 21,
     "subdomains": [
+        "assets",
         "script",
         "api"
     ],
@@ -17,8 +18,59 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "ownpage\\.fr\\/euronews\\/euronews_icons_dark_newsletter\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "88d2f5faf6de3fb658eb1b88d858f0bd2af7830d031782845ec1b5dae004ee92"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "euronews.com",
+                "es.euronews.com",
+                "fr.euronews.com",
+                "www.euronews.com"
+            ]
+        },
+        {
+            "rule": "ownpage\\.fr\\/v1\\/mailmunch-pairing\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "script"
+            ],
+            "apis": {
+                "Document.cookie getter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "6c3c9600fc1039209f408d157611a409a639b463e0c06890f0ce62cc7930cd4b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "euronews.com",
+                "es.euronews.com",
+                "fr.euronews.com",
+                "www.clubic.com",
+                "www.lebonbon.fr"
+            ]
+        },
+        {
             "rule": "ownpage\\.fr\\/v1\\/ownpage\\.js",
-            "cookies": 0.0000578,
+            "cookies": 0.0000543,
             "fingerprinting": 1,
             "subdomains": [
                 "script"
@@ -28,8 +80,8 @@
                 "Date.prototype.getTime": 8,
                 "Document.cookie setter": 8
             },
-            "sites": 9,
-            "prevalence": 0.000065,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [],
             "responseHashes": [
                 "47dcc5ccddda02ae4a968f0d40073bcd4c1fff886815b0ea5064c6f2d96b535a"
@@ -39,7 +91,7 @@
                 "ownpage_fp2": {
                     "ttl": 31536003,
                     "length": 16,
-                    "prevalence": 0.000057803468208092484,
+                    "prevalence": 0.00005425200054252,
                     "uniqueness": 1
                 }
             },
@@ -47,11 +99,12 @@
             "exampleSites": [
                 "challenges.fr",
                 "www.challenges.fr",
+                "www.clubic.com",
                 "www.cotemaison.fr",
                 "www.gerbeaud.com",
-                "www.lebigdata.fr",
                 "www.lebonbon.fr",
                 "www.pratique.fr",
+                "www.rtl.be",
                 "www.sciencesetavenir.fr",
                 "www.slate.fr"
             ]
@@ -65,7 +118,7 @@
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.0000578,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -73,40 +126,87 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "ownpage_fp2": 0.000057803468208092484
+                "ownpage_fp2": 0.00005425200054252
             },
             "exampleSites": [
                 "challenges.fr",
                 "www.challenges.fr",
+                "www.clubic.com",
                 "www.gerbeaud.com",
-                "www.lebigdata.fr",
                 "www.lebonbon.fr",
                 "www.pratique.fr",
                 "www.sciencesetavenir.fr",
+                "www.slate.fr"
+            ]
+        },
+        {
+            "rule": "ownpage\\.fr\\/slate\\/fonts\\/GT-Walsheim-Medium\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "slate.fr",
+                "www.slate.fr"
+            ]
+        },
+        {
+            "rule": "ownpage\\.fr\\/slate\\/fonts\\/GT-Walsheim-Medium\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a1f9aad949d1ac17e700f5d59abd220eba120407d0dec62088a15138610e6242"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "slate.fr",
                 "www.slate.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000723,
+    "cookies": 0.0000746,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5238095238095238
+            "prevalence": 0.38095238095238093
+        },
+        {
+            "domain": "mailmunch.co",
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.47619047619047616
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Script": 9,
-        "Image": 8
+        "Image": 12,
+        "Script": 15,
+        "Font": 4
     },
     "nameservers": [
-        "ns-19-c.gandi.net",
         "ns-129-b.gandi.net",
+        "ns-19-c.gandi.net",
         "ns-112-a.gandi.net"
     ]
 }

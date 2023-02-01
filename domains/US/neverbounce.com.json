@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000217,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,12 +24,12 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "console.memory": 1
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "console.memory": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "c99d11cb4960d6e1918ed55d5bcbb316d38b51098e2efc1201904d7274d3273e"
@@ -37,8 +38,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oceanconservancy.org",
+                "gourmetgiftbaskets.com",
+                "www.gourmetgiftbaskets.com",
+                "www.jasper.ai",
                 "www.procore.com"
+            ]
+        },
+        {
+            "rule": "neverbounce\\.com\\/v4\\/poe\\/notify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5905673ac3b7c0eb4d054c68460f5c5a16dff07aba6ab2f5bd22bd5a74e6c6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jasper.ai",
+                "www.jasper.ai"
             ]
         }
     ],
@@ -47,12 +72,20 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "yottaa.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6
     },
     "nameservers": [
         "pat.ns.cloudflare.com",

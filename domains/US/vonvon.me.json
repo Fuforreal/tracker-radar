@@ -4,27 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000145,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "en-static-gcs"
+        "kr-static-gcs"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "vonvon\\.me\\/js\\/prebid\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "en-static-gcs"
+                "kr-static-gcs"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "a39bdce0f9ee1ebffe36f9824c1e8ebd4b1a29dfbb5ff776202cb53adcc7fc4c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
