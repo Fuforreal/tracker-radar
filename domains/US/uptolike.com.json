@@ -55,8 +55,8 @@
             "cnames": [],
             "responseHashes": [
                 "f33d484e926848b808cb1af18ee9899252edd512835e3f712847bbdd3cd839ff",
-                "0b553633f8fdbd617909427c808a32d183a3ef2d22182054cce01b9d5c41a48e",
-                "e6e4e5ceba4e60146855ed37647ee0b754085b8b3ba7cb87505af98735a2734d"
+                "bddcc72d4aa01558165394b68b1c34dc4df519e4edbe5675f62fc8b241cfc1c2",
+                "0915a4aa5018b330c6d8799147e9247a0f970a4b587781fb11ea9b0aa240264a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -181,7 +181,7 @@
             "cnames": [],
             "responseHashes": [
                 "05de553820781e958485094ac82327d75487fef4ba2d8032531d7d57df6b7f6f",
-                "19025d0b9ffa8dcffb557224ee4b6270414e1925d5080a9344de7549dea1e8d6"
+                "bd251db2a879dcb8b1d4ecdd89d0788e9f17f99abc288e12f410b544a00bfa8b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -246,11 +246,13 @@
         {
             "rule": "uptolike\\.com\\/widgets\\/v1\\/zp\\/support\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "w"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1
+            },
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
@@ -308,10 +310,10 @@
     },
     "nameservers": [
         "ns8-l2.nic.ru",
-        "ns4-l2.nic.ru",
         "ns3-l2.nic.ru",
         "ns8-cloud.nic.ru",
-        "ns4-cloud.nic.ru",
-        "nsnsns.uptolike.com"
+        "nsnsns.uptolike.com",
+        "ns4-l2.nic.ru",
+        "ns4-cloud.nic.ru"
     ]
 }

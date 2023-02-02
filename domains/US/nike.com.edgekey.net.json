@@ -12,10 +12,10 @@
     "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
-        "api",
-        "unite",
         "static-assets",
         "content.services",
+        "api",
+        "unite",
         "analytics"
     ],
     "cnames": [
@@ -42,6 +42,60 @@
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "nike\\.com\\.edgekey\\.net\\/video-player\\/1\\.9\\.2\\/nike-one-video-player\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-assets.nike.com",
+                    "resolved": "static-assets.nike.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "180a72cd8a4ca8090af2c91267f3b7d876a4066b14f3855fb39fb96a50bbf0db"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nike.com",
+                "www.nike.com"
+            ]
+        },
+        {
+            "rule": "nike\\.com\\.edgekey\\.net\\/content\\/published\\/v2\\/banner",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content.services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "content.services.nike.com",
+                    "resolved": "content.services.nike.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "155adbcc9c90e1bbf983aaed93122ad94c7b009daac701b8bdcd0274d761d488"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nike.com",
+                "www.nike.com"
+            ]
+        },
         {
             "rule": "nike\\.com\\.edgekey\\.net\\/149e9513-01fa-4fb0-aad4-566afd725d1b\\/2d206a39-8ed7-437e-a3be-862e0f06eea3\\/fp",
             "cookies": 0.0000136,
@@ -133,12 +187,17 @@
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
+                "api",
                 "unite"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
+                {
+                    "original": "api.nike.com",
+                    "resolved": "api.nike.com.edgekey.net"
+                },
                 {
                     "original": "unite.nike.com",
                     "resolved": "unite.nike.com.edgekey.net"
@@ -176,7 +235,9 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_schn": 0.000006781638036851421
+            },
             "exampleSites": [
                 "nike.com",
                 "www.nike.com"
@@ -202,60 +263,6 @@
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nike.com",
-                "www.nike.com"
-            ]
-        },
-        {
-            "rule": "nike\\.com\\.edgekey\\.net\\/video-player\\/1\\.9\\.2\\/nike-one-video-player\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "static-assets.nike.com",
-                    "resolved": "static-assets.nike.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "180a72cd8a4ca8090af2c91267f3b7d876a4066b14f3855fb39fb96a50bbf0db"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nike.com",
-                "www.nike.com"
-            ]
-        },
-        {
-            "rule": "nike\\.com\\.edgekey\\.net\\/content\\/published\\/v2\\/banner",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content.services"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "content.services.nike.com",
-                    "resolved": "content.services.nike.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "155adbcc9c90e1bbf983aaed93122ad94c7b009daac701b8bdcd0274d761d488"
-            ],
-            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -459,11 +466,11 @@
         }
     ],
     "types": {
+        "Stylesheet": 4,
+        "Fetch": 4,
         "Document": 4,
         "Script": 6,
         "XHR": 6,
-        "Stylesheet": 4,
-        "Fetch": 4,
         "Preflight": 4,
         "Ping": 2
     },

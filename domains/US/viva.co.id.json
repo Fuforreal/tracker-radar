@@ -8,6 +8,7 @@
     "sites": 2,
     "subdomains": [
         "log",
+        "www",
         "public",
         "thumb"
     ],
@@ -17,15 +18,20 @@
         {
             "rule": "viva\\.co\\.id\\/iframe",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "log"
+                "log",
+                "www"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "cc4e791b315ccc55df9a682ebad101f02a99b6d1be41a91c2401b445709f4b05"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1058,7 +1064,7 @@
         "Font": 4
     },
     "nameservers": [
-        "brianna.ns.cloudflare.com",
-        "seth.ns.cloudflare.com"
+        "seth.ns.cloudflare.com",
+        "brianna.ns.cloudflare.com"
     ]
 }

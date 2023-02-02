@@ -2089,7 +2089,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.00001356300013563
+                "G_ENABLED_IDPS": 0.000013563276073702843
             },
             "exampleSites": [
                 "elephantjournal.com",
@@ -2423,8 +2423,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2443,10 +2445,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2889,11 +2889,13 @@
         {
             "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.0\\/js\\/client\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "js"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -3359,9 +3361,9 @@
         "XHR": 55
     },
     "nameservers": [
-        "ns1.p57.dynect.net",
-        "ns2.p57.dynect.net",
+        "pdns100.ultradns.net",
         "pdns100.ultradns.com",
-        "pdns100.ultradns.net"
+        "ns1.p57.dynect.net",
+        "ns2.p57.dynect.net"
     ]
 }

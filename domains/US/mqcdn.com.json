@@ -44,8 +44,8 @@
                 "www.amwater.com",
                 "www.hertz.co.uk",
                 "www.hertz.com.au",
-                "www.hertz.com",
-                "www.hertz.de"
+                "www.hertz.de",
+                "www.hertz.com"
             ]
         },
         {
@@ -70,8 +70,8 @@
                 "www.amwater.com",
                 "www.hertz.co.uk",
                 "www.hertz.com.au",
-                "www.hertz.com",
-                "www.hertz.de"
+                "www.hertz.de",
+                "www.hertz.com"
             ]
         },
         {
@@ -105,13 +105,13 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.permissions": 2,
                 "window.devicePixelRatio": 2,
-                "CanvasRenderingContext2D.prototype.getImageData": 2,
-                "Date.prototype.getTime": 1,
                 "WebGLRenderingContext.prototype.getExtension": 1,
                 "WebGLRenderingContext.prototype.getParameter": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.permissions": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -304,28 +304,6 @@
             ]
         },
         {
-            "rule": "mqcdn\\.com\\/yogi-cdn\\/phoenix\\/fonts\\/montserrat\\/montserrat-v23-latin-regular\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b67f0ca7ba26b08e630d407deffba187fbda928845b63984485b66d08fd22e24"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mapquest.com",
-                "www.mapquest.com"
-            ]
-        },
-        {
             "rule": "mqcdn\\.com\\/yogi-cdn\\/phoenix\\/fonts\\/montserrat\\/montserrat-v23-latin-500\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -338,6 +316,28 @@
             "cnames": [],
             "responseHashes": [
                 "ff6a725d82d0b8e90e3debb93c7ef2dbd18be864d44a85fab187f6fab1e6b848"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mapquest.com",
+                "www.mapquest.com"
+            ]
+        },
+        {
+            "rule": "mqcdn\\.com\\/yogi-cdn\\/phoenix\\/fonts\\/montserrat\\/montserrat-v23-latin-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b67f0ca7ba26b08e630d407deffba187fbda928845b63984485b66d08fd22e24"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -534,7 +534,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "3ea82d54a34cc097e0d8db56f58355ea6410882d132762ab024af284491070b0"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -554,47 +556,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mapquest.com",
-                "www.mapquest.com"
-            ]
-        },
-        {
-            "rule": "mqcdn\\.com\\/shared\\/map_styles\\/production\\/fonts\\/Open%20Sans%20Regular,Arial%20Unicode%20MS%20Regular\\/0-255\\.pbf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
+            "responseHashes": [
+                "6d53483935df117a0008b50da00b91cf57e74c7499e53d8cd11ff3812fa33fa7"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mapquest.com",
-                "www.mapquest.com"
-            ]
-        },
-        {
-            "rule": "mqcdn\\.com\\/shared\\/map_styles\\/production\\/fonts\\/Open%20Sans%20Semibold%20Italic,Arial%20Unicode%20MS%20Regular\\/0-255\\.pbf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -614,7 +578,53 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9f591e2acfb2c634a32e07d5040181918781d43a55238a613a8e90012e529e20"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mapquest.com",
+                "www.mapquest.com"
+            ]
+        },
+        {
+            "rule": "mqcdn\\.com\\/shared\\/map_styles\\/production\\/fonts\\/Open%20Sans%20Regular,Arial%20Unicode%20MS%20Regular\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d0ed4a195ef3cce762ddd6a913526df75905b57e63f13636c05b6b1d9f2396ad"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mapquest.com",
+                "www.mapquest.com"
+            ]
+        },
+        {
+            "rule": "mqcdn\\.com\\/shared\\/map_styles\\/production\\/fonts\\/Open%20Sans%20Semibold%20Italic,Arial%20Unicode%20MS%20Regular\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "85c04fd3daf170ac38cfc7bc7890878eb16b0d9e9890ff81195854693f38cd55"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -642,9 +652,9 @@
         "Image": 10
     },
     "nameservers": [
+        "ns-1920.awsdns-48.co.uk",
         "ns-1159.awsdns-16.org",
         "ns-428.awsdns-53.com",
-        "ns-886.awsdns-46.net",
-        "ns-1920.awsdns-48.co.uk"
+        "ns-886.awsdns-46.net"
     ]
 }

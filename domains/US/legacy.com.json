@@ -7,13 +7,33 @@
     "prevalence": 0.000271,
     "sites": 40,
     "subdomains": [
-        "www",
         "cache",
+        "www",
         "media2"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "legacy\\.com\\/globalcontent\\/advertising\\/1x1clear\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "al.com",
+                "obits.nola.com"
+            ]
+        },
         {
             "rule": "legacy\\.com\\/obituaries\\/content\\/components\\.css",
             "cookies": 0,
@@ -124,26 +144,6 @@
                 "obits.oregonlive.com",
                 "obits.pennlive.com",
                 "obits.syracuse.com"
-            ]
-        },
-        {
-            "rule": "legacy\\.com\\/globalcontent\\/advertising\\/1x1clear\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cache"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "al.com",
-                "obits.nola.com"
             ]
         },
         {
@@ -449,20 +449,20 @@
         }
     ],
     "types": {
+        "Image": 26,
         "Stylesheet": 7,
         "Script": 25,
         "Document": 7,
-        "Image": 26,
         "XHR": 2
     },
     "nameservers": [
-        "ns3.p14.dynect.net",
-        "ns4.p14.dynect.net",
-        "NS4.G02.CFDNS.CO.UK",
-        "NS1.G02.CFDNS.net",
-        "NS3.G02.CFDNS.INFO",
         "ns1.p14.dynect.net",
+        "NS3.G02.CFDNS.INFO",
+        "ns2.p14.dynect.net",
+        "NS1.G02.CFDNS.net",
+        "ns4.p14.dynect.net",
         "NS2.G02.CFDNS.BIZ",
-        "ns2.p14.dynect.net"
+        "ns3.p14.dynect.net",
+        "NS4.G02.CFDNS.CO.UK"
     ]
 }

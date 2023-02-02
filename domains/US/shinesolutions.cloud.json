@@ -7,12 +7,17 @@
     "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
-        "medrx.prod.telstra"
+        "medrx.prod.telstra",
+        "cpt.prod.telstra"
     ],
     "cnames": [
         {
             "original": "medrx.telstra.com.au",
             "resolved": "medrx.prod.telstra.shinesolutions.cloud"
+        },
+        {
+            "original": "targeting.telstra.com.au",
+            "resolved": "cpt.prod.telstra.shinesolutions.cloud"
         }
     ],
     "fingerprinting": 1,
@@ -46,10 +51,11 @@
         },
         {
             "rule": "shinesolutions\\.cloud\\/online\\.php",
-            "cookies": 0,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
-                "medrx.prod.telstra"
+                "medrx.prod.telstra",
+                "cpt.prod.telstra"
             ],
             "apis": {},
             "sites": 2,
@@ -58,9 +64,15 @@
                 {
                     "original": "medrx.telstra.com.au",
                     "resolved": "medrx.prod.telstra.shinesolutions.cloud"
+                },
+                {
+                    "original": "targeting.telstra.com.au",
+                    "resolved": "cpt.prod.telstra.shinesolutions.cloud"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -135,10 +147,5 @@
         "Script": 6,
         "XHR": 2
     },
-    "nameservers": [
-        "ns-1054.awsdns-03.org",
-        "ns-1820.awsdns-35.co.uk",
-        "ns-287.awsdns-35.com",
-        "ns-556.awsdns-05.net"
-    ]
+    "nameservers": []
 }

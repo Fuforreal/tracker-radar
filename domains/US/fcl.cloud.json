@@ -7,43 +7,13 @@
     "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
-        "omni-search-ui.edge.soar",
         "services.prod.websites",
-        "identity-auth-ui.edge.soar"
+        "identity-auth-ui.edge.soar",
+        "omni-search-ui.edge.soar"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "fcl\\.cloud\\/sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "omni-search-ui.edge.soar"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "window.innerWidth": 2,
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "081e45a74e5b790579e7f355c41a81e852fd994cbbd0e25eacc3566acbe642a9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "flightcentre.com.au",
-                "www.flightcentre.ca"
-            ]
-        },
         {
             "rule": "fcl\\.cloud\\/emergency-message\\/v1",
             "cookies": 0,
@@ -56,16 +26,16 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "83bd9ff7658402b79108d3c102a1a9cbd74c431e14e4278dfa2787fd89c633bc",
-                "ff40225ddf1a7d5f3a5fb9113cf19b5bd477452ca25e8d81027b0542b22d76ff"
+                "ff40225ddf1a7d5f3a5fb9113cf19b5bd477452ca25e8d81027b0542b22d76ff",
+                "83bd9ff7658402b79108d3c102a1a9cbd74c431e14e4278dfa2787fd89c633bc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flightcentre.com.au",
-                "www.flightcentre.ca",
-                "www.flightcentre.com.au"
+                "www.flightcentre.com.au",
+                "www.flightcentre.ca"
             ]
         },
         {
@@ -210,6 +180,36 @@
             ]
         },
         {
+            "rule": "fcl\\.cloud\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "omni-search-ui.edge.soar"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.innerWidth": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "081e45a74e5b790579e7f355c41a81e852fd994cbbd0e25eacc3566acbe642a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightcentre.com.au",
+                "www.flightcentre.ca"
+            ]
+        },
+        {
             "rule": "fcl\\.cloud\\/data-content\\/v1\\/newsletter",
             "cookies": 0,
             "fingerprinting": 0,
@@ -288,15 +288,15 @@
         }
     ],
     "types": {
-        "Script": 8,
         "XHR": 11,
+        "Script": 8,
         "Preflight": 5,
         "Fetch": 5
     },
     "nameservers": [
-        "ns-148.awsdns-18.com",
-        "ns-1914.awsdns-47.co.uk",
         "ns-1456.awsdns-54.org",
-        "ns-895.awsdns-47.net"
+        "ns-148.awsdns-18.com",
+        "ns-895.awsdns-47.net",
+        "ns-1914.awsdns-47.co.uk"
     ]
 }

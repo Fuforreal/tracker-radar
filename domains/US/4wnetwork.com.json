@@ -56,7 +56,7 @@
                 "static-adsr"
             ],
             "apis": {
-                "window.sessionStorage": 6
+                "window.sessionStorage": 5
             },
             "sites": 7,
             "prevalence": 0.0000475,
@@ -89,11 +89,11 @@
             "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
-                "5dba00d79345de192a574c40a9918331a876e3c5bdf94a989871f626e835f8df",
+                "30822b6c838d0106e019fe1af9de8e1f25c2d7939c8f987a7374a71a5561e40c",
                 "ec764eed0689b14e20266f860c9fd3b5e3739b9da7acee9c0df62993dd9251ec",
                 "a6c2457d43c3d4b410d64b31297a689db68acdb0aa15c8e0935a85ebc6e2eaad",
                 "16297c244d9f742cbdeffa10cdd07840fd53caebb41a6d10b0f9e7f3c30ac717",
-                "2ce2254023cc4bcfe5a23568bd59c36f4a822e7671c9527c3467fa284482e43b"
+                "8267bd3066545e8869c6f4942cbf546f31d49dc92273eb81aba044188765fc2c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -116,7 +116,7 @@
             ],
             "apis": {
                 "Document.cookie getter": 6,
-                "Navigator.prototype.userAgent": 6
+                "Navigator.prototype.userAgent": 5
             },
             "sites": 6,
             "prevalence": 0.0000407,
@@ -171,11 +171,6 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 6,
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.languages": 6,
-                "Navigator.prototype.mimeTypes": 6,
-                "HTMLMediaElement.prototype.canPlayType": 6,
-                "Event.prototype.timeStamp": 6,
                 "window.name": 4,
                 "window.innerWidth": 4,
                 "window.innerHeight": 4,
@@ -188,7 +183,12 @@
                 "window.screenTop": 4,
                 "window.indexedDB": 4,
                 "window.sessionStorage": 4,
-                "window.localStorage": 4
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.languages": 6,
+                "Navigator.prototype.mimeTypes": 6,
+                "HTMLMediaElement.prototype.canPlayType": 6,
+                "Event.prototype.timeStamp": 6
             },
             "sites": 6,
             "prevalence": 0.0000407,
@@ -235,6 +235,53 @@
             ]
         },
         {
+            "rule": "4wnetwork\\.com\\/vast\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adsr"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "bf0b78bff50bbd7d4309766a88f74f6b631c2ef34c55428b9118738eef2d26be"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forumcommunity.net",
+                "thegossipbakery.forumcommunity.net",
+                "www.giornaledibrescia.it",
+                "www.rds.it"
+            ]
+        },
+        {
+            "rule": "4wnetwork\\.com\\/js\\/sticky_mobile\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "59e1b9743ab3447e6053aad6a463e4180b62560e3921128b803cebc08ea97df5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forumcommunity.net",
+                "thegossipbakery.forumcommunity.net",
+                "www.giornaledibrescia.it"
+            ]
+        },
+        {
             "rule": "4wnetwork\\.com\\/impression_async\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -246,6 +293,7 @@
             "prevalence": 0.0000475,
             "cnames": [],
             "responseHashes": [
+                "b422b19bd4cdf41335559b97ac8bcd923423b154f5a07218b15072e33bc2f682",
                 "0372ecc2cabff2ab46936c3a2717525af646c5acaa610d9c42a67d876e77c8e3",
                 "1bb0f6e11b43d530a9c326df6fdd06c0d364bcb59fc8f4d6b7067ce1d5cd89e0",
                 "6acb9b6690e4a98367b356077cacd221837b1eea01475a077031428c729d12bf",
@@ -341,53 +389,6 @@
                 "www.ecodibergamo.it",
                 "www.giornaledibrescia.it",
                 "www.rds.it"
-            ]
-        },
-        {
-            "rule": "4wnetwork\\.com\\/vast\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adsr"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "bf0b78bff50bbd7d4309766a88f74f6b631c2ef34c55428b9118738eef2d26be"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forumcommunity.net",
-                "thegossipbakery.forumcommunity.net",
-                "www.giornaledibrescia.it",
-                "www.rds.it"
-            ]
-        },
-        {
-            "rule": "4wnetwork\\.com\\/js\\/sticky_mobile\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "59e1b9743ab3447e6053aad6a463e4180b62560e3921128b803cebc08ea97df5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forumcommunity.net",
-                "thegossipbakery.forumcommunity.net",
-                "www.giornaledibrescia.it"
             ]
         },
         {
@@ -634,7 +635,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000006781500067815
+                "lotame_domain_check": 0.000006781638036851421
             },
             "exampleSites": [
                 "forumcommunity.net",
@@ -849,7 +850,7 @@
         "Document": 2
     },
     "nameservers": [
-        "ns2.register.it",
-        "ns1.register.it"
+        "ns1.register.it",
+        "ns2.register.it"
     ]
 }
