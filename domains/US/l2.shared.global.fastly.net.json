@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000102,
-    "sites": 15,
+    "prevalence": 0.000109,
+    "sites": 16,
     "subdomains": [],
     "cnames": [
         {
@@ -31,6 +31,10 @@
         },
         {
             "original": "map.mp.nbc.com",
+            "resolved": "l2.shared.global.fastly.net"
+        },
+        {
+            "original": "map.mp.usanetwork.com",
             "resolved": "l2.shared.global.fastly.net"
         },
         {
@@ -73,17 +77,22 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [
                 {
                     "original": "map.mp.nbc.com",
+                    "resolved": "l2.shared.global.fastly.net"
+                },
+                {
+                    "original": "map.mp.usanetwork.com",
                     "resolved": "l2.shared.global.fastly.net"
                 }
             ],
             "responseHashes": [
                 "2c699d42aa12323d6f7f494ef0b72b2341bdda7241680732f532419448b41673",
-                "87778c0f56ac03ba98f01d11964d40641a71641c73a6bd8c09b1e97c194a191e"
+                "87778c0f56ac03ba98f01d11964d40641a71641c73a6bd8c09b1e97c194a191e",
+                "b01a937dd2db0312525177d83f1c1af6c41e64c57fc8dfa401ff1c58e7336cc3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -91,7 +100,8 @@
             "exampleSites": [
                 "nbc.com",
                 "voice.vote.nbc.com",
-                "www.nbc.com"
+                "www.nbc.com",
+                "www.usanetwork.com"
             ]
         },
         {
@@ -100,11 +110,15 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [
                 {
                     "original": "map.mp.nbc.com",
+                    "resolved": "l2.shared.global.fastly.net"
+                },
+                {
+                    "original": "map.mp.usanetwork.com",
                     "resolved": "l2.shared.global.fastly.net"
                 }
             ],
@@ -115,7 +129,8 @@
             "exampleSites": [
                 "nbc.com",
                 "voice.vote.nbc.com",
-                "www.nbc.com"
+                "www.nbc.com",
+                "www.usanetwork.com"
             ]
         },
         {
@@ -266,7 +281,7 @@
                 "growme_version": {
                     "ttl": 1802,
                     "length": 40,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 0.5
                 }
             },
@@ -406,6 +421,31 @@
             ]
         },
         {
+            "rule": "l2\\.shared\\.global\\.fastly\\.net\\/webevents\\/v1\\/JS\\/us1-879680b8eb43f24f8c0701a06aa3b13a\\/Forwarding",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "map.mp.usanetwork.com",
+                    "resolved": "l2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
             "rule": "l2\\.shared\\.global\\.fastly\\.net\\/spaces\\/vdxbs4m0q2zj\\/environments\\/master\\/entries",
             "cookies": 0,
             "fingerprinting": 0,
@@ -485,8 +525,8 @@
         }
     ],
     "types": {
-        "XHR": 13,
-        "Preflight": 7,
+        "XHR": 16,
+        "Preflight": 8,
         "Fetch": 13,
         "Stylesheet": 2,
         "Script": 6

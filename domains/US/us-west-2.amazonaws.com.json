@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000848,
-    "sites": 125,
+    "prevalence": 0.000854,
+    "sites": 126,
     "subdomains": [
         "cognito-identity",
         "firehose",
@@ -101,36 +101,6 @@
                 "firehose"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000746,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefitscal.com",
-                "brilliantearth.com",
-                "design.cricut.com",
-                "ficoforums.myfico.com",
-                "jbworld.ws",
-                "theanimalrescuesite.greatergood.com",
-                "wondery.com",
-                "www.aleks.com",
-                "www.brilliantearth.com",
-                "www.trxtraining.com",
-                "xvideos-jav.com"
-            ]
-        },
-        {
-            "rule": "us-west-2\\.amazonaws\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cognito-identity",
-                "firehose"
-            ],
-            "apis": {},
             "sites": 8,
             "prevalence": 0.0000543,
             "cnames": [],
@@ -153,6 +123,36 @@
                 "jbworld.ws",
                 "theanimalrescuesite.greatergood.com",
                 "wondery.com",
+                "www.trxtraining.com",
+                "xvideos-jav.com"
+            ]
+        },
+        {
+            "rule": "us-west-2\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity",
+                "firehose"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000746,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benefitscal.com",
+                "brilliantearth.com",
+                "design.cricut.com",
+                "ficoforums.myfico.com",
+                "jbworld.ws",
+                "theanimalrescuesite.greatergood.com",
+                "wondery.com",
+                "www.aleks.com",
+                "www.brilliantearth.com",
                 "www.trxtraining.com",
                 "xvideos-jav.com"
             ]
@@ -412,7 +412,7 @@
             "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "747c26ce1458b174634a09f4e553688b566247b18498b7e70941ac9890003c00",
+                "66baa16ceb38b6096de1a2d1fe89c51db874ad0d7cc6bfbe9d8d3b1970d1de2b",
                 "3083b27fa3b78a559ceb36a95ecf414cf73bbdcfddeb705bd426167bac3f7160",
                 "99af6c1bb1b8b94e9b6f3c7bec9a05ae882830d523b279d1ee001d968afaccd1"
             ],
@@ -626,7 +626,7 @@
                 "cdn.equifaxmaster.611000.ka.ck": {
                     "ttl": 31536011,
                     "length": 308,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 }
             },
@@ -782,10 +782,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "f3628539f89ecf4f7521437f981b690bcc200b1a45302f6a565f002a5a515359"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -804,8 +802,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f3628539f89ecf4f7521437f981b690bcc200b1a45302f6a565f002a5a515359"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -954,7 +954,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.000013563276073702843
+                "G_ENABLED_IDPS": 0.00001356300013563
             },
             "exampleSites": [
                 "fotor.com",
@@ -1345,8 +1345,33 @@
                     "resolved": "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb.us-west-2.amazonaws.com"
                 }
             ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "occ.com.mx",
+                "www.occ.com.mx"
+            ]
+        },
+        {
+            "rule": "us-west-2\\.amazonaws\\.com\\/proxy",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "unleash.occ.com.mx",
+                    "resolved": "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb.us-west-2.amazonaws.com"
+                }
+            ],
             "responseHashes": [
-                "c87598d25420ec224f165e84d7ad181ad453ff1153f3436a0947434090fcde88"
+                "8338db08fdda3aceb65640dad1b4e08e9a6593c4a1312fd4f59c14e78783e5a1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1357,7 +1382,34 @@
             ]
         },
         {
-            "rule": "us-west-2\\.amazonaws\\.com\\/proxy",
+            "rule": "us-west-2\\.amazonaws\\.com\\/proxy\\/client\\/metrics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "unleash.occ.com.mx",
+                    "resolved": "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb.us-west-2.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "occ.com.mx",
+                "www.occ.com.mx"
+            ]
+        },
+        {
+            "rule": "us-west-2\\.amazonaws\\.com\\/proxy\\/client\\/metrics",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1449,58 +1501,6 @@
                 {
                     "original": "otlp.occ.com.mx",
                     "resolved": "ac3a73d8a136149908dc503d5be49b60-e1ea49392bef9569.elb.us-west-2.amazonaws.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "occ.com.mx",
-                "www.occ.com.mx"
-            ]
-        },
-        {
-            "rule": "us-west-2\\.amazonaws\\.com\\/proxy\\/client\\/metrics",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "unleash.occ.com.mx",
-                    "resolved": "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb.us-west-2.amazonaws.com"
-                }
-            ],
-            "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "occ.com.mx",
-                "www.occ.com.mx"
-            ]
-        },
-        {
-            "rule": "us-west-2\\.amazonaws\\.com\\/proxy\\/client\\/metrics",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "unleash.occ.com.mx",
-                    "resolved": "a22438d97dfed48739beb9683191de1c-4fbe29f390195cac.elb.us-west-2.amazonaws.com"
                 }
             ],
             "responseHashes": [],
@@ -1635,7 +1635,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_schn": 0.000006781638036851421
+                "_schn": 0.000006781500067815
             },
             "exampleSites": [
                 "sandiego.edu",
@@ -1980,7 +1980,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000678,
+    "cookies": 0.0000746,
     "topInitiators": [
         {
             "domain": "first party",
@@ -2024,8 +2024,8 @@
         }
     ],
     "types": {
-        "Preflight": 55,
         "XHR": 75,
+        "Preflight": 55,
         "Ping": 4,
         "Fetch": 25,
         "Image": 22,
@@ -2034,18 +2034,18 @@
         "WebSocket": 2
     },
     "nameservers": [
-        "u3.amazonaws.com",
-        "u2.amazonaws.com",
+        "pdns5.ultradns.info",
         "ns1.p31.dynect.net",
-        "u5.amazonaws.com",
-        "ns2.p31.dynect.net",
-        "u1.amazonaws.com",
-        "u6.amazonaws.com",
-        "pdns1.ultradns.net",
-        "ns3.p31.dynect.net",
-        "pdns3.ultradns.org",
-        "ns4.p31.dynect.net",
         "u4.amazonaws.com",
-        "pdns5.ultradns.info"
+        "ns3.p31.dynect.net",
+        "ns4.p31.dynect.net",
+        "u3.amazonaws.com",
+        "u1.amazonaws.com",
+        "u5.amazonaws.com",
+        "u6.amazonaws.com",
+        "u2.amazonaws.com",
+        "pdns1.ultradns.net",
+        "ns2.p31.dynect.net",
+        "pdns3.ultradns.org"
     ]
 }

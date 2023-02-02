@@ -19,11 +19,14 @@
         {
             "rule": "readpeak\\.com\\/js\\/rp-if\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "app"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "window.innerHeight": 1
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -50,7 +53,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4c6583c5383a5450bef275835bd72f19e7bcae65e6c94be843a8926c1fd625ff"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -96,7 +101,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lwuid": 0.000013563276073702843
+                "lwuid": 0.00001356300013563
             },
             "exampleSites": [
                 "gp.se",
@@ -220,7 +225,7 @@
         "Image": 4
     },
     "nameservers": [
-        "ns4.magnic.com",
-        "ns3.magnic.com"
+        "ns3.magnic.com",
+        "ns4.magnic.com"
     ]
 }

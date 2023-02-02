@@ -13,10 +13,10 @@
         "static",
         "mediaserver",
         "ssp",
-        "statsmp",
         "analytics",
-        "geo",
-        "mediaservervid"
+        "statsmp",
+        "mediaservervid",
+        "geo"
     ],
     "cnames": [
         {
@@ -109,8 +109,8 @@
             ],
             "apis": {
                 "window.innerWidth": 2,
-                "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 1,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -291,8 +291,8 @@
                 "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
-                "Event.prototype.timeStamp": 2,
-                "HTMLMediaElement.prototype.canPlayType": 1
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -697,13 +697,13 @@
                 "54643": {
                     "ttl": 43204,
                     "length": 1,
-                    "prevalence": 0.000006781638036851421,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 },
                 "54721": {
                     "ttl": 43204,
                     "length": 1,
-                    "prevalence": 0.000006781638036851421,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 }
             },
@@ -1365,7 +1365,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d7820ed1f940f426a5047b9e9b9d6254c1dd930936a767219db7806dcaf1c32b"
+                "8bd81b710a0a6a3bfec8250e80121318e34b882354dcf6f352807131674364f9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1627,25 +1627,25 @@
                 "rts_uuid": {
                     "ttl": 31536003,
                     "length": 18,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 },
                 "rts_sessid": {
                     "ttl": 1800,
                     "length": 33,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 },
                 "rts_cfg": {
                     "ttl": 31536003,
                     "length": 10,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 0.5
                 },
                 "context-session-id": {
                     "ttl": 1804,
                     "length": 36,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 }
             },
@@ -1678,6 +1678,77 @@
             ]
         },
         {
+            "rule": "emol\\.cl\\/emol50\\/fonts\\/fontawesome-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc36d8430af2c255a9c1184f86f8a07f2a5ec4455d9d981f032f6bba2287d752"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "emol\\.cl\\/emol50\\/fonts\\/emol_n_icons\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8c11b1cfec346a645dd75226cee51b73a1eb1c4ce31c6c84fccb1d6b6c44ed71"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "emol\\.cl\\/news",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "analytics.emol.com",
+                    "resolved": "analytics.emol.cl"
+                }
+            ],
+            "responseHashes": [
+                "e14f58dd32ab0a4d92cccbbaa14cb042f7111d9da04f84e44621beff532d7350"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
             "rule": "emol\\.cl\\/StatsPrime",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -1697,6 +1768,26 @@
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "emol\\.cl\\/au_creatives_au_elements\\/elements\\/64782\\/ce3e1cc8aa6e39f2925327e569e747cacea12cd3_249631_tottus-video-26012302\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediaservervid"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1748,34 +1839,7 @@
                 }
             ],
             "responseHashes": [
-                "85b0696f9c7bd777108d46c7a2b48091372fc5986a3005da6a2e36bb183d201f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/news",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "analytics.emol.com",
-                    "resolved": "analytics.emol.cl"
-                }
-            ],
-            "responseHashes": [
-                "0850e8f30e6667274c03665f4f6e2b51c1923ddc07321b37db78aeb4be4f2f06"
+                "ce0d6580ff8de4235dab8893bd168f4c7323fc64e307a61f519ea66e6f27ecd7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1808,72 +1872,6 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/fonts\\/emol_n_icons\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8c11b1cfec346a645dd75226cee51b73a1eb1c4ce31c6c84fccb1d6b6c44ed71"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/emol50\\/fonts\\/fontawesome-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "bc36d8430af2c255a9c1184f86f8a07f2a5ec4455d9d981f032f6bba2287d752"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/social\\/geo\\/lookup\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "geo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "519a78d94cdc7c8638b2ac3ee3421565874a995b905ff2dfe4d7fd6e363d3f76"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
             "rule": "emol\\.cl\\/images\\/logo-emol\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1896,18 +1894,20 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/au_creatives_au_elements\\/elements\\/64782\\/ce3e1cc8aa6e39f2925327e569e747cacea12cd3_249631_tottus-video-26012302\\.mp4",
+            "rule": "emol\\.cl\\/social\\/geo\\/lookup\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "mediaservervid"
+                "geo"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
+            "responseHashes": [
+                "519a78d94cdc7c8638b2ac3ee3421565874a995b905ff2dfe4d7fd6e363d3f76"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1938,7 +1938,7 @@
         "Media": 2
     },
     "nameservers": [
-        "aragorn.ns.cloudflare.com",
-        "rose.ns.cloudflare.com"
+        "rose.ns.cloudflare.com",
+        "aragorn.ns.cloudflare.com"
     ]
 }

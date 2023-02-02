@@ -44,13 +44,13 @@
                 "m_ses": {
                     "ttl": null,
                     "length": 14,
-                    "prevalence": 0.000020344914110554263,
+                    "prevalence": 0.000020344500203445003,
                     "uniqueness": 1
                 },
                 "m_cnt": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000020344914110554263,
+                    "prevalence": 0.000020344500203445003,
                     "uniqueness": 0.3333333333333333
                 }
             },
@@ -103,9 +103,9 @@
                 "81ecc0dcaa14ee87326442db68d922b51fa0d29c34df9870efc54e24bb4634de",
                 "9bbc961238cbe4fe10713b4bcc30f6b032a3f2d2c6128dbceb01e7a9c6c1bf57",
                 "6c26c882f0c406bd71d972c05b4c38ef0359f6ed671fc7a1c43493b0045ea564",
-                "178062b76f4ebd5472caa19a0b8d97925bab7eebef894a480d517434319cbd88",
+                "f0520286bef0e623105b35565ffebbc452e4a90e3f06f447811c7990438f2408",
                 "b3bd9a27c18839e25b4af6336cca9d6c4e08b998303dbdc0a72548eb9e5ba4fc",
-                "5ce5f8b0de0b6bbe353371003a09d8d62e48c2b1f4e3c4738bd0ca431382521e",
+                "9e035c80fa58d60b2e24b69b681837bed39761e114c5e17f0637acea2be07d0c",
                 "2b6fe012d39fc574d5b33ddb24f49cc9cf7c30f4cf18a68bdd2042c16cf0b230"
             ],
             "type": "Fetch",
@@ -126,11 +126,13 @@
         {
             "rule": "slgnt\\.us\\/static\\/cookie\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "offer"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
@@ -196,7 +198,7 @@
                 "th_u": {
                     "ttl": 31557611,
                     "length": 24,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 }
             },
@@ -233,35 +235,11 @@
                 "th_u": {
                     "ttl": 31557620,
                     "length": 25,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vitacost.com",
-                "www.vitacost.com"
-            ]
-        },
-        {
-            "rule": "slgnt\\.us\\/api\\/fa26651d6ebb464584e4f112864ff57a\\/iv\\/aHR0cHM6Ly93d3cudml0YWNvc3QuY29tLw%3D%3D",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "offer"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a7726456cd2a7e0c8331f2237ac9660aae55e96b47f644251c276066f669e715"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "th_u": 0.000006781638036851421
-            },
             "exampleSites": [
                 "vitacost.com",
                 "www.vitacost.com"
@@ -284,7 +262,31 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "th_u": 0.000006781638036851421
+                "th_u": 0.000006781500067815
+            },
+            "exampleSites": [
+                "vitacost.com",
+                "www.vitacost.com"
+            ]
+        },
+        {
+            "rule": "slgnt\\.us\\/api\\/fa26651d6ebb464584e4f112864ff57a\\/iv\\/aHR0cHM6Ly93d3cudml0YWNvc3QuY29tLw%3D%3D",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "offer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a7726456cd2a7e0c8331f2237ac9660aae55e96b47f644251c276066f669e715"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "th_u": 0.000006781500067815
             },
             "exampleSites": [
                 "vitacost.com",
@@ -321,11 +323,11 @@
         "XHR": 6
     },
     "nameservers": [
+        "ns15.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
         "ns11.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
-        "ns13.dnsmadeeasy.com",
-        "ns10.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com",
-        "ns12.dnsmadeeasy.com"
+        "ns12.dnsmadeeasy.com",
+        "ns13.dnsmadeeasy.com"
     ]
 }

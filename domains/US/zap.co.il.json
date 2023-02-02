@@ -89,13 +89,13 @@
                 "googleInfo": {
                     "ttl": 86404,
                     "length": 44,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 },
                 "zapum_v1": {
                     "ttl": 157680005,
                     "length": 101,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 }
             },
@@ -192,39 +192,6 @@
             ]
         },
         {
-            "rule": "zap\\.co\\.il\\/scripts\\/afterLogin\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sso"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5580b6eee550dae08cfc6d9f3419a6c1c12fef3c9a72dc23b4e63c0eca11131f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "SiteCookie": {
-                    "ttl": 305,
-                    "length": 11,
-                    "prevalence": 0.000013563276073702843,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rest.co.il",
-                "www.rest.co.il"
-            ]
-        },
-        {
             "rule": "zap\\.co\\.il\\/api\\/ingest\\/GetBrowserDataAsync",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -236,7 +203,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ed5d44ad6db5ee4795344ce727b28d366a4ced20f8f6304bc5ba4cd2f637606c"
+                "cdb1c4fd62410b582372b1863a19504cfa9291fc26eb7a360216a7a73ec7e469"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -260,6 +227,39 @@
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rest.co.il",
+                "www.rest.co.il"
+            ]
+        },
+        {
+            "rule": "zap\\.co\\.il\\/scripts\\/afterLogin\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5580b6eee550dae08cfc6d9f3419a6c1c12fef3c9a72dc23b4e63c0eca11131f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SiteCookie": {
+                    "ttl": 305,
+                    "length": 11,
+                    "prevalence": 0.00001356300013563,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rest.co.il",
@@ -291,10 +291,10 @@
         "Preflight": 2
     },
     "nameservers": [
-        "ns0.dnsmadeeasy.com",
-        "ns2.dnsmadeeasy.com",
         "ns1.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com",
         "ns3.dnsmadeeasy.com",
-        "ns4.dnsmadeeasy.com"
+        "ns2.dnsmadeeasy.com"
     ]
 }

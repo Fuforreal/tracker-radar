@@ -11,8 +11,8 @@
     "sites": 6,
     "subdomains": [
         "cdn-us",
-        "app",
-        "cdn"
+        "cdn",
+        "app"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -71,40 +71,67 @@
                 "jsConfig-52e7396d3e854b2aa7fbb9bba1c625cb": {
                     "ttl": null,
                     "length": 140,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 0.5
                 },
                 "tsid-52e7396d3e854b2aa7fbb9bba1c625cb": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013563276073702843,
+                    "prevalence": 0.00001356300013563,
                     "uniqueness": 1
                 },
                 "jsConfig-4e6cddcf891c4558b9ee84bc0fd52c01": {
                     "ttl": null,
                     "length": 140,
-                    "prevalence": 0.000006781638036851421,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 },
                 "tsid-4e6cddcf891c4558b9ee84bc0fd52c01": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000006781638036851421,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 },
                 "jsConfig-8c633074ab3c43c0854f63de92ddabc1": {
                     "ttl": null,
                     "length": 140,
-                    "prevalence": 0.000006781638036851421,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 },
                 "tsid-8c633074ab3c43c0854f63de92ddabc1": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000006781638036851421,
+                    "prevalence": 0.000006781500067815,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aarons.com",
+                "www.aarons.com",
+                "www.gourmetgiftbaskets.com",
+                "www.johnstonmurphy.com"
+            ]
+        },
+        {
+            "rule": "trustev\\.com\\/trustevIFrame\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "window.sessionStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "ea9d101fe0f9989216afd8f7af3ff8ec2d3c70e3e54463eb64556ad0561627dc"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aarons.com",
@@ -193,7 +220,7 @@
             "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "683565060dde62069e7f2f80a5ff8b19d04e9e7bb5b0b41f91b100a32a419ce3",
+                "11554cbd21f8994135c1e870f429327d971670b747ad7796e03a7c83ff1b1007",
                 "28137aa040dd004bba1836454f6d8d2c24401be7c5878a7be9ea10f1680f9395",
                 "82da236ec20f9d47e4c8e7b09342367c4f35f6414b48b407a2fd6fab28ad32ec"
             ],
@@ -244,33 +271,6 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aarons.com",
-                "www.aarons.com",
-                "www.gourmetgiftbaskets.com",
-                "www.johnstonmurphy.com"
-            ]
-        },
-        {
-            "rule": "trustev\\.com\\/trustevIFrame\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 4,
-                "window.sessionStorage": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "ea9d101fe0f9989216afd8f7af3ff8ec2d3c70e3e54463eb64556ad0561627dc"
-            ],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -344,9 +344,9 @@
     ],
     "types": {
         "Script": 4,
+        "Document": 4,
         "Preflight": 15,
-        "XHR": 15,
-        "Document": 4
+        "XHR": 15
     },
     "nameservers": [
         "ns12.domaincontrol.com",

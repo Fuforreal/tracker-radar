@@ -7,13 +7,41 @@
     "prevalence": 0.0000339,
     "sites": 5,
     "subdomains": [
+        "analytics",
         "app",
-        "assets",
-        "analytics"
+        "assets"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "jibecdn\\.com\\/prod\\/jibe\\.analytics\\.js",
+            "cookies": 0.00000678,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "5ab5ce30ea16185c371aca6fdf57786bc3d451ffca523b4adc39963885ac1acc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aldi.us",
+                "careers.fedex.com",
+                "careers.aldi.us",
+                "jobs.target.com"
+            ]
+        },
         {
             "rule": "jibecdn\\.com\\/prod\\/personalization\\/1\\.1\\.29\\/styles\\.css",
             "cookies": 0,
@@ -440,34 +468,6 @@
             ]
         },
         {
-            "rule": "jibecdn\\.com\\/prod\\/jibe\\.analytics\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {
-                "Document.cookie getter": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 2
-            },
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "5ab5ce30ea16185c371aca6fdf57786bc3d451ffca523b4adc39963885ac1acc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fedex.com",
-                "careers.fedex.com",
-                "careers.aldi.us",
-                "jobs.target.com"
-            ]
-        },
-        {
             "rule": "jibecdn\\.com\\/prod\\/fedex\\/0\\.18\\.783\\/assets\\/fonts\\/Roboto-Regular\\.ttf",
             "cookies": 0,
             "fingerprinting": 0,
@@ -482,26 +482,6 @@
                 "e1a58d604fb87423d308a2e11a451d3e15dd9accbe5cf56aa384e6001b69ddee"
             ],
             "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fedex.com",
-                "careers.fedex.com"
-            ]
-        },
-        {
-            "rule": "jibecdn\\.com\\/prod\\/fedex\\/0\\.18\\.783\\/assets\\/fedex-main\\/video-hero\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -574,6 +554,26 @@
                 "fedex.com",
                 "careers.fedex.com"
             ]
+        },
+        {
+            "rule": "jibecdn\\.com\\/prod\\/fedex\\/0\\.18\\.783\\/assets\\/fedex-main\\/video-hero\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fedex.com",
+                "careers.fedex.com"
+            ]
         }
     ],
     "categories": [],
@@ -590,11 +590,11 @@
         }
     ],
     "types": {
-        "Stylesheet": 4,
         "Script": 38,
+        "Stylesheet": 4,
         "Font": 6,
-        "Media": 2,
-        "Image": 2
+        "Image": 2,
+        "Media": 2
     },
     "nameservers": [
         "alice.ns.cloudflare.com",
