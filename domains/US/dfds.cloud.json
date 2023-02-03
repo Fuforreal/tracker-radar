@@ -4,14 +4,72 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000678,
-    "sites": 1,
+    "prevalence": 0.0000155,
+    "sites": 2,
     "subdomains": [
+        "accounts.customer-iam",
         "api.hellman.oxygen"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "accounts.dfds.com",
+            "resolved": "accounts.customer-iam.dfds.cloud"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "dfds\\.cloud\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accounts.customer-iam"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "accounts.dfds.com",
+                    "resolved": "accounts.customer-iam.dfds.cloud"
+                }
+            ],
+            "responseHashes": [
+                "069641e7407567749720f62480bff181ef2cd2e0ad93a5ba3024a69946c035d9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dfds.com",
+                "www.dfds.com"
+            ]
+        },
+        {
+            "rule": "dfds\\.cloud\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accounts.customer-iam"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "accounts.dfds.com",
+                    "resolved": "accounts.customer-iam.dfds.cloud"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dfds.com",
+                "www.dfds.com"
+            ]
+        },
         {
             "rule": "dfds\\.cloud\\/prod\\/servicesunifiedbff\\/api\\/v2\\/availabletraveldates",
             "cookies": 0,
@@ -21,10 +79,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "20fcaf211bdba3440432ff0362805e6da8d6253ed7b77c5abe1606b56186c4a7"
+                "eed09be9abf841096b64a08af8d5de2d8e7a5d1f9d363d2427536763dfbdbb38"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -37,7 +95,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000155,
     "topInitiators": [
         {
             "domain": "first party",
@@ -45,12 +103,13 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-594.awsdns-10.net",
-        "ns-1367.awsdns-42.org",
         "ns-155.awsdns-19.com",
+        "ns-1367.awsdns-42.org",
+        "ns-594.awsdns-10.net",
         "ns-1561.awsdns-03.co.uk"
     ]
 }

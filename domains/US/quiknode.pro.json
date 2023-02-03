@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.000031,
+    "sites": 4,
     "subdomains": [
         "rpc-mainnet.matic"
     ],
@@ -20,8 +20,8 @@
                 "rpc-mainnet.matic"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -29,6 +29,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chainlist.org",
+                "coinsgem.com",
+                "quickswap.exchange"
+            ]
+        },
+        {
+            "rule": "quiknode\\.pro\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpc-mainnet.matic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "1a15ad44d5898ec01f440a8a7c325d5a8cec54839ce5c69b1401d0ccf058ea92"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsgem.com",
                 "quickswap.exchange"
             ]
         }
@@ -39,16 +62,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9893617021276596
+        },
+        {
+            "domain": "bogged.finance",
+            "prevalence": 0.010638297872340425
         }
     ],
     "types": {
-        "Preflight": 2
+        "Preflight": 3,
+        "Fetch": 2
     },
     "nameservers": [
         "dns2.p02.nsone.net",
-        "dns3.p02.nsone.net",
         "dns4.p02.nsone.net",
-        "dns1.p02.nsone.net"
+        "dns1.p02.nsone.net",
+        "dns3.p02.nsone.net"
     ]
 }

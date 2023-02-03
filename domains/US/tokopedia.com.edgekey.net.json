@@ -9,29 +9,34 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
+    "prevalence": 0.0000155,
     "sites": 2,
     "subdomains": [
-        "accounts"
+        "accounts",
+        "gql"
     ],
     "cnames": [
         {
             "original": "accounts.tokopedia.com",
             "resolved": "accounts.tokopedia.com.edgekey.net"
+        },
+        {
+            "original": "gql.tokopedia.com",
+            "resolved": "gql.tokopedia.com.edgekey.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "tokopedia\\.com\\.edgekey\\.net\\/upkie",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "accounts"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "accounts.tokopedia.com",
@@ -48,11 +53,63 @@
                 "tokopedia.com",
                 "www.tokopedia.com"
             ]
+        },
+        {
+            "rule": "tokopedia\\.com\\.edgekey\\.net\\/graphql\\/RolloutUserVariant",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gql"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "gql.tokopedia.com",
+                    "resolved": "gql.tokopedia.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tokopedia.com",
+                "www.tokopedia.com"
+            ]
+        },
+        {
+            "rule": "tokopedia\\.com\\.edgekey\\.net\\/graphql\\/RolloutUserVariant",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gql"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "gql.tokopedia.com",
+                    "resolved": "gql.tokopedia.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "42a5040e01bba246010cb61e770f218e7130f0e475466e61b022c7ae22443774"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tokopedia.com",
+                "www.tokopedia.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000155,
     "topInitiators": [
         {
             "domain": "tokopedia.net",
@@ -60,7 +117,8 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 4,
+        "Preflight": 2
     },
     "nameservers": []
 }

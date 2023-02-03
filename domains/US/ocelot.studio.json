@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000407,
+    "prevalence": 0.0000465,
     "sites": 6,
     "subdomains": [
         "cdn"
@@ -12,32 +12,6 @@
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "ocelot\\.studio\\/clients\\/tweaktown\\.v3\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "window.innerWidth": 2,
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8768bcbadfef579d2840abfef7d69a8e5bb8366b7f58781ce6456bf9767d19af"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tweaktown.com",
-                "www.tweaktown.com"
-            ]
-        },
         {
             "rule": "ocelot\\.studio\\/clients\\/tweaktown\\.prebid7\\.32\\.0\\.js",
             "cookies": 0,
@@ -55,12 +29,13 @@
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "window.name": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "2dd6652368b3c8038b74d4307906c5ada8a1b689445b0d81e3de13fa5a3bf5ee"
@@ -76,13 +51,17 @@
         {
             "rule": "ocelot\\.studio\\/clients\\/whitepages\\.prebid2\\.12\\.0c\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "995b9e052bcbb47bbd6cee949ec5253aa0cfbea1150f93b38466055355cfa44f"
@@ -106,10 +85,10 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 4
     },
     "nameservers": [
-        "olga.ns.cloudflare.com",
-        "amir.ns.cloudflare.com"
+        "amir.ns.cloudflare.com",
+        "olga.ns.cloudflare.com"
     ]
 }

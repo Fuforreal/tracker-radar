@@ -4,50 +4,34 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000678,
+    "prevalence": 0.0000775,
     "sites": 10,
-    "subdomains": [
-        "scriptapi"
-    ],
+    "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "adwisedfs\\.com\\/adwised-webpush-2\\.4\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "BroadcastChannel.prototype.constructor": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Notification.permission": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "340b4e88520930b81418964b67d8de1fdc3f8193d86f90a4a52933b58415febc"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "melovy.ir",
                 "miniroid.com"
-            ]
-        },
-        {
-            "rule": "adwisedfs\\.com\\/api\\/webpush\\/1fa3ab30-fa06-4595-a811-ea4dfbc374d3\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "scriptapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "farsroid.com",
-                "www.farsroid.com"
             ]
         }
     ],
@@ -57,15 +41,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.2
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 2
     },
     "nameservers": [
         "g.ns.arvancdn.ir",

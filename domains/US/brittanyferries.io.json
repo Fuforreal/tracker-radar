@@ -4,30 +4,45 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
+    "prevalence": 0.0000155,
     "sites": 2,
     "subdomains": [
         "accounts"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "brittanyferries\\.io\\/auth\\/realms\\/dd-customers\\/protocol\\/openid-connect\\/3p-cookies\\/step1\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000775,
+            "fingerprinting": 1,
             "subdomains": [
                 "accounts"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "8e08d6c979c3b89f8735ddec57645eea1633c985de66818d1c9d7a2478bcbd32"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "KEYCLOAK_3P_COOKIE_SAMESITE": {
+                    "ttl": 60,
+                    "length": 9,
+                    "prevalence": 0.000007754162046478447,
+                    "uniqueness": 1
+                },
+                "KEYCLOAK_3P_COOKIE": {
+                    "ttl": 60,
+                    "length": 9,
+                    "prevalence": 0.000007754162046478447,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brittany-ferries.co.uk",
@@ -43,7 +58,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "20ae6a4a7d0d0a5cf52120dea92dcfc64fe95a1aa230399bbbeef27d2e5fe074"
@@ -59,13 +74,15 @@
         {
             "rule": "brittanyferries\\.io\\/auth\\/realms\\/dd-customers\\/protocol\\/openid-connect\\/login-status-iframe\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "accounts"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "266d2b010bdabdffb13c399965ef815be87b29204ce092d702f20f3b00c22f9b"
@@ -87,7 +104,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -103,7 +120,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000775,
     "topInitiators": [
         {
             "domain": "first party",
@@ -116,8 +133,8 @@
     },
     "nameservers": [
         "ns-1901.awsdns-45.co.uk",
-        "ns-59.awsdns-07.com",
         "ns-1336.awsdns-39.org",
-        "ns-551.awsdns-04.net"
+        "ns-551.awsdns-04.net",
+        "ns-59.awsdns-07.com"
     ]
 }

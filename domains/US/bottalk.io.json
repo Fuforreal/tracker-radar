@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.000031,
+    "sites": 4,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
@@ -18,32 +18,83 @@
             "apis": {
                 "window.devicePixelRatio": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
-                "87c52cdead0c3932826589b6c4c89e37b5349827299099e367a3ea7cfc37a8d9"
+                "d2783dc9522db6dbfae538e030def9af454b4669fa91b932d81e4aab656d27f7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abendblatt.de",
-                "www.bildderfrau.de"
+                "www.bildderfrau.de",
+                "www.nrz.de",
+                "www.waz.de"
+            ]
+        },
+        {
+            "rule": "bottalk\\.io\\/player\\/loader-v3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "b3cb6226d3ac1fd460fcaa6be7af7934c5410cbfedd2c9f0d810a90a64f084b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildderfrau.de",
+                "www.nrz.de",
+                "www.waz.de"
+            ]
+        },
+        {
+            "rule": "bottalk\\.io\\/audio",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "ac1a30e4830c3dc9461e46b5dd14e104682cbf60b9765973d74073e553b9a4e6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildderfrau.de",
+                "www.nrz.de",
+                "www.waz.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.00000775,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "tinypass.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 7,
+        "Fetch": 3
     },
     "nameservers": [
         "ns1.digitalocean.com",

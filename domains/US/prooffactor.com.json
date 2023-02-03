@@ -4,14 +4,37 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.000031,
+    "sites": 4,
     "subdomains": [
+        "api",
         "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "prooffactor\\.com\\/v1\\/partners\\/wordpress\\/jsembed\\.js",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "6655afa7b3a9b918b4d5ef6be3649942187acdf842f11760d4a17edde195b41c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boilercentral.com",
+                "www.boilercentral.com"
+            ]
+        },
         {
             "rule": "prooffactor\\.com\\/javascript\\/dist\\/1\\.0\\/jcr-widget\\.js",
             "cookies": 0,
@@ -23,7 +46,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "aaff63b60d853ca4422f7c3f02abd3f0dc6a030f363bc24aa006bffd2ee29439"
@@ -39,15 +62,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000155,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "one.store",
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
         "buck.ns.cloudflare.com",

@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000233,
     "sites": 3,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "adhouse\\.pro\\/publisher\\/ads\\/1053776\\.js",
@@ -20,13 +20,13 @@
                 "cdn"
             ],
             "apis": {
-                "window.innerWidth": 2
+                "window.innerWidth": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "92fa8ead9af8351071679d2887d962cdfa851f5ccc3050c70f58b0e2a4cd4d78"
+                "c673230ed61c038f9a20700789a5485ebb15a9bf2aa9ba28350a962d2682e11e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -44,13 +44,13 @@
                 "cdn"
             ],
             "apis": {
-                "window.innerWidth": 2
+                "window.innerWidth": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "b66e3aac19f5d1a79f7eabc2eac58838280786aafdf62e26e6ce24092e0a66d2"
+                "c9c82f9a32b1d66b199bc5f78d3bc51fb9904985e54482644450a8449eee837e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -68,13 +68,13 @@
                 "cdn"
             ],
             "apis": {
-                "window.innerWidth": 2
+                "window.innerWidth": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "0fcaaf21413dfcd87b8225c508a5d08721bbc8c1a39a2adb9850a4933b9bb7d6"
+                "48fe3bae6ef50c04a7a41dd29c29624862f4f050f7b185158e132a52e50da193"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -92,13 +92,43 @@
                 "cdn"
             ],
             "apis": {
-                "window.innerWidth": 2
+                "window.innerWidth": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "cc23095277f47cca260ee4a635cfffd97840a340de447433fabb4dcd211ea8ab"
+                "eef2025fc0aff2235bf64b28059d7bbe7730902a7b9a377adb258cfe0b991dcc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "technopat.net",
+                "www.technopat.net"
+            ]
+        },
+        {
+            "rule": "adhouse\\.pro\\/code\\/jwplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "5f9629fb456a64591da29a33acc7df1dc07c0316b939b99cb0e6d5266589e5ce"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -132,12 +162,34 @@
                 "window.name": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "15d0ae342480651aa9f1908b999743d050906de882fd058282480845a2c3382a"
+                "39b99216c38f396a3230c059057b362f7a28992ee3f66a3f876fd6bdcbe54076"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "technopat.net",
+                "www.technopat.net"
+            ]
+        },
+        {
+            "rule": "adhouse\\.pro\\/code\\/Adhouse-Logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "fcdd70fa988f43c45966b6d945e8aee1e5388272836dcac1f34675448008a801"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -152,11 +204,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 12,
+        "Image": 2
     },
     "nameservers": [
         "ns1.swantro.com",

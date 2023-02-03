@@ -4,41 +4,46 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000061,
-    "sites": 9,
+    "prevalence": 0.0000388,
+    "sites": 5,
     "subdomains": [
         "id1",
-        "id-dyg",
-        "api-dyg"
+        "a1"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "predatasrv\\.com\\/id",
-            "cookies": 0,
+            "cookies": 0.0000233,
             "fingerprinting": 1,
             "subdomains": [
-                "id1",
-                "id-dyg"
+                "id1"
             ],
             "apis": {
-                "window.localStorage": 1
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 3
             },
-            "sites": 6,
-            "prevalence": 0.0000407,
+            "sites": 4,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
-                "1680994d76c5e16a1980ad5424caa13a4d92bc1a39506e7aafa003b9f613f755"
+                "c141b8ae4ba51e46baf193a10bf47d8564506192158af44c83b21ae2f8906e0b"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "PrdGlobalUid": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.000023262486139435343,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ahaber.com.tr",
                 "www.ahaber.com.tr",
-                "www.fotomac.com.tr",
-                "www.milliyet.com.tr",
                 "www.sabah.com.tr",
                 "www.takvim.com.tr"
             ]
@@ -48,21 +53,49 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-dyg"
+                "a1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "PrdGlobalUid": 0.000023262486139435343
+            },
             "exampleSites": [
-                "milliyet.com.tr",
-                "www.milliyet.com.tr"
+                "ahaber.com.tr",
+                "www.ahaber.com.tr",
+                "www.sabah.com.tr",
+                "www.takvim.com.tr"
+            ]
+        },
+        {
+            "rule": "predatasrv\\.com\\/api\\/audience",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a1"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "PrdGlobalUid": 0.000023262486139435343
+            },
+            "exampleSites": [
+                "ahaber.com.tr",
+                "www.ahaber.com.tr",
+                "www.sabah.com.tr",
+                "www.takvim.com.tr"
             ]
         },
         {
@@ -70,27 +103,76 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-dyg"
+                "a1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
-                "56878b089991c7209e85b09ec1e1e64344ca2c153c2156367ed2bcaefe2e7e43"
+                "798f55ee0cca719fad87c261967094c21a2e103eb511b404f77fb070e22d98a9",
+                "64e19fdd8e5c94753430c0c76420fda015519ca57773ac7f6ab65464e070e6ed"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "milliyet.com.tr",
-                "www.milliyet.com.tr"
+                "ahaber.com.tr",
+                "www.ahaber.com.tr",
+                "www.sabah.com.tr",
+                "www.takvim.com.tr"
+            ]
+        },
+        {
+            "rule": "predatasrv\\.com\\/api\\/IdMatch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a1"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "8f2d91176dc878d7b6ec4009421985dc196ffa0d0e4ff858eb243f04197668b3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahaber.com.tr",
+                "www.ahaber.com.tr",
+                "www.sabah.com.tr",
+                "www.takvim.com.tr"
+            ]
+        },
+        {
+            "rule": "predatasrv\\.com\\/api\\/IdMatch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a1"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahaber.com.tr",
+                "www.ahaber.com.tr",
+                "www.sabah.com.tr",
+                "www.takvim.com.tr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000031,
     "topInitiators": [
         {
             "domain": "b-cdn.net",
@@ -98,8 +180,9 @@
         }
     ],
     "types": {
-        "Document": 6,
-        "XHR": 4
+        "Document": 4,
+        "XHR": 16,
+        "Preflight": 4
     },
     "nameservers": [
         "dns1.turhost.com",

@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.000031,
     "sites": 4,
     "subdomains": [
         "images",
+        "intextlinks",
         "api",
-        "mautic",
-        "intextlinks"
+        "mautic"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -27,7 +27,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "c59d40f8e61117ca6ac814dbcc6683bfdf21263381a53b5ba6c09a18dec1be15"
@@ -41,6 +41,54 @@
             ]
         },
         {
+            "rule": "idg\\.zone\\/dist\\/libs\\/powerlinks\\/include\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "intextlinks"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "f924f8826c100483a00444a25d132858728db23be603c622aee90c9387636ab0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "computerwoche.de",
+                "www.tecchannel.de"
+            ]
+        },
+        {
+            "rule": "idg\\.zone\\/tap\\/prod",
+            "cookies": 0.0000233,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "24d3076820dbe4a0e5324307374baeb64d9c1209fff5825c1427f1734b8a940f",
+                "63f87ae85817942b6ace0954879ac8f1750d7b001664de26d4d92115b67321c0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "computerwoche.de",
+                "www.computerwoche.de",
+                "www.tecchannel.de"
+            ]
+        },
+        {
             "rule": "idg\\.zone\\/abm\\/test",
             "cookies": 0,
             "fingerprinting": 0,
@@ -49,7 +97,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "580834b280edb4b5596fd932a220477f3025a582c2eb63e8ba9b3ac819a2524b"
@@ -65,7 +113,7 @@
         },
         {
             "rule": "idg\\.zone\\/mtc\\.js",
-            "cookies": 0.0000203,
+            "cookies": 0.0000233,
             "fingerprinting": 3,
             "subdomains": [
                 "mautic"
@@ -100,7 +148,7 @@
                 "Document.cookie setter": 3
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "bdf785e069aac03f87c23fae90676c6679786d67c251465e4f947a2546b677f9"
@@ -110,19 +158,19 @@
                 "mtc_id": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.000020344500203445003,
+                    "prevalence": 0.000023262486139435343,
                     "uniqueness": 1
                 },
                 "mtc_sid": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000020344500203445003,
+                    "prevalence": 0.000023262486139435343,
                     "uniqueness": 1
                 },
                 "mautic_device_id": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000020344500203445003,
+                    "prevalence": 0.000023262486139435343,
                     "uniqueness": 1
                 }
             },
@@ -142,7 +190,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -156,18 +204,18 @@
         },
         {
             "rule": "idg\\.zone\\/mtc\\/event",
-            "cookies": 0.0000203,
+            "cookies": 0.0000233,
             "fingerprinting": 0,
             "subdomains": [
                 "mautic"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "8ca8809c7754f83f34a46a93e5e20c4bd70ba01e0a3c31faeee23df48beedb46",
-                "51fa0cadf3e5c8888ad882e731d27118421c8ebee6e1712ddf27a1652633fce1"
+                "46c855c5678092ba2ab75483fb25f928c83a7b21f635a7dc9578437c2662d21c",
+                "ba33b817fb7416fcd5fc289d4e2e39e90776cf80e5382cedc6577c735168b2ed"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -179,43 +227,19 @@
             ]
         },
         {
-            "rule": "idg\\.zone\\/dist\\/libs\\/powerlinks\\/include\\.js",
+            "rule": "idg\\.zone\\/intextlinks-tracking\\/prod\\/tracking",
             "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "intextlinks"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f924f8826c100483a00444a25d132858728db23be603c622aee90c9387636ab0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "computerwoche.de",
-                "www.tecchannel.de"
-            ]
-        },
-        {
-            "rule": "idg\\.zone\\/tap\\/prod",
-            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "c568e8127e41369e3abaabdb0bfbff0bbd6b83e85832048b81e161bf9deca2d0",
-                "28698c43ee8c732c838f68566ce33537d3916633a086d8e533e182b7d0955eb7"
+                "0b6ad356facad4421c6037e61c996e5856280291f2f5586fbf6f3cc24b73db03",
+                "6c7d760fff2cbd1b0ff9d015b3efb7098881fbeb45a8c3c5907e4494461f6280"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -229,21 +253,21 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.000031,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8260869565217391
+            "prevalence": 0.8666666666666667
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.17391304347826086
+            "prevalence": 0.13333333333333333
         }
     ],
     "types": {
         "Image": 2,
-        "XHR": 9,
         "Script": 5,
+        "XHR": 12,
         "Preflight": 3
     },
     "nameservers": [

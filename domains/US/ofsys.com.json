@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000543,
+    "prevalence": 0.000062,
     "sites": 8,
     "subdomains": [
         "t",
-        "wpn"
+        "wpn",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -33,7 +34,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "a5253a625127536233f9e5fa668142dfa1f5c35c8b7172d29694d3cc99706cf5"
@@ -63,7 +64,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "c9d0087d96a9cea7f2e00e469a545caa063e0c2993776d27078816aeb2b8b139"
@@ -79,17 +80,13 @@
         {
             "rule": "ofsys\\.com\\/T\\/OFC4\\/WPS\\/9534\\/427\\/cuurL2YZbyigQUZ52p3CQ4o113UP9vj0\\/DI\\.WebPush-min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "wpn"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Notification.permission": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "8aa320412c7d851e9ef6b3ae800d97f6d07b21a94bdcbeb73641e5a503c52d62"
@@ -105,7 +102,7 @@
         {
             "rule": "ofsys\\.com\\/js\\/Journey\\/1\\/fAEAADJmWG45ce8jAABhRmVCdEuHBwAA\\/DI\\.Journey-min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "t"
             ],
@@ -116,15 +113,61 @@
                 "Screen.prototype.width": 2,
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "49e692b24a1e8728dfc95d0d37e2a3b90a43acd9b504ad0ea76adae4a39a22b8"
+                "dcf7d6fb9004efd909359831114f282b48b538578b9ca07fae502349c5df56ce"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ricardocuisine.com",
+                "www.ricardocuisine.com"
+            ]
+        },
+        {
+            "rule": "ofsys\\.com\\/js\\/Journey\\/1\\/fAEAADJmWG45ce8jAABhRmVCdEuHBwAA\\/1725\\/interceptorcontent\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "4b57249ab29ac36d77b1e0b777ae39978a77a2af843632a7ab89056a7882a3da"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ricardocuisine.com",
+                "www.ricardocuisine.com"
+            ]
+        },
+        {
+            "rule": "ofsys\\.com\\/T\\/OFSYS\\/H\\/C380\\/1273496\\/AGayMi\\/intercepteur\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "8d868eb366244520ef4c1d86ec9a052d4742b5d234dc5604bab12161c7ada281"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -151,12 +194,13 @@
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 10,
+        "Image": 2
     },
     "nameservers": [
-        "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a4.googledomains.com",
         "ns-cloud-a1.googledomains.com",
-        "ns-cloud-a3.googledomains.com"
+        "ns-cloud-a3.googledomains.com",
+        "ns-cloud-a2.googledomains.com",
+        "ns-cloud-a4.googledomains.com"
     ]
 }

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000949,
-    "sites": 14,
+    "prevalence": 0.000116,
+    "sites": 15,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,10 +21,10 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6
+                "Navigator.prototype.userAgent": 7
             },
             "sites": 7,
-            "prevalence": 0.0000475,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "1689f73e54455e9cc7e976a5c50887309f500b369927b0b6993fc19024dce7ec"
@@ -40,11 +41,83 @@
                 "www.sandboxx.us",
                 "www.sandyhookpromise.org"
             ]
+        },
+        {
+            "rule": "brandfolder\\.com\\/packs\\/css\\/application-5220e470\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "1ec983258d5147ad03392ecac35e8e55a4e0f644418815ad7f6f6f92292e2236"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tado.com",
+                "www.tado.com"
+            ]
+        },
+        {
+            "rule": "brandfolder\\.com\\/assets\\/gettext\\.iife\\.min-c752776948359d00739d75d5ff75d5deca0bed087ef53580187c04712aaef25c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "c752776948359d00739d75d5ff75d5deca0bed087ef53580187c04712aaef25c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tado.com",
+                "www.tado.com"
+            ]
+        },
+        {
+            "rule": "brandfolder\\.com\\/packs\\/js\\/application-9e98b3dd6eb62ac7afcc\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "2031f83a8c91c87842caf6055d90440a231c843894e45806b926ccf271080e6e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tado.com",
+                "www.tado.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.0000155,
     "topInitiators": [
         {
             "domain": "first party",
@@ -52,12 +125,13 @@
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 11,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-123.awsdns-15.com",
+        "ns-1679.awsdns-17.co.uk",
         "ns-1446.awsdns-52.org",
-        "ns-799.awsdns-35.net",
-        "ns-1679.awsdns-17.co.uk"
+        "ns-799.awsdns-35.net"
     ]
 }

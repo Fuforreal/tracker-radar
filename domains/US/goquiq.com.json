@@ -4,15 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000339,
-    "sites": 5,
+    "prevalence": 0.0000465,
+    "sites": 6,
     "subdomains": [
-        "evo",
-        "sentry"
+        "sentry",
+        "evo"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "goquiq\\.com\\/api\\/10\\/store\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "e29ff6bfc8bf30902e68f668cfebb6ca463f725d863b73605eeddb91c9a10c33",
+                "c6d747eca56e1fb22545a576ab11a35c12f3abb85d0ac912e007c1f2e8282a51"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "duckworthco.com",
+                "www.duckworthco.com",
+                "www.maurices.com",
+                "www.terminix.com"
+            ]
+        },
         {
             "rule": "goquiq\\.com\\/app\\/webchat\\/webchat-1\\.8\\.89-51235442\\.html",
             "cookies": 0,
@@ -22,7 +47,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "150391a3a12d12314c8a29f26b424ffddd7f33850f6b251384a84aaa9cdf9fff"
@@ -44,7 +69,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "631f4d836f9d199ee9721cc528112d8b61d2b90455bb214dd364596b487fe6b6"
@@ -65,11 +90,11 @@
                 "evo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "abe22f1e712a307124df654d1142a03b88ccfe4e6f8739b28d5e5be60d59bcae"
@@ -91,7 +116,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "4458b2f536783d0a5677e110191fe45840aba000b8d69f26b8e524f780d440b8"
@@ -116,7 +141,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "cac66472c02cd2ab11352691865df67e11ad5a104b837b385269192202eb20ea"
@@ -137,12 +162,11 @@
                 "evo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "36ef5b2531a87b670b4857c3810947d989b1b8f3106ae081cd076e44f80d9e36"
@@ -164,7 +188,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "9ab59ba4c99a558e9ffb12598935a99c5747a7ed3cd33de37f1fbdd0beb7ec2e"
@@ -186,11 +210,10 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.name": 1
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "0fa1191ce2bbd691dc5851e3f3156bd9c91af92afa723ea2023ac3dad63c3e52"
@@ -202,30 +225,6 @@
                 "evo.com",
                 "www.evo.com"
             ]
-        },
-        {
-            "rule": "goquiq\\.com\\/api\\/10\\/store\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sentry"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "034adceee9b7c18c42c7ef956a46b8fe032564d13877f6580c5ab139870a82dd",
-                "e29ff6bfc8bf30902e68f668cfebb6ca463f725d863b73605eeddb91c9a10c33"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maurices.com",
-                "www.maurices.com",
-                "www.terminix.com"
-            ]
         }
     ],
     "categories": [],
@@ -234,7 +233,11 @@
     "topInitiators": [
         {
             "domain": "quiq-cdn.com",
-            "prevalence": 0.8181818181818182
+            "prevalence": 0.6363636363636364
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "btttag.com",
@@ -242,10 +245,10 @@
         }
     ],
     "types": {
+        "Fetch": 4,
         "Document": 2,
         "XHR": 2,
-        "Script": 12,
-        "Fetch": 3
+        "Script": 12
     },
     "nameservers": [
         "ns-280.awsdns-35.com",

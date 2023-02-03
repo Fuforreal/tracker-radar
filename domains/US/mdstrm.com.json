@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000746,
+    "prevalence": 0.0000853,
     "sites": 11,
     "subdomains": [
         "platform-static.cdn",
         "player.cdn",
         "static-meganoticias.cdn",
         "servicios-mega.cdn",
-        "images2-mega.cdn"
+        "images2-mega.cdn",
+        "crop-platform-static.cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -25,7 +26,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "252ec83f43276b07810ffb78e340357ca8fb2d6f7a68450559634e367b1d5412"
@@ -42,20 +43,24 @@
         {
             "rule": "mdstrm\\.com\\/player\\/-\\/assets\\/screen\\/screen\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "platform-static.cdn"
             ],
             "apis": {
+                "HTMLMediaElement.prototype.canPlayType": 2,
                 "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.languages": 3
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.languages": 2
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "43f4d1d1f03e254ceeba6cfe2b5f6e050777da0204359c80e6255cb08b4b9c87"
+                "c5d40b4ff4f0258fe8465ae6d4faf46e0c0ad9f54ae953b19a598b4551be2cd2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -75,13 +80,14 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "MediaSource.isTypeSupported": 1
+                "window.localStorage": 2,
+                "MediaSource.isTypeSupported": 2
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "f418c45da7a2eed35c99c2c97888b9dcf0db93d8cb2625170209000e4ebcdab7"
+                "7e3bbfd3590d82ebf4fb0d1ad07019c5de52e05ceeeaa34b9b0b58f392670db2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -104,7 +110,7 @@
                 "Navigator.prototype.product": 2
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "9ae747fed9d736dfe69ad56b20eec108d62b8754cc5a46d933f153c6272022c9"
@@ -139,7 +145,7 @@
                 "Screen.prototype.height": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "47e0a6b616b8cd07888e9268acb5d93775ae2c04d0eb0123e734000d7bcba5d0"
@@ -160,13 +166,15 @@
                 "platform-static.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "8ed25c843921c220a06c90ed74758f9e3355c53bbbad824b30a1d1f35b1bc28c"
+                "3971f03b2d163d2817c35a2791047790cf18ecb9ec7bff32eae34d08d9fd4cde"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -186,7 +194,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "dbaaf8afc289e0e0a72c9db723a2905a885421a66b64ede6469fee17dfb8b51a"
@@ -209,7 +217,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "5c9492a41e49209fb3626244282b3ef110114d53efc259741dcdb72e41fdea6b"
@@ -231,15 +239,15 @@
                 "player.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.product": 3,
-                "Document.cookie getter": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "window.localStorage": 2
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "e108024204dcd9f940643ce24f7350429e580a6d42c71c6079ec1d6bc05d0c7e"
@@ -261,8 +269,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "8294a907839a94bdf5f8805f150c1faadefb9d043a6968ea1dbf11c9b9f864ee"
@@ -272,7 +280,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -284,11 +291,11 @@
                 "player.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Event.prototype.timeStamp": 3
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "fde218a0290a7920a2f33c6092cd0e44abaf24561e7e591ccfe14e74a775f5c6"
@@ -298,7 +305,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -310,8 +316,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "6787cd12583a10e793d8b342d1643aa5b7efe30536d73d3c0ea3e10693716576"
@@ -321,7 +327,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -333,8 +338,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "f6021fdffab3d6c161cc595f8180db09ef6cd433b142974caea01b0262990b79"
@@ -344,7 +349,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -356,8 +360,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "60536b70220172ed2cc700f626cff0fd7281953ef83d5fda23d7aebc64e89e4a"
@@ -367,7 +371,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -379,8 +382,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "641b11da94cf755c80c468746e68d982bdeb80307e79fe299ad7a4e8f20f55b9"
@@ -390,7 +393,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -402,8 +404,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "c003c0ee8ffe9db65d5531398b503fadd6632cf038413b911afc4df5d04bc33d"
@@ -413,7 +415,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -425,8 +426,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "0055af5446b1cb0edf067a7716a92e6a85352c1f5a1046737e0a5d07a341abef"
@@ -436,7 +437,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -448,8 +448,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "3cc03fe7d19aee1b1c4787025ecda9fba8cd235117617f17c43e3a7d07bbfaeb"
@@ -459,7 +459,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -471,8 +470,8 @@
                 "player.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "e53e7d3fa37d924bd362a031af43600e8d12f291fd8de3a3403ac2bcbbb1e417"
@@ -482,7 +481,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -494,10 +492,10 @@
                 "player.cdn"
             ],
             "apis": {
-                "HTMLMediaElement.prototype.canPlayType": 2
+                "HTMLMediaElement.prototype.canPlayType": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "75bedbd8d02f4a31f17c4a4f339aac6039420dc63888a6a48c20196ac06d8721"
@@ -507,7 +505,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
             ]
         },
@@ -522,8 +519,8 @@
                 "Date.prototype.getTime": 1,
                 "Date.prototype.getTimezoneOffset": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "5c0a631fca438f60c88de0b9cd827609cd1c0e4a70dd0a2def1d060d7e10817c"
@@ -533,568 +530,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rpp.pe",
-                "www.antena2.com",
                 "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/live-stream\\/632c9b439234f869e9a50e2b\\/player\\/639bab105980607e7bb1f657",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a971b590ab346ba7ff7fdac0329f967320790faac44fdfcbd8deb9e40d253e35"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.antena2.com"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_8_9af7e\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "98858f9715c353f366ef7bb2ab04e5f34eba55972e6bfb22fb64d79d62f817b7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_10_306af\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "78f5d039698e6f54ec3849b46408b6ddff1a51cd06f9ec3cb1b43264d1ab9aaf"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_22_5a685\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "72e9c5fb1a0566b7bb51b6ca9a15e8ae4be9e26b1b8fa099bcbb7326202779b4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_40_b3c8c\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "3bcd877c2c9a26360368cbdde48f9e3b1505935c3fcffbb35543519a63a6f5fd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_45_94914\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "494221952699d4f9bf18322096b814beb53d849b0cf96e2d779d179f5bd19cb0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_2_7edd2\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1d2a9b9e86180d8bd926832233b378f5c5aa10b99d3940abe9728f7b6dbebcc4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_6_d422c\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f8ef5294abff88ecea2bf1345257f6cdadb8be376b1a7efc08aceb78135d8c92"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_7_edda3\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1f4bfcf48db49b9997e068d33f0e9ee347d7b7de2fe8df0b8c7feb1d5ad5c282"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_11_7e44c\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.product": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6dc9595803bf17c48a53c3430fb550244945e839d25c2ed9ea18f83975547396"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_12_a2f85\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a5cafc106ed3d18a88efb15f0b8db4869c5d2eb44e00e2ed45f4a228cec72004"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_15_6aff5\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7b3a191aafe460e07880abde8c52ea76ffbac0d084c5f6466343746f5d7f9d9c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_44_7b5f1\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ffcf12061f0b7849dc7558eae0d4b960fbb9c10a0c04ff423c1620bfde2e67b6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_24_5b132\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {
-                "window.localStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_30_f9961\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_25_c0246\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_27_00322\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_111_1f8a6\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_3_344b6\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_20_895ac\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_23_372ec\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_42_b599b\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_139_c53e5\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "MediaSource.isTypeSupported": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cf5cfbb8466dc4200f0fe62bb9bd9f9fe5b50aefca647566adc8e8e2bc758b6a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/lightning_player\\/v0\\.0\\.200\\/msp_98_a1243\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "bebe32cc036cccd40834888c2690903eeb4ce924aaaf6459a257c6b4ef3740d3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.pagina12.com.ar"
-            ]
-        },
-        {
-            "rule": "mdstrm\\.com\\/player\\/logo\\/s-live-632c9b439234f869e9a50e2b\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform-static.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "19b45cf9f19091c4a904ec1fa274901afca1e3bc6b7ec783f72c6e09ec396816"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "antena2.com",
-                "www.antena2.com"
             ]
         },
         {
@@ -1106,7 +542,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "db6e6e5c15e56a2dc480f96699fcfbd24145a160fa3c999b40007cc6aa9582d2"
@@ -1128,7 +564,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "f51c5859ad20755395622aaf60afd5654ec0e14679bd87b9afa12066978acf77"
@@ -1150,7 +586,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "92b94dc8f56cee12838e1b52fb33b3d592a901e9b4cedd925eccac38d0c633e9"
@@ -1171,11 +607,12 @@
                 "servicios-mega.cdn"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 2
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "a28ccf8a7b50522bdeea0cd83cdeca221c18fc1f9df3ee6b3d3c48d599206855"
@@ -1197,7 +634,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "f7cef4f9eaac670c7e995d40ad9d36e3cfe65063dccdca38f89b2a72ece950ce"
@@ -1222,7 +659,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "28ce75d953678c4942df47a11707a15e3c756021cf89090e3e6aa7ad6b6971c3"
@@ -1244,7 +681,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "4eab4e6026129f5b6978b485b4776943b3fa31d4c29c52876ea6146b9bf36065"
@@ -1266,7 +703,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "78bbc3c43cce36027ea38b04a194c7a7db90d3860f0e32ec3e058259ce4bacea"
@@ -1291,7 +728,7 @@
                 "window.devicePixelRatio": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "81381dd53563469b881c282fd51937b9702327aab6b53af5e07f70e1cc689625"
@@ -1313,7 +750,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "ff9a6c20b09bd13f84281a331134df35f0dbb806eba10659d715c828ae154623"
@@ -1335,7 +772,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "e9fd4cb378b4447b68d25566077e3e5f9160d6255cf7927fe874a888d2bcd88e"
@@ -1357,7 +794,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "2d5eb1e71be6b5aff90ea2ea864503c3c514015360bbb8e4d8be3b800481aafc"
@@ -1379,7 +816,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "9be995712219d42c712bad2f5b3ef837d0b097e9f08a72b6973cd893b4bb780b"
@@ -1400,13 +837,12 @@
                 "static-meganoticias.cdn"
             ],
             "apis": {
-                "window.indexedDB": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.onLine": 2,
-                "BroadcastChannel.prototype.constructor": 2
+                "window.indexedDB": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.onLine": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "ced2c7844cc2153a318e1d4cc04a4dd41663b29efd70c955589b047f41b27292"
@@ -1422,16 +858,16 @@
         {
             "rule": "mdstrm\\.com\\/_common\\/js\\/mn\\/firebase-analytics-8\\.10\\.0\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "static-meganoticias.cdn"
             ],
             "apis": {
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.indexedDB": 2
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.indexedDB": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "3796150858cd31dfe72fc7c95a9838418f98b6c9a6a87cc20cb64c2b89083c94"
@@ -1453,7 +889,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "d7ee0d55a67eadabf7d05b40e16d426b880d3cac76f96ed2c9172e4a39350be9"
@@ -1475,7 +911,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "2eafb1359ae1fcd38760961d9c0c61efba0a6273f9bfc818e80e272b61ef4c8e"
@@ -1491,15 +927,13 @@
         {
             "rule": "mdstrm\\.com\\/_common\\/js\\/mn\\/mnp\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static-meganoticias.cdn"
             ],
-            "apis": {
-                "window.localStorage": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "d715a5d809a634d4d091db729a7e39476bbc37351d360823b0e49a06a6d151dd"
@@ -1521,7 +955,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "43c65bcc0832247db2417fa04ef69aee6a7e3f65b78e32c06ba029af1eb505f3"
@@ -1543,7 +977,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "0ba581ea94cef5a877f27b92e7161dcc838b16e11120041404b45bc7ce7b9ef0"
@@ -1565,7 +999,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "85d64c8d3edd7004f3c60d36e297bcbd7672562d0100c2bfa964aac67b2b6762"
@@ -1587,7 +1021,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "0ccae2d8628862f536cfdfa02aa27fd05f02b26d4026b38c997c4296e6fcbb7c"
@@ -1609,7 +1043,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "a73100c906e6da9a66278f8c4c00bb201cd01633a910ef91f188bf5325d46583"
@@ -1631,7 +1065,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "302dafde82b53880f321f730fa7b0287e9133077e4f1f682f21a05812af30ec3"
@@ -1653,7 +1087,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "b5c717f3ef2c83d30dc8b2f610ce2deb04ddf9ba2b6d17054927ab01a7dc7d26"
@@ -1669,13 +1103,15 @@
         {
             "rule": "mdstrm\\.com\\/resources\\/js\\/player\\/player-5\\.0\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "servicios-mega.cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "25978822830a12c3a03a5614b674880d53cb33a135d7b99d416d7d1885dcb13d"
@@ -1697,7 +1133,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "ddd7350da63bdbb60592862f27f6ccaa50987c79fd97a4c64c9fa3771c949f06"
@@ -1719,7 +1155,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "1756fb46aa1a7fe26e8c57328db54497ef70236895be1a7160718bb772abe23b"
@@ -1741,7 +1177,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "d2b941814a93e2096577d4f4672ef3f31eb24d8f1b10543821b55a2967b854bd"
@@ -1763,7 +1199,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "1e6b8378d958cc45912851e02974b92f47a01c49240eb06e5cb755ccc0191c96"
@@ -1784,11 +1220,11 @@
                 "servicios-mega.cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 1,
                 "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "81d1e4e44ef0c4bc723c008b0d2b466eb73fd8f02612fa26339623b5e561ec04"
@@ -1810,7 +1246,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "6d2ef685d5cee2e12a5e77e1e410e35e932aaa31cdd031b1146b003e50a7b0b7"
@@ -1824,7 +1260,7 @@
             ]
         },
         {
-            "rule": "mdstrm\\.com\\/meganoticias\\/2023\\/01\\/27\\/_403828_4_63d43523858fb\\.jpg",
+            "rule": "mdstrm\\.com\\/meganoticias\\/2023\\/02\\/02\\/_404376_1_63dbe6b28c507\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1832,10 +1268,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "010e725f030ea7c21e3cf4e8bacbfb9baad1f9b4d6c5c5eb6a73ec3a7d8085b0"
+                "6c309b5013f4a1d089bab3f0428bd3f2a87eb2bbf6494281161fcfbba20ee8ae"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1854,10 +1290,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "7d2dcad8960f5ba7814d80626d8f85ddf9a4635fed19e09ac481b2868e3e66e9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pagina12.com.ar",
+                "www.pagina12.com.ar"
+            ]
+        },
+        {
+            "rule": "mdstrm\\.com\\/show\\/images\\/60106eadf34de307dd720e7b_61e5efd242ef2e326a5387ad_1644333931856\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crop-platform-static.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "96c9f27bd3ded9401f8eec74428eb9f95870efa6acab0226ea1a7030bbce6c70"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1870,35 +1328,35 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000061,
+    "cookies": 0.000062,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8116591928251121
+            "prevalence": 0.8009478672985783
         },
         {
             "domain": "rpp-noticias.io",
-            "prevalence": 0.11659192825112108
+            "prevalence": 0.12322274881516587
         },
         {
             "domain": "radio-grpp.io",
-            "prevalence": 0.06726457399103139
+            "prevalence": 0.07109004739336493
         },
         {
             "domain": "s-mdstrm.com",
-            "prevalence": 0.004484304932735426
+            "prevalence": 0.004739336492890996
         }
     ],
     "types": {
         "Stylesheet": 11,
-        "Script": 134,
+        "Script": 94,
         "Font": 3,
-        "XHR": 2,
-        "Other": 18,
         "Image": 12
     },
     "nameservers": [
-        "ns-723.awsdns-26.net",
-        "ns-1969.awsdns-54.co.uk"
+        "ns-1027.awsdns-00.org",
+        "ns-1969.awsdns-54.co.uk",
+        "ns-346.awsdns-43.com",
+        "ns-723.awsdns-26.net"
     ]
 }

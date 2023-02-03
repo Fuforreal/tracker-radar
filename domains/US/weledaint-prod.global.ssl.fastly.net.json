@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
+    "prevalence": 0.0000155,
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/webfiles\\/1673348875690\\/css\\/style\\.css",
@@ -22,7 +22,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "957dbebd6699f04d582eae9e5a6b4653491f8f0a290877c8fbc7b2690871d868"
@@ -37,23 +37,35 @@
         },
         {
             "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/webfiles\\/1673348875690\\/js\\/script\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.00000775,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
                 "Date.prototype.getTime": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1,
+                "window.name": 1,
                 "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "964e2d29078831b75e310d079e4991d8b1d340cfd95299d7a6b1d9f4442650db"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "weledaCookieOptInState": {
+                    "ttl": 63072002,
+                    "length": 19,
+                    "prevalence": 0.000007754162046478447,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weleda.de",
@@ -67,7 +79,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "49697db737e625cc101aeb10601cfaed935e3e9ef3cf26d22d4c2dfa5ab1a46a"
@@ -87,7 +99,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "e31d14b8c5505637012e8570bde2526e21e2c65520dc23783f685d309dc73749"
@@ -107,7 +119,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "32f5e862339cb9bdd39fcaa7370da6d37528ba2873bc7bc92e8b9a3067af16dc"
@@ -127,7 +139,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "907a563dac90626003fbc80d3f5652eb52a3c49b2762e393d831cfe5c49c35e3"
@@ -147,7 +159,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "91f2edda3944cabfc1c287b09904319fa299a6414ae12c5047f7cd057f0b2ed5"
@@ -167,7 +179,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "85c00ab742bec89385b21d62223d6be0bb75de688fbcb2a6dfa73b2d86d868f7"
@@ -187,7 +199,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "9731c02ae6eaf41be969881c52bfe42e70f7ca6962a3b4e163a69be177298e55"
@@ -201,16 +213,16 @@
             ]
         },
         {
-            "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/binaries\\/content\\/assets\\/json\\/products\\/products_deu-de_1674799932700\\.json",
+            "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/binaries\\/content\\/assets\\/json\\/products\\/products_deu-de_1675253604751\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "eb62ebded93e951cde6228f5fd95907710fb7ac4652964804acd93f258d9bfc1"
+                "611d1d58c54e80ef9730a5636b8d762968b09bb916ac60fa38418c9d818a0156"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -232,11 +244,15 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000775,
     "topInitiators": [
         {
+            "domain": "maps.googleapis.com",
+            "prevalence": 0.55
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.45
         }
     ],
     "types": {

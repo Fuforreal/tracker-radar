@@ -5,63 +5,14 @@
         "DuckDuckGo-US"
     ],
     "prevalence": 0.0000543,
-    "sites": 8,
+    "sites": 7,
     "subdomains": [
-        "api",
-        "bidder"
+        "bidder",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "adquery\\.io\\/js\\/adquery-0\\.1\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e6ed27b0f3fea3f53f49ea3749d6eef72a951fc403a640041e5e8f3c4cecc7d0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forsal.pl",
-                "www.instalki.pl"
-            ]
-        },
-        {
-            "rule": "adquery\\.io\\/storage",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7495cb2093b3502f1e04cb5c2e2198add4ddf09693a2b35ad2a999092f236220"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forsal.pl",
-                "www.instalki.pl"
-            ]
-        },
         {
             "rule": "adquery\\.io\\/prebid\\/qid",
             "cookies": 0,
@@ -71,7 +22,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "89caf58a878fbb88e9326685d80b7556ff801e2ea13cccf247c7f9d2f5f580fa"
@@ -86,6 +37,55 @@
             ]
         },
         {
+            "rule": "adquery\\.io\\/js\\/adquery-0\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "0d860e6642b79ad0c873fc13eb42c8e5fe90ed59bef44f1c9c4a49730ac40e03"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "instalki.pl",
+                "www.instalki.pl"
+            ]
+        },
+        {
+            "rule": "adquery\\.io\\/storage",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "7495cb2093b3502f1e04cb5c2e2198add4ddf09693a2b35ad2a999092f236220"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "instalki.pl",
+                "www.instalki.pl"
+            ]
+        },
+        {
             "rule": "adquery\\.io\\/prebid\\/bid",
             "cookies": 0,
             "fingerprinting": 0,
@@ -94,11 +94,9 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
-            "responseHashes": [
-                "ba5f3ea40e95f49bce11942f375ebd3882eb837976eda5c0cb78b9b99ca7b485"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -116,7 +114,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "ab29e7c45efe61d35d2490ce18e4e9ff6239673b65e43204c8f2729d1c67ed3e"
@@ -136,7 +134,7 @@
     "topInitiators": [
         {
             "domain": "spolecznosci.net",
-            "prevalence": 0.4
+            "prevalence": 0.5
         },
         {
             "domain": "sentry-cdn.com",
@@ -147,22 +145,18 @@
             "prevalence": 0.2
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.1
-        },
-        {
             "domain": "smartadserver.com",
             "prevalence": 0.1
         }
     ],
     "types": {
+        "XHR": 5,
         "Script": 2,
         "Document": 2,
-        "XHR": 5,
         "Image": 2
     },
     "nameservers": [
-        "katja.ns.cloudflare.com",
-        "cash.ns.cloudflare.com"
+        "cash.ns.cloudflare.com",
+        "katja.ns.cloudflare.com"
     ]
 }

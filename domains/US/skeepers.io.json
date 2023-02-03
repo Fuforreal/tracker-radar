@@ -4,13 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.000062,
+    "sites": 8,
     "subdomains": [
-        "brand-widgets.rr"
+        "brand-widgets.rr",
+        "sdk.ugv",
+        "api.ugv",
+        "cdn-upncast.ugv"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "skeepers\\.io\\/generated\\/b1aa2fac-e8d3-e4f4-0df0-d8135f6991b0\\/55f611ef-0d96-4b55-8c4b-ed76a426573f\\.js",
@@ -21,10 +24,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "a7e3c5e8dba4c479a5e4ecdf8926f0909e0a705e68013f6e0fc417e98276152a"
+                "655f07ad84c688cdacfcb50ad46da6b40b96d3696b42e759cb68a4acd72a9b90"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -33,19 +36,189 @@
                 "asus-accessories.com",
                 "www.asus-accessories.com"
             ]
+        },
+        {
+            "rule": "skeepers\\.io\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk.ugv"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "b15d80073cbd3e9abddaf5c09d1d21bb07e414f31706b4d72c51a809cceeec39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "h2r-equipements.com",
+                "www.kusmitea.com",
+                "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "skeepers\\.io\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk.ugv"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.vendor": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "c41a8a598f9439746ddabd237dd826069d5e4e7740c8fecab6978f19a892f5dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "h2r-equipements.com",
+                "www.kusmitea.com",
+                "www.sephora.co.uk",
+                "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "skeepers\\.io\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.ugv"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "h2r-equipements.com",
+                "www.h2r-equipements.com",
+                "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "skeepers\\.io\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.ugv"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "bad16de8638af4f89f8a54078b572ccb41695b65dcc20df55838125693c7980c",
+                "08642217e1144fd4a6d6f22b9f157e98269c85c5ea36f774d1ab74ae59bb2961"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "h2r-equipements.com",
+                "www.h2r-equipements.com",
+                "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "skeepers\\.io\\/data\\/collect",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.ugv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "h2r-equipements.com",
+                "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "skeepers\\.io\\/data\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.ugv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "h2r-equipements.com",
+                "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "skeepers\\.io\\/upncast\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-upncast.ugv",
+                "sdk.ugv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "b15d80073cbd3e9abddaf5c09d1d21bb07e414f31706b4d72c51a809cceeec39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sephora.co.uk",
+                "www.sephora.co.uk"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000155,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "teester.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
             "domain": "a-accessories.com",
-            "prevalence": 1
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 11,
+        "Preflight": 5,
+        "Fetch": 5
     },
     "nameservers": [
         "jillian.ns.cloudflare.com",

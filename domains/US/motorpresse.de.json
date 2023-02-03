@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000388,
+    "sites": 5,
     "subdomains": [
-        "backend"
+        "backend",
+        "matomo"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "bf9b97f2d4c0dd2e26485d14d536a1c63f80ac0dd5d0c0e55c5ab971587d24f9"
@@ -35,6 +36,28 @@
             ]
         },
         {
+            "rule": "motorpresse\\.de\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "matomo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auto-motor-und-sport.de",
+                "www.auto-motor-und-sport.de"
+            ]
+        },
+        {
             "rule": "motorpresse\\.de\\/api\\/polls\\/poll\\/impression",
             "cookies": 0,
             "fingerprinting": 0,
@@ -43,10 +66,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "a31297a317a3c2181b5206ce0ebc277c8861e363d52b2ebd7cbc076dbc1715de"
+                "bac21f172bcd7e2190687fd439f9c434dbd994ebaf1c51ff0970846f48f42e79"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -63,17 +86,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7777777777777778
+        },
+        {
+            "domain": "ams.to",
+            "prevalence": 0.2222222222222222
         }
     ],
     "types": {
         "Script": 2,
+        "Ping": 2,
         "XHR": 2
     },
     "nameservers": [
-        "ns17.domserver.de",
-        "ns16.domserver.de",
         "ns15.domserver.de",
+        "ns16.domserver.de",
+        "ns17.domserver.de",
         "ns18.domserver.de"
     ]
 }

@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.000031,
     "sites": 4,
     "subdomains": [
         "pdata",
@@ -16,7 +16,7 @@
         "login"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "orange\\.fr\\/one\\/_pdb\\.gif",
@@ -27,7 +27,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -48,7 +48,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -69,7 +69,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -82,43 +82,23 @@
             ]
         },
         {
-            "rule": "orange\\.fr\\/global-cookies\\.8b414a64880befacd9ba079e4f6200c0ea178620\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "orange\\.fr\\/global-cookies\\.e6bd9db32bf09215ad6613c1d299438e5eced309\\.html",
+            "cookies": 0.00000775,
+            "fingerprinting": 1,
             "subdomains": [
                 "consent"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "d718c737c7091c8bfffd0bde3bc850a17f3dfbbf9e517ff02c21b301f1a9be60"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "orange\\.fr\\/pconsent\\/_pdb\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pdata"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -136,10 +116,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "orange\\.fr\\/pconsent\\/_pdb\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -150,30 +152,28 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.0000155,
     "topInitiators": [
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.6363636363636364
         },
         {
             "domain": "privacy-center.org",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "woopic.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
         "Fetch": 9,
         "Document": 5,
-        "Image": 3
+        "Image": 2
     },
     "nameservers": [
         "ns2.orange.fr",
-        "ns3.orange.fr",
-        "ns4.orange.fr",
         "ns1.orange.fr"
     ]
 }

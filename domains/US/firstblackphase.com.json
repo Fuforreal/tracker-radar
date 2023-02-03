@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000339,
-    "sites": 5,
+    "prevalence": 0.0000853,
+    "sites": 11,
     "subdomains": [
-        "dns"
+        "dns",
+        "away",
+        "store"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -15,33 +17,93 @@
         {
             "rule": "firstblackphase\\.com\\/scripts\\/start\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "dns"
             ],
-            "apis": {
-                "Document.cookie getter": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000465,
             "cnames": [],
             "responseHashes": [
-                "47a45cb714b6920d9b761a62feda9b4712aaaeb6fe52751f27c202a827d454be",
-                "31f84b1bae4be3e6fce69050b1001c9efa1a3320f76a0e17594f0c874951fb55"
+                "531863f173e405b3149d06c28c9e9b768c18ff354fce7a98f3924d1ddd7e9a60"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "fortyreviews.com",
+                "girlswhore.com",
                 "poweringautos.com",
+                "skrec.org",
                 "travelpander.com",
-                "www.filmeshdtorrent.com"
+                "wallbuilders.com"
+            ]
+        },
+        {
+            "rule": "firstblackphase\\.com\\/scripts\\/take\\.js",
+            "cookies": 0.0000388,
+            "fingerprinting": 1,
+            "subdomains": [
+                "away"
+            ],
+            "apis": {
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000465,
+            "cnames": [],
+            "responseHashes": [
+                "783a250380f39107a64fa5698d7c4e3052ccce2e88d9d7e12640f2889ab4d1d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mysipleuser": {
+                    "ttl": 28803,
+                    "length": 1,
+                    "prevalence": 0.000038770810232392236,
+                    "uniqueness": 0.2
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortyreviews.com",
+                "girlswhore.com",
+                "poweringautos.com",
+                "skrec.org",
+                "travelpander.com",
+                "wallbuilders.com"
+            ]
+        },
+        {
+            "rule": "firstblackphase\\.com\\/follow\\/give\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "store"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000388,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortyreviews.com",
+                "girlswhore.com",
+                "poweringautos.com",
+                "skrec.org",
+                "travelpander.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000775,
     "topInitiators": [
         {
             "domain": "first party",
@@ -49,10 +111,11 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 12,
+        "Document": 5
     },
     "nameservers": [
-        "ns2.eranet-dns.com",
-        "ns1.eranet-dns.com"
+        "ns1.eranet-dns.com",
+        "ns2.eranet-dns.com"
     ]
 }

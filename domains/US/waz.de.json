@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.000031,
     "sites": 4,
     "subdomains": [
-        "www"
+        "www",
+        "extracontent"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,11 +25,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "cb9ed81126ba059e9c42de94de111b966df99d60356ed9a6ae73fdc0dba1932d",
-                "266a0960c188af21c1911caddb360b51fa91531fa54621d4b27911f4e7eca75c"
+                "83bfd550dc5dd8bd81ed8721b4810aa5afc5bfa7f9d2a7c756d300b13455a817",
+                "d70c756797abc9908ff88656fd72e5fbf75e63b048d7deea79395e5434a3a99e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -48,16 +49,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
-            "responseHashes": [
-                "358b004f592042111aff1390d54cc6efb44eb8fdb19c420a1dac1c6be8d37b9c"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "otz.de",
+                "www.thueringer-allgemeine.de"
+            ]
+        },
+        {
+            "rule": "waz\\.de\\/mgt-ta\\/media\\/ta_pluslogo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "extracontent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thueringer-allgemeine.de",
                 "www.thueringer-allgemeine.de"
             ]
         }
@@ -67,17 +86,18 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5
+            "domain": "tinypass.com",
+            "prevalence": 0.6
         },
         {
-            "domain": "tinypass.com",
-            "prevalence": 0.5
+            "domain": "first party",
+            "prevalence": 0.4
         }
     ],
     "types": {
         "Script": 3,
-        "Font": 2
+        "Font": 2,
+        "Image": 2
     },
     "nameservers": [
         "b.ns14.net",

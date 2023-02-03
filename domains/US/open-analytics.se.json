@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000475,
-    "sites": 7,
+    "prevalence": 0.0000388,
+    "sites": 5,
     "subdomains": [
         "tracker.transportstyrelsen"
     ],
@@ -17,6 +17,56 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "open-analytics\\.se\\/js\\/container_MOFt5fSb\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "open-analytics.hrw.org",
+                    "resolved": "open-analytics.se"
+                }
+            ],
+            "responseHashes": [
+                "ec8d28afbf8483aea8c26f5f8be7d61e72740b722e39fb547235063c0bf2723c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hrw.org",
+                "www.hrw.org"
+            ]
+        },
+        {
+            "rule": "open-analytics\\.se\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "open-analytics.hrw.org",
+                    "resolved": "open-analytics.se"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hrw.org",
+                "www.hrw.org"
+            ]
+        },
         {
             "rule": "open-analytics\\.se\\/js\\/container_Z8n8vkKp\\.js",
             "cookies": 0,
@@ -42,7 +92,7 @@
                 "Screen.prototype.height": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "853ab0788dea7c666ccdef877ecc3da216b246127c799c4f81b39ed5c22af301"
@@ -64,7 +114,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -86,10 +136,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "f0752ca8bc6fff0df4907c97050c42867df766a9d1a3d27561edb5ee6a1c6756"
+                "005e8821fba550765fc78a43a653ad5d9dd288c9399939d263a6e25c0a9c43c1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -97,56 +147,6 @@
             "exampleSites": [
                 "transportstyrelsen.se",
                 "www.transportstyrelsen.se"
-            ]
-        },
-        {
-            "rule": "open-analytics\\.se\\/js\\/container_MOFt5fSb\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "open-analytics.hrw.org",
-                    "resolved": "open-analytics.se"
-                }
-            ],
-            "responseHashes": [
-                "ec8d28afbf8483aea8c26f5f8be7d61e72740b722e39fb547235063c0bf2723c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hrw.org",
-                "www.hrw.org"
-            ]
-        },
-        {
-            "rule": "open-analytics\\.se\\/matomo\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "open-analytics.hrw.org",
-                    "resolved": "open-analytics.se"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hrw.org",
-                "www.hrw.org"
             ]
         }
     ],
@@ -156,7 +156,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {

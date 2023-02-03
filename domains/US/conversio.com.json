@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000407,
-    "sites": 6,
+    "prevalence": 0.0000543,
+    "sites": 7,
     "subdomains": [
-        "media"
+        "media",
+        "geoip"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -34,23 +35,23 @@
             ]
         },
         {
-            "rule": "conversio\\.com\\/scripts\\/cmcommerce\\.js",
+            "rule": "conversio\\.com\\/json\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "media"
+                "geoip"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "centralvapors.com",
-                "www.centralvapors.com"
+                "infotainment.com",
+                "www.infotainment.com"
             ]
         }
     ],
@@ -60,14 +61,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 3,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns2.bluehost.com",
-        "ns1.bluehost.com"
+        "ns1.bluehost.com",
+        "ns2.bluehost.com"
     ]
 }

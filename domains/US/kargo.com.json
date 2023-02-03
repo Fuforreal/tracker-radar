@@ -7,21 +7,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0318,
-    "sites": 4691,
+    "prevalence": 0.0294,
+    "sites": 3787,
     "subdomains": [
         "socialcanvas-api",
         "socialcanvas-cdn",
         "storage.cloud",
         "crb",
         "krk",
+        "kds-pixel",
         "kraken.prod",
         "tk",
-        "kds-pixel",
-        "ad-metrics",
-        "pgsth",
         "klkstrm",
-        "pixel.prod.pegasus"
+        "pixel.prod.pegasus",
+        "pgsth",
+        "ad-metrics"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -34,34 +34,123 @@
                 "socialcanvas-api"
             ],
             "apis": {},
-            "sites": 45,
-            "prevalence": 0.000305,
+            "sites": 37,
+            "prevalence": 0.000287,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "91ad3090e0472b132f5a0154bdb5a8a1ca39403daafec1815a6471a9c89fd81c",
+                "dc211be1aa1dec77245e1df5c3c731d5c342fadc63e20190dfa1b3eae9f8b5d4",
+                "4050fe2ee4920b6a9a7a34810c98f0b0fdb624b86776e27bee4f7ca7c6d37432",
+                "674fa0b8a871567ab852bcca15d92e80707128bf0601a701816262c968ee32f1",
+                "9fd552d0356d48abda5e1c4002274bd0c547d4f11d5cbd59b6c6252aef4e5615",
+                "7dd4da7158e87e2722fe1b7443bb28d9db7b4b799e4baa178c660126064d7baa",
+                "383bbd194ebc4149366e9d1c0766e907a21e46c16569dee633e1f9d0d34743cc",
+                "a826987db52938e0d11d21beecb8ba221ec99d3ce707d5dc9e214f8c114b142d",
+                "dda32b6cdff57aae0de45a0c2a2a0e8b793758f2dcd88d11a32460ba740a419a",
+                "f9fc51e5a023a74fe4c0bbbf62b1aeaac6c9a3c56c5f128d1677667bf29d43f8",
+                "2a4772232e7a02b05e88c17f62d6504bdd965a7297bd0676597fb2d9adf9b881",
+                "4cfb4a602bd715904c689a243bc42fce31aa08bf8f2721e7b6a0cb4387ad4796",
+                "c9676e00f7f5af66d8f481552f9e6fb7fb3b65a6d14412eaa53a66cb804837e7",
+                "cb8ce9d608b6e7c6d6fd74540ec973aaf818aba61c5af0946054498499948273",
+                "59d4dfa9247a152da8922dc26a7171d4331d1cfaa1ec5420ed1e71557ee54748",
+                "35335352641421dae69c0484ae387a31d7e9a0cbe021589afdfc80ca47600d4d",
+                "7e955456d96148a8a4e0e6950b866f94af1c97d457c5deac9e301db74d29d591",
+                "3cdfe5d3043403e837ca0ded6ea156954141dba2ba56bea8a8a0e8619d0f0650",
+                "28b07794fbf80e9fa283c3602b2fa7e19f0506cca0bc308bfb36ba93e0ac2bf0",
+                "7b3d3b34496fea3a489e2534c9a7cf1b6c415bec2078797e98b328d0ba90b124",
+                "c26c6fbfdafa42efbcbe10e36331ae92ca2fc7d409c36b3873f2ad0284006b1a",
+                "aa90daa9ad67cea07481ca85a9f2ae4189505d9d3d22514c0ad3e9793e61c3a2",
+                "d82f08c77cf3b20b2b51c312f9e529052d695e5997063ef48cdceaba189bb20d"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "knowyourmeme.com",
                 "thechive.com",
-                "extratv.com",
-                "www.girlsaskguys.com",
-                "www.firstforwomen.com",
-                "www.lifeandstylemag.com",
-                "ontheflix.com",
-                "www.tasteofthesouthmagazine.com",
-                "www.bakefromscratch.com",
-                "wallpapers.com",
-                "www.thethings.com",
-                "www.smartcapitalmind.com",
-                "www.usmagazine.com",
-                "www.closerweekly.com",
-                "reductress.com",
-                "perezhilton.com",
-                "www.sheknows.com",
-                "www.ebaumsworld.com",
+                "www.ozy.com",
                 "www.intouchweekly.com",
-                "www.wonderwall.com"
+                "stylecaster.com",
+                "www.allthetests.com",
+                "www.tasteofthesouthmagazine.com",
+                "www.usmagazine.com",
+                "www.sheknows.com",
+                "ontheflix.com",
+                "www.closerweekly.com",
+                "basenotes.com",
+                "www.wonderwall.com",
+                "www.bakefromscratch.com",
+                "dustyoldthing.com",
+                "www.girlsaskguys.com",
+                "littlethings.com",
+                "www.thethings.com",
+                "wikimon.net",
+                "robots.net"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/js\\/scpb\\.js",
+            "cookies": 0.00000775,
+            "fingerprinting": 1,
+            "subdomains": [
+                "socialcanvas-cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 35,
+                "Date.prototype.getTime": 33,
+                "window.localStorage": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 39,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "a6cf3bf775d68a1ca2cf2017fab25029316f54d60457afad1afcc3f38bb98d41"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592009,
+                    "length": 16,
+                    "prevalence": 0.000007754162046478447,
+                    "uniqueness": 1
+                },
+                "sharedid": {
+                    "ttl": 2419213,
+                    "length": 36,
+                    "prevalence": 0.000007754162046478447,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "knowyourmeme.com",
+                "thechive.com",
+                "www.soapsindepth.com",
+                "www.womansworld.com",
+                "basenotes.com",
+                "stylecaster.com",
+                "www.pauladeenmagazine.com",
+                "ebible.com",
+                "www.vixendaily.com",
+                "www.lovebscott.com",
+                "dustyoldthing.com",
+                "perezhilton.com",
+                "littlethings.com",
+                "pokemoncardvalue.com",
+                "www.sheknows.com",
+                "www.thethings.com",
+                "www.girlsaskguys.com",
+                "reductress.com",
+                "recipeland.com",
+                "www.ebaumsworld.com"
             ]
         },
         {
@@ -72,150 +161,52 @@
                 "socialcanvas-api"
             ],
             "apis": {},
-            "sites": 45,
-            "prevalence": 0.000305,
+            "sites": 37,
+            "prevalence": 0.000287,
             "cnames": [],
-            "responseHashes": [
-                "de6bc89e4d3810b89799c23f3d906135faea8a918886b1426195ed48579250dd",
-                "dc211be1aa1dec77245e1df5c3c731d5c342fadc63e20190dfa1b3eae9f8b5d4",
-                "bfd063237691617ae5b26b9d03220f97de081a80bb7c31c2d34b4aee671869ea",
-                "674fa0b8a871567ab852bcca15d92e80707128bf0601a701816262c968ee32f1",
-                "9fd552d0356d48abda5e1c4002274bd0c547d4f11d5cbd59b6c6252aef4e5615",
-                "1c5172549d23cfc36a0c46db57ebe9ca8fd7329dab6463b6cdf397128c633cce",
-                "383bbd194ebc4149366e9d1c0766e907a21e46c16569dee633e1f9d0d34743cc",
-                "a826987db52938e0d11d21beecb8ba221ec99d3ce707d5dc9e214f8c114b142d",
-                "dda32b6cdff57aae0de45a0c2a2a0e8b793758f2dcd88d11a32460ba740a419a",
-                "4497c0a87fe954865f9e0aa77a2398dac0c26627a845e8a9116a9575a7d0a32c",
-                "95d0a54345bd5a770cea3b7ee3275ea32de31c0cb25eec3dc48ae15e0926562b",
-                "60e8af0709bc40ef3cfebb9aff0f4a949dea800c1b9baf6829404fff63905fed",
-                "7404c26f697d775e8e1364aac1be94c0c31823b1cb8a5dccc554d6c3f20dd1a2",
-                "d35430a4384fb033a0b7315f89dac08e190ca3a5fe9b2bcbfe66ee034369c57e",
-                "8e4a06e11a62ad2bd1f579619356d30658b50302f20322ba008f71e92fa76426",
-                "29e909ad1cf3d658de10a555c5895c2b6c2addd10759b164fa5507181d0774e6",
-                "88247e5a0420d1a6440fe248d9a848038c7f8f9441de3950e2ffb4b0ee313b77",
-                "cb8ce9d608b6e7c6d6fd74540ec973aaf818aba61c5af0946054498499948273",
-                "59d4dfa9247a152da8922dc26a7171d4331d1cfaa1ec5420ed1e71557ee54748",
-                "35335352641421dae69c0484ae387a31d7e9a0cbe021589afdfc80ca47600d4d",
-                "cc0725c95e79160a5ded249ee052a37574244960fcc5a91f8fd438537ca9ffd8",
-                "bb0ae7e9324240433376d0e2566a31f2a0978d993f3e106419c16ca12c9219c0",
-                "28b07794fbf80e9fa283c3602b2fa7e19f0506cca0bc308bfb36ba93e0ac2bf0",
-                "7b3d3b34496fea3a489e2534c9a7cf1b6c415bec2078797e98b328d0ba90b124",
-                "c26c6fbfdafa42efbcbe10e36331ae92ca2fc7d409c36b3873f2ad0284006b1a",
-                "d82f08c77cf3b20b2b51c312f9e529052d695e5997063ef48cdceaba189bb20d"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "knowyourmeme.com",
                 "thechive.com",
-                "www.girlsaskguys.com",
-                "www.tasteofthesouthmagazine.com",
-                "cafemom.com",
-                "www.bakefromscratch.com",
-                "soaps.sheknows.com",
-                "www.louisianacookin.com",
-                "robots.net",
-                "www.intouchweekly.com",
-                "www.ebaumsworld.com",
-                "theanimalrescuesite.greatergood.com",
-                "pokemoncardvalue.com",
-                "www.organicbeautylover.com",
-                "www.lifeandstylemag.com",
-                "www.wonderwall.com",
-                "ontheflix.com",
-                "12tomatoes.com",
-                "www.sheknows.com",
-                "www.closerweekly.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/js\\/scpb\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "socialcanvas-cdn"
-            ],
-            "apis": {
-                "window.sessionStorage": 42,
-                "Date.prototype.getTime": 41,
-                "window.localStorage": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 45,
-            "prevalence": 0.000305,
-            "cnames": [],
-            "responseHashes": [
-                "a6cf3bf775d68a1ca2cf2017fab25029316f54d60457afad1afcc3f38bb98d41"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_pbjs_userid_consent_data": {
-                    "ttl": 2592013,
-                    "length": 16,
-                    "prevalence": 0.00001356300013563,
-                    "uniqueness": 0.5
-                },
-                "sharedid": {
-                    "ttl": 2419220,
-                    "length": 36,
-                    "prevalence": 0.00001356300013563,
-                    "uniqueness": 1
-                },
-                "pbjs-unifiedid": {
-                    "ttl": 5184027,
-                    "length": 150,
-                    "prevalence": 0.000006781500067815,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "knowyourmeme.com",
-                "thechive.com",
-                "ebible.com",
-                "12tomatoes.com",
-                "www.vixendaily.com",
-                "www.louisianacookin.com",
-                "www.wonderwall.com",
-                "www.usmagazine.com",
-                "soaps.sheknows.com",
-                "stylecaster.com",
+                "www.smartcapitalmind.com",
+                "extratv.com",
+                "reductress.com",
+                "www.soapsindepth.com",
                 "basenotes.com",
-                "robots.net",
+                "www.womansworld.com",
+                "wikimon.net",
+                "www.ebaumsworld.com",
                 "www.lifeandstylemag.com",
-                "perezhilton.com",
-                "www.organicbeautylover.com",
-                "www.ozy.com",
-                "cafemom.com",
-                "theanimalrescuesite.greatergood.com",
-                "pokemoncardvalue.com",
-                "www.girlsaskguys.com"
+                "www.tasteofthesouthmagazine.com",
+                "ebible.com",
+                "littlethings.com",
+                "www.bakefromscratch.com",
+                "www.pauladeenmagazine.com",
+                "www.intouchweekly.com",
+                "robots.net",
+                "recipeland.com",
+                "pokemoncardvalue.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/ad\\/network\\/tag\\/Kargo-Sync\\.js",
-            "cookies": 0.000271,
+            "cookies": 0.000256,
             "fingerprinting": 1,
             "subdomains": [
                 "storage.cloud"
             ],
             "apis": {
-                "Document.cookie getter": 40,
-                "window.localStorage": 40,
-                "Navigator.prototype.userAgent": 40,
-                "Document.cookie setter": 40,
-                "Navigator.prototype.doNotTrack": 40
+                "Document.cookie getter": 33,
+                "window.localStorage": 33,
+                "Navigator.prototype.userAgent": 33,
+                "Document.cookie setter": 33,
+                "Navigator.prototype.doNotTrack": 33
             },
-            "sites": 44,
-            "prevalence": 0.000298,
+            "sites": 36,
+            "prevalence": 0.000279,
             "cnames": [],
             "responseHashes": [
                 "e1cde2a489ae53f665118ce7aa129f83163b30de1fbf811cbee82e77a4476b55"
@@ -226,36 +217,36 @@
             "exampleSites": [
                 "knowyourmeme.com",
                 "thechive.com",
-                "www.bakefromscratch.com",
-                "www.allthetests.com",
-                "b.thechive.com",
-                "reductress.com",
                 "www.smartcapitalmind.com",
-                "wallpapers.com",
-                "theanimalrescuesite.greatergood.com",
-                "robots.net",
-                "wikimon.net",
-                "www.louisianacookin.com",
-                "www.ebaumsworld.com",
-                "littlethings.com",
-                "www.vixendaily.com",
-                "www.pauladeenmagazine.com",
+                "dustyoldthing.com",
+                "ontheflix.com",
                 "www.ozy.com",
-                "pokemoncardvalue.com",
-                "www.lifeandstylemag.com",
-                "www.thethings.com"
+                "cafemom.com",
+                "www.thethings.com",
+                "www.intouchweekly.com",
+                "www.pauladeenmagazine.com",
+                "www.womansworld.com",
+                "www.allthetests.com",
+                "www.wonderwall.com",
+                "12tomatoes.com",
+                "www.girlsaskguys.com",
+                "ebible.com",
+                "www.soapsindepth.com",
+                "www.ebaumsworld.com",
+                "stylecaster.com",
+                "www.sheknows.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/api\\/v1\\/sync\\/ttd",
-            "cookies": 0.00061,
+            "cookies": 0.000271,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
-            "sites": 90,
-            "prevalence": 0.00061,
+            "sites": 35,
+            "prevalence": 0.000271,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -266,36 +257,36 @@
             "exampleSites": [
                 "knowyourmeme.com",
                 "thechive.com",
-                "www.dailymail.co.uk",
-                "wanderingourworld.com",
-                "b.thechive.com",
-                "www.organicbeautylover.com",
-                "reductress.com",
-                "steelersdepot.com",
-                "www.culinaryhill.com",
-                "visualfractions.com",
-                "perezhilton.com",
-                "honeyname.com",
-                "www.terrycralle.com",
-                "www.pepperscale.com",
-                "recipeland.com",
+                "www.smartcapitalmind.com",
+                "ebible.com",
+                "www.sheknows.com",
+                "www.tasteofthesouthmagazine.com",
+                "www.ozy.com",
+                "www.thethings.com",
+                "robots.net",
+                "www.allthetests.com",
+                "wikimon.net",
+                "dustyoldthing.com",
+                "stylecaster.com",
                 "pokemoncardvalue.com",
-                "www.mercedesmedic.com",
-                "www.homefortheharvest.com",
-                "urbantastebud.com",
-                "www.tophotsprings.com"
+                "reductress.com",
+                "tvshowsace.com",
+                "www.girlsaskguys.com",
+                "12tomatoes.com",
+                "ontheflix.com",
+                "recipeland.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/api\\/v1\\/bswsync",
-            "cookies": 0.00238,
+            "cookies": 0.00184,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
-            "sites": 351,
-            "prevalence": 0.00238,
+            "sites": 237,
+            "prevalence": 0.00184,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -306,55 +297,51 @@
             "exampleSites": [
                 "globalnews.ca",
                 "knowyourmeme.com",
-                "nypost.com",
-                "people.com",
                 "thechive.com",
-                "www.cnn.com",
-                "www.dell.com",
-                "www.pcworld.com",
-                "unclejulios.com",
-                "www.biteki.com",
-                "altcodeunicode.com",
-                "www.tyrereviews.com",
-                "www.redtag.ca",
-                "saude.abril.com.br",
-                "thesaurus.weblio.jp",
-                "www.heart.co.uk",
-                "www.thethings.com",
-                "sportando.basketball",
-                "www.weatheravenue.com",
-                "airfryerbro.com"
+                "www.foxnews.com",
+                "www.medicitalia.it",
+                "calcuworld.com",
+                "www.radiox.co.uk",
+                "www.gardeningdream.com",
+                "www.youcanic.com",
+                "www.audizine.com",
+                "www.wordplays.com",
+                "news.walla.co.il",
+                "www.lifeandstylemag.com",
+                "www.inside-games.jp",
+                "yoodley.com",
+                "www.leaguesecretary.com",
+                "www.msichicago.org",
+                "endlessawesome.com",
+                "www.courrierinternational.com",
+                "www.maritimeherald.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/api\\/v2\\/bid",
-            "cookies": 0.0105,
+            "cookies": 0.0104,
             "fingerprinting": 0,
             "subdomains": [
                 "krk"
             ],
             "apis": {},
-            "sites": 1557,
-            "prevalence": 0.0106,
+            "sites": 1343,
+            "prevalence": 0.0104,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-                "824d401b9d16f0b434c17a7e47d78ae3d33a5cf5e7b39dccaf7fc70097539065",
-                "dd3bbbb41d7a13348b2958d87321ed496aab200f39087da4811e85547bccb4b4",
-                "c1db56f5608f66eec11dead2fbf6ac4d9d823ffccb8550608e45ae25bed15b32",
-                "0cd6aed5d21ae37310b3c4e0facf48009005018bf4402fbcda1cb66d69b03346",
-                "98e0ab18b60f789b20f8225e8a86a8a51e4229580a4f3f274b7f993c44a63ceb",
-                "b9c889f6187945f898d5ec43542500247b1c681056e253dae8df497c3d195318"
+                "8d901f618431a8eb4ea953d1d4273920e33263c1eb7cd99ba8481eeb1f0e1946",
+                "0cd6aed5d21ae37310b3c4e0facf48009005018bf4402fbcda1cb66d69b03346"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cto_bidid": 0.0011189475111894752,
-                "_pubcid": 0.0005696460056964601,
-                "_li_dcdm_c": 0.00043401600434016,
-                "lotame_domain_check": 0.00042045300420453006,
-                "__li_idex_cache": 0.00021700800217008,
-                "pbjs_li_nonid": 0.00023735250237352502
+                "cto_bidid": 0.001093336848553461,
+                "_pubcid": 0.0006358412878112327,
+                "_li_dcdm_c": 0.0004807580468816637,
+                "lotame_domain_check": 0.00040321642641687926,
+                "__li_idex_cache": 0.00020160821320843963,
+                "pbjs_li_nonid": 0.00022487069934787497
             },
             "exampleSites": [
                 "247sports.com",
@@ -367,157 +354,28 @@
                 "healthfully.com",
                 "healthyeating.sfgate.com",
                 "heavy.com",
-                "weldingmastermind.com",
-                "screenrant.com",
-                "www.howtoisolve.com",
-                "thepopularlist.com",
-                "www.timeout.com",
-                "www.itsalwaysautumn.com",
-                "bunnylady.com",
-                "www.rachaelrayshow.com",
-                "thecatsite.com",
-                "www.scienceofpeople.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/network\\/tag\\/v3\\/_rCJ2lqOSZc6wJg5tLgtWH3Nx\\.js",
-            "cookies": 0.000529,
-            "fingerprinting": 2,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {
-                "Document.cookie getter": 78,
-                "window.localStorage": 78,
-                "Navigator.prototype.userAgent": 78,
-                "Document.cookie setter": 78,
-                "Navigator.prototype.doNotTrack": 78,
-                "Screen.prototype.availWidth": 60,
-                "window.innerWidth": 69,
-                "window.innerHeight": 69
-            },
-            "sites": 96,
-            "prevalence": 0.000651,
-            "cnames": [],
-            "responseHashes": [
-                "8c090f392eb1f1796dc085652751afe9dca790f106d2e7241d6f3e0af78d21b6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airfryingfoodie.com",
-                "www.campendium.com",
-                "www.costcontessa.com",
-                "onepotdishrecipe.com",
-                "1lumen.com",
-                "www.kawalingpinoy.com",
-                "knifeinformer.com",
-                "www.halfmarathons.net",
-                "www.elizabethrider.com",
-                "steelersdepot.com",
-                "simply-delicious-food.com",
-                "gardenerspath.com",
-                "vinodelvida.com",
-                "copykat.com",
-                "grammarist.com",
-                "fortniteinsider.com",
-                "acrylgiessen.com",
-                "www.bluecinetech.co.uk",
-                "breaddad.com",
-                "lazyadmin.nl"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/event\\/won",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "kraken.prod"
-            ],
-            "apis": {},
-            "sites": 97,
-            "prevalence": 0.000658,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.brownsnation.com",
-                "prodigygamers.com",
-                "productmint.com",
-                "www.tideschart.com",
-                "www.bluecinetech.co.uk",
-                "worldofpans.com",
-                "www.healthcanal.com",
-                "smartgardenguide.com",
-                "www.pickhvac.com",
-                "gardenerspath.com",
-                "platedcravings.com",
-                "wanderingourworld.com",
-                "www.tophotsprings.com",
-                "www.halfmarathons.net",
-                "www.gokartguide.com",
-                "www.mattressnut.com",
-                "calculator.academy",
-                "americansongwriter.com",
-                "knifeinformer.com",
-                "visualfractions.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v3\\/event\\/serve",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "kraken.prod"
-            ],
-            "apis": {},
-            "sites": 97,
-            "prevalence": 0.000658,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.fitibility.com",
-                "www.campendium.com",
-                "teslanorth.com",
-                "www.greencarfuture.com",
-                "www.mattressnut.com",
+                "www.ebony.com",
+                "www.doityourselfrv.com",
+                "www.bwillcreative.com",
+                "reductress.com",
+                "www.eregulations.com",
+                "sixtyandme.com",
+                "www.kaaltv.com",
+                "dailysoapdish.com",
                 "footprinthero.com",
-                "www.runtothefinish.com",
-                "www.paleorunningmomma.com",
-                "prodigygamers.com",
-                "www.tideschart.com",
-                "visualfractions.com",
-                "www.culinaryhill.com",
-                "www.diysmarthomehub.com",
-                "honeyname.com",
-                "www.savedtattoo.com",
-                "acrylgiessen.com",
-                "cookthestory.com",
-                "blog.petitedressing.com",
-                "www.blessthismessplease.com",
-                "breaddad.com"
+                "copykat.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/PrebidServer",
-            "cookies": 0.00494,
+            "cookies": 0.00415,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
-            "sites": 729,
-            "prevalence": 0.00494,
+            "sites": 537,
+            "prevalence": 0.00416,
             "cnames": [],
             "responseHashes": [
                 "c956a8bbf43bb56f60d1beefcc5a70f2cb0725083a00e8a0daf423176509fd18",
@@ -529,370 +387,24 @@
             "exampleSites": [
                 "forums.macrumors.com",
                 "heavy.com",
-                "www.bbc.co.uk",
                 "www.britannica.com",
                 "www.merriam-webster.com",
-                "www.telegraph.co.uk",
                 "www.theguardian.com",
+                "www.thesun.co.uk",
+                "www.carmagazine.co.uk",
+                "www.vegrecipesofindia.com",
                 "www.isabeleats.com",
-                "flabfix.com",
+                "www.irv2.com",
+                "www.farmersalmanac.com",
+                "www.themakeyourownzone.com",
+                "www.classicrockhistory.com",
+                "hookedonhouses.net",
                 "www.encyclopedia.com",
-                "www.knowyourmobile.com",
-                "parentpreviews.com",
-                "hungryhappens.net",
-                "www.eatingonadime.com",
-                "www.dublinlive.ie",
-                "thehappierhomemaker.com",
-                "www.awesomemitten.com",
-                "www.laylita.com",
-                "thinkstudent.co.uk",
-                "hiride.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/js\\/rh-k\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "socialcanvas-cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 47,
-                "Navigator.prototype.userAgent": 47
-            },
-            "sites": 88,
-            "prevalence": 0.000597,
-            "cnames": [],
-            "responseHashes": [
-                "788a90ac82e81a72a1d5da80fbcebf245eb775772c025015729bccc54b97dc51"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wanderingourworld.com",
-                "pipandebby.com",
-                "www.tideschart.com",
-                "resin-expert.com",
-                "dontwastethecrumbs.com",
-                "www.tophotsprings.com",
+                "www.pressurecookrecipes.com",
                 "acrylgiessen.com",
-                "1lumen.com",
-                "thecozycoffee.com",
-                "melissaknorris.com",
-                "www.halfbakedharvest.com",
-                "repaintnow.com",
-                "americansongwriter.com",
-                "www.pepperscale.com",
-                "prodigygamers.com",
-                "www.gokartguide.com",
-                "www.terrycralle.com",
-                "www.simplyhappyfoodie.com",
-                "giftrabbit.com",
-                "champsorchumps.us"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_mfu14jCkaN-MiddleBanner",
-            "cookies": 0.0000339,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "1lumen.com",
-                "blog.petitedressing.com",
-                "dontwastethecrumbs.com",
-                "lazyadmin.nl",
-                "steelersdepot.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/event\\/billable",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "kraken.prod"
-            ],
-            "apis": {},
-            "sites": 75,
-            "prevalence": 0.000509,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "champsorchumps.us",
-                "blog.petitedressing.com",
-                "thecozycoffee.com",
-                "1lumen.com",
-                "onepotdishrecipe.com",
-                "www.flooringclarity.com",
-                "vinodelvida.com",
-                "www.elizabethrider.com",
-                "expatra.com",
-                "footprinthero.com",
-                "liveboldandbloom.com",
-                "wanderingourworld.com",
-                "americansongwriter.com",
-                "www.bluecinetech.co.uk",
-                "foolproofliving.com",
-                "productmint.com",
-                "www.savedtattoo.com",
-                "www.healthcanal.com",
-                "writingtipsoasis.com",
-                "resin-expert.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/event\\/adtag-pixel",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "kraken.prod"
-            ],
-            "apis": {},
-            "sites": 81,
-            "prevalence": 0.000549,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "urbantastebud.com",
-                "fortniteinsider.com",
-                "1lumen.com",
-                "doodledoods.com",
-                "www.halfbakedharvest.com",
-                "www.savedtattoo.com",
-                "wildexplained.com",
-                "www.flooringclarity.com",
-                "www.pepperscale.com",
-                "productmint.com",
-                "www.costcontessa.com",
-                "platedcravings.com",
-                "www.richardalois.com",
-                "www.bluecinetech.co.uk",
-                "www.blessthismessplease.com",
-                "redbus2us.com",
-                "thepan-handler.com",
-                "www.culinaryhill.com",
-                "calculator.academy",
-                "lazyadmin.nl"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/v2\\/rhk\\/pr",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "socialcanvas-api"
-            ],
-            "apis": {},
-            "sites": 59,
-            "prevalence": 0.0004,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wildexplained.com",
-                "urbantastebud.com",
-                "smartgardenguide.com",
-                "stardewguide.com",
-                "www.culinaryhill.com",
-                "pipandebby.com",
-                "www.savedtattoo.com",
-                "www.flowerglossary.com",
-                "visualfractions.com",
-                "calculator.academy",
-                "www.halfbakedharvest.com",
-                "www.flooringclarity.com",
-                "www.campendium.com",
-                "footprinthero.com",
-                "www.godairyfree.org",
-                "repaintnow.com",
-                "knifeinformer.com",
-                "businesstechplanet.com",
-                "acrylgiessen.com",
-                "www.brownsnation.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/v2\\/rhk\\/pr",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "socialcanvas-api"
-            ],
-            "apis": {},
-            "sites": 60,
-            "prevalence": 0.000407,
-            "cnames": [],
-            "responseHashes": [
-                "843ac01149cced785dfebd0028d3b03ba78e286e1c6f9517ebfcdb609d97af4c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "doodledoods.com",
-                "dogfoodsmart.com",
-                "worldofpans.com",
-                "www.culinaryhill.com",
-                "heyletsmakestuff.com",
-                "steelersdepot.com",
-                "acrylgiessen.com",
-                "champsorchumps.us",
-                "1lumen.com",
-                "www.halfbakedharvest.com",
-                "www.mattressnut.com",
-                "carolinahoneybees.com",
-                "breaddad.com",
-                "www.savedtattoo.com",
-                "gardenerspath.com",
-                "melissaknorris.com",
-                "www.terrycralle.com",
-                "thecozycoffee.com",
-                "fortniteinsider.com",
-                "www.simplyhappyfoodie.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/verizon",
-            "cookies": 0.000359,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 53,
-            "prevalence": 0.000359,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "repaintnow.com",
-                "1lumen.com",
-                "radiologyinplainenglish.com",
-                "wanderingourworld.com",
-                "expatra.com",
-                "visualfractions.com",
-                "breaddad.com",
-                "www.culinaryhill.com",
-                "businesstechplanet.com",
-                "wildexplained.com",
-                "www.bluecinetech.co.uk",
-                "www.terrycralle.com",
-                "www.kawalingpinoy.com",
-                "prodigygamers.com",
-                "acrylgiessen.com",
-                "www.emissions.org",
-                "dontwastethecrumbs.com",
-                "onepotdishrecipe.com",
-                "www.tophotsprings.com",
-                "pipandebby.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/DBM",
-            "cookies": 0.000407,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 61,
-            "prevalence": 0.000414,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.dailymail.co.uk",
-                "doodledoods.com",
-                "www.simplyhappyfoodie.com",
-                "www.greencarfuture.com",
-                "expatra.com",
-                "dontwastethecrumbs.com",
-                "www.godairyfree.org",
-                "www.richardalois.com",
-                "www.lovebscott.com",
-                "steelersdepot.com",
-                "www.dailymail.com",
-                "melissaknorris.com",
-                "honeyname.com",
-                "calculator.academy",
-                "www.homefortheharvest.com",
-                "teslanorth.com",
-                "www.smartcapitalmind.com",
-                "breaddad.com",
-                "www.emissions.org",
-                "wildexplained.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/dv360_cb",
-            "cookies": 0.000414,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 61,
-            "prevalence": 0.000414,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.dailymail.co.uk",
-                "www.culinaryhill.com",
-                "nerdburglars.net",
-                "gardenerspath.com",
-                "ebible.com",
-                "worldofpans.com",
-                "honeyname.com",
-                "acrylgiessen.com",
-                "www.homefortheharvest.com",
-                "breaddad.com",
-                "www.healthcanal.com",
-                "www.terrycralle.com",
-                "champsorchumps.us",
-                "www.simplyhappyfoodie.com",
-                "www.tasteofthesouthmagazine.com",
-                "dogfoodsmart.com",
-                "heyletsmakestuff.com",
-                "knifeinformer.com",
-                "www.emissions.org",
-                "airfryingfoodie.com"
+                "interestingliterature.com",
+                "www.amish365.com",
+                "www.flowerglossary.com"
             ]
         },
         {
@@ -903,8 +415,8 @@
                 "krk"
             ],
             "apis": {},
-            "sites": 1065,
-            "prevalence": 0.00722,
+            "sites": 852,
+            "prevalence": 0.00661,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -913,76 +425,114 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "heavy.com",
+                "gizmodo.com",
+                "healthyeating.sfgate.com",
                 "homeguides.sfgate.com",
-                "itstillworks.com",
-                "knowyourmeme.com",
-                "lifehacker.com",
-                "nypost.com",
-                "screenrant.com",
                 "smallbusiness.chron.com",
                 "thoughtcatalog.com",
-                "www.britannica.com",
-                "www.twopeasandtheirpod.com",
-                "wildexplained.com",
-                "redbus2us.com",
-                "infinitcloset.com",
-                "www.spendwithpennies.com",
-                "sugarfreelondoner.com",
+                "www.bustle.com",
+                "www.cnbc.com",
+                "www.makeuseof.com",
+                "www.merriam-webster.com",
+                "sallysbakingaddiction.com",
+                "www.worldtimeserver.com",
+                "rarethief.com",
+                "champsorchumps.us",
+                "www.isabeleats.com",
+                "www.simplyhappyfoodie.com",
+                "www.chamberofcommerce.com",
                 "www.itechguides.com",
-                "theproductanalyst.com",
-                "lawandcrime.com",
-                "cleangreensimple.com"
+                "interestingliterature.com",
+                "www.justonecookbook.com",
+                "www.worldclock.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/dinitsync",
-            "cookies": 0.00523,
+            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/Conversant",
+            "cookies": 0.000729,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
-            "sites": 771,
-            "prevalence": 0.00523,
+            "sites": 94,
+            "prevalence": 0.000729,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "split_tag_control": 0.000007754162046478447
+            },
+            "exampleSites": [
+                "www.lowes.com",
+                "www.shopterrain.com",
+                "www.jetpunk.com",
+                "visitmaine.com",
+                "bathandbodyworks.com",
+                "wornwear.patagonia.com",
+                "www.card.fnbo.com",
+                "www.jjill.com",
+                "www.australia.com",
+                "www.urbanoutfitters.com",
+                "www.carters.com",
+                "lifelock.norton.com",
+                "www.landroverusa.com",
+                "www.roadrunnersports.com",
+                "www.bucadibeppo.com",
+                "www.maurices.com",
+                "www.visitfredericksburgtx.com",
+                "www.wingstop.com",
+                "locations.boscovs.com",
+                "www.biglots.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/dinitsync",
+            "cookies": 0.00471,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 608,
+            "prevalence": 0.00471,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "00fbeaf6fe8e991dc35a2ae93ce228ef0eb68a0300eb4bc4847216bea80fcd6e",
-                "0532180a27de3295672e5425a51da90fbb13c2a3efeb0ba5fba209504a2efc0f",
-                "fe6cffc8777db30eb26b747a37ea5a2fbba6d0d68fb4234fe68c7fcf8843b1e2",
-                "4dcfb4fadbae7db4195d17ed5153f5e9004d0769dd5e1195db83488d317e5802",
-                "31ee98d841b4d6ae76e2aa6abc9759c419da70f6d9c25ce2dfacb6f652e371e8",
-                "925768b1d0f2a10f0f11e16bd6f71b10f973b45c3f97aacc483e5328656d575a",
-                "26201d55e75d7e1de202e2afb9b7b93255fbf583dafc69b61960563834c16708",
-                "51f8b169d1c4d072feca77d83c3d0419d9146a63862a2f5be0cfecf93dd8d93b",
-                "e246126df020583f044b8e50ef88cf09cba3e460eb35c66e2a96428a00f0f24e",
-                "061349ba7a5501ea461ec384621b10f5ff72a818fb3598968ae040135f6e2b3e",
-                "07036efe34d247b0f04b4ba648bfaa28f056c1f7b42168e8375a3197302c36bf",
-                "ae46998fcae61a77d30d0a7f0a321698f3dd3447a985467afef127c8a3e9d6f3",
-                "32b0aa4d1236610294899c5a5b876ff8f41f1c5dab3ca1cbdadcb967200bde35",
-                "e07b4abb7f80cdf173272e3dc769b22a27f78198fd957bb4ce1932c65a2634cb",
-                "d2b5a7cbc558fc0958dd75da2484adb14d99eb1ce92fd0ed212987527a227281",
-                "a3a80006cbda98cdda834b538f79f1821f30674c3cb1736faf00f7a4cef803b8",
-                "369fdd9b1963ff94b667ee7492f0c4002a786cdeb689edec4981b5b76116fa70",
-                "cbef4c8622dfdfc453e6f0e2c837de7b221e0e180d980abc7e995b9a1ef4cb57",
-                "102374aa3a8589fd7689259eb9a7e585478ea0e9635da6c3776badc84881585e",
-                "8c145baa1b79b9dcf040a6307e23db10526920168b59eb9c020524ddd53ae566",
-                "803b4778b3a33d50daed4dd5f802f8e5f6c217fcddffb1cb04932c59ede0155f",
-                "a587d5a1ce1f944db73bc65c473332b64c19c6c55020cf3bb1fc50d8ecf0fd83",
-                "cf6c85bda9677285bf3b0653fbf44c32e5e2f29c00b5d6b4c1de7654edd0e416",
-                "864f4206a88710dde02bb29e6ff45bec2e6d5e07afb5f42ce2f8a81c7e9d24c0",
-                "913786c2e5a558ee1f008e0a8d95acd9e46956f78c33e861821a3d0d96c71ef0",
-                "d5bbe94e84b01f185c35171bc8890cef9312f4714a6d28b461b268e41435d5bb",
-                "387970a2f3827605e3ac0c0d2f847a839729fd1feb355f871950ae1575c6196e",
-                "fe6f441685b68b544d25935ae1b1bff31a4e5087ff53f31f9036f4fb8b100d51",
-                "d70e70592444fcb2383bda2e1680633a02bf988b4141644c13bde5b465875ee6",
-                "56ca8d8be3dfb6b0763800a6834e4b22a8e5fce9dcf414f2523027b9f6f811a1",
-                "82a0f0f5ffd47db0d5479d3ecb3b474dab158b6807f4dc8691db0cac430aa702",
-                "3442a4ce74c3b294e7a6b59528af20cfd74310bd755c4b202f89d149c5d2c6e1",
-                "36a816d70ebe88524e9f11f9faad143a37ad9bae60d37e7a1c28c456cffb9294",
-                "892ef768059036b6f7281c926a0d1f2ed1a65fdea0bd40fc3f630ec43e9d78dd",
-                "d7aeed6f406e70d9a05a771dfce44376021e4c0a1bce0fd08e1ec86d571a393f"
+                "aea9fadeb1b642cd7b065a8d4de35e1da620db5a2a65e239d120a6ad320d7c47",
+                "fd9d7940f10b614813cc42a01503e90f096b046eb767b9d3c438f593d149bbc4",
+                "42a4db1527315d446bd6e1253be4629882d2448adbe8cd2b94e6148cf81e914f",
+                "346e30ba3f1d82c86d684b57f464fb4593140955bec35069062b976dcad584f3",
+                "c3341057ca59d73ce4f1e4a57708460e5866a475cccd1d017aa3c6274f94601d",
+                "9bbb58c048619616f59e858af5635f6d072c0516043aeb2a1a1c33ff80261336",
+                "53bd8c8c768dc130e8ad049fe6b16e962739b935c8a345e735453b4bc8ef6dbf",
+                "e6d1bfecc0c991dea13f87b688d635a21d12dcaa1ab681f26acca77f38bceb1c",
+                "6b198a13c32628c0396ce4ff75fbb65eaf3816cb8f7bc4b6090a1016c300ac35",
+                "29e2c2625a591c87a5ec438d3a82297faabab56c1956d53fcae2d6a64c574ee6",
+                "81c3f5b35d3886eb7e517f0b98af7990f9e2bc22ee62b2f13dfd1871994c3d70",
+                "ac0b4067f36859aa8ef210f80d968436777b7ffd78bd44f85a4ac87d241ab69f",
+                "5e0c99109822e69d1eae770c2422f3600873b5079dc0c0fef5aebd8cab1de9e1",
+                "7d0803ea1ee78fc7156866a011acedeef5822f75b6a672370d0b9d9519653b4f",
+                "8e408255148df698bb20093ea274693f0274d3174d7ea2ce6bca5a5adf2d6040",
+                "5d6e12baff0d4d2f1f7db8dbb239abe704f2f1b2d944af5901fa933cb191771c",
+                "7433b50cd5998211e583306810245a886bf37c5ec05e9565e00743dbf3d54369",
+                "d05d3016446f5af6dd2ef0a6cd0198ec1833de347d2b6f193a64fdd11a2b4cc5",
+                "aff2b0af64a0a9cc53b44f68243e5dfbd79a7ae18d8e6d40b9cab216fbaf7bf8",
+                "46763b0a750f7bc2c0b1e4982bd265f1398bb43202a849c74e076d6f770583b8",
+                "9214d76c7f821c5d48dda7431a27db14c679d6b03656a79a90bea9d842b8643d",
+                "bd5feef7e9afc34605757c8557dcc5dd6b1391eab4bff84c9f6711ac51d83e80",
+                "bbfa9e8c637be4b6a9b370774b1cfa662c0e494dd3896de81bf0799e4c0d2b7b",
+                "220cc52e8f9ecbedd93932493620796bb4303d955a4f95be47216eb6caa933aa",
+                "5b6da669f1e4cf6c3c4aa707a0311b894037f4fe9914b87585378b0491e34a36",
+                "1403783c10516d0647a0ed71d6d3828bfddf3d6d079a3b14bdf04a079ae37e3d",
+                "6f012e9479d8ce6b8a3f6b151749f24ba01c62bc958cef5402d88f46cbcf348a",
+                "390c32d5cee6fe1b136c2fa046febb38fe7602e40931a18872e2c9fe2713696e",
+                "dff7f4f472f7f3659f17a06d536a91f05b7a7cb51e517e7d16fd406423d66314",
+                "c64feb478e8e854e4c256296cf066697eb219e1221c49f99fc69801f1b81591e",
+                "dc1068fdd2ae1862af0e2263e3db70bf6f9c5a001d1406593a561a0ae15e2999"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -998,16 +548,16 @@
                 "www.allrecipes.com",
                 "www.businessinsider.com",
                 "www.digitaltrends.com",
-                "wingsoffire.fandom.com",
-                "metalgear.fandom.com",
-                "vim.fandom.com",
-                "wowwiki-archive.fandom.com",
-                "ensemble-stars.fandom.com",
-                "fairytail.fandom.com",
-                "www.rollingstone.com",
-                "golfweek.usatoday.com",
-                "clashofclans.fandom.com",
-                "indianajones.fandom.com"
+                "www.ignboards.com",
+                "bleach.fandom.com",
+                "gta.fandom.com",
+                "squishmallowsquad.fandom.com",
+                "vsbattles.fandom.com",
+                "eastenders.fandom.com",
+                "warframe.fandom.com",
+                "rupaulsdragrace.fandom.com",
+                "scum.fandom.com",
+                "listofdeaths.fandom.com"
             ]
         },
         {
@@ -1018,12 +568,12 @@
                 "storage.cloud"
             ],
             "apis": {
-                "Navigator.prototype.cookieEnabled": 14,
-                "window.localStorage": 11,
-                "Document.cookie getter": 11
+                "window.localStorage": 12,
+                "Document.cookie getter": 12,
+                "Navigator.prototype.cookieEnabled": 12
             },
-            "sites": 15,
-            "prevalence": 0.000102,
+            "sites": 13,
+            "prevalence": 0.000101,
             "cnames": [],
             "responseHashes": [
                 "6bb14648f4a5ebf80cfc8571803a0cfa53ef9ef8b66e16e3972aa4f647ddf581"
@@ -1035,9 +585,7 @@
                 "acorn.tv",
                 "industrial.sherwin-williams.com",
                 "m.usps.com",
-                "www.beautycounter.com",
                 "www.breadfinancial.com",
-                "www.charlottesweb.com",
                 "www.comenity.net",
                 "www.exploreminnesota.com",
                 "www.keenfootwear.com",
@@ -1051,14 +599,14 @@
         },
         {
             "rule": "kargo\\.com\\/api\\/v1",
-            "cookies": 0.00019,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "kds-pixel"
             ],
             "apis": {},
-            "sites": 29,
-            "prevalence": 0.000197,
+            "sites": 26,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -1067,445 +615,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.comenity.net",
-                "acorn.tv",
-                "www.beautycounter.com",
-                "www.keenfootwear.com",
-                "ripple.com",
-                "www.mcalistersdeli.com",
-                "www.chemistwarehouse.com.au",
-                "www.whitehouseblackmarket.com",
-                "www.chefstore.com",
-                "www.chicos.com",
                 "www.mbvans.com",
                 "www.exploreminnesota.com",
-                "chicos.com",
-                "locations.mcalistersdeli.com",
-                "www.fredhutch.org",
+                "www.recteq.com",
                 "industrial.sherwin-williams.com",
-                "www.kathmandu.com.au",
+                "chicos.com",
+                "www.palottery.state.pa.us",
+                "www.sherwin-williams.com",
+                "www.comenity.net",
+                "www.usps.com",
                 "www.surveymonkey.com",
+                "www.breadfinancial.com",
+                "www.kathmandu.com.au",
+                "www.fredhutch.org",
+                "m.usps.com",
                 "whitehouseblackmarket.com",
-                "pizzaranch.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_lP4vuVhICu-DesktopHover",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "acrylgiessen.com",
-                "www.terrycralle.com",
-                "www.tophotsprings.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/StackAdapt",
-            "cookies": 0.0000746,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000746,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "acrylgiessen.com",
-                "airfryingfoodie.com",
-                "americansongwriter.com",
-                "dontwastethecrumbs.com",
-                "onepotdishrecipe.com",
-                "smartgardenguide.com",
-                "teslanorth.com",
-                "www.greencarfuture.com",
-                "www.halfbakedharvest.com",
-                "www.midgetmomma.com",
-                "www.savedtattoo.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/Conversant",
-            "cookies": 0.000868,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 129,
-            "prevalence": 0.000875,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.lowes.com",
-                "www.skiutah.com",
-                "www.lakeshorelearning.com",
-                "www.alfaromeousa.com",
-                "www.fleischmannsyeast.com",
-                "marriott-hotels.marriott.com",
-                "www.fortworth.com",
-                "www.visitmyrtlebeach.com",
-                "fnbo.com",
-                "www.kay.com",
-                "www.td.com",
-                "www.bahamas.com",
-                "shop.foodlion.com",
-                "tickets.gaylordtexan.com",
-                "www.badcock.com",
-                "www.autonation.com",
-                "www.timberland.com",
-                "www.mattressfirm.com",
-                "www.grizzly.com",
-                "guideposts.org"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ad-metrics"
-            ],
-            "apis": {},
-            "sites": 20,
-            "prevalence": 0.000136,
-            "cnames": [],
-            "responseHashes": [
-                "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airfryingfoodie.com",
-                "blog.petitedressing.com",
-                "calculator.academy",
-                "expatra.com",
-                "heyletsmakestuff.com",
-                "knifeinformer.com",
-                "nerdburglars.net",
-                "productmint.com",
-                "stardewguide.com",
-                "teslanorth.com",
-                "worldofpans.com",
-                "www.campendium.com",
-                "www.costcontessa.com",
-                "www.godairyfree.org",
-                "www.greencarfuture.com",
-                "www.halfbakedharvest.com",
-                "www.healthcanal.com",
-                "www.mattressnut.com",
-                "www.mercedesmedic.com",
-                "www.tophotsprings.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_mfu14jCkaN-Venti",
-            "cookies": 0.0004,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 59,
-            "prevalence": 0.0004,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "visualfractions.com",
-                "www.healthcanal.com",
-                "redbus2us.com",
-                "productmint.com",
-                "urbantastebud.com",
-                "vinodelvida.com",
-                "onepotdishrecipe.com",
-                "giftrabbit.com",
-                "www.pickhvac.com",
-                "wildexplained.com",
-                "writingtipsoasis.com",
-                "doodledoods.com",
-                "www.halfbakedharvest.com",
-                "cookthestory.com",
-                "resin-expert.com",
-                "www.gamespecifications.com",
-                "calculator.academy",
-                "stardewguide.com",
-                "www.pepperscale.com",
-                "www.midgetmomma.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/network\\/thirdparty\\/NFca8cHjfpGsNK56\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 14,
-                "Date.prototype.getTimezoneOffset": 14,
-                "Navigator.prototype.languages": 14
-            },
-            "sites": 18,
-            "prevalence": 0.000122,
-            "cnames": [],
-            "responseHashes": [
-                "e664c389f90fdcb4996803d3d80bf8978ab04373c2b0f77e7ad6f1cb66facae9",
-                "72a94aff3d8aebcef6a25f514bc42a9a47b719a3b4f72fd928a5447249500092",
-                "840a87994cdc58373f4ef7f6e616e50a31bfc862d94f9cea0801c9b6e684018b",
-                "468a1051fe8185b1bc7bdeb27d5e7f9e178add16951a390ecf6aa0270f238e89"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airfryingfoodie.com",
-                "blog.petitedressing.com",
-                "businesstechplanet.com",
-                "calculator.academy",
-                "dogfoodsmart.com",
-                "foolproofliving.com",
-                "fortniteinsider.com",
-                "giftrabbit.com",
-                "grammarist.com",
-                "heyletsmakestuff.com",
-                "pipandebby.com",
-                "stardewguide.com",
-                "thecozycoffee.com",
-                "urbantastebud.com",
-                "visualfractions.com",
-                "writingtipsoasis.com",
-                "www.costcontessa.com",
-                "www.midgetmomma.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression\\.1ou7rj4tld28x31o",
-            "cookies": 0.000387,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 57,
-            "prevalence": 0.000387,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.flowerglossary.com",
-                "calculator.academy",
-                "visualfractions.com",
-                "www.midgetmomma.com",
-                "www.pepperscale.com",
-                "footprinthero.com",
-                "cookthestory.com",
-                "www.halfmarathons.net",
-                "www.gamespecifications.com",
-                "www.pickhvac.com",
-                "honeyname.com",
-                "dogfoodsmart.com",
-                "wanderingourworld.com",
-                "www.tideschart.com",
-                "heyletsmakestuff.com",
-                "melissaknorris.com",
-                "knifeinformer.com",
-                "www.bluecinetech.co.uk",
-                "breaddad.com",
-                "thepan-handler.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/creative\\/535c9ab0-0416-4048-8c70-9a77101629df\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 57,
-            "prevalence": 0.000387,
-            "cnames": [],
-            "responseHashes": [
-                "259d75fac04ce786fce779eae5c08a188c05f00c29617b585d43df61989769c8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.costcontessa.com",
-                "airfryingfoodie.com",
-                "champsorchumps.us",
-                "repaintnow.com",
-                "honeyname.com",
-                "www.tideschart.com",
-                "www.pickhvac.com",
-                "radiologyinplainenglish.com",
-                "businesstechplanet.com",
-                "urbantastebud.com",
-                "onepotdishrecipe.com",
-                "grammarist.com",
-                "doodledoods.com",
-                "www.savedtattoo.com",
-                "liveboldandbloom.com",
-                "www.simplyhappyfoodie.com",
-                "www.emissions.org",
-                "smartgardenguide.com",
-                "gardenerspath.com",
-                "www.richardalois.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/imp",
-            "cookies": 0.000427,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pgsth"
-            ],
-            "apis": {},
-            "sites": 63,
-            "prevalence": 0.000427,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "repaintnow.com",
-                "www.tideschart.com",
-                "liveboldandbloom.com",
-                "stardewguide.com",
-                "www.bluecinetech.co.uk",
-                "vinodelvida.com",
-                "www.simplyhappyfoodie.com",
-                "cookthestory.com",
-                "worldofpans.com",
-                "foolproofliving.com",
-                "resin-expert.com",
-                "expatra.com",
-                "breaddad.com",
-                "www.elizabethrider.com",
-                "www.gamespecifications.com",
-                "heyletsmakestuff.com",
-                "writingtipsoasis.com",
-                "platedcravings.com",
-                "www.richardalois.com",
-                "thecozycoffee.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression-inside\\.1ou7rj4tld28x31n",
-            "cookies": 0.000339,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 50,
-            "prevalence": 0.000339,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gardenerspath.com",
-                "www.halfbakedharvest.com",
-                "breaddad.com",
-                "melissaknorris.com",
-                "onepotdishrecipe.com",
-                "www.emissions.org",
-                "www.costcontessa.com",
-                "www.richardalois.com",
-                "www.halfmarathons.net",
-                "www.flowerglossary.com",
-                "smartgardenguide.com",
-                "worldofpans.com",
-                "visualfractions.com",
-                "productmint.com",
-                "www.savedtattoo.com",
-                "champsorchumps.us",
-                "doodledoods.com",
-                "nerdburglars.net",
-                "thecozycoffee.com",
-                "honeyname.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/network\\/kap\\/templates\\/native\\/aba-display-1\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 47,
-            "prevalence": 0.000319,
-            "cnames": [],
-            "responseHashes": [
-                "51a01621325e8a2ceceb0f4b1dad6b5448bf9b0e40997fa60a410f9e9ba870f8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thecozycoffee.com",
-                "www.richardalois.com",
-                "www.bluecinetech.co.uk",
-                "breaddad.com",
-                "www.flowerglossary.com",
-                "calculator.academy",
-                "nerdburglars.net",
-                "radiologyinplainenglish.com",
-                "www.emissions.org",
-                "smartgardenguide.com",
-                "doodledoods.com",
-                "www.gokartguide.com",
-                "www.halfbakedharvest.com",
-                "honeyname.com",
-                "gardenerspath.com",
-                "www.savedtattoo.com",
-                "wildexplained.com",
-                "heyletsmakestuff.com",
-                "www.gamespecifications.com",
-                "liveboldandbloom.com"
+                "ripple.com",
+                "acorn.tv",
+                "www.chefstore.com",
+                "www.chemistwarehouse.com.au",
+                "locations.mcalistersdeli.com"
             ]
         },
         {
@@ -1516,15 +645,16 @@
                 "socialcanvas-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 13,
-                "Date.prototype.getTime": 13,
-                "window.localStorage": 13
+                "Navigator.prototype.userAgent": 12,
+                "Date.prototype.getTime": 12,
+                "window.localStorage": 12
             },
-            "sites": 14,
-            "prevalence": 0.0000949,
+            "sites": 15,
+            "prevalence": 0.000116,
             "cnames": [],
             "responseHashes": [
-                "c77f8aa69b527aea2e22b0f4152781a1e6d61008258182afa37d98de1223dcaa"
+                "c77f8aa69b527aea2e22b0f4152781a1e6d61008258182afa37d98de1223dcaa",
+                "aca0ee1e0a7004fdf87f5198cbfcfe59fe8f5cb22a9a03f31bbe0ef2963e59ad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1535,6 +665,7 @@
                 "extratv.com",
                 "littlethings.com",
                 "perezhilton.com",
+                "theblast.com",
                 "www.closerweekly.com",
                 "www.firstforwomen.com",
                 "www.intouchweekly.com",
@@ -1547,69 +678,15 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/v2\\/embed\\/check",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "socialcanvas-api"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000407,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americansongwriter.com",
-                "littlethings.com",
-                "robots.net",
-                "wikimon.net",
-                "www.lovebscott.com",
-                "www.soapsindepth.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/v2\\/embed\\/check",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "socialcanvas-api"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000407,
-            "cnames": [],
-            "responseHashes": [
-                "4f5236e2d4d29ba48fff553c89d56368db88d4a47349e69c3b62c5edfc7d31bf",
-                "c924005b22fe616e53bc6c94c673fdc3d697167f075c7f773d834335c8cff7dd",
-                "3b33630c53d61bc61d04ed1283f9f763b4b32b53755b1b61ef04020079b7df7b",
-                "9784ef5acb8e502e1e828bea46818ff91e84c6cad1c2c4d7be6065790ba4ac72",
-                "159e4be153975d1710949927021fb5e013e69258f41247a8b7d1d379132d5519"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americansongwriter.com",
-                "littlethings.com",
-                "robots.net",
-                "wikimon.net",
-                "www.lovebscott.com",
-                "www.soapsindepth.com"
-            ]
-        },
-        {
             "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/Salesforce",
-            "cookies": 0.0000543,
+            "cookies": 0.0000465,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000543,
+            "sites": 6,
+            "prevalence": 0.0000465,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -1617,246 +694,78 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_kuid_": 0.00005425200054252
+                "_kuid_": 0.000046524972278870686
             },
             "exampleSites": [
                 "honda.com",
                 "automobiles.honda.com",
                 "deals.dell.com",
                 "i.dell.com",
-                "infohub.delltechnologies.com",
                 "www.acura.com",
-                "www.delltechnologies.com",
                 "www.dell.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/Rubicon",
-            "cookies": 0.0000339,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/165c1f7a-7623-4319-9c78-522abbf8a4ed",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "avirtualvegan.com",
-                "nerdburglars.net",
-                "pipandebby.com",
-                "radiologyinplainenglish.com",
-                "teslanorth.com"
+                "thechive.com",
+                "b.thechive.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/ad\\/network\\/tag\\/KAP\\.3\\.19\\.0\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {
-                "window.innerWidth": 13,
-                "window.innerHeight": 13
-            },
-            "sites": 30,
-            "prevalence": 0.000203,
-            "cnames": [],
-            "responseHashes": [
-                "28f3cfe6b67535a999cb34d9ba63ee8c8a6395319a18774e1ad9043a5ce1b1a0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.emissions.org",
-                "worldofpans.com",
-                "www.halfbakedharvest.com",
-                "urbantastebud.com",
-                "www.richardalois.com",
-                "www.midgetmomma.com",
-                "doodledoods.com",
-                "knifeinformer.com",
-                "www.healthcanal.com",
-                "dogfoodsmart.com",
-                "www.brownsnation.com",
-                "footprinthero.com",
-                "www.simplyhappyfoodie.com",
-                "expatra.com",
-                "champsorchumps.us",
-                "fortniteinsider.com",
-                "onepotdishrecipe.com",
-                "smartgardenguide.com",
-                "wanderingourworld.com",
-                "gardenerspath.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/creative-stylizer\\/103_91\\.json",
-            "cookies": 0,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/b09d742d-dfe3-4b67-9616-610114908cd8",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
-                "storage.cloud"
+                "crb"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thechive.com",
+                "b.thechive.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/bid",
+            "cookies": 0.0000233,
+            "fingerprinting": 0,
+            "subdomains": [
+                "krk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "e6b89b3e087fbfb90791aa328486793292309c77b7703d2d2ec4f9f5970a7cee",
-                "aac80bbed2cd942abf42b2262fef1ceff9c1ed678631e338679d76ffb4df8017"
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "avirtualvegan.com",
-                "wanderingourworld.com",
-                "www.brownsnation.com",
-                "www.midgetmomma.com",
-                "www.simplyhappyfoodie.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/composer\\/1674645215743\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000949,
-            "cnames": [],
-            "responseHashes": [
-                "19556409f4e1bef679ae24b5a1da9e84463d7b2bc4b5ef22bfbc69bdbaa9105a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "avirtualvegan.com",
-                "doodledoods.com",
-                "fortniteinsider.com",
-                "knifeinformer.com",
-                "nerdburglars.net",
-                "thecozycoffee.com",
-                "urbantastebud.com",
-                "wanderingourworld.com",
-                "www.bluecinetech.co.uk",
-                "www.emissions.org",
-                "www.halfbakedharvest.com",
-                "www.healthcanal.com",
-                "www.midgetmomma.com",
-                "www.richardalois.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-serve-_mfu14jCkaN-Venti",
-            "cookies": 0.0000678,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000678,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "avirtualvegan.com",
-                "fortniteinsider.com",
-                "knifeinformer.com",
-                "nerdburglars.net",
-                "wanderingourworld.com",
-                "www.bluecinetech.co.uk",
-                "www.halfbakedharvest.com",
-                "www.healthcanal.com",
-                "www.midgetmomma.com",
-                "www.richardalois.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/composer\\/1674645215904\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000746,
-            "cnames": [],
-            "responseHashes": [
-                "4cdef550085e3e7afe248e7df1268cccfc350cbf8cc893659c491ceee2e45caf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "avirtualvegan.com",
-                "fortniteinsider.com",
-                "knifeinformer.com",
-                "nerdburglars.net",
-                "thecozycoffee.com",
-                "wanderingourworld.com",
-                "www.bluecinetech.co.uk",
-                "www.halfbakedharvest.com",
-                "www.healthcanal.com",
-                "www.midgetmomma.com",
-                "www.richardalois.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/655c2e35-6d5d-49f4-abe2-eceed2c70e18",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thechive.com",
-                "b.thechive.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/07a76fb5-b102-4524-9e47-0415843d0dc3",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thechive.com",
-                "b.thechive.com"
+                "blacksportsonline.com",
+                "hbcusports.com",
+                "www.telemundo.com"
             ]
         },
         {
@@ -1867,12 +776,12 @@
                 "storage.cloud"
             ],
             "apis": {
-                "window.localStorage": 14,
-                "Document.cookie getter": 13,
-                "Navigator.prototype.cookieEnabled": 14
+                "window.localStorage": 12,
+                "Document.cookie getter": 11,
+                "Navigator.prototype.cookieEnabled": 12
             },
-            "sites": 14,
-            "prevalence": 0.0000949,
+            "sites": 13,
+            "prevalence": 0.000101,
             "cnames": [],
             "responseHashes": [
                 "6bb14648f4a5ebf80cfc8571803a0cfa53ef9ef8b66e16e3972aa4f647ddf581"
@@ -1881,7 +790,6 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "babylisspro.com",
                 "chicos.com",
                 "locations.mcalistersdeli.com",
                 "pizzaranch.com",
@@ -1898,43 +806,15 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/bid",
-            "cookies": 0.0000339,
+            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/DBM",
+            "cookies": 0.0000853,
             "fingerprinting": 0,
             "subdomains": [
-                "krk"
+                "crb"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_dor": 0.000006781500067815,
-                "_li_dcdm_c": 0.000006781500067815
-            },
-            "exampleSites": [
-                "blacksportsonline.com",
-                "hbcusports.com",
-                "www.nbcsportsedge.com",
-                "www.telemundo.com",
-                "www.wellandgood.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_oUlXleKQFT-Venti",
-            "cookies": 0.0000543,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000543,
+            "sites": 12,
+            "prevalence": 0.000093,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -1943,75 +823,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "businesstechplanet.com",
-                "foolproofliving.com",
-                "footprinthero.com",
-                "gardenerspath.com",
-                "onepotdishrecipe.com",
-                "thecozycoffee.com",
-                "urbantastebud.com",
-                "worldofpans.com"
+                "dustyoldthing.com",
+                "robots.net",
+                "www.dailymail.com",
+                "www.hookandbullet.com",
+                "www.ozy.com",
+                "www.primermagazine.com",
+                "www.sheknows.com",
+                "www.smartcapitalmind.com",
+                "www.thisismoney.co.uk",
+                "www.wonderwall.com",
+                "www.youcanic.com",
+                "yoodley.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/ad\\/creative-stylizer\\/103_88\\.json",
-            "cookies": 0,
+            "rule": "kargo\\.com\\/api\\/v1\\/dv360_cb",
+            "cookies": 0.0000853,
             "fingerprinting": 0,
             "subdomains": [
-                "storage.cloud"
+                "crb"
             ],
             "apis": {},
-            "sites": 25,
-            "prevalence": 0.00017,
-            "cnames": [],
-            "responseHashes": [
-                "86e456718ffd073fb6cb18b49456bf7cb9c1db017811f8714b2e35ba9fa68e44",
-                "25caeb802adeabef207412a12d7e2771b6f22a752ff70e5d025151404ee944ae",
-                "25ccd4c17e167a0254575242fc95d0a00e8dc6940e715e57f7e2ddf6ef86a077",
-                "aa8b703a53aca8f792756cb405b35d7cf261c1debf8bc152e8896125128750b8",
-                "c46773ed5c8897816632b1358c1e56ae71ffdc8090fe626f47162fff7bc8b30e",
-                "b27f8eb64b6a3364e479a63c35a4dfa83cc5852c0750bba8e850fe06e9cb94e8",
-                "74cb3ee4df2f6e123f6d2417eeb5f5616e5ca596ec354c2925c888c6291ee1a0",
-                "1cd822413a7287b4c291061ddea6fd6e0abfe283e927200b29ba5f1c4c5bb9a4",
-                "ed592a08d9b788634d9397d0510a9c2f84077a3e2f044ca2ebaa5359f348309a",
-                "e220de408206ffdcdee0bb9c46139cad217f093b42d98aa00554d5bdf777033e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "knifeinformer.com",
-                "www.healthcanal.com",
-                "businesstechplanet.com",
-                "wildexplained.com",
-                "smartgardenguide.com",
-                "repaintnow.com",
-                "urbantastebud.com",
-                "thecozycoffee.com",
-                "footprinthero.com",
-                "www.emissions.org",
-                "worldofpans.com",
-                "fortniteinsider.com",
-                "dogfoodsmart.com",
-                "www.bluecinetech.co.uk",
-                "melissaknorris.com",
-                "champsorchumps.us",
-                "onepotdishrecipe.com",
-                "gardenerspath.com",
-                "www.richardalois.com",
-                "nerdburglars.net"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_zxmQwsW17E-OutstreamVideo",
-            "cookies": 0.0000407,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000407,
+            "sites": 12,
+            "prevalence": 0.000093,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -2020,156 +855,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "carolinahoneybees.com",
-                "feelgoodfoodie.net",
-                "teslanorth.com",
-                "www.campendium.com",
-                "www.kawalingpinoy.com",
-                "www.mercedesmedic.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/network\\/tag\\/VastParser\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 6
-            },
-            "sites": 13,
-            "prevalence": 0.0000882,
-            "cnames": [],
-            "responseHashes": [
-                "fd8c0f6c9f2da72ad1144289322bed8c386b64d7856453d07c0a6a9efc63fb6b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "carolinahoneybees.com",
-                "feelgoodfoodie.net",
-                "pipandebby.com",
-                "quiltdom.com",
-                "teslanorth.com",
-                "www.campendium.com",
-                "www.eazypeazymealz.com",
-                "www.feastingathome.com",
-                "www.godairyfree.org",
-                "www.homefortheharvest.com",
-                "www.kawalingpinoy.com",
-                "www.mercedesmedic.com",
-                "www.wandercooks.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-view-_mfu14jCkaN-Venti",
-            "cookies": 0.0000407,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000407,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dogfoodsmart.com",
-                "fortniteinsider.com",
-                "radiologyinplainenglish.com",
-                "wildexplained.com",
-                "www.flowerglossary.com",
-                "www.mattressnut.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/cp\\/file-assets\\/2022\\/1673386893_63bddb8d97045\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "4e979e3f9ccc6cb81ff138d71b0b1c721cb42ef934b8ae9f385b2efc07ab4baf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dontwastethecrumbs.com",
-                "lazyadmin.nl",
-                "thefinancebuff.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression\\.1b7dtlcpcb6yc",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dontwastethecrumbs.com",
-                "lazyadmin.nl",
-                "thefinancebuff.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-view-_oUlXleKQFT-Venti",
-            "cookies": 0.0000339,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "footprinthero.com",
-                "gardenerspath.com",
-                "thecozycoffee.com",
-                "urbantastebud.com",
-                "worldofpans.com"
+                "dustyoldthing.com",
+                "robots.net",
+                "www.dailymail.com",
+                "www.hookandbullet.com",
+                "www.ozy.com",
+                "www.primermagazine.com",
+                "www.sheknows.com",
+                "www.smartcapitalmind.com",
+                "www.thisismoney.co.uk",
+                "www.wonderwall.com",
+                "www.youcanic.com",
+                "yoodley.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/api\\/v1\\/track",
-            "cookies": 0.0000407,
+            "cookies": 0.0000465,
             "fingerprinting": 0,
             "subdomains": [
                 "kds-pixel"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000407,
+            "prevalence": 0.0000465,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -2187,15 +896,15 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/v2\\/request\\/adr",
+            "rule": "kargo\\.com\\/v2\\/embed\\/check",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "socialcanvas-api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 5,
+            "prevalence": 0.0000388,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -2203,42 +912,83 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "littlethings.com",
+                "robots.net",
                 "wikimon.net",
-                "www.lovebscott.com"
+                "www.lovebscott.com",
+                "www.soapsindepth.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/v2\\/request\\/adr",
+            "rule": "kargo\\.com\\/v2\\/embed\\/check",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "socialcanvas-api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 5,
+            "prevalence": 0.0000388,
             "cnames": [],
             "responseHashes": [
-                "843ac01149cced785dfebd0028d3b03ba78e286e1c6f9517ebfcdb609d97af4c"
+                "c924005b22fe616e53bc6c94c673fdc3d697167f075c7f773d834335c8cff7dd",
+                "6d185913294fd766d659e9b84a371af5e40cd08072b6d6ce351262508a048e10",
+                "7960d341ed00106bc49ca498b265d75c69e71fc9ea41f5baf29b732b60486b0b",
+                "0debefd29f39fc1219d22362f58d425a83913e067acf3dea98213113da4e7d33"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "littlethings.com",
+                "robots.net",
                 "wikimon.net",
-                "www.lovebscott.com"
+                "www.lovebscott.com",
+                "www.soapsindepth.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_mfu14jCkaN-OutstreamVideo",
-            "cookies": 0.0000475,
+            "rule": "kargo\\.com\\/ad\\/network\\/tag\\/v3\\/_rCJ2lqOSZc6wJg5tLgtWH3Nx\\.js",
+            "cookies": 0.0000465,
+            "fingerprinting": 2,
+            "subdomains": [
+                "storage.cloud"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "window.localStorage": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Document.cookie setter": 6,
+                "Navigator.prototype.doNotTrack": 6,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4
+            },
+            "sites": 6,
+            "prevalence": 0.0000465,
+            "cnames": [],
+            "responseHashes": [
+                "4cd573bd664d98faeed5680773ee55bfe1d8e61894c21c3e3de2d84439cea594"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outdoortroop.com",
+                "www.hookandbullet.com",
+                "www.mercedesmedic.com",
+                "www.primermagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/event\\/won",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tk"
+                "kraken.prod"
             ],
             "apis": {},
-            "sites": 8,
+            "sites": 7,
             "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
@@ -2248,26 +998,25 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pipandebby.com",
-                "quiltdom.com",
-                "teslanorth.com",
-                "www.eazypeazymealz.com",
-                "www.godairyfree.org",
-                "www.homefortheharvest.com",
+                "outdoortroop.com",
+                "www.hookandbullet.com",
                 "www.mercedesmedic.com",
-                "www.wandercooks.com"
+                "www.primermagazine.com",
+                "www.usmagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/event\\/video\\/load",
+            "rule": "kargo\\.com\\/api\\/v3\\/event\\/serve",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "kraken.prod"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000407,
+            "sites": 7,
+            "prevalence": 0.0000543,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -2276,12 +1025,486 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pipandebby.com",
-                "teslanorth.com",
-                "www.godairyfree.org",
-                "www.homefortheharvest.com",
-                "www.kawalingpinoy.com",
-                "www.mercedesmedic.com"
+                "outdoortroop.com",
+                "www.hookandbullet.com",
+                "www.mercedesmedic.com",
+                "www.primermagazine.com",
+                "www.usmagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/js\\/rh-k\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "socialcanvas-cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 6,
+            "prevalence": 0.0000465,
+            "cnames": [],
+            "responseHashes": [
+                "788a90ac82e81a72a1d5da80fbcebf245eb775772c025015729bccc54b97dc51"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outdoortroop.com",
+                "www.hookandbullet.com",
+                "www.mercedesmedic.com",
+                "www.primermagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/t\\/imp_track-response-_zxmQwsW17E-OutstreamVideo",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outdoortroop.com",
+                "www.youcanic.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/ad\\/network\\/tag\\/VastParser\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "storage.cloud"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 3
+            },
+            "sites": 5,
+            "prevalence": 0.0000388,
+            "cnames": [],
+            "responseHashes": [
+                "fd8c0f6c9f2da72ad1144289322bed8c386b64d7856453d07c0a6a9efc63fb6b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outdoortroop.com",
+                "www.hookandbullet.com",
+                "www.mercedesmedic.com",
+                "www.primermagazine.com",
+                "www.youcanic.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/request\\/adr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "843ac01149cced785dfebd0028d3b03ba78e286e1c6f9517ebfcdb609d97af4c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wikimon.net",
+                "www.lovebscott.com",
+                "www.soapsindepth.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/request\\/adr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wikimon.net",
+                "www.lovebscott.com",
+                "www.soapsindepth.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/1907b7a0-1088-47c4-8704-0c76e323007c",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bakefromscratch.com",
+                "www.bakefromscratch.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/c0b62404-96a5-430b-a826-d87b9222413c",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bakefromscratch.com",
+                "www.bakefromscratch.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/ad\\/network\\/klick\\/klick-dailymail\\.js",
+            "cookies": 0.0000155,
+            "fingerprinting": 1,
+            "subdomains": [
+                "storage.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "b94472d780db3b45c0920bb2dbd0cb57660d80671491ada0ef15776f3de9e812"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "krgtst": {
+                    "ttl": 10,
+                    "length": 7,
+                    "prevalence": 0.000015508324092956893,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymail.com",
+                "www.thisismoney.co.uk"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/event\\/boot",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "klkstrm"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymail.com",
+                "www.distractify.com",
+                "www.greenmatters.com",
+                "www.thisismoney.co.uk"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/ad\\/network\\/tag\\/Kargo-Data\\.js",
+            "cookies": 0.0000155,
+            "fingerprinting": 1,
+            "subdomains": [
+                "storage.cloud"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "caefdcc9ae00a197310c0e74d02cc5011a10cf2f7494a3c6e28cd68dc7c37540"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "krg_crb": {
+                    "ttl": 126144009,
+                    "length": 248,
+                    "prevalence": 0.000015508324092956893,
+                    "uniqueness": 1
+                },
+                "krg_uid": {
+                    "ttl": 126144009,
+                    "length": 126,
+                    "prevalence": 0.000015508324092956893,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymail.com",
+                "www.distractify.com",
+                "www.greenmatters.com",
+                "www.thisismoney.co.uk"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/event\\/sync-success",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "klkstrm"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymail.com",
+                "www.greenmatters.com",
+                "www.thisismoney.co.uk"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/ad\\/network\\/klick\\/klick-distractify\\.js",
+            "cookies": 0.00000775,
+            "fingerprinting": 1,
+            "subdomains": [
+                "storage.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "b94472d780db3b45c0920bb2dbd0cb57660d80671491ada0ef15776f3de9e812"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "krgtst": {
+                    "ttl": 10,
+                    "length": 7,
+                    "prevalence": 0.000007754162046478447,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "distractify.com",
+                "www.greenmatters.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/888cb0a2-2b73-4efd-a140-1793bc462705",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebaumsworld.com",
+                "www.ebaumsworld.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/bc36a48a-e98a-442e-9d4d-502e418c7f3f",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "girlsaskguys.com",
+                "www.girlsaskguys.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/0ba568fd-67a9-4bf2-9112-cc322406000c",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "girlsaskguys.com",
+                "www.girlsaskguys.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/t\\/imp_track-response-_mfu14jCkaN-OutstreamVideo",
+            "cookies": 0.0000233,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hookandbullet.com",
+                "www.mercedesmedic.com",
+                "www.primermagazine.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/rhk\\/pr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "843ac01149cced785dfebd0028d3b03ba78e286e1c6f9517ebfcdb609d97af4c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hookandbullet.com",
+                "www.primermagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/rhk\\/pr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hookandbullet.com",
+                "www.primermagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/verizon",
+            "cookies": 0.000031,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hookandbullet.com",
+                "www.primermagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
             ]
         },
         {
@@ -2294,8 +1517,8 @@
             "apis": {
                 "window.innerHeight": 2
             },
-            "sites": 6,
-            "prevalence": 0.0000407,
+            "sites": 3,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "fcde3891bf7a75b5e92ed50e0e4232c01cb3f25939ad9e93765ad3c445d1509b"
@@ -2304,24 +1527,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pipandebby.com",
-                "teslanorth.com",
-                "www.godairyfree.org",
-                "www.homefortheharvest.com",
-                "www.kawalingpinoy.com",
-                "www.mercedesmedic.com"
+                "hookandbullet.com",
+                "www.primermagazine.com",
+                "www.youcanic.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/Martin",
-            "cookies": 0.0000203,
+            "rule": "kargo\\.com\\/api\\/v1\\/event\\/video\\/load",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "crb"
+                "kraken.prod"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -2330,44 +1550,45 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pipandebby.com",
-                "www.godairyfree.org",
-                "www.halfbakedharvest.com"
+                "hookandbullet.com",
+                "www.primermagazine.com",
+                "www.youcanic.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/event\\/adtag-pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kraken.prod"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hookandbullet.com",
+                "www.primermagazine.com",
+                "www.youcanic.com",
+                "yoodley.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/t\\/imp_track-serve-_mfu14jCkaN-OutstreamVideo",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pipandebby.com",
-                "www.godairyfree.org",
-                "www.homefortheharvest.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_sMDfPyBLpC-DesktopBreakout",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "tk"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -2376,836 +1597,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "prodigygamers.com",
-                "www.culinaryhill.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression\\.55i1ytlcgh3khy",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "prodigygamers.com",
-                "www.culinaryhill.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/creative\\/88d7b34b-827a-4f39-ad4a-d85f2718030b\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "c3b95b66c46d746274d6e78ea675000f4b1b3612f283b571222d709ffad58c38"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "redbus2us.com",
-                "vinodelvida.com",
-                "writingtipsoasis.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression\\.1b7dtld227o3c",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "redbus2us.com",
-                "vinodelvida.com",
-                "writingtipsoasis.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/57517dda-a96d-4e04-a854-6524c553bfa0",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheknows.com",
-                "soaps.sheknows.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/f6e37cdd-9331-4f59-8172-9c6c5951123b",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheknows.com",
-                "soaps.sheknows.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_oUlXleKQFT-OutstreamVideo",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "teslanorth.com",
-                "www.feastingathome.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/f83bcf66-c899-4e30-a267-05b9bb29de2d",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "greatergood.com",
-                "theanimalrescuesite.greatergood.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/10852cc9-f946-4f0c-a3bf-19748f01c114",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "greatergood.com",
-                "theanimalrescuesite.greatergood.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-completeview-_oUlXleKQFT-Venti",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thecozycoffee.com",
-                "worldofpans.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/imp_track-response-_zxmQwsW17E-MiddleBanner",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thefinancebuff.com",
-                "www.diysmarthomehub.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/network\\/kap\\/templates\\/social-banner-1\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vinodelvida.com",
-                "www.elizabethrider.com",
-                "www.flowerglossary.com",
-                "www.greencarfuture.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression\\.55i1ytld25493i",
-            "cookies": 0.0000271,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "writingtipsoasis.com",
-                "www.elizabethrider.com",
-                "www.flowerglossary.com",
-                "www.greencarfuture.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/creative\\/b70d2b0d-dbf3-4714-8cb7-253cb91d3405\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "cb601ae642400eb99f22055d8ae95d316eb00830ca8edac511fc2f2f10fa14a9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "writingtipsoasis.com",
-                "www.elizabethrider.com",
-                "www.flowerglossary.com",
-                "www.greencarfuture.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/3638e1f0-1b8c-4bb9-b33c-2ce78a9ded0f",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bakefromscratch.com",
-                "www.bakefromscratch.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/7561db3c-296b-40aa-b304-4f7514c4579b",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bakefromscratch.com",
-                "www.bakefromscratch.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/pixel",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pgsth"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "charlottesweb.com",
-                "www.charlottesweb.com",
-                "www.madison-reed.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/network\\/klick\\/klick-dailymail\\.js",
-            "cookies": 0.0000203,
-            "fingerprinting": 1,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Document.cookie getter": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.doNotTrack": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "b94472d780db3b45c0920bb2dbd0cb57660d80671491ada0ef15776f3de9e812"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "krgtst": {
-                    "ttl": 10,
-                    "length": 7,
-                    "prevalence": 0.000020344500203445003,
-                    "uniqueness": 0.3333333333333333
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/event\\/boot",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "klkstrm"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com",
-                "www.distractify.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/network\\/tag\\/Kargo-Data\\.js",
-            "cookies": 0.0000271,
-            "fingerprinting": 1,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {
-                "Document.cookie getter": 4,
-                "window.localStorage": 4,
-                "Document.cookie setter": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "caefdcc9ae00a197310c0e74d02cc5011a10cf2f7494a3c6e28cd68dc7c37540"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "krg_crb": {
-                    "ttl": 126144005,
-                    "length": 238,
-                    "prevalence": 0.00002712600027126,
-                    "uniqueness": 1
-                },
-                "krg_uid": {
-                    "ttl": 126144005,
-                    "length": 126,
-                    "prevalence": 0.000020344500203445003,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com",
-                "www.distractify.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/event\\/sync-success",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "klkstrm"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com",
-                "www.distractify.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/3ec8ca87-d2ad-4818-bdff-b70d4f39627e",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.co.uk",
-                "www.dailymail.co.uk"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/abc370fe-821d-4384-88bb-cb659f32439c",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2aee34568e64a58a03404257b58c4b908f0cf9ff33a385cbf33a4ed17c2afd11"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.com",
-                "www.dailymail.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/mediamath\\/5180a7ac-b240-8555-2307-d3f666083b8c",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailymail.com",
-                "www.dailymail.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/a5967b6e-69e9-4757-b7f1-de57cc3ee495",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ebaumsworld.com",
-                "www.ebaumsworld.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression-inside\\.55i1ytld25493h",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elizabethrider.com",
-                "www.flowerglossary.com",
-                "www.greencarfuture.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/7bc1585a-2e3e-4b9f-84bb-369e4cc61770",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "girlsaskguys.com",
-                "www.girlsaskguys.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/919ac0d3-db7e-4c5e-aaca-6a42b0a9a52e",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "girlsaskguys.com",
-                "www.girlsaskguys.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/43cac81f-5ba5-46b9-82cf-e7e23c5316d2",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cbac07a0547ce24f283ffb650101c8d229c3d8e101cd17fd783895cece63f961"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godairyfree.org",
-                "www.godairyfree.org"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/ad\\/creative\\/5341aceb-7b0b-4a84-bf57-c028ad4c6c90\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "storage.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "32666868a722c0558d3704ad08573d76bf79010e9d15a880f0096bf2ca130977"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gokartguide.com",
-                "www.gokartguide.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression\\.55i1ytld1n9yqy",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gokartguide.com",
-                "www.gokartguide.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/t\\/impression-inside\\.55i1ytld1n9yqx",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gokartguide.com",
-                "www.gokartguide.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/bbbcd9ff-85dc-4698-8daa-f87ed0eadf0f",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "intouchweekly.com",
-                "www.intouchweekly.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/fc7622bb-e4e5-4c27-a9ba-9b06126d704a",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lifeandstylemag.com",
-                "www.lifeandstylemag.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/e0820309-8126-4ec6-835c-4ae3188e0751",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "louisianacookin.com",
-                "www.louisianacookin.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/4cfb2e18-96d0-42de-8f3b-2102c42cd8d7",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "louisianacookin.com",
-                "www.louisianacookin.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/64326d03-fc3f-ed78-1c0a-e27bbf4770d5",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lovebscott.com",
-                "www.lovebscott.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/0b057ff5-426f-4fcc-a729-9c92f6a5288e",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fb3d2b2e17498d5d5724f2877e03c7eb142bb343fc914d4f48d474cfbd5f5bcc"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lovebscott.com",
-                "www.lovebscott.com"
+                "hookandbullet.com",
+                "www.primermagazine.com"
             ]
         },
         {
@@ -3217,7 +1610,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "d2793fd9b002c57428849a31a352be4901d07858e4bb74443a703f956b34ddbb"
@@ -3242,7 +1635,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "939d6eedd40dc077349c30ab5aff698540b5935d8c1c1e3e8c6dc40841b17cc0"
@@ -3256,35 +1649,59 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/25c8f76c-3780-4d9f-919e-52b18189524d",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/pixel",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pgsth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "madison-reed.com",
+                "www.madison-reed.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsync\\/10341010-e50d-0923-2614-1c5a49da76cb",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "7334d5145c51668c5f55f4ba55c2588cd49787676182e7fd89774ae1bab5b6d1"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "organicbeautylover.com",
-                "www.organicbeautylover.com"
+                "mbvans.com",
+                "www.mbvans.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/b3f16f68-7dfe-4a0b-ae07-91ce9fe16ecd",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/7449c7d3-bc19-4cc3-aab6-ad52b47a2d7f",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -3296,15 +1713,15 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/c64641da-c450-48e7-bbbd-98c3d980475a",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/e703793b-3271-419b-adee-285844e8c8a5",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -3316,15 +1733,15 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/d014db72-edf5-4403-acd9-3b291c23a275",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/9bd2347e-2217-4dc8-aebb-a408f1113edd",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -3336,15 +1753,58 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/cbc3280a-f7ab-dfe9-6f73-e978b11dc5be",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/72588bd6-9545-4bf0-862e-10791cedd0e9",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pauladeenmagazine.com",
+                "www.pauladeenmagazine.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/send",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad-metrics"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "primermagazine.com",
+                "www.primermagazine.com",
+                "www.youcanic.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/d0db7cdc-665d-cd42-702d-0c9c37d87c93",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -3356,18 +1816,18 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/160d34e7-9135-4063-8cd7-569991905e21",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/20298921-601b-4b7d-be75-eb61106c3e0c",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "04c2b44f24cc18a0bf59eec1dc8f7bc8107048d44f4addf37db22a4243942e76"
+                "5c76c1f3b52e1a35f9127f2e233100223f7f79514e0c93ab7b17c1db85341843"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -3378,15 +1838,15 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/99fa813f-2af5-47ca-ad2a-19207e3b32e7",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/a1461b10-ae5a-47b6-8334-62feac53bb63",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -3398,15 +1858,57 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/4db5938e-791d-75ac-f42e-2f889302a081",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/f0488fcb-8b78-4438-3fde-d986effdc6b8",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartcapitalmind.com",
+                "www.smartcapitalmind.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/4843648e-be78-435e-a9af-79b4737a224e",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "15c33f9e11ce977743bb0890d00f79a781b1236258a481d5441f2ae28d64669f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartcapitalmind.com",
+                "www.smartcapitalmind.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/c2b9cd78-a570-f435-b7f1-acbbdc4e77f2",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -3420,18 +1922,18 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/0de16ad9-fb47-436e-b17b-12eb7c0ccc5d",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/33364de2-e468-484e-af35-56fe9f79acdc",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "a1354764512a7bc3a50fb7e2502b70170bf47509e2af3500212e23a7a97fec5c"
+                "969a359d22207ed2301aa67cdc99675d02fdb2069a8eea063e449ddc0497108b"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -3442,121 +1944,121 @@
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/fce238b3-b056-870d-e46c-4f02f8cec843",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/25bb8e87-5a67-4600-811a-ba064fd561de",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasteofthesouthmagazine.com",
+                "www.tasteofthesouthmagazine.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/03e10540-dbd9-43b4-b317-8f4ec77cb6ac",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasteofthesouthmagazine.com",
+                "www.tasteofthesouthmagazine.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/4757b522-6bc5-4dbf-a07e-748112cb5cb0",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "89a92f2c3eff0f494f0e29780edbe904a195cee979a4a1f4de49385cb71060d5"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thisismoney.co.uk",
+                "www.thisismoney.co.uk"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/mediamath\\/d7c6f60e-0a16-5afe-e313-18f40b3bd9f5",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "smartcapitalmind.com",
-                "www.smartcapitalmind.com"
+                "thisismoney.co.uk",
+                "www.thisismoney.co.uk"
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/572e0c18-4aa9-445f-bc8f-d68cd52d2507",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/440e9315-bb8e-c337-8858-6f81cd9f643f",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "87b323b5dee13ee8f607870c8e2fc02bc6d1217d096a82d1832a5b477a85c6fe"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smartcapitalmind.com",
-                "www.smartcapitalmind.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/803123d0-e442-4173-8202-78113d035da4",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasteofthesouthmagazine.com",
-                "www.tasteofthesouthmagazine.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/sync\\/AppNexus\\/3ddf2158-e808-47a7-86c7-7bcf97c046ea",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tasteofthesouthmagazine.com",
-                "www.tasteofthesouthmagazine.com"
+                "wonderwall.com",
+                "www.wonderwall.com"
             ]
         },
         {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/cb6b8083-7f08-4b6c-9fb5-f7df4e36d8db",
-            "cookies": 0.0000136,
+            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/4adef784-2aef-4d6d-a1c0-553fd0a58422",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "crb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "c1c907af41949106ee2e4d2d9eb4c4733bacd03d10a74f96f4baa4ade4846909"
+                "818799a6173ec41e3e2d26146b196aaf2b930b064ae7d139cb80ba8b8cd09988"
             ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasteofthesouthmagazine.com",
-                "www.tasteofthesouthmagazine.com"
-            ]
-        },
-        {
-            "rule": "kargo\\.com\\/api\\/v1\\/initsyncrnd\\/665b8524-4358-4404-a3b9-e98dbae890df",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -3572,61 +2074,61 @@
         "Ad Fraud"
     ],
     "performance": {},
-    "cookies": 0.0317,
+    "cookies": 0.0293,
     "topInitiators": [
         {
             "domain": "adthrive.com",
-            "prevalence": 0.7652382711488733
+            "prevalence": 0.7506301875192131
         },
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 0.06875692648688585
+            "prevalence": 0.069289886258838
         },
         {
             "domain": "pubmatic.com",
-            "prevalence": 0.043729220539342445
+            "prevalence": 0.05102981862895788
         },
         {
             "domain": "first party",
-            "prevalence": 0.03343184336904322
+            "prevalence": 0.030371964340608668
         },
         {
             "domain": "blogherads.com",
-            "prevalence": 0.011821204285186553
+            "prevalence": 0.012480786965877651
         },
         {
             "domain": "outbrain.com",
-            "prevalence": 0.011220908755079424
+            "prevalence": 0.01180448816477098
         },
         {
             "domain": "rubiconproject.com",
-            "prevalence": 0.006464721093461396
+            "prevalence": 0.007439286812173379
         },
         {
             "domain": "dotomi.com",
-            "prevalence": 0.006002955301071296
+            "prevalence": 0.005840762373193975
         },
         {
             "domain": "rhombusads.com",
-            "prevalence": 0.005310306612486147
+            "prevalence": 0.0057177989548109435
         },
         {
             "domain": "hearstnp.com",
-            "prevalence": 0.004017362393793867
+            "prevalence": 0.00522594528127882
         }
     ],
     "types": {
-        "Preflight": 113,
-        "XHR": 1734,
-        "Script": 511,
-        "Image": 3278,
-        "Document": 831,
-        "Ping": 32
+        "XHR": 1405,
+        "Script": 148,
+        "Preflight": 49,
+        "Image": 1833,
+        "Document": 648,
+        "Ping": 28
     },
     "nameservers": [
-        "ns-635.awsdns-15.net",
         "ns-1512.awsdns-61.org",
-        "ns-243.awsdns-30.com",
-        "ns-1837.awsdns-37.co.uk"
+        "ns-1837.awsdns-37.co.uk",
+        "ns-635.awsdns-15.net",
+        "ns-243.awsdns-30.com"
     ]
 }

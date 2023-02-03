@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000109,
-    "sites": 16,
+    "prevalence": 0.000171,
+    "sites": 22,
     "subdomains": [
         "cdn",
         "api",
@@ -15,35 +15,162 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "polarbyte\\.com\\/idm\\/pons\\/pb\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 4,
+                "Date.prototype.getTime": 4,
+                "window.sessionStorage": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "b6c818850744609d79fc4e67fa027558cd9d29ba599425061d0cc5a28f4c5fcc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pons.com",
+                "de.pons.com",
+                "en.pons.com",
+                "pl.pons.com"
+            ]
+        },
+        {
+            "rule": "polarbyte\\.com\\/idm\\/pons\\/iaw\\.min\\.js",
+            "cookies": 0.0000233,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4,
+                "window.sessionStorage": 4,
+                "window.innerHeight": 4,
+                "Document.cookie getter": 3,
+                "window.innerWidth": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "bafc613ca17e7ede9cce3e2f2dc77357e493ad982226cd1631206f086a930ca9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "iawpvccs": {
+                    "ttl": 31536001,
+                    "length": 1,
+                    "prevalence": 0.000023262486139435343,
+                    "uniqueness": 0.3333333333333333
+                },
+                "iawpvc": {
+                    "ttl": 31536001,
+                    "length": 1,
+                    "prevalence": 0.000023262486139435343,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pons.com",
+                "de.pons.com",
+                "en.pons.com",
+                "pl.pons.com"
+            ]
+        },
+        {
+            "rule": "polarbyte\\.com\\/idm\\/pons\\/uprs\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "b313eb40123a559b292e4d4edd19ab9215c588a316dd2c78d143349db2dbd4bf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pons.com",
+                "de.pons.com",
+                "en.pons.com",
+                "pl.pons.com"
+            ]
+        },
+        {
+            "rule": "polarbyte\\.com\\/idm\\/uprs_floors\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000775,
+            "cnames": [],
+            "responseHashes": [
+                "ad9d7a97ac20f39d12f4b6495ffa1f1419039f95da2f4bbfe23ddfe1f40d87ed"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pons.com",
+                "de.pons.com",
+                "en.bab.la",
+                "en.pons.com",
+                "pl.bab.la",
+                "pl.pons.com",
+                "sv.bab.la",
+                "www.ldoceonline.com",
+                "www.macmillandictionary.com",
+                "www.oxfordlearnersdictionaries.com"
+            ]
+        },
+        {
             "rule": "polarbyte\\.com\\/idm\\/babla\\/pb\\.min\\.js",
-            "cookies": 0.0000271,
+            "cookies": 0.000031,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.sessionStorage": 3,
+                "window.sessionStorage": 4,
                 "Navigator.prototype.appName": 4,
                 "Date.prototype.getTime": 4,
                 "window.localStorage": 4,
                 "Navigator.prototype.cookieEnabled": 4,
                 "Document.cookie getter": 4,
                 "Document.cookie setter": 4,
-                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 4,
                 "window.innerWidth": 4,
                 "window.innerHeight": 4,
                 "Navigator.prototype.doNotTrack": 4,
                 "Navigator.prototype.userAgent": 4,
                 "Navigator.prototype.language": 4,
-                "Screen.prototype.width": 4,
                 "Screen.prototype.height": 4,
-                "Screen.prototype.colorDepth": 4,
+                "Screen.prototype.width": 4,
                 "Date.prototype.getTimezoneOffset": 4,
-                "PerformanceTiming.prototype.navigationStart": 3,
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "Screen.prototype.colorDepth": 4,
                 "Navigator.prototype.connection": 2
             },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "d6054084ca5339ec710b768476000eef1e0778349400c5ee5b71bb73070c442d"
@@ -51,45 +178,45 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592002,
+                    "ttl": 2592001,
                     "length": 16,
-                    "prevalence": 0.000020344500203445003,
-                    "uniqueness": 0.3333333333333333
+                    "prevalence": 0.000031016648185913786,
+                    "uniqueness": 0.25
                 },
                 "_sharedID": {
-                    "ttl": 2592009,
+                    "ttl": 2592007,
                     "length": 36,
-                    "prevalence": 0.00002712600027126,
+                    "prevalence": 0.000031016648185913786,
                     "uniqueness": 1
                 },
                 "_lr_retry_request": {
-                    "ttl": 3609,
+                    "ttl": 3607,
                     "length": 4,
-                    "prevalence": 0.00002712600027126,
+                    "prevalence": 0.000031016648185913786,
                     "uniqueness": 0.25
                 },
                 "_lr_env_src_ats": {
-                    "ttl": 2592009,
+                    "ttl": 2592007,
                     "length": 5,
-                    "prevalence": 0.00002712600027126,
+                    "prevalence": 0.000031016648185913786,
                     "uniqueness": 0.25
                 },
                 "cto_bundle": {
                     "ttl": 33696001,
-                    "length": 187,
-                    "prevalence": 0.000020344500203445003,
+                    "length": 261,
+                    "prevalence": 0.000031016648185913786,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
                     "ttl": 33696001,
-                    "length": 146,
-                    "prevalence": 0.000020344500203445003,
+                    "length": 194,
+                    "prevalence": 0.000031016648185913786,
                     "uniqueness": 1
                 },
                 "pbjs-unifiedid": {
-                    "ttl": 5184017,
+                    "ttl": 5184013,
                     "length": 150,
-                    "prevalence": 0.000006781500067815,
+                    "prevalence": 0.000023262486139435343,
                     "uniqueness": 1
                 }
             },
@@ -103,14 +230,14 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/babla\\/iaw\\.min\\.js",
-            "cookies": 0.0000271,
+            "cookies": 0.000031,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 4,
-                "window.sessionStorage": 3,
+                "window.sessionStorage": 4,
                 "Document.cookie getter": 4,
                 "window.innerWidth": 4,
                 "window.innerHeight": 4,
@@ -121,7 +248,7 @@
                 "Navigator.prototype.vendor": 4
             },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "50aee16e7d8e3f12a1f6c9d4f9b792673f71b205be80d539819ee761f9ea28b0"
@@ -131,19 +258,19 @@
                 "iawpvccs": {
                     "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.000020344500203445003,
-                    "uniqueness": 0.3333333333333333
+                    "prevalence": 0.000031016648185913786,
+                    "uniqueness": 0.25
                 },
                 "iawpvc": {
                     "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.000020344500203445003,
-                    "uniqueness": 0.3333333333333333
+                    "prevalence": 0.000031016648185913786,
+                    "uniqueness": 0.25
                 },
                 "iawppid": {
-                    "ttl": 15552003,
+                    "ttl": 15552002,
                     "length": 32,
-                    "prevalence": 0.00002712600027126,
+                    "prevalence": 0.000031016648185913786,
                     "uniqueness": 1
                 }
             },
@@ -164,10 +291,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
-                "4387c5996de37f92932d136b1cce1f290bc3ccec482822b7484ae9b4c89e5f6f"
+                "70a91a8c9d3ca60287c492c7f7c7f0a44ef70185ffb26dc691d1ea4c4058f86a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -180,35 +307,8 @@
             ]
         },
         {
-            "rule": "polarbyte\\.com\\/idm\\/uprs_floors\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000475,
-            "cnames": [],
-            "responseHashes": [
-                "2422cf93a88f8059a374a039493138b9f6f887cfce5673b082bb6abd27627ceb"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bab.la",
-                "en.bab.la",
-                "pl.bab.la",
-                "sv.bab.la",
-                "www.ldoceonline.com",
-                "www.macmillandictionary.com",
-                "www.oxfordlearnersdictionaries.com"
-            ]
-        },
-        {
             "rule": "polarbyte\\.com\\/idm\\/hcd\\/pb\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -227,16 +327,16 @@
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
-                "Screen.prototype.height": 2,
                 "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.vendor": 2,
                 "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.vendor": 2,
                 "Navigator.prototype.connection": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "20288ce61e7b726b88f9a5369252f7c57136251f857fd5a14cc92bd52d1bbb81"
@@ -244,45 +344,39 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592000,
+                    "ttl": 2592001,
                     "length": 16,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "_sharedID": {
-                    "ttl": 2592011,
+                    "ttl": 2592009,
                     "length": 36,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 },
                 "_lr_retry_request": {
-                    "ttl": 3611,
+                    "ttl": 3609,
                     "length": 4,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "_lr_env_src_ats": {
-                    "ttl": 2592011,
+                    "ttl": 2592009,
                     "length": 5,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
-                    "ttl": 33696000,
-                    "length": 275,
-                    "prevalence": 0.00001356300013563,
+                    "ttl": 33696001,
+                    "length": 271,
+                    "prevalence": 0.000007754162046478447,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696000,
-                    "length": 189,
-                    "prevalence": 0.00001356300013563,
-                    "uniqueness": 1
-                },
-                "pbjs-unifiedid": {
-                    "ttl": 5184015,
-                    "length": 151,
-                    "prevalence": 0.00001356300013563,
+                    "ttl": 33696001,
+                    "length": 188,
+                    "prevalence": 0.000007754162046478447,
                     "uniqueness": 1
                 }
             },
@@ -294,7 +388,7 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/hcd\\/iaw\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -312,7 +406,7 @@
                 "Navigator.prototype.vendor": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "99c27f21390cd1e86dfa80197b0166ccb72dc22f109418491a7bc26d3e686756"
@@ -320,21 +414,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "iawpvccs": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawpvc": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawppid": {
                     "ttl": 15552002,
                     "length": 32,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 }
             },
@@ -346,17 +440,17 @@
         },
         {
             "rule": "polarbyte\\.com\\/getDeviceId",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "19805f1df4724f8f798b1614f4fa3145c8dc8c07b581bbd93a0af9e3ec068bb3"
+                "617edb4a0bcfe90eb25e68ac7dc664d38d70897c2501cb79adfcf5ea63d0d34b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -375,10 +469,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "c90a4c6cbdb74a16aea45330cd1a0758307e8e58b98ffe882d35f1356c23e643"
+                "4606b5e1871ed95a600e6352f40cb74cac4325f7a44c0e6b58d178f0b80a8c09"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -397,7 +491,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "26f37ed8585198bfa1f4025648636e4265478bea5167c585729cea2991f974bc"
@@ -412,7 +506,7 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/ldoce\\/pb\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -439,7 +533,7 @@
                 "Navigator.prototype.connection": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "b1944ba43a30c1158ed3f317c39dad9a83d123bd43b399197abdab0dd9cf0b3c"
@@ -447,28 +541,16 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592001,
+                    "ttl": 2592000,
                     "length": 16,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "_sharedID": {
-                    "ttl": 2592013,
+                    "ttl": 2592000,
                     "length": 36,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
-                },
-                "_lr_retry_request": {
-                    "ttl": 3613,
-                    "length": 4,
-                    "prevalence": 0.00001356300013563,
-                    "uniqueness": 0.5
-                },
-                "_lr_env_src_ats": {
-                    "ttl": 2592013,
-                    "length": 5,
-                    "prevalence": 0.00001356300013563,
-                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -479,7 +561,7 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/ldoce\\/iaw\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -497,7 +579,7 @@
                 "Navigator.prototype.vendor": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "78becd7f349b69962fb1552cde648a8a627e28790832ab7339476bd1e2bf9ecd"
@@ -505,21 +587,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "iawpvccs": {
-                    "ttl": 31536001,
+                    "ttl": 31536000,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawpvc": {
-                    "ttl": 31536001,
+                    "ttl": 31536000,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawppid": {
-                    "ttl": 15552009,
+                    "ttl": 15552003,
                     "length": 32,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 }
             },
@@ -538,10 +620,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "2e790b818a44fba6afac4bf06122bf2e43ad3213de0240beaa40d4ae23fc8640"
+                "6297bd28dd5044314f7984ed0ce91e7ce2dbf046ae1a323e3b0520f559877591"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -553,7 +635,7 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/medo\\/pb\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -572,14 +654,14 @@
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "Screen.prototype.colorDepth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "23291b17b013a664c38cf645727a3046a8a554938b0b24d5a1bc04611d736894"
@@ -587,45 +669,45 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592002,
+                    "ttl": 2592000,
                     "length": 16,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "_sharedID": {
-                    "ttl": 2592007,
+                    "ttl": 2592005,
                     "length": 36,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 },
                 "_lr_retry_request": {
-                    "ttl": 3607,
+                    "ttl": 3605,
                     "length": 4,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "_lr_env_src_ats": {
-                    "ttl": 2592007,
+                    "ttl": 2592005,
                     "length": 5,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
-                    "ttl": 33696001,
-                    "length": 183,
-                    "prevalence": 0.00001356300013563,
+                    "ttl": 33696000,
+                    "length": 294,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696001,
-                    "length": 161,
-                    "prevalence": 0.00001356300013563,
+                    "ttl": 33696000,
+                    "length": 221,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 },
                 "pbjs-unifiedid": {
-                    "ttl": 5184008,
+                    "ttl": 5184007,
                     "length": 150,
-                    "prevalence": 0.000006781500067815,
+                    "prevalence": 0.000007754162046478447,
                     "uniqueness": 1
                 }
             },
@@ -637,7 +719,7 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/medo\\/iaw\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -655,7 +737,7 @@
                 "Navigator.prototype.vendor": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "e5b0e0d2b51269ee6161835595d38b0fac87de58764e6e2bc4bddf1816dd8c0e"
@@ -663,21 +745,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "iawpvccs": {
-                    "ttl": 31536002,
+                    "ttl": 31536000,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawpvc": {
-                    "ttl": 31536002,
+                    "ttl": 31536000,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawppid": {
-                    "ttl": 15552003,
+                    "ttl": 15552001,
                     "length": 32,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 }
             },
@@ -696,10 +778,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "aa81146a71275d3bbac16f71bc045d08fa97366f5ac313073b52b901f6d27cde"
+                "67ac555ae6c0cf415ac8136dd72403958ede46b996e02365431c008e6dda258f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -711,20 +793,20 @@
         },
         {
             "rule": "polarbyte\\.com\\/reworldmedia\\/mf\\/iac\\.min\\.js",
-            "cookies": 0.00000678,
+            "cookies": 0.00000775,
             "fingerprinting": 1,
             "subdomains": [
                 "demo.cdn"
             ],
             "apis": {
+                "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 1,
                 "window.sessionStorage": 1,
-                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 1,
                 "Document.cookie getter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "a4209ea9973c7ee87e80bc86e718eb4948a645b0d5c7e49bbf4fe76a6686d73c"
@@ -732,15 +814,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "iawpvccs": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.000006781500067815,
+                    "prevalence": 0.000007754162046478447,
                     "uniqueness": 1
                 },
                 "iawpvc": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.000006781500067815,
+                    "prevalence": 0.000007754162046478447,
                     "uniqueness": 1
                 }
             },
@@ -752,7 +834,7 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/old\\/pb\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -771,14 +853,14 @@
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
-                "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.width": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Screen.prototype.colorDepth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "4e97ae42f6233f4e96498f9f14bfe480d67f15184dcbcdbc99159d0f3dc8dd5c"
@@ -788,43 +870,43 @@
                 "_pbjs_userid_consent_data": {
                     "ttl": 2592001,
                     "length": 16,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "_sharedID": {
                     "ttl": 2592009,
                     "length": 36,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 },
                 "_lr_retry_request": {
                     "ttl": 3609,
                     "length": 4,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "_lr_env_src_ats": {
                     "ttl": 2592009,
                     "length": 5,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
                     "ttl": 33696000,
-                    "length": 223,
-                    "prevalence": 0.00001356300013563,
+                    "length": 320,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
                     "ttl": 33696000,
-                    "length": 166,
-                    "prevalence": 0.00001356300013563,
+                    "length": 235,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 },
                 "pbjs-unifiedid": {
                     "ttl": 5184012,
                     "length": 150,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 }
             },
@@ -836,7 +918,7 @@
         },
         {
             "rule": "polarbyte\\.com\\/idm\\/old\\/iaw\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -854,7 +936,7 @@
                 "Navigator.prototype.vendor": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "1f0462ffbf203d2b6fd60ecf11c7798b4439fede22ee50310d0beb4b59dc66ff"
@@ -862,21 +944,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "iawpvccs": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawpvc": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 0.5
                 },
                 "iawppid": {
-                    "ttl": 15552001,
+                    "ttl": 15552006,
                     "length": 32,
-                    "prevalence": 0.00001356300013563,
+                    "prevalence": 0.000015508324092956893,
                     "uniqueness": 1
                 }
             },
@@ -895,10 +977,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "4475c418645e68d12f56412da0b6ac8181f4f625f1f64ca26807bb988622a03e"
+                "a9fe4b1ff5d423c70a203eb4db6b5376906cd8c9d832b5b99bf31eb7e812dee5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -911,20 +993,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.000155,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.875
         },
         {
             "domain": "d1yu67rmchodpo.cloudfront.net",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Script": 30,
-        "XHR": 17,
+        "Script": 38,
+        "XHR": 24,
         "Fetch": 2
     },
     "nameservers": [

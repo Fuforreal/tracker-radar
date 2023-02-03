@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000407,
+    "prevalence": 0.0000465,
     "sites": 6,
     "subdomains": [
         "onderzoek"
@@ -13,18 +13,25 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "platformrijksoverheid\\.nl\\/CnTMVC\\/pub\\/108108208pre\\/cnt108108208\\.js",
+            "rule": "platformrijksoverheid\\.nl\\/CnTMVC\\/pub\\/108108208\\/cnt108108208\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "onderzoek"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "b60320351c7539f7a58f305f591d972081ee803b25f725b09ab72c5404d1c02a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -32,6 +39,32 @@
             "exampleSites": [
                 "government.nl",
                 "www.government.nl"
+            ]
+        },
+        {
+            "rule": "platformrijksoverheid\\.nl\\/CnTMVC\\/CnTAjastServiceV2\\.ashx",
+            "cookies": 0.0000233,
+            "fingerprinting": 0,
+            "subdomains": [
+                "onderzoek"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [
+                "b76876cccd227998ee25008f56bcea7d14dc619cb1a6c01a926e98d15232d2cd",
+                "6cf7ae2df76beb62f0cfa849e47937cac51d696707dae1810db3677cb289a62b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_pk_id.17953060-0014-4821-b579-e7b24c408376.9492": 0.000015508324092956893
+            },
+            "exampleSites": [
+                "government.nl",
+                "www.government.nl",
+                "www.rijksoverheid.nl"
             ]
         },
         {
@@ -43,7 +76,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "4cd356041c1765b1b544e524beb52e8872a249b2634f8b62d38f2f837ff4f84a"
@@ -65,7 +98,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "2641a680e998a5fc4f83b78a251026ce6a65f2d47281f32c790072646687b6d4"
@@ -89,7 +122,7 @@
                 "window.sessionStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "61e63acbc7b8e05a373e7254133336345e9198ce2c4b2c01a12ebf61b22a0510"
@@ -105,24 +138,24 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.0000233,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "rijksoverheid.nl",
-            "prevalence": 0.4
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 11
     },
     "nameservers": [
-        "ns0.rijksoverheidnl.com",
-        "ns1.rijksoverheidnl.nl",
         "ns2.rijksoverheidnl.eu",
-        "ns3.rijksoverheidnl.org"
+        "ns1.rijksoverheidnl.nl",
+        "ns3.rijksoverheidnl.org",
+        "ns0.rijksoverheidnl.com"
     ]
 }

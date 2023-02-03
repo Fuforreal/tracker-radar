@@ -7,19 +7,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000543,
+    "prevalence": 0.000062,
     "sites": 8,
     "subdomains": [
+        "static.clubs",
         "api",
         "auth-id",
         "static.www",
-        "static.clubs",
         "o300810-mp-lura-live.ctl",
         "smetrics"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "nfl\\.com\\/image\\/private\\/t_editorial_landscape_3_4_desktop\\/t_lazy\\/f_png\\/redskins\\/bbzwv6gnavgc1yzzmurp\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.clubs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "df6127c9880198911924f16fac2492e28ea7c7cdae6621dd8c54d9ed18713a64"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commanders.com",
+                "www.commanders.com"
+            ]
+        },
         {
             "rule": "nfl\\.com\\/identity\\/v3\\/token",
             "cookies": 0,
@@ -29,7 +51,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -50,11 +72,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [],
             "responseHashes": [
-                "79ffbad6160e2d7092ce7a0100b249437f549a9ee6aa3fa05336160641104b7d",
-                "1d8068553fcaacabfe02bbd62f27d32ef3eda2adbc884327183342fc687ba720"
+                "a759f8a127788b7e15d387ee78a1ddd21e1b9f7ff9cb0d27c083bb1af5d3b91a",
+                "7674287ca109f834c4ecc41c020ab8379f30ae2f20db6d1fdc20f0177a9fe03d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -74,12 +96,12 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
-                "74978f5550011bb9d204320bba2c1b3dd7bdcb6c8545c9e2d64301b5b2271bae",
-                "3b5ec0b47318c6d02161d2012ece6883302aa822046a89a6893b9baf746d8445",
-                "945fef25c2c1bb3304caa2959c527d75fd00eab10877f9da31427d23fe307421"
+                "ae89d59df5cb1d12f049c536d26e952e24af297725a1e3d5d89d8e9609e5e7b9",
+                "cec8244aa2664223f98852e2bd3c1d5979aef72c10547780456b7805946fb9c6",
+                "d384566a4edd5ba520cc629e057f431cd280aede4f53676469b5a10533b30a52"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -100,7 +122,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "78577de6dd1f49b7b694c7bb10f52567a1d2ecd5519429ab74a15f94468c7713"
@@ -115,21 +137,23 @@
         },
         {
             "rule": "nfl\\.com\\/gs\\/webSdk\\/Api\\.aspx",
-            "cookies": 0.0000136,
+            "cookies": 0.0000233,
             "fingerprinting": 1,
             "subdomains": [
                 "auth-id"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "window.localStorage": 3,
+                "window.sessionStorage": 3,
+                "Document.cookie getter": 3,
                 "Date.prototype.getTime": 4,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 3
             },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "b67e8fa8bdd66ca2e6275d6051d98d49e776157f2b573f5f9ea57010178f109f",
@@ -155,7 +179,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "a2eb68b3491c6be6b5007413e45a086d8469081e1bc8a08e9bc9575b14ef2f16"
@@ -170,7 +194,7 @@
         },
         {
             "rule": "nfl\\.com\\/gs\\/sso\\.htm",
-            "cookies": 0.0000271,
+            "cookies": 0.000031,
             "fingerprinting": 1,
             "subdomains": [
                 "auth-id"
@@ -179,12 +203,14 @@
                 "Navigator.prototype.userAgent": 4,
                 "Navigator.prototype.appVersion": 4,
                 "Navigator.prototype.mimeTypes": 4,
-                "Date.prototype.getTime": 4,
                 "Document.cookie getter": 4,
-                "Document.cookie setter": 4
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4,
+                "window.localStorage": 4,
+                "window.sessionStorage": 4
             },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "0c818a0ae3c6a4acff2b332446e11ca356bc6b3bc2457f308404f2e19309dd97"
@@ -208,10 +234,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "aa9e650fc02f46ac8e58e112e101e92e5220e6a89165c115d414537c228f4b55"
+                "68e9969a4465dfc60f61b9885d5b1de91cf1857813e60137ac1fe7421817c476"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -230,7 +256,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "2e3e22e5e2b19435a044d517867739d462560ccd64b9f4f1611985f221251b88"
@@ -252,7 +278,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "8b2f385a18da54c72920c7b35ed62890aaee9b1b6daa341261475da538a7300c"
@@ -267,17 +293,17 @@
         },
         {
             "rule": "nfl\\.com\\/id",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "smetrics"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "077d362b95afb766ca5445a32162ab0e6e3edf0ef867cb3e0b63a0c030c1aa97"
+                "308de43bb8f30b19c00e9a8254f071eeaaf3b5967d4153e7735a6297814f375f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -296,7 +322,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "a12a4a09060d3086540848fb8b6f5c602b04c3611e02322f7fb3600f835c9c2d"
@@ -318,7 +344,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "e2c6215a5e98a3a7b0fb82f6aea84fafe58f22a67f93652bd1dc14686bdc8f8a"
@@ -334,38 +360,38 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000407,
+    "cookies": 0.0000465,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5675675675675675
+            "prevalence": 0.5486725663716814
         },
         {
             "domain": "gigya.com",
-            "prevalence": 0.27927927927927926
+            "prevalence": 0.3274336283185841
         },
         {
             "domain": "nfltags.com",
-            "prevalence": 0.07207207207207207
+            "prevalence": 0.061946902654867256
         },
         {
             "domain": "lura.live",
-            "prevalence": 0.04504504504504504
+            "prevalence": 0.04424778761061947
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.036036036036036036
+            "prevalence": 0.017699115044247787
         }
     ],
     "types": {
+        "Image": 12,
         "Preflight": 3,
         "Fetch": 9,
-        "Image": 10,
         "Document": 8,
         "XHR": 4
     },
     "nameservers": [
-        "udns2.ultradns.net",
-        "udns1.ultradns.net"
+        "udns1.ultradns.net",
+        "udns2.ultradns.net"
     ]
 }

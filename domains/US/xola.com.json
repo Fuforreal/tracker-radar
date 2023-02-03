@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000543,
+    "prevalence": 0.000062,
     "sites": 8,
     "subdomains": [
-        "botcdn"
+        "botcdn",
+        "bot"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,7 +25,7 @@
                 "Navigator.prototype.platform": 5
             },
             "sites": 5,
-            "prevalence": 0.0000339,
+            "prevalence": 0.0000388,
             "cnames": [],
             "responseHashes": [
                 "507075b3296aaa69abe40c2eddfd6a87b76b0318a23e8b1efa6ce9b281089788"
@@ -47,7 +48,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000339,
+            "prevalence": 0.0000388,
             "cnames": [],
             "responseHashes": [
                 "e67bae5cebcb742b11c4200d47725af65e67c9e713a50c16aa0cde04046989f9"
@@ -77,7 +78,7 @@
                 "window.sessionStorage": 5
             },
             "sites": 5,
-            "prevalence": 0.0000339,
+            "prevalence": 0.0000388,
             "cnames": [],
             "responseHashes": [
                 "521d07ad5aaef8506fcfc70bc7f0015bdcb654b75df08c97d07e0ca6be813891"
@@ -92,6 +93,48 @@
                 "www.samueladams.com",
                 "www.woodfordreserve.com"
             ]
+        },
+        {
+            "rule": "xola\\.com\\/activity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bot"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "samueladams.com",
+                "www.samueladams.com",
+                "www.woodfordreserve.com"
+            ]
+        },
+        {
+            "rule": "xola\\.com\\/activity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bot"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000233,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "samueladams.com",
+                "www.samueladams.com",
+                "www.woodfordreserve.com"
+            ]
         }
     ],
     "categories": [],
@@ -100,21 +143,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.84
+            "prevalence": 0.75
         },
         {
             "domain": "polyfill.io",
-            "prevalence": 0.16
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "click2cart.com",
+            "prevalence": 0.10714285714285714
         }
     ],
     "types": {
         "Script": 10,
-        "Fetch": 5
+        "Fetch": 5,
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
         "ns-3.awsdns-00.com",
-        "ns-956.awsdns-55.net",
+        "ns-1861.awsdns-40.co.uk",
         "ns-1200.awsdns-22.org",
-        "ns-1861.awsdns-40.co.uk"
+        "ns-956.awsdns-55.net"
     ]
 }

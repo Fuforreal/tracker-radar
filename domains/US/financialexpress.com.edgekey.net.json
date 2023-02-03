@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000233,
+    "sites": 3,
     "subdomains": [
-        "ua"
+        "ua",
+        "api-stock"
     ],
     "cnames": [
+        {
+            "original": "api-stock.financialexpress.com",
+            "resolved": "api-stock.financialexpress.com.edgekey.net"
+        },
         {
             "original": "ua.financialexpress.com",
             "resolved": "ua.financialexpress.com.edgekey.net"
@@ -24,14 +29,14 @@
     "resources": [
         {
             "rule": "financialexpress\\.com\\.edgekey\\.net\\/personlization-sdk\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 3,
             "subdomains": [
                 "ua"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "ua.financialexpress.com",
@@ -58,17 +63,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "ua.financialexpress.com",
                     "resolved": "ua.financialexpress.com.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "614cb40af9b6bab649324e627f7a72fa10384a79202b0d0605963318473ee7b3"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -85,32 +88,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "ua.financialexpress.com",
-                    "resolved": "ua.financialexpress.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "financialexpress.com",
-                "www.financialexpress.com"
-            ]
-        },
-        {
-            "rule": "financialexpress\\.com\\.edgekey\\.net\\/api\\/capture\\/ua",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ua"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "ua.financialexpress.com",
@@ -118,7 +96,7 @@
                 }
             ],
             "responseHashes": [
-                "ab9292e8e99dbdb957775d7b78bb5a878ecf565f7b476ff9c7c1e00f28715b70"
+                "c97221150093e0aceb74ef486a835c94180e8b7d080cc18e60acb6e5e5d1d33d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -129,38 +107,47 @@
             ]
         },
         {
-            "rule": "financialexpress\\.com\\.edgekey\\.net\\/api\\/capture\\/ua",
+            "rule": "financialexpress\\.com\\.edgekey\\.net\\/finance-api\\/topband\\/ticker",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ua"
+                "api-stock"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
-                    "original": "ua.financialexpress.com",
-                    "resolved": "ua.financialexpress.com.edgekey.net"
+                    "original": "api-stock.financialexpress.com",
+                    "resolved": "api-stock.financialexpress.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "ecea99836cc836d53b8a90cf42652c24e76128a38f08505896021be778b16ee8"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "financialexpress.com",
-                "www.financialexpress.com"
+                "www.loksatta.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000155,
+    "topInitiators": [
+        {
+            "domain": "jquery.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "Script": 2,
-        "Fetch": 4,
-        "Preflight": 4
+        "Preflight": 2,
+        "Fetch": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

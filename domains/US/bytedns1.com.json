@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
+    "prevalence": 0.0000155,
     "sites": 2,
     "subdomains": [
         "verify.snssdk.com",
-        "mcs.snssdk.com"
+        "mcs.snssdk.com",
+        "mssdk.bytedance.com"
     ],
     "cnames": [
         {
@@ -16,11 +17,15 @@
             "resolved": "mcs.snssdk.com.bytedns1.com"
         },
         {
+            "original": "mssdk.bytedance.com",
+            "resolved": "mssdk.bytedance.com.bytedns1.com"
+        },
+        {
             "original": "verify.snssdk.com",
             "resolved": "verify.snssdk.com.bytedns1.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "bytedns1\\.com\\/captcha\\/reportFrontend",
@@ -31,7 +36,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "verify.snssdk.com",
@@ -56,7 +61,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "verify.snssdk.com",
@@ -83,7 +88,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "mcs.snssdk.com",
@@ -108,7 +113,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "mcs.snssdk.com",
@@ -125,20 +130,60 @@
                 "douyin.com",
                 "www.douyin.com"
             ]
+        },
+        {
+            "rule": "bytedns1\\.com\\/web\\/report",
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mssdk.bytedance.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "mssdk.bytedance.com",
+                    "resolved": "mssdk.bytedance.com.bytedns1.com"
+                }
+            ],
+            "responseHashes": [
+                "b097fc471c067f5960fbf018f38f1e00396bb71612d79be26976b8f18cf8da26"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "msToken": 0.000007754162046478447
+            },
+            "exampleSites": [
+                "douyin.com",
+                "www.douyin.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.0000155,
     "topInitiators": [
         {
             "domain": "bytescm.com",
-            "prevalence": 1
+            "prevalence": 0.5384615384615384
+        },
+        {
+            "domain": "bytegoofy.com",
+            "prevalence": 0.4230769230769231
+        },
+        {
+            "domain": "bytetos.com",
+            "prevalence": 0.038461538461538464
         }
     ],
     "types": {
         "Preflight": 4,
-        "XHR": 4
+        "XHR": 6
     },
-    "nameservers": []
+    "nameservers": [
+        "vip3.alidns.com",
+        "vip4.alidns.com"
+    ]
 }

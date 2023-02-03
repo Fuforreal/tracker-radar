@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.000031,
+    "sites": 4,
     "subdomains": [
         "api"
     ],
@@ -24,14 +24,14 @@
     "resources": [
         {
             "rule": "fedex\\.com\\.akadns\\.net\\/auth\\/oauth\\/v2\\/token",
-            "cookies": 0.0000136,
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "api.fedex.com",
@@ -51,14 +51,41 @@
         },
         {
             "rule": "fedex\\.com\\.akadns\\.net\\/user\\/v2\\/login",
-            "cookies": 0.0000203,
+            "cookies": 0.0000155,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "api.fedex.com",
+                    "resolved": "api.fedex.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "93e3d73643baa61174752f01c68938c182ce7aabdef3fa9fb45705866e427a12"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fedex.com",
+                "www.fedex.com"
+            ]
+        },
+        {
+            "rule": "fedex\\.com\\.akadns\\.net\\/user\\/v2\\/login",
+            "cookies": 0.0000233,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000233,
             "cnames": [
                 {
                     "original": "api.fedex.com",
@@ -71,35 +98,58 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fedex.com",
-                "www.fedex.com",
-                "www.fedexfreight.fedex.com"
+                "local.fedex.com",
+                "www.fedex.com"
             ]
         },
         {
-            "rule": "fedex\\.com\\.akadns\\.net\\/user\\/v2\\/login",
-            "cookies": 0.0000136,
+            "rule": "fedex\\.com\\.akadns\\.net\\/auth\\/oauth\\/v2\\/token",
+            "cookies": 0.0000155,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [
                 {
                     "original": "api.fedex.com",
                     "resolved": "api.fedex.com.akadns.net"
                 }
             ],
-            "responseHashes": [
-                "d3ce7a0488b47ba384b728584d683fecdd00b526f4408ba89942f6c8815507c2"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fedex.com",
-                "www.fedex.com"
+                "www.fedexfreight.fedex.com"
+            ]
+        },
+        {
+            "rule": "fedex\\.com\\.akadns\\.net\\/user\\/v2\\/login",
+            "cookies": 0.00000775,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [
+                {
+                    "original": "api.fedex.com",
+                    "resolved": "api.fedex.com.akadns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fedex.com",
+                "www.fedexfreight.fedex.com"
             ]
         }
     ],
@@ -107,10 +157,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000203,
+    "cookies": 0.000031,
     "types": {
         "XHR": 4,
-        "Preflight": 3
+        "Preflight": 3,
+        "Fetch": 4
     },
     "nameservers": []
 }

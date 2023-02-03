@@ -4,15 +4,39 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000407,
+    "prevalence": 0.0000465,
     "sites": 6,
     "subdomains": [
-        "cdn5",
-        "cdn3"
+        "cdn3",
+        "cdn5"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ezmall\\.com\\/0\\/india-sso\\/css\\/sso-bar\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "347d58fc47b1bd0bddba0500e0cca7844c898d55a4c5f96b5ded199ba46caf88"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bgr.in",
+                "www.bgr.in",
+                "www.dnaindia.com",
+                "zeenews.india.com"
+            ]
+        },
         {
             "rule": "ezmall\\.com\\/0\\/india-sso\\/images\\/logout-icon\\.svg",
             "cookies": 0,
@@ -22,7 +46,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "fc8f349c1b711a5d4a46648497cc07940a784d2ffebd2a9236eab9ab5add5a81"
@@ -38,24 +62,52 @@
             ]
         },
         {
-            "rule": "ezmall\\.com\\/0\\/india-sso\\/css\\/sso-bar\\.css",
+            "rule": "ezmall\\.com\\/0\\/india-sso\\/keycloak\\/techlusive\\/keycloak\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn3"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
-                "347d58fc47b1bd0bddba0500e0cca7844c898d55a4c5f96b5ded199ba46caf88"
+                "34ffb429406b4576a6a5ab1e1c9b7dc36b83b651efee6b1b9d9703837b1faac4"
             ],
-            "type": "Stylesheet",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dnaindia.com",
+                "bgr.in",
+                "www.bgr.in"
+            ]
+        },
+        {
+            "rule": "ezmall\\.com\\/0\\/india-sso\\/keycloak\\/keycloakLogin\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000031,
+            "cnames": [],
+            "responseHashes": [
+                "96bff9bae306a4268725f4336404e44671eb3d3585639cd762620495db426b2a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bgr.in",
+                "www.bgr.in",
                 "www.dnaindia.com",
                 "zeenews.india.com"
             ]
@@ -68,10 +120,13 @@
                 "cdn3"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 4,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "1837605a06c8e8f7901dc9942ea7dd4f485fb888c4f1593f77585915f8c85ffd"
@@ -80,7 +135,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dnaindia.com",
+                "bgr.in",
+                "www.bgr.in",
                 "www.dnaindia.com",
                 "zeenews.india.com"
             ]
@@ -93,8 +149,8 @@
                 "cdn3"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.000031,
             "cnames": [],
             "responseHashes": [
                 "c3a00208259b7cb30a8f47745a409a905a13916f8d74d1c7d99ea55fd3b3eaf1"
@@ -103,9 +159,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dnaindia.com",
+                "bgr.in",
+                "www.bgr.in",
                 "www.dnaindia.com",
                 "zeenews.india.com"
+            ]
+        },
+        {
+            "rule": "ezmall\\.com\\/0\\/india-sso\\/keycloak\\/techlusive\\/keycloak\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000155,
+            "cnames": [],
+            "responseHashes": [
+                "c1b86a9f3a01fe3e56764541dcad130a3e06524f455681107fef8b287619ac74"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bgr.in",
+                "www.bgr.in"
             ]
         },
         {
@@ -117,7 +196,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "ce12997aabc7814d785524bf7043503f301352aa86848d2f07f96ad0f0b3e09c"
@@ -131,29 +210,6 @@
             ]
         },
         {
-            "rule": "ezmall\\.com\\/0\\/india-sso\\/keycloak\\/keycloakLogin\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn3"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "96bff9bae306a4268725f4336404e44671eb3d3585639cd762620495db426b2a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dnaindia.com",
-                "www.dnaindia.com",
-                "zeenews.india.com"
-            ]
-        },
-        {
             "rule": "ezmall\\.com\\/0\\/india-sso\\/keycloak\\/zee\\/keycloak\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -162,7 +218,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000155,
             "cnames": [],
             "responseHashes": [
                 "225a1bd3f63bd76249a300c2c87190dd86e4f14c3d7722417b42138da0652c37"
@@ -182,18 +238,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "techlusive.in",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
+        "Stylesheet": 4,
         "Image": 4,
-        "Stylesheet": 3,
-        "Script": 13
+        "Script": 18,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-202.awsdns-25.com",
         "ns-1533.awsdns-63.org",
-        "ns-771.awsdns-32.net",
-        "ns-1921.awsdns-48.co.uk"
+        "ns-202.awsdns-25.com",
+        "ns-1921.awsdns-48.co.uk",
+        "ns-771.awsdns-32.net"
     ]
 }
