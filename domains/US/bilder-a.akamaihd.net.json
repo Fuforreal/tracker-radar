@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000677,
-    "sites": 10,
+    "prevalence": 0.000124,
+    "sites": 15,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "bilder-a\\.akamaihd\\.net\\/ip\\/js\\/ipdvdc\\/blockadblock\\.min\\.js",
@@ -21,8 +21,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "4285ac395a438cdc6ba800a527f32d7872c3f6de7ed3deac592f521390a7d1e6"
@@ -32,6 +32,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "geo.de",
+                "www.geo.de",
+                "www.stern.de",
                 "www.toggo.de"
             ]
         },
@@ -41,23 +43,27 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.sessionStorage": 3,
-                "Navigator.prototype.userAgent": 3,
-                "window.innerWidth": 3,
-                "window.innerHeight": 3
+                "Date.prototype.getTime": 6,
+                "window.sessionStorage": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.connection": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 6,
+            "prevalence": 0.0000498,
             "cnames": [],
             "responseHashes": [
-                "5fdc0d89883a2daffc5293f8cf130a09b987ffb403551e72540346ae1740174c"
+                "32bec171f867c6c253717cc3181f520660d7875c7b60604a33dfb71e48bc6d9d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "n-tv.de",
+                "www.n-tv.de",
                 "www.rtl.de",
+                "www.tvnow.de",
                 "www.vip.de",
                 "www.vox.de"
             ]
@@ -69,7 +75,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "9448b84c2820542551393b1c85e54bc2fd6d9ef705c2a41dd49d8621768f13d6"
@@ -89,7 +95,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "25f0d1e2f1f3b67b25c28106f299ebe8c7e06eebe702f3452da0806d0fca663b"
@@ -101,6 +107,33 @@
                 "rtl.de",
                 "www.rtl.de"
             ]
+        },
+        {
+            "rule": "bilder-a\\.akamaihd\\.net\\/ip\\/vcc\\/vcc\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvnow.de",
+                "www.tvnow.de"
+            ]
         }
     ],
     "categories": [
@@ -111,12 +144,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9090909090909091
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 6,
-        "Font": 4
+        "Script": 10,
+        "Font": 4,
+        "Fetch": 2
     },
     "nameservers": []
 }

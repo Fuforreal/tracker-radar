@@ -4,34 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000338,
-    "sites": 5,
+    "prevalence": 0.0000332,
+    "sites": 4,
     "subdomains": [
-        "www"
+        "www",
+        "img"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
-        {
-            "rule": "2embed\\.to\\/embed\\/tmdb\\/tv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "123-series.com",
-                "fmoviesto.site"
-            ]
-        },
         {
             "rule": "2embed\\.to\\/css\\/embed\\.min\\.css",
             "cookies": 0,
@@ -41,7 +22,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "d0615585eabe2ebaf52c4cf411181d8d3bbc94fa6d2f956b594bcf07fba94f1c"
@@ -68,7 +49,7 @@
                 "Event.prototype.timeStamp": 1
             },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "a8fffabf930fea575b853600535a3d4f4a4e1b54e3b719b506e075324a937454"
@@ -91,15 +72,17 @@
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "Screen.prototype.height": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Document.cookie getter": 3,
+                "window.localStorage": 3,
+                "Screen.prototype.height": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
+                "dc47d1899d607af38e90c2ef99f7922c03714e25af2dcc1ebe00110861e94ee1",
                 "edf8726acb8a82689172b9ebc41551c7cd6cb524e06e14bf3dca31f6e442d70c"
             ],
             "type": "Document",
@@ -107,34 +90,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "repelis24.plus",
+                "co.repelis24.plus",
                 "gomovies123.fi"
             ]
         },
         {
-            "rule": "2embed\\.to\\/js\\/player\\.min\\.js",
+            "rule": "2embed\\.to\\/xxrz\\/1200x600\\/100\\/0b\\/87\\/0b874ec926bd46a6044ba24c3810778d\\/0b874ec926bd46a6044ba24c3810778d\\.jpg",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "www"
+                "img"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "PerformanceTiming.prototype.navigationStart": 3,
-                "window.localStorage": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "df921d3eba39c9c2ee0df960cbf9d78e0ff1f6ebb58fe8bf634eb12bc7eead79"
+                "aaff0df1a63525152270071399ce21ff00473651fc8d51a1f7fe254cb6ca909c"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "repelis24.plus",
-                "gomovies123.fi",
-                "w1.123-movies.lol"
+                "co.repelis24.plus"
             ]
         },
         {
@@ -145,8 +124,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "15909b7ae4fb59967bb5339d940983da6c20f54d5286300d89524db821f67811"
@@ -156,6 +135,36 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "repelis24.plus",
+                "co.repelis24.plus",
+                "gomovies123.fi",
+                "w1.123-movies.lol"
+            ]
+        },
+        {
+            "rule": "2embed\\.to\\/js\\/player\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "window.localStorage": 4,
+                "Navigator.prototype.plugins": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [],
+            "responseHashes": [
+                "df921d3eba39c9c2ee0df960cbf9d78e0ff1f6ebb58fe8bf634eb12bc7eead79"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "repelis24.plus",
+                "co.repelis24.plus",
                 "gomovies123.fi",
                 "w1.123-movies.lol"
             ]
@@ -168,21 +177,103 @@
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "Screen.prototype.height": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Document.cookie getter": 3,
+                "window.localStorage": 3,
+                "Screen.prototype.height": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "repelis24.plus",
+                "co.repelis24.plus",
                 "gomovies123.fi"
+            ]
+        },
+        {
+            "rule": "2embed\\.to\\/embed\\/tmdb\\/movie",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "fca931a04c20464a6ee666b1cae627eaa6c38e5d9617a43ab7d31912615f051f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123-movies.lol",
+                "w1.123-movies.lol"
+            ]
+        },
+        {
+            "rule": "2embed\\.to\\/xxrz\\/1200x600\\/100\\/76\\/c9\\/76c95f268c80b35ad336d9171deda18c\\/76c95f268c80b35ad336d9171deda18c\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "16501fc8778ceaff141e12ad48498b88686f10f0fb9e2d21554565695cf1ee50"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123-movies.lol",
+                "w1.123-movies.lol"
+            ]
+        },
+        {
+            "rule": "2embed\\.to\\/embed\\/tmdb\\/movie",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123-movies.lol",
+                "w1.123-movies.lol"
             ]
         }
     ],
@@ -192,22 +283,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
-        },
-        {
-            "domain": "cloudflare.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 1
         }
     ],
     "types": {
-        "Document": 4,
         "Stylesheet": 4,
-        "Script": 7,
-        "Font": 3,
-        "XHR": 2
+        "Script": 8,
+        "Document": 5,
+        "Image": 4,
+        "Font": 4,
+        "XHR": 5
     },
     "nameservers": [
-        "kate.ns.cloudflare.com",
-        "kai.ns.cloudflare.com"
+        "kai.ns.cloudflare.com",
+        "kate.ns.cloudflare.com"
     ]
 }

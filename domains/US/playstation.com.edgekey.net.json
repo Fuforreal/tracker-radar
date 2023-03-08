@@ -9,29 +9,96 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.0000663,
+    "sites": 8,
     "subdomains": [
+        "direct",
         "secure.cdn.us",
         "static",
+        "static.e1-np",
+        "wild.api",
         "web.np"
     ],
     "cnames": [
         {
+            "original": "api.direct.playstation.com",
+            "resolved": "direct.playstation.com.edgekey.net"
+        },
+        {
             "original": "secure.cdn.us.playstation.com",
             "resolved": "secure.cdn.us.playstation.com.edgekey.net"
+        },
+        {
+            "original": "static.e1-np.playstation.com",
+            "resolved": "static.e1-np.playstation.com.edgekey.net"
         },
         {
             "original": "static.playstation.com",
             "resolved": "static.playstation.com.edgekey.net"
         },
         {
+            "original": "telemetry.api.playstation.com",
+            "resolved": "wild.api.playstation.com.edgekey.net"
+        },
+        {
             "original": "web.np.playstation.com",
             "resolved": "web.np.playstation.com.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/commercewebservices\\/ps-direct-us\\/users\\/anonymous\\/products\\/productList",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "api.direct.playstation.com",
+                    "resolved": "direct.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "direct.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/commercewebservices\\/ps-direct-us\\/users\\/anonymous\\/products\\/productList",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "api.direct.playstation.com",
+                    "resolved": "direct.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bf9d545285e8758c60c071261978e053c7dad3af601513912ba6d10fe371b6e1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "direct.playstation.com"
+            ]
+        },
         {
             "rule": "playstation\\.com\\.edgekey\\.net\\/unifiedfooter\\/js\\/unifiedfooter\\.en-us\\.js",
             "cookies": 0,
@@ -41,7 +108,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "secure.cdn.us.playstation.com",
@@ -68,14 +135,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "f8cb212447b81ce23ab154025b68691cd605c152cf2d1918d24eb535dd300d0f"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -93,7 +162,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -115,20 +184,22 @@
         {
             "rule": "playstation\\.com\\.edgekey\\.net\\/wca\\/v2\\/js\\/common\\.a76e7026461f3a746fcb\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "cce7d3dcfb2489d893e9d033a09dabab42d004b5bd3a5eb6998c85a1e2c53182"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -147,14 +218,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "b6333c7bb8b65b5d0b81694605439d9257b7c2f42ec28747ca01fe74fe18ae7e"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -173,14 +246,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "27b04e6460d4e39e93f01dbc3b3014e01b65f2fc67dc88aff0f42fcbc48d6db0"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -193,20 +268,22 @@
         {
             "rule": "playstation\\.com\\.edgekey\\.net\\/wca\\/v2\\/js\\/network\\.286b21f1b50348080c28\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "b492e42a83992585ba1e36bb599936aae82437c7ace447d770bf119c83a8f692"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -219,20 +296,22 @@
         {
             "rule": "playstation\\.com\\.edgekey\\.net\\/wca\\/v2\\/js\\/telemetry\\.cdd3e87ebbcd25878cb8\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "5da2c755595cf04d48c31fb0f09316e0a4144680b6f0321958deeda4e0bb5073"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -251,14 +330,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "a969ce9028cac14fd9f919b4651ba75aa806fc0a0d323281f64189a06c9f025e"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -277,7 +358,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -305,7 +386,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -333,7 +414,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -361,7 +442,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -389,7 +470,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -416,20 +497,23 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "c38fd9c9b77301588ccf5cfb18f402d592ff619b33343d51139c64367e50798d"
+            ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playstation.com",
+                "store.playstation.com",
                 "www.playstation.com"
             ]
         },
@@ -441,8 +525,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -457,6 +541,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playstation.com",
+                "store.playstation.com",
                 "www.playstation.com"
             ]
         },
@@ -468,20 +553,23 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "e7b9af01faf805cfc8973fae7b2ba579e316b84eaaf351fcf5ee83e7ce97882d"
+            ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playstation.com",
+                "store.playstation.com",
                 "www.playstation.com"
             ]
         },
@@ -493,75 +581,168 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "b77a251543bdcf962abf6d2f0a8ed9c52b9c6e0320850f22e454ff4dbf5cf041"
+            ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playstation.com",
+                "store.playstation.com",
                 "www.playstation.com"
             ]
         },
         {
-            "rule": "playstation\\.com\\.edgekey\\.net\\/api\\/graphql\\/v1\\/op",
+            "rule": "playstation\\.com\\.edgekey\\.net\\/images\\/v0\\/vector\\/illustrations\\/default-product-image\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "web.np"
+                "static",
+                "static.e1-np"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
-                    "original": "web.np.playstation.com",
-                    "resolved": "web.np.playstation.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "playstation.com",
-                "www.playstation.com"
-            ]
-        },
-        {
-            "rule": "playstation\\.com\\.edgekey\\.net\\/api\\/graphql\\/v1\\/op",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web.np"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
+                    "original": "static.playstation.com",
+                    "resolved": "static.playstation.com.edgekey.net"
+                },
                 {
-                    "original": "web.np.playstation.com",
-                    "resolved": "web.np.playstation.com.edgekey.net"
+                    "original": "static.e1-np.playstation.com",
+                    "resolved": "static.e1-np.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "aaa66eabb0b9ddd5615ad3bd02f57ca3bef758c38f93c72d5d35c61d5b66b572"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playstation.com",
+                "store.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/api\\/telemetry\\/v1\\/publish\\/telemetry\\/telemetry\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wild.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "telemetry.api.playstation.com",
+                    "resolved": "wild.api.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "store.playstation.com",
                 "www.playstation.com"
             ]
         },
         {
-            "rule": "playstation\\.com\\.edgekey\\.net\\/wca\\/v2\\/js\\/19\\.2ea71abb7c9e40ac8658\\.js",
+            "rule": "playstation\\.com\\.edgekey\\.net\\/api\\/telemetry\\/v1\\/publish\\/telemetry\\/telemetry\\/",
+            "cookies": 0.0000249,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wild.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "telemetry.api.playstation.com",
+                    "resolved": "wild.api.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3d23d39a30bb7323f8ccfd64c52cf286138fba4f83e78f7edcf66703b7c23aaa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "store.playstation.com",
+                "www.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/api\\/graphql\\/v1\\/op",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web.np"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "web.np.playstation.com",
+                    "resolved": "web.np.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "store.playstation.com",
+                "www.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/api\\/graphql\\/v1\\/op",
+            "cookies": 0.0000249,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web.np"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "web.np.playstation.com",
+                    "resolved": "web.np.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "51923ff531fed6032a1675f9d3012e7c2fc46e5f5b7215da7e2cc067569a7780"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "store.playstation.com",
+                "www.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/wca\\/v2\\/js\\/footer\\.7e538e14aff1c7fabf36\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -569,19 +750,49 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "a389de27487bd4778272b2e76782bfa8a049ea43ce992058a88d1bfd273379b4"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playstation.com",
+                "store.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/wca\\/v2\\/js\\/19\\.2ea71abb7c9e40ac8658\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "static.playstation.com",
+                    "resolved": "static.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a4e014cd45fd082a68520dfcf9ecdffb7b1756017e4f38d11736154c5330231f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "store.playstation.com",
                 "www.playstation.com"
             ]
         },
@@ -593,21 +804,78 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.playstation.com",
                     "resolved": "static.playstation.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "d4d9d9f7dac887bdbfa8447d2f232fa93ebec0ec83b52b042d583cf5e10322f8"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playstation.com",
+                "store.playstation.com",
                 "www.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/icons\\/v0\\/PSFamilyMark-Logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "static.playstation.com",
+                    "resolved": "static.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "13d59dd8ae0da04eb10265709b3f108e8d9662d79fa445c973da14e11ed1edd0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "store.playstation.com"
+            ]
+        },
+        {
+            "rule": "playstation\\.com\\.edgekey\\.net\\/icons\\/v0\\/online\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "static.playstation.com",
+                    "resolved": "static.playstation.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b93a05ec8203b8d4db7a40740677bfb90bf08b025334ec710677ad3ffb366c92"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playstation.com",
+                "store.playstation.com"
             ]
         },
         {
@@ -619,7 +887,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -646,7 +914,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.playstation.com",
@@ -667,13 +935,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000498,
     "types": {
-        "Script": 22,
+        "Preflight": 8,
+        "XHR": 5,
+        "Script": 25,
         "Stylesheet": 24,
-        "Font": 8,
-        "Other": 2,
-        "Fetch": 4
+        "Font": 12,
+        "Fetch": 12
     },
     "nameservers": []
 }

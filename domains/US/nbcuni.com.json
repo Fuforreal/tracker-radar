@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000812,
-    "sites": 12,
+    "prevalence": 0.0000746,
+    "sites": 9,
     "subdomains": [
-        "osimg",
         "mps",
+        "osimg",
         "geolocation.digitalsvc.apps",
         "mvpd-admin"
     ],
@@ -21,38 +21,15 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "nbcuni\\.com\\/id",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "osimg"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "41f861674ad6a3eb304ffa39a3a437178e10c30ddcf21df649224b4ba08e4e0c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "golfchannel.com",
-                "secure.golfchannel.com",
-                "www.golfchannel.com"
-            ]
-        },
-        {
             "rule": "nbcuni\\.com\\/request\\/component\\/gmo",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "mps"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "3d93bf3479ded2b95ae77515c101cee1a527cd4a5b6af4ef67ab5aae88d72ce1"
@@ -66,8 +43,31 @@
             ]
         },
         {
+            "rule": "nbcuni\\.com\\/id",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "osimg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "2be957cbf0a727ac4afa398132974923a9c034dfef35125535d5ed38d8ac5dbc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golfchannel.com",
+                "secure.golfchannel.com",
+                "www.golfchannel.com"
+            ]
+        },
+        {
             "rule": "nbcuni\\.com\\/fetch\\/ext\\/load-golf-web\\.js",
-            "cookies": 0.0000203,
+            "cookies": 0.0000249,
             "fingerprinting": 2,
             "subdomains": [
                 "mps"
@@ -78,16 +78,32 @@
                 "Navigator.prototype.cookieEnabled": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.appVersion": 2,
-                "window.innerWidth": 2
+                "window.innerWidth": 2,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1,
+                "window.innerHeight": 1
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "639ba726121ac059c0bd6a1465ca253712928f3f2e52a4a767b783587eb45c85"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1677855698,
+                    "length": 1,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "mps_uuid": {
+                    "ttl": 7776009,
+                    "length": 36,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "golfchannel.com",
@@ -96,37 +112,7 @@
             ]
         },
         {
-            "rule": "nbcuni\\.com\\/request\\/page\\/json\\/params\\/",
-            "cookies": 0.0000406,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mps"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [
-                "d722dc50695907b1015389230b3e0be6513c4490f30b6b438f479f34dda6926f",
-                "fa47a2746ffe4889397f8bbd726c0ea1b1635d7d4c0c646d9dc684db9d492a78",
-                "5755dd31751ae1fe4fa8d7199762ad6e3ad88e3a84668db9a21cc9cf08dcaa37",
-                "b07cc839cce18de1be3f883ea07be507213cabbb485bf7b5bc2ec0dbe935360a",
-                "7bee4c217297207f2353502384a1785bd0ab60ea63cdd335f03d53e29b55139d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "golfchannel.com",
-                "www.golfchannel.com",
-                "www.nbcolympics.com",
-                "www.nbcsportsedge.com",
-                "www.rydercup.com",
-                "www.usanetwork.com"
-            ]
-        },
-        {
-            "rule": "nbcuni\\.com\\/b\\/ss\\/nbcusportsgroupgolfchannel,nbcusportsgroupglobal\\/1\\/JS-2\\.17\\.0-L9UP\\/s84385345400583",
+            "rule": "nbcuni\\.com\\/b\\/ss\\/nbcusportsgroupgolfchannel,nbcusportsgroupglobal\\/1\\/JS-2\\.17\\.0-L9UP\\/s37060028935216",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -134,7 +120,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "55c9d2f019f9d7ddfd69b2ad0351c5617338a222362aebb02b3b98a4dbc18486"
@@ -148,46 +134,34 @@
             ]
         },
         {
-            "rule": "nbcuni\\.com\\/fetch\\/ext\\/load-olympics-tokyo-web\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 2,
+            "rule": "nbcuni\\.com\\/request\\/page\\/json\\/params\\/",
+            "cookies": 0.0000332,
+            "fingerprinting": 0,
             "subdomains": [
                 "mps"
             ],
-            "apis": {
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.appVersion": 2,
-                "window.innerWidth": 2,
-                "Document.cookie setter": 2,
-                "window.innerHeight": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
-                "5b1f5f0a28714818500295b4e3f4f524f728845dcf59697a527685a2d0852bc2"
+                "f4764fc0d638c96a5f17509f3b75ca918278b821f4eb50411cb758159999d9b6",
+                "e4861c89e458a2e73f6136ac011aba5a72e1a94da42d2db449a7362da7397da3",
+                "33ef71f0c64dbb21480099a534f57df1e75ef1c1b63afa1a355028fcaf646861"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "cookietest": {
-                    "ttl": -1677040787,
-                    "length": 1,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                }
-            },
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nbcolympics.com",
-                "www.nbcolympics.com"
+                "golfchannel.com",
+                "www.golfchannel.com",
+                "www.nbcsportsedge.com",
+                "www.usanetwork.com"
             ]
         },
         {
             "rule": "nbcuni\\.com\\/fetch\\/ext\\/load-rotoworld-web\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "mps"
@@ -204,7 +178,7 @@
                 "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e6cf1146da268f038f84cb0c528af623fac9142f48510dce3976d8ef0b1d4421"
@@ -212,15 +186,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1676991225,
+                    "ttl": -1678118598,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "mps_uuid": {
-                    "ttl": 7776003,
+                    "ttl": 7776005,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
@@ -231,38 +205,8 @@
             ]
         },
         {
-            "rule": "nbcuni\\.com\\/fetch\\/ext\\/load-rydercup-web\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 2,
-            "subdomains": [
-                "mps"
-            ],
-            "apis": {
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.appVersion": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "699ef864de888143d941fe97815e1eded2bcd3d65ac564b9ce3225885d89c299"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rydercup.com",
-                "www.rydercup.com"
-            ]
-        },
-        {
             "rule": "nbcuni\\.com\\/fetch\\/ext\\/load-nbc-web\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "mps"
@@ -279,7 +223,7 @@
                 "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "49d1a8c3577a5c9d767cbd123c23176dc249be4b8e5e630ceae40907a2a17ff7"
@@ -287,9 +231,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1676982938,
+                    "ttl": -1678110470,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -308,10 +252,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "1bfc9cd2ad113de778ee020a35aabc9a2bceeb253e1d04c2a9cec8f183f567eb"
+                "ce1f9827eaa7e6fc40847649ac9c66b3a4b6124e5752853a7dd0663d3cb1752d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -323,14 +267,14 @@
         },
         {
             "rule": "nbcuni\\.com\\/images\\/MPS-STATISTIC-REPORTING\\.png",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "mps"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "aeb30402b1096311d962a7234f22f1bf40d1c704289f0a52608d7ad8ac8528fc"
@@ -352,7 +296,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "ce8f685770aa3093dbff3edf7794ccfaad3f8856fa5cdec85de87914467e1d1d"
@@ -368,39 +312,35 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000812,
+    "cookies": 0.0000663,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8367346938775511
+            "prevalence": 0.8723404255319149
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.10204081632653061
-        },
-        {
-            "domain": "cookielaw.org",
-            "prevalence": 0.04081632653061224
+            "prevalence": 0.10638297872340426
         },
         {
             "domain": "rotoworld.com",
-            "prevalence": 0.02040816326530612
+            "prevalence": 0.02127659574468085
         }
     ],
     "types": {
-        "XHR": 11,
-        "Script": 13,
+        "Script": 9,
+        "XHR": 9,
         "Image": 6
     },
     "nameservers": [
         "aus1.akam.net",
         "ns1-161.akam.net",
-        "use3.akam.net",
-        "eur4.akam.net",
-        "asia2.akam.net",
-        "eur3.akam.net",
         "usw1.akam.net",
+        "eur3.akam.net",
+        "asia2.akam.net",
         "asia3.akam.net",
-        "ns1-102.akam.net"
+        "eur4.akam.net",
+        "ns1-102.akam.net",
+        "use3.akam.net"
     ]
 }

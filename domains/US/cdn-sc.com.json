@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000338,
-    "sites": 5,
+    "prevalence": 0.000058,
+    "sites": 7,
     "subdomains": [
         "i"
     ],
@@ -20,24 +20,46 @@
                 "i"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "window.sessionStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "5dff8453dbe058c4f9e51d2c9f1d972510472d1711f5217be781f9ebef6c023c"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sermoncentral.com",
+                "www.sermoncentral.com"
+            ]
+        },
+        {
+            "rule": "cdn-sc\\.com\\/SermonMaker\\/PremiumSermonSeries\\/35\\/20220103023314\\/thumbnail\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "04a9a58bd4840f2b5dbea5e2265ae1f0c6429555f7408366d92547fbeca88f0d"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -52,15 +74,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5625
+            "prevalence": 0.5
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.4375
+            "prevalence": 0.35
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.15
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
         "carl.ns.cloudflare.com",

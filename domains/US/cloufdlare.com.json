@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000677,
-    "sites": 10,
+    "prevalence": 0.0000663,
+    "sites": 8,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
@@ -16,8 +16,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "ffbed7b17c817c14c50c5ae8a055a1611d989f3154fa4a8b14f23436775aa78f"
@@ -26,7 +26,6 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "javhayz.com",
                 "lon88.sex",
                 "phimloz.me",
                 "phimyy.me",
@@ -39,20 +38,23 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 4
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "window.sessionStorage": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "54e0b988901b07db98080f7a8c9239d015f39a892f3e80a5643b326d1b87b2d4",
-                "bd86d031198daa8001cf3e340012f96f9388a0aa6c0b256cd783909eabff16f3"
+                "325e6926ff1ad096ff8725df54feaaef82ca381b5f0c939a4503512f73b57264",
+                "30b80fbfbddba126859d5f785dca4a1f3e6dbb9d92f605f0701112bea1b6a7b7"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "javhayz.com",
                 "phimloz.me",
                 "phimyy.me",
                 "xxdem.pro"
@@ -61,18 +63,26 @@
         {
             "rule": "cloufdlare\\.com\\/jwplayer-8\\.8\\.2_v3\\/jwplayer\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "MediaSource.isTypeSupported": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "c0a07eb88ebb40b8262d2f8cbf1bdcad6cc9e2c2d5c06e749dd3e08a781a7e7d"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "javhayz.com",
                 "phimloz.me",
                 "phimyy.me",
                 "xxdem.pro"
@@ -85,13 +95,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8461538461538461
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.15384615384615385
         }
     ],
     "types": {
-        "Image": 5,
-        "Document": 4,
-        "Script": 4
+        "Image": 4,
+        "Document": 3,
+        "Script": 3
     },
     "nameservers": [
         "liberty.ns.cloudflare.com",

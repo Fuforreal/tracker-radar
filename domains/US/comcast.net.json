@@ -9,13 +9,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000415,
+    "sites": 5,
     "subdomains": [
         "cdn.viacomcbs-poc.top"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "comcast\\.net\\/measurements\\/1536197413045-1555KB\\.ts",
@@ -25,38 +25,70 @@
                 "cdn.viacomcbs-poc.top"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bet.com",
-                "www.southpark.de"
+                "www.bet.com",
+                "www.southparkstudios.com"
+            ]
+        },
+        {
+            "rule": "comcast\\.net\\/measurements\\/r20\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.viacomcbs-poc.top"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paramountplus.com",
+                "www.paramountplus.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000829,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.375
+        },
+        {
+            "domain": "cedexis.com",
+            "prevalence": 0.375
+        },
+        {
+            "domain": "dynatrace.com",
+            "prevalence": 0.125
         },
         {
             "domain": "cc.com",
-            "prevalence": 0.5
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 3,
+        "Image": 2
     },
     "nameservers": [
-        "dns103.comcast.net",
         "dns101.comcast.net",
+        "dns103.comcast.net",
         "dns104.comcast.net",
         "dns102.comcast.net",
         "dns105.comcast.net"

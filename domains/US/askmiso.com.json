@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.000116,
+    "sites": 14,
     "subdomains": [
-        "api"
+        "api",
+        "api-edge"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +21,30 @@
                 "api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "601d9f80c75ffc223c4123b02d9dd9006b0b685f73e65c7912d595babc27c56c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americastestkitchen.com",
+                "www.thenewslens.com"
+            ]
+        },
+        {
+            "rule": "askmiso\\.com\\/v1\\/interactions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000058,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -30,10 +53,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idg.com.au",
+                "macworld.com",
+                "www.macworld.com",
+                "www.pcworld.com",
                 "www.pcworld.idg.com.au",
                 "www.techadvisor.fr",
+                "www.techadvisor.com",
                 "www.techhive.com"
+            ]
+        },
+        {
+            "rule": "askmiso\\.com\\/v1\\/recommendation\\/product_to_products",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-edge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "5b6637cf4448da63983872286ee6d05cc49dd25cd960bc071b7bc853a10e117c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "macworld.com",
+                "www.pcworld.idg.com.au"
             ]
         }
     ],
@@ -43,20 +91,25 @@
     "topInitiators": [
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.875
+            "prevalence": 0.8888888888888888
+        },
+        {
+            "domain": "d1nfaf380zbiur.cloudfront.net",
+            "prevalence": 0.05555555555555555
         },
         {
             "domain": "ad2iction.com",
-            "prevalence": 0.125
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Ping": 4
+        "Fetch": 4,
+        "Ping": 7
     },
     "nameservers": [
+        "ns-1071.awsdns-05.org",
         "ns-297.awsdns-37.com",
         "ns-887.awsdns-46.net",
-        "ns-1668.awsdns-16.co.uk",
-        "ns-1071.awsdns-05.org"
+        "ns-1668.awsdns-16.co.uk"
     ]
 }

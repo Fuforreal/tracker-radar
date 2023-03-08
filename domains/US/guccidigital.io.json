@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000166,
     "sites": 2,
     "subdomains": [
         "componentsfront",
@@ -12,20 +12,27 @@
         "search-spa"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "guccidigital\\.io\\/gde_activator\\/index\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "componentsfront"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "81a01108329edd1777e5c57792a7dc1b709447f009f8a9afdf065eb788bd49fb"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -43,7 +50,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "bde85eb19e382a14cca8a0af8986ee86fff8d90275417ca852a64438c1c15f6d"
@@ -65,9 +72,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9d5f02179d5bae2b762c68b4a610d53784122a04dd8c2ec03b440af3dc35c695"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -79,15 +88,21 @@
         {
             "rule": "guccidigital\\.io\\/static\\/js\\/main\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "search-spa"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "70f8aacc8fb203b6202ece69fbb4ff90c953da483711951cce6aa202bcb4aa06"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -111,9 +126,9 @@
         "Stylesheet": 2
     },
     "nameservers": [
-        "ns-590.awsdns-09.net",
         "ns-1246.awsdns-27.org",
         "ns-374.awsdns-46.com",
+        "ns-590.awsdns-09.net",
         "ns-1655.awsdns-14.co.uk"
     ]
 }

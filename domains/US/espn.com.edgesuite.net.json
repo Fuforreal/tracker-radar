@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000399,
+    "prevalence": 0.000489,
     "sites": 59,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "assets"
     ],
     "cnames": [
+        {
+            "original": "assets.espn.com",
+            "resolved": "assets.espn.com.edgesuite.net"
+        },
         {
             "original": "cdn.espn.com",
             "resolved": "cdn.espn.com.edgesuite.net"
@@ -24,14 +29,14 @@
     "resources": [
         {
             "rule": "espn\\.com\\.edgesuite\\.net\\/onetrust\\/otCCPAiab\\.js",
-            "cookies": 0.000162,
+            "cookies": 0.000257,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
-            "sites": 33,
-            "prevalence": 0.000223,
+            "sites": 31,
+            "prevalence": 0.000257,
             "cnames": [
                 {
                     "original": "cdn.espn.com",
@@ -46,32 +51,60 @@
                 "usprivacy": {
                     "ttl": 31536004,
                     "length": 4,
-                    "prevalence": 0.0001353729524840937,
-                    "uniqueness": 0.05
+                    "prevalence": 0.0002238768842971095,
+                    "uniqueness": 0.037037037037037035
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abcnews.go.com",
-                "espn.com",
                 "www.espn.com",
-                "www.marvel.com",
-                "fivethirtyeight.com",
-                "abc7news.com",
-                "m.espn.com",
                 "abc.com",
-                "projects.fivethirtyeight.com",
-                "www.espn.com.au",
-                "abc7.com",
-                "movies.disney.com",
-                "www.espn.in",
-                "www.espncricinfo.com",
-                "www.espn.com.mx",
+                "abc7news.com",
+                "espndeportes.espn.com",
                 "www.nationalgeographic.com",
-                "abc11.com",
-                "www.espn.com.br",
+                "www.marvel.com",
+                "www.espncricinfo.com",
                 "abc7ny.com",
-                "www.espn.co.uk"
+                "abc30.com",
+                "movies.disney.com",
+                "stats.espncricinfo.com",
+                "6abc.com",
+                "abc.go.com",
+                "www.espn.co.uk",
+                "news.disney.com",
+                "disneyplusoriginals.disney.com",
+                "africa.espn.com",
+                "www.espn.com.mx",
+                "www.espn.com.au"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\.edgesuite\\.net\\/i\\/espnplus\\/espnPlusAllWhite\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "assets.espn.com",
+                    "resolved": "assets.espn.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "bc6531f16b30b277b6693464193fcad8e174fc59c4de05f75427620838394a88"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.com",
+                "m.espn.com",
+                "www.espn.com"
             ]
         }
     ],
@@ -79,15 +112,20 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000298,
+    "cookies": 0.000489,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8461538461538461
+        },
+        {
+            "domain": "espncdn.com",
+            "prevalence": 0.15384615384615385
         }
     ],
     "types": {
-        "Script": 33
+        "Script": 31,
+        "Image": 3
     },
     "nameservers": []
 }

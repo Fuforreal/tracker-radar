@@ -4,13 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.0000912,
+    "sites": 11,
     "subdomains": [
-        "vod-gcs-cloudfront",
-        "availability-fastly.syncbak-mediastore-cedexis",
+        "vod-gcs-lumen",
         "vod-gcs-akamai",
+        "availability-fastly.syncbak-mediastore-cedexis",
         "availability-akamai.syncbak-mediastore-cedexis",
+        "availability-cloudfront.syncbak-mediastore-cedexis",
+        "vod-gcs-cloudfront",
+        "vod-gcs-google",
         "vod-gcs-cedexis"
     ],
     "cnames": [],
@@ -21,14 +24,17 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vod-gcs-cloudfront",
-                "availability-fastly.syncbak-mediastore-cedexis",
+                "vod-gcs-lumen",
                 "vod-gcs-akamai",
-                "availability-akamai.syncbak-mediastore-cedexis"
+                "availability-fastly.syncbak-mediastore-cedexis",
+                "availability-akamai.syncbak-mediastore-cedexis",
+                "availability-cloudfront.syncbak-mediastore-cedexis",
+                "vod-gcs-cloudfront",
+                "vod-gcs-google"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "sites": 9,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,9 +43,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bet.com",
+                "cc.com",
+                "southpark.cc.com",
                 "www.bet.com",
+                "www.logotv.com",
                 "www.mtv.de",
+                "www.paramountnetwork.com",
                 "www.smithsonianchannel.com",
                 "www.southpark.de",
                 "www.southparkstudios.com"
@@ -54,7 +63,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0829a0d71df28f693f1a03e5e7a046511c2d8210a7042c4cb43d154016bd6c74"
@@ -76,12 +85,35 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "bcf909f965bdfcc3aa57aed6d987487c2158103740e480472ff3da168257885c"
             ],
             "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paramountplus.com",
+                "www.paramountplus.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/measurements\\/r20\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod-gcs-cloudfront",
+                "vod-gcs-akamai"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -96,21 +128,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.52
+            "prevalence": 0.7878787878787878
         },
         {
             "domain": "cc.com",
-            "prevalence": 0.48
+            "prevalence": 0.15151515151515152
+        },
+        {
+            "domain": "cedexis.com",
+            "prevalence": 0.06060606060606061
         }
     ],
     "types": {
-        "Fetch": 6,
-        "Media": 4
+        "Fetch": 9,
+        "Media": 4,
+        "Image": 2
     },
     "nameservers": [
-        "ns-154.awsdns-19.com",
-        "ns-1404.awsdns-47.org",
         "ns-956.awsdns-55.net",
-        "ns-1961.awsdns-53.co.uk"
+        "ns-1961.awsdns-53.co.uk",
+        "ns-154.awsdns-19.com",
+        "ns-1404.awsdns-47.org"
     ]
 }

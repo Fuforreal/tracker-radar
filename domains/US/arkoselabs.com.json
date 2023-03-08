@@ -7,14 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000393,
-    "sites": 58,
+    "prevalence": 0.000431,
+    "sites": 52,
     "subdomains": [
         "snap-api",
         "client-api",
-        "api",
         "tabcorp-api",
         "roblox-api",
+        "api",
         "expedia-api",
         "honey-api"
     ],
@@ -22,7 +22,136 @@
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/8ec47a9873ac5013ec44478c00ae2ca99d73647c\\/standard\\/fc_bootstrap\\.js",
+            "rule": "arkoselabs\\.com\\/fc\\/api\\/sri\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snap-api",
+                "client-api",
+                "tabcorp-api"
+            ],
+            "apis": {},
+            "sites": 21,
+            "prevalence": 0.000174,
+            "cnames": [],
+            "responseHashes": [
+                "e53f87cd8b92d45c5a2f2eda399fe9a1abe139b646a66d026a90ab64ea75944e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "expedia.com",
+                "www.expedia.com",
+                "auth.tiaa.org",
+                "www.expedia.de",
+                "www.wotif.com",
+                "expedia.co.uk",
+                "www.expedia.it",
+                "www.expedia.co.jp",
+                "www.expedia.co.uk",
+                "www.expedia.fr",
+                "www.travelocity.ca",
+                "www.thelott.com",
+                "www.lastminute.com.au",
+                "www.tiaabank.com",
+                "snapchat.com",
+                "travelocity.com",
+                "www.expedia.nl",
+                "www.expedia-aarp.com",
+                "www.travelocity.com",
+                "magiceden.io"
+            ]
+        },
+        {
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/funcaptcha_api\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "snap-api",
+                "client-api",
+                "roblox-api",
+                "tabcorp-api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 18,
+                "Navigator.prototype.doNotTrack": 13,
+                "Navigator.prototype.language": 13,
+                "Screen.prototype.colorDepth": 10,
+                "window.devicePixelRatio": 10,
+                "Screen.prototype.height": 10,
+                "Screen.prototype.width": 10,
+                "Screen.prototype.availWidth": 10,
+                "Screen.prototype.availHeight": 10,
+                "Date.prototype.getTimezoneOffset": 17,
+                "window.sessionStorage": 10,
+                "window.localStorage": 10,
+                "window.indexedDB": 10,
+                "Navigator.prototype.platform": 13,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 10,
+                "HTMLCanvasElement.prototype.toDataURL": 10,
+                "Navigator.prototype.productSub": 13,
+                "Navigator.prototype.appName": 13,
+                "Navigator.prototype.plugins": 7,
+                "Navigator.prototype.maxTouchPoints": 13,
+                "Navigator.prototype.hardwareConcurrency": 13,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 10,
+                "WebGLRenderingContext.prototype.getParameter": 10,
+                "WebGLRenderingContext.prototype.getContextAttributes": 10,
+                "WebGLRenderingContext.prototype.getExtension": 10,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 10,
+                "NavigatorUAData.prototype.brands": 10,
+                "Navigator.prototype.connection": 13,
+                "Screen.prototype.pixelDepth": 10,
+                "Navigator.prototype.deviceMemory": 10,
+                "Navigator.prototype.languages": 13,
+                "window.innerWidth": 10,
+                "window.innerHeight": 10,
+                "window.outerWidth": 10,
+                "window.outerHeight": 10,
+                "HTMLMediaElement.prototype.canPlayType": 10,
+                "window.matchMedia(\"prefers-color-scheme\")": 17,
+                "Navigator.prototype.webdriver": 7,
+                "Navigator.prototype.cookieEnabled": 13,
+                "OfflineAudioContext.prototype.constructor": 10,
+                "Navigator.prototype.getBattery": 11,
+                "AudioBuffer.prototype.getChannelData": 12,
+                "Date.prototype.getTime": 17
+            },
+            "sites": 23,
+            "prevalence": 0.000191,
+            "cnames": [],
+            "responseHashes": [
+                "b242f8439d55bda4ea6ad50e81f317fd03fc904aa931178517b7b51444805455"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "expedia.com",
+                "www.expedia.com",
+                "www.expedia.nl",
+                "www.lastminute.com.au",
+                "www.expedia-aarp.com",
+                "roblox.com",
+                "auth.tiaa.org",
+                "www.travelocity.ca",
+                "travelocity.com",
+                "www.expedia.fr",
+                "www.expedia.de",
+                "www.thelott.com",
+                "magiceden.io",
+                "www.expedia.co.jp",
+                "www.expedia.co.uk",
+                "www.travelocity.com",
+                "expedia.co.uk",
+                "www.expedia.it",
+                "www.roblox.com",
+                "www.wotif.com"
+            ]
+        },
+        {
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/fc_bootstrap\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -30,25 +159,37 @@
                 "client-api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Notification.permission": 5,
-                "Navigator.prototype.plugins": 5
+                "Navigator.prototype.userAgent": 15,
+                "Notification.permission": 3,
+                "Navigator.prototype.plugins": 3
             },
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
-                "db5c0188647e67a1dee3eb0f2883293f6ae733cc59898acdb083fe91b8ae801e"
+                "6a87ddd21b3b49ce1b068239c6a7a738fa70acfd51c54504f4f6a89e2442ade6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snapchat.com",
+                "expedia.co.uk",
                 "expedia.com",
+                "travelocity.com",
+                "www.expedia-aarp.com",
+                "www.expedia.co.jp",
                 "www.expedia.co.uk",
+                "www.expedia.com.au",
                 "www.expedia.com",
-                "www.expedia.de"
+                "www.expedia.de",
+                "www.expedia.fr",
+                "www.expedia.it",
+                "www.expedia.nl",
+                "www.lastminute.com.au",
+                "www.travelocity.ca",
+                "www.travelocity.com",
+                "www.wotif.com"
             ]
         },
         {
@@ -60,27 +201,26 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.000122,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
-                "3e3563c942caf2dc31c2600f52895b7d496c90db9137a4f91445d461e1d571a5",
-                "8a6db88c67f6c3bd8ffc9b2aec7ab7091cf1bef50c4c25944f0a0aa8437c7a50",
-                "c3ca99292380a4f22ff3bf3a8934bd4d945abfd1d511dec73c0f6e46df185b45",
-                "305494ba327eb44c93b5c87cf4b3bb114ad8dbb98f53a1db9b309090459c4e7b",
-                "10fdbab0e3a2d92871789887e53cd4547cbc96aaa0abc0785a53648f2afbea57",
-                "35b33ecfe73b8ac73f1976fce287e571029b0be62a28873354992fdd9615a76f",
-                "14c92ab9bcf32ed36a59fd93e8acf038c7b01bf3f345b131f1063f4bbb4a1e6f",
-                "3a2ccba86b6a425bdebbeb1b7f62cc0a93ba7a143507f76097cc790efae1448a",
-                "3bb874dba79f2a9007cc39c00d06aad09304e56324ba30b99075cb18f5942e77",
-                "a54274c2daff60e4357d873e29f470b5864f43b156c026298b75ca9848ccaf99",
-                "5fe2ab66307bf05be0f33e871c2ffe406af5adf17d16e323c267234620999910",
-                "dd9defae7a8b298f213cd72154d026fa78e078e16840a1ccfa4869461884da16",
-                "0a87a683f8314707b493ef85a62dabdf203a3f21ed54fb6df0a2142a1793beba",
-                "71e001797f30c2a602d9621ed8cd1a47df38972d67e8f37d7444e4d194947e87",
-                "b992d00bfdabd06ea9af4d14f7f9ea522e43c336b48d6d430cc43790b33cf38e",
-                "30ff5fc04ea8434694281bb66d7417c6813bf73342cdf6b1240dbda1d66c05f7",
-                "1f585fa62ed735c4812064b2018478c5b73dacc1c8d8767a7fa0da198b480cea"
+                "33ea6c5fd841f0c54117bf4a812c4648059140d5c0e0b4d8e3ad05b68f6e037f",
+                "c0dfcd09ea13d126d133522a02f44537c95c843f9917c8fcec3ef6fd76b133ad",
+                "c97b1898e6af52a2d9c0159c71b73c225ec0939bc101d1dc03637ecfb2b2f179",
+                "74e4bff56c48e5ff7c8ced3a5ae0a65c503c58ec54e689d96098cbf2ebc19927",
+                "b8a53283cef61828a940e9094061b57e9191860a7be2bb63305ecb95af65ed0d",
+                "6b65f24af4506e94d8bf1b76a3fe7ff0cb6ebf74f9946a148032393360b86d9c",
+                "bd4468b7563e976c3b8d44550a5ad2a61c55a0d2a1c406ca38e59a2966171997",
+                "5644b6b809361e5e45f44db67dd245c63449a1a539e3daec06a85fbb218b228d",
+                "5085bdc5e8e1a7d659c2090ee35aedd2288bcfcaa7b45eba76176cb4dc6fd7e3",
+                "db6b3f9d49e14e96037fc14cbbe54facf589e6bf2d1cd40d88ad12d748a5494a",
+                "fdae9da95216dd6734f5a6fce41c3eb84cd6ae23bfb5a2309ec19e30224aec51",
+                "a5d464e5e75daab38ffc852180ff78a35bcda166715e4c6fc6289fcc0188d542",
+                "78f886163ba51a8258c1ed712296dc6e2506c5e8ef0a63da757b54c45063047d",
+                "a4f7c3f30130c3805b69437c197d99accf66121a42f1258cca8028961c1102f0",
+                "618fc7bf8424510298a1137e4be2c2723c39f96072b630a8ac3c73708b3c6381",
+                "221d0bdcd0f271db462e8ac2d8e2e113d8eec903a139f7bdaec8fa74f214069a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -89,13 +229,11 @@
                 "snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -103,11 +241,12 @@
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
         {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/gc\\/css\\/min\\/8ec47a9873ac5013ec44478c00ae2ca99d73647c\\/fc-meta-3\\.css",
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/gc\\/css\\/min\\/63a4023a300c423682d97bc02d260da1dde543ea\\/fc-meta-3\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -115,8 +254,8 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
                 "09ac271997aa93450c8a30133462ff50d77660103c563ea98c914272d7321307"
@@ -126,14 +265,26 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snapchat.com",
+                "expedia.co.uk",
                 "expedia.com",
+                "travelocity.com",
+                "www.expedia-aarp.com",
+                "www.expedia.co.jp",
                 "www.expedia.co.uk",
+                "www.expedia.com.au",
                 "www.expedia.com",
-                "www.expedia.de"
+                "www.expedia.de",
+                "www.expedia.fr",
+                "www.expedia.it",
+                "www.expedia.nl",
+                "www.lastminute.com.au",
+                "www.travelocity.ca",
+                "www.travelocity.com",
+                "www.wotif.com"
             ]
         },
         {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/8ec47a9873ac5013ec44478c00ae2ca99d73647c\\/standard\\/meta_bootstrap\\.js",
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/meta_bootstrap\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -141,10 +292,10 @@
                 "client-api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.userAgent": 17
             },
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
                 "5091d289920f2b6f6447e226a5a64e602dfc40d8444893d438f4e2cf8f11c454"
@@ -154,51 +305,76 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snapchat.com",
+                "expedia.co.uk",
                 "expedia.com",
+                "travelocity.com",
+                "www.expedia-aarp.com",
+                "www.expedia.co.jp",
                 "www.expedia.co.uk",
+                "www.expedia.com.au",
                 "www.expedia.com",
-                "www.expedia.de"
+                "www.expedia.de",
+                "www.expedia.fr",
+                "www.expedia.it",
+                "www.expedia.nl",
+                "www.lastminute.com.au",
+                "www.travelocity.ca",
+                "www.travelocity.com",
+                "www.wotif.com"
             ]
         },
         {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/8ec47a9873ac5013ec44478c00ae2ca99d73647c\\/standard\\/fc_general\\.js",
-            "cookies": 0.0000203,
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/fc_general\\.js",
+            "cookies": 0.000124,
             "fingerprinting": 2,
             "subdomains": [
                 "snap-api",
                 "client-api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "window.innerHeight": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Date.prototype.getTime": 5,
-                "Navigator.prototype.platform": 5,
-                "Document.cookie setter": 3
+                "Navigator.prototype.userAgent": 17,
+                "Date.prototype.getTime": 17,
+                "Navigator.prototype.platform": 17,
+                "window.innerHeight": 15,
+                "Screen.prototype.width": 15,
+                "Screen.prototype.height": 15,
+                "Document.cookie setter": 15,
+                "CanvasRenderingContext2D.prototype.measureText": 8
             },
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
-                "fdea75a61f6fdc06eba6ccaa87057f081e12bacbc84fb65be18cf23a721125e1"
+                "776f2106edf11df1c84f50eb9ece35b8794e64a40aab0745df202429d915af8f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "timestamp": {
                     "ttl": null,
                     "length": 15,
-                    "prevalence": 0.00002030594287261405,
+                    "prevalence": 0.0001243760468317275,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snapchat.com",
+                "expedia.co.uk",
                 "expedia.com",
+                "travelocity.com",
+                "www.expedia-aarp.com",
+                "www.expedia.co.jp",
                 "www.expedia.co.uk",
+                "www.expedia.com.au",
                 "www.expedia.com",
-                "www.expedia.de"
+                "www.expedia.de",
+                "www.expedia.fr",
+                "www.expedia.it",
+                "www.expedia.nl",
+                "www.lastminute.com.au",
+                "www.travelocity.ca",
+                "www.travelocity.com",
+                "www.wotif.com"
             ]
         },
         {
@@ -210,8 +386,8 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
+            "sites": 18,
+            "prevalence": 0.000149,
             "cnames": [],
             "responseHashes": [
                 "2ad3e8570386d338e4f7ad703ba8f80f4cf257223b7b09cf71b2dde405403471"
@@ -224,13 +400,11 @@
                 "accounts.snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -238,6 +412,7 @@
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
@@ -250,26 +425,26 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.000122,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
-                "0e7870aa589f5f2fc780879f51909edccfac252a65cfe3192bddd946e226abad",
-                "ab0b2139c299b9500a5fb8a7f9bb0fbd3ac6a0be9bd5d3b45013c4df5b80df1d",
-                "4a57b7fb01c63f2e0b60bbf789aa3333b0d0ae47c794b82b70fde30983078cd6",
-                "2a84cba6b99c66cab31f1510b36e84b384e1305dc704d9a3977eee02722bcb1e",
-                "ea3b7624de383c4f7c4c3eff0b84fc5a9586fcf6c2724b171f2c6abb2d0a156e",
-                "7fdb275a0fb09c7666b3f26b76beb51d4ecf3c7d3993baacd129110704528895",
-                "7e40b1b5af6b380e900ef66c32e58c5fc076e0b204a002b0b5e75627178bea5e",
-                "a4075829e4c899edaa15ffa0a2476178ea55a8fa933ae081cd9bdc49be9afa72",
-                "32a5b21c6e5391187ce7a6086039140139585ef93198ca13fbe4c6a44670169f",
-                "48b0991ae23b96846d5b599fa2b03de4094faf9b236f5c6563d63f03cad5d462",
-                "40b75dd2ac6b33eec5b1442c910117d16c320d99fc6b1e1521fcad3939c5d047",
-                "ebe685e55e511f5d5902de7e7cf6bfc83edc688e379a4d4ecfae1ec655f0d441",
-                "fba7077e95944359aa6e567a5cc505da267acb05b2189d0be7a4320421c364a8",
-                "ee180abb82d97d1ac440d30ce5f9ae63248bd43782b41faf12af41fa6ab45837",
-                "f8d08117d775045e9a88e6bbc80318f71e8089213c21b73c46453ee17a697227",
-                "88d747d529cdae726944e8f1a14ff2a60be99c8655f7f8c2afae987b993de509"
+                "d3f6ef7eb3dcbd47eec7db7137605f2af5d2f72d2705ec99967349360be23348",
+                "d47fddf4bfc23a7e658cf0de8a672cc38eb41dce9f7f0b0d651fa6c2eec32de4",
+                "ea1df631ee2fc13fede5f186ac78e3d16079ffa3b54ef905366fe0d1b94983cb",
+                "eb78290d58e3f746e288ad064b656f5ea5c58300902e68559fa474e02b6f1d92",
+                "e7d83fa58adcda2ac6e840c2baefac68208c975a818f800a270e10f3540c5ba3",
+                "b9d29744980c725629a2640b167b520fb555ecd4a7cb4fc05b6f710becfe1711",
+                "5be78406d521fab70c758567721d343ab0bf58254696813065e1a4af38a8db8a",
+                "2bb05a5ad11fd015f5e37e7961d0d268bfdc12543115a6b0e0ba4dc79e019e5f",
+                "707f0dfae9a3269c0deb3330de12a70e0f7009b6da223bb610aa536e4d96a324",
+                "40c7106f139d0f56dc68730a9b5fa0928f7c2f9ecbae34f8be23625204e11d16",
+                "d83af052c3aaedf470a9c46c4f2e00b556a531043959d0c2be74a46c88c45f99",
+                "b4cfb5d2a2178483016943233c606a8aa4e2306f026f0b1062ba059bd74fbec2",
+                "e6c89c542622d06dbee5a56389e41b421736f4b8fb965be6ab21651dbd57c48c",
+                "22682873a5f31dd315912ad293a65c4426450f3a55f910a96e19a8a64603c12f",
+                "cc72e334a5c01351eceb9cea7f2df9435704ea7b0a03161c1fb34834e1ab2142",
+                "a7ec9ca68f989bf4710163323465a1c6b9ac59c25c4f59916c10d2fa4eed50e3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -278,13 +453,11 @@
                 "snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -292,6 +465,7 @@
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
@@ -305,7 +479,7 @@
             ],
             "apis": {},
             "sites": 17,
-            "prevalence": 0.000115,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
                 "a7665deed6583f8349473cfbcf592dcb11323d784af33dafbead6a3d46f4a906"
@@ -317,19 +491,19 @@
                 "snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
@@ -342,15 +516,15 @@
                 "client-api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 8,
-                "Navigator.prototype.product": 15,
+                "Navigator.prototype.product": 16,
+                "Document.cookie getter": 16,
+                "Navigator.prototype.userAgent": 7,
                 "window.localStorage": 7,
-                "Navigator.prototype.languages": 8,
-                "Navigator.prototype.language": 8,
-                "Document.cookie getter": 11
+                "Navigator.prototype.languages": 7,
+                "Navigator.prototype.language": 7
             },
             "sites": 17,
-            "prevalence": 0.000115,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
                 "c867aef3bbb4987294fd5708461d10df0cc1a23f83d635e8d7f18f47141f11e2"
@@ -362,19 +536,19 @@
                 "snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
@@ -388,26 +562,25 @@
             ],
             "apis": {},
             "sites": 18,
-            "prevalence": 0.000122,
+            "prevalence": 0.000149,
             "cnames": [],
             "responseHashes": [
-                "c699f72068e9f1448da183fc6193562a036aebb3f0842547dcd2c9e3d36d9fb1",
-                "0e40badcf3500b524625a07df50298c2daaf85cd9d48b67488a3d0d782b5ccdc",
-                "50d8b7582c05266c6ecfee584527fdd4b6f86368753de9652ecdf30083b38ace",
-                "6e229e04bad65799ac5a8f096cb810eee7c7a6ffbeda27f4fff25b308c02dbfc",
-                "4f2a96cff24366f2e8e6c697fe5ca2167976be838512db23f21ce2846b2f64dc",
-                "9fdf6256e739dae3f734325e3b93458c531efc0f6cd3fcc5756c3789a160f3be",
-                "8b11a588ed012b244d68f34029d2648c43b407d640d7c9f69fff411e5a737e09",
-                "dbeccdb178ce0dfa4cec4ff31ac4927809967e095d57a32bf74219a1484f21bf",
-                "30a7af975cb0873b2c6c1b58932ead7bbc9137591d22decb9e2afeb7a3e0c7f8",
-                "970891ba9a83a1a97973c60bc8b9b368e6bf45885d7cced848a94c245c160c1f",
-                "5b3651302a4453abd9918d6ece51cffd4c76edc77cd758933436843171f1e0f1",
-                "367baf97fe597ba8758e59ea8723a5f3548aa4a24a92a2763c953a26153a64eb",
-                "67d2ef096de0092032e376b4d4b185f123777e609beacfc4f603e39db4d5566a",
-                "a236475d3e0675ee9df7173ca571ca65600fa22db67e4eb8e98aeb1a5813868f",
-                "bedfe839f2776ee5a18bec02fc06d56abbab6aff88656ed27984fd4693fc4d24",
-                "7a6eb258e981cd7c50d7382085686058972aba23095f4150964776bba3c35879",
-                "7747bb924e5900ccd0a42f847a1c5a311bee8120829af0e0f9fc2d2c13ced260"
+                "1c028a2ac7d6e9da5691d919ccab97d14b2cdae5f0fb1352d4d156c23a2bcec0",
+                "7df1893e0f83fb9487be0c5593ca013fa12303203ce538af8e405cde3157aa0e",
+                "4815e1df30ca2dddcb4e48ba1ae3f584af6bcfc163d93a3e298f4bb6e4d569cf",
+                "8beeded34e8c8aec6557abadcd7f0ae7350488371747580587b1f401fb7125a6",
+                "25a3086a56ddb7a3eb0a1338f711d1cb131ec5e9b137a504f4529cf6cc7a3699",
+                "8446cfa766a4890543f05c363f373d1185bdf7d44d4e15269c6cbf45d4f80f47",
+                "1fd234007a46bb27efd839efba609ef61e489bac3aab751abc2499ad156e1b69",
+                "4fb5ddfcb02309d9f674cbd45468f1e62e0d51c08ba8f52d23fef1f14ec27a7d",
+                "d76180627bc40a0deb0ce26699b4e7527db3e85158a29fa03fa48da60f567e9a",
+                "3debaa797bcaeef93b2d3bb3a264c14f2c601fc895ef525f6d4bff90e1c677d3",
+                "cf0628bbe29535c8b54bf78c428a4e9cf5056d866d97567a9aba1e147009415b",
+                "ec2e3dfcf09e2f94f90cacfee47242eb2bb493935da430c87313e6efdd82db2b",
+                "334662a2774f1aa9131b391b871077cc4347e8c5f806d58da3125dde98f07d52",
+                "d4a2070539fbc5b9e491807abc9d6db04722f6ef84f008ffa60f0b68e02a701f",
+                "c5098cd622418f3593a17c0fbb09f03286cdbc6c796d1011be455ef84de6575f",
+                "1c5b96650474a1df70fdc085a4cffbef579e5de7ab010e8895fa00010ab43742"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -417,19 +590,19 @@
                 "accounts.snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
@@ -443,7 +616,7 @@
             ],
             "apis": {},
             "sites": 17,
-            "prevalence": 0.000115,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
                 "e4b244fef375b18eaa19e5ea315bbf72b129bfd58f8515128ff50c5cb1e12113"
@@ -455,19 +628,19 @@
                 "snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
@@ -481,7 +654,7 @@
             ],
             "apis": {},
             "sites": 17,
-            "prevalence": 0.000115,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
                 "4d368f17eaf100abd795386c79e0dd67c3acb9adb3fc203c6cbc7676bafd572c"
@@ -493,19 +666,19 @@
                 "snapchat.com",
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
@@ -518,8 +691,8 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.000115,
+            "sites": 16,
+            "prevalence": 0.000133,
             "cnames": [],
             "responseHashes": [
                 "db6e45e3758fb79fb72130927205beea391d70e2a584d5ef5b8ebea023bd55d1"
@@ -529,39 +702,38 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snapchat.com",
-                "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
+                "www.travelocity.com",
                 "www.wotif.com"
             ]
         },
         {
             "rule": "arkoselabs\\.com\\/v2\\/942A102E-8D3A-4F0F-9ED3-13CA6D754952\\/api\\.js",
-            "cookies": 0.0000203,
+            "cookies": 0.0000249,
             "fingerprinting": 1,
             "subdomains": [
                 "api",
                 "client-api"
             ],
             "apis": {
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.connection": 3
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.connection": 2
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "bb284b31b0d03d59cf2da0598530c0c6e715496ea9cdf261a4354c9cf2f52da7"
@@ -571,8 +743,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tiaa.org",
-                "www.tiaa.org",
-                "www.tiaabank.com"
+                "www.tiaabank.com",
+                "www.tiaa.org"
             ]
         },
         {
@@ -583,8 +755,8 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "67197524625486bb60a0742000b75aea679f79badcc37bd056537d3346ac4389"
@@ -594,7 +766,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tiaa.org",
-                "www.tiaa.org",
                 "www.tiaabank.com"
             ]
         },
@@ -606,10 +777,10 @@
                 "client-api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "b9761ad309da1ebfd9d49eb687d983dab0ac5c00a5c187904932480735192e52"
@@ -619,153 +790,26 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tiaa.org",
-                "www.tiaa.org",
                 "www.tiaabank.com"
             ]
         },
         {
-            "rule": "arkoselabs\\.com\\/fc\\/api\\/sri\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-api",
-                "tabcorp-api"
-            ],
-            "apis": {},
-            "sites": 24,
-            "prevalence": 0.000162,
-            "cnames": [],
-            "responseHashes": [
-                "e53f87cd8b92d45c5a2f2eda399fe9a1abe139b646a66d026a90ab64ea75944e",
-                "05806a739cb9a53000c79a6994b236459f825ad077d5f29ece81a625ada3bd59"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "expedia.com",
-                "www.expedia.com",
-                "www.expedia.com.au",
-                "tiaa.org",
-                "travelocity.com",
-                "www.wotif.com",
-                "origin.thelott.com",
-                "www.expedia.co.uk",
-                "www.tiaabank.com",
-                "www.expedia.com.tw",
-                "www.thelott.com",
-                "www.lastminute.com.au",
-                "www.travelocity.ca",
-                "expedia.de",
-                "www.expedia.nl",
-                "expedia.co.uk",
-                "www.expedia-aarp.com",
-                "www.expedia.it",
-                "magiceden.io",
-                "www.tiaa.org"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/funcaptcha_api\\.js",
-            "cookies": 0,
-            "fingerprinting": 3,
-            "subdomains": [
-                "client-api",
-                "tabcorp-api",
-                "roblox-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 17,
-                "Date.prototype.getTimezoneOffset": 13,
-                "window.matchMedia(\"prefers-color-scheme\")": 13,
-                "AudioBuffer.prototype.getChannelData": 12,
-                "Date.prototype.getTime": 13,
-                "Navigator.prototype.doNotTrack": 8,
-                "Navigator.prototype.language": 8,
-                "Screen.prototype.colorDepth": 8,
-                "window.devicePixelRatio": 8,
-                "Screen.prototype.height": 8,
-                "Screen.prototype.width": 8,
-                "Screen.prototype.availWidth": 8,
-                "Screen.prototype.availHeight": 8,
-                "window.sessionStorage": 8,
-                "window.localStorage": 8,
-                "window.indexedDB": 8,
-                "Navigator.prototype.platform": 8,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 8,
-                "HTMLCanvasElement.prototype.toDataURL": 8,
-                "Navigator.prototype.productSub": 8,
-                "Navigator.prototype.appName": 8,
-                "Navigator.prototype.plugins": 8,
-                "Navigator.prototype.maxTouchPoints": 8,
-                "Navigator.prototype.hardwareConcurrency": 8,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 8,
-                "WebGLRenderingContext.prototype.getParameter": 8,
-                "WebGLRenderingContext.prototype.getContextAttributes": 8,
-                "WebGLRenderingContext.prototype.getExtension": 8,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 8,
-                "NavigatorUAData.prototype.brands": 8,
-                "Navigator.prototype.connection": 8,
-                "Screen.prototype.pixelDepth": 8,
-                "Navigator.prototype.deviceMemory": 8,
-                "Navigator.prototype.languages": 8,
-                "window.innerWidth": 8,
-                "window.innerHeight": 8,
-                "window.outerWidth": 8,
-                "window.outerHeight": 8,
-                "HTMLMediaElement.prototype.canPlayType": 8,
-                "Navigator.prototype.webdriver": 8,
-                "Navigator.prototype.cookieEnabled": 8,
-                "OfflineAudioContext.prototype.constructor": 8,
-                "Navigator.prototype.getBattery": 8
-            },
-            "sites": 18,
-            "prevalence": 0.000122,
-            "cnames": [],
-            "responseHashes": [
-                "b242f8439d55bda4ea6ad50e81f317fd03fc904aa931178517b7b51444805455"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tiaa.org",
-                "expedia.co.uk",
-                "expedia.de",
-                "magiceden.io",
-                "origin.thelott.com",
-                "roblox.com",
-                "travelocity.com",
-                "www.expedia-aarp.com",
-                "www.expedia.co.jp",
-                "www.expedia.com.au",
-                "www.expedia.com.tw",
-                "www.expedia.fr",
-                "www.expedia.it",
-                "www.expedia.nl",
-                "www.lastminute.com.au",
-                "www.tiaabank.com",
-                "www.travelocity.ca",
-                "www.wotif.com"
-            ]
-        },
-        {
             "rule": "arkoselabs\\.com\\/v2\\/89FB5832-55B3-2CF8-E53A-BC08F51D85E1\\/api\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "api"
             ],
             "apis": {
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.connection": 2
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.connection": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "1ddf2ca599abdec3f5f4ef1d102431ec9da896803598b0ef2b3844a8f31fa4c9"
+                "6bb4a237cd734d2082f6a054ecafef5734a195e986c75e38877f515c9690ecad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -777,14 +821,14 @@
         },
         {
             "rule": "arkoselabs\\.com\\/fc\\/api\\/nojs\\/",
-            "cookies": 0.000129,
+            "cookies": 0.000141,
             "fingerprinting": 0,
             "subdomains": [
                 "expedia-api"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -793,14 +837,12 @@
             "exampleSites": [
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.cheaptickets.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -820,12 +862,11 @@
                 "expedia-api"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
+            "sites": 17,
+            "prevalence": 0.000141,
             "cnames": [],
             "responseHashes": [
-                "95dc2880232a9638e4632e01c5ef510050920060d90e8e3767cde6bf89895b56",
-                "e86555598bcd9f25cd18baffe0eca1ff174baba125762db8d91950db5acac2b4"
+                "1ea72b05d66d1fda202640f54c54af1583a2aa32cd5b7cc69c129721ca1bfc9a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -833,14 +874,12 @@
             "exampleSites": [
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.cheaptickets.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -860,12 +899,12 @@
                 "expedia-api"
             ],
             "apis": {
-                "Navigator.prototype.platform": 18,
-                "Navigator.prototype.language": 18,
-                "Navigator.prototype.connection": 18
+                "Navigator.prototype.platform": 16,
+                "Navigator.prototype.language": 16,
+                "Navigator.prototype.connection": 16
             },
-            "sites": 18,
-            "prevalence": 0.000122,
+            "sites": 16,
+            "prevalence": 0.000133,
             "cnames": [],
             "responseHashes": [
                 "900ad24db45484b612c1ce6dd055d7391806869e67af32e6b7ac5abeaaa6b4aa"
@@ -876,13 +915,11 @@
             "exampleSites": [
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -902,8 +939,8 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.000122,
+            "sites": 16,
+            "prevalence": 0.000133,
             "cnames": [],
             "responseHashes": [
                 "762832a93153b748b6f64ce4ec6049655c83b3f3c4a4bad4d593ef8c1adc9675"
@@ -914,13 +951,11 @@
             "exampleSites": [
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -940,10 +975,10 @@
                 "client-api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 11
+                "Navigator.prototype.userAgent": 8
             },
-            "sites": 18,
-            "prevalence": 0.000122,
+            "sites": 16,
+            "prevalence": 0.000133,
             "cnames": [],
             "responseHashes": [
                 "9177f7a94a3bd2004b0a2588c6fb7269f6376902b2c8d2082fdf221d49855e5f"
@@ -954,13 +989,11 @@
             "exampleSites": [
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -980,26 +1013,25 @@
                 "client-api"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.000115,
+            "sites": 16,
+            "prevalence": 0.000133,
             "cnames": [],
             "responseHashes": [
-                "2c487a236c8ef6ef23f95077f49b491ab7faa233774ae25d75ebb0e3ca4c1150",
-                "cac49b3a167758a4ea5aa85e85736f2aed6b7442f6ad1f973ec4b720f3f317ee",
-                "916de58d7141b2e28f66c309b35283bedf911377f17543a03bc37a27f7a6c370",
-                "8c8381269709e5f930f94d0344d77a3be89a8a8ea1febfcc6a6f758c4bb882bf",
-                "a41a2163de5ddad6530441314025ff8c1ee52f585661798b6f127ca847f4f14e",
-                "82101717933e044f73af7a7e7eb81acc55aa956660f0aad8941589e27f2e1780",
-                "8270afb4a0bf7ed0d5d050dbcc84037e3885890934601cedcdd1ce6206ea1cc0",
-                "78caf9a0d4517862414ee1e0b70c01b11071b0cd1efdc3293f9f17e1117308f1",
-                "f7e6735c360a94a5f5cbe0d7ecdb520e1a9ba1c0cce637b2f87b6a3ad98ff3f1",
-                "db97900367fac1f07fb9a1bd2f4f7550c8ffbc080d901ab65d1cef02ab2ca2ff",
-                "55d5493ca1f8e72e35291654552faf9862a7e5b5701e7eb1a7835c0501df0de4",
-                "9418a8f7f963af44ea8f4c95d0e1375ab29ad4ca0e00ee1c016b5a675504767c",
-                "06bfa147badd5a3b690027ea41a1bf249209c866e307113a6de5fffce72ba219",
-                "c66297db4553696eb79c388f6f2a8a62b323e9bf952f9c71b43a7f7df94c8116",
-                "2d9458c448311eb1345f76f160fe620d3497871bd6fec882c6298bcbdeb2e0a4",
-                "1832fa45d70718ce5df2a98d0a01d76d8d337de11cf52394a9a683214c3366a8"
+                "d39ffe2d4a9177f76de0b8ff563ccd0e4c4d02c488127dbe737f1178e77d36d6",
+                "aeb2678dc20cb87ccb6bc3cf30138517d01834dff779088ee94da3a0c9593b3c",
+                "a982827e3a7d772db7291d88f240351a2e2cc6111e91478940c43b95676f1a63",
+                "d71dc8113ba7d88afe3acadb022daf153db417bcef56d3f7b6ab8deaf90b3d52",
+                "adf7e8306a195c4ffd2b827ff48b5c8fe8abe81a8f2173f5e25b0359eef447f2",
+                "56e84b4025b96f0a1a42b954db006e2eff347b3f95c09013c873e9fbe2e426fc",
+                "4a0ff3b28968044c03307e08a051583694e60f0a3d681cfabb752e4a5a09fec2",
+                "c5c6541eec4bd784a5d23559c49ac3f5b4e3a221b3c3d5eb9cfe7833e9b65990",
+                "d4be9df845915f617a2954314bc26d5e8f615d2074d55df69f04146c5d1dd7c4",
+                "c29ab3930247894ca9a664ddfee4079daffa21baa8df194e6f8b24f3c245f8d7",
+                "aecb7473c33cb49f2d098c0fd3d69b8f82af07a7eb8e47f97d82c55c0c8ad0a9",
+                "992addff84b875caeb7699363aca13d8ba0cc364e4bee50a0f08d0874d156800",
+                "b8c84a0ba392f0b078091ec96e8e7a4a330276529e0766611cbdad7479c61645",
+                "5096c8ae64d57e2319daafd85dd6e8818cb9091787361e71f79c6c3b434b7303",
+                "634b53255beee9a4ef9b013bf3f2dc857494431c34da87fba492f51a12bd8551"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1007,276 +1039,11 @@
             "exampleSites": [
                 "expedia.co.uk",
                 "expedia.com",
-                "expedia.de",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
                 "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
-                "www.expedia.com",
-                "www.expedia.de",
-                "www.expedia.fr",
-                "www.expedia.it",
-                "www.expedia.nl",
-                "www.lastminute.com.au",
-                "www.travelocity.ca",
-                "www.wotif.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/39eca341811c50f1f573c72f14bd5612e0f6cd3c\\/standard\\/funcaptcha_api\\.js",
-            "cookies": 0,
-            "fingerprinting": 3,
-            "subdomains": [
-                "client-api",
-                "roblox-api",
-                "tabcorp-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "Navigator.prototype.doNotTrack": 4,
-                "Navigator.prototype.language": 4,
-                "Screen.prototype.colorDepth": 4,
-                "window.devicePixelRatio": 4,
-                "Screen.prototype.height": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.availWidth": 4,
-                "Screen.prototype.availHeight": 4,
-                "Date.prototype.getTimezoneOffset": 4,
-                "window.sessionStorage": 4,
-                "window.localStorage": 4,
-                "window.indexedDB": 4,
-                "Navigator.prototype.platform": 4,
-                "Navigator.prototype.productSub": 4,
-                "Navigator.prototype.appName": 4,
-                "Navigator.prototype.maxTouchPoints": 4,
-                "Navigator.prototype.hardwareConcurrency": 4,
-                "NavigatorUAData.prototype.brands": 4,
-                "Navigator.prototype.connection": 4,
-                "Screen.prototype.pixelDepth": 4,
-                "Navigator.prototype.languages": 4,
-                "window.innerWidth": 4,
-                "window.innerHeight": 4,
-                "window.outerWidth": 4,
-                "window.outerHeight": 4,
-                "window.matchMedia(\"prefers-color-scheme\")": 4,
-                "Navigator.prototype.cookieEnabled": 4,
-                "AudioBuffer.prototype.getChannelData": 3,
-                "Date.prototype.getTime": 4,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
-                "HTMLCanvasElement.prototype.toDataURL": 1,
-                "Navigator.prototype.plugins": 1,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "WebGLRenderingContext.prototype.getContextAttributes": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
-                "Navigator.prototype.deviceMemory": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "Navigator.prototype.webdriver": 1,
-                "OfflineAudioContext.prototype.constructor": 1
-            },
-            "sites": 8,
-            "prevalence": 0.0000541,
-            "cnames": [],
-            "responseHashes": [
-                "bacc691c9ea02a51e54eaf70379ba10579c20c23aeadef1d93c15ad9ab3800c2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "expedia.com",
-                "www.expedia.co.uk",
-                "www.expedia.com",
-                "www.expedia.de",
-                "www.roblox.com",
-                "www.thelott.com",
-                "www.tiaa.org",
-                "www.travelocity.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/fc_bootstrap\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "client-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 13
-            },
-            "sites": 13,
-            "prevalence": 0.000088,
-            "cnames": [],
-            "responseHashes": [
-                "6a87ddd21b3b49ce1b068239c6a7a738fa70acfd51c54504f4f6a89e2442ade6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "expedia.co.uk",
-                "expedia.de",
-                "travelocity.com",
-                "www.expedia-aarp.com",
-                "www.expedia.co.jp",
-                "www.expedia.com.au",
-                "www.expedia.com.tw",
-                "www.expedia.fr",
-                "www.expedia.it",
-                "www.expedia.nl",
-                "www.lastminute.com.au",
-                "www.travelocity.ca",
-                "www.wotif.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/gc\\/css\\/min\\/63a4023a300c423682d97bc02d260da1dde543ea\\/fc-meta-3\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-api"
-            ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.000088,
-            "cnames": [],
-            "responseHashes": [
-                "09ac271997aa93450c8a30133462ff50d77660103c563ea98c914272d7321307"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "expedia.co.uk",
-                "expedia.de",
-                "travelocity.com",
-                "www.expedia-aarp.com",
-                "www.expedia.co.jp",
-                "www.expedia.com.au",
-                "www.expedia.com.tw",
-                "www.expedia.fr",
-                "www.expedia.it",
-                "www.expedia.nl",
-                "www.lastminute.com.au",
-                "www.travelocity.ca",
-                "www.wotif.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/meta_bootstrap\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "client-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 13
-            },
-            "sites": 13,
-            "prevalence": 0.000088,
-            "cnames": [],
-            "responseHashes": [
-                "5091d289920f2b6f6447e226a5a64e602dfc40d8444893d438f4e2cf8f11c454"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "expedia.co.uk",
-                "expedia.de",
-                "travelocity.com",
-                "www.expedia-aarp.com",
-                "www.expedia.co.jp",
-                "www.expedia.com.au",
-                "www.expedia.com.tw",
-                "www.expedia.fr",
-                "www.expedia.it",
-                "www.expedia.nl",
-                "www.lastminute.com.au",
-                "www.travelocity.ca",
-                "www.wotif.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/js\\/63a4023a300c423682d97bc02d260da1dde543ea\\/standard\\/fc_general\\.js",
-            "cookies": 0.000088,
-            "fingerprinting": 2,
-            "subdomains": [
-                "client-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 13,
-                "window.innerHeight": 13,
-                "Screen.prototype.width": 13,
-                "Screen.prototype.height": 13,
-                "Date.prototype.getTime": 13,
-                "Document.cookie setter": 13,
-                "Navigator.prototype.platform": 13,
-                "CanvasRenderingContext2D.prototype.measureText": 5
-            },
-            "sites": 13,
-            "prevalence": 0.000088,
-            "cnames": [],
-            "responseHashes": [
-                "776f2106edf11df1c84f50eb9ece35b8794e64a40aab0745df202429d915af8f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "timestamp": {
-                    "ttl": null,
-                    "length": 15,
-                    "prevalence": 0.00008799241911466088,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "expedia.co.uk",
-                "expedia.de",
-                "travelocity.com",
-                "www.expedia-aarp.com",
-                "www.expedia.co.jp",
-                "www.expedia.com.au",
-                "www.expedia.com.tw",
-                "www.expedia.fr",
-                "www.expedia.it",
-                "www.expedia.nl",
-                "www.lastminute.com.au",
-                "www.travelocity.ca",
-                "www.wotif.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/gc\\/css\\/fonts3\\/icomoon\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-api",
-                "expedia-api"
-            ],
-            "apis": {},
-            "sites": 18,
-            "prevalence": 0.000122,
-            "cnames": [],
-            "responseHashes": [
-                "8a81d897b3085b8d8ff0c22771c4cbd846d0088770752ca7c94af64d0be3afbb"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "expedia.co.uk",
-                "expedia.com",
-                "expedia.de",
-                "travelocity.com",
-                "www.expedia-aarp.com",
-                "www.expedia.co.jp",
-                "www.expedia.co.uk",
-                "www.expedia.com.au",
-                "www.expedia.com.tw",
                 "www.expedia.com",
                 "www.expedia.de",
                 "www.expedia.fr",
@@ -1289,30 +1056,67 @@
             ]
         },
         {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/assets\\/game3failureexamples\\/dice_4\\/correct\\.gif",
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/gc\\/css\\/fonts3\\/icomoon\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "client-api"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.000088,
+            "sites": 16,
+            "prevalence": 0.000133,
             "cnames": [],
             "responseHashes": [
-                "87c223b2f2515258dc3951176fe171aa72696cd393970f9e811669720162c918"
+                "8a81d897b3085b8d8ff0c22771c4cbd846d0088770752ca7c94af64d0be3afbb"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "expedia.co.uk",
+                "expedia.com",
+                "travelocity.com",
+                "www.expedia-aarp.com",
+                "www.expedia.co.jp",
+                "www.expedia.co.uk",
+                "www.expedia.com.au",
+                "www.expedia.com",
+                "www.expedia.de",
+                "www.expedia.fr",
+                "www.expedia.it",
+                "www.expedia.nl",
+                "www.lastminute.com.au",
+                "www.travelocity.ca",
+                "www.travelocity.com",
+                "www.wotif.com"
+            ]
+        },
+        {
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/assets\\/game3failureexamples\\/dice_9\\/correct\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-api"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.000116,
+            "cnames": [],
+            "responseHashes": [
+                "ec57c073171e5ff3f5f55fd4ed2b3c22d32adcf4a20f36a9ea4e150695e276ce"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "expedia.co.uk",
-                "expedia.de",
+                "expedia.com",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
+                "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
@@ -1322,15 +1126,15 @@
             ]
         },
         {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/assets\\/game3failureexamples\\/dice_4\\/incorrect\\.gif",
+            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/assets\\/game3failureexamples\\/dice_9\\/incorrect\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "client-api"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.000088,
+            "sites": 14,
+            "prevalence": 0.000116,
             "cnames": [],
             "responseHashes": [
                 "1e68bff5b61e6037ccc28e8ebf79ea6b03f939eeb1e0a7e156756f49a956f135"
@@ -1340,18 +1144,41 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "expedia.co.uk",
-                "expedia.de",
+                "expedia.com",
                 "travelocity.com",
                 "www.expedia-aarp.com",
                 "www.expedia.co.jp",
+                "www.expedia.co.uk",
                 "www.expedia.com.au",
-                "www.expedia.com.tw",
+                "www.expedia.de",
                 "www.expedia.fr",
                 "www.expedia.it",
                 "www.expedia.nl",
                 "www.lastminute.com.au",
                 "www.travelocity.ca",
                 "www.wotif.com"
+            ]
+        },
+        {
+            "rule": "arkoselabs\\.com\\/fc\\/api\\/",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "roblox-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "0030a12eb03e4ecafccd2cb27c0c4104e4277eafb52dbacb9865a01c8ddf993e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "roblox.com",
+                "www.roblox.com"
             ]
         },
         {
@@ -1363,7 +1190,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "f5120646272f67284902dbf9f1a7f5c5317e54e294dff6f7735066adf80700df"
@@ -1373,8 +1200,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "expedia.com",
-                "www.expedia.co.uk",
-                "www.expedia.de"
+                "www.expedia.com",
+                "www.travelocity.com"
             ]
         },
         {
@@ -1386,7 +1213,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "1e68bff5b61e6037ccc28e8ebf79ea6b03f939eeb1e0a7e156756f49a956f135"
@@ -1396,117 +1223,20 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "expedia.com",
-                "www.expedia.co.uk",
-                "www.expedia.de"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/v2\\/1A413285-A58D-4629-A9FD-B77170BBCBCE\\/api\\.js",
-            "cookies": 0.0000203,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tabcorp-api"
-            ],
-            "apis": {
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.connection": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "47074243f4dd722b0c4d6146add5c2e6afa19ff8f82984ca47445289a3a13c72"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thelott.com",
-                "origin.thelott.com",
-                "www.thelott.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/v2\\/1A413285-A58D-4629-A9FD-B77170BBCBCE\\/enforcement\\.118f00aa964bdd9ce13eb727f9df82ec\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tabcorp-api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "6b2e2afd2772aea71251bb6a962f9b8c3a2cce6d0fb496db44826f0a71073c73"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thelott.com",
-                "origin.thelott.com",
-                "www.thelott.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/v2\\/1A413285-A58D-4629-A9FD-B77170BBCBCE\\/enforcement\\.118f00aa964bdd9ce13eb727f9df82ec\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tabcorp-api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "01501d7c57ef3ac0e3278e1491d2e3c8e5dc27a366bffd963f329896007314ec"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thelott.com",
-                "origin.thelott.com",
-                "www.thelott.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/fc\\/api\\/",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "roblox-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2f9bb333afd06ff632a75232ea2c7f36fb3ffdbcef7e9631d16c1a5844a8bc40"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "roblox.com",
-                "www.roblox.com"
+                "www.expedia.com",
+                "www.travelocity.com"
             ]
         },
         {
             "rule": "arkoselabs\\.com\\/v2\\/3DE441E6-1235-4127-962B-429861CC9CE1\\/api\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "honey-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "9148c93baadfe27f2f70d15b9f5c34576091aef5a0dc401cc973842d8c79bd42"
@@ -1528,7 +1258,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -1540,31 +1270,11 @@
             ]
         },
         {
-            "rule": "arkoselabs\\.com\\/cdn\\/fc\\/gc\\/css\\/fonts3\\/icomoon\\.ttf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "expedia-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "travelocity.com",
-                "www.travelocity.com"
-            ]
-        },
-        {
-            "rule": "arkoselabs\\.com\\/v2\\/E64CE3A1-A1E2-41D6-9993-7086A8CEE5DC\\/api\\.js",
-            "cookies": 0.0000135,
+            "rule": "arkoselabs\\.com\\/v2\\/1A413285-A58D-4629-A9FD-B77170BBCBCE\\/api\\.js",
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
-                "client-api"
+                "tabcorp-api"
             ],
             "apis": {
                 "Navigator.prototype.platform": 2,
@@ -1572,10 +1282,82 @@
                 "Navigator.prototype.connection": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "9053f9c246f1c84246a0297c94bd596137cfd66bc4d86c5571abe784a492964f"
+                "47074243f4dd722b0c4d6146add5c2e6afa19ff8f82984ca47445289a3a13c72"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelott.com",
+                "www.thelott.com"
+            ]
+        },
+        {
+            "rule": "arkoselabs\\.com\\/v2\\/1A413285-A58D-4629-A9FD-B77170BBCBCE\\/enforcement\\.118f00aa964bdd9ce13eb727f9df82ec\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tabcorp-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "6b2e2afd2772aea71251bb6a962f9b8c3a2cce6d0fb496db44826f0a71073c73"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelott.com",
+                "www.thelott.com"
+            ]
+        },
+        {
+            "rule": "arkoselabs\\.com\\/v2\\/1A413285-A58D-4629-A9FD-B77170BBCBCE\\/enforcement\\.118f00aa964bdd9ce13eb727f9df82ec\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tabcorp-api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "01501d7c57ef3ac0e3278e1491d2e3c8e5dc27a366bffd963f329896007314ec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelott.com",
+                "www.thelott.com"
+            ]
+        },
+        {
+            "rule": "arkoselabs\\.com\\/v2\\/E64CE3A1-A1E2-41D6-9993-7086A8CEE5DC\\/api\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 1,
+            "subdomains": [
+                "client-api"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.connection": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "7f9eca90385a133327b391c135e43f0ed9418a9a0c7a3387b323da08785f3ef9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1588,28 +1370,28 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000393,
+    "cookies": 0.000431,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6216216216216216
+            "prevalence": 0.6219512195121951
         },
         {
             "domain": "travel-assets.com",
-            "prevalence": 0.3783783783783784
+            "prevalence": 0.3780487804878049
         }
     ],
     "types": {
-        "Script": 153,
-        "Document": 99,
-        "Stylesheet": 18,
-        "XHR": 179,
-        "Font": 20
+        "XHR": 174,
+        "Script": 140,
+        "Document": 90,
+        "Stylesheet": 17,
+        "Font": 16
     },
     "nameservers": [
         "ns-1890.awsdns-44.co.uk",
+        "ns-475.awsdns-59.com",
         "ns-1457.awsdns-54.org",
-        "ns-1019.awsdns-63.net",
-        "ns-475.awsdns-59.com"
+        "ns-1019.awsdns-63.net"
     ]
 }

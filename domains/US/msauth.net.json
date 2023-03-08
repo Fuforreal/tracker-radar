@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000812,
-    "sites": 12,
+    "prevalence": 0.000108,
+    "sites": 13,
     "subdomains": [
         "alcdn"
     ],
@@ -18,7 +18,7 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "msauth\\.net\\/browser\\/2\\.10\\.0\\/js\\/msal-browser\\.min\\.js",
+            "rule": "msauth\\.net\\/browser\\/2\\.30\\.0\\/js\\/msal-browser\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -26,27 +26,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lennoxpros.com",
-                "m.lennoxpros.com"
+                "stuff.co.nz",
+                "www.stuff.co.nz"
             ]
         },
         {
             "rule": "msauth\\.net\\/browser\\/2\\.6\\.1\\/js\\/msal-browser\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "alcdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "7bf9aed668ac5bfb278188f03e2e6c3b7ef35887a2506315b3df6b64d58e8a86"
@@ -72,7 +77,7 @@
                 "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "a06af32441eb1fb63ecec5e802fc26e4a6114dec4a684505df9dd21c12c62426"
@@ -94,7 +99,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "6def90a534a540eaeedcf12acb727a94c4dad7d46c6fede2a08214983aa4cd27"
@@ -116,7 +121,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e49cf07f44b56e8dd5cfba270f273a2008f8166a426cf96bd8abcd4a11a9cae1"
@@ -138,7 +143,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "d96a27235916ce0c1b7fb573ff61cf7412f19d5326a60af530d5af298d97c3bf"
@@ -158,20 +163,28 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8461538461538461
+        },
+        {
+            "domain": "microsoftonline.us",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
         "Script": 12
     },
     "nameservers": [
-        "a1-115.akam.net",
-        "ns2-38.azure-dns.net",
-        "a9-66.akam.net",
         "ns3-38.azure-dns.org",
-        "a5-65.akam.net",
-        "a28-64.akam.net",
+        "a1-115.akam.net",
         "ns4-38.azure-dns.info",
+        "a5-65.akam.net",
+        "ns2-38.azure-dns.net",
+        "a28-64.akam.net",
+        "a9-66.akam.net",
         "ns1-38.azure-dns.com"
     ]
 }

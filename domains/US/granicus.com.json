@@ -7,62 +7,50 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.000058,
+    "sites": 7,
     "subdomains": [
-        "denver",
+        "jcc",
+        "fortworthgov",
+        "slocounty",
         "dekalbcountyga",
         "phoenix",
-        "fortworthgov",
-        "slocounty"
+        "denver"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "granicus\\.com\\/js\\/moment\\.min\\.js",
+            "rule": "granicus\\.com\\/ViewPublisher\\.php",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "denver",
-                "dekalbcountyga"
+                "jcc",
+                "fortworthgov",
+                "slocounty"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 2,
+                "window.sessionStorage": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
-                "0a3bb1e382060c6999c26faac38aed7e3d6cc03f7376a9a36b881a7e5ba923ca"
+                "b9e49351a0a04d4205bf815dead710235a1130ef227eff8b9a31928d9c356f8c",
+                "66edbfab94cd4f722406f09369b37a5747ae27be719a610d47f8ae9ccb047cd6"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "denvergov.org",
-                "www.dekalbcountyga.gov"
-            ]
-        },
-        {
-            "rule": "granicus\\.com\\/js\\/jqueryui-touch-plugin\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "denver",
-                "dekalbcountyga"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "12c76823b0c5524e4d12fb3f382a549d2214547860ffdf67fca32ba99f6e1eb0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "denvergov.org",
-                "www.dekalbcountyga.gov"
+                "ca.gov",
+                "www.courts.ca.gov",
+                "www.fortworthtexas.gov",
+                "www.slocounty.ca.gov"
             ]
         },
         {
@@ -74,17 +62,16 @@
                 "phoenix"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 1,
                 "Date.prototype.getTime": 1,
                 "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1
+                "window.sessionStorage": 1,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "ed94dea825b7c3d0df4544a0dfcc8ef6b894043d65821aeb0e2166aa9e20f83c"
+                "5c21cf8c08a4dc0180bf05a4583805e165125eabd8074b48604f8404d57bdea5"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -95,32 +82,49 @@
             ]
         },
         {
-            "rule": "granicus\\.com\\/ViewPublisher\\.php",
+            "rule": "granicus\\.com\\/js\\/moment\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "fortworthgov",
-                "slocounty"
+                "dekalbcountyga",
+                "denver"
             ],
-            "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "db04e81b2601ee7f0c1b90963565265835c5c3b13826d3618d8772109d2aff77"
+                "0a3bb1e382060c6999c26faac38aed7e3d6cc03f7376a9a36b881a7e5ba923ca"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fortworthtexas.gov",
-                "www.slocounty.ca.gov"
+                "dekalbcountyga.gov",
+                "www.denvergov.org"
+            ]
+        },
+        {
+            "rule": "granicus\\.com\\/js\\/jqueryui-touch-plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dekalbcountyga",
+                "denver"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "12c76823b0c5524e4d12fb3f382a549d2214547860ffdf67fca32ba99f6e1eb0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dekalbcountyga.gov",
+                "www.denvergov.org"
             ]
         }
     ],
@@ -134,12 +138,12 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "Document": 4
+        "Document": 6,
+        "Script": 4
     },
     "nameservers": [
-        "ns-871.awsdns-44.net",
         "ns-1823.awsdns-35.co.uk",
+        "ns-871.awsdns-44.net",
         "ns-1329.awsdns-38.org",
         "ns-176.awsdns-22.com"
     ]

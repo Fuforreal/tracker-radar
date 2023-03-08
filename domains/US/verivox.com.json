@@ -4,28 +4,49 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000166,
     "sites": 2,
     "subdomains": [
         "ets"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "verivox\\.com\\/e\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000166,
+            "fingerprinting": 2,
             "subdomains": [
                 "ets"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2,
+                "Navigator.prototype.platform": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b2181adbff3d521c40d8cc38b8368f0ed22c873ca5023ebc71e4a5f25e208ed2"
+            ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "et_allow_cookies": {
+                    "ttl": -86397,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "verivox.de",
@@ -35,15 +56,42 @@
         {
             "rule": "verivox\\.com\\/t\\.js",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ets"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "91fac4404e586697020a42dcad43526d8bc6cbfe5bee4eb434200ca3fa24af11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "verivox.de",
+                "www.verivox.de"
+            ]
+        },
+        {
+            "rule": "verivox\\.com\\/cntcc",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ets"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "a2c2339691fc48fbd14fb307292dff3e21222712d9240810742d7df0c6d74dfb"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -55,7 +103,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000166,
     "topInitiators": [
         {
             "domain": "vxcdn.com",
@@ -63,12 +111,12 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
-        "ns-1266.awsdns-30.org",
-        "ns-1977.awsdns-55.co.uk",
         "ns-994.awsdns-60.net",
-        "ns-302.awsdns-37.com"
+        "ns-302.awsdns-37.com",
+        "ns-1977.awsdns-55.co.uk",
+        "ns-1266.awsdns-30.org"
     ]
 }

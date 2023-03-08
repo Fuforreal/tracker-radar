@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000745,
-    "sites": 11,
+    "prevalence": 0.000108,
+    "sites": 13,
     "subdomains": [
         "delivery",
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "pbgrd\\.com\\/network\\/adjs\\.php",
@@ -21,71 +21,32 @@
                 "delivery"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 8,
+            "prevalence": 0.0000663,
             "cnames": [],
             "responseHashes": [
-                "ad607f39b133bdaff6f0b683658bd8e956fb3037a5359e601a9e0521bd2a0591",
-                "18507fa940c1a868d38ec75f9fd19e4ee24a13fa6aea84ffeb60fddec317adf8",
-                "bd2dc9304be9ca5c241adf1fb4cf0f2d57c8efb89d22732fe7cf6d7fd2a2fa6a"
+                "935e3ce3fde8d1f958a9aa950416c5d00a896f5757f5f76cf49b5c4def86ac55",
+                "1ddded65053665e3ddfc27ecab170ea4758cfed2ef404a52be3f1f4ef7d83396",
+                "d1e9456a849594764fc3806da8f60b99499cb0393576c36a7d01d682bd409a2c",
+                "4788ea9011d5ddde7ebb08f7966356e9195c9f0173fe256c70e019c678491f9e",
+                "f8b21100d5f157b620dab537e79c22fa4e0c420f48e397a941bd0e5a11da0b62"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "RefTrackGroup": 0.000006768647624204684
-            },
-            "exampleSites": [
-                "aacrjournals.org",
-                "academic.oup.com",
-                "casereports.bmj.com",
-                "journals.physiology.org",
-                "www.cell.com"
-            ]
-        },
-        {
-            "rule": "pbgrd\\.com\\/network\\/logger\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "delivery"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aacrjournals.org",
-                "journals.physiology.org"
+                "academic.oup.com",
+                "ashpublications.org",
+                "journals.physiology.org",
+                "journals.plos.org",
+                "link.springer.com",
+                "www.cell.com",
+                "www.mdpi.com"
             ]
         },
         {
             "rule": "pbgrd\\.com\\/core-oup\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oup.com",
-                "academic.oup.com"
-            ]
-        },
-        {
-            "rule": "pbgrd\\.com\\/core-bmjjournals\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -97,17 +58,87 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "947d91e740210eebc97f4a282b7e932a47ece83c4a8323fa8663aaed2cc0533e"
+                "c6919f8d2de34a0bcd76cc7cbb404bbb2333f36cefdca981b0113ca202147756"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bmj.com",
-                "casereports.bmj.com"
+                "oup.com",
+                "academic.oup.com"
+            ]
+        },
+        {
+            "rule": "pbgrd\\.com\\/v\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "d4137ff41962f6e1f34335151da47814daf034c1888343054daba8d12471ee6d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ashpublications.org",
+                "journals.physiology.org"
+            ]
+        },
+        {
+            "rule": "pbgrd\\.com\\/network\\/logger\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ashpublications.org",
+                "journals.physiology.org",
+                "journals.plos.org"
+            ]
+        },
+        {
+            "rule": "pbgrd\\.com\\/network\\/v\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ashpublications.org",
+                "journals.physiology.org"
             ]
         },
         {
@@ -125,7 +156,7 @@
                 "window.innerHeight": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "8dc9a349be78fc8c538404c5b0922f144a64f99cb988276b183a0dffb6ca0c64"
@@ -139,25 +170,30 @@
             ]
         },
         {
-            "rule": "pbgrd\\.com\\/network\\/v\\.php",
+            "rule": "pbgrd\\.com\\/core-plos\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "delivery"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
+                "b7335a4ef50d50aa6cd66e6cdcf72093388b15e56380bb00f6aeb5edd08a040e"
             ],
-            "type": "Ping",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "physiology.org",
-                "journals.physiology.org"
+                "plos.org",
+                "journals.plos.org"
             ]
         },
         {
@@ -173,7 +209,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "669dac3f46355b0adca806849f0b45498fd9bcb5a038396af45b08a72f3def80"
@@ -199,7 +235,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "641fb9469115792f96688d4eb99b0b8cc8312aeea048d57ba090891ff8a7085d"
@@ -219,21 +255,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.5151515151515151
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.3888888888888889
+            "prevalence": 0.36363636363636365
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.12121212121212122
         }
     ],
     "types": {
-        "XHR": 5,
-        "Image": 2,
-        "Script": 10,
+        "XHR": 8,
+        "Script": 12,
+        "Image": 3,
         "Ping": 2
     },
     "nameservers": [

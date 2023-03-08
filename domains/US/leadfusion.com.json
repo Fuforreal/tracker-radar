@@ -4,18 +4,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000249,
     "sites": 3,
     "subdomains": [
-        "lf-oldnational.tools"
+        "lf-oldnational.tools",
+        "lf-pnc.tools"
     ],
     "cnames": [
         {
             "original": "calculators.oldnational.com",
             "resolved": "lf-oldnational.tools.leadfusion.com"
+        },
+        {
+            "original": "tools.pnc.com",
+            "resolved": "lf-pnc.tools.leadfusion.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "leadfusion\\.com\\/response\\/lf-oldnational\\/artifact\\/home11\\/assets\\/scripts\\/lf-tool-wrapper-v1\\.js",
@@ -26,7 +31,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "calculators.oldnational.com",
@@ -43,16 +48,75 @@
                 "oldnational.com",
                 "www.oldnational.com"
             ]
+        },
+        {
+            "rule": "leadfusion\\.com\\/tools\\/lf-pnc\\/savings08\\/tool\\.fcs",
+            "cookies": 0.00000829,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lf-pnc.tools"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "tools.pnc.com",
+                    "resolved": "lf-pnc.tools.leadfusion.com"
+                }
+            ],
+            "responseHashes": [
+                "8949dafea0b121f0ff545f786f1020f3c2a7720c55e433585d3378bc03d095a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pnc.com",
+                "www.pnc.com"
+            ]
+        },
+        {
+            "rule": "leadfusion\\.com\\/data-collection\\/capture",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lf-pnc.tools"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "tools.pnc.com",
+                    "resolved": "lf-pnc.tools.leadfusion.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pnc.com",
+                "www.pnc.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000829,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "udns1.ultradns.net",
-        "udns2.ultradns.net"
+        "udns2.ultradns.net",
+        "udns1.ultradns.net"
     ]
 }

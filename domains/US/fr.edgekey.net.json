@@ -9,17 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000366,
+    "prevalence": 0.000448,
     "sites": 54,
     "subdomains": [
-        "f1g",
-        "static-lefigaro",
         "14662.particulier.edf",
+        "static-lefigaro",
         "api-graphql.lefigaro",
+        "f1g",
         "i.f1g",
-        "api.prismaconnect",
+        "www.lequipe",
         "assets.bouyguestelecom",
         "staticweb01.bonial",
+        "insights.bonial",
+        "boulanger",
+        "api.prismaconnect",
         "live.francetvinfo",
         "dl.gmx",
         "asset.matchendirect",
@@ -34,6 +37,10 @@
         {
             "original": "api-graphql.lefigaro.fr",
             "resolved": "api-graphql.lefigaro.fr.edgekey.net"
+        },
+        {
+            "original": "api.boulanger.com",
+            "resolved": "boulanger.fr.edgekey.net"
         },
         {
             "original": "api.prismaconnect.fr",
@@ -60,6 +67,10 @@
             "resolved": "i.f1g.fr.edgekey.net"
         },
         {
+            "original": "insights.bonial.fr",
+            "resolved": "insights.bonial.fr.edgekey.net"
+        },
+        {
             "original": "live.francetvinfo.fr",
             "resolved": "live.francetvinfo.fr.edgekey.net"
         },
@@ -78,307 +89,24 @@
         {
             "original": "staticweb01.bonial.fr",
             "resolved": "staticweb01.bonial.fr.edgekey.net"
+        },
+        {
+            "original": "www6.lequipe.fr",
+            "resolved": "www.lequipe.fr.edgekey.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "fr\\.edgekey\\.net\\/datalayer\\/datalayer-provider\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "f1g"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "a.f1g.fr",
-                    "resolved": "f1g.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "94568c5fafb7c996ea14a32dc64275196cf6387031407c52cd1840bdf3089276"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/sante-desktop\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "94439d02d0d2293547ace45be4757322c674d0dff4080ce984ed55e7465052f9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/sante-tablette\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "ae244efa72c73a9c15032b457cdeb586906a1089e213a47ed26bca2e39d482e5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/sante-mobile\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "4edb324bb377d1fe2644dc3c6303319a3a28b927b6886a4f7c449b474e5c9428"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/sante-collapse\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "848263118685178c76c73a76c602929c05b2b936416f1b0aac1fc87e9dd4e1f4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/jquery\\.ultimate-smartbanner\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "0758b814d9b984946d3b2e2bc799bdb553010f412ac9eca01b504999a6e4336b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr",
-                "sante.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh\\/figh\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "9a03354a186ed464be36e5586fa5701977a2119c8f38ecd110a387d3c98d15fe"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr",
-                "etudiant.lefigaro.fr",
-                "evene.lefigaro.fr",
-                "forum.lefigaro.fr",
-                "sante.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh_ptsans\\/PTS55F-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "b2376cf3502081274fbd75e48c2d484adc7ecaba0d193b034f79b0f0739adf5b"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr",
-                "etudiant.lefigaro.fr",
-                "evene.lefigaro.fr",
-                "forum.lefigaro.fr",
-                "sante.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh_ptsans_narrow\\/PTN57F-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "6e60b3aab5edbbf008cd4794832a130e5599033724e1220a275e41badfcc39b6"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr",
-                "etudiant.lefigaro.fr",
-                "evene.lefigaro.fr",
-                "forum.lefigaro.fr",
-                "sante.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh_ptsans_bold\\/PTS75F-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "d522be10f3fdc46f6f55a6a1be9c50ffe48966ae6f4bc15c6834285c15efe0a8"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "annuaire.lefigaro.fr",
-                "etudiant.lefigaro.fr",
-                "evene.lefigaro.fr",
-                "forum.lefigaro.fr",
-                "sante.lefigaro.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/etc\\/designs\\/EDF_RC\\/assets\\/img\\/logo\\/logo_edf_scroll\\.png",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "14662.particulier.edf"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "particulier.edf.fr",
@@ -397,15 +125,15 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/prod_gcp-header\\.css",
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/header\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -420,19 +148,21 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lefigaro.fr",
-                "etudiant.lefigaro.fr"
+                "etudiant.lefigaro.fr",
+                "evene.lefigaro.fr",
+                "sante.lefigaro.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/prod_gcp-header\\.js",
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/header\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -447,11 +177,13 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lefigaro.fr",
-                "etudiant.lefigaro.fr"
+                "etudiant.lefigaro.fr",
+                "evene.lefigaro.fr",
+                "sante.lefigaro.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/prod_gcp-etudiant-desktop\\.svg",
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/etudiant-desktop\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -459,7 +191,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -478,7 +210,7 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/prod_gcp-etudiant-tablette\\.svg",
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/etudiant-tablette\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -486,7 +218,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -505,7 +237,7 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/prod_gcp-etudiant-mobile\\.svg",
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/etudiant-mobile\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -513,7 +245,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -532,7 +264,7 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/prod_gcp-etudiant-collapse\\.svg",
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/etudiant-collapse\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -540,7 +272,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -559,15 +291,15 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/prod_gcp-jquery\\.ultimate-smartbanner\\.css",
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/jquery\\.ultimate-smartbanner\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -582,7 +314,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lefigaro.fr",
-                "etudiant.lefigaro.fr"
+                "etudiant.lefigaro.fr",
+                "sante.lefigaro.fr"
             ]
         },
         {
@@ -594,7 +327,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -613,6 +346,122 @@
             ]
         },
         {
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh\\/figh\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-lefigaro"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [
+                {
+                    "original": "static.lefigaro.fr",
+                    "resolved": "static-lefigaro.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9a03354a186ed464be36e5586fa5701977a2119c8f38ecd110a387d3c98d15fe"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "etudiant.lefigaro.fr",
+                "evene.lefigaro.fr",
+                "sante.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh_ptsans_narrow\\/PTN57F-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-lefigaro"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [
+                {
+                    "original": "static.lefigaro.fr",
+                    "resolved": "static-lefigaro.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6e60b3aab5edbbf008cd4794832a130e5599033724e1220a275e41badfcc39b6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "etudiant.lefigaro.fr",
+                "evene.lefigaro.fr",
+                "sante.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh_ptsans\\/PTS55F-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-lefigaro"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [
+                {
+                    "original": "static.lefigaro.fr",
+                    "resolved": "static-lefigaro.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b2376cf3502081274fbd75e48c2d484adc7ecaba0d193b034f79b0f0739adf5b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "etudiant.lefigaro.fr",
+                "evene.lefigaro.fr",
+                "sante.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/fonts\\/figh_ptsans_bold\\/PTS75F-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-lefigaro"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [
+                {
+                    "original": "static.lefigaro.fr",
+                    "resolved": "static-lefigaro.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d522be10f3fdc46f6f55a6a1be9c50ffe48966ae6f4bc15c6834285c15efe0a8"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "etudiant.lefigaro.fr",
+                "evene.lefigaro.fr",
+                "sante.lefigaro.fr"
+            ]
+        },
+        {
             "rule": "fr\\.edgekey\\.net\\/agora\\/widget-comments\\/figcomments-short-ttl\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -621,7 +470,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -649,7 +498,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -670,14 +519,14 @@
         },
         {
             "rule": "fr\\.edgekey\\.net\\/graphql",
-            "cookies": 0.00000677,
+            "cookies": 0.00000829,
             "fingerprinting": 0,
             "subdomains": [
                 "api-graphql.lefigaro"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "api-graphql.lefigaro.fr",
@@ -704,7 +553,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000406,
+            "prevalence": 0.0000498,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -712,7 +561,7 @@
                 }
             ],
             "responseHashes": [
-                "93e18e073613c9fa23d2bad8cf154c11efeb39e47bb0683515d012bb6cba95cd"
+                "941c43f29b94d751b92736819c15085e0a04641e0d3245f4921f9a79afcba248"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -728,14 +577,14 @@
         },
         {
             "rule": "fr\\.edgekey\\.net\\/figconsent\\/figconsent-v2-short-ttl\\.js",
-            "cookies": 0.0000338,
+            "cookies": 0.0000498,
             "fingerprinting": 1,
             "subdomains": [
                 "static-lefigaro"
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000474,
+            "prevalence": 0.000058,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -759,71 +608,15 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/header\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "1f1a648e5d7d64185797e13409dfd34dcccff66477a2aa9feaf567a3112df82e"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "evene.lefigaro.fr",
-                "sante.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/header\\.js",
+            "rule": "fr\\.edgekey\\.net\\/figanalytics\\/figanalytics-short-ttl\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "729927fdabfda2e1bade8353485c9123884542270aab6526fc9a97ea31b818a7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "evene.lefigaro.fr",
-                "sante.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/figanalytics\\/figanalytics-short-ttl\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
             "sites": 8,
-            "prevalence": 0.0000541,
+            "prevalence": 0.0000663,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -831,7 +624,7 @@
                 }
             ],
             "responseHashes": [
-                "c9e963bc149e42badfd80788e373417066da694cd07c26e57a43be9b2f7b5f77"
+                "e15e71dca711f561635df8e00f5f650af1c982e2d2af3377572c352b6e236993"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -856,7 +649,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -883,7 +676,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -910,7 +703,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -937,7 +730,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -964,7 +757,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -991,7 +784,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000474,
+            "prevalence": 0.000058,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1023,7 +816,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000474,
+            "prevalence": 0.000058,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1055,7 +848,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "a.f1g.fr",
@@ -1082,7 +875,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000338,
+            "prevalence": 0.0000415,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1112,7 +905,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000332,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1133,33 +926,6 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/media\\/_uploaded\\/x70_resize\\/header-covers\\/le_particulier_cover\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i.f1g"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "i.f1g.fr",
-                    "resolved": "i.f1g.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "7936ee5568a4c962f5737d02f3157f55c11f4c95d2b2b07fa7756a007b3105d1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "leparticulier.lefigaro.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/common\\/fonts\\/NotoSerif\\/notoserif-regular\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1168,7 +934,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000332,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1189,6 +955,33 @@
             ]
         },
         {
+            "rule": "fr\\.edgekey\\.net\\/media\\/_uploaded\\/x70_resize\\/header-covers\\/le_particulier_cover\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i.f1g"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "i.f1g.fr",
+                    "resolved": "i.f1g.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7936ee5568a4c962f5737d02f3157f55c11f4c95d2b2b07fa7756a007b3105d1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "leparticulier.lefigaro.fr"
+            ]
+        },
+        {
             "rule": "fr\\.edgekey\\.net\\/figads\\/fgds-short-ttl\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1197,7 +990,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000406,
+            "prevalence": 0.0000498,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1205,7 +998,8 @@
                 }
             ],
             "responseHashes": [
-                "68f6130c15bc845e01229e40b829a1f3f38fd890cf0589a3e3d90f07f56b2be2"
+                "3b10ff4e8a61bb3e8bab644b0b32188adfdc40a7e56036d97b8d8f67b507813c",
+                "bbc76725c9fc2ae7511c6bf095dc00ee0d85726e2aa83addfbbe7f9111d372b7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1227,8 +1021,8 @@
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 5,
+            "prevalence": 0.0000415,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1245,7 +1039,8 @@
                 "lefigaro.fr",
                 "leparticulier.lefigaro.fr",
                 "madame.lefigaro.fr",
-                "tvmag.lefigaro.fr"
+                "tvmag.lefigaro.fr",
+                "www.lefigaro.fr"
             ]
         },
         {
@@ -1256,8 +1051,8 @@
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1272,7 +1067,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lefigaro.fr",
-                "tvmag.lefigaro.fr"
+                "tvmag.lefigaro.fr",
+                "www.lefigaro.fr"
             ]
         },
         {
@@ -1283,8 +1079,8 @@
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1299,7 +1095,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lefigaro.fr",
-                "tvmag.lefigaro.fr"
+                "tvmag.lefigaro.fr",
+                "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/shared\\/img\\/concours\\/mise_en_avant_416_pastille-cch-20230302110401\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.lequipe"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "www6.lequipe.fr",
+                    "resolved": "www.lequipe.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "dd3cdbdbcfb83dab3da1b15d68088414b2b117549c8055ed29d1fc525cf75b65"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lequipe.fr",
+                "www.lequipe.fr"
             ]
         },
         {
@@ -1311,7 +1135,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1338,7 +1162,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1365,7 +1189,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1392,7 +1216,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1419,7 +1243,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1427,7 +1251,7 @@
                 }
             ],
             "responseHashes": [
-                "91d6a8f264a050b69991990f5228990d9745ad9e75d92f0c72224135e2384278"
+                "b973399b344cdec4afd3ffa61f0ea9ba9735e6ba2a980cbac9f71a37b65a3fed"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1446,7 +1270,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1465,33 +1289,6 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/f1\\/madame\\/fonts\\/FreightNeoPro\\/freightneopro-bold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "f95ac3702b18323fac204cc0ca1aeffee66896a9b6bd12803323eef76b4a3624"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "madame.lefigaro.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/f1\\/lefigaro\\/fonts\\/premium-mark\\/fig-premium-mark\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1499,8 +1296,8 @@
                 "static-lefigaro"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1515,7 +1312,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lefigaro.fr",
-                "tvmag.lefigaro.fr"
+                "tvmag.lefigaro.fr",
+                "www.lefigaro.fr"
             ]
         },
         {
@@ -1527,7 +1325,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1546,6 +1344,33 @@
             ]
         },
         {
+            "rule": "fr\\.edgekey\\.net\\/f1\\/madame\\/fonts\\/FreightNeoPro\\/freightneopro-bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-lefigaro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "static.lefigaro.fr",
+                    "resolved": "static-lefigaro.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f95ac3702b18323fac204cc0ca1aeffee66896a9b6bd12803323eef76b4a3624"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "madame.lefigaro.fr"
+            ]
+        },
+        {
             "rule": "fr\\.edgekey\\.net\\/f1\\/madame\\/fonts\\/GTSuper\\/Display\\/gtsuperdisplay-bold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1554,7 +1379,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1573,72 +1398,6 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/prd\\/ping",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.prismaconnect"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000609,
-            "cnames": [
-                {
-                    "original": "api.prismaconnect.fr",
-                    "resolved": "api.prismaconnect.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cuisineactuelle.fr",
-                "photo.cuisineactuelle.fr",
-                "www.capital.fr",
-                "www.cesoirtv.com",
-                "www.cuisineactuelle.fr",
-                "www.femmeactuelle.fr",
-                "www.gala.fr",
-                "www.programme.tv",
-                "www.voici.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/prd\\/ping",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.prismaconnect"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000609,
-            "cnames": [
-                {
-                    "original": "api.prismaconnect.fr",
-                    "resolved": "api.prismaconnect.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "9408be658ddfc6ec2f04f3a6c48fac9258c99351aa21c76cd51121d230921161"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cuisineactuelle.fr",
-                "photo.cuisineactuelle.fr",
-                "www.capital.fr",
-                "www.cesoirtv.com",
-                "www.cuisineactuelle.fr",
-                "www.femmeactuelle.fr",
-                "www.gala.fr",
-                "www.programme.tv",
-                "www.voici.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/a\\.f1g\\.fr\\/h\\/assets-components\\/header-footer\\/sante-v2-desktop\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1647,7 +1406,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1674,7 +1433,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1701,7 +1460,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1728,7 +1487,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.lefigaro.fr",
@@ -1755,7 +1514,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1763,7 +1522,7 @@
                 }
             ],
             "responseHashes": [
-                "249eab804a0eae47cef9d0c5fc8c2c57a650d2ba29184edd241c7be02b7dab0d"
+                "b32df6639ed038d661f00d286031de6cd882fb4cc1efb993ccf8a60b2af3e669"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1782,7 +1541,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1809,7 +1568,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1836,7 +1595,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1863,7 +1622,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1890,7 +1649,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1917,7 +1676,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1944,7 +1703,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1971,7 +1730,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -1998,7 +1757,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2025,7 +1784,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2052,7 +1811,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2079,7 +1838,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2106,7 +1865,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2133,7 +1892,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2160,7 +1919,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2187,7 +1946,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2214,7 +1973,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2241,7 +2000,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2268,7 +2027,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2295,7 +2054,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2322,7 +2081,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2349,7 +2108,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2376,7 +2135,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2403,7 +2162,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "i.f1g.fr",
@@ -2422,70 +2181,42 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.3\\/trilogy-partials-mangled\\.css",
+            "rule": "fr\\.edgekey\\.net\\/common\\/fonts\\/SourceSansPro\\/sourcesanspro-italic\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "assets.bouyguestelecom"
+                "static-lefigaro"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                    "original": "static.lefigaro.fr",
+                    "resolved": "static-lefigaro.fr.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "67ca3df845594f1b8549f79211af30deb8a75cbf68a87489e3a4aab336db8c71"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@2\\.0\\.6\\/assets\\/fonts\\/trilogy-all\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.bouyguestelecom"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "fedaadfba16e23ffe148c505ef9bf3b13e5979312df1817b6bc4506e85d1aba1"
+                "e01bb2b1a8185ce346aa7a45aa062f679718ec6059c990105d2b71281795e517"
             ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr",
-                "www.bouyguestelecom.fr"
+                "lefigaro.fr",
+                "www.lefigaro.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.3\\/header\\.min\\.js",
+            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.9\\/header\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "assets.bouyguestelecom"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2500,7 +2231,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
+                "www.assistance.bouyguestelecom.fr",
+                "www.bouyguestelecom.fr"
             ]
         },
         {
@@ -2512,7 +2244,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2540,7 +2272,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2560,15 +2292,15 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/trilogy\\.css",
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@2\\.0\\.6\\/assets\\/fonts\\/trilogy-all\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.bouyguestelecom"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2576,14 +2308,15 @@
                 }
             ],
             "responseHashes": [
-                "8004d210171a7a2e948c2cdb73e275d6cd0faae050193a711cb394dcbc291ede"
+                "fedaadfba16e23ffe148c505ef9bf3b13e5979312df1817b6bc4506e85d1aba1"
             ],
-            "type": "Stylesheet",
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
+                "www.assistance.bouyguestelecom.fr",
+                "www.bouyguestelecom.fr"
             ]
         },
         {
@@ -2595,7 +2328,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2615,6 +2348,196 @@
             ]
         },
         {
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/trilogy\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8004d210171a7a2e948c2cdb73e275d6cd0faae050193a711cb394dcbc291ede"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.9\\/trilogy-partials-mangled\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "67ca3df845594f1b8549f79211af30deb8a75cbf68a87489e3a4aab336db8c71"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr",
+                "www.bouyguestelecom.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-read-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "04d2621a415fd7ff7e4ec48d6bd09b843093ad9e23f2d7fbb0a502574b5bc7a9"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-read-medium\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "59f5cd6765035ddc1e3ddc2dec20e2f7d0dd1e8e96aef4e7594378784240c94f"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-read-semibold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "acedbd6737d383fa055c95bcd20c82a34e00c7f78ef4e1471911674d98a83a58"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-speak\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "63158e1358a1b4512f029127b7c5bda086a00211418eb94727ccd4b0c2a9bc00"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/trilogy-all\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2e5f673c70c6e9299bdefe3b1feb2547b48bdcac38b7a8df63c617993af545a3"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr"
+            ]
+        },
+        {
             "rule": "fr\\.edgekey\\.net\\/PICASSO-FRONT\\/main@0\\.19\\.1\\/id\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -2623,7 +2546,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2643,7 +2566,7 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.3\\/searchBar\\/search-bar\\.js",
+            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/trilogy-ui\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2651,7 +2574,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.bouyguestelecom.fr",
+                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1da333b5366d12fc82279c5ca9117379e526d8e9ecba8bfeb9f455e708fee363"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bouyguestelecom.fr",
+                "www.assistance.bouyguestelecom.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.9\\/searchBar\\/search-bar\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.bouyguestelecom"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2666,19 +2616,20 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
+                "www.assistance.bouyguestelecom.fr",
+                "www.bouyguestelecom.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.3\\/encartBoost\\/encartboost\\.js",
+            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.9\\/encartBoost\\/encartboost\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.bouyguestelecom"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2693,19 +2644,20 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
+                "www.assistance.bouyguestelecom.fr",
+                "www.bouyguestelecom.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.3\\/needSupport\\/need-support\\.js",
+            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.9\\/needSupport\\/need-support\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "assets.bouyguestelecom"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2713,14 +2665,15 @@
                 }
             ],
             "responseHashes": [
-                "a1fe56b660216c6ada6ebda78600cff94883985418d8e9e07713b660ad29366d"
+                "a46256c2041c645e710a3912adbca6fdd224856ffa4c9137cfaa16bf5ba715e5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
+                "www.assistance.bouyguestelecom.fr",
+                "www.bouyguestelecom.fr"
             ]
         },
         {
@@ -2732,7 +2685,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2760,7 +2713,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2780,87 +2733,6 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-read-regular\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.bouyguestelecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "04d2621a415fd7ff7e4ec48d6bd09b843093ad9e23f2d7fbb0a502574b5bc7a9"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-read-medium\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.bouyguestelecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "59f5cd6765035ddc1e3ddc2dec20e2f7d0dd1e8e96aef4e7594378784240c94f"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-read-semibold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.bouyguestelecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "acedbd6737d383fa055c95bcd20c82a34e00c7f78ef4e1471911674d98a83a58"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/PICASSO-FRONT\\/main@0\\.19\\.1\\/bouyguestelecom\\.fr\\/callback\\.html",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2869,7 +2741,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.bouyguestelecom.fr",
@@ -2889,87 +2761,6 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/bouygues-speak\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.bouyguestelecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "63158e1358a1b4512f029127b7c5bda086a00211418eb94727ccd4b0c2a9bc00"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/trilogy-all\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.bouyguestelecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "2e5f673c70c6e9299bdefe3b1feb2547b48bdcac38b7a8df63c617993af545a3"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/TRILOGY\\/trilogy-framework@1\\.16\\.0\\/assets\\/fonts\\/trilogy-ui\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.bouyguestelecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "1da333b5366d12fc82279c5ca9117379e526d8e9ecba8bfeb9f455e708fee363"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.assistance.bouyguestelecom.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/user-sdk-dist\\/web-user-sdk-loader\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2978,7 +2769,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "staticweb01.bonial.fr",
@@ -3005,7 +2796,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "staticweb01.bonial.fr",
@@ -3024,142 +2815,152 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.2\\/trilogy-partials-mangled\\.css",
+            "rule": "fr\\.edgekey\\.net\\/assets\\/images\\/posts\\/lidl-banner_offers_cw09-2023\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "assets.bouyguestelecom"
+                "insights.bonial"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                    "original": "insights.bonial.fr",
+                    "resolved": "insights.bonial.fr.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "67ca3df845594f1b8549f79211af30deb8a75cbf68a87489e3a4aab336db8c71"
+                "5d1d76d0b39b56ed8c3d34cc90551ca922d28cc0ab1af92b32b8427aad4a0530"
             ],
-            "type": "Stylesheet",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.bouyguestelecom.fr"
+                "bonial.fr",
+                "www.bonial.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.2\\/header\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "fr\\.edgekey\\.net\\/referential\\/site-v4\\/sites\\/search",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
             "subdomains": [
-                "assets.bouyguestelecom"
+                "boulanger"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                    "original": "api.boulanger.com",
+                    "resolved": "boulanger.fr.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "4a62d51ef5aada379f8bc203a33917046a65456d1471a0e836833a3155de531d"
+                "cabe3f002e9ccb3430c4c324a286990ba0dc78488b331c18006dd008276d137f"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.bouyguestelecom.fr"
+                "boulanger.com",
+                "www.boulanger.com"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.2\\/searchBar\\/search-bar\\.js",
+            "rule": "fr\\.edgekey\\.net\\/referential\\/site-v4\\/sites\\/search",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "assets.bouyguestelecom"
+                "boulanger"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                    "original": "api.boulanger.com",
+                    "resolved": "boulanger.fr.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "a814c820beedcf938afa2848a040255d3b0b1570b171b55a64d7be1290a57452"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.bouyguestelecom.fr"
+                "boulanger.com",
+                "www.boulanger.com"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.2\\/encartBoost\\/encartboost\\.js",
+            "rule": "fr\\.edgekey\\.net\\/ping",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "assets.bouyguestelecom"
+                "api.prismaconnect"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 9,
+            "prevalence": 0.0000746,
             "cnames": [
                 {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                    "original": "api.prismaconnect.fr",
+                    "resolved": "api.prismaconnect.fr.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "ccc54a00f690414ca239846f253688a328b2644013c06ba949badd95226156ba"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.bouyguestelecom.fr"
+                "capital.fr",
+                "www.capital.fr",
+                "www.cesoirtv.com",
+                "www.cuisineactuelle.fr",
+                "www.femmeactuelle.fr",
+                "www.gala.fr",
+                "www.programme-tv.net",
+                "www.programme.tv",
+                "www.voici.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/Palpatine_Partials\\/statics@2\\.42\\.2\\/needSupport\\/need-support\\.js",
+            "rule": "fr\\.edgekey\\.net\\/ping",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "assets.bouyguestelecom"
+                "api.prismaconnect"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 9,
+            "prevalence": 0.0000746,
             "cnames": [
                 {
-                    "original": "assets.bouyguestelecom.fr",
-                    "resolved": "assets.bouyguestelecom.fr.edgekey.net"
+                    "original": "api.prismaconnect.fr",
+                    "resolved": "api.prismaconnect.fr.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "a1fe56b660216c6ada6ebda78600cff94883985418d8e9e07713b660ad29366d"
+                "9408be658ddfc6ec2f04f3a6c48fac9258c99351aa21c76cd51121d230921161"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bouyguestelecom.fr",
-                "www.bouyguestelecom.fr"
+                "capital.fr",
+                "www.capital.fr",
+                "www.cesoirtv.com",
+                "www.cuisineactuelle.fr",
+                "www.femmeactuelle.fr",
+                "www.gala.fr",
+                "www.programme-tv.net",
+                "www.programme.tv",
+                "www.voici.fr"
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/v2\\/lives\\/4e9efb1a1cc6f04d9800002c",
+            "rule": "fr\\.edgekey\\.net\\/images\\/sources\\/big_twitter\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3167,7 +2968,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "live.francetvinfo.fr",
@@ -3175,9 +2976,90 @@
                 }
             ],
             "responseHashes": [
-                "2424886c3adefb02712bd71dc1c5599610af241bbfed27704235d270f7952ffc"
+                "5a034201939f863e4befa531138c2fef3f7b187613c339b73ca385da5fcb57d9"
             ],
-            "type": "XHR",
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/uploads\\/avatars\\/big_510a81551cc6f0655603155f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c1c20b8892415a353218fcfea45dab1de60f92738936c209632abfb624bc481c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/uploads\\/avatars\\/big_57bc8ce7667476c0605c0000\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f36d461d7e919c5e49a3e77ec99e3d7c56ab665b8e4888b91bbb5563f4623ad8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/uploads\\/avatars\\/big_58ff0a13d3f85ded3b000076\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b6e7c18f1e92bfbd38a498c29f83ce22abe51596f594ccdd512fe368b136c21c"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -3194,7 +3076,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "live.francetvinfo.fr",
@@ -3213,33 +3095,6 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/uploads\\/avatars\\/big_63bc2d7ea37a44f9f52ac9bb\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "live.francetvinfo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "live.francetvinfo.fr",
-                    "resolved": "live.francetvinfo.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "cfb37fe72330eda07bd4b19a4b4040cb0eb75941546ea94fa6b8ee91ad06cf48"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "francetvinfo.fr",
-                "www.francetvinfo.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/images\\/avatar\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -3248,7 +3103,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "live.francetvinfo.fr",
@@ -3267,6 +3122,87 @@
             ]
         },
         {
+            "rule": "fr\\.edgekey\\.net\\/uploads\\/2023\\/3\\/2\\/17\\/6400d5ada37a44f9f52b7b2c\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c47a7e336ca6bd0aa64a69795c7c885e32fa7712c6355ba4dd7709dbc55f4346"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/uploads\\/avatars\\/big_5c5bff455ff4e92da1ffbfc2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "22f74aea4a02906a818eb27866303ed6a92a8cb5672dd494229b60876bec7f71"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/images\\/default_avatar\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "38e9ef2184f69f8920bc47042415c179d44b2647104addc4f46ebe58eeeff496"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
+        {
             "rule": "fr\\.edgekey\\.net\\/tcf\\/live\\/v1\\/js\\/tcf-api\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -3275,7 +3211,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3293,14 +3229,14 @@
         },
         {
             "rule": "fr\\.edgekey\\.net\\/permission\\/live\\/portal\\/v1\\/ppp\\/js\\/permission-client\\.js",
-            "cookies": 0,
+            "cookies": 0.00000829,
             "fingerprinting": 1,
             "subdomains": [
                 "dl.gmx"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3308,7 +3244,7 @@
                 }
             ],
             "responseHashes": [
-                "6b854e3f0847181d10ff23a8451c109eb7c7cb1a1d402d9b55804add11ac8696"
+                "1659e6a2eb26345a9a48f9eb30111299d778d90e90796e320f25d5f93d49e2ec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3327,7 +3263,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3354,7 +3290,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3362,7 +3298,7 @@
                 }
             ],
             "responseHashes": [
-                "381611b71508db89716220a7e4ed8e5eb974bcd2568041791792cf80ddae1d64"
+                "b83998304e2b49ac444d1e4c74636269b6bec93b8ee0ceb3955b268436d4be6e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3381,7 +3317,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3408,7 +3344,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3428,14 +3364,14 @@
         },
         {
             "rule": "fr\\.edgekey\\.net\\/uim\\/permission\\/onetrust\\/live\\/scripttemplates\\/6\\.31\\.0\\/otBannerSdk\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "dl.gmx"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3462,7 +3398,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3489,7 +3425,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3516,7 +3452,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3543,7 +3479,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3570,7 +3506,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3597,7 +3533,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "dl.gmx.fr",
@@ -3624,7 +3560,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "asset.matchendirect.fr",
@@ -3644,14 +3580,14 @@
         },
         {
             "rule": "fr\\.edgekey\\.net\\/js\\/minify\\/commun_top\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "asset.matchendirect"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "asset.matchendirect.fr",
@@ -3659,7 +3595,7 @@
                 }
             ],
             "responseHashes": [
-                "c90339dfbc1d6ff11d81c0a2b26d79a3eddcd16f1497e5693b3c16b423342225"
+                "0ea5ea30d814cb40c6bbae531d175e140b29b9746b6a19e36945c824f6030b45"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3678,7 +3614,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "asset.matchendirect.fr",
@@ -3705,7 +3641,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "asset.matchendirect.fr",
@@ -3732,7 +3668,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "asset.matchendirect.fr",
@@ -3759,7 +3695,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "asset.matchendirect.fr",
@@ -3786,7 +3722,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "asset.matchendirect.fr",
@@ -3806,14 +3742,14 @@
         },
         {
             "rule": "fr\\.edgekey\\.net\\/js\\/p3248uni\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "medias.micromania"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "medias.micromania.fr",
@@ -3840,7 +3776,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "content.tui.fr",
@@ -3861,46 +3797,50 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000129,
+    "cookies": 0.000158,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8531746031746031
+            "prevalence": 0.8387096774193549
         },
         {
             "domain": "pmdstatic.net",
-            "prevalence": 0.051587301587301584
+            "prevalence": 0.06048387096774194
         },
         {
             "domain": "uicdn.com",
-            "prevalence": 0.047619047619047616
+            "prevalence": 0.04838709677419355
         },
         {
             "domain": "ui-portal.de",
-            "prevalence": 0.015873015873015872
+            "prevalence": 0.016129032258064516
         },
         {
             "domain": "trustcommander.net",
-            "prevalence": 0.011904761904761904
+            "prevalence": 0.012096774193548387
         },
         {
             "domain": "fcms.io",
-            "prevalence": 0.011904761904761904
+            "prevalence": 0.012096774193548387
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.007936507936507936
+            "prevalence": 0.008064516129032258
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.004032258064516129
         }
     ],
     "types": {
-        "Script": 96,
-        "Image": 114,
-        "Stylesheet": 18,
-        "Font": 88,
+        "Image": 122,
+        "Stylesheet": 14,
+        "Script": 90,
+        "Font": 85,
         "Fetch": 21,
-        "Preflight": 9,
         "Document": 5,
-        "XHR": 4
+        "XHR": 4,
+        "Preflight": 11
     },
     "nameservers": []
 }

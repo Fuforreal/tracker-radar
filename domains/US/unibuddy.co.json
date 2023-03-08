@@ -4,16 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.0000415,
+    "sites": 5,
     "subdomains": [
         "traffic-drivers",
-        "cdn",
-        "popcard",
         "translations",
+        "tukey",
         "api",
-        "gateway",
-        "tukey"
+        "gateway"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -27,7 +25,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e063b0bd3997ca129972a1e72cbd97842dabb2480588c3327c2201ab6b7d4aa1"
@@ -49,14 +47,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "06f147fead5e5e09d64289a3b9d75abb5f3186d318b4026400b04dfe782dcadd"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_schn": 0.0000082917364554485
+            },
             "exampleSites": [
                 "asbury.edu",
                 "www.scad.edu"
@@ -71,11 +71,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "65cbed36574b88e2c059854fd303294fd67d4c0979f36d18d8e3e2bd30c5410d",
-                "5c994a85cf63678e7401b582ec93eb7c2d395757d303e936098a4dc9bc8fe02d"
+                "ba5e09c1bde9294e904cbfb159a28cb6ad9ea6b59a4a6fbe7f3127910b647e77"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -95,7 +95,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "949910864cee243cc64abae5a6da6be154b9063ed2265d955e1644af7a335148"
@@ -110,21 +110,24 @@
         },
         {
             "rule": "unibuddy\\.co\\/chat-bubble\\/main\\.4a043b334d77af5adcae\\.js",
-            "cookies": 0,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "traffic-drivers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.vendor": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.vendor": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "85aec90f53fa76acc0d85ba7cb9fce6e21199175620c4c57a9d46e45fd71abb1"
@@ -138,171 +141,6 @@
             ]
         },
         {
-            "rule": "unibuddy\\.co\\/unibuddy-popcard\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "07bf49560fefbca75f19df9448eea8bc8e4e1899c52995234cc2496091c65a99"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "manchester.ac.uk",
-                "www.ntu.ac.uk"
-            ]
-        },
-        {
-            "rule": "unibuddy\\.co\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "popcard"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5bd8c0bb535f80196f42492f6fab66d58dd459b26aa366f46013cc6dd528a385"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "manchester.ac.uk",
-                "www.ntu.ac.uk"
-            ]
-        },
-        {
-            "rule": "unibuddy\\.co\\/dist\\/main\\.6a40cb1329c350cd79a4\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "popcard"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2,
-                "Event.prototype.timeStamp": 2,
-                "window.localStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2ca96e55bffb8734b27d57a0efbafd67ff85f7a96a2b486cc6551d762ea5a701"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "manchester.ac.uk",
-                "www.ntu.ac.uk"
-            ]
-        },
-        {
-            "rule": "unibuddy\\.co\\/namespaces\\/popcard\\/en-GB\\/popcard\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "translations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "116ad770190891240abd17651a7482718625f20f74567e274dafa02ab1683a9b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "manchester.ac.uk",
-                "www.ntu.ac.uk"
-            ]
-        },
-        {
-            "rule": "unibuddy\\.co\\/graphql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api",
-                "gateway"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "manchester.ac.uk",
-                "www.manchester.ac.uk",
-                "www.ntu.ac.uk",
-                "www.uu.nl"
-            ]
-        },
-        {
-            "rule": "unibuddy\\.co\\/graphql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api",
-                "gateway"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "d0107d74b31e28c0d8e972c19d190057128cbac73a875b68390bbbe9150374ad",
-                "d891aa5e26280dfd5fc5207f982b8a1baeb1d1dee0e5a7376bba525b8f3acd9f",
-                "e52cc65b9c2133497d715d844960b7605d58f7b7c2b348b23c5837363022a5bc"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "manchester.ac.uk",
-                "www.manchester.ac.uk",
-                "www.ntu.ac.uk",
-                "www.uu.nl"
-            ]
-        },
-        {
-            "rule": "unibuddy\\.co\\/namespaces\\/popcard\\/en-GB\\/common\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "translations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "manchester.ac.uk",
-                "www.ntu.ac.uk"
-            ]
-        },
-        {
             "rule": "unibuddy\\.co\\/namespaces\\/chat-bubble\\/en-GB\\/common\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -311,7 +149,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "37d4d318bec4cdc341aac8acbfce3804cabff19b8c116bd3b52eb6624d2e0cea"
@@ -320,7 +158,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "scad.edu",
+                "asbury.edu",
                 "www.scad.edu"
             ]
         },
@@ -332,8 +170,8 @@
                 "tukey"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "e39a8118ec6cdf6ac33e6961518e9fe6ba3f6caf099aeeaec1389c2108ba90ba"
@@ -342,38 +180,86 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "scad.edu",
+                "asbury.edu",
+                "www.scad.edu",
+                "www.uu.nl"
+            ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api",
+                "gateway"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manchester.ac.uk",
+                "www.manchester.ac.uk",
+                "www.uu.nl"
+            ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api",
+                "gateway"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "d0107d74b31e28c0d8e972c19d190057128cbac73a875b68390bbbe9150374ad",
+                "e52cc65b9c2133497d715d844960b7605d58f7b7c2b348b23c5837363022a5bc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manchester.ac.uk",
+                "www.manchester.ac.uk",
                 "www.uu.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000332,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.4
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.4
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 11,
-        "Document": 4,
+        "Script": 7,
+        "Document": 2,
         "Stylesheet": 2,
-        "Fetch": 10,
-        "Preflight": 4,
-        "XHR": 2
+        "Fetch": 5,
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
-        "daisy.ns.cloudflare.com",
-        "noel.ns.cloudflare.com"
+        "noel.ns.cloudflare.com",
+        "daisy.ns.cloudflare.com"
     ]
 }

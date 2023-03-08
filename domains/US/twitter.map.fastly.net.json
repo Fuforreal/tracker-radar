@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000912,
+    "sites": 11,
     "subdomains": [
+        "dualstack.twimg",
         "platform"
     ],
     "cnames": [
+        {
+            "original": "pbs.twimg.com",
+            "resolved": "dualstack.twimg.twitter.map.fastly.net"
+        },
         {
             "original": "static.ads-twitter.com",
             "resolved": "platform.twitter.map.fastly.net"
@@ -22,6 +27,33 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "twitter\\.map\\.fastly\\.net\\/profile_images\\/1354497462472302592\\/PcS7kow1_normal\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack.twimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "pbs.twimg.com",
+                    "resolved": "dualstack.twimg.twitter.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5fe9863d68544938803fb6c4e083d7dd0ff8375d1faf86a5a20b02752efcb4ce"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twitter.com",
+                "business.twitter.com"
+            ]
+        },
         {
             "rule": "twitter\\.map\\.fastly\\.net\\/uwt\\.js",
             "cookies": 0,
@@ -31,7 +63,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "static.ads-twitter.com",
@@ -47,6 +79,87 @@
             "exampleSites": [
                 "twitter.com",
                 "developer.twitter.com"
+            ]
+        },
+        {
+            "rule": "twitter\\.map\\.fastly\\.net\\/profile_images\\/1499069905127321601\\/LmZPC8UK_normal\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack.twimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "pbs.twimg.com",
+                    "resolved": "dualstack.twimg.twitter.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "df50b9b7f28da072c9837f8bca2f5f6d54d4f227cd2b0a7590d41fe8689672b0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twitter.com",
+                "www.twitter.com"
+            ]
+        },
+        {
+            "rule": "twitter\\.map\\.fastly\\.net\\/profile_images\\/1624248892169543681\\/eJZmiN19_normal\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack.twimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "pbs.twimg.com",
+                    "resolved": "dualstack.twimg.twitter.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "bdaf84b7b384e4d8e669ef8556ce1c1942dbd0b81912c48f896533dab3bffd99"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twitter.com",
+                "www.twitter.com"
+            ]
+        },
+        {
+            "rule": "twitter\\.map\\.fastly\\.net\\/profile_images\\/1284244423283531777\\/QBJJm4qv_normal\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack.twimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "pbs.twimg.com",
+                    "resolved": "dualstack.twimg.twitter.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3c1ea7cc79697dc100ca0ca69e81e45a6bd07452c2cf9f819624a7a43516aa29"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twitter.com",
+                "www.twitter.com"
             ]
         }
     ],
@@ -65,10 +178,15 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7307692307692307
+        },
+        {
+            "domain": "cms-twdigitalassets.com",
+            "prevalence": 0.2692307692307692
         }
     ],
     "types": {
+        "Image": 8,
         "Script": 2
     },
     "nameservers": []

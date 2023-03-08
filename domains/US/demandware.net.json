@@ -9,13 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000102,
+    "prevalence": 0.000124,
     "sites": 15,
     "subdomains": [
         "sits-pod32",
+        "cert.staging.store.quiksilverinc",
+        "production-eu01-technogym",
         "production-web-thewarehouselimited"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "webapi-prod.technogym.com",
+            "resolved": "production-eu01-technogym.demandware.net"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -27,7 +34,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "ec4e09ac1a4c4a5a47012115c791145db1616f3e91b8534f1232e75e4690ef88"
@@ -49,7 +56,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "d4a83ca3043eb0d1f76f9f5bcc12253ca621ece026cb900b73161d42edf842d2"
@@ -71,7 +78,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "8352b68e40c2a3747d956fe62b7cc58c8450e24c0d5e82c9ddebd84a36b7f199"
@@ -85,6 +92,53 @@
             ]
         },
         {
+            "rule": "demandware\\.net\\/on\\/demandware\\.servlet\\/webdav\\/Sites\\/Libraries\\/RX-US\\/default\\/roxy\\/category-assets\\/cat-experiences\\/snow\\/plp-icons\\/eco\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cert.staging.store.quiksilverinc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "roxy.com",
+                "www.roxy.com"
+            ]
+        },
+        {
+            "rule": "demandware\\.net\\/dw\\/image\\/v2\\/BFLQ_PRD\\/on\\/demandware\\.static\\/-\\/Sites-tg-catalog-master\\/default\\/dw4fc53483\\/product\\/PG04-NBV000\\/PG04_purestrength_adjustablebench_related_01_6\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-eu01-technogym"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "webapi-prod.technogym.com",
+                    "resolved": "production-eu01-technogym.demandware.net"
+                }
+            ],
+            "responseHashes": [
+                "4b9d587d9088f7138e7ac332af1130d24a75d74eaee15a756786d36266dc3318"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "technogym.com",
+                "www.technogym.com"
+            ]
+        },
+        {
             "rule": "demandware\\.net\\/on\\/demandware\\.static\\/-\\/Sites\\/default\\/wsl-fonts\\/820272\\/85551A5DCA2AB56C1\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -93,7 +147,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -113,31 +167,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9636363636363636
-        },
-        {
-            "domain": "monetate.net",
-            "prevalence": 0.01818181818181818
+            "prevalence": 0.984375
         },
         {
             "domain": "dynamicyield.com",
-            "prevalence": 0.01818181818181818
+            "prevalence": 0.015625
         }
     ],
     "types": {
-        "Image": 6,
+        "Image": 10,
         "Stylesheet": 2
     },
     "nameservers": [
-        "ns2.salesforce.com",
+        "ns4.salesforce.com",
+        "dns06.salesforce.com",
         "ns1.salesforce.com",
-        "dns01.salesforce.com",
-        "dns02.salesforce.com",
+        "ns3.salesforce.com",
+        "dns05.salesforce.com",
+        "ns2.salesforce.com",
         "dns03.salesforce.com",
         "dns04.salesforce.com",
-        "dns05.salesforce.com",
-        "dns06.salesforce.com",
-        "ns3.salesforce.com",
-        "ns4.salesforce.com"
+        "dns01.salesforce.com",
+        "dns02.salesforce.com"
     ]
 }

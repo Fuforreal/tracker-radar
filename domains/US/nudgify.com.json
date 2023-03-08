@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000677,
-    "sites": 10,
+    "prevalence": 0.0000746,
+    "sites": 9,
     "subdomains": [
         "pixel",
         "data"
@@ -15,39 +15,51 @@
     "resources": [
         {
             "rule": "nudgify\\.com\\/pixel\\.js",
-            "cookies": 0.0000271,
+            "cookies": 0.0000249,
             "fingerprinting": 1,
             "subdomains": [
                 "pixel"
             ],
             "apis": {
-                "Document.cookie getter": 5,
-                "Navigator.prototype.language": 5,
-                "Document.cookie setter": 4
+                "Document.cookie getter": 4,
+                "Navigator.prototype.language": 4,
+                "Document.cookie setter": 3,
+                "Date.prototype.getTime": 2
             },
             "sites": 5,
-            "prevalence": 0.0000338,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
-                "ecc3dba49a7407088c4403f7b20c57cd857e611d53881b9f63ff592810091326",
-                "ebc1679e9dced0dcbf2167d5d4cc71efd23c5c996d5eff09aa867c012417c3c3"
+                "ae80e079e5e2560d3d1899c9ab72aea25d230937b834d9b0ece831a3698493e8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "nudgify-visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536000,
                     "length": 74,
-                    "prevalence": 0.000027074590496818735,
+                    "prevalence": 0.0000248752093663455,
+                    "uniqueness": 1
+                },
+                "nudgify-site-capping": {
+                    "ttl": 3610,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "nudgify-review-skip-seen": {
+                    "ttl": 3610,
+                    "length": 14,
+                    "prevalence": 0.0000082917364554485,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "holzharry.de",
                 "megafamous.com",
                 "pictory.ai",
                 "vaping.com",
-                "www.automotivetouchup.com"
+                "www.automotivetouchup.com",
+                "www.techjockey.com"
             ]
         },
         {
@@ -59,23 +71,43 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000338,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
-                "a8dabd1703d4e1ba7ecd36e390e01cec7fff254ad75a085b4852752465ecd6bd",
-                "4655725d6e4eb63146f19709924b9d4ce9d9ea7ecb592563efd2cace6bfe034a",
-                "454173cf3f338b645938d77468052fac18b8b17c1a7b284041e9a3768b3af4fa",
+                "ec523bd081e2ccc282e7a9e5755a2d555e65f25dceaa953713684bd9f3cdd528",
                 "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "holzharry.de",
                 "megafamous.com",
                 "pictory.ai",
                 "vaping.com",
-                "www.automotivetouchup.com"
+                "www.automotivetouchup.com",
+                "www.techjockey.com"
+            ]
+        },
+        {
+            "rule": "nudgify\\.com\\/visitors\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "4ff9ca8dbf973423db214fae3fd94fa688eee3e093202d7df6b71df9e739056c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "megafamous.com",
+                "pictory.ai"
             ]
         },
         {
@@ -87,10 +119,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "cceaf293b05cb92e585e122cecc9672505c7d8a664213f2e979dffeafde6840b"
+                "83914532087ec2d323fd788b80a8b7f2d24c6d4dc78edce030bb2dfe23a5a39d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -99,27 +131,49 @@
                 "megafamous.com",
                 "pictory.ai"
             ]
+        },
+        {
+            "rule": "nudgify\\.com\\/events\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "nudgify-visitor": 0.000016583472910897
+            },
+            "exampleSites": [
+                "megafamous.com",
+                "pictory.ai"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000541,
+    "cookies": 0.0000415,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.7272727272727273
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
         "Script": 5,
-        "Fetch": 7
+        "Fetch": 11
     },
     "nameservers": [
-        "paul.ns.cloudflare.com",
-        "penny.ns.cloudflare.com"
+        "penny.ns.cloudflare.com",
+        "paul.ns.cloudflare.com"
     ]
 }

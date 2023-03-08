@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.0000332,
     "sites": 4,
     "subdomains": [
         "chat-web"
@@ -15,19 +15,16 @@
         {
             "rule": "simplr\\.ai\\/",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "chat-web"
             ],
-            "apis": {
-                "Notification.permission": 1,
-                "Navigator.prototype.plugins": 1
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "41cdb29a9e967632aae773806774dda66b72dd8f586296d57d119a4c65261f70"
+                "0e7b10f793fbf5431464d83575924ab0e7d543981a8af09eae87cd3716aac0da"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,7 +36,7 @@
         },
         {
             "rule": "simplr\\.ai\\/app\\.js",
-            "cookies": 0,
+            "cookies": 0.00000829,
             "fingerprinting": 2,
             "subdomains": [
                 "chat-web"
@@ -48,19 +45,31 @@
                 "Navigator.prototype.userAgent": 3,
                 "window.innerWidth": 3,
                 "window.innerHeight": 3,
-                "PerformanceTiming.prototype.navigationStart": 3,
-                "window.localStorage": 3,
                 "Navigator.prototype.product": 3,
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "window.localStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "c60b0fbbe51df38faee58056666734292b90dabc2c11b462c0f91c7c06119895"
+                "203135ae57fce4d0460a6f0cfe404d5abbe08ccaf025d469129789e344b04798"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mp_793b461ca2372f1b4799b37619ed79bd_mixpanel": {
+                    "ttl": 31536008,
+                    "length": 353,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "humnutrition.com",
@@ -71,11 +80,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000166,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.75
+            "prevalence": 0.25
         },
         {
             "domain": "d25e3ekwgln440.cloudfront.net",
@@ -86,9 +99,9 @@
         "Script": 5
     },
     "nameservers": [
-        "ns-1979.awsdns-55.co.uk",
         "ns-118.awsdns-14.com",
-        "ns-634.awsdns-15.net",
-        "ns-1304.awsdns-35.org"
+        "ns-1979.awsdns-55.co.uk",
+        "ns-1304.awsdns-35.org",
+        "ns-634.awsdns-15.net"
     ]
 }

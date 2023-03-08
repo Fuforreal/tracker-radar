@@ -4,16 +4,30 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000257,
-    "sites": 38,
+    "prevalence": 0.00029,
+    "sites": 35,
     "subdomains": [
-        "cdn",
+        "gw",
         "wnhfackg.cuse",
         "oscsuekp.us",
-        "leu",
-        "aduewqex.use"
+        "luse",
+        "lus",
+        "cdn",
+        "leu"
     ],
     "cnames": [
+        {
+            "original": "fserver.a1solarstore.com",
+            "resolved": "gw.stape.io"
+        },
+        {
+            "original": "load.g.vpnalert.com",
+            "resolved": "lus.stape.io"
+        },
+        {
+            "original": "load.gtm.iwaspoisoned.com",
+            "resolved": "luse.stape.io"
+        },
         {
             "original": "load.sst.sanquin.nl",
             "resolved": "leu.stape.io"
@@ -22,38 +36,30 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "stape\\.io\\/dtag\\/v5\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "stape\\.io\\/events",
+            "cookies": 0.00000829,
+            "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "gw"
             ],
-            "apis": {
-                "window.innerWidth": 7,
-                "window.innerHeight": 7,
-                "Screen.prototype.width": 8,
-                "Screen.prototype.height": 8
-            },
-            "sites": 10,
-            "prevalence": 0.0000677,
-            "cnames": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "fserver.a1solarstore.com",
+                    "resolved": "gw.stape.io"
+                }
+            ],
             "responseHashes": [
-                "d7657eea272b62c540e89a651d3ce05555e18062e77e4734247e5458908d1773"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bruntworkwear.com",
-                "chalet.myswitzerland.com",
-                "nordpass.com",
-                "snow.myswitzerland.com",
-                "tuttletwins.com",
-                "www.bellsofsteel.us",
-                "www.francescas.com",
-                "www.myswitzerland.com",
-                "www.peek-cloppenburg.nl",
-                "www.peek-cloppenburg.de"
+                "a1solarstore.com",
+                "celiac.org"
             ]
         },
         {
@@ -66,17 +72,82 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00005414918099363747
+                "_ga": 0.000066333891643588
             },
             "exampleSites": [
                 "hip2save.com",
                 "www.artofliving.org"
+            ]
+        },
+        {
+            "rule": "stape\\.io\\/analytics\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 2,
+            "subdomains": [
+                "luse",
+                "lus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "load.gtm.iwaspoisoned.com",
+                    "resolved": "luse.stape.io"
+                },
+                {
+                    "original": "load.g.vpnalert.com",
+                    "resolved": "lus.stape.io"
+                }
+            ],
+            "responseHashes": [
+                "bfe2ed3e688b21ff35ce8633a35b43eff429bb09fc29964be0b4a8938080e3ad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iwaspoisoned.com",
+                "vpnalert.com"
+            ]
+        },
+        {
+            "rule": "stape\\.io\\/dtag\\/v5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.innerWidth": 7,
+                "window.innerHeight": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7
+            },
+            "sites": 8,
+            "prevalence": 0.0000663,
+            "cnames": [],
+            "responseHashes": [
+                "d7657eea272b62c540e89a651d3ce05555e18062e77e4734247e5458908d1773"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordpass.com",
+                "snow.myswitzerland.com",
+                "tuttletwins.com",
+                "www.kimmelculturalcampus.org",
+                "www.myswitzerland.com",
+                "www.peek-cloppenburg.de",
+                "www.peek-cloppenburg.nl",
+                "www.regus.com"
             ]
         },
         {
@@ -93,7 +164,7 @@
                 "Screen.prototype.height": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "2b8719fac9b4c0d8bea707c0c3272f11f22151cbdc51e94c255f7a8120761dfa"
@@ -115,7 +186,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "load.sst.sanquin.nl",
@@ -123,7 +194,7 @@
                 }
             ],
             "responseHashes": [
-                "23d48eef0b1b652f3b79dbd808b2ad4f0e982a0651bb7681e97d8ad79452df08"
+                "dd9db23a95b671b97434843a3f3558950805023d3d4ae9748f067f857e3afb23"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -135,14 +206,14 @@
         },
         {
             "rule": "stape\\.io\\/gtdbyjdcwn\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "leu"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "load.sst.sanquin.nl",
@@ -150,7 +221,7 @@
                 }
             ],
             "responseHashes": [
-                "390f0ba6d6b7dff950eb6ea18cab63128d7db9dd142737505544741826468f36"
+                "521ca4d0614650c6afcd2d22a56146254a0e45aa2454cf7c5a61f341b9ec6389"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -174,7 +245,7 @@
                 "Screen.prototype.height": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "1999bde07167bf086f367ac6337b003f6aab3df7c3cb4a40704468a51ace9005"
@@ -186,53 +257,32 @@
                 "sephora.com.au",
                 "www.sephora.com.au"
             ]
-        },
-        {
-            "rule": "stape\\.io\\/g\\/collect",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "aduewqex.use"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.000027074590496818735
-            },
-            "exampleSites": [
-                "touchbistro.com",
-                "www.touchbistro.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000406,
+    "cookies": 0.0000663,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.6756756756756757
+            "prevalence": 0.5277777777777778
         },
         {
             "domain": "first party",
-            "prevalence": 0.2972972972972973
+            "prevalence": 0.3055555555555556
         },
         {
             "domain": "facebook.net",
-            "prevalence": 0.02702702702702703
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "kimmelcenter.org",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Script": 18,
-        "XHR": 2,
-        "Ping": 2
+        "XHR": 4,
+        "Script": 18
     },
     "nameservers": [
         "aida.ns.cloudflare.com",

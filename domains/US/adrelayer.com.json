@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000166,
     "sites": 2,
     "subdomains": [
         "loader",
         "feed"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "adrelayer\\.com\\/load\\.js",
@@ -21,12 +21,10 @@
                 "loader"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Notification.permission": 1,
-                "Navigator.prototype.plugins": 1
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "72a5d50a21b15464b70af37d7c44dd111a7a61cee86a0a1f5993911d5f063da6"
@@ -42,17 +40,33 @@
         {
             "rule": "adrelayer\\.com\\/widget",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
                 "feed"
             ],
-            "apis": {
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.userAgent": 1,
-                "window.innerWidth": 1
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avidreaders.ru",
+                "iknigi.net"
+            ]
+        },
+        {
+            "rule": "adrelayer\\.com\\/feed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "feed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -72,30 +86,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "avidreaders.ru",
-                "iknigi.net"
-            ]
-        },
-        {
-            "rule": "adrelayer\\.com\\/feed",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "feed"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -106,11 +100,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "doublid.bid",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {

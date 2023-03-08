@@ -9,21 +9,31 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000166,
+    "sites": 2,
     "subdomains": [
-        "api"
+        "api",
+        "menu",
+        "insights-collector"
     ],
     "cnames": [
         {
             "original": "api.gog.com",
             "resolved": "api.gog.com.edgesuite.net"
+        },
+        {
+            "original": "insights-collector.gog.com",
+            "resolved": "insights-collector.gog.com.edgesuite.net"
+        },
+        {
+            "original": "menu.gog.com",
+            "resolved": "menu.gog.com.edgesuite.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "gog\\.com\\.edgesuite\\.net\\/v1\\/exchange-rate\\/2023-02-21\\/USD\\/USD",
+            "rule": "gog\\.com\\.edgesuite\\.net\\/user\\/accessToken\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -31,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "api.gog.com",
@@ -39,14 +49,145 @@
                 }
             ],
             "responseHashes": [
-                "694606ec1d6d508ea134064e902b29f7599cf25be425d089fc3a8db4678403c2"
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gog.com",
+                "www.gog.com"
+            ]
+        },
+        {
+            "rule": "gog\\.com\\.edgesuite\\.net\\/v1\\/exchange-rate\\/2023-03-03\\/USD\\/USD",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "api.gog.com",
+                    "resolved": "api.gog.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "d03cfc98bf6d483f2f0053a794f63020342dec3362a90b9bdf5b70e4b6b8d23d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gog.com",
-                "support.gog.com"
+                "www.gog.com"
+            ]
+        },
+        {
+            "rule": "gog\\.com\\.edgesuite\\.net\\/v1\\/account\\/basic",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "menu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "menu.gog.com",
+                    "resolved": "menu.gog.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "0d773b34f09b71009aeb9239686b3ee13afc34262bee1b425f7d2e58e620f8a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gog.com",
+                "www.gog.com"
+            ]
+        },
+        {
+            "rule": "gog\\.com\\.edgesuite\\.net\\/v1\\/store\\/configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "menu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "menu.gog.com",
+                    "resolved": "menu.gog.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "5ee1d74ad5d5aeb6ec5a2d436900ddf3bcb1fc1667ed8d0bde02281f42ebb94f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gog.com",
+                "www.gog.com"
+            ]
+        },
+        {
+            "rule": "gog\\.com\\.edgesuite\\.net\\/clients\\/46755278331571209\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insights-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "insights-collector.gog.com",
+                    "resolved": "insights-collector.gog.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gog.com",
+                "www.gog.com"
+            ]
+        },
+        {
+            "rule": "gog\\.com\\.edgesuite\\.net\\/clients\\/46755278331571209\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insights-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "insights-collector.gog.com",
+                    "resolved": "insights-collector.gog.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gog.com",
+                "www.gog.com"
             ]
         }
     ],
@@ -57,16 +198,14 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.6666666666666666
-        },
-        {
-            "domain": "zdassets.com",
-            "prevalence": 0.3333333333333333
+            "domain": "gog-statics.com",
+            "prevalence": 1
         }
     ],
     "types": {
-        "XHR": 2
+        "Fetch": 4,
+        "XHR": 6,
+        "Preflight": 2
     },
     "nameservers": []
 }

@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000249,
     "sites": 3,
     "subdomains": [
-        "api"
+        "api",
+        "web-assets"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "foodthinkers\\.com\\/commercetools\\/oauth\\/anonymous",
@@ -21,57 +22,13 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "8c0c47c2418e0ac773b85f84a429e3ba0474df472141a42ac7b9f27755ca47ed",
-                "7da544c1df5bce9e3ece3a692430d80cdc5eaa591c89ef94ec68887cf41260c5"
+                "2d41feacb5fbbda0c380de3ebe081a1acff19b597a160ea32bf0f2414a2c5dba",
+                "3c329197ddfa3e0d4bc10956f9cdc6c21e9ecdc7983041fd7b21784d4e07ea92"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "breville.com",
-                "www.breville.com",
-                "www.sageappliances.com"
-            ]
-        },
-        {
-            "rule": "foodthinkers\\.com\\/commercetools\\/graphql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "a7daa080eb13eaa34868c0b70560d19c12e0348c44b42ffbf417912b5e5a0853"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "breville.com",
-                "www.breville.com",
-                "www.sageappliances.com"
-            ]
-        },
-        {
-            "rule": "foodthinkers\\.com\\/commercetools\\/graphql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -88,18 +45,90 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "8bcd5ac016ce4ebec91b7c246e6980addf7b1afd0b3b849d1388e834184d0e19"
+                "a31a4cf09a2df2551b7b6578367b1e15dc54c184c390d9b1731ef908c99fe2db",
+                "62ac579f441a7f7e7e0bd3e443ae723b54e0b575906b34edbf3bbe0a55b6cfb1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sageappliances.com",
+                "breville.com",
+                "www.breville.com",
                 "www.sageappliances.com"
+            ]
+        },
+        {
+            "rule": "foodthinkers\\.com\\/commercetools\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "5d03b200b607e2ba49a6d27409e893dbf5eb32e8fd4687d9d00f2bbd9a4ea303",
+                "3fe556cf5651efb43230ea797ee8d995b68635645397047ac353e803440d2198"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "breville.com",
+                "www.breville.com",
+                "www.sageappliances.com"
+            ]
+        },
+        {
+            "rule": "foodthinkers\\.com\\/commercetools\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "breville.com",
+                "www.breville.com",
+                "www.sageappliances.com"
+            ]
+        },
+        {
+            "rule": "foodthinkers\\.com\\/decision-tool-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "web-assets"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "65ed0d2cd41eff39684df83b5252ffe03de2e3e79db173cda684c247b54baf9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "breville.com",
+                "www.breville.com"
             ]
         }
     ],
@@ -114,11 +143,12 @@
     ],
     "types": {
         "XHR": 6,
+        "Fetch": 3,
         "Preflight": 3,
-        "Fetch": 2
+        "Script": 2
     },
     "nameservers": [
-        "dns2.cscdns.net",
-        "dns1.cscdns.net"
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
     ]
 }

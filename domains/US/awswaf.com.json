@@ -4,38 +4,95 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000284,
-    "sites": 42,
+    "prevalence": 0.000182,
+    "sites": 22,
     "subdomains": [
+        "61535b9c596d.38f2a8b0.us-east-1.token",
+        "61535b9c596d.38f2a8b0.us-east-1.captcha",
         "static.captcha",
-        "73ac2f5efb14.357c7ad3.us-east-1.token",
-        "73ac2f5efb14.357c7ad3.us-east-1.captcha",
-        "3c54b1d8355d.01e0ee30.us-east-1.token",
-        "3c54b1d8355d.01e0ee30.us-east-1.captcha",
+        "387b31301ead.us-east-2.sdk",
+        "387b31301ead.b2531b5f.us-east-2.token",
         "27828fc62a50.9021bf3a.us-east-1.token",
         "3303198e064a.93199650.eu-west-1.token",
         "3303198e064a.93199650.eu-west-1.captcha",
         "97d067090164.edge.sdk",
         "97d067090164.3d54e4e6.us-east-1.token",
         "d5073c057fb8.99b8b10e.us-west-2.token",
-        "22a3c9855714.5397ffe4.us-east-1.token",
-        "22a3c9855714.5397ffe4.us-east-1.captcha",
-        "6b9ee2806d56.us-west-2.sdk",
-        "6b9ee2806d56.67a81620.us-west-2.token",
-        "d38318ed6b37.50cf26e3.us-east-1.token",
-        "d38318ed6b37.50cf26e3.us-east-1.captcha",
-        "61535b9c596d.38f2a8b0.us-east-1.token",
-        "61535b9c596d.38f2a8b0.us-east-1.captcha",
-        "6dcb95271d0d.ead381d8.eu-west-1.token",
-        "6dcb95271d0d.ead381d8.eu-west-1.captcha",
-        "df9c409c788f.0dfe73b4.us-east-1.token",
-        "df9c409c788f.0dfe73b4.us-east-1.captcha",
-        "6659a1b71b88.3dd227de.us-east-1.token",
-        "6659a1b71b88.3dd227de.us-east-1.captcha"
+        "0ea0ff5fad19.a1252c48.eu-west-1.token",
+        "0ea0ff5fad19.a1252c48.eu-west-1.captcha"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/0a049243bb9a\\/challenge\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "61535b9c596d.38f2a8b0.us-east-1.token"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "a6ca53fe5669fd8c21b371ba51c4d8b2901ea423641b32ae203bb60a113487b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aws-waf-token": {
+                    "ttl": 345600,
+                    "length": 240,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tp-link.com",
+                "community.tp-link.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/0a049243bb9a\\/captcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "61535b9c596d.38f2a8b0.us-east-1.captcha"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.languages": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tp-link.com",
+                "community.tp-link.com"
+            ]
+        },
         {
             "rule": "awswaf\\.com\\/fonts\\/AmazonEmberLt\\/stylesheet\\.css",
             "cookies": 0,
@@ -44,8 +101,8 @@
                 "static.captcha"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000812,
+            "sites": 5,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
                 "2998d81cfd55c682823a732f696790f3745c3c1b394ca6701cc91dda9dc54516"
@@ -55,17 +112,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tp-link.com",
-                "vote.rockhall.com",
-                "www.angloinfo.com",
+                "community.tp-link.com",
                 "www.boilerjuice.com",
-                "www.couponchief.com",
-                "www.rentio.jp",
-                "www.southshorehealth.org",
-                "www.tapo.com",
-                "www.ticketswap.com",
-                "www.ticketswap.nl",
-                "www.uvmhealth.org",
-                "www.vanishingincmagic.com"
+                "www.paypal-mobilemoney.com",
+                "www.tp-link.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/0a049243bb9a\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "61535b9c596d.38f2a8b0.us-east-1.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tp-link.com",
+                "community.tp-link.com"
             ]
         },
         {
@@ -76,8 +146,8 @@
                 "static.captcha"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000812,
+            "sites": 5,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
                 "7ba49badcc6d0141f4a12d364346e737e063627cad02365666f6ce39628a6f26"
@@ -87,17 +157,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tp-link.com",
-                "vote.rockhall.com",
-                "www.angloinfo.com",
+                "community.tp-link.com",
                 "www.boilerjuice.com",
-                "www.couponchief.com",
-                "www.rentio.jp",
-                "www.southshorehealth.org",
-                "www.tapo.com",
-                "www.ticketswap.com",
-                "www.ticketswap.nl",
-                "www.uvmhealth.org",
-                "www.vanishingincmagic.com"
+                "www.paypal-mobilemoney.com",
+                "www.tp-link.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/0a049243bb9a\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "61535b9c596d.38f2a8b0.us-east-1.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "25e20fba5607f346138e1d261dffffe5605249225331d4980fe80986efd149f7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tp-link.com",
+                "community.tp-link.com"
             ]
         },
         {
@@ -108,8 +193,8 @@
                 "static.captcha"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000541,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "724ea1872c48f163c9c808e85024955ab33d5d505203695c0d03cc16c8bd8a90"
@@ -119,244 +204,101 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tp-link.com",
-                "www.angloinfo.com",
-                "www.boilerjuice.com",
-                "www.couponchief.com",
-                "www.rentio.jp",
-                "www.tapo.com",
-                "www.uvmhealth.org",
-                "www.vanishingincmagic.com"
+                "community.tp-link.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/73ac2f5efb14\\/58b1ddc7e420\\/b754c978e305\\/challenge\\.js",
-            "cookies": 0.0000135,
+            "rule": "awswaf\\.com\\/387b31301ead\\/59e29c550102\\/challenge\\.js",
+            "cookies": 0.00000829,
             "fingerprinting": 3,
             "subdomains": [
-                "73ac2f5efb14.357c7ad3.us-east-1.token"
+                "387b31301ead.us-east-2.sdk",
+                "387b31301ead.b2531b5f.us-east-2.token"
             ],
             "apis": {
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.webdriver": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Navigator.prototype.appName": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.webdriver": 1,
+                "WebGLRenderingContext.prototype.getExtension": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "a15f9c93b5e6bd7ece6123e37898b5d9801c030b26ff9fc71eb8d0c726bfa450"
+                "4497a015cfc39a86eeca1680cb0aff4d8f5b128b79520539d5f71f294b7cac6e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345601,
-                    "length": 234,
-                    "prevalence": 0.000013537295248409367,
+                    "length": 242,
+                    "prevalence": 0.0000082917364554485,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rockhall.com",
-                "vote.rockhall.com"
+                "sagemaker.aws",
+                "studiolab.sagemaker.aws"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/73ac2f5efb14\\/58b1ddc7e420\\/b754c978e305\\/captcha\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "73ac2f5efb14.357c7ad3.us-east-1.captcha"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.languages": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rockhall.com",
-                "vote.rockhall.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/73ac2f5efb14\\/58b1ddc7e420\\/b754c978e305\\/verify",
+            "rule": "awswaf\\.com\\/387b31301ead\\/59e29c550102\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "73ac2f5efb14.357c7ad3.us-east-1.token"
+                "387b31301ead.b2531b5f.us-east-2.token"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5672d5b353f2f516667169b9caa0c71ad37235d45dd2614bef6c0777091b0aea"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rockhall.com",
-                "vote.rockhall.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/73ac2f5efb14\\/58b1ddc7e420\\/b754c978e305\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "73ac2f5efb14.357c7ad3.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rockhall.com",
-                "vote.rockhall.com"
+                "sagemaker.aws",
+                "studiolab.sagemaker.aws"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/3c54b1d8355d\\/3f0a9fd78afe\\/c68d70616c2f\\/challenge\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "3c54b1d8355d.01e0ee30.us-east-1.token"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.webdriver": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d7053345781fd9414d2a433f33ee4f16c23c7bf124ccfa0253973b6f1e07f610"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "aws-waf-token": {
-                    "ttl": 345600,
-                    "length": 234,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "angloinfo.com",
-                "www.angloinfo.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/3c54b1d8355d\\/3f0a9fd78afe\\/c68d70616c2f\\/captcha\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "3c54b1d8355d.01e0ee30.us-east-1.captcha"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.languages": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "angloinfo.com",
-                "www.angloinfo.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/3c54b1d8355d\\/3f0a9fd78afe\\/c68d70616c2f\\/verify",
+            "rule": "awswaf\\.com\\/387b31301ead\\/59e29c550102\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "3c54b1d8355d.01e0ee30.us-east-1.token"
+                "387b31301ead.b2531b5f.us-east-2.token"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "angloinfo.com",
-                "www.angloinfo.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/3c54b1d8355d\\/3f0a9fd78afe\\/c68d70616c2f\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3c54b1d8355d.01e0ee30.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "a0efe3499ba3d4f128b10e20d27b758cdc7cf50f119aa44eb95ffde16cc2349d"
+                "5dd3abec51d688bd339497185300146661ee67e3e1d1c034c1c764d091ed34e9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "angloinfo.com",
-                "www.angloinfo.com"
+                "sagemaker.aws",
+                "studiolab.sagemaker.aws"
             ]
         },
         {
             "rule": "awswaf\\.com\\/27828fc62a50\\/5250e8321163\\/84da829bd45a\\/challenge\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000249,
             "fingerprinting": 3,
             "subdomains": [
                 "27828fc62a50.9021bf3a.us-east-1.token"
@@ -365,9 +307,7 @@
                 "Navigator.prototype.appName": 3,
                 "Date.prototype.getTime": 3,
                 "window.localStorage": 3,
-                "Navigator.prototype.plugins": 3,
                 "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.webdriver": 3,
                 "WebGLRenderingContext.prototype.getExtension": 3,
                 "WebGLRenderingContext.prototype.getParameter": 3,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 3,
@@ -376,22 +316,22 @@
                 "Screen.prototype.height": 3,
                 "Screen.prototype.availHeight": 3,
                 "Screen.prototype.colorDepth": 3,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "3c40c4757dc3ea3a737666c82982da8d682881ac53dfc2519325b6556c27c2b4",
-                "5a1e41dbb6569d025da73b7981d85bfa09a9d29143122eac05f5071b9f7168ff"
+                "9e3f5df9b236ca2cb603567623c082ff9e2ed3a3c5195112973eb97e692eca7d",
+                "8c96f641f1b97041cb5cbf70d010d8ba990ebc49c6dddb1af75ab76f84e1a5d2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345600,
-                    "length": 236,
-                    "prevalence": 0.000006768647624204684,
+                    "length": 193,
+                    "prevalence": 0.0000248752093663455,
                     "uniqueness": 1
                 }
             },
@@ -411,7 +351,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -432,10 +372,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "20e819e9165a2263ef6bf93f27805c06bfdb709441e57db5d00b589cb581b2cf"
+                "15b4d2363fafae6c6eb9f1282de74c396d008525d06da9f1630dc6aae337187a",
+                "f288e23d1d71b28f3984efc29625e1df2451bcdcbfe85c34d5e45caefe476edd"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -447,28 +388,8 @@
             ]
         },
         {
-            "rule": "awswaf\\.com\\/27828fc62a50\\/5250e8321163\\/84da829bd45a\\/inputs",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "27828fc62a50.9021bf3a.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "betterhelp.com",
-                "www.regain.us"
-            ]
-        },
-        {
             "rule": "awswaf\\.com\\/3303198e064a\\/eb65daac032b\\/41f3d0f4ab3a\\/challenge\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000166,
             "fingerprinting": 3,
             "subdomains": [
                 "3303198e064a.93199650.eu-west-1.token"
@@ -488,21 +409,21 @@
                 "Screen.prototype.height": 2,
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.colorDepth": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "f610b569bd9884bf993589f58c839eee2ebd03429ad26cfee103feea03ae3f24"
+                "f20f301c03bc7ac24ee618c1ce6c91e9177b0b18da8191e97cadc6bbcabd0667"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345603,
-                    "length": 237,
-                    "prevalence": 0.000006768647624204684,
+                    "ttl": 345602,
+                    "length": 207,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
@@ -524,7 +445,7 @@
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
@@ -538,8 +459,50 @@
             ]
         },
         {
+            "rule": "awswaf\\.com\\/3303198e064a\\/eb65daac032b\\/41f3d0f4ab3a\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "3303198e064a.93199650.eu-west-1.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "2a516ba599316ecf1b21517d173059a66e670c644d82311b5351c20d12d80b5b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boilerjuice.com",
+                "www.boilerjuice.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/3303198e064a\\/eb65daac032b\\/41f3d0f4ab3a\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "3303198e064a.93199650.eu-west-1.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boilerjuice.com",
+                "www.boilerjuice.com"
+            ]
+        },
+        {
             "rule": "awswaf\\.com\\/97d067090164\\/bb2ff3da952f\\/challenge\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.00000829,
             "fingerprinting": 3,
             "subdomains": [
                 "97d067090164.edge.sdk",
@@ -564,17 +527,17 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "d6aeedcabe68086b6d9f519d080e403a3bf3e1810a22f68d84390850b9a22d26"
+                "abf2a7050f0fbc70e86d4a56cb6031bba79a17bf4224246f9af3e71eed488c41"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345615,
+                    "ttl": 345618,
                     "length": 233,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.0000082917364554485,
                     "uniqueness": 1
                 }
             },
@@ -593,12 +556,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [
-                "7c5c9beddf2113d2c6e416b0f356b0fc418ed1f5d955b8e0e612b2627da23e9b"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -615,10 +576,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "0133efc065cdb8c52ea3e9febb043fae0d30f4a80b79c59f8e1407db2d8d25ae"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -628,33 +591,39 @@
         },
         {
             "rule": "awswaf\\.com\\/d5073c057fb8\\/0688101ce37e\\/4c66a461b9b1\\/challenge\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 2,
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
             "subdomains": [
                 "d5073c057fb8.99b8b10e.us-west-2.token"
             ],
             "apis": {
-                "Navigator.prototype.appName": 1,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "ab82428b75c0e0d5898408dd39e93f1e398332c6c47208209dcb10b6247a4180"
+            ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345601,
                     "length": 233,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
@@ -665,11 +634,53 @@
             ]
         },
         {
-            "rule": "awswaf\\.com\\/22a3c9855714\\/0604ffe3e21b\\/677e8bff67cb\\/challenge\\.js",
-            "cookies": 0.0000135,
+            "rule": "awswaf\\.com\\/d5073c057fb8\\/0688101ce37e\\/4c66a461b9b1\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d5073c057fb8.99b8b10e.us-west-2.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailykos.com",
+                "www.dailykos.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/d5073c057fb8\\/0688101ce37e\\/4c66a461b9b1\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d5073c057fb8.99b8b10e.us-west-2.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "b7d1b63f2951de8a4c34096bdc88b9b4231fafbed6277feaa33eaf5a196be177"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailykos.com",
+                "www.dailykos.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/0ea0ff5fad19\\/d770bf85decc\\/3139029d669b\\/challenge\\.js",
+            "cookies": 0.0000166,
             "fingerprinting": 3,
             "subdomains": [
-                "22a3c9855714.5397ffe4.us-east-1.token"
+                "0ea0ff5fad19.a1252c48.eu-west-1.token"
             ],
             "apis": {
                 "Navigator.prototype.appName": 2,
@@ -690,241 +701,39 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "3dce72cc1b77ed9a779695ced476d677b7a62ad0a7596142c379b2a47a656880"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "aws-waf-token": {
-                    "ttl": 345600,
-                    "length": 229,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rentio.jp",
-                "www.rentio.jp"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/22a3c9855714\\/0604ffe3e21b\\/677e8bff67cb\\/captcha\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "22a3c9855714.5397ffe4.us-east-1.captcha"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.languages": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rentio.jp",
-                "www.rentio.jp"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/22a3c9855714\\/0604ffe3e21b\\/677e8bff67cb\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "22a3c9855714.5397ffe4.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "9dea81c9b64921b94ff210cec71d1ae4a1befc2a2028a21e8f93b4e28d32ad29"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rentio.jp",
-                "www.rentio.jp"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/22a3c9855714\\/0604ffe3e21b\\/677e8bff67cb\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "22a3c9855714.5397ffe4.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rentio.jp",
-                "www.rentio.jp"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/6b9ee2806d56\\/141f3cd6fe33\\/challenge\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 3,
-            "subdomains": [
-                "6b9ee2806d56.us-west-2.sdk",
-                "6b9ee2806d56.67a81620.us-west-2.token"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.webdriver": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "602e6d709d4aee6f90073bdecf90a8feea617d9690888e04400891a9cd24002a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "aws-waf-token": {
-                    "ttl": 345604,
-                    "length": 237,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sextpanther.com",
-                "www.sextpanther.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/6b9ee2806d56\\/141f3cd6fe33\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "6b9ee2806d56.67a81620.us-west-2.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sextpanther.com",
-                "www.sextpanther.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/6b9ee2806d56\\/141f3cd6fe33\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "6b9ee2806d56.67a81620.us-west-2.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "cbd1491d1bc5e27df202fa4a1214311b6a76879b9bb74e67ee6b3494d30428ad"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sextpanther.com",
-                "www.sextpanther.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/d38318ed6b37\\/f04686aee03e\\/6eca93f76862\\/challenge\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "d38318ed6b37.50cf26e3.us-east-1.token"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.webdriver": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "91a2350bdeac0b307f66a80ad11c2017c7db869e7aeb79520c1479e3a79b5950"
+                "721884d160687b0d6d7ecdc28657126396dc0cb18af140886d3502f9a2072b99"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345601,
-                    "length": 213,
-                    "prevalence": 0.000013537295248409367,
+                    "length": 246,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "southshorehealth.org",
-                "www.southshorehealth.org"
+                "paypal-mobilemoney.com",
+                "www.paypal-mobilemoney.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/d38318ed6b37\\/f04686aee03e\\/6eca93f76862\\/captcha\\.js",
+            "rule": "awswaf\\.com\\/0ea0ff5fad19\\/d770bf85decc\\/3139029d669b\\/captcha\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "d38318ed6b37.50cf26e3.us-east-1.captcha"
+                "0ea0ff5fad19.a1252c48.eu-west-1.captcha"
             ],
             "apis": {
                 "window.localStorage": 2,
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
@@ -933,55 +742,55 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "southshorehealth.org",
-                "www.southshorehealth.org"
+                "paypal-mobilemoney.com",
+                "www.paypal-mobilemoney.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/d38318ed6b37\\/f04686aee03e\\/6eca93f76862\\/verify",
+            "rule": "awswaf\\.com\\/0ea0ff5fad19\\/d770bf85decc\\/3139029d669b\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "d38318ed6b37.50cf26e3.us-east-1.token"
+                "0ea0ff5fad19.a1252c48.eu-west-1.token"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "006c19268b401ac938e84c5ee6cd27e0b9f920b9ede3b01bc80223b3163c7b66"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paypal-mobilemoney.com",
+                "www.paypal-mobilemoney.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/0ea0ff5fad19\\/d770bf85decc\\/3139029d669b\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "0ea0ff5fad19.a1252c48.eu-west-1.token"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "southshorehealth.org",
-                "www.southshorehealth.org"
+                "paypal-mobilemoney.com",
+                "www.paypal-mobilemoney.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/d38318ed6b37\\/f04686aee03e\\/6eca93f76862\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d38318ed6b37.50cf26e3.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6002a6409f7d9dd3137341581c171abc3c954b9dac53bbe73b05269b39cf70ef"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "southshorehealth.org",
-                "www.southshorehealth.org"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/47cb842e2780\\/challenge\\.js",
-            "cookies": 0.0000135,
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/f771ee918f00\\/challenge\\.js",
+            "cookies": 0.0000166,
             "fingerprinting": 3,
             "subdomains": [
                 "61535b9c596d.38f2a8b0.us-east-1.token"
@@ -990,9 +799,7 @@
                 "Navigator.prototype.appName": 2,
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.webdriver": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
                 "WebGLRenderingContext.prototype.getParameter": 2,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
@@ -1005,28 +812,28 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "4907e54c571928259ff9ffca8e96782252b0cbb168179b4de1cbe902009ce8e6"
+                "fb6d095609e9269bb079cdd72467a5e69974fbb01ec3f2968d3c4ff08ceb0609"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345601,
-                    "length": 228,
-                    "prevalence": 0.000013537295248409367,
+                    "ttl": 345600,
+                    "length": 232,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tapo.com",
-                "www.tapo.com"
+                "tp-link.com",
+                "www.tp-link.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/47cb842e2780\\/captcha\\.js",
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/f771ee918f00\\/captcha\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -1037,7 +844,7 @@
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
@@ -1046,12 +853,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tapo.com",
-                "www.tapo.com"
+                "tp-link.com",
+                "www.tp-link.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/47cb842e2780\\/verify",
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/f771ee918f00\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1059,21 +866,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "2ce4c13f23d5a5fe7b6f31cf37d80d21e2ae4e0cc42257d4faaf782142becc13"
+                "e36feffae86b7a06780856d708f0020f8582cd4aa4c9bb6042bfecb6d3ad7f81"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tapo.com",
-                "www.tapo.com"
+                "tp-link.com",
+                "www.tp-link.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/47cb842e2780\\/verify",
+            "rule": "awswaf\\.com\\/61535b9c596d\\/9afa5e95df62\\/f771ee918f00\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1081,267 +888,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tapo.com",
-                "www.tapo.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/6dcb95271d0d\\/919f8e8d81b4\\/1fbedc50831e\\/challenge\\.js",
-            "cookies": 0,
-            "fingerprinting": 3,
-            "subdomains": [
-                "6dcb95271d0d.ead381d8.eu-west-1.token"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.webdriver": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b63f1150a1865f2f054e93d7d3a3e6b038157276f89025b360c28c8a7ec4ef7c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ticketswap.com",
-                "www.ticketswap.nl"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/6dcb95271d0d\\/919f8e8d81b4\\/1fbedc50831e\\/captcha\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "6dcb95271d0d.ead381d8.eu-west-1.captcha"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.languages": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ticketswap.com",
-                "www.ticketswap.nl"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/df9c409c788f\\/b1342a1e3ab2\\/a915d05ae1f3\\/challenge\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "df9c409c788f.0dfe73b4.us-east-1.token"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.webdriver": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "be13700300251104fb97397bd3f8d501f2d7cdb0717c71927d7d22e2c2389a84"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "aws-waf-token": {
-                    "ttl": 345601,
-                    "length": 204,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "uvmhealth.org",
-                "www.uvmhealth.org"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/df9c409c788f\\/b1342a1e3ab2\\/a915d05ae1f3\\/captcha\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "df9c409c788f.0dfe73b4.us-east-1.captcha"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.languages": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "uvmhealth.org",
-                "www.uvmhealth.org"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/df9c409c788f\\/b1342a1e3ab2\\/a915d05ae1f3\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "df9c409c788f.0dfe73b4.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "uvmhealth.org",
-                "www.uvmhealth.org"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/df9c409c788f\\/b1342a1e3ab2\\/a915d05ae1f3\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "df9c409c788f.0dfe73b4.us-east-1.token"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3290257e4a689eb656d4e1b6185f4ae66e97134c06793b0253de0ae0f582793f"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "uvmhealth.org",
-                "www.uvmhealth.org"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/6659a1b71b88\\/d2f2a4cff97c\\/1264a14daa64\\/challenge\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 3,
-            "subdomains": [
-                "6659a1b71b88.3dd227de.us-east-1.token"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.webdriver": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e1476ab54c5e48ca96d51b770d0ab81ccba6cff9387f1fbff490475ce4b5f449"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "aws-waf-token": {
-                    "ttl": 345600,
-                    "length": 245,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vanishingincmagic.com",
-                "www.vanishingincmagic.com"
-            ]
-        },
-        {
-            "rule": "awswaf\\.com\\/6659a1b71b88\\/d2f2a4cff97c\\/1264a14daa64\\/captcha\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "6659a1b71b88.3dd227de.us-east-1.captcha"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.languages": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0ab30eadae74e8359b5cae8f8cb5a9b186209cca667ea23edcf235590aae11d5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vanishingincmagic.com",
-                "www.vanishingincmagic.com"
+                "tp-link.com",
+                "www.tp-link.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000217,
+    "cookies": 0.000182,
     "topInitiators": [
         {
             "domain": "first party",
@@ -1349,16 +910,16 @@
         }
     ],
     "types": {
-        "Stylesheet": 12,
-        "Font": 20,
-        "Script": 45,
-        "Fetch": 21,
-        "Preflight": 19
+        "Script": 25,
+        "Stylesheet": 5,
+        "Preflight": 17,
+        "Font": 7,
+        "Fetch": 17
     },
     "nameservers": [
-        "ns-759.awsdns-30.net",
-        "ns-1121.awsdns-12.org",
         "ns-43.awsdns-05.com",
-        "ns-1878.awsdns-42.co.uk"
+        "ns-1121.awsdns-12.org",
+        "ns-1878.awsdns-42.co.uk",
+        "ns-759.awsdns-30.net"
     ]
 }

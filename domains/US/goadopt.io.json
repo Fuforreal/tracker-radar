@@ -5,34 +5,40 @@
         "DuckDuckGo-US"
     ],
     "prevalence": 0.000108,
-    "sites": 16,
+    "sites": 13,
     "subdomains": [
         "tag",
         "disclaimer-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "goadopt\\.io\\/injector\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000498,
+            "fingerprinting": 2,
             "subdomains": [
                 "tag"
             ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000609,
+            "apis": {
+                "Navigator.prototype.product": 7,
+                "Navigator.prototype.userAgent": 7,
+                "window.localStorage": 7,
+                "Date.prototype.getTime": 6,
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6,
+                "window.innerWidth": 5
+            },
+            "sites": 7,
+            "prevalence": 0.000058,
             "cnames": [],
             "responseHashes": [
-                "0c66fd240936a59af1dfad7c9d466a983fd67fa90d0855dcc65973535cf4867c",
+                "240939fff90960b2b606a87cf68e7a6adb7c8743a9bc69f217a84de67c295957",
                 "d7c6a4650407eebff0db89d0baf934d6b9e7a2806f94a94614eb052f1837e13f",
-                "df54d551fdcaab23c7108b93564c84290e0ba14c7042ab663c5aba24df247366",
-                "f2e229251fcbe37a1b4ad0b0b5a2a257a7db34aa560f041b822d64173fd85aed",
-                "11c04537f24b89cf36f2e2c5f286f5dc81c4a33ad574565a110136c303e6ca58",
+                "21d1671671c40705acb2b039cac75429a562c57e38008b169c617305610b8db3",
+                "92dd6e8638c696ea26c92c8256c1ff33701057e62dd5eeaaaf6e1e3b3b2c2724",
                 "8f2ce68f7fd77bf55ee469b5d63dc22a65821bbafaf26fcc6f0587706fc61f85",
-                "5a6ab9ff933d609333a6a21bb3d33c874b5a6a9ebd2416592ecea21b1a813004",
-                "6088c687e9bf8c95c90b2f77c715d38a61ac8f143c9ab44b585d82706bd23a8b"
+                "ba0b6e9ff3f8663974d2adbcd53db17c238586e793a0d9d3f422f79d8eade49d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,69 +47,57 @@
                 "exame.com",
                 "www.apontador.com.br",
                 "www.astrocentro.com.br",
-                "www.centauro.com.br",
                 "www.edivaldobrito.com.br",
                 "www.gigasena.com.br",
                 "www.megacurioso.com.br",
-                "www.metropoles.com",
                 "www.tecmundo.com.br"
             ]
         },
         {
             "rule": "goadopt\\.io\\/api\\/tag\\/get-consent",
-            "cookies": 0.0000541,
+            "cookies": 0.0000415,
             "fingerprinting": 0,
             "subdomains": [
                 "disclaimer-api"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000541,
+            "sites": 5,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
-                "39b0688f98205a91e0c7e57998ded69989ff5e8fa2ed49ce5465d6e64765f850",
-                "6571e970a912c312346374ad29d44ec491858a916fa381fcd9f8051cda5b29a0",
-                "d4ac78014cfc44d0cdbb2fcfb1610e9ced5570b08139855fdb3038046b5bbb72",
-                "90fd2753e88069541b630f65678695c935720075a61d3f8ffcaa316c0ebbd690",
-                "536393046db3bcaa96cf3f5db5a6e70489ffb8ec00836e4710b292b3ce35d041",
-                "c4ae28d7b4f5f898761a6caa35768c9180c762e5c15a1f0d7aa68f297b6ff2ff",
-                "63801cafb7774fa3bb65196614307cefcda8b47632ce9bee1e8344d73575f510"
+                "36c74fb35803b1b04e1bdde086fe43ce05319b5c44a76bb10f41eadd72fd1158",
+                "522714b3e31384463309715c62d948c8f1f572fe7e0a1269048337455fd24d18",
+                "7ed0c5516c5e484a75082203ee1ede47fc11be084d3cbe1e4d1ad5bcb5440e35",
+                "a606e6a838d46dfd540a35e41ee73e2b543cbf78611c5504fdab2dd0fa10241e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "exame.com",
-                "www.apontador.com.br",
                 "www.astrocentro.com.br",
-                "www.centauro.com.br",
                 "www.gigasena.com.br",
                 "www.megacurioso.com.br",
-                "www.metropoles.com",
                 "www.tecmundo.com.br"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000948,
+    "cookies": 0.0000829,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.47058823529411764
-        },
-        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.47058823529411764
+            "prevalence": 0.5384615384615384
         },
         {
-            "domain": "akamaihd.net",
-            "prevalence": 0.058823529411764705
+            "domain": "first party",
+            "prevalence": 0.46153846153846156
         }
     ],
     "types": {
-        "Script": 9,
-        "XHR": 8
+        "Script": 7,
+        "XHR": 5
     },
     "nameservers": [
         "isla.ns.cloudflare.com",

@@ -4,16 +4,66 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000166,
     "sites": 2,
     "subdomains": [
         "analytics"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "deutscher-apotheker-verlag\\.de\\/js\\/container_mjb64FjT\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 2,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "c209a5eb5baf21de82dd67cc4fb1ad5026c4bd63948ecb36385740a2918f707e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.5.e4f2": {
+                    "ttl": 33955208,
+                    "length": 28,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pk_ses.5.e4f2": {
+                    "ttl": 1807,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-apotheker-zeitung.de",
+                "www.deutsche-apotheker-zeitung.de"
+            ]
+        },
+        {
+            "rule": "deutscher-apotheker-verlag\\.de\\/matomo\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,10 +71,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -35,7 +87,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000166,
     "topInitiators": [
         {
             "domain": "first party",
@@ -43,12 +95,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "ns-639.awsdns-15.net",
-        "ns-1860.awsdns-40.co.uk",
         "ns-32.awsdns-04.com",
-        "ns-1234.awsdns-26.org"
+        "ns-639.awsdns-15.net",
+        "ns-1234.awsdns-26.org",
+        "ns-1860.awsdns-40.co.uk"
     ]
 }

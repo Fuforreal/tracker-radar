@@ -7,46 +7,48 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000249,
     "sites": 3,
     "subdomains": [
         "sdk.me.bca",
         "bca.cdp",
-        "me.bca"
+        "me.bca",
+        "me.ttd"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "meiro\\.io\\/",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "sdk.me.bca"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie setter": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
                 "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.cookieEnabled": 2
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "deea53cdfc8790ee11a1101472cde079c5924b8f9b88cc0773a253692955ecc8"
+                "98d5ca9d1fa6595b17079cdb0348f46394555553b01b3232f9c0ec8d7465a5a1"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "meiro_user_id_js": {
                     "ttl": 63072000,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
@@ -65,7 +67,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -85,7 +87,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -98,14 +100,14 @@
         },
         {
             "rule": "meiro\\.io\\/",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "me.bca"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -115,11 +117,33 @@
                 "bca.co.id",
                 "www.bca.co.id"
             ]
+        },
+        {
+            "rule": "meiro\\.io\\/tradedesk_sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "me.ttd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "meiro_user_id_js": 0.000016583472910897
+            },
+            "exampleSites": [
+                "bca.co.id",
+                "www.bca.co.id"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000166,
     "topInitiators": [
         {
             "domain": "first party",
@@ -129,11 +153,12 @@
     "types": {
         "Script": 2,
         "Fetch": 4,
-        "Preflight": 2
+        "Preflight": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns3.digitalocean.com",
+        "ns1.digitalocean.com",
         "ns2.digitalocean.com",
-        "ns1.digitalocean.com"
+        "ns3.digitalocean.com"
     ]
 }

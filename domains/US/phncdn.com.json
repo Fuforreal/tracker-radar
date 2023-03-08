@@ -7,13 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000799,
-    "sites": 118,
+    "prevalence": 0.000912,
+    "sites": 110,
     "subdomains": [
         "cdn1d-static-shared",
         "cdn1-smallimg",
         "ei",
-        "di"
+        "di",
+        "ci",
+        "ss"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,18 +23,22 @@
         {
             "rule": "phncdn\\.com\\/html5player\\/videoPlayer\\/es6player\\/6\\.1\\.8\\/desktop-player-adaptive-hls\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn1d-static-shared"
             ],
             "apis": {
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 1,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2,
+                "window.innerHeight": 2,
+                "MediaSource.isTypeSupported": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "2953c74bdcfa137a3e394aab1ec3b59349c6c7f85f6271662bb1e6b78609142e"
@@ -41,7 +47,29 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "www.jessicabrighton.com",
                 "www.you-porn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/html5player\\/videoPlayer\\/es6player\\/6\\.1\\.8\\/assets\\/youporn\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1d-static-shared"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "079662e6b424ee79828a54179262b2585174653ec35569d32f4c1e7c660d2062"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.jessicabrighton.com"
             ]
         },
         {
@@ -53,7 +81,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "2f8b5bff5233838910148387d482d113b9a2aae360ac22c3bb999da44867e417"
@@ -75,7 +103,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "876cbb2343ad3050ede32db4f222cf1eaef596adac6efafe53f235b264ae145a"
@@ -99,7 +127,7 @@
                 "PerformanceTiming.prototype.navigationStart": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "5d0fec532f2e7d4dc5a759ea0967583c0886585c3765dd79d58e38f0bfb7e877"
@@ -113,67 +141,6 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/html5player\\/videoPlayer\\/es6player\\/6\\.3\\.1\\/desktop-player-adaptive-hls-hlsjs\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn1d-static-shared"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 3,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.language": 3,
-                "Date.prototype.getTime": 6,
-                "window.innerHeight": 2
-            },
-            "sites": 7,
-            "prevalence": 0.0000474,
-            "cnames": [],
-            "responseHashes": [
-                "ccfb3fdee13f8d793e1620fe21928a77277a88d8a4349a9f41c607687a8c4285"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "iamsissy.com",
-                "seksmet.nl",
-                "sexosintabues30.com",
-                "sphinxtube.com",
-                "tubeplan.com",
-                "www.fistingplanet.com",
-                "www.jrvids.com"
-            ]
-        },
-        {
-            "rule": "phncdn\\.com\\/html5player\\/videoPlayer\\/es6player\\/6\\.3\\.1\\/assets\\/pornhub\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn1d-static-shared"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [
-                "c037ef78b7a952ff5d72f11a1487c1dc1cb9deb2330613788d50329972da681d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "iamsissy.com",
-                "seksmet.nl",
-                "sphinxtube.com",
-                "tubeplan.com",
-                "www.fistingplanet.com",
-                "www.jrvids.com"
-            ]
-        },
-        {
             "rule": "phncdn\\.com\\/n172nWs1UEcnquuObA5x52osw51230gH\\/rta-1\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -182,7 +149,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "4e1b1325d64b4768de1d56276778e40b3e8265e7ff10c5807765c6d39a06f1fb"
@@ -196,29 +163,55 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202005\\/15\\/314227681\\/original\\/\\(m=eaf8Ggaaaa\\)\\(mh=E-882G-fVRszNkMy\\)10\\.jpg",
+            "rule": "phncdn\\.com\\/html5player\\/videoPlayer\\/es6player\\/6\\.3\\.2\\/desktop-player-adaptive-hls-hlsjs\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn1d-static-shared"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "a241b5e5fc462deca047f6f3c80dbb2de7b03dd262aef782acce89853623ceaa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seksmet.nl",
+                "www.fistingplanet.com",
+                "www.jrvids.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/html5player\\/videoPlayer\\/es6player\\/6\\.3\\.2\\/assets\\/pornhub\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ei"
+                "cdn1d-static-shared"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "359b082d57216c73f743b19ae19d0ab3b3093dff547801a2110e5be5854ac457"
+                "c037ef78b7a952ff5d72f11a1487c1dc1cb9deb2330613788d50329972da681d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pornkai.com",
-                "tubesafari.com"
+                "seksmet.nl",
+                "www.fistingplanet.com",
+                "www.jrvids.com"
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/25\\/424075871\\/thumbs_25\\/\\(m=eaAaGwObaaaa\\)\\(mh=CB7NJ9KZXAzPf9Ja\\)6\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202302\\/27\\/426375231\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=T5nOdA4El3xQ8OC8\\)15\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -226,10 +219,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "1a920390054ed237dbf9bd895fe13725c2b93910df2a44cf22c5f41dd76e2b31"
+                "42af47bd6db4c63305ea6d5b7fd27b81a73dc13a60f31f948a3f525bff5179bd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -240,7 +233,7 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/27\\/424257371\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=yJdXdV1k1Ly_bMIC\\)4\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202302\\/22\\/426013181\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=Ef4gVyiTqsdC-hB9\\)6\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -248,10 +241,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "55407d082aa52c8d98e792ba6733f650264fe32ec9f3cf989cafe42b8fd9df7a"
+                "993cd482bec158e5b4be1619c87e358510b4d327bd9494bfbe34ca88fde3601a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -262,7 +255,51 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/24\\/424006941\\/original\\/\\(m=q2K8-8XbeaAaGwObaaaa\\)\\(mh=-Tp6otsWNGGCx280\\)0\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202208\\/12\\/413535171\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=BHUtN2c4pHOnzjqW\\)9\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ei"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "9a49e63805ff6e3bebee4441adb1c09e1bf5ac9c06234c524480773ed4b6c4b1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/202301\\/30\\/424394821\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=ZZJIG0BMbDoZwBSS\\)3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ei"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "1b8fb453bbc827f14c68535171eb7ce4a3e38d7ecade816d757a8017edcc6832"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/202302\\/16\\/425592501\\/original\\/\\(m=qWK98_XbeaAaGwObaaamqv\\)\\(mh=3x5tJ8ZEc82E4u0v\\)0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -270,10 +307,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "938cea031135f1a2b4c5cbb76e151d7f547090fe33f86f09fb1b56e8259d53c6"
+                "4e48bff5dfc68e9b68f9a3d5b7e9c8a87865abe61886de7173330557ef52db20"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -284,29 +321,7 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/23\\/423929751\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=JtEtzMg0S4imEoLB\\)11\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ei"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d26eebe2c3a9e97170bbe0199b36b1be1433ba68bc6681a4041f56778e122722"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dlouha-videa.cz",
-                "www.longporn.com"
-            ]
-        },
-        {
-            "rule": "phncdn\\.com\\/videos\\/202208\\/26\\/414441271\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=Hpv87HXIyfu_r5Jr\\)10\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202302\\/15\\/425516171\\/original\\/\\(m=qVPH6_XbeaAaGwObaaaa\\)\\(mh=gIRZnDScBFOSyfuv\\)0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -314,10 +329,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "13040c99d468d55f7c8b32984a2d087063b7a4d26e134480762838511790e74b"
+                "5453e7f4038142f8a6495e3b828e65461cebc97fe4054c7300788bb68ca447a0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -328,95 +343,7 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/25\\/424092231\\/thumbs_5\\/\\(m=eaAaGwObaaaa\\)\\(mh=L63zDxV76m8ZzZpz\\)11\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ei"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "45206600cee496151bd881a2218604a88e5fd6dfc42d723b970a0613badbc5a9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dlouha-videa.cz",
-                "www.longporn.com"
-            ]
-        },
-        {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/24\\/424043901\\/original\\/\\(m=qK0JI9XbeaAaGwObaaaa\\)\\(mh=I21XNMIinvypC51e\\)0\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ei"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d4637cf19e50ecef1bbb0e89fa1f15c26ef61073325a36980f81d3a5c0fa4573"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dlouha-videa.cz",
-                "www.longporn.com"
-            ]
-        },
-        {
-            "rule": "phncdn\\.com\\/videos\\/202212\\/14\\/421391681\\/original\\/\\(m=qVJX05XbeaAaGwObaaaa\\)\\(mh=X9WuLjR4isgWDwfx\\)0\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ei"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "97d6e5f8bed0754b28398a2371ff0c426c16145486714479d0742ae5031a40ec"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dlouha-videa.cz",
-                "www.longporn.com"
-            ]
-        },
-        {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/20\\/423750191\\/thumbs_15\\/\\(m=eaAaGwObaaaa\\)\\(mh=6sO5VCLC9MIwdgax\\)3\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ei"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d85bd74bfc232fb53db13a87b52120898ca5ebc30cf08dec7942336514f53e47"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dlouha-videa.cz",
-                "www.longporn.com"
-            ]
-        },
-        {
-            "rule": "phncdn\\.com\\/videos\\/202107\\/01\\/390508881\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=vLzpo5D-JuvUZA-1\\)2\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202203\\/06\\/404164331\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=ck-ZnS47MUSSCSAJ\\)6\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -424,10 +351,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "424f049c9065f2ee27b6baa2c0e36febeae5e82ceb926747b225a6524acf9c84"
+                "9a389a68d838c6e80990b0ea990e8548042287f0db2dbf33ea2be52a0d2106ba"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -438,7 +365,29 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202302\\/16\\/425581081\\/original\\/\\(m=qOSQ8_XbeaAaGwObaaaa\\)\\(mh=g6_QXmak_5D_I8TS\\)0\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202302\\/24\\/426133931\\/original\\/\\(m=qOQNX-XbeaAaGwObaaaa\\)\\(mh=pBogEgJO3RPXAUP7\\)0\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ei"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "042900b37f04bea0b90ff44ff2cbdc82b33a448dbb0db61a40e9c4ac75d74050"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/202302\\/24\\/426144401\\/original\\/\\(m=qW4H5-XbeaAaGwObaaamqv\\)\\(mh=2wCNxFDU4g8_uSdx\\)0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -446,10 +395,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "b8e76a84c9e9ef44d6e9842634deec44db138084230b6c738bdbc1f1306f91ca"
+                "e8b58db6362c9e0e115977284d172fd3229dcb9ee61c43d0eb852d5bda16296b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -460,7 +409,7 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/19\\/423708901\\/thumbs_20\\/\\(m=eaAaGwObaaaa\\)\\(mh=YEUa3lBbuEC8JnFO\\)8\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202302\\/24\\/426148501\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=fC1wAdGygkMGf3Ho\\)16\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -468,10 +417,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "08826a64eb1d61b651d9aa60e9c346d681a2acfeed5250962b8081cab5436ed8"
+                "fecc75dfd273df20023e7408e266d1753942b128db7d96ba48f903e1c26ffb2e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -482,7 +431,7 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/25\\/424100311\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=fR5iArXmhyBm_6jT\\)7\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202210\\/20\\/417907491\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=Cz540hjcDtZ8udjf\\)14\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -490,10 +439,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "473f86f829e2786bfea03fec1616d6eeeb484e357d0996bb796809f716709da8"
+                "a2f0179f95b793eb85bc5f7980b3103f095700e187b8e42dfaa0ffc5f1e399ad"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -504,7 +453,29 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202211\\/28\\/420358821\\/original\\/\\(m=q9HVO4XbeaAaGwObaaaa\\)\\(mh=WbOPMSH58AMUF8kl\\)0\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202302\\/24\\/426112301\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=zH2ha0St7C0Y1az9\\)12\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ei"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "cbac1dbf2b12898f5a22ea7f122dbdaf034f8b62793b832408a778aba86c1e37"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/202210\\/25\\/418209411\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=F0ozC0UuRFzFVrZ1\\)7\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -512,10 +483,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "816db6bef9aa9769e5030fd3b9b488272fbb515d1b7a86163c87cd10442b6cd1"
+                "71ae83f1378c65b90e0e5a92e66151a09077c30ea2da157f204b2a62510f5e5d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -526,7 +497,51 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202211\\/13\\/419475951\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=Jfzz7Qqo6WThxB6o\\)13\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202301\\/30\\/424395251\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=RV-m_U5F3AxFg3Ns\\)7\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ei"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "733389bc9496d542bfee69344057fbebc7316c58527789b6dbcabb8d72837af6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/202301\\/15\\/423391932\\/thumbs_10\\/\\(m=eaAaGwObaaaa\\)\\(mh=qQrK29J1wbLFfoTu\\)15\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ei"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "bbfdf380eb5ec7883d162ab741072764e043c30be094f1b34724f29f74edf71e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/202302\\/01\\/424548731\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=nEMpeDNU-NgJeEBN\\)16\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -534,10 +549,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "3c124c596f37a35210ee93aef5aece38141a8929ed9315a02cd3e04e6e382543"
+                "61e4ca1151e0debe655e27764c3ca989ddeda80217b619d208ccfae1dea46c32"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -548,18 +563,18 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/13\\/423286782\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=ugzhYItmMJo8bPqg\\)15\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202301\\/09\\/423003961\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=_eEVceht_hFyM-4y\\)16\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ei"
+                "di"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "cc737fce5aab17ccd168a0cd06b375b9c3acb73e0f4b7f34672f6982f981c3ea"
+                "e9f742a759fde6d50bcfcfc3fb778604750a2d82bb9136ab79c9b73f5f3f5a45"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -570,7 +585,7 @@
             ]
         },
         {
-            "rule": "phncdn\\.com\\/videos\\/202301\\/19\\/423690101\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=YCERdkEvzwrkltfU\\)8\\.jpg",
+            "rule": "phncdn\\.com\\/videos\\/202302\\/24\\/426161861\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=WzmNnjLyC_jKMNNU\\)13\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -578,10 +593,142 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "94205f943f07728556e66de971686829331ddac67a0a9304b759f1a3ff909bd3"
+                "e3429b42acf04e48e2f66dc513be223cccc316ab005f6f8f5c33d5fec7074101"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/201405\\/09\\/26615001\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=MkVXJfDCEm6l5mgO\\)3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "a4ed3768820a484985829e358364ad0de03ba60f5553431e6bf070bd7fc54793"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/201405\\/05\\/26424501\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=PuUw1S1kCulM7pko\\)11\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "755d1a24dc49790f7c61456abd12f9f62b71806f85c5f79aaab8d517efef3729"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/201308\\/08\\/15858131\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=IvWCYAM_R-2XtJDx\\)7\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "abf86e33e83415d76a4af6567aacfed1be9f41978d72687863e946cff5a86c7f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/201307\\/25\\/15264742\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=UZlAwq9LSdh8NIcM\\)6\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "6e38e66b70abcc3fafab77a837690051c3deb10a0e110a8062fd91f09258a953"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/201108\\/11\\/4050206\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=QZxQ1OwbL1u-y0gD\\)6\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "fca668026ec4822526e43bf4bfd3226c4b0d7bf7d238323617ad2f23a81c03dc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dlouha-videa.cz",
+                "www.longporn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/videos\\/202301\\/19\\/423679931\\/original\\/\\(m=eaAaGwObaaaa\\)\\(mh=bbdxcxT56iv2u_fj\\)2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "di"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "2014b07dcde358dd467210332d8df791f319c1b20aa1203142d42fec1b4a6a13"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -600,10 +747,56 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4e1b1325d64b4768de1d56276778e40b3e8265e7ff10c5807765c6d39a06f1fb"
+            ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "you-porn.com",
+                "www.you-porn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/stattracker-1\\.4\\.2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "c789c931d3b8d7cfe2165e25774382ea38275eff9899e258f7d6d1c7e1b169bc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "you-porn.com",
+                "www.you-porn.com"
+            ]
+        },
+        {
+            "rule": "phncdn\\.com\\/networkbar-4\\.0\\.6\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "5872024c82c1e385503ffbeb53242eee079c649da101dc61fa27dd21539a5054"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -618,49 +811,53 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9023668639053254
+            "prevalence": 0.8961334344200151
         },
         {
             "domain": "pornhub.com",
-            "prevalence": 0.07470414201183433
-        },
-        {
-            "domain": "indianxxxfuck.com",
-            "prevalence": 0.006656804733727811
-        },
-        {
-            "domain": "redtube.com",
-            "prevalence": 0.005917159763313609
-        },
-        {
-            "domain": "pornjuan.com",
-            "prevalence": 0.005177514792899409
+            "prevalence": 0.06444275966641395
         },
         {
             "domain": "kenxxx.com",
-            "prevalence": 0.0029585798816568047
+            "prevalence": 0.009855951478392721
+        },
+        {
+            "domain": "pornjuan.com",
+            "prevalence": 0.009097801364670205
+        },
+        {
+            "domain": "shinobi.jp",
+            "prevalence": 0.006823351023502654
+        },
+        {
+            "domain": "redtube.com",
+            "prevalence": 0.006065200909780136
+        },
+        {
+            "domain": "indianxxxfuck.com",
+            "prevalence": 0.0037907505686125853
         },
         {
             "domain": "youporn.com",
-            "prevalence": 0.0014792899408284023
+            "prevalence": 0.003032600454890068
         },
         {
             "domain": "kugo.cc",
-            "prevalence": 0.0007396449704142012
+            "prevalence": 0.000758150113722517
         }
     ],
     "types": {
-        "Script": 13,
-        "Image": 48
+        "Script": 14,
+        "Image": 59
     },
     "nameservers": [
-        "sdns3.ultradns.org",
-        "dns3.p03.nsone.net",
         "dns2.p03.nsone.net",
+        "sdns3.ultradns.org",
         "dns4.p03.nsone.net",
-        "sdns3.ultradns.biz",
-        "sdns3.ultradns.com",
         "dns1.p03.nsone.net",
-        "sdns3.ultradns.net"
+        "dns3.p03.nsone.net",
+        "sdns3.ultradns.net",
+        "sdns3.ultradns.com",
+        "sdns3.ultradns.biz"
     ]
 }

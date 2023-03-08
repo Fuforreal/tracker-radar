@@ -9,13 +9,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000338,
+    "prevalence": 0.0000415,
     "sites": 5,
     "subdomains": [
+        "lms",
         "sws-gateway",
         "sws-gateway-nr",
         "content",
-        "lms",
         "client"
     ],
     "cnames": [
@@ -43,8 +43,33 @@
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "schwab\\.com\\.edgekey\\.net\\/login",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lms"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "lms.schwab.com",
+                    "resolved": "lms.schwab.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schwab.com",
+                "workplace.schwab.com"
+            ]
+        },
+        {
             "rule": "schwab\\.com\\.edgekey\\.net\\/ui\\/host\\/",
-            "cookies": 0.0000203,
+            "cookies": 0.0000249,
             "fingerprinting": 1,
             "subdomains": [
                 "sws-gateway",
@@ -52,7 +77,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "sws-gateway.schwab.com",
@@ -64,8 +89,8 @@
                 }
             ],
             "responseHashes": [
-                "bbd19998cfb49b3325471a6d4b1b294fa474b0b01d3f6ae8378e1217fd28951d",
-                "a8062f4597a33548972dac2d4dbd23f949c48eef3b59306198db6be123e030e0"
+                "a2161382dee93047a68ab9d332a7c70cd278774fbb44487c48ac29f66498fe46",
+                "3d3e4ba701881c8a21b561d2b29c1b9ae2d2d67030398e3998c6aefb593a3637"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -86,7 +111,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "sws-gateway.schwab.com",
@@ -119,7 +144,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "sws-gateway.schwab.com",
@@ -143,36 +168,84 @@
             ]
         },
         {
-            "rule": "schwab\\.com\\.edgekey\\.net\\/ui\\/host\\/runtime\\.9ac49aa09845589a7ade\\.js",
+            "rule": "schwab\\.com\\.edgekey\\.net\\/cobrowse\\/glance\\/staging\\/js\\/GlanceCobrowseLoader_5\\.3\\.0M\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "sws-gateway",
-                "sws-gateway-nr"
+                "content"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
-                    "original": "sws-gateway.schwab.com",
-                    "resolved": "sws-gateway.schwab.com.edgekey.net"
-                },
-                {
-                    "original": "sws-gateway-nr.schwab.com",
-                    "resolved": "sws-gateway-nr.schwab.com.edgekey.net"
+                    "original": "content.schwab.com",
+                    "resolved": "content.schwab.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "2f7f191f343f097152c8fa4d01963f16267f8137321819f5e4dff2d156e35bcf"
+                "7a75f33ae2b4f3852299c62984ace0d8befa43ae4084c3422ac824d5d6875bb7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "schwab.com",
-                "workplace.schwab.com",
-                "www.schwab.com"
+                "workplace.schwab.com"
+            ]
+        },
+        {
+            "rule": "schwab\\.com\\.edgekey\\.net\\/kNs9SQDG\\/5lY\\/MJA\\/WPamv10xL8\\/7EtuXcG2bi\\/LygGdz4\\/fTxoe\\/FRTUVo",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "sws-gateway"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "sws-gateway.schwab.com",
+                    "resolved": "sws-gateway.schwab.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bbf08dd837cce599a0c49b675b9a9c438f4d099d3b68252be4cdc328ebb448a7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schwab.com",
+                "workplace.schwab.com"
+            ]
+        },
+        {
+            "rule": "schwab\\.com\\.edgekey\\.net\\/ui\\/host\\/runtime\\.c6ce7b872e5bedd761ce\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sws-gateway"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "sws-gateway.schwab.com",
+                    "resolved": "sws-gateway.schwab.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4c35883d9f8329670c0b0dc937ce2ca3742293197d7d19c7968940b8a72cddf4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schwab.com",
+                "workplace.schwab.com"
             ]
         },
         {
@@ -185,7 +258,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "sws-gateway.schwab.com",
@@ -218,7 +291,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "sws-gateway.schwab.com",
@@ -242,63 +315,57 @@
             ]
         },
         {
-            "rule": "schwab\\.com\\.edgekey\\.net\\/ui\\/host\\/main\\.9392a7658f0d864d073d\\.js",
+            "rule": "schwab\\.com\\.edgekey\\.net\\/ui\\/host\\/main\\.b9812138b4788e74e8a0\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "sws-gateway",
-                "sws-gateway-nr"
+                "sws-gateway"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "sws-gateway.schwab.com",
                     "resolved": "sws-gateway.schwab.com.edgekey.net"
-                },
-                {
-                    "original": "sws-gateway-nr.schwab.com",
-                    "resolved": "sws-gateway-nr.schwab.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "1dbd1bf6f4de7515abbf9b1dc21a23af3f365108633f577f9bf909604d9336df"
+                "d4f2bd28dab349efa8af80aadee7296b1167d1bb331da80e32c944f8821eb5c6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "schwab.com",
-                "workplace.schwab.com",
-                "www.schwab.com"
+                "workplace.schwab.com"
             ]
         },
         {
-            "rule": "schwab\\.com\\.edgekey\\.net\\/media\\/video\\/SWB_IMPACT_2017_RIA_3-Things_Tim_Oden\\/SWB_IMPACT_2017_RIA_3-Things_Tim_Oden\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "schwab\\.com\\.edgekey\\.net\\/kNs9SQDG\\/5lY\\/MJA\\/WPamv10xL8\\/7EtuXcG2bi\\/LygGdz4\\/fTxoe\\/FRTUVo",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
             "subdomains": [
-                "content"
+                "sws-gateway"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
-                    "original": "content.schwab.com",
-                    "resolved": "content.schwab.com.edgekey.net"
+                    "original": "sws-gateway.schwab.com",
+                    "resolved": "sws-gateway.schwab.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "cb70f5affd0c30dfc9758c37f28124b93b4dbeee6665c6f3e147f14c1f8bb7bf"
+                "bef9393fcdfc7a7299c058ba2a69253c32e0964dd3e97834e17a8cdb5dce7cf6"
             ],
-            "type": "Media",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "schwab.com",
-                "advisorservices.schwab.com"
+                "workplace.schwab.com"
             ]
         },
         {
@@ -311,7 +378,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "sws-gateway.schwab.com",
@@ -335,85 +402,6 @@
             ]
         },
         {
-            "rule": "schwab\\.com\\.edgekey\\.net\\/login",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lms"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "lms.schwab.com",
-                    "resolved": "lms.schwab.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schwab.com",
-                "workplace.schwab.com"
-            ]
-        },
-        {
-            "rule": "schwab\\.com\\.edgekey\\.net\\/PyfCIdsBIo2dUUc7-ZUG4FKVX_g\\/7Q9ENrJLzY\\/LgkyW3ReUgE\\/SRVyTR\\/MubBU",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "sws-gateway"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "sws-gateway.schwab.com",
-                    "resolved": "sws-gateway.schwab.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "53f2faf84b057fde014e48650ebe533c15a60ac55eff658ec7705790aeeff7ad"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schwab.com",
-                "workplace.schwab.com"
-            ]
-        },
-        {
-            "rule": "schwab\\.com\\.edgekey\\.net\\/PyfCIdsBIo2dUUc7-ZUG4FKVX_g\\/7Q9ENrJLzY\\/LgkyW3ReUgE\\/SRVyTR\\/MubBU",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "sws-gateway"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "sws-gateway.schwab.com",
-                    "resolved": "sws-gateway.schwab.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "bef9393fcdfc7a7299c058ba2a69253c32e0964dd3e97834e17a8cdb5dce7cf6"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schwab.com",
-                "workplace.schwab.com"
-            ]
-        },
-        {
             "rule": "schwab\\.com\\.edgekey\\.net\\/public\\/search\\/css\\/jquery\\.ui\\.autocomplete\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -422,7 +410,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "client.schwab.com",
@@ -439,24 +427,44 @@
                 "schwab.com",
                 "www.schwab.com"
             ]
+        },
+        {
+            "rule": "schwab\\.com\\.edgekey\\.net\\/vl78AIB32wyzvAuxzKl0F1KV\\/YuOLJpt0G5X7\\/OH4vDE9pBQ\\/XRsm\\/ZGpudko",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "sws-gateway-nr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "sws-gateway-nr.schwab.com",
+                    "resolved": "sws-gateway-nr.schwab.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bef9393fcdfc7a7299c058ba2a69253c32e0964dd3e97834e17a8cdb5dce7cf6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schwab.com",
+                "www.schwab.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
-    "topInitiators": [
-        {
-            "domain": "jwpcdn.com",
-            "prevalence": 1
-        }
-    ],
+    "cookies": 0.0000249,
     "types": {
         "Document": 5,
         "Font": 6,
         "Script": 14,
-        "Media": 2,
+        "XHR": 4,
         "Image": 3,
-        "XHR": 2,
         "Stylesheet": 2
     },
     "nameservers": []

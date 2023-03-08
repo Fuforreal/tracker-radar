@@ -7,13 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.0000415,
+    "sites": 5,
     "subdomains": [
         "tr",
-        "zaf.services",
-        "prebid.services",
-        "media.services"
+        "media.services",
+        "prebid.services"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -27,7 +26,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -42,43 +41,23 @@
             ]
         },
         {
-            "rule": "zam\\.com\\/stable\\/js\\/mmoui\\.js",
+            "rule": "zam\\.com\\/v1\\/media\\/byName\\/Fanbyte-apricot-vertical\\.png",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
-                "zaf.services"
+                "media.services"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2,
-                "window.indexedDB": 2,
-                "Document.cookie getter": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Date.prototype.getTime": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.language": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "window.devicePixelRatio": 2,
-                "Navigator.prototype.connection": 2,
-                "Navigator.prototype.vendor": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [
-                "27ed4870f03fa1bb192fc78be1d4552cd97e5148d5908f5c68d6767f70f24d3f"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "esoui.com",
-                "www.esoui.com"
+                "hearthstonetopdecks.com",
+                "www.hearthstonetopdecks.com"
             ]
         },
         {
@@ -89,8 +68,8 @@
                 "prebid.services"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "a42ff969f8539718308edd8ddf9c8acb2fb45a1fb4a0802e3e8b40c80f8c5785"
@@ -99,8 +78,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "esoui.com",
-                "www.esoui.com",
+                "hearthstonetopdecks.com",
                 "www.hearthstonetopdecks.com"
             ]
         },
@@ -112,35 +90,13 @@
                 "prebid.services"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "cdac3d31eb3aa6a0a0bbf8389e269cd41a9932bce948b0b7fab4bd97cd7e6373",
-                "db43b439537afdeba8cca59d2f5f05e4a84a00b87664a189f76988f2dfa193aa"
+                "48b8dee7e6e15e048d6b81feb4fe3769dc25e7413d767d8953957b25cf3edf08"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "esoui.com",
-                "www.esoui.com",
-                "www.hearthstonetopdecks.com"
-            ]
-        },
-        {
-            "rule": "zam\\.com\\/v1\\/media\\/byName\\/Fanbyte-apricot-vertical\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media.services"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -155,30 +111,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.38095238095238093
+            "prevalence": 0.5
         },
         {
             "domain": "fanbyte.com",
-            "prevalence": 0.2857142857142857
-        },
-        {
-            "domain": "doubleclick.net",
-            "prevalence": 0.19047619047619047
-        },
-        {
-            "domain": "adlightning.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.5
         }
     ],
     "types": {
         "Ping": 3,
-        "Script": 2,
-        "XHR": 6,
-        "Image": 2
+        "Image": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-696.awsdns-23.net",
         "ns-188.awsdns-23.com",
+        "ns-696.awsdns-23.net",
         "ns-1838.awsdns-37.co.uk",
         "ns-1507.awsdns-60.org"
     ]

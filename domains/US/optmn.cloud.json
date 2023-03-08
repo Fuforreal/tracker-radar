@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000305,
-    "sites": 45,
+    "prevalence": 0.000365,
+    "sites": 44,
     "subdomains": [
         "cdn"
     ],
@@ -15,13 +15,17 @@
         {
             "rule": "optmn\\.cloud\\/hb\\/playmaker-adapter\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
+            },
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "d0b47dc99d01d17e0f852db91abd858382a471b2b458ec1dcd488e9bc4e4ae2f"
@@ -44,10 +48,10 @@
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 3
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "425685b6df28b4f52e5a33d805cf40030e2645c1afb72ff34a05d2e3e782f92a"
@@ -62,29 +66,6 @@
             ]
         },
         {
-            "rule": "optmn\\.cloud\\/hb\\/hanzamedia-adapter\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "a1ec85460f3b6a3c94aab644d877fa364f7f2eaf35f3b8147b4fb152e4abbee6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "slobodnadalmacija.hr",
-                "sportske.jutarnji.hr",
-                "www.jutarnji.hr"
-            ]
-        },
-        {
             "rule": "optmn\\.cloud\\/hb\\/publisherdeskcom-adapter\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -92,12 +73,12 @@
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 8,
-                "Navigator.prototype.userAgent": 5,
-                "Date.prototype.getTime": 3
+                "Document.cookie getter": 9,
+                "Navigator.prototype.userAgent": 8,
+                "Date.prototype.getTime": 7
             },
-            "sites": 10,
-            "prevalence": 0.0000677,
+            "sites": 9,
+            "prevalence": 0.0000746,
             "cnames": [],
             "responseHashes": [
                 "e56332bf0ecc6cfa0bd3d25fe2b4069476da5522e65003f6a9bae6a40dd93002"
@@ -106,8 +87,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "washingtonexaminer.com",
-                "sports.washingtonexaminer.com",
+                "nationaltoday.com",
                 "sportsnaut.com",
                 "sportspyder.com",
                 "thegrio.com",
@@ -119,6 +99,33 @@
             ]
         },
         {
+            "rule": "optmn\\.cloud\\/hb\\/hanzamedia-adapter\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "93abcba8a8118dc8c466ff8bdcb66fd2b68c6abde0cc910b122377bbaacbe300"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "slobodnadalmacija.hr",
+                "sportske.jutarnji.hr",
+                "www.jutarnji.hr"
+            ]
+        },
+        {
             "rule": "optmn\\.cloud\\/hb\\/phonearena-adapter\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -126,11 +133,11 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "ea10a86ac7f8ab3891e7473eb53339873f49828041103afb517256356986d1b4"
@@ -151,10 +158,12 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "fefb6cbc290039f3936332f7d9975474aab189d1307044fd60a735683a02daa9"
@@ -176,9 +185,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -194,26 +205,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5111111111111111
+            "prevalence": 0.5
         },
         {
             "domain": "tpdads.com",
-            "prevalence": 0.26666666666666666
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.17777777777777778
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "yieldbird.com",
-            "prevalence": 0.044444444444444446
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Script": 26
+        "Script": 25
     },
     "nameservers": [
-        "molly.ns.cloudflare.com",
-        "cleo.ns.cloudflare.com"
+        "cleo.ns.cloudflare.com",
+        "molly.ns.cloudflare.com"
     ]
 }

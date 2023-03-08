@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000166,
     "sites": 2,
     "subdomains": [
         "my"
@@ -14,7 +14,7 @@
     "resources": [
         {
             "rule": "wsu-info-transfer\\.org\\/mtc\\.js",
-            "cookies": 0,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "my"
@@ -27,16 +27,36 @@
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "f662d4e197c60c53c35de00d0c4cdfc257a53b913eab00e415fe05c45ad8d897"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mtc_id": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "mtc_sid": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "mautic_device_id": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wichita.edu",
@@ -45,17 +65,17 @@
         },
         {
             "rule": "wsu-info-transfer\\.org\\/mtc\\/event",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "my"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "8a1deb1e738b9be305bc3b7440158f9551a9c239e1bb1c42637c613dcaaec20e"
+                "152d55cec343cf477577ccc30cdaf18c18583c64c5cc2e835c400739a24b7586"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -74,7 +94,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -88,11 +108,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000166,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "wsu-info.org",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
@@ -101,7 +125,7 @@
         "Preflight": 2
     },
     "nameservers": [
-        "ns8.app-info.net",
-        "ns7.app-info.net"
+        "ns7.app-info.net",
+        "ns8.app-info.net"
     ]
 }

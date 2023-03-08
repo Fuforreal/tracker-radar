@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00102,
-    "sites": 150,
+    "prevalence": 0.00108,
+    "sites": 130,
     "subdomains": [
         "cdn",
         "api"
@@ -17,6 +17,32 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.25\\.2\\/rollbar\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "console.memory": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "55af9a94aa072cf5c093d7269bd98cec30ecade6ac2bc94dc9b47758630f4ba5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mynavi.jp",
+                "safeimagekit.com",
+                "www.withings.com"
+            ]
+        },
+        {
             "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.26\\.0\\/rollbar\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -24,11 +50,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 4,
-                "Date.prototype.getTime": 4
+                "console.memory": 3,
+                "Date.prototype.getTime": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "e06acb8a209f942bc7a320e57d4f9da1870dcc0715c1a3645dfffe05d00e8cf0"
@@ -38,7 +64,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "alerts.in.ua",
-                "www.cookfood.net",
                 "www.humnutrition.com",
                 "www.mydeal.com.au"
             ]
@@ -51,11 +76,16 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 5,
-                "console.memory": 2
+                "console.memory": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
             },
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "c77308873c903ec4d6a3163d5e90c0dc18d26cbe1a16b2f43674ca82b6c250c1"
@@ -66,38 +96,8 @@
             "exampleSites": [
                 "clip-studio.com",
                 "careerfoundry.com",
-                "www.cakes.com",
                 "www.husqvarna.com",
                 "www.yeti.com"
-            ]
-        },
-        {
-            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.22\\.0\\/rollbar\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "console.memory": 4,
-                "Date.prototype.getTime": 6
-            },
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [
-                "0ab9ea97ad1657ded657a3c43151458c928e4dfc6c28869ce4fba1efa64b802b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "greenhouse.io",
-                "brandfolder.com",
-                "senchateabar.com",
-                "wowa.ca",
-                "www.solasalonstudios.com",
-                "www.tado.com"
             ]
         },
         {
@@ -108,11 +108,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 2,
+                "console.memory": 3,
                 "Date.prototype.getTime": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "38432b35025b5dcf719312ce2b21ce21fcfcc4d33cd095cc87d165e2f29ec0de"
@@ -122,9 +122,44 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "classpass.com",
-                "member.chime.com",
                 "readwise.io",
                 "www.capterra.com"
+            ]
+        },
+        {
+            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.23\\.0\\/rollbar\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "console.memory": 12,
+                "Date.prototype.getTime": 13
+            },
+            "sites": 13,
+            "prevalence": 0.000108,
+            "cnames": [],
+            "responseHashes": [
+                "c25355cf2e7bec93c43a0ab8bd19ba779ba9cc901924cbc9312d1c6de8c04c8e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "t-mobile.com",
+                "nbaanalysis.net",
+                "www.4statetrucks.com",
+                "www.50states.com",
+                "www.affirm.com",
+                "www.discovermagazine.com",
+                "www.doctrine.fr",
+                "www.fundera.com",
+                "www.kicksonfire.com",
+                "www.makerist.de",
+                "www.storage.com",
+                "www.sunrun.com",
+                "www.typeform.com"
             ]
         },
         {
@@ -135,8 +170,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000745,
+            "sites": 12,
+            "prevalence": 0.0000995,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -146,14 +181,15 @@
                 "consultaremedios.com.br",
                 "decrypt.co",
                 "nomadgoods.com",
-                "repfitness.com",
-                "retty.me",
                 "triblive.com",
                 "www.feetfinder.com",
-                "www.luluandgeorgia.com",
+                "www.husqvarna.com",
+                "www.redbubble.com",
                 "www.saltwire.com",
                 "www.shipt.com",
-                "www.tuftsmedicalcenter.org"
+                "www.tagvenue.com",
+                "www.tuftsmedicalcenter.org",
+                "www.voya.com"
             ]
         },
         {
@@ -164,17 +200,18 @@
                 "api"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000745,
+            "sites": 12,
+            "prevalence": 0.0000995,
             "cnames": [],
             "responseHashes": [
                 "b64327cd65d0b974313324e717eba7e8f6604378f848e86e2becd1a317c3ba8c",
                 "8e1932d5f436616f9e6b92543750e6505772543bc7829b93f22c5f3b702c4004",
-                "6ce4e2aa195b892e3d2b4fa063b11bb6bc49dfb220457f05c008a2b91e78d2e4",
                 "0358f5abfa8d0662df360e13876e432cecd571a780dbd3defe6a1d3649620137",
                 "694498f7ab84b93b1f3e4d5ababba0b0816b32eb4f90b373c9ad0a72e369d3ea",
-                "ee3d0437bcf23340a07505a362fb27f46297f2c7a10d24d06d4f8513683c77b9",
-                "248dc2e6807ccd2b96ea6df694284645b8c6688c352e56dc761a0fe95393e555",
+                "94e0205838081637b10b0458c978385b7b80df08c0b1bf76918d93077ae8a4c4",
+                "ccd9b34b254abfc86482af8d90eba334146a25c2dabf2ba6f53583d342e7969f",
+                "f04e760fa620868386158a764ba82ab162b24a0e1a0f4b278dbcba23d866c4e1",
+                "02308a66127497cf46d48fd15da81190a012efdb751eb1de46302640ea104ee1",
                 "b1c1d0f77cdcd6f8ff534158562d254129b40859443246cf988c3f1b28083194"
             ],
             "type": "XHR",
@@ -184,73 +221,15 @@
                 "consultaremedios.com.br",
                 "decrypt.co",
                 "nomadgoods.com",
-                "repfitness.com",
-                "retty.me",
                 "triblive.com",
                 "www.feetfinder.com",
-                "www.luluandgeorgia.com",
+                "www.husqvarna.com",
+                "www.redbubble.com",
                 "www.saltwire.com",
                 "www.shipt.com",
-                "www.tuftsmedicalcenter.org"
-            ]
-        },
-        {
-            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.25\\.2\\/rollbar\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 4,
-                "console.memory": 1
-            },
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "55af9a94aa072cf5c093d7269bd98cec30ecade6ac2bc94dc9b47758630f4ba5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crimerate.co.uk",
-                "safeimagekit.com",
-                "wordswithletters.org",
-                "www.withings.com"
-            ]
-        },
-        {
-            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.21\\.1\\/rollbar\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 8,
-                "console.memory": 5
-            },
-            "sites": 9,
-            "prevalence": 0.0000609,
-            "cnames": [],
-            "responseHashes": [
-                "eee2bc6e4edf311a6a0337c339dbd85d0d8d4040b25e390ab18237e2fa84f1c9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crowdworks.jp",
-                "koinly.io",
-                "mixkit.co",
-                "variety.com",
-                "wwd.com",
-                "www.goldbelly.com",
-                "www.lumosity.com",
-                "www.rollingstone.com",
-                "www.washington.edu"
+                "www.tagvenue.com",
+                "www.tuftsmedicalcenter.org",
+                "www.voya.com"
             ]
         },
         {
@@ -261,11 +240,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 4,
-                "Date.prototype.getTime": 4
+                "console.memory": 1,
+                "Date.prototype.getTime": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "e1df55dbade9723e534375a6ba415c6e849ad2d5263d8408e13964168771af6a"
@@ -275,7 +254,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "databox.com",
-                "www.mcfarlaneaviation.com",
                 "www.spareroom.co.uk",
                 "www.spareroom.com"
             ]
@@ -288,17 +266,17 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 6,
-                "Date.prototype.getTime": 7,
+                "Date.prototype.getTime": 8,
                 "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.language": 1,
                 "Navigator.prototype.cookieEnabled": 1,
                 "Screen.prototype.width": 1,
                 "Screen.prototype.height": 1,
-                "Navigator.prototype.plugins": 1
+                "Navigator.prototype.plugins": 1,
+                "console.memory": 7
             },
             "sites": 8,
-            "prevalence": 0.0000541,
+            "prevalence": 0.0000663,
             "cnames": [],
             "responseHashes": [
                 "5aded642b1abb82543fe9109e8941ecf20187725e620f653e5a4493f98bfd682"
@@ -326,10 +304,10 @@
             ],
             "apis": {
                 "console.memory": 8,
-                "Date.prototype.getTime": 11
+                "Date.prototype.getTime": 10
             },
-            "sites": 11,
-            "prevalence": 0.0000745,
+            "sites": 10,
+            "prevalence": 0.0000829,
             "cnames": [],
             "responseHashes": [
                 "41764f6cf1cfa99fad12f1ee265ea0bb292761f6b15d1f5432756524854cd77f"
@@ -343,7 +321,6 @@
                 "howiecarrshow.com",
                 "kaninchenwiese.de",
                 "m.maariv.co.il",
-                "www.bachelorsportal.com",
                 "www.chirpbooks.com",
                 "www.mastersportal.com",
                 "www.opinionstage.com",
@@ -359,11 +336,11 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
-                "console.memory": 2
+                "console.memory": 2,
+                "Date.prototype.getTime": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "525609b83b7b7a940bcbc35fd786bb68d5eb2c654c9cf32fa81b45be9978afb0"
@@ -373,45 +350,65 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gamefound.com",
-                "oversize.io",
                 "www.litcharts.com",
                 "www.ricksteves.com"
             ]
         },
         {
-            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.23\\.0\\/rollbar\\.min\\.js",
+            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.21\\.1\\/rollbar\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "console.memory": 11,
-                "Date.prototype.getTime": 13
+                "console.memory": 6,
+                "Date.prototype.getTime": 7
             },
-            "sites": 13,
-            "prevalence": 0.000088,
+            "sites": 7,
+            "prevalence": 0.000058,
             "cnames": [],
             "responseHashes": [
-                "c25355cf2e7bec93c43a0ab8bd19ba779ba9cc901924cbc9312d1c6de8c04c8e"
+                "eee2bc6e4edf311a6a0337c339dbd85d0d8d4040b25e390ab18237e2fa84f1c9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nbaanalysis.net",
-                "winnersandwhiners.com",
-                "www.4statetrucks.com",
-                "www.50states.com",
-                "www.affirm.com",
-                "www.discovermagazine.com",
-                "www.doctrine.fr",
-                "www.fundera.com",
-                "www.kicksonfire.com",
-                "www.makerist.de",
-                "www.storage.com",
-                "www.sunrun.com",
-                "www.typeform.com"
+                "koinly.io",
+                "mixkit.co",
+                "variety.com",
+                "wwd.com",
+                "www.goldbelly.com",
+                "www.rollingstone.com",
+                "www.washington.edu"
+            ]
+        },
+        {
+            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.22\\.0\\/rollbar\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "console.memory": 3,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [],
+            "responseHashes": [
+                "0ab9ea97ad1657ded657a3c43151458c928e4dfc6c28869ce4fba1efa64b802b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "senchateabar.com",
+                "wowa.ca",
+                "www.solasalonstudios.com",
+                "www.tado.com"
             ]
         },
         {
@@ -422,11 +419,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 2,
+                "console.memory": 3,
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "e0389aba2ceca8bccb790fa1f5a2dbea47d00a6693d1f5b2091c6831bacf88c1"
@@ -448,11 +445,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 6,
+                "console.memory": 5,
                 "Date.prototype.getTime": 7
             },
-            "sites": 8,
-            "prevalence": 0.0000541,
+            "sites": 7,
+            "prevalence": 0.000058,
             "cnames": [],
             "responseHashes": [
                 "e44570df12ef26021ef499b28c93e110bd53b31c29cae5206064d0a01b7faae2"
@@ -467,7 +464,6 @@
                 "www.ii.co.uk",
                 "www.oneflare.com.au",
                 "www.selfstorage.com",
-                "www.sparefoot.com",
                 "www.umt.edu"
             ]
         },
@@ -483,7 +479,7 @@
                 "console.memory": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "f1f8d530d5656f984876aa6ec49abaf307ff9b09a4cfedb35d2e107906d063c3"
@@ -503,56 +499,56 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7935483870967742
-        },
-        {
-            "domain": "nextmillmedia.com",
-            "prevalence": 0.03870967741935484
-        },
-        {
-            "domain": "opinionstage.com",
-            "prevalence": 0.03225806451612903
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.025806451612903226
+            "prevalence": 0.7737226277372263
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.01935483870967742
+            "prevalence": 0.043795620437956206
+        },
+        {
+            "domain": "opinionstage.com",
+            "prevalence": 0.0364963503649635
+        },
+        {
+            "domain": "nextmillmedia.com",
+            "prevalence": 0.0364963503649635
         },
         {
             "domain": "segment.com",
-            "prevalence": 0.01935483870967742
+            "prevalence": 0.021897810218978103
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.012903225806451613
+            "prevalence": 0.014598540145985401
         },
         {
             "domain": "closeby.co",
-            "prevalence": 0.012903225806451613
+            "prevalence": 0.014598540145985401
         },
         {
             "domain": "brandfolder.com",
-            "prevalence": 0.012903225806451613
+            "prevalence": 0.014598540145985401
         },
         {
             "domain": "yeticustomshop.com",
-            "prevalence": 0.012903225806451613
+            "prevalence": 0.014598540145985401
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.014598540145985401
         }
     ],
     "types": {
-        "Script": 85,
-        "Preflight": 11,
-        "XHR": 11
+        "Script": 73,
+        "Preflight": 12,
+        "XHR": 12
     },
     "nameservers": [
-        "ns-cloud-d1.googledomains.com",
-        "ns-112.awsdns-14.com",
-        "ns-cloud-d2.googledomains.com",
         "ns-cloud-d3.googledomains.com",
+        "ns-112.awsdns-14.com",
         "ns-690.awsdns-22.net",
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d2.googledomains.com",
         "ns-cloud-d4.googledomains.com"
     ]
 }

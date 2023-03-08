@@ -9,16 +9,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
-    "sites": 9,
+    "prevalence": 0.0000829,
+    "sites": 10,
     "subdomains": [
         "jss",
         "login",
         "sdx",
+        "api-support",
         "auth",
         "assets"
     ],
     "cnames": [
+        {
+            "original": "api-support.xfinity.com",
+            "resolved": "api-support.xfinity.com.edgekey.net"
+        },
         {
             "original": "assets.xfinity.com",
             "resolved": "assets.xfinity.com.edgekey.net"
@@ -44,14 +49,14 @@
     "resources": [
         {
             "rule": "xfinity\\.com\\.edgekey\\.net\\/securelogin\\/cima",
-            "cookies": 0.00000677,
+            "cookies": 0.00000829,
             "fingerprinting": 0,
             "subdomains": [
                 "jss"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "jss.xfinity.com",
@@ -69,23 +74,21 @@
         },
         {
             "rule": "xfinity\\.com\\.edgekey\\.net\\/login",
-            "cookies": 0.0000338,
+            "cookies": 0.0000498,
             "fingerprinting": 0,
             "subdomains": [
                 "login"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 6,
+            "prevalence": 0.0000498,
             "cnames": [
                 {
                     "original": "login.xfinity.com",
                     "resolved": "login.xfinity.com.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "7bb1ff56ade900270493bb60ad666709e19fcacce78e4ebecf199533879fc1dd"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -94,7 +97,36 @@
                 "customer.xfinity.com",
                 "my.comcast.net",
                 "my.xfinity.com",
-                "speedtest.xfinity.com"
+                "speedtest.xfinity.com",
+                "www.xfinity.com"
+            ]
+        },
+        {
+            "rule": "xfinity\\.com\\.edgekey\\.net\\/cms\\/data\\/bluebar\\/unauthorized\\/clients\\/resi-help-and-support\\/bluebarpackage\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdx"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "sdx.xfinity.com",
+                    "resolved": "sdx.xfinity.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3d658337681530c4bbeca6a59b71cf571ab24dbee929356e72b224522236ee89"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xfinity.com",
+                "customer.xfinity.com",
+                "www.xfinity.com"
             ]
         },
         {
@@ -106,7 +138,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "sdx.xfinity.com",
@@ -114,12 +146,40 @@
                 }
             ],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xfinity.com",
+                "www.xfinity.com"
+            ]
+        },
+        {
+            "rule": "xfinity\\.com\\.edgekey\\.net\\/logger\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-support"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [
+                {
+                    "original": "api-support.xfinity.com",
+                    "resolved": "api-support.xfinity.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "xfinity.com",
-                "customer.xfinity.com"
+                "customer.xfinity.com",
+                "www.xfinity.com"
             ]
         },
         {
@@ -131,7 +191,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "sdx.xfinity.com",
@@ -158,7 +218,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "sdx.xfinity.com",
@@ -185,7 +245,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "auth.xfinity.com",
@@ -203,14 +263,14 @@
         },
         {
             "rule": "xfinity\\.com\\.edgekey\\.net\\/oauth\\/callback",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "auth"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "auth.xfinity.com",
@@ -235,14 +295,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "sdx.xfinity.com",
                     "resolved": "sdx.xfinity.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "3d658337681530c4bbeca6a59b71cf571ab24dbee929356e72b224522236ee89"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -260,7 +322,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "sdx.xfinity.com",
@@ -285,7 +347,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -313,7 +375,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -341,7 +403,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -369,7 +431,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -397,7 +459,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -425,7 +487,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -453,7 +515,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -481,7 +543,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -509,7 +571,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -537,7 +599,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -565,7 +627,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -593,7 +655,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -614,14 +676,14 @@
         },
         {
             "rule": "xfinity\\.com\\.edgekey\\.net\\/assets\\/dotcom\\/adrum\\/adrum22603859\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "assets"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -649,7 +711,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -677,7 +739,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -705,7 +767,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -733,7 +795,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -761,7 +823,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -789,7 +851,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -817,7 +879,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -845,7 +907,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -873,7 +935,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -901,7 +963,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -929,7 +991,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -957,7 +1019,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -975,11 +1037,38 @@
                 "my.xfinity.com",
                 "www.xfinity.com"
             ]
+        },
+        {
+            "rule": "xfinity\\.com\\.edgekey\\.net\\/assets\\/dotcom\\/projects\\/cix-4786_10g_learn_placements\\/LS_Mobile_Overview_Hero-Desktop\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "assets.xfinity.com",
+                    "resolved": "assets.xfinity.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c0563e3ba7d3b83292daec74ea863f0952da42db98bf0de3862ae068a8cd778c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xfinity.com",
+                "www.xfinity.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000474,
+    "cookies": 0.0000746,
     "topInitiators": [
         {
             "domain": "cimcontent.net",
@@ -987,11 +1076,11 @@
         }
     ],
     "types": {
-        "Document": 11,
-        "Fetch": 4,
+        "Document": 12,
+        "Fetch": 8,
+        "Preflight": 4,
         "Font": 4,
-        "Preflight": 2,
-        "Image": 69,
+        "Image": 71,
         "Script": 6
     },
     "nameservers": []

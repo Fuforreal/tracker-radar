@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000249,
     "sites": 3,
     "subdomains": [
         "images"
@@ -20,13 +20,12 @@
                 "images"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "a1dc3460ecef29871e5145bb909efa2bef8996c4056762a4e447f98567600b17",
-                "afa22933b8fa231e3f5ed83aa1dd5942457b7672cb11d65b96dac275fc474fb5",
-                "edf41d8ec23a0fef5774c23d9063b80e04f651bfd9ba278bcc3e486161ed2fdf"
+                "3d7afad9fff026ca286da1b8dee9d11ce7b35e3c02d16149b1b978e539f6905c",
+                "afa22933b8fa231e3f5ed83aa1dd5942457b7672cb11d65b96dac275fc474fb5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -34,13 +33,12 @@
             "exampleSites": [
                 "costco.ca",
                 "www.costco.com",
-                "www.costco.ca",
-                "www.dealsofamerica.com"
+                "www.costco.ca"
             ]
         },
         {
             "rule": "costco-static\\.com\\/ViewerDelivery\\/staticService",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "images"
@@ -48,10 +46,12 @@
             "apis": {
                 "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.platform": 1,
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 1,
+                "window.innerWidth": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e634bb40691ecac3bec98a5ee3d589194b64cfd7b79d60858f2ea977451fbda3"
@@ -67,15 +67,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.00000829,
     "topInitiators": [
         {
+            "domain": "criteo.com",
+            "prevalence": 0.6363636363636364
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.36363636363636365
         }
     ],
     "types": {
-        "Image": 4,
+        "Image": 3,
         "Script": 2
     },
     "nameservers": [

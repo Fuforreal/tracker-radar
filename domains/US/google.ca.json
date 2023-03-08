@@ -9,14 +9,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
+    "prevalence": 0.0000746,
     "sites": 9,
     "subdomains": [
         "www",
+        "cse",
         "adservice"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "google\\.ca\\/cse\\/brand",
@@ -27,7 +28,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
@@ -41,25 +42,28 @@
             ]
         },
         {
-            "rule": "google\\.ca\\/ads\\/ga-audiences",
+            "rule": "google\\.ca\\/coop\\/cse\\/brand",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "www"
+                "cse"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.platform": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+                "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mazda.ca",
-                "www.mazda.ca"
+                "mallsinamerica.com",
+                "www.mallsinamerica.com"
             ]
         },
         {
@@ -71,7 +75,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
@@ -93,7 +97,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -119,14 +123,13 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "Image": 2,
+        "Script": 6,
         "Fetch": 2
     },
     "nameservers": [
+        "ns3.google.com",
         "ns2.google.com",
         "ns1.google.com",
-        "ns3.google.com",
         "ns4.google.com"
     ]
 }

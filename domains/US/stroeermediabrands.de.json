@@ -7,13 +7,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000332,
+    "sites": 4,
     "subdomains": [
-        "quiz"
+        "quiz",
+        "files.th"
     ],
-    "cnames": [],
-    "fingerprinting": 1,
+    "cnames": [
+        {
+            "original": "teaser.familie.de",
+            "resolved": "files.th.stroeermediabrands.de"
+        }
+    ],
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "stroeermediabrands\\.de\\/pub\\/t\\.png",
@@ -24,11 +30,9 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
-            "responseHashes": [
-                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -47,7 +51,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "6154502ea94f6867d150dbaaaba0d4555d0cfb0b4f7dbceb789c2a6e7b4f37f5"
@@ -68,24 +72,51 @@
                 "quiz"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Event.prototype.timeStamp": 1,
-                "Navigator.prototype.product": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
                 "window.innerWidth": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "6f655a00cc03a75ca13e68fc025687d8747be98bdc20972f14324e7a754ec736"
+                "31a72a2d79929b8e21a6f77f5bcbc7188f2ee371e6e456385e7acbab05e83f5f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "desired.de",
+                "www.familie.de"
+            ]
+        },
+        {
+            "rule": "stroeermediabrands\\.de\\/f4\\/14\\/23\\/72eed56233de1fe51257133398_A2Y0N2U2MzE1NTM5_17356645332431316fd2fe5495f5da89\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files.th"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "teaser.familie.de",
+                    "resolved": "files.th.stroeermediabrands.de"
+                }
+            ],
+            "responseHashes": [
+                "491107a8ff52718931f77354f4e0a42fa0db1d35b3222cbe2b0995b57b6da802"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familie.de",
                 "www.familie.de"
             ]
         }
@@ -100,7 +131,7 @@
         }
     ],
     "types": {
-        "Image": 3,
+        "Image": 5,
         "XHR": 2,
         "Script": 2
     },

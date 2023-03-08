@@ -4,60 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000249,
     "sites": 3,
     "subdomains": [
-        "badcock",
-        "services-api",
-        "experiences"
+        "experiences",
+        "mx"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "wyng\\.com\\/613f984b9a431900e1afccce",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "badcock"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c1266b69b31ee1f39180cff01dd67624e46b3896e806091944f3515305d10828"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "badcock.com",
-                "www.badcock.com"
-            ]
-        },
-        {
-            "rule": "wyng\\.com\\/api\\/v1\\/experiences\\/613f984b9a431900e1afccce",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "services-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "269ab71d4316511d4dfc6808fbe6a4085cd0254ab439270a311d5af283ad46a6"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "badcock.com",
-                "www.badcock.com"
-            ]
-        },
         {
             "rule": "wyng\\.com\\/api\\/v1\\/event-api\\/events",
             "cookies": 0,
@@ -66,8 +21,8 @@
                 "experiences"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
@@ -76,9 +31,72 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "badcock.com",
-                "www.badcock.com",
-                "www.whitestuff.com"
+                "dollartree.com",
+                "www.dollartree.com"
+            ]
+        },
+        {
+            "rule": "wyng\\.com\\/js\\/agent\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "bb3fb4f3552f69432fafbf11f098fcaef502117db9f425f560a130d0fc7c2d88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ncaa.com",
+                "www.ncaa.com"
+            ]
+        },
+        {
+            "rule": "wyng\\.com\\/clients\\/91876\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ncaa.com",
+                "www.ncaa.com"
+            ]
+        },
+        {
+            "rule": "wyng\\.com\\/clients\\/91876\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "236109ee2d5ea5e102dd3e9c578a8e1700f056f51e57000951c13b387953b815"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ncaa.com",
+                "www.ncaa.com"
             ]
         }
     ],
@@ -87,22 +105,27 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
+            "domain": "dnsl4xr6unrmf.cloudfront.net",
             "prevalence": 0.5
         },
         {
-            "domain": "dnsl4xr6unrmf.cloudfront.net",
-            "prevalence": 0.5
+            "domain": "d1khm0eduvht21.cloudfront.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Document": 2,
-        "Fetch": 5
+        "Fetch": 4,
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-192.awsdns-24.com",
         "ns-1947.awsdns-51.co.uk",
         "ns-907.awsdns-49.net",
+        "ns-192.awsdns-24.com",
         "ns-1433.awsdns-51.org"
     ]
 }

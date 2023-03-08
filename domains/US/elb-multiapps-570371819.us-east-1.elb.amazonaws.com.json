@@ -9,7 +9,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000166,
     "sites": 2,
     "subdomains": [],
     "cnames": [
@@ -22,12 +22,37 @@
     "resources": [
         {
             "rule": "elb-multiapps-570371819\\.us-east-1\\.elb\\.amazonaws\\.com\\/ResponsiveUserHeader",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "accounts2.covers.com",
+                    "resolved": "elb-multiapps-570371819.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "8059a209a8dc0d14d7fd26520c3cf350338f75c68c60cb9d03697f2fe4aa25e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "covers.com",
+                "www.covers.com"
+            ]
+        },
+        {
+            "rule": "elb-multiapps-570371819\\.us-east-1\\.elb\\.amazonaws\\.com\\/Login",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "accounts2.covers.com",
@@ -35,6 +60,54 @@
                 }
             ],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "covers.com",
+                "www.covers.com"
+            ]
+        },
+        {
+            "rule": "elb-multiapps-570371819\\.us-east-1\\.elb\\.amazonaws\\.com\\/Login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "accounts2.covers.com",
+                    "resolved": "elb-multiapps-570371819.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "covers.com",
+                "www.covers.com"
+            ]
+        },
+        {
+            "rule": "elb-multiapps-570371819\\.us-east-1\\.elb\\.amazonaws\\.com\\/LoginJson",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "accounts2.covers.com",
+                    "resolved": "elb-multiapps-570371819.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "a2a49ebf7baf0af78da0846c27cc1f91318ec74c7bcdd67b75c6831b7ecafb39"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -48,9 +121,17 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000166,
+    "topInitiators": [
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

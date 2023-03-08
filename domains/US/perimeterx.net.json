@@ -7,17 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000257,
-    "sites": 38,
+    "prevalence": 0.000381,
+    "sites": 46,
     "subdomains": [
         "collector-dl82i3ui",
         "collector-pxbg2ckna2",
-        "collector-px3vk96i6i",
+        "captcha",
+        "client",
+        "collector-px0f3091f3",
         "collector-pxg1gmnz2v",
         "collector-px9atjsd0n",
-        "collector-px87wpo5ak",
-        "client",
-        "captcha"
+        "collector-px87wpo5ak"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -32,7 +32,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000271,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "c33e4662d19fc3307b84337c1b3a85dd1134dcf1ea29071de84367c831e323d0"
@@ -48,41 +48,398 @@
             ]
         },
         {
-            "rule": "perimeterx\\.net\\/b\\/g",
+            "rule": "perimeterx\\.net\\/PXFF0j69T5\\/captcha\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "collector-px3vk96i6i",
-                "collector-pxg1gmnz2v",
-                "collector-px9atjsd0n",
-                "collector-px87wpo5ak"
+                "captcha"
             ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "apis": {
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.languages": 2,
+                "Performance.prototype.memory": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1,
+                "window.localStorage": 1,
+                "URL.createObjectURL": 1,
+                "Notification.permission": 1,
+                "Navigator.prototype.plugins": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "872b7b364b8737d43592b22d463657fff991a8e9c44ed4e1de7f370e78ba632d",
-                "c33e4662d19fc3307b84337c1b3a85dd1134dcf1ea29071de84367c831e323d0"
+                "248996bcf417b1d92fddfd9eb4d0a19428c30030dc98f46b881f0213ed55df4b"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "pxcts": 0.000006768647624204684,
-                "_pxvid": 0.000013537295248409367
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wayfair.com",
-                "www.allmodern.com",
-                "www.hayneedle.com",
-                "www.perigold.com",
-                "www.priceline.com",
-                "www.sams.com.mx"
+                "totalwine.com",
+                "www.totalwine.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXFF0j69T5\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.outerWidth": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Performance.prototype.memory": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerHeight": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.plugins": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.permissions": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Notification.permission": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.indexedDB": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "speechSynthesis.__proto__.getVoices": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "efca53d1ed42f70a2f37e83d5d9106bdbfba5a901b609f0aea514c6dafcf141e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pxff_cc": {
+                    "ttl": 64,
+                    "length": 18,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxTestCookie": {
+                    "ttl": -1,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_px2": {
+                    "ttl": 340,
+                    "length": 235,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxff_idp_c": {
+                    "ttl": 65,
+                    "length": 3,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_rf": {
+                    "ttl": 65,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_fp": {
+                    "ttl": 65,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "__pxvid": {
+                    "ttl": 31622405,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var e": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){Q||(Q": {
+                    "ttl": null,
+                    "length": 11,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "payload": {
+                    "ttl": null,
+                    "length": 589,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){t&&v.clearTimeout(t),t": {
+                    "ttl": null,
+                    "length": 50,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function NB(){var t,e": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function MB(){try{SB&&(clearInterval(SB),SB": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){!function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{Ws((function(n,r){var a,o": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var n": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{var n,r": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{r": {
+                    "ttl": null,
+                    "length": 47,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(t){var n": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{e.webglRenderer": {
+                    "ttl": null,
+                    "length": 42,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{var a": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "totalwine.com",
+                "www.totalwine.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXTY0eJULE\\/captcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "captcha"
+            ],
+            "apis": {
+                "Performance.prototype.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.languages": 2,
+                "window.localStorage": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.hardwareConcurrency": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "248996bcf417b1d92fddfd9eb4d0a19428c30030dc98f46b881f0213ed55df4b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adorama.com",
+                "www.adorama.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXTY0eJULE\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
+                "Notification.permission": 2,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.outerWidth": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerHeight": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.indexedDB": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "Navigator.prototype.deviceMemory": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "63e204c628a6c57a87e9bf9a987d5ef9bc02a9424a7a96a5419f53161b389890"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pxff_cc": {
+                    "ttl": 62,
+                    "length": 18,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_px2": {
+                    "ttl": 172804,
+                    "length": 235,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxff_fp": {
+                    "ttl": 62,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_rf": {
+                    "ttl": 62,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536002,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adorama.com",
+                "www.adorama.com"
             ]
         },
         {
             "rule": "perimeterx\\.net\\/PX3c3eZ9Ug\\/main\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 3,
             "subdomains": [
                 "client"
@@ -98,22 +455,14 @@
                 "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Performance.prototype.memory": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
-                "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.platform": 2,
                 "Document.cookie setter": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.width": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.connection": 2,
                 "Navigator.prototype.webdriver": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.pixelDepth": 2,
-                "Screen.prototype.colorDepth": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "window.outerWidth": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "window.outerHeight": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.doNotTrack": 2,
@@ -125,153 +474,385 @@
                 "Navigator.prototype.mimeTypes": 2,
                 "Navigator.prototype.appName": 2,
                 "Navigator.prototype.appCodeName": 2,
-                "Navigator.prototype.connection": 2,
-                "Navigator.prototype.onLine": 2
+                "Navigator.prototype.onLine": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.outerWidth": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerHeight": 2,
+                "Navigator.prototype.storage": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "window.indexedDB": 1,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
+                "AudioBuffer.prototype.getChannelData": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "27db39753974d4bcd737bf206c06bec5863b849550231b8d2b262099c869f84b"
+                "d4b44bd20cec678e4c29621c4cbdd45c676374472287fa18316cc4343bd88784"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_pxff_cc": {
-                    "ttl": 68,
-                    "length": 18,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
                 "_pxTestCookie": {
                     "ttl": -1,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_px3": {
-                    "ttl": 339,
+                    "ttl": 361,
                     "length": 151,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "pxcts": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                },
-                "_pxvid": {
-                    "ttl": 31536008,
-                    "length": 36,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                },
-                "_pxff_idp_c": {
-                    "ttl": 68,
-                    "length": 3,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_ga": {
-                    "ttl": 63072008,
-                    "length": 27,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                },
-                "_gid": {
-                    "ttl": 86408,
-                    "length": 26,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                },
-                "_dc_gtm_UA-30381-1": {
-                    "ttl": 69,
-                    "length": 1,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_fbp": {
-                    "ttl": 7776009,
-                    "length": 29,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "__pxvid": {
-                    "ttl": 31622408,
+                    "ttl": 31622403,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
-                "_clck": {
-                    "ttl": 31536006,
-                    "length": 14,
-                    "prevalence": 0.000006768647624204684,
+                "_fbp": {
+                    "ttl": 7776007,
+                    "length": 29,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
-                "_pin_unauth": {
-                    "ttl": 31536009,
-                    "length": 70,
-                    "prevalence": 0.000013537295248409367,
+                "_ga": {
+                    "ttl": 63072003,
+                    "length": 27,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
-                "cto_bundle": {
-                    "ttl": 34164009,
-                    "length": 313,
-                    "prevalence": 0.000013537295248409367,
+                "_gid": {
+                    "ttl": 86403,
+                    "length": 27,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
+                },
+                "_dc_gtm_UA-30381-1": {
+                    "ttl": 79,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "_ga_7P2C22PCWW": {
-                    "ttl": 63072008,
+                    "ttl": 63072014,
                     "length": 38,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_clsk": {
-                    "ttl": 86409,
+                    "ttl": 86414,
                     "length": 46,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
-                "function(){return o.advanced.updateOnSelectorChange&&(i.poll.change.n": {
+                "_pin_unauth": {
+                    "ttl": 31536012,
+                    "length": 70,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){!function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://api.livechatinc.com/v3.3/customer/action/get_configuration?license_id": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://www.google.com/ads/ga-audiences?t": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(e){return e.forEach((function(e){var n": {
+                    "ttl": null,
+                    "length": 29,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://secure.livechatinc.com/customer/action/open_chat?license_id": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(t){var i": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(e){var t": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(i){var r,a": {
+                    "ttl": null,
+                    "length": 34,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){t.emit(\"propagate\",[null,!i],o,!1,!1),i": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://api.livechatinc.com/v3.3/customer/action/get_localization?license_id": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "function(n){return n?(t.impressionsQueue": {
                     "ttl": null,
                     "length": 26,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://ct.pinterest.com/v3/?event": {
+                    "ttl": null,
+                    "length": 12,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var n": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){e||(e": {
+                    "ttl": null,
+                    "length": 22,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){k||(k": {
+                    "ttl": null,
+                    "length": 11,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "payload": {
+                    "ttl": null,
+                    "length": 477,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "cto_bundle": {
+                    "ttl": 34164021,
+                    "length": 229,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "https://analytics.google.com/g/collect?v": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://bam.nr-data.net/events/1/6ae8d474d4?a": {
+                    "ttl": null,
+                    "length": 10,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "()": {
                     "ttl": null,
                     "length": 17,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
-                "function(){t.emit(\"propagate\",[null,!i],o,!1,!1),i": {
-                    "ttl": null,
-                    "length": 6,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
-                },
-                "function(){for(var n": {
-                    "ttl": null,
-                    "length": 4,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
-                },
-                "{\"Seq\":4,\"When\":16375,\"Evts\":[{\"Kind\":63,\"Args\":[\"POST\",\"https://bam.nr-data.net/events/1/6ae8d474d4?a": {
+                "https://bam.nr-data.net/jserrors/1/6ae8d474d4?a": {
                     "ttl": null,
                     "length": 10,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://sslwidget.criteo.com/event?a": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{!function(t){var n": {
+                    "ttl": null,
+                    "length": 52,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var e": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{var e,r": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{r": {
+                    "ttl": null,
+                    "length": 47,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "<div dir": {
+                    "ttl": null,
+                    "length": 10,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(){return e": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(n){t||(e.emit(\"bridge_sound_unlocked\"),e.on(\"add_event\",(function(t){var i": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(){try{n.webglRenderer": {
+                    "ttl": null,
+                    "length": 42,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "https://ct.pinterest.com/v3/?tid": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function i(){t.detachEvent?t.detachEvent(\"onload\",i):t.onload": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(){return o.advanced.updateOnSelectorChange&&(i.poll.change.n": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "https://gum.criteo.com/syncframe?topUrl": {
+                    "ttl": null,
+                    "length": 24,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "https://www.facebook.com/tr/?id": {
+                    "ttl": null,
+                    "length": 18,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function e(){t&&R.clearTimeout(t),t": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function cd(){var t,n": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function id(){try{Kh&&(clearInterval(Kh),Kh": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(t){var n": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(t){switch(a){case\"image/svg+xml\":o": {
+                    "ttl": null,
+                    "length": 30,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "https://ct.pinterest.com/user/?tid": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "https://ct.pinterest.com/user/?event": {
+                    "ttl": null,
+                    "length": 12,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "<svg id": {
+                    "ttl": null,
+                    "length": 31,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "https://www.google-analytics.com/collect?v": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(){d.onload": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "https://stats.g.doubleclick.net/j/collect?t": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.0000082917364554485,
                     "uniqueness": 1
                 }
             },
@@ -283,7 +864,7 @@
         },
         {
             "rule": "perimeterx\\.net\\/PXbG2CKna2\\/main\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "client"
@@ -294,7 +875,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0f4c7974e0202ef2d6e81370ef606ae6e5b70580fb8a2163103bf938c728335e"
@@ -302,15 +883,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_px3": {
-                    "ttl": 339,
+                    "ttl": 337,
                     "length": 151,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_pxvid": {
-                    "ttl": 31536009,
+                    "ttl": 31536007,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
@@ -329,10 +910,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "1d74c55d04b7dbfbfe25029a243edb7eb607aca6bc7ca5178b7b41af651d412e"
+                "46665fdc017be848dac3a579614c18733a306761c3602c65886a8defeff319cf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -343,8 +924,39 @@
             ]
         },
         {
-            "rule": "perimeterx\\.net\\/PXHp4b16gP\\/main\\.min\\.js",
-            "cookies": 0.0000135,
+            "rule": "perimeterx\\.net\\/PX2Ztkihy4\\/captcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "captcha"
+            ],
+            "apis": {
+                "Performance.prototype.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.languages": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Notification.permission": 1,
+                "Navigator.prototype.plugins": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "248996bcf417b1d92fddfd9eb4d0a19428c30030dc98f46b881f0213ed55df4b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "build.com",
+                "www.faucet.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PX2Ztkihy4\\/main\\.min\\.js",
+            "cookies": 0.0000166,
             "fingerprinting": 3,
             "subdomains": [
                 "client"
@@ -356,16 +968,268 @@
                 "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.permissions": 2,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
                 "Notification.permission": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.outerWidth": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerHeight": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.indexedDB": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "Navigator.prototype.deviceMemory": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "b12e0e60ae8b64d8578a00091c829fe26786af5df3f3abf553245d523506e1d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pxff_cc": {
+                    "ttl": 60,
+                    "length": 18,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxTestCookie": {
+                    "ttl": -1,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_px2": {
+                    "ttl": 338,
+                    "length": 235,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxff_idp_c": {
+                    "ttl": 61,
+                    "length": 3,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_rf": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_fp": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxde": {
+                    "ttl": 338,
+                    "length": 256,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "__pxvid": {
+                    "ttl": 31622401,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var e": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){Q||(Q": {
+                    "ttl": null,
+                    "length": 11,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "payload": {
+                    "ttl": null,
+                    "length": 2981,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){!function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{Ws((function(n,r){var a,o": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var n": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{var n,r": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{r": {
+                    "ttl": null,
+                    "length": 47,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(t){var n": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{e.webglRenderer": {
+                    "ttl": null,
+                    "length": 42,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{var a": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){t&&v.clearTimeout(t),t": {
+                    "ttl": null,
+                    "length": 50,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function NB(){var t,e": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function MB(){try{SB&&(clearInterval(SB),SB": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "build.com",
+                "www.faucet.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/b\\/g",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector-px0f3091f3",
+                "collector-pxg1gmnz2v",
+                "collector-px9atjsd0n",
+                "collector-px87wpo5ak"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [],
+            "responseHashes": [
+                "c33e4662d19fc3307b84337c1b3a85dd1134dcf1ea29071de84367c831e323d0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "pxcts": 0.0000082917364554485,
+                "_pxvid": 0.0000082917364554485
+            },
+            "exampleSites": [
+                "carters.com",
+                "www.hayneedle.com",
+                "www.priceline.com",
+                "www.sams.com.mx"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXHp4b16gP\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
                 "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Performance.prototype.memory": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
+                "Notification.permission": 2,
+                "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.platform": 2,
                 "Document.cookie setter": 2,
-                "Navigator.prototype.webdriver": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.connection": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.doNotTrack": 2,
@@ -377,7 +1241,10 @@
                 "Navigator.prototype.mimeTypes": 2,
                 "Navigator.prototype.appName": 2,
                 "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.connection": 2,
                 "Navigator.prototype.onLine": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.webdriver": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
                 "window.outerWidth": 2,
                 "window.outerHeight": 2,
@@ -391,35 +1258,35 @@
                 "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "6161dcba1a0b3cb372296bb5f3af057dde5cce2ba7e84ad3506e1096be3695c0"
+                "3c88c4acec2891fb4b6fba7c3fa737dd7ea64f3da51a48e95b5c6086ff297660"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pxTestCookie": {
                     "ttl": -1,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_px3": {
-                    "ttl": 344,
+                    "ttl": 340,
                     "length": 151,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "pxcts": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                },
-                "_pxvid": {
-                    "ttl": 31536008,
-                    "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
@@ -430,8 +1297,189 @@
             ]
         },
         {
+            "rule": "perimeterx\\.net\\/PXlJuB4eTB\\/main\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "7560a1d40d1542df04780966d9b98f97734f0ecc35d58ac44c615ca6e825f54d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foodora.se",
+                "www.foodora.se"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXj4y0BbmN\\/captcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "captcha"
+            ],
+            "apis": {
+                "Performance.prototype.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.languages": 2,
+                "window.localStorage": 2,
+                "Notification.permission": 2,
+                "Navigator.prototype.plugins": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.hardwareConcurrency": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "248996bcf417b1d92fddfd9eb4d0a19428c30030dc98f46b881f0213ed55df4b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harborfreight.com",
+                "www.harborfreight.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXj4y0BbmN\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Notification.permission": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.indexedDB": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "56bd7342c16a724d1d5716296eea99b7add89157944c5a2407a283a5adfd3efc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pxff_cc": {
+                    "ttl": 61,
+                    "length": 18,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxTestCookie": {
+                    "ttl": -1,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_px2": {
+                    "ttl": 335,
+                    "length": 235,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536001,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxff_tm": {
+                    "ttl": 301,
+                    "length": 1,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "_pxff_rf": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_fp": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harborfreight.com",
+                "www.harborfreight.com"
+            ]
+        },
+        {
             "rule": "perimeterx\\.net\\/PXg1gmnZ2V\\/main\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 3,
             "subdomains": [
                 "client"
@@ -489,10 +1537,11 @@
                 "CanvasRenderingContext2D.prototype.isPointInPath": 2,
                 "window.devicePixelRatio": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
-                "window.indexedDB": 2
+                "window.indexedDB": 2,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "f833becd30c8516f49fb308b1a2fe9b262033452de61f9af0829a872a7db88a1"
@@ -500,34 +1549,40 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_px2": {
-                    "ttl": 334,
+                    "ttl": 333,
                     "length": 235,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "pxcts": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_pxvid": {
-                    "ttl": 31536004,
+                    "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_pxff_rf": {
-                    "ttl": 64,
+                    "ttl": 60,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_pxff_fp": {
-                    "ttl": 64,
+                    "ttl": 60,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
+                },
+                "_pxff_tm": {
+                    "ttl": 300,
+                    "length": 1,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -538,7 +1593,7 @@
         },
         {
             "rule": "perimeterx\\.net\\/PXoGckki0e\\/main\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 3,
             "subdomains": [
                 "client"
@@ -551,13 +1606,6 @@
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.platform": 2,
                 "Document.cookie setter": 2,
-                "Navigator.prototype.deviceMemory": 2,
-                "Navigator.prototype.keyboard": 2,
-                "Navigator.prototype.mediaDevices": 2,
-                "Navigator.prototype.storage": 2,
-                "Navigator.prototype.presentation": 2,
-                "Navigator.prototype.webdriver": 2,
-                "Navigator.prototype.plugins": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.availWidth": 2,
@@ -567,6 +1615,8 @@
                 "window.innerHeight": 2,
                 "window.innerWidth": 2,
                 "window.outerWidth": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.doNotTrack": 2,
@@ -583,10 +1633,15 @@
                 "Performance.prototype.memory": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
                 "window.outerHeight": 2,
-                "PerformanceTiming.prototype.navigationStart": 1
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.keyboard": 1,
+                "Navigator.prototype.mediaDevices": 1,
+                "Navigator.prototype.storage": 1,
+                "Navigator.prototype.presentation": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "bcc1f3af92ed64fc0e78aae900dd1c6eb0c91714de8e4a864cbe1e68bd3b7780"
@@ -594,27 +1649,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_px3": {
-                    "ttl": 330,
+                    "ttl": 333,
                     "length": 151,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_px": {
-                    "ttl": 330,
+                    "ttl": 333,
                     "length": 86,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_pxvid": {
-                    "ttl": 31536000,
+                    "ttl": 31536002,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 1
-                },
-                "_pxff_tm": {
-                    "ttl": 300,
-                    "length": 1,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 }
             },
@@ -625,6 +1674,318 @@
             ]
         },
         {
+            "rule": "perimeterx\\.net\\/PXLkXIE7Oj\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
+                "Notification.permission": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.indexedDB": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "0bc2a8b41bcefd87fe132823da5f6600b385d889f4d6e3d645e2ede7a8fc4c72"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pxff_cc": {
+                    "ttl": 61,
+                    "length": 18,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxTestCookie": {
+                    "ttl": -1,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_px3": {
+                    "ttl": 339,
+                    "length": 151,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536001,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxff_idp_c": {
+                    "ttl": 61,
+                    "length": 3,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_rf": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_fp": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){t&&v.clearTimeout(t),t": {
+                    "ttl": null,
+                    "length": 50,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function Om(){var t,e": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function Hm(){try{Em&&(clearInterval(Em),Em": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                },
+                "function(){!function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var e": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){S||(S": {
+                    "ttl": null,
+                    "length": 11,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "payload": {
+                    "ttl": null,
+                    "length": 7326,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "__pxvid": {
+                    "ttl": 31622407,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){try{Xs((function(n,r){var a,o": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var n": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{var n,r": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{r": {
+                    "ttl": null,
+                    "length": 47,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(t){var n": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{e.webglRenderer": {
+                    "ttl": null,
+                    "length": 42,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){try{var a": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mountainhardwear.com",
+                "www.mountainhardwear.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXZ5wgH7n9\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Notification.permission": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.onLine": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "44868257489ba7497c2dc87df482a6c9df2cf237d457b6a6178a72e4af908118"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pxff_cc": {
+                    "ttl": 65,
+                    "length": 18,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxTestCookie": {
+                    "ttl": -1,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_px3": {
+                    "ttl": 341,
+                    "length": 151,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "niche.com",
+                "www.niche.com"
+            ]
+        },
+        {
             "rule": "perimeterx\\.net\\/PX8T5aKZsq\\/captcha\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -632,16 +1993,16 @@
                 "captcha"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
                 "Navigator.prototype.languages": 2,
                 "window.localStorage": 2,
+                "URL.createObjectURL": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
-                "Notification.permission": 1,
-                "Navigator.prototype.plugins": 1
+                "Performance.prototype.memory": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "248996bcf417b1d92fddfd9eb4d0a19428c30030dc98f46b881f0213ed55df4b"
@@ -656,8 +2017,8 @@
         },
         {
             "rule": "perimeterx\\.net\\/PX8T5aKZsq\\/main\\.min\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 2,
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
             "subdomains": [
                 "client"
             ],
@@ -666,74 +2027,158 @@
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Notification.permission": 2,
-                "Navigator.prototype.plugins": 2,
                 "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
+                "Notification.permission": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
                 "Navigator.prototype.platform": 2,
                 "Document.cookie setter": 2,
                 "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.name": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "e9a60ac7200f4db9618184011165824847ef5b27180365fe57cd6fc45ffbc696"
+                "980b7f74291d00b119eb17c3864aef7ca726ed683908207c39856626cda54497"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_pxff_cc": {
-                    "ttl": 88,
-                    "length": 18,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
                 "_pxTestCookie": {
                     "ttl": -1,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_px2": {
-                    "ttl": 358,
+                    "ttl": 340,
                     "length": 235,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "pxcts": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_pxvid": {
-                    "ttl": 31536028,
+                    "ttl": 31536001,
                     "length": 36,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
-                "_pxff_idp_c": {
-                    "ttl": 88,
+                "_pxde": {
+                    "ttl": 340,
+                    "length": 101,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "__pxvid": {
+                    "ttl": 31622401,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){var n": {
+                    "ttl": null,
                     "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
-                "_pxff_rf": {
-                    "ttl": 88,
-                    "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                "function(){C||(C": {
+                    "ttl": null,
+                    "length": 11,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
-                "_pxff_fp": {
-                    "ttl": 88,
-                    "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                "payload": {
+                    "ttl": null,
+                    "length": 1679,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "function e(){t&&g.clearTimeout(t),t": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
-                "_pxff_tm": {
-                    "ttl": 328,
+                "function dd(){var t,n": {
+                    "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function vd(){try{ed&&(clearInterval(ed),ed": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){!function(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function Gh(){var t": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "https://captcha.perimeterx.net/PX8T5aKZsq/captcha.js?a": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "function(){Jh||(Jh": {
+                    "ttl": null,
+                    "length": 33,
+                    "prevalence": 0.0000082917364554485,
                     "uniqueness": 1
                 }
             },
@@ -744,8 +2189,8 @@
             ]
         },
         {
-            "rule": "perimeterx\\.net\\/PXO4boPf13\\/main\\.min\\.js",
-            "cookies": 0.0000135,
+            "rule": "perimeterx\\.net\\/PX12Ew76qT\\/main\\.min\\.js",
+            "cookies": 0,
             "fingerprinting": 3,
             "subdomains": [
                 "client"
@@ -755,19 +2200,17 @@
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Notification.permission": 2,
-                "Navigator.prototype.plugins": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.platform": 2,
                 "Navigator.prototype.permissions": 2,
                 "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Performance.prototype.memory": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
-                "Document.cookie setter": 2,
+                "Navigator.prototype.platform": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.deviceMemory": 2,
                 "Navigator.prototype.product": 2,
                 "Navigator.prototype.productSub": 2,
                 "Navigator.prototype.appVersion": 2,
@@ -776,10 +2219,6 @@
                 "Navigator.prototype.appCodeName": 2,
                 "Navigator.prototype.connection": 2,
                 "Navigator.prototype.onLine": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.availWidth": 2,
@@ -788,46 +2227,231 @@
                 "Screen.prototype.colorDepth": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.webdriver": 2,
-                "Navigator.prototype.deviceMemory": 2
+                "window.outerWidth": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerHeight": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.indexedDB": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "7f87807089eab0954a05c2e63b19b5c42ac56df96a5d4b3bd3f09ff065314af5"
+                "34a0a15ab7718e2d6e12f55538a7f644a9da293c31c13abd5d29ec2195108937"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "talbots.com",
+                "www.talbots.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXZHh9f9x0\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
+                "Notification.permission": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.cookieEnabled": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "24494140dcedf99abb7e7ba85f69a7d0724bca79bdcc54029be6dab868c1f439"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pxff_cc": {
-                    "ttl": 63,
+                    "ttl": 64,
                     "length": 18,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_px2": {
+                    "ttl": 172805,
+                    "length": 235,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_px3": {
+                    "ttl": 172805,
+                    "length": 151,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_pxff_rf": {
+                    "ttl": 64,
+                    "length": 1,
+                    "prevalence": 0.0000082917364554485,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udemy.com",
+                "www.udemy.com"
+            ]
+        },
+        {
+            "rule": "perimeterx\\.net\\/PXO4boPf13\\/main\\.min\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.permissions": 2,
+                "Notification.permission": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Performance.prototype.memory": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.outerWidth": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerHeight": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.indexedDB": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "b2b9258b26be89eae27f897c37009ace1f472f9a6ec7c6b5d39f331c539ae6a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pxff_cc": {
+                    "ttl": 65,
+                    "length": 18,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_pxTestCookie": {
                     "ttl": -1,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_px3": {
-                    "ttl": 334,
+                    "ttl": 352,
                     "length": 151,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_pxff_rf": {
-                    "ttl": 64,
-                    "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_pxff_fp": {
-                    "ttl": 64,
+                    "ttl": 65,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_pxff_rf": {
+                    "ttl": 65,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -845,46 +2469,42 @@
         "Audience Measurement"
     ],
     "performance": {},
-    "cookies": 0.000162,
+    "cookies": 0.000265,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5813953488372093
-        },
-        {
-            "domain": "px-cdn.net",
-            "prevalence": 0.13953488372093023
+            "prevalence": 0.58
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.11627906976744186
+            "prevalence": 0.14
+        },
+        {
+            "domain": "px-cdn.net",
+            "prevalence": 0.12
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.06976744186046512
+            "prevalence": 0.1
         },
         {
-            "domain": "wayfair.com",
-            "prevalence": 0.046511627906976744
-        },
-        {
-            "domain": "studybreakmedia.com",
-            "prevalence": 0.023255813953488372
+            "domain": "b2w.io",
+            "prevalence": 0.04
         },
         {
             "domain": "px-cloud.net",
-            "prevalence": 0.023255813953488372
+            "prevalence": 0.02
         }
     ],
     "types": {
         "Image": 4,
-        "XHR": 8,
-        "Script": 16
+        "Script": 42,
+        "XHR": 6
     },
     "nameservers": [
-        "ns-3.perimeterx.com",
-        "ns-2.perimeterx.com",
         "ns-4.perimeterx.com",
-        "ns-1.perimeterx.com"
+        "ns-1.perimeterx.com",
+        "ns-2.perimeterx.com",
+        "ns-3.perimeterx.com"
     ]
 }

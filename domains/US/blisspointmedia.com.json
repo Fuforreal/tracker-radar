@@ -7,15 +7,39 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000415,
+    "sites": 5,
     "subdomains": [
-        "sync",
-        "cdn"
+        "cdn",
+        "sync"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "blisspointmedia\\.com\\/assets\\/img\\/pixel\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [],
+            "responseHashes": [
+                "5c6dde90636ce86c1438f07b9d79cbf069b94311f4c59d40982810b870f7d779"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellogiggles.com",
+                "tracker.gg",
+                "www.elledecor.com",
+                "www.joinhoney.com"
+            ]
+        },
         {
             "rule": "blisspointmedia\\.com\\/sync\\/cs",
             "cookies": 0,
@@ -25,29 +49,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5c6dde90636ce86c1438f07b9d79cbf069b94311f4c59d40982810b870f7d779"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "joinhoney.com",
-                "www.joinhoney.com"
-            ]
-        },
-        {
-            "rule": "blisspointmedia\\.com\\/assets\\/img\\/pixel\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "5c6dde90636ce86c1438f07b9d79cbf069b94311f4c59d40982810b870f7d779"
@@ -67,15 +69,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "amazon-adsystem.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "primis.tech",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "3lift.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Image": 4
+        "Image": 6
     },
     "nameservers": [
-        "ns-1071.awsdns-05.org",
         "ns-320.awsdns-40.com",
+        "ns-1071.awsdns-05.org",
         "ns-1631.awsdns-11.co.uk",
         "ns-827.awsdns-39.net"
     ]

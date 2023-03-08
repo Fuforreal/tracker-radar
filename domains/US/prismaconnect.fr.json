@@ -7,28 +7,30 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000541,
-    "sites": 8,
+    "prevalence": 0.0000498,
+    "sites": 6,
     "subdomains": [
         "www",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "prismaconnect\\.fr\\/pmcCheck",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
-                "b5716b195bf554b3a4e89277f0dc1bf17252908703fc242c0427031887340bc1"
+                "486b59c1550763c03449c32b50c0603a967790aa58d13bd6bcdf31b365cd6e3e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -36,44 +38,20 @@
             "exampleSites": [
                 "caminteresse.fr",
                 "www.caminteresse.fr",
-                "www.gentside.com",
                 "www.geo.fr",
                 "www.maxisciences.com"
             ]
         },
         {
-            "rule": "prismaconnect\\.fr\\/prd\\/ping",
+            "rule": "prismaconnect\\.fr\\/ping",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "caminteresse.fr",
-                "www.caminteresse.fr",
-                "www.gentside.com",
-                "www.geo.fr",
-                "www.maxisciences.com"
-            ]
-        },
-        {
-            "rule": "prismaconnect\\.fr\\/prd\\/ping",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
                 "9408be658ddfc6ec2f04f3a6c48fac9258c99351aa21c76cd51121d230921161"
@@ -84,7 +62,28 @@
             "exampleSites": [
                 "caminteresse.fr",
                 "www.caminteresse.fr",
-                "www.gentside.com",
+                "www.geo.fr",
+                "www.maxisciences.com"
+            ]
+        },
+        {
+            "rule": "prismaconnect\\.fr\\/ping",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000332,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "caminteresse.fr",
+                "www.caminteresse.fr",
                 "www.geo.fr",
                 "www.maxisciences.com"
             ]
@@ -100,13 +99,13 @@
         }
     ],
     "types": {
-        "Document": 5,
-        "Preflight": 5,
-        "Fetch": 5
+        "Document": 4,
+        "Fetch": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "phobos.vp-dns.net",
-        "venus.vp-dns.net",
-        "deimos.vp-dns.net"
+        "deimos.vp-dns.net",
+        "venus.vp-dns.net"
     ]
 }

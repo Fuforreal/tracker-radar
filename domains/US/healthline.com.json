@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000677,
+    "prevalence": 0.0000829,
     "sites": 10,
     "subdomains": [
         "gtm-server",
@@ -15,7 +15,7 @@
         "assets"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "healthline\\.com\\/gtm\\.js",
@@ -27,15 +27,15 @@
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.appVersion": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "cfa6770f92eea3167704c213ba5c4a65108512e2f7e4b547984aa9934c80d8ea",
-                "571903a418f4f18f6baa01d771032f79e8a70506273e3f50ae9316126d06a632"
+                "cf944dc2fdb472232d1cafb9b93f595623336c89d1bfa264e433c0be655a3504",
+                "9bfd8852abe012c4c532255b1d6f2e5a5973cff756a47a3f2fd2b7789b5e28c6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -48,20 +48,43 @@
         },
         {
             "rule": "healthline\\.com\\/gtag\\/js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000249,
+            "fingerprinting": 1,
             "subdomains": [
                 "gtm-server"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.language": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Document.cookie setter": 3
+            },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
-                "18e34f3edbe5506afcae3a9673bb8513b5d39b67d48d5de1f9b5bb7affe975ba"
+                "33172da789b288ba4fea6f712854392ffc8a32f795ad9633e0237683478b34b5",
+                "f0f2deb4c0452ca22f09ab6575cff02815c0ecc5d82b97864ad36da257fa2eef"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_ga_8732QY1JF2": {
+                    "ttl": 63072004,
+                    "length": 37,
+                    "prevalence": 0.0000248752093663455,
+                    "uniqueness": 1
+                },
+                "_ga": {
+                    "ttl": 63072004,
+                    "length": 27,
+                    "prevalence": 0.0000248752093663455,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "greatist.com",
@@ -78,9 +101,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -92,19 +117,23 @@
         },
         {
             "rule": "healthline\\.com\\/g\\/collect",
-            "cookies": 0.0000135,
+            "cookies": 0.0000249,
             "fingerprinting": 0,
             "subdomains": [
                 "gtm-server"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000249,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000049750418732691
+            },
             "exampleSites": [
                 "greatist.com",
                 "psychcentral.com",
@@ -120,7 +149,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e842b3cb11fe291265b6c99631aabea285569d1b6e4f93397d1aabe60474de14"
@@ -136,7 +165,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000498,
     "topInitiators": [
         {
             "domain": "first party",
@@ -150,9 +179,9 @@
         "Font": 2
     },
     "nameservers": [
-        "ns-397.awsdns-49.com",
-        "ns-1870.awsdns-41.co.uk",
         "ns-1494.awsdns-58.org",
+        "ns-1870.awsdns-41.co.uk",
+        "ns-397.awsdns-49.com",
         "ns-532.awsdns-02.net"
     ]
 }

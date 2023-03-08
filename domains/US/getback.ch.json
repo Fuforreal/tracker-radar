@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00021,
-    "sites": 31,
+    "prevalence": 0.000224,
+    "sites": 27,
     "subdomains": [
         "www",
         "static",
@@ -18,37 +18,17 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "getback\\.ch\\/C0_iq",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "67867ceb58bbb3c8b9aff85c5946062381789d1f2c58e84e69cc0c3720a1b977"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oe24.at",
-                "www.oe24.at"
-            ]
-        },
-        {
             "rule": "getback\\.ch\\/9M5nM",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "c488c27abd48b942318e11ad74f8d4aee54baaa794755eb4493ad0a45780084d"
@@ -63,6 +43,112 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/9M5nM\\.js",
+            "cookies": 0.0000166,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Notification.permission": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.storage": 2,
+                "Navigator.prototype.permissions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "ff0421d5efca94dae3123525096773454cd4d27e008f8d266163a1c54c2a2ab8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_gbs": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_gbc": {
+                    "ttl": 7776005,
+                    "length": 32,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 1
+                },
+                "_gb_lh": {
+                    "ttl": null,
+                    "length": 14,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "_gb_views": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "gb_push_permission": {
+                    "ttl": 469384291,
+                    "length": 7,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "gb_has_push_support": {
+                    "ttl": 469384291,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "gb_is_push_subscriber": {
+                    "ttl": 469384291,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "gb_push_disabled": {
+                    "ttl": -863995,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buecher.de",
+                "www.buecher.de"
+            ]
+        },
+        {
+            "rule": "getback\\.ch\\/9M5nM\\/getback\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "087643a131f17af65a6db3105c843e122d4c39fdb5ee2de7bb2d2a8a609bec4e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
+            },
+            "exampleSites": [
+                "buecher.de",
+                "www.buecher.de"
+            ]
+        },
+        {
+            "rule": "getback\\.ch\\/clients\\/9M5nM\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -70,15 +156,40 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "fe3ef71d1a301547cac83c4628ad8e938086986379df67f97195f2daf345befc"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "buecher.de",
                 "www.buecher.de"
+            ]
+        },
+        {
+            "rule": "getback\\.ch\\/sw\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000249,
+            "cnames": [],
+            "responseHashes": [
+                "18b38f22973998d3f22059e825f58f7f7748b65da935cd8b056e4ab2a441a9ce"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buecher.de",
+                "www.buecher.de",
+                "www.ochsnersport.ch"
             ]
         },
         {
@@ -92,7 +203,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "d3a7732c196531f4dfcf5bf98151a8b76b7bbf586e3ff48fd2b2fba3372388e2"
@@ -107,7 +218,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/eQHE4\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
@@ -122,53 +233,53 @@
                 "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "03bce2e47e8b9a2cb264f5dafc01e11ef3c753e028a4ee39aa789ec9d808a9a8"
+                "b352226e55cf79883b33f9b62d85c889819909e2f39cc24f2a4d3809b3478116"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776008,
+                    "ttl": 7776004,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 18,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_gb_ver": {
-                    "ttl": 2592008,
+                    "ttl": 2592005,
                     "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_gb_views": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": -2591994,
+                    "ttl": -2591997,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": -2591994,
+                    "ttl": -2591997,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -187,16 +298,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "a280e12fd7b2c103ce1820405cfc33857574bb58361d307f681251e4f9c11f54"
+                "d4de8fe7300ac0a5783fa8b5d278c33fb062fc5c16c0d5b7a088b9aba9bfdf91"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "deutschesee.de",
@@ -212,10 +323,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "8c39fd069c195769769d3ab2de19d6c832d4f91a0691cc392cdd6bfb27c4d7fa"
+                "8ab6290d24551aa37d7d125a8706de0de4bc0d438507c4cb7c6f0fab1edc1439"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -234,10 +345,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "0b9fc1a84f2a00549d60ec90ad85811d650a259e05cba855c668a5643031d963"
+                "4b5fab26355373bccfc4943841f6bfea5adba57b9fe5fe0fc30fdfe4180c526e"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -258,7 +369,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "fb4beb92a5212317dc72d29c2b72772bdbf4781771c5e8b2614a78084a42148e"
@@ -273,7 +384,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/dgFJD\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
@@ -284,52 +395,46 @@
                 "window.sessionStorage": 2,
                 "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2,
+                "Notification.permission": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Notification.permission": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "0cd5d5608784fd8bfa47be71a50bab6c825f79b755de6fe4376cb61f635625cb"
+                "279b9b00df7a569dd7fcd4db59c587c09cda6b05c0727e128b7eedf17a294701"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776003,
+                    "ttl": 7776008,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 17,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_gb_ver": {
-                    "ttl": 2592012,
-                    "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": -2591994,
+                    "ttl": -2591993,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": -2591994,
+                    "ttl": -2591993,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -348,16 +453,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "6b09d37d70950412895462fd068dda0183a876576d802bc8d83ba4e3d73155ba"
+                "be80b4d09dd43146d2a6b77c367e583e4d3bfdf85d3563b1eaefabbf77827de4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "doitgarden.ch",
@@ -373,34 +478,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "fc0b9741b08cc289a143403065ee3156c714dbfd39234b6b46e924120a8c1242"
             ],
             "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "doitgarden.ch",
-                "www.doitgarden.ch"
-            ]
-        },
-        {
-            "rule": "getback\\.ch\\/dgFJD\\/session_data\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -417,7 +500,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "7afee9cbaa3e0afc050dd3e31e4b24dd692e109e2703a7972d4f46a7266b2848"
@@ -439,15 +522,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "985a7bb00696e5b2e966f6363d6c66f9a3d9e7048c4539f04f9e1fee63049cc9"
+                "79b011a6a08ec2e6f85f3f572057ef5d77c59f0c96597d2bdadcfcefe3e40224"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gb_lh": 0.000013537295248409367
+                "_gb_lh": 0.000016583472910897
             },
             "exampleSites": [
                 "doitgarden.ch",
@@ -463,7 +546,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "1d25e61077c96e137bf88a9f74cb60c148698ea04e3413af6dfff63b4d56ec7a"
@@ -485,7 +568,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "1d25e61077c96e137bf88a9f74cb60c148698ea04e3413af6dfff63b4d56ec7a"
@@ -499,52 +582,6 @@
             ]
         },
         {
-            "rule": "getback\\.ch\\/app\\/tracking\\/6_z0c",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c1ebc777bb22cabbbef6604d00c9ad2d560b59cebec20872ec959b15a0ac79da"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fust.ch",
-                "www.fust.ch"
-            ]
-        },
-        {
-            "rule": "getback\\.ch\\/clients\\/6_z0c\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6f7e89fede46420fda14d71f87830b3859899517d1120e9b37586601178c696b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fust.ch",
-                "www.fust.ch"
-            ]
-        },
-        {
             "rule": "getback\\.ch\\/6mJnd",
             "cookies": 0,
             "fingerprinting": 1,
@@ -555,7 +592,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0dba1eca9e7047aa7ca24d37a9afcbe1b20b50439256a91a63b53b066f91ea32"
@@ -570,7 +607,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/6mJnd\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
@@ -582,69 +619,64 @@
                 "window.sessionStorage": 2,
                 "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.storage": 2,
                 "Navigator.prototype.permissions": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "cd23c9ec7aa2183e5959ab45515370e72f4d66af80adfdf6ac9dff49739fabd4"
+                "6b68e16785c1f246f90b99ea773f0d1b5990aa4c15f8b07438500a58fec4d38d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776010,
+                    "ttl": 7776019,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 12,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_gb_ver": {
-                    "ttl": 2592010,
-                    "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_gb_views": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_permission": {
-                    "ttl": 470733386,
+                    "ttl": 469380996,
                     "length": 7,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": 470733386,
+                    "ttl": 469380996,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": 470733386,
+                    "ttl": 469380996,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_disabled": {
-                    "ttl": -863991,
+                    "ttl": -863985,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -663,16 +695,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "59329bb0e0e9c9e099978b6a74bf6ec2ab0b63dee486690a627e19141f781997"
+                "73115b7e5a2e574ea0d58fde8f70e68de63232cb84673a3191406bc9ed2f4d9a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "jumbo.ch",
@@ -688,7 +720,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "3b6d6554897373354fd3d899284309727a4bf88d570db1fdd3601e321c2490a8"
@@ -710,7 +742,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "fa961db008af34980db687fca7a4f56edeee44326d5292ca73b336eb842f1e54"
@@ -734,7 +766,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "36a2f3916e4870e68e29195a687baee7e0923614f15cba7d703d289683b2155e"
@@ -749,7 +781,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/mnEId\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
@@ -764,47 +796,41 @@
                 "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "8f8d78958d08cebc442f3ae3656ed56100cdc8faae614b70ebee87f27ecd6d40"
+                "be002a2ec99f40d2c035d09ecf29e1164aa3f10d1ddcb3cc343906f734b6967c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776003,
+                    "ttl": 7776005,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 18,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_gb_ver": {
-                    "ttl": 2592003,
-                    "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": -2591998,
+                    "ttl": -2591994,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": -2591998,
+                    "ttl": -2591994,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -823,16 +849,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "d86cb76084c626564fc7b9c68728b80439f4cffb7b2920663af9b0f081c8fd3c"
+                "3cc8eb31d9725d922cd1b1590d6b4c589bbdb25d34011488fc3e5667674aeeca"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "kindercare.com",
@@ -848,10 +874,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "07392e9e32042fbdc15d6dcb44fa6e94cb673d59822612c6fb5acfcf6acbfb67"
+                "dd3dfe183c72a6f9a73ffa456cb842ea9bb5fbfdb8c12eb0ea8688e2489b5d2e"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -870,7 +896,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e5ebd1efa5a3647ad22aa67b4792e15e9a9b4f1d493ce5d05b4b6ec064ca894b"
@@ -894,7 +920,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "40488812f9480c69c6676cadceb72be38a92160d96391de9dd7bb071bdbda15b"
@@ -909,7 +935,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/aR5wP\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
@@ -920,44 +946,45 @@
                 "window.sessionStorage": 2,
                 "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2,
-                "Notification.permission": 2
+                "Notification.permission": 2,
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "13d7a3d8f9e1b5742e23b4d553602aed883c86307590b9fd200c7d7a6c3923a0"
+                "51250ceeae8155291376d2d3dd7e0f680e42f5c3c1bcc2b72236d400c830dc02"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776008,
+                    "ttl": 7776005,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 12,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": -2591991,
+                    "ttl": -2591995,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": -2591991,
+                    "ttl": -2591995,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -976,16 +1003,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "16619d39f13ae4559f247afa6b5e28670112187ea5d7adee2699e063fdc8271d"
+                "59adeec27f62ca1b027f804a070017ee43abbec45ff9321b7a29a4f67b4f5e2e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "manor.ch",
@@ -1001,7 +1028,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "fe3ef71d1a301547cac83c4628ad8e938086986379df67f97195f2daf345befc"
@@ -1016,17 +1043,17 @@
         },
         {
             "rule": "getback\\.ch\\/app\\/tracking\\/fseBb",
-            "cookies": 0.00000677,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "779582c71dfef7f7f8d03b5ec277bf9f39db0f65a6f54e585e8925446a254689"
@@ -1034,10 +1061,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_gb_temp": {
-                    "ttl": -14943680,
+                    "ttl": -16071059,
                     "length": 1,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -1048,64 +1075,58 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/fseBb\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2,
-                "window.sessionStorage": 2,
                 "Document.cookie getter": 2,
-                "Notification.permission": 1,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Notification.permission": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "872efac35bc2fdbc930c5b17eea620017bd8286269d01b3dfd965e9c30f7166e"
+                "9c447ba67e40c78c1876bd1b27fd5e24702b7a7bdd029ec73d363582dfc058dc"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_gb_ver": {
-                    "ttl": 2592009,
-                    "length": 3,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "gb_has_push_support": {
-                    "ttl": -2591998,
-                    "length": 1,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "gb_is_push_subscriber": {
-                    "ttl": -2591998,
-                    "length": 1,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776001,
+                    "ttl": 7776004,
                     "length": 32,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 19,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "gb_has_push_support": {
+                    "ttl": -2591995,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
+                },
+                "gb_is_push_subscriber": {
+                    "ttl": -2591995,
+                    "length": 1,
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -1123,16 +1144,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "22c1e4e49eb48c22e991fe1cabb92f10e99d04da15a14e5308f87db557db5331"
+                "ad231ac1de044929390d21162d17a15fba2350934852d74e5ba1d73920957e5b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000006768647624204684,
-                "_gbc": 0.000006768647624204684
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "melectronics.ch",
@@ -1148,7 +1169,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "2ebbb80992c9c778b9d937c1b429132c57709306bfd9c32c924515c9bbf3379c"
@@ -1170,7 +1191,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "565615b7daf1ac07064faa6169cf514d92f2e2d62f5253e7448550b628bbdccd"
@@ -1194,7 +1215,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "93badd816ea9e29e6edce9e8478df3244e5a8c108c5f6fc0085bee70da2c7b4f"
@@ -1209,7 +1230,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/aTwXV\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
@@ -1225,47 +1246,41 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "f3b151b306a7baf57943c6c7ac405a2e1fdb3031c8a27194f6d465aded119130"
+                "db2619d9aca501c144fd51a094daddcfebbe094fabac75def5a6070cb13c1573"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776010,
+                    "ttl": 7776005,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_gb_ver": {
-                    "ttl": 2592010,
-                    "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
                     "ttl": -2591995,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
                     "ttl": -2591995,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -1284,16 +1299,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "b9a2bbaa1f78f9476d44acda0cb792e52990f20d58cbb9665ce960d39ef13b07"
+                "e30fd61c6f2872ce96f74584c26684ce84dc4414921f064032e579e72ac8e13f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "micasa.ch",
@@ -1309,7 +1324,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "70aca21245bf0ef5d604cd9925ab759dddaf57e3816c3422e8b3503a57a92464"
@@ -1331,7 +1346,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
@@ -1353,7 +1368,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "f2427a94a00b384e7b38ee583695f980e5d33b132e5b0bc648c90415b7f2835a"
@@ -1375,15 +1390,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "d9891deb6d0775df703805ee153ea4a9cf1052ec5ec9503725e3e5752f296a1f"
+                "44ad3669d51560c65c2ed6fec3d9df493d14e0ef3d6bdb19d075e8386a44079c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gb_lh": 0.000013537295248409367
+                "_gb_lh": 0.000016583472910897
             },
             "exampleSites": [
                 "micasa.ch",
@@ -1399,7 +1414,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "b8e6f9d3e6872a4fa5db88ecdb5180d6130ba3202b10ee58b1b7640c0b0a0b56"
@@ -1421,7 +1436,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "b8e6f9d3e6872a4fa5db88ecdb5180d6130ba3202b10ee58b1b7640c0b0a0b56"
@@ -1442,10 +1457,10 @@
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "fde24327f8a05581729375774e93363aed72059989054ad96c4fad1ab983ed9a"
@@ -1460,82 +1475,77 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/G9An_\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
                 "Notification.permission": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.storage": 1,
-                "Navigator.prototype.permissions": 1
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.storage": 2,
+                "Navigator.prototype.permissions": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "d0438a96714c8cc977e31b91bf27b95ed51902f58037d6ff0ccfa9198ce38bfd"
+                "9fd303b71e2a31e89812d395a4f1b7bdf57b32314513899b6a61d57a363207ba"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
                     "ttl": 7776002,
                     "length": 32,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 19,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
-                },
-                "_gb_ver": {
-                    "ttl": 2592002,
-                    "length": 3,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "_gb_views": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "gb_push_permission": {
-                    "ttl": 470481290,
+                    "ttl": 469353950,
                     "length": 7,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": 470481290,
+                    "ttl": 469353950,
                     "length": 1,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": 470481290,
+                    "ttl": 469353950,
                     "length": 1,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 },
                 "gb_push_disabled": {
-                    "ttl": -863998,
+                    "ttl": -863997,
                     "length": 1,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "prevalence": 0.000016583472910897,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -1553,16 +1563,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "db1247dcad5538223e639cd6e88efa367f97c1f77c96c87353d874e2259ba0ca"
+                "435313e4a7ab3449bbe3ba85ef42deab52acd71c0f713d597bb31724bd56b8f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000006768647624204684,
-                "_gbc": 0.000006768647624204684
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "ochsnersport.ch",
@@ -1578,7 +1588,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0ae1eee134399c90ad7799ebc5692479bedb011d1172def04a59d510e6ec09ea"
@@ -1600,34 +1610,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "92420e9a6eb14babf190fc57a09b331851f8eefafd8720ff6004316276ca5a72"
             ],
             "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ochsnersport.ch",
-                "www.ochsnersport.ch"
-            ]
-        },
-        {
-            "rule": "getback\\.ch\\/sw\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "push"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "18b38f22973998d3f22059e825f58f7f7748b65da935cd8b056e4ab2a441a9ce"
-            ],
-            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1646,7 +1634,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "e0e440af248d231bbf9008762a9491a4e3934569854f1061155e4ee4d012836e"
@@ -1661,7 +1649,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/HIVu3\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
@@ -1679,59 +1667,59 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "3013612040ab84dfde7da6da6aa23afd1b57c5d0403f815e539323f9f61c330f"
+                "be16fdbb614664581d43f81ab95662168a16eef7fdd51a370f46198cf90ecfdf"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776002,
+                    "ttl": 7776001,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 12,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_gb_views": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_permission": {
-                    "ttl": 470472912,
+                    "ttl": 469345669,
                     "length": 7,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": 470472912,
+                    "ttl": 469345669,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": 470472912,
+                    "ttl": 469345669,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_disabled": {
                     "ttl": -863999,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -1750,16 +1738,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "21b057cdf63eecbe77ef7634376d30bb1cd26113c71fc871c3400425e32c788b"
+                "98077226720a4efc542fc8c2b50052ef325fc50a704f8b8f1ab13e6c5eb2fcb4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "onetz.de",
@@ -1775,7 +1763,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "a3225ffa7f0f054fbfa08a161b0d4689fa7897900f4e2cdc2ce611c710f91eb3"
@@ -1797,7 +1785,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "bfb213b2c5289617f49def34e52345ee1258b7b34f87d7594fb95d6aa3f9bd95"
@@ -1819,15 +1807,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "fbac984c8dd268fcddd3eb5ca8c2c2386f438122591c5f9a489e697358cea0a1"
+                "5c0954a51d00b157fd792b87b798215f9948e04900f086ab7df6cbde8f334c6b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gb_lh": 0.000013537295248409367
+                "_gb_lh": 0.000016583472910897
             },
             "exampleSites": [
                 "onetz.de",
@@ -1843,7 +1831,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "d49a4368a28c1a7aaef21b3aafe4742b8738b5df140d4559b26e3db603854899"
@@ -1864,8 +1852,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "3a412ed7cb40c8dbff1485ff2bebe6c6ad4a85452637468eb624c7c7ecbce95e"
@@ -1876,9 +1864,7 @@
             "exampleSites": [
                 "onetz.de",
                 "www.onetz.de",
-                "www.salzburg24.at",
-                "www.sn.at",
-                "www.sportxx.ch"
+                "www.salzburg24.at"
             ]
         },
         {
@@ -1889,8 +1875,8 @@
                 "push"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "d3866f57ba7a47425f5aa636377cdace170d1e3e9e38abd3aa1c239f8fe2a549"
@@ -1901,9 +1887,7 @@
             "exampleSites": [
                 "onetz.de",
                 "www.onetz.de",
-                "www.salzburg24.at",
-                "www.sn.at",
-                "www.sportxx.ch"
+                "www.salzburg24.at"
             ]
         },
         {
@@ -1915,7 +1899,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "17275b2052ae6773e78f1706b68bce91b8a5a2afccf3b22da4f6f39720f2aa3b"
@@ -1937,7 +1921,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "7db23edc51405707dfaf87e4622c40fc654aa26068c234a5e638bfb5ba75ef80"
@@ -1959,7 +1943,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "cb05e5be663d9bc355b6a391e74f6b220b7332b1c81910dc7b775daefcd567d4"
@@ -1980,8 +1964,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "sites": 3,
+            "prevalence": 0.0000249,
             "cnames": [],
             "responseHashes": [
                 "1ffd3b90c7ec7a042eabb72ccb2a74b772add71e72fbd095855e64b279b2c4e1"
@@ -1992,9 +1976,7 @@
             "exampleSites": [
                 "onetz.de",
                 "www.onetz.de",
-                "www.salzburg24.at",
-                "www.sn.at",
-                "www.sportxx.ch"
+                "www.salzburg24.at"
             ]
         },
         {
@@ -2008,7 +1990,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "ef3168753160c697bc9f833835feb513006813fa80958cebad800cf9f6fb4f56"
@@ -2023,7 +2005,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/wbxGW\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
@@ -2035,70 +2017,65 @@
                 "window.sessionStorage": 2,
                 "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.storage": 2,
                 "Navigator.prototype.permissions": 2,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "f880e13111ba65dbc2de9cb168f5a4f72c19f8d3e869405d9a6324dd8c806ff9"
+                "a105ec1bcf4f7b348a951d1afe637d36d4127ea455b779f5bda350397ca362f0"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
                     "ttl": 7776007,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 17,
-                    "prevalence": 0.000013537295248409367,
-                    "uniqueness": 0.5
-                },
-                "_gb_ver": {
-                    "ttl": 2592008,
-                    "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_gb_views": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_permission": {
-                    "ttl": 470480445,
+                    "ttl": 469353112,
                     "length": 7,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": 470480445,
+                    "ttl": 469353112,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": 470480445,
+                    "ttl": 469353112,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_disabled": {
-                    "ttl": -863995,
+                    "ttl": -863992,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -2117,16 +2094,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "c3c9207ba80cd6f4fd4f40590be16caa2f4cf7ffe13554694509cf17e72c3262"
+                "352dedeec4cb5247f9cdca9300db4bb1973bb0798bf9c46b2e3b231c77d0f654"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "salzburg24.at",
@@ -2142,7 +2119,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "00c27c9d9bf45b0e029d1ca8b547395127462a27ba57580544e14dfaf36f2b98"
@@ -2164,7 +2141,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "981c2941d612c7c38542452697896fde7bf6f112fb05b305bcd46ce7539ba30b"
@@ -2186,16 +2163,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "7cc36e05495b3d56347700cb0b624d1aecf0a7fd2c7af63ddb9f3a83d5c0961b"
+                "f48ea354de6cd1bcaf8b7ddd737858f53f92d31ffcde153089f885cb9b5324a2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__pid": 0.000013537295248409367,
-                "_gb_lh": 0.000013537295248409367
+                "__pid": 0.000016583472910897,
+                "_gb_lh": 0.000016583472910897
             },
             "exampleSites": [
                 "salzburg24.at",
@@ -2211,7 +2188,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "a30ef0061eaba06d4250f5f63153ccc6d3ba3d06d2bc8e242a129f3bb4d39b4a"
@@ -2233,7 +2210,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "0b74f3d05b1fe9ca9790414058e4c067a46eb3f1f4a1654a21b3ec3c5e896feb"
@@ -2255,7 +2232,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "8a79300d9404cd0f2b211cb2906cf36ef77c2da4bdea70957d17e8ae68baffcf"
@@ -2277,7 +2254,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "6f7115bfadb6ecf4c08e87acab6d6e4e26c70a24131986aad2b0b26fa0cabcb2"
@@ -2301,7 +2278,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "3e092d96ee919b03131ce65d24cc84e9c5ae2e8a517516bf067f7f0baabbbdc8"
@@ -2316,7 +2293,7 @@
         },
         {
             "rule": "getback\\.ch\\/clients\\/x6HjM\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
@@ -2334,65 +2311,65 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "6e84a36b23443d5fa631de71aa1741bfd60b45b4629a0206209707f6a6a9bdb4"
+                "3149a1ce5a78f10da09167233d864d9b7c9cb6c1942a5260b5c8f61abcb6d919"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_gbs": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gbc": {
-                    "ttl": 7776005,
+                    "ttl": 7776002,
                     "length": 32,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 1
                 },
                 "_gb_lh": {
                     "ttl": null,
                     "length": 14,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_gb_ver": {
-                    "ttl": 2592005,
+                    "ttl": 2592006,
                     "length": 3,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "_gb_views": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_permission": {
-                    "ttl": 470488352,
+                    "ttl": 469360902,
                     "length": 7,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_has_push_support": {
-                    "ttl": 470488352,
+                    "ttl": 469360902,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_is_push_subscriber": {
-                    "ttl": 470488352,
+                    "ttl": 469360902,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 },
                 "gb_push_disabled": {
-                    "ttl": -863995,
+                    "ttl": -863997,
                     "length": 1,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.000016583472910897,
                     "uniqueness": 0.5
                 }
             },
@@ -2411,16 +2388,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "3f898a5499479f42cbd6066d2aa78b7416b4ff038621686637831ab7201a72a2"
+                "a16d24a417facf59fa92a99c3068e1ca422d16feb426d58555c6563a4856f7e6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gbs": 0.000013537295248409367,
-                "_gbc": 0.000013537295248409367
+                "_gbs": 0.000016583472910897,
+                "_gbc": 0.000016583472910897
             },
             "exampleSites": [
                 "sportxx.ch",
@@ -2436,34 +2413,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "60baf6b41ec7506cae4f52c3e1ef89117a1655ca960348995e552035a4c9e150"
+                "3e8f9c1aa5671939edd5268d9303a323a2af70c3aba7a6a80deed88ac0cfbc01"
             ],
             "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sportxx.ch",
-                "www.sportxx.ch"
-            ]
-        },
-        {
-            "rule": "getback\\.ch\\/x6HjM\\/session_data\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2480,7 +2435,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "a5bb4dfae2f39c044787028d1cc9eaa823eae1bbd9d5e3ec200c009ecf3d6ca3"
@@ -2502,16 +2457,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
-                "a82974cce64c9b08d10ef51ab027ab91decc6b8eaa66f3d096e46b5108db8e56"
+                "9c0efe48c25ba0678d00865837d1089878cbae65a4b8c7884d83489b252bc864"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gb_lh": 0.000013537295248409367,
-                "_schn": 0.000013537295248409367
+                "_gb_lh": 0.000016583472910897,
+                "_schn": 0.000016583472910897
             },
             "exampleSites": [
                 "sportxx.ch",
@@ -2527,7 +2482,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "29320f88afc56e513b460673aad7033ae9ee0ef6354dcac99875b34e23145655"
@@ -2549,7 +2504,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "031ea2ddbfeedf249ce7849f4b391b831169247a65a71a9f198741e02c10a80a"
@@ -2565,33 +2520,33 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000156,
+    "cookies": 0.000207,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5932203389830508
+            "prevalence": 0.5686274509803921
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3220338983050847
+            "prevalence": 0.35294117647058826
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.0847457627118644
+            "prevalence": 0.0784313725490196
         }
     ],
     "types": {
-        "Script": 80,
-        "Stylesheet": 42,
-        "XHR": 16,
+        "Script": 76,
+        "Stylesheet": 44,
+        "Other": 3,
         "Fetch": 14,
-        "Image": 25,
-        "Other": 2
+        "Image": 23,
+        "XHR": 8
     },
     "nameservers": [
+        "ns-689.awsdns-22.net",
         "ns-1339.awsdns-39.org",
         "ns-1983.awsdns-55.co.uk",
-        "ns-689.awsdns-22.net",
         "ns-508.awsdns-63.com"
     ]
 }

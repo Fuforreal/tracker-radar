@@ -7,14 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000338,
-    "sites": 5,
+    "prevalence": 0.000058,
+    "sites": 7,
     "subdomains": [
         "engagement",
-        "zipservice"
+        "zipservice",
+        "aqt",
+        "mafo",
+        "bls"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "adalliance\\.io\\/socket\\.io\\/",
@@ -25,7 +28,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -44,12 +47,34 @@
                 "zipservice"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 4,
+            "prevalence": 0.0000332,
             "cnames": [],
             "responseHashes": [
-                "11744fa76f30088c68021c3db48a83a238283b342638810873a0e5456f3c9bf8"
+                "c6e566ea979dfed9479f994c755f356621ed38aa1db5479b4807389d6530dc12"
             ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geo.de",
+                "www.geo.de",
+                "www.stern.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aqt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -57,28 +82,120 @@
                 "geo.de",
                 "www.toggo.de"
             ]
+        },
+        {
+            "rule": "adalliance\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mafo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "f4a9f3e39ba53121a9d438d5ac53c1ce5046dfd03c540ffd8fbe510d5f491030"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geo.de",
+                "www.stern.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/mafo\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mafo"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "23d70a8e75c84f46add06693ec2cdb027d71529f771cf5222a929a0b855da949"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geo.de",
+                "www.stern.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/api\\/participantsurvey\\/next",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bls"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "84a4ac8cd2f619425c18b1590a706f2f0259bf16126d9d4dc55bb8637428a1a8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geo.de",
+                "www.stern.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/api\\/participantsurvey\\/next",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bls"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geo.de",
+                "www.stern.de"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000166,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.8666666666666667
         },
         {
             "domain": "emsservice.de",
-            "prevalence": 0.25
+            "prevalence": 0.13333333333333333
         }
     ],
     "types": {
         "WebSocket": 2,
-        "Fetch": 2
+        "Fetch": 8,
+        "Document": 2,
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns.second-ns.com",
+        "ns3.second-ns.de",
         "ns1.your-server.de",
-        "ns3.second-ns.de"
+        "ns.second-ns.com"
     ]
 }

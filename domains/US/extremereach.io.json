@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00025,
+    "prevalence": 0.000307,
     "sites": 37,
     "subdomains": [
         "beacons",
@@ -19,15 +19,35 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "extremereach\\.io\\/cp-imp",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacons"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bleacherreport.com",
+                "tracker.gg"
+            ]
+        },
+        {
             "rule": "extremereach\\.io\\/cp-conversion",
-            "cookies": 0.0000541,
+            "cookies": 0.0000663,
             "fingerprinting": 0,
             "subdomains": [
                 "beacons"
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.0000541,
+            "prevalence": 0.0000663,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -41,9 +61,9 @@
                 "nystateofhealth.ny.gov",
                 "www.babbel.com",
                 "www.bespokepost.com",
-                "www.creditsesame.com",
                 "www.litter-robot.com",
-                "www.reliant.com"
+                "www.reliant.com",
+                "www.tommyjohn.com"
             ]
         },
         {
@@ -54,53 +74,83 @@
                 "vast"
             ],
             "apis": {},
-            "sites": 20,
-            "prevalence": 0.000135,
+            "sites": 22,
+            "prevalence": 0.000182,
             "cnames": [],
             "responseHashes": [
-                "b3e51b9ab938d1579e68a36ff9d2c354f70de351535d2d1d42a28ca0bbedf743",
-                "15768349b3701750c3b87d98372e7a9711d2ff4781d021ae2cd69fdeefb7eb9b",
-                "b1f03c73be814e29a5e779c1870bc49bf449e38d8c67950276018f1ece2780ba",
-                "6be1457632983e00b1cc536d05018e2435fb29e5791cf7bf71151ce0040036a2",
-                "0daae0bf9250c404f7aa5f17a101f032e5825725a0a425c9a2895e99eb76c110",
-                "c146b3d8162959afbad5358d25477fde9dc2c1c5d81697a3b4e2f68c89b8ecb6",
-                "135a7db151fc8dae1a87907d1303bda74033b3f6e501a9d09de7a776b249ded4",
-                "9000ce7ab4df556bcf6d751d271c8b722d70de8313f138d95f18cb1b4965e60a",
-                "38f0b194c92e4baafb77ed34910e8c766b46737d10c8f772c1b814f0220cb071",
-                "6a54b91df3c15cf79f83b8ff60bf935c44ec453f27778909a4b6ce620fd91bca",
-                "44511c7d62700aaef5a98d844bad9ded1689669910d53af7ef3db3376c43ff06",
-                "4d4aa44bb2c72f52c3d3813a2c69b846cae43f97e088c239f442bc1f4ab88a19",
-                "40a86a0b2db649e98baacea475ea3fa8a5a273b79c9b6c4b8a84914f0cdb6b6e",
-                "c5c7675f44aed781fea8531547d7993c0911889e9808ac21a4583f31e146287d",
-                "5cc499c39e9df7155d71a395d44726a8132eec241c48c0819e17e04f9b194d08",
-                "97dac9285358abf45f61c2a8f6d13623c7ae417240f285fb172d9e327a8fa15a",
-                "a6685a9f31c14aae9934d5a1cece6a6ca1890f7cd6bd8db245f565df5b3361f0",
-                "cebf1e0e9fcfd6a76aebc2efae62372ac39a4dd08810ef16c12809dc379160ea",
-                "45adeae0f2c03c11796d31ba188b7e1f4e7d1574c192b5e022c87ba62855397a"
+                "379132cc25b631fb48d1cd5865dda4d0041d4e21a4147ff1d8de20336996d761",
+                "c213c640d4210a6577c623027091570c5f0c05d0c4d9d13daefc92749c1a9e45",
+                "5427a2b9c3e0c9cdf4068c1a54c82b108e6138d1d54407181366ef2572f98cfc",
+                "a07dd67a5fe2708d020d211648c609a2cc2d676d3b33c4326db6c736ee2ef1a8",
+                "d7206fa8af65568279fef83f4676dec2869ca4b4e7560f554e711f61bbdccd06",
+                "349cd28ac496b3799fd4e973271c4e0c2c2793a188f3938e1058a7485f683388",
+                "4e2eb64c09f245e0ef71c09b08ce2a53ae51cab176641516e658246ef0a0a200",
+                "c8f1645c0c8d035b45ec5319c58ead5ff27b7c14e395f18c95e5d3ad8b635421",
+                "6f0aac3c5f11ac2b193b6aae426da73ea76e457481abfaeacf48898139e9f63b",
+                "7684a0ea7f2e156d6b68034ecb4293120841725507a756f5b710a1f78f4a6b22",
+                "c4e97dd818eaf8011537f924c9c6f3784c29e6371302441130bb72915d4a4358",
+                "7e66fc10a2c61eda1281652f88e8dbe788fee807b5ed6ac73027b405f9d9b5a1",
+                "eaa5e68ec17d60e1395ffa5b0fcf96950282ca1f8299b3d6b5f2d473bad4b73b",
+                "6b198afad5cb68b26c41a478b014dc58465259cf2266eef80e8e8995c6a52ec5",
+                "08c390b224413785858e6978f72b51e814a2c156a2d1bea7385613eaa0a796da",
+                "10ce93b11baa122771629de6df229eda873451d0699e72e2a17b7599fdb7c7b9",
+                "4cdff46e0dd7a62da4f8eb8d40db1f28fb5614f356ac05dc73da0dcd7432d608",
+                "61686454176880522659f2b2282741dde1c4dc765f2e01df63e9fa1ec0df501f",
+                "7485ffc4d4c9675132440558d95f652f5b1f186c9325f1c77295fd8ae50a9722"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mygolfspy.com",
+                "www.dallasobserver.com",
+                "www.orlandosentinel.com",
+                "www.wsbtv.com",
+                "www.belgrade-news.com",
                 "www.baltimoreravens.com",
-                "www.baseball-almanac.com",
+                "www.nydailynews.com",
+                "www.idahostatejournal.com",
+                "www.hockey-reference.com",
+                "www.edhat.com",
+                "www.sun-sentinel.com",
+                "www.westword.com",
+                "www.bozemandailychronicle.com",
+                "www.idahopress.com",
+                "www.today.com",
+                "www.miaminewtimes.com",
+                "www.dailypress.com",
                 "www.capitalgazette.com",
-                "www.commanders.com",
-                "www.courant.com",
+                "www.baseball-almanac.com",
+                "www.24h.com.vn",
+                "www.metro.us"
+            ]
+        },
+        {
+            "rule": "extremereach\\.io\\/error",
+            "cookies": 0.0000829,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacons"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000829,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baltimoreravens.com",
+                "www.baseball-almanac.com",
+                "www.belgrade-news.com",
                 "www.dailypress.com",
                 "www.dallasobserver.com",
-                "www.detroitlions.com",
-                "www.dividendinvestor.com",
-                "www.edhat.com",
-                "www.goskagit.com",
-                "www.heraldonline.com",
-                "www.hjnews.com",
-                "www.mesabitribune.com",
+                "www.idahostatejournal.com",
                 "www.metro.us",
-                "www.pilotonline.com",
-                "www.sfexaminer.com",
-                "www.sfweekly.com",
+                "www.miaminewtimes.com",
+                "www.today.com",
                 "www.westword.com"
             ]
         },
@@ -113,7 +163,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -121,103 +171,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "baseball-almanac.com",
-                "www.westword.com"
-            ]
-        },
-        {
-            "rule": "extremereach\\.io\\/error",
-            "cookies": 0.000108,
-            "fingerprinting": 0,
-            "subdomains": [
-                "beacons"
-            ],
-            "apis": {},
-            "sites": 16,
-            "prevalence": 0.000108,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "baseball-almanac.com",
-                "www.capitalgazette.com",
-                "www.commanders.com",
-                "www.courant.com",
-                "www.dailypress.com",
-                "www.dallasobserver.com",
-                "www.detroitlions.com",
-                "www.dividendinvestor.com",
-                "www.goskagit.com",
-                "www.heraldonline.com",
-                "www.hjnews.com",
-                "www.mesabitribune.com",
-                "www.metro.us",
-                "www.pilotonline.com",
-                "www.sfexaminer.com",
-                "www.westword.com"
-            ]
-        },
-        {
-            "rule": "extremereach\\.io\\/media\\/119933\\/164833\\/d86b3f67-3c5a-401b-ad77-158f9aaea7c7\\/cc4a6a5f-0ce5-4d3c-b3c7-48efd5f41675\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "commanders.com",
-                "www.mesabitribune.com"
-            ]
-        },
-        {
-            "rule": "extremereach\\.io\\/media\\/119933\\/164833\\/88eadeb1-c154-4fc4-9adb-7e8227e78ed3\\/9985ef5d-63e2-4c4a-9101-99060b800db0\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "detroitlions.com",
-                "www.metro.us"
-            ]
-        },
-        {
-            "rule": "extremereach\\.io\\/media\\/107116\\/179657\\/b2200f18-bb63-4629-a651-b92da94801b6\\/865502f8-27b0-41f2-9c0c-37013b1d6564\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "goskagit.com",
-                "www.hjnews.com"
+                "www.hockey-reference.com"
             ]
         },
         {
@@ -229,7 +183,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "57451176fd5cfab310d5a0cbc4c5e16716c8448782b8734dcd076ad7e34620bd"
@@ -245,43 +199,59 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000196,
+    "cookies": 0.000199,
     "topInitiators": [
         {
             "domain": "imasdk.googleapis.com",
-            "prevalence": 0.6388888888888888
+            "prevalence": 0.4492753623188406
         },
         {
             "domain": "first party",
-            "prevalence": 0.18055555555555555
+            "prevalence": 0.21739130434782608
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.11594202898550725
         },
         {
-            "domain": "connatix.com",
-            "prevalence": 0.027777777777777776
-        },
-        {
-            "domain": "doubleclick.net",
-            "prevalence": 0.027777777777777776
+            "domain": "primis.tech",
+            "prevalence": 0.043478260869565216
         },
         {
             "domain": "d1je72vo6cxqo9.cloudfront.net",
-            "prevalence": 0.013888888888888888
+            "prevalence": 0.028985507246376812
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.028985507246376812
+        },
+        {
+            "domain": "nbcnews.com",
+            "prevalence": 0.028985507246376812
+        },
+        {
+            "domain": "s-nbcnews.com",
+            "prevalence": 0.028985507246376812
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.028985507246376812
+        },
+        {
+            "domain": "bleacherreport.net",
+            "prevalence": 0.014492753623188406
         }
     ],
     "types": {
-        "Image": 24,
-        "XHR": 20,
-        "Media": 8,
+        "Image": 20,
+        "XHR": 22,
+        "Media": 2,
         "Script": 2
     },
     "nameservers": [
-        "ns-430.awsdns-53.com",
+        "ns-1192.awsdns-21.org",
         "ns-1587.awsdns-06.co.uk",
-        "ns-552.awsdns-05.net",
-        "ns-1192.awsdns-21.org"
+        "ns-430.awsdns-53.com",
+        "ns-552.awsdns-05.net"
     ]
 }

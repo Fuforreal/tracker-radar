@@ -4,11 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000812,
-    "sites": 12,
+    "prevalence": 0.000108,
+    "sites": 13,
     "subdomains": [
         "embed",
-        "cdn"
+        "api",
+        "cdn",
+        "counter",
+        "cdnlove",
+        "cdnlastmodified"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -16,13 +20,16 @@
         {
             "rule": "scribblelive\\.com\\/widgets\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "embed"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000338,
+            "apis": {
+                "Navigator.prototype.appVersion": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000498,
             "cnames": [],
             "responseHashes": [
                 "9857b4b059c3ef76bfd24ee1d9759b6ac2ad33ef459976d429d4d18c4a7b92d2"
@@ -35,12 +42,57 @@
                 "spectrumnews1.com",
                 "www.baynews9.com",
                 "www.mynews13.com",
-                "www.ny1.com"
+                "www.ny1.com",
+                "www.telegraaf.nl"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/v1\\/stream\\/2982823\\/posts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "7d25276b88a6092366232658e885c48bf73b37311e8dd0f267e11fb8d52613a6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.blick.ch"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/v1\\/stream\\/3026095\\/posts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "f46bef550a0e3bd00eec11970916c3332bc367fbca78a6d7d3114740c951ad1d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.blick.ch"
             ]
         },
         {
             "rule": "scribblelive\\.com\\/modules\\/lib\\/addons\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.00000829,
             "fingerprinting": 1,
             "subdomains": [
                 "embed",
@@ -52,7 +104,7 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [],
             "responseHashes": [
                 "166649193d90560233250b64997ee3d72819d624770cc32ff752ba1a975cda69"
@@ -62,13 +114,13 @@
                 "SLStatUid": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.0000082917364554485,
                     "uniqueness": 1
                 },
                 "SLStatHist": {
                     "ttl": null,
                     "length": 9,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.0000082917364554485,
                     "uniqueness": 1
                 }
             },
@@ -77,24 +129,98 @@
                 "startribune.com",
                 "www.startribune.com"
             ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "counter"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "SLStatUid": 0.000016583472910897,
+                "_li_dcdm_c": 0.0000082917364554485
+            },
+            "exampleSites": [
+                "startribune.com",
+                "www.telegraaf.nl"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/likes\\/event\\/3023155",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlove"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [
+                "1c639bd69f529e831b0dc26ea90c546c015e3055da04aa984f96ef4f86a743f8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telegraaf.nl",
+                "www.telegraaf.nl"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/lastmodified\\/3023155",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlastmodified"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telegraaf.nl",
+                "www.telegraaf.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000166,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.76
+        },
+        {
+            "domain": "d11rmv9we9fli4.cloudfront.net",
+            "prevalence": 0.24
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 10,
+        "Fetch": 4,
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-717.awsdns-25.net",
         "ns-1046.awsdns-02.org",
-        "ns-309.awsdns-38.com",
-        "ns-1922.awsdns-48.co.uk"
+        "ns-1922.awsdns-48.co.uk",
+        "ns-309.awsdns-38.com"
     ]
 }

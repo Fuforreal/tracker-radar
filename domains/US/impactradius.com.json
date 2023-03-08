@@ -7,14 +7,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
-    "sites": 9,
+    "prevalence": 0.0000912,
+    "sites": 11,
     "subdomains": [
+        "linkto-hrblock-com.ct",
         "partners-hollisterco-com.ct",
         "partners-hostgator-com.customtraffic",
         "partners-shinola-com.ct"
     ],
     "cnames": [
+        {
+            "original": "linkto.hrblock.com",
+            "resolved": "linkto-hrblock-com.ct.impactradius.com"
+        },
         {
             "original": "partners.hollisterco.com",
             "resolved": "partners-hollisterco-com.ct.impactradius.com"
@@ -31,15 +36,42 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "impactradius\\.com\\/xc\\/417662\\/391261\\/5683",
+            "cookies": 0.0000166,
+            "fingerprinting": 0,
+            "subdomains": [
+                "linkto-hrblock-com.ct"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000166,
+            "cnames": [
+                {
+                    "original": "linkto.hrblock.com",
+                    "resolved": "linkto-hrblock-com.ct.impactradius.com"
+                }
+            ],
+            "responseHashes": [
+                "f49b266ac1932eca0de1fcdc39bc8bf1a839f2955c86b923689543514405556f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hrblock.com",
+                "www.hrblock.com"
+            ]
+        },
+        {
             "rule": "impactradius\\.com\\/xc\\/2241895\\/804620\\/11419",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "partners-hollisterco-com.ct"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "partners.hollisterco.com",
@@ -47,7 +79,7 @@
                 }
             ],
             "responseHashes": [
-                "f77937bdd9b3df8f82625f0fc5ad3f4e3bb92592bb839abf6fa215d40485cfc4"
+                "bfe408428332ae7d25c100284737cb916193e9ad8c98c3e12357c97cd56cc982"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -66,20 +98,18 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "partners.hostgator.com",
                     "resolved": "partners-hostgator-com.customtraffic.impactradius.com"
                 }
             ],
-            "responseHashes": [
-                "a407cc9d0d4c17d53f865ffa6392c139f94fa206a7352ca6cba08373023c031f"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000013537295248409367
+                "IR_gbd": 0.000016583472910897
             },
             "exampleSites": [
                 "hostgator.com",
@@ -88,14 +118,14 @@
         },
         {
             "rule": "impactradius\\.com\\/xc\\/2625270\\/937706\\/12668",
-            "cookies": 0.0000135,
+            "cookies": 0.0000166,
             "fingerprinting": 0,
             "subdomains": [
                 "partners-shinola-com.ct"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000166,
             "cnames": [
                 {
                     "original": "partners.shinola.com",
@@ -103,7 +133,7 @@
                 }
             ],
             "responseHashes": [
-                "00840117263043c8e911cefea0f457d1d8168a2c5b26275710fbb5c902703264"
+                "1022595cb72cb64f7a91b3be61482e9960257b5abe0c1f4f1d3b732a8c97dd31"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -116,32 +146,32 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000609,
+    "cookies": 0.0000912,
     "topInitiators": [
         {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.2857142857142857
+        },
+        {
             "domain": "impactradius-tag.com",
-            "prevalence": 0.36363636363636365
+            "prevalence": 0.2857142857142857
         },
         {
             "domain": "impactradius-event.com",
-            "prevalence": 0.2727272727272727
-        },
-        {
-            "domain": "go-mpulse.net",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "impactcdn.com",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.21428571428571427
         }
     ],
     "types": {
-        "XHR": 4,
+        "XHR": 6,
         "Image": 2
     },
     "nameservers": [
-        "ns-37.awsdns-04.com",
         "ns-1795.awsdns-32.co.uk",
+        "ns-37.awsdns-04.com",
         "ns-903.awsdns-48.net",
         "ns-1172.awsdns-18.org"
     ]
