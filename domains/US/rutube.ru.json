@@ -7,9 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
+    "prevalence": 0.0000136,
     "sites": 2,
-    "subdomains": [],
+    "subdomains": [
+        "log"
+    ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
@@ -20,7 +22,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c9ca7e5d777f340fb79ad727be8f507c38c6e84a495dd3fb68d2364fd815ca2f"
@@ -35,7 +37,7 @@
         },
         {
             "rule": "rutube\\.ru\\/raichu-embed\\/index\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [],
             "apis": {
@@ -49,13 +51,13 @@
                 "Document.cookie setter": 2,
                 "Navigator.prototype.vendor": 2,
                 "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
                 "Screen.prototype.availTop": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.availLeft": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.availHeight": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Screen.prototype.colorDepth": 2,
@@ -70,26 +72,46 @@
                 "Event.prototype.timeStamp": 1
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4d3b1bf24937086360d1256e2953bf801c9eb9da92817019634f234eb3e0ff4f"
+                "9559c4748a61b48434d7b11c5b58a594e77373ab7e90214c21c3daa5ee4eb464"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "uuid": {
-                    "ttl": 788400008,
+                    "ttl": 788400005,
                     "length": 36,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "cookietest": {
-                    "ttl": -1678117759,
+                    "ttl": -1678494088,
                     "length": 1,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amedia.online",
+                "cz24.news"
+            ]
+        },
+        {
+            "rule": "rutube\\.ru\\/player_events\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "amedia.online",
@@ -99,7 +121,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -108,13 +130,14 @@
     ],
     "types": {
         "Stylesheet": 2,
-        "Script": 2
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns4-cloud.nic.ru",
-        "ns8-cloud.nic.ru",
-        "ns8-l2.nic.ru",
         "ns4-l2.nic.ru",
-        "ns3-l2.nic.ru"
+        "ns3-l2.nic.ru",
+        "ns8-l2.nic.ru",
+        "ns8-cloud.nic.ru",
+        "ns4-cloud.nic.ru"
     ]
 }

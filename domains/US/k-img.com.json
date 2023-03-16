@@ -7,17 +7,54 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000912,
-    "sites": 11,
+    "prevalence": 0.0000949,
+    "sites": 14,
     "subdomains": [
+        "4travel.r",
+        "akiba-souken",
         "img1.kakaku",
         "eiga",
         "tasclap",
         "img1-kakaku.ssl"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "cdn.4travel.jp",
+            "resolved": "4travel.r.k-img.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "k-img\\.com\\/js\\/jquery\\.cookie\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "4travel.r",
+                "akiba-souken"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.4travel.jp",
+                    "resolved": "4travel.r.k-img.com"
+                }
+            ],
+            "responseHashes": [
+                "8c0301b3dba5061632d7321cd8bb7bd527f48288d5cb15ff614ea0c1dcc1ad69"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4travel.jp",
+                "akiba-souken.com"
+            ]
+        },
         {
             "rule": "k-img\\.com\\/images\\/common\\/icon\\/icn_pr\\.svg",
             "cookies": 0,
@@ -27,7 +64,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2f8ea1cbad8dfd9fa74a484b303ee50174a7d491110f7e12c53b578c9e04cac1"
@@ -37,7 +74,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4travel.jp",
-                "www.webcg.net"
+                "akiba-souken.com"
             ]
         },
         {
@@ -50,7 +87,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "1c5d7e17222840df185f3412d0f188200127618dda299b70fc2c069db2da95fc"
@@ -72,7 +109,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "37cd7f88b6e82fbc8c8af4c045c4468498267f48270078b59aa26c852c4a99ce"
@@ -94,7 +131,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0d6f77f30d30a1a20e26c9ecb7d78fe0c4f4c02b9b41a5e0706b3b9a5969123c"
@@ -116,32 +153,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "56c77077c39e21ae79083ddd0e1d47b5ad4ef0031bd387513db0ef550ad03c5f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icon\\/mall\\/icon_mall_1\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "6211bc94fd3e9c71d2d7bd1d157504a17f3001ca6869bfe348f4affdf910b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -160,10 +175,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7dce6676d96c58939647e9bac341b802a8b44477c4a0a75048c2395afa27ba23"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icon\\/mall\\/icon_mall_1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6211bc94fd3e9c71d2d7bd1d157504a17f3001ca6869bfe348f4affdf910b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -181,11 +218,11 @@
                 "tasclap"
             ],
             "apis": {
-                "Element.prototype.getClientRects": 2,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "Element.prototype.getClientRects": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f7f6a5894f1d19ddad6fa392b2ece2c5e578cbf7da4ea805b6885eb6985b6e3d"
@@ -207,7 +244,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8e958f60fbf777edbd2d9b72c92c2ecd04dfbd4083f7cdbf80ca007c6e02335f"
@@ -229,7 +266,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "23b9c2c38335c532acb5cba5edebfde5c48efa335c23b34a0d3c647a211e4f84"
@@ -251,7 +288,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8e78c759d37a28e22dd383e7a930260efa545a0dfeefef2e0889ed66a596fd54"
@@ -273,7 +310,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7d6ba13b690dee4af8ac51913d50f8509c65be9516aa24e2f761b3a1aa96dbd3"
@@ -295,7 +332,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8a1b58d624eeb47e9e3073531a5d364e41a2e7853c052873a79917f97dd0bb44"
@@ -320,7 +357,7 @@
                 "window.innerHeight": 1
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "060c43ae8f53cab7a52ac947f9438ed87464e7857955fd440f7bb2cfdae95f0f"
@@ -344,7 +381,7 @@
                 "window.innerWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0c7178cc6ca34fb18e30f070a5e7a1c287b2d7ccfcba2cfdf06e0f46eda55740"
@@ -366,7 +403,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ed750276fdf53f4458d5b39313ed35d4f7a89db13615325e18e3d5b16ab70a2f"
@@ -388,7 +425,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "23c7ffbd4f75c0c70609042c711ed027736c7824681dcc588254b6c35d4572c0"
@@ -403,7 +440,7 @@
         },
         {
             "rule": "k-img\\.com\\/script\\/analytics\\/s_code\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "tasclap"
@@ -426,7 +463,7 @@
                 "PerformanceTiming.prototype.navigationStart": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "cc08ab96e1109fe5929c95dd26677b479c93eb83b23598535f1e3e8f33ef6bb7"
@@ -434,33 +471,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "s_fid": {
-                    "ttl": 157852803,
+                    "ttl": 157852804,
                     "length": 33,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "s_nr": {
-                    "ttl": 2592003,
+                    "ttl": 2592004,
                     "length": 13,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "gpv_v15": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 61,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "s_ptc": {
                     "ttl": null,
                     "length": 95,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "s_cc": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 }
             },
@@ -479,7 +516,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "3ec11fe77d184e75f3582757e65b79aaab2ab65f3d4b70dc3bc1b2af6bb73b4a"
@@ -493,7 +530,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_951_1\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_2114_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -501,32 +538,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "130442133346f9bb14f3867f058d696d42d552f38d29da38d4d6b03ecb21a9eb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icon\\/editor\\/tasclapeditor_75\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "949eadb7e019c14e08505ef05c1cac8c2d63143572bacd5f15b325bfed3746f1"
+                "22c7401598745d8783050f5ff30c672205f853dab56dabc5e600c1f6f8af5d89"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -545,7 +560,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "da23ee076721949a4231c59a6a288bc284198949aa7d9faa184f6a7cd978311b"
@@ -559,7 +574,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_1038_1\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_813_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -567,10 +582,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "99fb6eb805d30d11bc3301f870328499cceda17800457e2368340ed730704cc2"
+                "2b6745b29b5737a88cbb381ac4c4969b9dcfbf9742f6e8b9f4911fadfc68d545"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -581,7 +596,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_185\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_37\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -589,10 +604,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9d5e01e5744fccda74fa356249b3cca15e373e6ad9a73afa9881fdb723886718"
+                "8167216485ec87cc642a27d5f0cae008bb332be80135f23aaa8be5aa332eaa99"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -603,7 +618,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_365_1\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_2251_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -611,10 +626,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8cdf75c13a76ef4f1eae9ffd97181918408f5d1ea954dc92b5926810884c8787"
+                "7001d0ca8df1b6de403df26f7505fb029241a743fdaba3672721a26adfbe7060"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -625,7 +640,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_69\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -633,10 +648,98 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6cadcbfccb0b90d3e11432215065034654ab0c15184f3f0c010dcfa17c485c0a"
+                "88221d37ba93763317c190a4e586b0a448fba7a2980b5901b7d9644a0729019e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_1961_1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f5545a88b67d7af7f1ef4e050605e2ac6068068acd8489a496f7cee6a328dde8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_36\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d6fae8a1d9b71d01ed889bc5ecc198f0039de3f74080dc2bbd04b9bc02713bbf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_2237_1\\.jpg",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e350a8f156249d7345aa4c373db628011c880f3ac1ec84b4ee7f267f7e8376c1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_51\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "009c7a68073c3a2de8c42860f0f2e21802564b2d0e61ce9a3b1b6b5e93bf6f8e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -655,7 +758,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f5a51a66d379577ac1647201dca8e1ffa5f59e5fd3e9f193f07115f7f870a700"
@@ -677,252 +780,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "26b0115f4e2208bb0b0b3c8253e9f1bcb0b84d27341ad00b1f114dd173e39290"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_905_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "8ef1de610dd2b9742d83438c76b59e01b18b95fb4217f35b607daf17f110968a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_5\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "19739b6145b2493f8d28eec07ba5059b90e570bb09f703cc9faf2ffe25ea18e7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_471_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "0c7da9f7002b87142449223ae9716e0468758c7f9289bb927b36747d27c7946c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_104\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "716d99b1323230085731deed9ebfce1531019bd49d1e6bdc053d185e2796f857"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_5010_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "aa24c2101d815bf88bb9e6a7158fbc5fdcb33c49abd97bd72d1c66ba390d6d0d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_74\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "e5631711194d63454590cfd19bedce643ea1e05e92fdc5c57192043c2b0be23f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_36\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "d6fae8a1d9b71d01ed889bc5ecc198f0039de3f74080dc2bbd04b9bc02713bbf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_158_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "f7fa4a47849d87e5c83e50a6baded4c5e2ef7972f9c18c30e729d7f771250f8c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_29\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "1de2bd6dbca8c3f40943b7151efd62c06d3a374616d84a9185a72c6143dabcfb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_2638_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "62da3f2c074c6995ea9e978d509c3e22a8931b5a8635c4a611f33ca057ae88ec"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasclap.jp",
-                "mens.tasclap.jp"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_146\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tasclap"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "78a69fa99306e9b9027c1ff16fdd0127c6cfae38b8a9899c86263468950691e0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -941,7 +802,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d7f2cf8db0199d17cf2db5ea2281016e0b14a6ce156a93217b3fce070cd615a8"
@@ -963,7 +824,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2cb0f21f7b9e7631d09698fafcf4c98ff6ecd9f7af906e2c0339d6e6ba3d0d8b"
@@ -977,7 +838,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_1215_1\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_471_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -985,10 +846,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "293d22808f17823b9c5492a78f5af94df594ee79d68c26f288cdf6fae1e2da8e"
+                "0c7da9f7002b87142449223ae9716e0468758c7f9289bb927b36747d27c7946c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -999,7 +860,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_4083_1\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_104\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1007,10 +868,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "83276ce7469a50045ca16b7480c99db4dd68b481f32e9b8928e9c3f831292d48"
+                "716d99b1323230085731deed9ebfce1531019bd49d1e6bdc053d185e2796f857"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1021,7 +882,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_8\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_158_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1029,10 +890,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "33c41d378bef4ca57274a578ca7ae7e3320990282c9d1d7a133161ec127531ac"
+                "f7fa4a47849d87e5c83e50a6baded4c5e2ef7972f9c18c30e729d7f771250f8c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1043,7 +904,7 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_2540_1\\.jpg",
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_29\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1051,10 +912,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b0eca25d282005fffa62c244bfc527bbbb458b304500ed636be7bc1caeb44c37"
+                "1de2bd6dbca8c3f40943b7151efd62c06d3a374616d84a9185a72c6143dabcfb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1065,7 +926,227 @@
             ]
         },
         {
-            "rule": "k-img\\.com\\/images\\/ad\\/adadmin\\/adimage\\/prev\\/webcg_728_90\\.png",
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_2100_1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "904991d361560cf104c7391cba9638c66ea18989016502a8080a75da7136a3c0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_14\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7f1d001e921f88c13461cd5eb1fc540b325e9e6a131544f50d2dd7de3c67889f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_30_1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ca3ee85379ad41316e5b9a941283f583d1757d96284a53864fae906090a926d4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_30\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f0a34d63309abc58913de344c5894a94d5426181fe2a96fa020ee96549728924"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_2331_1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "495c7e4d5590eb6bd1b80b1f8a2e8fb911aaed782c8f3808578469da26fe8527"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_183\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e7753410b7101eb18895a40c393765afad9ce6535fcb96841ab613cf233b94a5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_1066_1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e6a895dcdcfdf4798259a07a2a5ec2519e2b3c6e057256858c1356dbdeb4ebc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_92\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3c139598c4232ccacb9893135caedf355bcf57cba136ce96569c47e196207eea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/450\\/styling_outfit_5105_1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ab8128b89615b6fc75dff12adddc2c60942a1085a1cf05a8d7ce81abcf578f11"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/icv\\/60\\/shop_staff_192\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tasclap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "78b8f149608413793ca95dc6ed603a3acbb5f735c5d6828d9067ecbd2deea477"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp"
+            ]
+        },
+        {
+            "rule": "k-img\\.com\\/images\\/ad\\/adadmin\\/adimage\\/prev\\/webcg_300_250\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1073,32 +1154,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "62518704a0584afc2bd91f2b6b92f59353eab42fe442aeb200fdbea7215d6b2c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webcg.net",
-                "www.webcg.net"
-            ]
-        },
-        {
-            "rule": "k-img\\.com\\/images\\/ad\\/adadmin\\/adimage\\/202303\\/87650\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img1.kakaku"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "df3cfb0ad087722f52e91ea437f9c6fd8e8edb35a2d6866ff95ca75b67e754b7"
+                "be3cbf6b6b743fd87b26f49c744681a26bdf2cdb83874fa97c2b9e993354103f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1111,31 +1170,27 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9265175718849841
+            "prevalence": 0.9526748971193416
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.0670926517571885
-        },
-        {
-            "domain": "geoedge.be",
-            "prevalence": 0.006389776357827476
+            "prevalence": 0.047325102880658436
         }
     ],
     "types": {
-        "Image": 70,
+        "Script": 20,
+        "Image": 72,
         "Stylesheet": 4,
-        "Script": 18,
         "Font": 2
     },
     "nameservers": [
         "ns-643.awsdns-16.net",
-        "ns-487.awsdns-60.com",
         "ns-1832.awsdns-37.co.uk",
+        "ns-487.awsdns-60.com",
         "ns-1255.awsdns-28.org"
     ]
 }

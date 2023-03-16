@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "www.mapper"
+        "www.mapper",
+        "252ab0c16454d446c.mapper",
+        "2e13038e95b4df119.mapper"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,12 +23,35 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8ed1db7e703722fe74a2a0b8ea62eecf6e7c8ffb641235861d305305b2c2a180"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntp.org",
+                "www.pool.ntp.org"
+            ]
+        },
+        {
+            "rule": "ntppool\\.org\\/none",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "252ab0c16454d446c.mapper",
+                "2e13038e95b4df119.mapper"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -45,14 +70,15 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
+        "anyns.pch.net",
         "ns-g1.bitnames.com",
-        "ns3.us.bitnames.com",
-        "ns1.eu.bitnames.com",
         "ns2.us.bitnames.com",
-        "ns1.us.bitnames.com",
-        "anyns.pch.net"
+        "ns1.eu.bitnames.com",
+        "ns3.us.bitnames.com",
+        "ns1.us.bitnames.com"
     ]
 }

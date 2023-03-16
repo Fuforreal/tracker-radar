@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "www"
+        "www",
+        "assets"
     ],
     "cnames": [
         {
             "original": "api.burberry.com",
             "resolved": "www.burberry.com.edgekey.net"
+        },
+        {
+            "original": "assets.burberry.com",
+            "resolved": "assets.burberry.com.edgekey.net"
         }
     ],
     "fingerprinting": 0,
@@ -31,7 +36,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.burberry.com",
@@ -41,9 +46,7 @@
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "OptanonConsent": 0.0000082917364554485
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "burberry.com",
                 "us.burberry.com"
@@ -58,7 +61,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.burberry.com",
@@ -70,9 +73,34 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "OptanonConsent": 0.0000082917364554485
-            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burberry.com",
+                "us.burberry.com"
+            ]
+        },
+        {
+            "rule": "burberry\\.com\\.edgekey\\.net\\/is\\/image\\/Burberryltd\\/F6A1E1F7-1DFE-4928-94FC-4C9CF955F56A",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.burberry.com",
+                    "resolved": "assets.burberry.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "eced304567f10f8f0269a9239becf9e684a3e5c2032a064998e64a966fb15beb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "burberry.com",
                 "us.burberry.com"
@@ -90,7 +118,8 @@
     ],
     "types": {
         "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": []
 }

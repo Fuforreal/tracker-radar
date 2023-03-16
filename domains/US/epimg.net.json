@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000663,
-    "sites": 8,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
-        "ep00"
+        "ep00",
+        "cadenaser00",
+        "los40es00"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,8 +25,8 @@
                 "ep00"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -35,7 +37,52 @@
             "exampleSites": [
                 "caracol.com.co",
                 "los40.com",
-                "www.huffingtonpost.es"
+                "www.huffingtonpost.es",
+                "www.wradio.com.co"
+            ]
+        },
+        {
+            "rule": "epimg\\.net\\/ser\\/estilos\\/v1\\.x\\/v1\\.0\\/pie\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cadenaser00"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8e61f93e844313c2c409ebfe7a12e9b3e9637cdecf58c1dc5f9448ba9fe91fa8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "caracol.com.co",
+                "www.wradio.com.co"
+            ]
+        },
+        {
+            "rule": "epimg\\.net\\/estaticos\\/recursosgraficos\\/responsive\\/img\\/flecha-player\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cadenaser00"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a9a5993a30ee6c5feb3579db9e45174de0a143261565bf5a97f797f7ba342ee"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "caracol.com.co",
+                "www.wradio.com.co"
             ]
         },
         {
@@ -46,12 +93,12 @@
                 "ep00"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 2,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.userAgent": 3,
                 "Date.prototype.getTime": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "7024e845786d8162b04bdc9e1ab362e188748f8562382b5598163b2f841c5236"
@@ -61,7 +108,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "caracol.com.co",
-                "los40.com"
+                "los40.com",
+                "www.wradio.com.co"
+            ]
+        },
+        {
+            "rule": "epimg\\.net\\/js\\/comun\\/streamsense\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "los40es00"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "276b5244682738d09b1f2ea556faf7d6d967c844fa95c762c121a0957ebe4503"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "caracol.com.co",
+                "www.wradio.com.co"
             ]
         },
         {
@@ -72,11 +144,10 @@
                 "ep00"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2
+                "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a9e91374ed3a79cc0498d7a838c2f3407f1c9084dbf1b1843a56914895de2e68"
@@ -92,33 +163,35 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9418604651162791
+            "prevalence": 0.9152542372881356
         },
         {
             "domain": "prisasd.com",
-            "prevalence": 0.03488372093023256
+            "prevalence": 0.04519774011299435
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.011627906976744186
+            "prevalence": 0.022598870056497175
         },
         {
             "domain": "socy.cloud",
-            "prevalence": 0.011627906976744186
+            "prevalence": 0.01694915254237288
         }
     ],
     "types": {
-        "XHR": 3,
-        "Script": 4
+        "XHR": 4,
+        "Stylesheet": 2,
+        "Image": 2,
+        "Script": 7
     },
     "nameservers": [
-        "dns1.p01.nsone.net",
         "dns2.p01.nsone.net",
         "dns3.p01.nsone.net",
-        "dns4.p01.nsone.net"
+        "dns4.p01.nsone.net",
+        "dns1.p01.nsone.net"
     ]
 }

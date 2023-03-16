@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
-        "eu"
+        "eu",
+        "us"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,7 +25,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2c3752ccdf0eb13142d5cf082f2c45446eaecf377701a88dc950ae5ae56a9121"
@@ -36,6 +37,28 @@
                 "buffed.de",
                 "www.pcgames.de"
             ]
+        },
+        {
+            "rule": "diablo3\\.com\\/static\\/js\\/tooltips\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41902de8aacb4cb6a9e78effaf344db484bb392e89ad9497b8fa5c27bac44b93"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diablofans.com",
+                "www.diablofans.com"
+            ]
         }
     ],
     "categories": [],
@@ -44,11 +67,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Stylesheet": 2
+        "Stylesheet": 2,
+        "Script": 2
     },
     "nameservers": [
         "ns-1734.awsdns-24.co.uk",

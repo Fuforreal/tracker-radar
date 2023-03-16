@@ -4,12 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
-    "subdomains": [],
+    "prevalence": 0.0000407,
+    "sites": 6,
+    "subdomains": [
+        "api"
+    ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "exchangeratesapi\\.io\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9398a34bfebdf13ebb6709684ef30c29a88a16469994b302eab1f8930f5fd09e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clickup.com",
+                "unboundmerino.com"
+            ]
+        },
         {
             "rule": "exchangeratesapi\\.io\\/api\\/latest",
             "cookies": 0,
@@ -17,7 +41,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
@@ -35,15 +59,19 @@
     "topInitiators": [
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.5
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "fishersci.eu",
-            "prevalence": 0.5
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 4
     },
     "nameservers": [
         "ram.ns.cloudflare.com",

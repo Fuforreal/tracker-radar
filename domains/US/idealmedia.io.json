@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000058,
-    "sites": 7,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
-        "c"
+        "c",
+        "autocounter",
+        "jsc"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,7 +23,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -31,14 +33,84 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "glavred.info",
-                "tsn.ua",
-                "www.karar.com"
+                "gordonua.com",
+                "tsn.ua"
+            ]
+        },
+        {
+            "rule": "idealmedia\\.io\\/1x1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "autocounter"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "obozrevatel.com",
+                "www.obozrevatel.com"
+            ]
+        },
+        {
+            "rule": "idealmedia\\.io\\/o\\/b\\/obozrevatel\\.com\\.1418748\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jsc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6d066d27e7301971e0d61068a0b048e407844ab314d2fc1971d1015914ec6c91"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "obozrevatel.com",
+                "www.obozrevatel.com"
+            ]
+        },
+        {
+            "rule": "idealmedia\\.io\\/o\\/b\\/obozrevatel\\.com\\.1418748\\.es6\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "jsc"
+            ],
+            "apis": {
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1945af0def8062f56f7a6cc4673194ea1c87eb9f3c340980ac1d7ba40ab718d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "obozrevatel.com",
+                "www.obozrevatel.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000332,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
@@ -46,10 +118,11 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 7,
+        "Image": 2
     },
     "nameservers": [
-        "gordon.ns.cloudflare.com",
-        "fiona.ns.cloudflare.com"
+        "fiona.ns.cloudflare.com",
+        "gordon.ns.cloudflare.com"
     ]
 }

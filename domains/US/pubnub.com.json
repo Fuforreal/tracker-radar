@@ -7,14 +7,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000116,
-    "sites": 14,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "pubsub",
+        "ps10"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "pubnub\\.com\\/sdk\\/javascript\\/pubnub\\.4\\.13\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "2c4c9bd975f724b57d230da0bcba86eca1c264ee656664c36ab910451fbfcec5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denvergov.org",
+                "www.dekalbcountyga.gov",
+                "www.denvergov.org",
+                "www.phoenix.gov"
+            ]
+        },
         {
             "rule": "pubnub\\.com\\/sdk\\/javascript\\/pubnub\\.4\\.27\\.4\\.min\\.js",
             "cookies": 0,
@@ -24,7 +50,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "188be987a7c5e6620996177d5f48e4f52ac2d4fb36c02fe8d2a169f0de63eab4"
@@ -47,7 +73,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "064dcad08b082d67fece0b073adf0d9b23714189a1cb7e5325d8a505dd9edcb2"
@@ -61,26 +87,28 @@
             ]
         },
         {
-            "rule": "pubnub\\.com\\/sdk\\/javascript\\/pubnub\\.4\\.13\\.0\\.js",
+            "rule": "pubnub\\.com\\/time\\/0",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "pubsub",
+                "ps10"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "2c4c9bd975f724b57d230da0bcba86eca1c264ee656664c36ab910451fbfcec5"
+                "93e848cb4a82f3b26e10950baf709234eca7bbc3f96db1b222a11eed4638f3d5",
+                "ad6b7817432b0141413bfa37e4d2a426cd4b667bfa66d20f61f219cc1de03648"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dekalbcountyga.gov",
-                "www.denvergov.org",
-                "www.phoenix.gov"
+                "bizrate.com",
+                "www.bizrate.com",
+                "www.keen.com"
             ]
         },
         {
@@ -94,7 +122,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "eb114c8f93eb57b3a4cf92deb83fe435cdda3d285216571e9f55ec7e969a4f07"
@@ -114,27 +142,32 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5909090909090909
         },
         {
             "domain": "granicus.com",
-            "prevalence": 0.2
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "recoil.tv",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.13636363636363635
+        },
+        {
+            "domain": "cnnx.io",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 11,
+        "XHR": 3
     },
     "nameservers": [
-        "dns4.p01.nsone.net",
-        "ns01.pubnubdns.com",
         "dns2.p01.nsone.net",
-        "ns02.pubnubdns.com",
         "dns3.p01.nsone.net",
         "dns1.p01.nsone.net",
-        "ns03.pubnubdns.com"
+        "ns01.pubnubdns.com",
+        "dns4.p01.nsone.net",
+        "ns03.pubnubdns.com",
+        "ns02.pubnubdns.com"
     ]
 }

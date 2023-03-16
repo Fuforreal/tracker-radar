@@ -4,29 +4,91 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "u1sweb"
+        "u1sact"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "webullfinance\\.com\\/us\\/office\\/d8a2c03c74094f0698f04f7fd13c137b\\.png",
+            "rule": "webullfinance\\.com\\/api\\/edu\\/v1\\/l\\/course\\/getCourseInfo",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "u1sweb"
+                "u1sact"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "445d63cf2c50e6de747b2e342b878574eea82d726c59ddac3a81f9ad16526feb"
+                "30f332ebbc9dd2ba549af51dfaa763372827376dd1f489e3629f465dfaa82e2b"
             ],
-            "type": "Image",
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webull.com",
+                "www.webull.com"
+            ]
+        },
+        {
+            "rule": "webullfinance\\.com\\/api\\/edu\\/v1\\/l\\/lesson\\/getCoursewareDetail",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "u1sact"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3df447b68f205d7ed5260e0005c1549a54c853bf8ac267125e79cdc846fe4c9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webull.com",
+                "www.webull.com"
+            ]
+        },
+        {
+            "rule": "webullfinance\\.com\\/api\\/edu\\/v1\\/l\\/course\\/getCourseInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "u1sact"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webull.com",
+                "www.webull.com"
+            ]
+        },
+        {
+            "rule": "webullfinance\\.com\\/api\\/edu\\/v1\\/l\\/lesson\\/getCoursewareDetail",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "u1sact"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -41,11 +103,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6875
+        },
+        {
+            "domain": "webullfintech.com",
+            "prevalence": 0.3125
         }
     ],
     "types": {
-        "Image": 2
+        "Fetch": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "ns-528.awsdns-02.net",

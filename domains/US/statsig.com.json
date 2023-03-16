@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000829,
-    "sites": 1,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
         "api"
     ],
@@ -21,17 +21,123 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "headspace.com",
+                "www.zleague.gg"
+            ]
+        },
+        {
+            "rule": "statsig\\.com\\/v1\\/initialize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "620a458f0c59247a58e496ea24cbd0b917d9c23e3ce9d58a2642ac6b3c027495"
+                "c8533c930e18651e0728f4ec526e8b6b7224e5f6be4bdca9876729ddb0774646",
+                "1245e3937c795c6fe1f244d8702345eed9fcbc1ade24a2e789f6800b7b91f703"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "headspace.com",
-                "www.headspace.com"
+                "www.headspace.com",
+                "www.zleague.gg"
+            ]
+        },
+        {
+            "rule": "statsig\\.com\\/v1\\/rgstr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "headspace.com",
+                "www.zleague.gg"
+            ]
+        },
+        {
+            "rule": "statsig\\.com\\/v1\\/rgstr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "headspace.com",
+                "www.zleague.gg"
+            ]
+        },
+        {
+            "rule": "statsig\\.com\\/v1\\/log_event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zleague.gg",
+                "www.zleague.gg"
+            ]
+        },
+        {
+            "rule": "statsig\\.com\\/v1\\/log_event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zleague.gg",
+                "www.zleague.gg"
             ]
         }
     ],
@@ -41,16 +147,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Fetch": 2
+        "Preflight": 6,
+        "Fetch": 7
     },
     "nameservers": [
-        "ns-828.awsdns-39.net",
-        "ns-1713.awsdns-22.co.uk",
         "ns-369.awsdns-46.com",
-        "ns-1071.awsdns-05.org"
+        "ns-1071.awsdns-05.org",
+        "ns-828.awsdns-39.net",
+        "ns-1713.awsdns-22.co.uk"
     ]
 }

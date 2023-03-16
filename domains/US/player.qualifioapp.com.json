@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000663,
-    "sites": 8,
+    "prevalence": 0.000061,
+    "sites": 9,
     "subdomains": [],
     "cnames": [
         {
@@ -18,6 +18,10 @@
         },
         {
             "original": "interactive.valeursactuelles.com",
+            "resolved": "player.qualifioapp.com"
+        },
+        {
+            "original": "juega-y-gana.fcbarcelona.es",
             "resolved": "player.qualifioapp.com"
         },
         {
@@ -34,7 +38,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "campagne.20minutes.fr",
@@ -42,7 +46,7 @@
                 }
             ],
             "responseHashes": [
-                "90701a9a6981ceefd8e6402fee0fe6f1158ecb4fc15cdf77632fa7065965ac18"
+                "fe1639666c022c0572971fd97781421fbb9c1f6d717598fe4ea1b2905d227bdc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -53,13 +57,38 @@
             ]
         },
         {
+            "rule": "player\\.qualifioapp\\.com\\/store-participation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "juega-y-gana.fcbarcelona.es",
+                    "resolved": "player.qualifioapp.com"
+                }
+            ],
+            "responseHashes": [
+                "02dc41bd7f7a2ae048d367e200d593ab26630152010eaa64506434f8069861f2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcbarcelona.es",
+                "www.fcbarcelona.es"
+            ]
+        },
+        {
             "rule": "player\\.qualifioapp\\.com\\/v1\\/loader\\/script",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [
                 {
                     "original": "acties.hartvannederland.nl",
@@ -95,12 +124,17 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "qualifio.com",
+            "prevalence": 0.6
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 6,
+        "XHR": 2
     },
     "nameservers": []
 }

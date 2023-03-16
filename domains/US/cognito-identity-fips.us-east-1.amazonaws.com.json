@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000829,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 0,
@@ -22,17 +22,37 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usda.gov",
+                "www.mshp.dps.missouri.gov"
+            ]
+        },
+        {
+            "rule": "cognito-identity-fips\\.us-east-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "1362833e2111b90323532e028a9ec6360c9af23285d3a234fe2beb8f53edb062"
+                "b3fb96fa415545ae531ce1f2a2432573e73ef6af2ac5e32d8c41a4bd23a740d1",
+                "f2f8205678b27d5c1c5ad54efe7603d847e4616f63b0baac2007b7ca8f750378"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usda.gov",
-                "planthardiness.ars.usda.gov"
+                "planthardiness.ars.usda.gov",
+                "www.mshp.dps.missouri.gov"
             ]
         }
     ],
@@ -48,12 +68,13 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Preflight": 2,
+        "Fetch": 3
     },
     "nameservers": [
-        "ns-118.awsdns-14.com",
         "ns-629.awsdns-14.net",
         "ns-1469.awsdns-55.org",
+        "ns-118.awsdns-14.com",
         "ns-1629.awsdns-11.co.uk"
     ]
 }

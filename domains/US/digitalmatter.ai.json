@@ -4,16 +4,64 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000663,
-    "sites": 8,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
-        "creatives",
         "cc-endpoint",
-        "bid-collector"
+        "bid-collector",
+        "creatives"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "digitalmatter\\.ai\\/api\\/cc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cc-endpoint"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "61835352dfbbfbfae4345655fc7451e580272b28a4aa3377fe008701ac7ebf34"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delfi.ee",
+                "foorum.naistekas.delfi.ee",
+                "www.delfi.lt",
+                "www.delfi.ee",
+                "www.lrytas.lt"
+            ]
+        },
+        {
+            "rule": "digitalmatter\\.ai\\/api\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bid-collector"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delfi.ee",
+                "foorum.naistekas.delfi.ee",
+                "www.delfi.lt",
+                "www.delfi.ee",
+                "www.lrytas.lt"
+            ]
+        },
         {
             "rule": "digitalmatter\\.ai\\/publishers\\/Delfi\\.lv\\/cmp_logo\\/Delfilv_logo\\.png",
             "cookies": 0,
@@ -23,7 +71,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "851c8a384c25fd88c27c4534e4f6bcd6111cda5022cd428612c7d4c654dd8cd9"
@@ -36,52 +84,6 @@
                 "rus.delfi.lv",
                 "www.delfi.lv"
             ]
-        },
-        {
-            "rule": "digitalmatter\\.ai\\/api\\/cc",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cc-endpoint"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
-            "cnames": [],
-            "responseHashes": [
-                "61835352dfbbfbfae4345655fc7451e580272b28a4aa3377fe008701ac7ebf34"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "delfi.lt",
-                "www.delfi.ee",
-                "www.delfi.lt",
-                "www.lrytas.lt"
-            ]
-        },
-        {
-            "rule": "digitalmatter\\.ai\\/api\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bid-collector"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "delfi.lt",
-                "www.delfi.lt",
-                "www.delfi.ee",
-                "www.lrytas.lt"
-            ]
         }
     ],
     "categories": [],
@@ -90,19 +92,23 @@
     "topInitiators": [
         {
             "domain": "dimatter.ai",
-            "prevalence": 0.9361702127659575
+            "prevalence": 0.9206349206349206
         },
         {
             "domain": "consensu.org",
-            "prevalence": 0.06382978723404255
+            "prevalence": 0.047619047619047616
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.031746031746031744
         }
     ],
     "types": {
-        "Image": 3,
-        "Fetch": 8
+        "Fetch": 10,
+        "Image": 3
     },
     "nameservers": [
-        "hal.ns.cloudflare.com",
-        "liv.ns.cloudflare.com"
+        "liv.ns.cloudflare.com",
+        "hal.ns.cloudflare.com"
     ]
 }

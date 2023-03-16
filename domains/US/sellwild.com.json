@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00024,
-    "sites": 29,
+    "prevalence": 0.000217,
+    "sites": 32,
     "subdomains": [
         "ghb.ads",
         "cache",
@@ -24,7 +24,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "9e066d921ad98dddf1794e889458777011ff16eb35cbfc26a69a87f7ab4e6546"
@@ -40,14 +40,14 @@
         },
         {
             "rule": "sellwild\\.com\\/adunit\\/tracking",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "ghb.ads"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -55,8 +55,31 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000082917364554485
+                "lotame_domain_check": 0.000006777317673211296
             },
+            "exampleSites": [
+                "audiokarma.org",
+                "www.audizine.com",
+                "www.toyota-4runner.org"
+            ]
+        },
+        {
+            "rule": "sellwild\\.com\\/adunit\\/multitracking",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghb.ads"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "audiokarma.org",
                 "www.audizine.com",
@@ -71,18 +94,21 @@
                 "cache"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "8cb57bcd3c45925fc961717862df07a414330719b20a17ae3579bf47f501b8be"
+                "fd4c1f2154c7ae0dc10c069241703f2da301354d01a55f800269f3b289025bad",
+                "eca009eed20cb509b4b629a76a924712afea7b506834adcb5097d3f5bbde23bf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boingboing.net",
-                "www.tapatalk.com"
+                "www.fordfe.com",
+                "www.tapatalk.com",
+                "www.thedenofsmellyfeet.com"
             ]
         },
         {
@@ -93,24 +119,66 @@
                 "cache"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000498,
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [],
             "responseHashes": [
-                "423246ba58739e581d7e50b5248d789be847d3a49b079055ee8b62b9a81d8c7b",
-                "b8a53e888eb51f996d6bf37d29c972a662bf8bd1b017f6255a831581d902bc09",
-                "78d106e325c747fb6a26ba05afe54593a8d4f5b119c564d7627274de17d3b79d"
+                "15bc3796f3c134fc492331097ad07aa67558272507e961c5c7885490115df1f6",
+                "9aeee1a824e8797fafa745819f4d21c4ecebe9a13e7b14b0380dbd2c7bceac63",
+                "5115dd8ae104984319fd9e17ada0284a3fd4773cba8b330ab3f0629d6a89b081"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "forward.com",
-                "www.kdrv.com",
+                "www.abc12.com",
                 "www.kezi.com",
+                "www.kvoa.com",
                 "www.noozhawk.com",
                 "www.timesofisrael.com",
-                "www.waow.com"
+                "www.wralsportsfan.com",
+                "www.wral.com"
+            ]
+        },
+        {
+            "rule": "sellwild\\.com\\/prebid7_20_0_v1\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {
+                "window.sessionStorage": 6,
+                "Date.prototype.getTime": 6,
+                "Navigator.prototype.cookieEnabled": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "NavigatorUAData.prototype.getHighEntropyValues": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "window.name": 3,
+                "Navigator.prototype.doNotTrack": 5,
+                "Navigator.prototype.language": 5,
+                "window.localStorage": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000407,
+            "cnames": [],
+            "responseHashes": [
+                "016209754f5b92f7cce3c66c0035d8fcf48b11d08881319155a3476824a1582d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abc12.com",
+                "www.gatewayclassiccars.com",
+                "www.kezi.com",
+                "www.kvoa.com",
+                "www.noozhawk.com",
+                "www.shefinds.com"
             ]
         },
         {
@@ -124,10 +192,10 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0d3b6277a7a7eeb6be332fa63f9c9545e44450c79f5eb9b041a8479e46c42b9e"
+                "bd2526358c735c2e08160461b912e5c64057401024636637bb55c4e0782ec22a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -138,7 +206,7 @@
             ]
         },
         {
-            "rule": "sellwild\\.com\\/prebidlink\\/466139\\/hb_324410_11392\\.js",
+            "rule": "sellwild\\.com\\/prebidlink\\/466243\\/hb_324410_11392\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -146,10 +214,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c1035b4b2ba743abc4f2f79cd89b1c04bb2543145b7b51b394b9f62d8a8c388a"
+                "b75b759a2d065d17d8264faeaab50c165912120629e056cbdbc16f8530ce9fc7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -160,7 +228,7 @@
             ]
         },
         {
-            "rule": "sellwild\\.com\\/prebidlink\\/466139\\/wrapper_hb_324410_11392\\.js",
+            "rule": "sellwild\\.com\\/prebidlink\\/466243\\/wrapper_hb_324410_11392\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -168,7 +236,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "be5d349c78c1f5a83887a9e545c1481d3f9f12b0897ec5d4d45e41471cb5db90"
@@ -190,7 +258,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ab26ff9a6c7ee5103718c33fa439229a45004f110bd60bb9dbcb57fc5b543024"
@@ -204,28 +272,61 @@
             ]
         },
         {
-            "rule": "sellwild\\.com\\/prebidlink\\/19422\\/hbw_master_324410_11392\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "sellwild\\.com\\/prebidlink\\/19426\\/hbp_v7_324410_11392\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
             "subdomains": [
                 "player.ads"
             ],
             "apis": {
-                "window.localStorage": 2,
+                "window.sessionStorage": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.width": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
                 "Document.cookie getter": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
+                "Document.cookie setter": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.language": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.languages": 1,
+                "window.outerWidth": 1,
+                "window.outerHeight": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availHeight": 1,
+                "window.screenLeft": 1,
+                "window.screenTop": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.connection": 1,
+                "Screen.prototype.colorDepth": 1
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4f424a3d089b481fb4f848d35a8a20790ee040e955b60a42c7a1f80996b4d541"
+                "c5d6ca585546bf732bac93a2b9fab92d1cb31073521b2b876799b246c9c11cdd"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592023,
+                    "length": 16,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 0.5
+                },
+                "_pubcid": {
+                    "ttl": 31536023,
+                    "length": 36,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "audizine.com",
@@ -233,26 +334,27 @@
             ]
         },
         {
-            "rule": "sellwild\\.com\\/adunit\\/multitracking",
+            "rule": "sellwild\\.com\\/ferrarichat\\/ferrarichat-ferrarchat\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "ghb.ads"
+                "widget"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "00a7554a4260d0c75b42afaa7b5134188e18bb5975fcdd8504b420ea9642fee3"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "audizine.com",
-                "www.audizine.com",
-                "www.toyota-4runner.org"
+                "ferrarichat.com",
+                "www.ferrarichat.com"
             ]
         },
         {
@@ -264,19 +366,45 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "b8af639c75c9bd3858b68f0ade03127a5372f027902a174558e49e0d6466ee35",
-                "7e198ec31adf96aa89527f676e5f36c953ecae9bda7effe471c4c12fc97fdedc"
+                "dab4c18030919d53e6c3c1dd963522e67ac0db7eadcb00b2e4ad5c34897097c8",
+                "7435cba27419647a9b59bf6a2fc07dd0cb6961203828fe1607f95d2db502d3d3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ferrarichat.com",
-                "www.motor1.com",
+                "www.ferrarichat.com",
                 "www.toyota-4runner.org"
+            ]
+        },
+        {
+            "rule": "sellwild\\.com\\/tapatalk\\/tapatalk-tapatalk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "0ddc99205757038502ae90c7050ab019fc60183f0b49d445d5f6af0e3d20b987"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fordfe.com",
+                "www.fordfe.com",
+                "www.tapatalk.com",
+                "www.thedenofsmellyfeet.com"
             ]
         },
         {
@@ -287,13 +415,13 @@
                 "widget"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "43582ee5df4c98106ac6d63ea6131d3bfff8b3b030a1207225c1a5a2223be232"
+                "8449c14029b8bcbf0d6e0763aee9785cba4f509d139ad518f217ee804676dbe1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -301,47 +429,6 @@
             "exampleSites": [
                 "gatewayclassiccars.com",
                 "www.gatewayclassiccars.com"
-            ]
-        },
-        {
-            "rule": "sellwild\\.com\\/prebid7_20_0_v1\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cache"
-            ],
-            "apis": {
-                "window.sessionStorage": 5,
-                "Date.prototype.getTime": 7,
-                "Navigator.prototype.cookieEnabled": 7,
-                "window.innerWidth": 5,
-                "window.innerHeight": 5,
-                "NavigatorUAData.prototype.getHighEntropyValues": 5,
-                "Navigator.prototype.userAgent": 7,
-                "Navigator.prototype.doNotTrack": 4,
-                "Screen.prototype.height": 4,
-                "Screen.prototype.width": 4,
-                "Navigator.prototype.language": 4,
-                "window.localStorage": 4,
-                "window.name": 3
-            },
-            "sites": 7,
-            "prevalence": 0.000058,
-            "cnames": [],
-            "responseHashes": [
-                "016209754f5b92f7cce3c66c0035d8fcf48b11d08881319155a3476824a1582d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gatewayclassiccars.com",
-                "www.gatewayclassiccars.com",
-                "www.kdrv.com",
-                "www.kezi.com",
-                "www.noozhawk.com",
-                "www.shefinds.com",
-                "www.waow.com"
             ]
         },
         {
@@ -353,10 +440,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f32d51727a27079f1344c4543ad9c6e1ce1c8b10637ffb776d27ad6b2bcbcbd3"
+                "3a81c8cccdc9c2e86014f4bc4a135c97bef42a9e9068735e06d36acd9dd105a9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -374,13 +461,13 @@
                 "widget"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4d578916113fc37d8fa74f9bb41f42819b7f1d8b230ba28d854f4e064913b464"
+                "6bad4f30e6b5703e9dd1d998539a9617fcf4bb899f4a2e0be1d74fcf0fadeba8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -401,10 +488,10 @@
                 "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3efc85f0dbc1fc93c89aad0ca2ebd0a849ef7bc3863515e004b16f4cf681c67b"
+                "3d9e27d818cfe636b5d004a5d2a796dda9b142b30c10618a216141a591adb4bf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -423,10 +510,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "44bdc66fac98f9b676cb042c78b58ef7c27b19c942973ea2fdaea4392d9281c3"
+                "38c4dd49d9e19299cac2efd23d824ae5a1164ddaa78456a8ec15a33178694c49"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -447,10 +534,10 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a69da78e6f2c309bff65e133f5e3381fd9ba7f12ffd14095b6e9fdb3758d02a3"
+                "817274ee5b9eee4f142f2d353ff2903a205f8cbd956e575973d1fc35ac5ec21b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -461,7 +548,7 @@
             ]
         },
         {
-            "rule": "sellwild\\.com\\/prebidlink\\/466071\\/hb_324410_12576\\.js",
+            "rule": "sellwild\\.com\\/prebidlink\\/466240\\/hb_324410_12576\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -469,10 +556,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8f2c0d0b5de9a6d0641cead1e1b8fe399f1d845236e2bedc78a7f678e904a09b"
+                "bef98293a164b50335d2a5e55e51368a6814fa4cdb8dcaaad57b7a9a531bbd72"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -483,7 +570,7 @@
             ]
         },
         {
-            "rule": "sellwild\\.com\\/prebidlink\\/466071\\/wrapper_hb_324410_12576\\.js",
+            "rule": "sellwild\\.com\\/prebidlink\\/466240\\/wrapper_hb_324410_12576\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -491,7 +578,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2e23d3751948b1287fe6ebe4f69ce95c126d7d1ea0522992bdb6c374b90979d5"
@@ -505,7 +592,68 @@
             ]
         },
         {
-            "rule": "sellwild\\.com\\/prebidlink\\/19419\\/hbw_master_324410_12576\\.js",
+            "rule": "sellwild\\.com\\/prebidlink\\/19426\\/hbp_v7_324410_12576\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "player.ads"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.connection": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.languages": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c00a056d08e478041d202a01ff00671a648a324160ff2c88d54c5ebf201c9d14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592010,
+                    "length": 16,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 0.5
+                },
+                "_pubcid": {
+                    "ttl": 31536027,
+                    "length": 36,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toyota-4runner.org",
+                "www.toyota-4runner.org"
+            ]
+        },
+        {
+            "rule": "sellwild\\.com\\/prebidlink\\/19426\\/hbw_master_324410_12576\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -520,10 +668,10 @@
                 "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "29cc1c05f15825c23bf9627a97533f8c1717f4c90257b75fdd6943249b0492a4"
+                "9761cbea2c8583ac2de613617f3a219b03f15d5ea348ab26bd715c90600e66b7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -532,54 +680,131 @@
                 "toyota-4runner.org",
                 "www.toyota-4runner.org"
             ]
+        },
+        {
+            "rule": "sellwild\\.com\\/whatismyip\\/whatismyip-what-is-my-ip\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "73d70c9fbc034807199e93746e57d2cd8e629ab0c35e07c907ef8b4515cb5d91"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "whatismyip.com",
+                "www.whatismyip.com"
+            ]
+        },
+        {
+            "rule": "sellwild\\.com\\/listings-img-data-sm-whatismyip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9cccd132db20e953f34a5321d23eacdc33fbe62985546eb9d4007fe522bad2b9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "whatismyip.com",
+                "www.whatismyip.com"
+            ]
+        },
+        {
+            "rule": "sellwild\\.com\\/wral\\/wral-warl\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a2c7bbc763a2a1c7c67eef825f45d2995c0559b1ff716c5af45b6ac86df91f27"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wralsportsfan.com",
+                "www.wral.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000498,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.45454545454545453
+            "prevalence": 0.5084745762711864
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.2545454545454545
+            "prevalence": 0.2033898305084746
         },
         {
             "domain": "adligature.com",
-            "prevalence": 0.10909090909090909
+            "prevalence": 0.1016949152542373
         },
         {
             "domain": "d3plfjw9uod7ab.cloudfront.net",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.0847457627118644
         },
         {
             "domain": "awarealley.com",
-            "prevalence": 0.03636363636363636
+            "prevalence": 0.03389830508474576
         },
         {
             "domain": "adgrid.io",
-            "prevalence": 0.01818181818181818
+            "prevalence": 0.01694915254237288
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.01818181818181818
+            "prevalence": 0.01694915254237288
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.01818181818181818
+            "prevalence": 0.01694915254237288
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.01694915254237288
         }
     ],
     "types": {
         "XHR": 9,
-        "Fetch": 15,
-        "Script": 31
+        "Fetch": 21,
+        "Script": 42
     },
     "nameservers": [
-        "ns-1696.awsdns-20.co.uk",
-        "ns-955.awsdns-55.net",
         "ns-21.awsdns-02.com",
+        "ns-955.awsdns-55.net",
+        "ns-1696.awsdns-20.co.uk",
         "ns-1275.awsdns-31.org"
     ]
 }

@@ -7,14 +7,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "congstar-congstar"
+        "api",
+        "congstar-congstar",
+        "faq-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "digitalcx\\.com\\/event\\/Onload",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "65ee43ee0e7ff7fd7fc36759a7b33a540def31cf6ba9fa1b9bc2d4bb9e2a974e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avl.nl",
+                "www.avl.nl"
+            ]
+        },
         {
             "rule": "digitalcx\\.com\\/event\\/onLoad",
             "cookies": 0,
@@ -24,10 +48,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b0393a6bc7aa4f0e7cb1232acf3739ceaa9c8774e57d6afb63834d30ec7d35cb"
+                "93a6b9be18b7b560271ce7ee24c682eb1accc93fb9a49a0f443babd4d61780e9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -35,6 +59,28 @@
             "exampleSites": [
                 "congstar.de",
                 "www.congstar.de"
+            ]
+        },
+        {
+            "rule": "digitalcx\\.com\\/faq\\/9d9f12e5-84e5-4b24-89d8-c7497e39d3bf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "faq-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6ff1ba0db3c178499dc38f00e6af5157d0a1d591ebe3d9b4af9641582fba3c9f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vvvcadeaukaarten.nl",
+                "www.vvvcadeaukaarten.nl"
             ]
         }
     ],
@@ -44,14 +90,23 @@
     "topInitiators": [
         {
             "domain": "conversationalsdevelopment.nl",
-            "prevalence": 1
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "elitechnology.com",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
+        "XHR": 4,
         "Script": 2
     },
     "nameservers": [
-        "norm.ns.cloudflare.com",
-        "sue.ns.cloudflare.com"
+        "sue.ns.cloudflare.com",
+        "norm.ns.cloudflare.com"
     ]
 }

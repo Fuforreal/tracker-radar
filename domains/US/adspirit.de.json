@@ -7,18 +7,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000124,
-    "sites": 15,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
-        "cdn",
         "aponet",
+        "cdn",
         "konradin",
-        "unicum",
+        "szdm",
+        "hella",
+        "lehreronline",
         "lumitos",
         "unseremedia",
         "hifitest",
-        "optel",
-        "szdm"
+        "optel"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -28,22 +29,22 @@
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "cdn",
                 "aponet",
+                "cdn",
                 "konradin"
             ],
             "apis": {
-                "Date.prototype.getTime": 8,
-                "Navigator.prototype.plugins": 7,
-                "Navigator.prototype.mimeTypes": 8,
-                "Screen.prototype.width": 8,
-                "Screen.prototype.height": 8,
-                "window.innerWidth": 8,
-                "window.innerHeight": 8,
-                "Document.cookie getter": 8
+                "Date.prototype.getTime": 11,
+                "Navigator.prototype.plugins": 9,
+                "Navigator.prototype.mimeTypes": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.height": 9,
+                "window.innerWidth": 9,
+                "window.innerHeight": 9,
+                "Document.cookie getter": 9
             },
-            "sites": 8,
-            "prevalence": 0.0000663,
+            "sites": 12,
+            "prevalence": 0.0000813,
             "cnames": [],
             "responseHashes": [
                 "5cd46ce7d15699ba2a1acac132c2375e7848cb06ee16c8cabb65ef5252b4c846"
@@ -52,9 +53,13 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "unicum.de",
+                "pharmazeutische-zeitung.de",
+                "ptaforum.pharmazeutische-zeitung.de",
+                "trauer.sueddeutsche.de",
+                "unterrichten.zum.de",
                 "www.chemie.de",
                 "www.elektropraktiker.de",
+                "www.hella.com",
                 "www.hifitest.de",
                 "www.pharmazeutische-zeitung.de",
                 "www.sueddeutsche.de",
@@ -63,53 +68,112 @@
             ]
         },
         {
-            "rule": "adspirit\\.de\\/adscript\\.php",
-            "cookies": 0.0000746,
-            "fingerprinting": 1,
+            "rule": "adspirit\\.de\\/adresponsivescript\\.php",
+            "cookies": 0.0000339,
+            "fingerprinting": 0,
             "subdomains": [
-                "unicum",
-                "lumitos",
-                "unseremedia",
-                "hifitest",
-                "optel",
                 "aponet",
                 "szdm",
-                "konradin"
+                "hella"
             ],
-            "apis": {
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1
-            },
-            "sites": 10,
-            "prevalence": 0.0000829,
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "674b082df7414badc8440c09afcbb34552f922b7a1afbdfff0cdaa9b603a725c",
-                "76f6106a52fdf83d4aad81b00e1257a33fb73604a51822f74f1de02fc4c01d50",
-                "9ae35aa98269a1a2f4cb9c4bbd79083b21bb291a540c8125be18982eb8c1f912",
-                "de9900fe10adbe87e14e006de617f81151d67676b31475510bee847087b351b9",
-                "fefc19e9bbf49f0bba59938fddf42ef090b3cb7c1ac2e707985f942fe0a5df6a",
-                "0ff2ef146b4c697ad5144320509bb0687ff92558f24654d55feb724b944c0816",
-                "d4489a4d1276bd227d9a4b79a50a62f5c9abb0dd057e878f2ab51df43d250f6c",
-                "5f5d5a067b0228e7343bcecb490fc0e14e23e13a24fa271e2468ad5591cb6abb",
-                "3396270d22a050caaf82129e2593f53c01624827b8a27a23209b937b1e563a5d"
+                "afcde4d2fdbaba0abe588213333e9563d4a7de1fc18bbafdd34f346da668113e",
+                "d702173a8624c646c1c4860a0f69a380220c64ddd10627e74eddd97744c702e0",
+                "0c9e4306db8234b5bd46aa66466e4296bbc65c8f769f484213a0e0d9618200cd",
+                "b204139e1348ae52127289fc7486a265b8d044983f9fc86e5fcd514328afcb99"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "unicum.de",
-                "karriere.unicum.de",
+                "pharmazeutische-zeitung.de",
+                "ptaforum.pharmazeutische-zeitung.de",
+                "trauer.sueddeutsche.de",
+                "www.hella.com",
+                "www.pharmazeutische-zeitung.de"
+            ]
+        },
+        {
+            "rule": "adspirit\\.de\\/adscript\\.php",
+            "cookies": 0.0000678,
+            "fingerprinting": 1,
+            "subdomains": [
+                "aponet",
+                "szdm",
+                "lehreronline",
+                "lumitos",
+                "unseremedia",
+                "hifitest",
+                "optel",
+                "konradin"
+            ],
+            "apis": {
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 11,
+            "prevalence": 0.0000746,
+            "cnames": [],
+            "responseHashes": [
+                "ec2ebeacfe9b6aff61858482898ecd70462d0928e2bcbe9efee8bc162c3b259c",
+                "1db86551fdf27bbe1043ce3e3bab88a91fd4140ed559d87c0f6f1d47b61ef400",
+                "2743916580f83af0be2a3b27e11399407735a11b8f9fb9a2c88dc13c41dd45a6",
+                "bcc5ee0cbe3751c8f08ab12d0db175681c92c618dd7d35c46dc4b3b82708b5a9",
+                "73ab3fdd9a9c051000c83d7cff655a4488491cfbca5cc33f8c96351d23e0383b",
+                "3b0a7c0f35c5fa35d13c529df09fbdcd8f02da518887b062a5360346e1cb51a9",
+                "5ccefeed9bb475d76ec43975856405b275afadaa593dbca1c9a8e012dacbf1fe",
+                "3a34d473555202b5e9d04788c449defdc60d14072a56ab7514880bc49baf7af4",
+                "a5e84beb2c417b44f9aa06c59343987d64b74260a7af4abc340c6f5a38b49df7",
+                "136adeafdcb8615c30d1db54c2c207f035265c9b495b619f8f7f3add78c58f20"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__cmpconsentx23857": 0.000006777317673211296
+            },
+            "exampleSites": [
+                "pharmazeutische-zeitung.de",
+                "trauer.sueddeutsche.de",
+                "unterrichten.zum.de",
                 "www.chemie.de",
                 "www.elektropraktiker.de",
                 "www.hifitest.de",
                 "www.paket.net",
                 "www.pharmazeutische-zeitung.de",
                 "www.sueddeutsche.de",
-                "www.wissenschaft.de",
-                "www.wissen.de"
+                "www.wissen.de",
+                "www.wissenschaft.de"
+            ]
+        },
+        {
+            "rule": "adspirit\\.de\\/adscrollintoview\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aponet",
+                "szdm"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pharmazeutische-zeitung.de",
+                "ptaforum.pharmazeutische-zeitung.de",
+                "trauer.sueddeutsche.de",
+                "www.pharmazeutische-zeitung.de"
             ]
         },
         {
@@ -120,10 +184,10 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 9
+                "Date.prototype.getTime": 13
             },
-            "sites": 9,
-            "prevalence": 0.0000746,
+            "sites": 13,
+            "prevalence": 0.0000881,
             "cnames": [],
             "responseHashes": [
                 "9d33f1621ca6eca3c807b75f23aea2f847f1992d487cab0aeb732332af8fab46"
@@ -132,15 +196,19 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "unicum.de",
+                "pharmazeutische-zeitung.de",
+                "ptaforum.pharmazeutische-zeitung.de",
+                "trauer.sueddeutsche.de",
+                "unterrichten.zum.de",
                 "www.chemie.de",
                 "www.elektropraktiker.de",
+                "www.hella.com",
                 "www.hifitest.de",
                 "www.paket.net",
                 "www.pharmazeutische-zeitung.de",
                 "www.sueddeutsche.de",
-                "www.wissenschaft.de",
-                "www.wissen.de"
+                "www.wissen.de",
+                "www.wissenschaft.de"
             ]
         },
         {
@@ -148,18 +216,19 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "unicum",
-                "lumitos",
-                "unseremedia",
-                "hifitest",
-                "optel",
                 "aponet",
                 "szdm",
+                "lehreronline",
+                "lumitos",
+                "unseremedia",
+                "hella",
+                "hifitest",
+                "optel",
                 "konradin"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000746,
+            "sites": 13,
+            "prevalence": 0.0000881,
             "cnames": [],
             "responseHashes": [
                 "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
@@ -167,30 +236,34 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__cmpconsentx23857": 0.0000082917364554485
+                "__cmpconsentx23857": 0.000006777317673211296
             },
             "exampleSites": [
-                "unicum.de",
+                "pharmazeutische-zeitung.de",
+                "ptaforum.pharmazeutische-zeitung.de",
+                "trauer.sueddeutsche.de",
+                "unterrichten.zum.de",
                 "www.chemie.de",
                 "www.elektropraktiker.de",
+                "www.hella.com",
                 "www.hifitest.de",
                 "www.paket.net",
                 "www.pharmazeutische-zeitung.de",
                 "www.sueddeutsche.de",
-                "www.wissenschaft.de",
-                "www.wissen.de"
+                "www.wissen.de",
+                "www.wissenschaft.de"
             ]
         },
         {
             "rule": "adspirit\\.de\\/adview\\.php",
-            "cookies": 0.0000166,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "aponet"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
@@ -200,41 +273,20 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pharmazeutische-zeitung.de",
+                "ptaforum.pharmazeutische-zeitung.de",
                 "www.pharmazeutische-zeitung.de"
             ]
         },
         {
-            "rule": "adspirit\\.de\\/adresponsivescript\\.php",
-            "cookies": 0.0000166,
-            "fingerprinting": 0,
-            "subdomains": [
-                "aponet"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "fb242f192144d980501685d2a2e9d69eca345b47be4fe963285e18154f29f816"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pharmazeutische-zeitung.de",
-                "www.pharmazeutische-zeitung.de"
-            ]
-        },
-        {
-            "rule": "adspirit\\.de\\/adscrollintoview\\.php",
+            "rule": "adspirit\\.de\\/banner\\/aponet\\/2165\\/2019-08-04\\/0_Transparent_1x1\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "aponet"
+                "cdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
@@ -245,29 +297,78 @@
             "exampleSites": [
                 "pharmazeutische-zeitung.de",
                 "www.pharmazeutische-zeitung.de"
+            ]
+        },
+        {
+            "rule": "adspirit\\.de\\/banner\\/aponet\\/1774\\/2018-11-29\\/0_Transparent_1x1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pharmazeutische-zeitung.de",
+                "www.pharmazeutische-zeitung.de"
+            ]
+        },
+        {
+            "rule": "adspirit\\.de\\/adframe\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lehreronline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9aefe9b05664f06ac8a55cad5416f60a4056bdf14bd75b2047df924798ffd2ff"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zum.de",
+                "unterrichten.zum.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000108,
+    "cookies": 0.000115,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8529411764705882
-        },
-        {
-            "domain": "googlesyndication.com",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.7619047619047619
         },
         {
             "domain": "consentmanager.net",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "twiago.com",
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Script": 29,
-        "Image": 13
+        "Script": 41,
+        "Image": 24,
+        "Document": 2
     },
     "nameservers": [
         "ns2.ns-serve.net",

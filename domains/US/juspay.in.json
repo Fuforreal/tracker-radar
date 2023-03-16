@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
+    "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
         "payments",
-        "logs"
+        "logs",
+        "public.releases",
+        "assets"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,10 +26,10 @@
                 "payments"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "4f160d5d13ec9be32e09d1164c10d04f1cad3781db5984605c218d282e316a01"
@@ -36,8 +38,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "indiatimes.com",
-                "www.myvi.in",
+                "myvi.in",
                 "www.tataplay.com",
                 "www.zee5.com"
             ]
@@ -51,7 +52,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -62,6 +63,78 @@
             "exampleSites": [
                 "myvi.in",
                 "www.myvi.in",
+                "www.zee5.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/hyper-sdk-web\\/JuspayPaymentsInterface\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public.releases"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "366a064c5d5d71d8ba2b6389d8c97ebf433a8ee9c5d66dd771e7926624962737"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zee5.com",
+                "www.zee5.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/hyper-sdk-web\\/3\\.0\\.6\\/hyper\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "public.releases"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 1,
+                "URL.createObjectURL": 1,
+                "window.localStorage": 2,
+                "Navigator.prototype.appName": 1,
+                "window.innerWidth": 1,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "38c40d1ac6691c0efeb49bde1c9c365defb7e6f9981624afd730ebdcf9f063f2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zee5.com",
+                "www.zee5.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/hyper\\/bundles\\/in\\.juspay\\.merchants\\/zee5\\/web\\/release\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zee5.com",
                 "www.zee5.com"
             ]
         }
@@ -76,13 +149,15 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "Ping": 3
+        "Script": 5,
+        "Ping": 3,
+        "Document": 2,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns-1997.awsdns-57.co.uk",
         "ns-362.awsdns-45.com",
-        "ns-633.awsdns-15.net",
         "ns-1165.awsdns-17.org",
-        "ns-1997.awsdns-57.co.uk"
+        "ns-633.awsdns-15.net"
     ]
 }

@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000746,
+    "prevalence": 0.000061,
     "sites": 9,
     "subdomains": [
         "streamer",
-        "min-api"
+        "min-api",
+        "widgets"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,7 +26,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -46,10 +47,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3cdf046270004feb41be1696f75be31377d85a8c68b261e39351537157e361cb"
+                "cda9807af6f61b3a3a3d06ead2aebcba785fb0437e2eb63756d3ba4c4844edd2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -68,10 +69,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b68eb4831c543784bdc448e0cfe80c9b11e5a85594c70a8ebb5f69db3b43507f"
+                "323900168d98890ebb63657d1376d2d19fdeaa0ddb2c1c43704f79cfdb2ac128"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -90,10 +91,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ff85ef862f5d024c64a174325be459361a10630c6955afeac7aa7612ee877066"
+                "43fe16493b24c013dcd003bfe08f853c582e35acc76bbca1af20a0db013adb4e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -101,6 +102,29 @@
             "exampleSites": [
                 "bitcoinprice.com",
                 "www.bitcoinprice.com"
+            ]
+        },
+        {
+            "rule": "cryptocompare\\.com\\/serve\\/v1\\/coin\\/chart",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "window.devicePixelRatio": 1,
+                "CanvasRenderingContext2D.prototype.measureText": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mmnews.de",
+                "www.mmnews.de"
             ]
         }
     ],
@@ -119,7 +143,8 @@
     ],
     "types": {
         "WebSocket": 3,
-        "XHR": 6
+        "XHR": 6,
+        "Script": 2
     },
     "nameservers": [
         "elmo.ns.cloudflare.com",

@@ -4,14 +4,43 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "good\\.ad\\/prebid\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee8c23ecde8d31eb0e0c538f96baa1af14a7c9622a33fefd264934ec00d17406"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jeuneafrique.com",
+                "www.jeuneafrique.com"
+            ]
+        },
         {
             "rule": "good\\.ad\\/sfbx\\/glw\\.css",
             "cookies": 0,
@@ -21,7 +50,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5cd66a6a4c6452ee73363ae26862cf26fdf772debddef435a0a3efe3237067ce"
@@ -43,7 +72,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ddaa6e51e7c30c64abc40863963cda73fc19d2b0e406a0e7003fd2ee0f97156a"
@@ -62,18 +91,26 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "doubleclick.net",
+            "prevalence": 0.45454545454545453
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "ayads.co",
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
-        "Stylesheet": 2,
-        "Script": 2
+        "Script": 4,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
-        "ns-cloud-e4.googledomains.com",
         "ns-cloud-e3.googledomains.com",
-        "ns-cloud-e1.googledomains.com"
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
     ]
 }

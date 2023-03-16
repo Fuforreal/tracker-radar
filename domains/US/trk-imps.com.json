@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000663,
-    "sites": 8,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
         "a"
     ],
@@ -20,25 +20,27 @@
                 "a"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "94383d1418998eb1d01aa13b50b489554c4cdd534139e4942d6a448180908705",
-                "3553c557567c3f8451b3a309dc344c80a927fc51d52779729ca0c14711dc6a09"
+                "fe2dcc0b9ce1a3152276a4a123d36c8a2609ce307c0b38d032db0efe7eaf27a2",
+                "9e2d6a40f923c4c6a982998bcca97e80580bc1201bbf4be3745d9ab2b8e93201",
+                "d26ee6b4906666ecc4be3243a885ee17472922888661002e632d02035c2635fe"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "adultgames.games",
+                "lewdninja.com",
                 "new.lewd.ninja",
                 "xxxgames.games"
             ]
         },
         {
             "rule": "trk-imps\\.com\\/imvideo",
-            "cookies": 0.0000166,
+            "cookies": 0.00000678,
             "fingerprinting": 1,
             "subdomains": [
                 "a"
@@ -46,11 +48,11 @@
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "Document.cookie getter": 3,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "414972c9e736f0ba0de3ebf5f36ea417fbc618ca6ab29e439b1252f13112d382",
@@ -58,16 +60,10 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "ADN-IMVID-297": {
-                    "ttl": 3601,
-                    "length": 1,
-                    "prevalence": 0.0000082917364554485,
-                    "uniqueness": 1
-                },
                 "ADN-IMVID-285": {
-                    "ttl": 3601,
+                    "ttl": 3600,
                     "length": 1,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 }
             },
@@ -79,6 +75,50 @@
             ]
         },
         {
+            "rule": "trk-imps\\.com\\/r",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lewdninja.com",
+                "new.lewd.ninja"
+            ]
+        },
+        {
+            "rule": "trk-imps\\.com\\/i",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lewdninja.com",
+                "new.lewd.ninja"
+            ]
+        },
+        {
             "rule": "trk-imps\\.com\\/oauth2",
             "cookies": 0,
             "fingerprinting": 1,
@@ -86,13 +126,13 @@
                 "a"
             ],
             "apis": {
-                "Navigator.prototype.cookieEnabled": 1,
-                "Document.cookie getter": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "bc4716fd240d5a9709217582da13dc39d57de5ca033604089111c9d070212dc0"
@@ -108,7 +148,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000332,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -116,8 +156,9 @@
         }
     ],
     "types": {
-        "Document": 3,
-        "Script": 5
+        "Document": 4,
+        "Script": 5,
+        "Image": 4
     },
     "nameservers": [
         "olga.ns.cloudflare.com",

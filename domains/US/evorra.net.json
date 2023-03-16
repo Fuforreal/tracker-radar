@@ -4,33 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000829,
-    "sites": 10,
+    "prevalence": 0.0000881,
+    "sites": 13,
     "subdomains": [
         "p27",
-        "p22"
+        "p22",
+        "p5",
+        "api.p27",
+        "api.p22",
+        "api.p5"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "evorra\\.net\\/lib\\/sp\\.js",
+            "rule": "evorra\\.net\\/lib\\/evr\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "p27"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "apis": {
+                "window.localStorage": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "45e74380ad0544f326057a32a14469297684d61a2fc699e7b91a9cfcdbf212f4"
+                "d9b1502187735b31fd8deeeeddabc22360c2161d8309aad519d5d1dbb499eb30"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "epicstream.com",
                 "racinggames.gg",
                 "realsport101.com",
                 "stealthoptional.com",
@@ -38,48 +45,286 @@
             ]
         },
         {
-            "rule": "evorra\\.net\\/lib\\/evr\\.js",
+            "rule": "evorra\\.net\\/lib\\/prod\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "p27",
+                "p22",
+                "p5"
+            ],
+            "apis": {
+                "window.localStorage": 6,
+                "Document.cookie getter": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000474,
+            "cnames": [],
+            "responseHashes": [
+                "d1167e88001ed2816e79755722248561db45462dfa48d677e40e5899d9e5ba91",
+                "1c861fa4ed0b4c54a20480c77a334bbc8d7bdf6a60315e3d756f8f1b74709ac1",
+                "1d99fed0b7b03d1ff073248f357a3871fe1eab86ad8408f00b6207423d13e7b8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epicstream.com",
+                "racinggames.gg",
+                "realsport101.com",
+                "stealthoptional.com",
+                "www.gfinityesports.com",
+                "www.petitfute.com",
+                "www.virail.com"
+            ]
+        },
+        {
+            "rule": "evorra\\.net\\/lib\\/sp\\.js",
+            "cookies": 0.0000474,
+            "fingerprinting": 2,
+            "subdomains": [
+                "p27",
+                "p22",
+                "p5"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 7,
+                "Navigator.prototype.doNotTrack": 7,
+                "Date.prototype.getTime": 7,
+                "window.localStorage": 7,
+                "Document.cookie setter": 7,
+                "Document.cookie getter": 7,
+                "Navigator.prototype.cookieEnabled": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "Screen.prototype.colorDepth": 7,
+                "Date.prototype.getTimezoneOffset": 7,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 7,
+                "window.innerWidth": 7,
+                "window.innerHeight": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000474,
+            "cnames": [],
+            "responseHashes": [
+                "45e74380ad0544f326057a32a14469297684d61a2fc699e7b91a9cfcdbf212f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_tr_ses.f2a6": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_id.f2a6": {
+                    "ttl": 33669004,
+                    "length": 108,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_ses.3eee": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_id.3eee": {
+                    "ttl": 33669002,
+                    "length": 108,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_ses.82ae": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_id.82ae": {
+                    "ttl": 33669004,
+                    "length": 108,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_ses.1796": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_id.1796": {
+                    "ttl": 33669004,
+                    "length": 108,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_ses.d113": {
+                    "ttl": 1805,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_id.d113": {
+                    "ttl": 33669005,
+                    "length": 108,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_ses.d06a": {
+                    "ttl": 1808,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_id.d06a": {
+                    "ttl": 33669008,
+                    "length": 108,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_ses.7e38": {
+                    "ttl": 1805,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_tr_id.7e38": {
+                    "ttl": 33669005,
+                    "length": 108,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epicstream.com",
+                "racinggames.gg",
+                "realsport101.com",
+                "stealthoptional.com",
+                "www.gfinityesports.com",
+                "www.petitfute.com",
+                "www.virail.com"
+            ]
+        },
+        {
+            "rule": "evorra\\.net\\/spin",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "p22"
+                "api.p27",
+                "api.p22",
+                "api.p5"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 7,
+            "prevalence": 0.0000474,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epicstream.com",
+                "racinggames.gg",
+                "realsport101.com",
+                "stealthoptional.com",
+                "www.gfinityesports.com",
+                "www.petitfute.com",
+                "www.virail.com"
+            ]
+        },
+        {
+            "rule": "evorra\\.net\\/spin",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.p27",
+                "api.p22",
+                "api.p5"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "9ad91ee61f9f87b468b6fec4ec773f2ecbfd29bcc8941641556b0f033cb8d570"
+                "c287db78b819783a37eb44aaee3dee78d7cbb945074defa488819168960a0e3c",
+                "b371ba3c2db8505e1a14d8767c9550a71c161fc05c0b5b8fce8d606aba5236bd",
+                "00cff0014cff649858402750f8ec012cd5771b36e99dbdd4ed3b94ebebdb64f0",
+                "264a8c5f7d3477de55cbc381d8d7340e6f47654d1c0195c937593c9281f46a60",
+                "d9cf58b3bb0d22c1ac605d889f3d7ef1fd206953d415a6399e57954b2722a1f4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epicstream.com",
+                "racinggames.gg",
+                "realsport101.com",
+                "stealthoptional.com",
+                "www.gfinityesports.com",
+                "www.petitfute.com",
+                "www.virail.com"
+            ]
+        },
+        {
+            "rule": "evorra\\.net\\/lib\\/evr\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "p22",
+                "p5"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "57f9df96f272261dcc07dc2245bc2952a36b99784acf870fce352c94e21aece1",
+                "eb084fd269fcd000edfd4b1a547803ff4eefd0a282ea819add4be5e61bb0617a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petitfute.com",
-                "www.petitfute.com"
+                "www.petitfute.com",
+                "www.virail.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000881,
     "topInitiators": [
         {
+            "domain": "vntsm.com",
+            "prevalence": 0.5294117647058824
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.8181818181818182
+            "prevalence": 0.3235294117647059
         },
         {
             "domain": "first party",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.08823529411764706
+        },
+        {
+            "domain": "d1oykxszdrgjgl.cloudfront.net",
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 22,
+        "Preflight": 7,
+        "XHR": 7
     },
     "nameservers": [
-        "ns-1353.awsdns-41.org",
-        "ns-2008.awsdns-59.co.uk",
         "ns-311.awsdns-38.com",
-        "ns-897.awsdns-48.net"
+        "ns-897.awsdns-48.net",
+        "ns-2008.awsdns-59.co.uk",
+        "ns-1353.awsdns-41.org"
     ]
 }

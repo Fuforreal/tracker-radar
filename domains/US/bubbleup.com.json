@@ -4,12 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.0000813,
+    "sites": 12,
     "subdomains": [
-        "mydatascript"
+        "mydatascript",
+        "bubbleup-prod-7"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "mailchecker.bubbleup.net",
+            "resolved": "bubbleup-prod-7.bubbleup.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -20,11 +26,11 @@
                 "mydatascript"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 3
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
                 "1e6a4907ae4bb790dc12e13e1617f242e59afc136d29a5b81bf2db8a7040a9fb"
@@ -35,7 +41,65 @@
             "exampleSites": [
                 "drweil.com",
                 "www.jimmybuffett.com",
-                "www.margaritaville.com"
+                "www.kennychesney.com",
+                "www.kissonline.com",
+                "www.latitudemargaritaville.com",
+                "www.margaritaville.com",
+                "www.tedeschitrucksband.com"
+            ]
+        },
+        {
+            "rule": "bubbleup\\.com\\/js\\/tools\\/validation\\/email-validator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bubbleup-prod-7"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mailchecker.bubbleup.net",
+                    "resolved": "bubbleup-prod-7.bubbleup.com"
+                }
+            ],
+            "responseHashes": [
+                "952635f72b90fa7c5466f216e155c4fff23fd0347b3d8fcb7bf2d26dd2d82631"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kissonline.com",
+                "www.kissonline.com"
+            ]
+        },
+        {
+            "rule": "bubbleup\\.com\\/js\\/tools\\/validation\\/email-validator-default\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bubbleup-prod-7"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mailchecker.bubbleup.net",
+                    "resolved": "bubbleup-prod-7.bubbleup.com"
+                }
+            ],
+            "responseHashes": [
+                "630c1a261fc2bf9861abcd7a784e449ea1f044f12a478edd2bfcafcc0be6862c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kissonline.com",
+                "www.kissonline.com"
             ]
         }
     ],
@@ -45,26 +109,31 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.8732394366197183
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.056338028169014086
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.2
+            "prevalence": 0.04225352112676056
         },
         {
             "domain": "jimmybuffett.com",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.028169014084507043
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 9,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "n3.buname.com",
-        "n2.buname.com",
-        "n5.buname.com",
-        "n6.buname.com",
         "n1.buname.com",
-        "n4.buname.com"
+        "n4.buname.com",
+        "n3.buname.com",
+        "n6.buname.com",
+        "n5.buname.com",
+        "n2.buname.com"
     ]
 }

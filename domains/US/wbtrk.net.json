@@ -9,16 +9,72 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000199,
-    "sites": 24,
+    "prevalence": 0.000203,
+    "sites": 30,
     "subdomains": [
-        "advertiser",
         "cdn",
-        "geid"
+        "geid",
+        "advertiser"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "wbtrk\\.net\\/js\\/geid\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000474,
+            "cnames": [],
+            "responseHashes": [
+                "5ef468e6b28f8232ff6dc2b54f48a016be6b2776a27b7e5191ab71393637dc57"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telekom-dienste.de",
+                "cloud.telekom-dienste.de",
+                "www.baunetzwissen.de",
+                "www.goertz.de",
+                "www.lamoda.ru",
+                "www.mymovies.it",
+                "www.penny-del.org"
+            ]
+        },
+        {
+            "rule": "wbtrk\\.net\\/cc",
+            "cookies": 0.0000474,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geid"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000474,
+            "cnames": [],
+            "responseHashes": [
+                "6c179f21e6f62b629055d8ab40f454ed02e48b68563913473b857d3638e23b28"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telekom-dienste.de",
+                "cloud.telekom-dienste.de",
+                "www.baunetzwissen.de",
+                "www.goertz.de",
+                "www.lamoda.ru",
+                "www.mymovies.it",
+                "www.penny-del.org"
+            ]
+        },
         {
             "rule": "wbtrk\\.net\\/js\\/advertiser\\.js",
             "cookies": 0,
@@ -27,8 +83,8 @@
                 "advertiser"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000746,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [],
             "responseHashes": [
                 "c99addca116aa8d683cdc5dd2b09437e54c3286ade46c390c138b97c334f891a"
@@ -43,6 +99,7 @@
                 "www.all-in.de",
                 "www.allgaeuer-zeitung.de",
                 "www.borsaitaliana.it",
+                "www.dueruote.it",
                 "www.liberoquotidiano.it",
                 "www.quattroruote.it",
                 "www.tiscali.it"
@@ -56,8 +113,8 @@
                 "advertiser"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000746,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [],
             "responseHashes": [
                 "c99addca116aa8d683cdc5dd2b09437e54c3286ade46c390c138b97c334f891a"
@@ -72,62 +129,32 @@
                 "www.all-in.de",
                 "www.allgaeuer-zeitung.de",
                 "www.borsaitaliana.it",
+                "www.dueruote.it",
                 "www.liberoquotidiano.it",
                 "www.quattroruote.it",
                 "www.tiscali.it"
             ]
         },
         {
-            "rule": "wbtrk\\.net\\/js\\/geid\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 5
-            },
-            "sites": 5,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "5ef468e6b28f8232ff6dc2b54f48a016be6b2776a27b7e5191ab71393637dc57"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "baunetzwissen.de",
-                "www.baunetzwissen.de",
-                "www.goertz.de",
-                "www.lamoda.ru",
-                "www.mymovies.it"
-            ]
-        },
-        {
             "rule": "wbtrk\\.net\\/cc",
-            "cookies": 0.0000415,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "geid"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000415,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b65e2fc5def9773dc32177aea193f6adc77a2a72293d29be17b3ffa9df67a07d",
-                "6c179f21e6f62b629055d8ab40f454ed02e48b68563913473b857d3638e23b28"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "baunetzwissen.de",
-                "www.baunetzwissen.de",
-                "www.goertz.de",
-                "www.lamoda.ru",
-                "www.mymovies.it"
+                "goertz.de",
+                "www.goertz.de"
             ]
         }
     ],
@@ -139,40 +166,41 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.0000663,
+    "cookies": 0.0000813,
     "topInitiators": [
         {
             "domain": "wt-safetag.com",
-            "prevalence": 0.49122807017543857
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.17543859649122806
+            "prevalence": 0.38461538461538464
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.28205128205128205
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "lmcdn.ru",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.07692307692307693
         },
         {
             "domain": "repstatic.it",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.0641025641025641
         },
         {
             "domain": "baqend.com",
-            "prevalence": 0.017543859649122806
+            "prevalence": 0.038461538461538464
         }
     ],
     "types": {
-        "Script": 28
+        "Script": 34,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns5.gdns.de",
         "ns3.gdns.de",
         "ns4.gdns.de",
-        "ns5.gdns.de",
         "ns6.gdns.de"
     ]
 }

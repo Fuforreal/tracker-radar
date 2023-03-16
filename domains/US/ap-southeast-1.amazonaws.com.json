@@ -9,21 +9,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000381,
-    "sites": 46,
+    "prevalence": 0.000386,
+    "sites": 57,
     "subdomains": [
         "pm3h41syl7.execute-api",
-        "kinesis",
         "firehose",
         "cognito-identity",
         "penanamedia.s3",
+        "im-yacms.s3",
         "aws-sin-slb-internet-64392e0be8997725.elb",
         "68mda39k2i.execute-api",
         "s3",
         "creatives-assets.s3",
         "pinpoint",
-        "vj-prod-website-cms.s3",
-        "cms-uat.s3"
+        "cms-uat.s3",
+        "vj-prod-website-cms.s3"
     ],
     "cnames": [
         {
@@ -42,7 +42,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -60,16 +60,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "kinesis",
                 "firehose",
                 "cognito-identity"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "9b495ef941b5dd9d730545095ed818a3c0deadba7e64475c097b91d7904c3f92",
+                "4a9d4b4629d8bf40d61e969586c780511ce67f4eace6352158814c37a1702851",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "bc1f5640191e8ea5e38fb1c84a9569101d96fba5d3357888ad97ebd1cd7a0241"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -85,21 +89,15 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "kinesis",
                 "firehose",
                 "cognito-identity"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
-            "responseHashes": [
-                "c993820c386311103875d3f1de4a92d3deef1a61091c67143c818b98ad4fe967",
-                "46b0c8029d88c5337ea206467b76d344458b6e2f787f8fa16ff772cea48e75aa",
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "9bacbfe62c2c9f0badb463ab2253c2f3d0b2919b9d5f7d3cc2aeb2a54b5ba29f"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -119,7 +117,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "d08a4ac2d908634ff358a267bd2ae8fe7f0d1fcabb94a7c1613cbf19131ef16d"
@@ -134,15 +132,37 @@
             ]
         },
         {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/wp-content\\/uploads\\/2022\\/12\\/06164617\\/popup_6mar2023_slice-1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "im-yacms.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "46ebc07d03cb0f00515fc426b3173b94e4019ac8ebcfd2667351b12743a42ff5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "creative.com",
+                "us.creative.com"
+            ]
+        },
+        {
             "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "ubt-sin.tripcdn.com",
@@ -150,8 +170,8 @@
                 }
             ],
             "responseHashes": [
-                "1b854c285b296ca85c35ae8cd6016e621179873bc261e44aa06bc28759c7e91b",
-                "4ef63cbf2213bafe0322be3ff2363d8b995bd0832713d030dd7ff86684609b30"
+                "8ffd764c45b1fcb1c215ae225e7dca15496bd89b708bf0f730aa4e4efc8fd84e",
+                "7f395413101e11a600fb44518d5b88914202444947de60ad792fb9415b209e94"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -170,8 +190,8 @@
                 "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "ubt-sin.tripcdn.com",
@@ -184,19 +204,20 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "trip.com",
+                "us.trip.com",
                 "www.trip.com"
             ]
         },
         {
             "rule": "ap-southeast-1\\.amazonaws\\.com\\/bf\\.gif",
-            "cookies": 0.0000166,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "ubt-sin.tripcdn.com",
@@ -209,10 +230,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_RSG": 0.000016583472910897
+                "_RSG": 0.00002033195301963389
             },
             "exampleSites": [
                 "trip.com",
+                "us.trip.com",
                 "www.trip.com"
             ]
         },
@@ -225,7 +247,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -247,7 +269,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -267,7 +289,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "46e28449e5c9fa64793a629ba231cbbe5252e4967601344ebab78e95e6a0f6f6"
@@ -289,7 +311,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "507ae68f94bb0702d365208f9c642251dfd5eb0510ef3b8b5858c1c3e64acd3c"
@@ -311,7 +333,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "19ca0a7d1a3a8a9bd59b16997b3b0d938f3408296634079220c46076f542b86e"
@@ -333,7 +355,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "eb9e499a9232c192a65291e31af23981c1b1388df4103e34a68409689d57bb29"
@@ -355,7 +377,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "3172206c078d5cefbcf1b21c03785a91e51476cdc49df6190f8b3d59eb09936c"
@@ -377,7 +399,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "aa51acf26024edf49bccb092f4f373d7725486315f173fcd8688154c561a0c88"
@@ -399,7 +421,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "431d81b6ccdfa10a4af4835dd5e23a24d85502463eab348d5718c5909230f4a2"
@@ -421,7 +443,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ea7d817499f5ce90e7e8d6cdb9eec0f60a4bf6b24fe902c667568ef1b65b0c3d"
@@ -443,7 +465,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ed0436d3a2bced72d5772fdaa4de44dd2b3a5b1c597f38de50884cf5b74ce3a6"
@@ -465,7 +487,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2f81514f29470e7c2fb64c8628538ea9426b1b466b6b31a39d81bd0665195114"
@@ -487,7 +509,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "92c4d1f4c4ae067f696d9b0819f665a40b973675cd74c470f172c6ab352b95f1"
@@ -509,7 +531,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "dba07ea5c4aa23a8fd0dc2f2f04123cd50cbef8a4e90c1d93f7d67a3b80f2ee9"
@@ -531,7 +553,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7ed4e92758413364398b3c52d2eb71e2ced09f7ec77afef0eb48f74ab8c7df73"
@@ -553,7 +575,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f54aa5cdeea78e96b0c252ae51fb0ba7532a8eda9b4fbeab1fde8aa10daf8a12"
@@ -575,7 +597,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "faf545a26d79dc70331601e8294acbcbfcbd587cebb295a3d4c09cbb21b913d5"
@@ -589,6 +611,50 @@
             ]
         },
         {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/images\\.summitmedia-digital\\.com\\/preview\\/svg\\/nav-bookmark\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "75bc254fc228b4cfda64de2eac7062285fc38945a033396c8a13ae41eb630a70"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "preview.ph",
+                "www.preview.ph"
+            ]
+        },
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/images\\.summitmedia-digital\\.com\\/preview\\/svg\\/inactive-bookmark\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0243a3e43524510aa4e01ae7012c3778de4183ba9db52bc0b5f4fae294efeed"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "preview.ph",
+                "www.preview.ph"
+            ]
+        },
+        {
             "rule": "ap-southeast-1\\.amazonaws\\.com\\/propertyguru_my\\/Homepage\\/Masthead_Takeover\\/PG%20Group%20Regional%20Brand%20Campaign\\/03102022\\/Desktop\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
@@ -597,7 +663,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -617,7 +683,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -639,7 +705,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -659,10 +725,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7cb7164f325d1626f9c577546bf39de2aa011b03837c8b2fe45f771d6fd03df5"
+                "90eb4d3c11c13b4bb1447737907c2ce87620e127060c1ab2cc73b8e029437b34"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -670,46 +736,6 @@
             "exampleSites": [
                 "thestar.com.my",
                 "www.thestar.com.my"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/files\\/flygreenen-1602759084206\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/files\\/flywithvietjeten-1602759084218\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
             ]
         },
         {
@@ -721,9 +747,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "09715635090b34af5696887ed0c5ea48ddecbd81f9ec3ebaafb231e2287426f8"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -741,9 +769,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e1e23668605175ad7924a87edd5eab737f1828349f7e8fe143a179f2fb4286fb"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -761,9 +791,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "a83e98fcc85325420eacad95bcf094d0d402db11ccd2484eb3ce9861b60f3a08"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -781,9 +813,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "359db17539b2f2bbf74e23b1be6df9936d49e82e9f8846bcb8f07b913fe022f9"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -801,9 +835,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "7e9b182779a0e9789a8a62eac43f753e49ab442f2a99081b9a3c814ab286ee83"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -821,9 +857,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "56a5996bdf8aebe94904599398e41dd59ff2e909ce775ebb5aa798fbf890cb55"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -841,9 +879,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "2a400cb0d5f908fdcd82dd8a658a73f6325fe18160c11b2f1bdf11ed0fcf3851"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -861,9 +901,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b0b45ab705ff190c389f8966ca9ff0a67d6ce0fa6376f7e5349595511bf84727"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -881,9 +923,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b1cf025c6caae86502c738673ae9003a80023cc33c42f5d2403e08b1568eb7"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -901,30 +945,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/topnen-1610536365157\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e1eaa23cfc40ad4cecf791140162283e666df80cff51513e4b21549ddda2c0af"
+                "a854161e9c04d653e4139105f45a96423832c1d95f934b39e00872ad8084728d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -935,7 +959,7 @@
             ]
         },
         {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/web1920x960en-1677813692630\\.png",
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/files\\/flygreenen-1602759084206\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -943,10 +967,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d6f777de9e2c8714a5dc8ffc3fa05b9faf2bc741bc51cd31981af9e8ef43e5e7"
+                "db4bf415df1ab41dacb47832ad9b605769511da3d68639d53282f6e7208c7e6c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -957,7 +981,7 @@
             ]
         },
         {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/topbanner1920x960-1677484373888\\.jpg",
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/files\\/flywithvietjeten-1602759084218\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -965,208 +989,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "21fae07c196227ca01dfd9a2e3362149cd26148ddcc6c50b9ce77c15f0ddb988"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/entop-banner-pc-1920x960-resize-1677813259044\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "d9dadd49af6b7fb76c1083a0167522df9aea7e6ecfa6012c8e38000dab1f6daf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/topbanner1920x960-1676951909191\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "354e66bdc8778566cbcf1e19a79dda578275177051dbbf6cd2caeb8a95f83410"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/outpc1920x960-1677484150381\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "1b36bc3eb6c99746c5e0eeffac70a54155fd4bdd3134561bf65cf23b08d1809f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/1920x960-1677641670165\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "80ad3cee542ddb11d26fca530569175ed9f4e8cd9663208c52f0a472b6cdaae0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/kvdaiinboundtopbanneren-1677641710369\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "31486f18f5988b4b81449e660560e793ded72e5bc1a810f41a801488b230a282"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/toppcen-1675834737934\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "11a73dde10fda39aaf89028bfcdd43e44a81a20dc0c3673904e6e4215aaaa22c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/toppc-1675763505437\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "927337012e80f3c6d879b820670c0dc0eeec95282cfc45e957a56706da43d7f6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/web1920x960en-1671786942383\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "5867512481645cdacf4a71db5b183c822d36791d53883f75d53bf3075f71394b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/900x900en-1677755328289\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "c2641a1326c575e431224a7a06579b694b17a297312fa26f8fda8242b43b8c5e"
+                "9fa4f75e82d97c1ae5bfd9dd1836e12c2036f38f1179f5435f30105e2f43adf7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1185,7 +1011,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d4b9c80f085b79974ba8a0c1bfec3dfa49e3f321b7ba76da7f42bf15d26dba78"
@@ -1203,54 +1029,62 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000249,
+    "cookies": 0.0000339,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8026315789473685
+            "prevalence": 0.7698744769874477
         },
         {
             "domain": "d2u6vujtbrga6l.cloudfront.net",
-            "prevalence": 0.11403508771929824
+            "prevalence": 0.11297071129707113
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.03765690376569038
         },
         {
             "domain": "likr.tw",
-            "prevalence": 0.043859649122807015
+            "prevalence": 0.03347280334728033
+        },
+        {
+            "domain": "c-ctrip.com",
+            "prevalence": 0.016736401673640166
         },
         {
             "domain": "cnidigital.in",
-            "prevalence": 0.013157894736842105
-        },
-        {
-            "domain": "naukimg.com",
-            "prevalence": 0.013157894736842105
+            "prevalence": 0.012552301255230125
         },
         {
             "domain": "vidgyor.com",
-            "prevalence": 0.013157894736842105
+            "prevalence": 0.012552301255230125
+        },
+        {
+            "domain": "sportstars.id",
+            "prevalence": 0.0041841004184100415
         }
     ],
     "types": {
         "Fetch": 9,
-        "Preflight": 11,
-        "Image": 83,
+        "Preflight": 12,
+        "Image": 66,
         "XHR": 7,
         "Media": 2,
         "Script": 2
     },
     "nameservers": [
+        "u4.amazonaws.com",
+        "u2.amazonaws.com",
         "ns2.p31.dynect.net",
-        "u3.amazonaws.com",
-        "pdns1.ultradns.net",
         "u6.amazonaws.com",
         "u1.amazonaws.com",
-        "u2.amazonaws.com",
-        "pdns5.ultradns.info",
-        "u4.amazonaws.com",
         "ns3.p31.dynect.net",
         "ns1.p31.dynect.net",
+        "pdns5.ultradns.info",
+        "u5.amazonaws.com",
         "ns4.p31.dynect.net",
         "pdns3.ultradns.org",
-        "u5.amazonaws.com"
+        "pdns1.ultradns.net",
+        "u3.amazonaws.com"
     ]
 }

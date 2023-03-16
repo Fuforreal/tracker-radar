@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000357,
-    "sites": 43,
+    "prevalence": 0.000319,
+    "sites": 47,
     "subdomains": [
-        "rum"
+        "rum",
+        "session-replay",
+        "logs"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -23,8 +25,72 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000415,
+            "sites": 23,
+            "prevalence": 0.000156,
+            "cnames": [],
+            "responseHashes": [
+                "8b4be77d9351aa6db70590805838ddcd13692e8b4afd1cbfd9f30f021ae74c10",
+                "60e952dda2ebf56ba76c2817f0be2f6aa67e95a11d9c1b9525a434e692886e7f",
+                "ea1918121f9c6e69cf708ddefa6cfcd0f8411d76630b97559d17c72aa6bcda36",
+                "a4d52ee3f90a532fda41ad21fc66fcac38738c96dbf28b428189d8d70b9d77a2",
+                "7ddff2c828241094fe870a215887110f7976987087abb1bfe6a00893de5713e7",
+                "5a63cbba9e995fde4008aa80ce703119a9deae5c77c11567919c440b8427d948",
+                "d68b97908c9c23edf526a9ae679350f3b1ae6e72a9ac2cabac3313ff097a8809",
+                "37dd8ccada5d21a2e0847620f12f0b6ecad0bdb8a0bc8b863c16dd87bc5cc2cd",
+                "a0f551d1671ccab620c3abdf095e1a7e25da270e56f68c9cb45f1e80c7c0c378",
+                "a14df721bc975392d74931a4bf4b51dbf917fd5fb4377b89f44b662c43cff545",
+                "e9e4747bc0d42bf24922225e1e3819f58a6a289ee46b12398e8c4288864de053",
+                "0760b215a5b0ac9bb2c0d87961f5092004f0627dab5fd075a22e13065409a094",
+                "e2d4768c8a194e20925fd99c9d5ac55da6ac5dd447b806ea01e1da1f4e10445f",
+                "033aa7c39229af9c7b7e5ceaab6ca434010612901d51f726a282271585617b95",
+                "1acedb98d487777a5e8e5a759c2489eca36114a061f68e0a233330e8aa2a64ca",
+                "7da8d3dcf398c75d5981d20b62ec3bae89c52fcfd09865605363d975da283829",
+                "7a6e289152992f781c33935fdfd67c22cd96e487605daa6bd48138faeb5d883d",
+                "bdbf17bc543cf0be0c13b798d7d5659a788caa5cd8c65c6ae117efd2c1650cad",
+                "5d0590b6d919bdd8ddece29cd1a51fcee5279d15bcad651fde8518f9ba543731",
+                "e6bc105d71bd0722ad4cd53662175b25832655cb65a1d4860b2467590a991456",
+                "cf8c4bd55a0a38a131bc10e2e9c4254b5732ab13f30028098e1eabb2145a3abc",
+                "1c0117c72b111acaa21ad5ae24dfe50d1c9cad8726b76136cb6d446191a50f34"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006777317673211296,
+                "tc_session": 0.000006777317673211296
+            },
+            "exampleSites": [
+                "www.cinch.co.uk",
+                "video.sat1.de",
+                "www.flixbus.co.uk",
+                "www.outsystems.com",
+                "wolt.com",
+                "www.mlb.com",
+                "www.gousto.co.uk",
+                "www.booker.co.uk",
+                "www.vestiairecollective.com",
+                "www.vanmoof.com",
+                "traderepublic.com",
+                "vestiairecollective.com",
+                "www.goflink.com",
+                "www.flixbus.pl",
+                "fr.vestiairecollective.com",
+                "www.recharge.com",
+                "www.sat1.de",
+                "offerup.com",
+                "www.mercedes-benz.es",
+                "robert-galbraith.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.eu\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -33,11 +99,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "wetransfer.com",
+                "myaccount.wetransfer.com",
                 "smarty.co.uk",
+                "www.beautypie.com",
                 "www.bilka.dk",
                 "www.flixbus.fr",
                 "www.foetex.dk",
-                "www.toolstation.com"
+                "www.jimdo.com"
             ]
         },
         {
@@ -49,83 +118,65 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "ce492725968a8771edb995c09d8d20961d01b2434a1f7c782c605f11417e0ed0",
-                "8dfeaa67c6b82bddd1b47020b3b3a06f6c955e9070b1a4a8e307816e468f1506"
+                "35535ab10b159009933c5238423a1393f2dfaf2153ee97214941881b3475c7ad",
+                "c64ed90e9a279f41b05bfe2106086d048e76ca2de1b6803bd0c95f69267b5081"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "offerup.com",
                 "smarty.co.uk",
-                "www.mammut.com",
-                "www.milb.com"
+                "www.mlb.com"
             ]
         },
         {
-            "rule": "browser-intake-datadoghq\\.eu\\/api\\/v2\\/rum",
+            "rule": "browser-intake-datadoghq\\.eu\\/api\\/v2\\/replay",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "rum"
+                "session-replay"
             ],
             "apis": {},
-            "sites": 23,
-            "prevalence": 0.000191,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "d0fd06bf25efeb9fdb5e050ac606b9142669a47bcf8c3d0edb1599d503c08577",
-                "4527eb6636e9d8d540a81b830ea16ec4420fddf8e5887b5c4859601017a17b95",
-                "07b82cae63854f40a846fbe8dc05323726dbb8dcaafece21509c78b31f9e880c",
-                "79b664081e90729fecdcf9ded8b7904952f3f4c76b47914cb417fbcdb2fcab95",
-                "f92e2b21085d0fadfbe6cc5291609313b0b3dc336352d1adde85b0af967796b8",
-                "260aaf4ccf0d289371c59d4ce5414c794b44353c022b842d2539ebffb4800928",
-                "0e1603d71eaa8173415e2b54add718a8fcf50db45320aaa6cdc18f3a9f1f4d46",
-                "f8e6ed5437755aac4173fd29b7de138d8511fde20c317611bcfd80928cfe6e38",
-                "e54475d128e9301e6b1c9dbb9b560833dc835a0a40de20c87da8f59c47c93460",
-                "961f1c821b09974b336d67acee89fb1c37ecff8ed75ebe34b1587ff66520b8cc",
-                "caaa27b8a18dc94dbc2ed2d484f9f8ce7866df9aab5d5a8bf830c1a589532f2a",
-                "e94845837374283d7664b0e1288139926f48dc8cbc4d17d8055c827212d264a2",
-                "3d7261b4b812c5889e8f9a4d032be429dfb92f0f6fdf7f53c5f3ba62329cba90",
-                "61cce788c7589a5e66257c0d9c6956c63d8cfb78a313c389d0e5d2606e87ab66",
-                "7b0c582f39ff9910cb3e1a937b3e0b2b0e65632c993c115984af2f066d780cc3",
-                "28a9235423c5986f827eef6e7a37d201115cb5466ae0e4b3ea6fd8cb6c8eaca0",
-                "74f58bf726fe4041a058642fd423c9a97e3702e1211ec9547dc78f01877428d9",
-                "e9d63f55f0e1b1be6cd7aa34575da247d7a4b5aefde7ec2aa2059371459c1f7b",
-                "64a4a99b41805a9d0f654d75cb56c23dee7a1712002c9a9cdaa9c77357553570",
-                "366f8466ec918f3afd86d91a0c8d35a7ebbc45b7029d1efaf72e49a8e6e46321",
-                "dd41375bffd14e200583d9641060901d7f73ae0be4a37686538a56da007151a1",
-                "0e7b6f02290bc5986e06bfd11a1ee2f781e6b337a903f6fa57a96b8c9f344698"
+                "aad5808c50be4c98b89273e01bce7761bf7b60edeab6989b00079fb55d44a6da",
+                "d047f0ff1bda9fca711379dbd17c101e93e297dede8f6e8b5a065345e0d48b06"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beautypie.com",
+                "www.beautypie.com",
+                "www.mercedes-benz.es"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.eu\\/api\\/v2\\/logs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0236ae44998fedc946b6f7a09da007cc7942b211b6e5a3a6083e378863e989c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.0000082917364554485,
-                "_schn": 0.0000082917364554485
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.kfc.co.uk",
-                "www.recharge.com",
-                "www.gymshark.com",
-                "www.toolstation.nl",
-                "www.tradesy.com",
-                "www.vanmoof.com",
-                "www.gousto.co.uk",
-                "www.outsystems.com",
-                "traderepublic.com",
-                "www.sligro.nl",
-                "www.flixbus.de",
-                "www.flixtrain.de",
-                "www.milb.com",
-                "www.flixbus.it",
-                "www.vestiairecollective.com",
-                "www.flixbus.com",
-                "wolt.com",
-                "www.cinch.co.uk",
-                "www.prosieben.de",
-                "www.mammut.com"
+                "docmorris.de",
+                "www.hollandandbarrett.com"
             ]
         }
     ],
@@ -135,30 +186,34 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.652
+            "prevalence": 0.6903914590747331
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.276
+            "prevalence": 0.22419928825622776
         },
         {
-            "domain": "mlbstatic.com",
-            "prevalence": 0.064
+            "domain": "datadome.co",
+            "prevalence": 0.07473309608540925
         },
         {
             "domain": "google-analytics.com",
-            "prevalence": 0.008
+            "prevalence": 0.0071174377224199285
+        },
+        {
+            "domain": "hollandandbarrettimages.co.uk",
+            "prevalence": 0.0035587188612099642
         }
     ],
     "types": {
-        "Ping": 5,
-        "XHR": 3,
-        "Fetch": 23
+        "Fetch": 25,
+        "Ping": 8,
+        "XHR": 6
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
         "ns-cloud-e3.googledomains.com",
-        "ns-cloud-e1.googledomains.com",
-        "ns-cloud-e4.googledomains.com"
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
     ]
 }

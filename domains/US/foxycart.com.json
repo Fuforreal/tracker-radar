@@ -4,23 +4,32 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000141,
-    "sites": 17,
+    "prevalence": 0.00023,
+    "sites": 34,
     "subdomains": [
         "cdn",
+        "secure.hilleberg.com.dns",
         "checkout.online.berklee.edu.dns",
         "pickdawgz",
         "brookings",
+        "coraevans",
         "checkout.degruyter.com.dns",
         "iconmedia",
         "martinlogan",
         "plough",
-        "cart.septicsolutions.com.dns"
+        "cart.septicsolutions.com.dns",
+        "pennpress",
+        "vanicream",
+        "cart.yinyanghouse.com.dns"
     ],
     "cnames": [
         {
             "original": "cart.septicsolutions.com",
             "resolved": "cart.septicsolutions.com.dns.foxycart.com"
+        },
+        {
+            "original": "cart.yinyanghouse.com",
+            "resolved": "cart.yinyanghouse.com.dns.foxycart.com"
         },
         {
             "original": "checkout.degruyter.com",
@@ -29,12 +38,102 @@
         {
             "original": "checkout.online.berklee.edu",
             "resolved": "checkout.online.berklee.edu.dns.foxycart.com"
+        },
+        {
+            "original": "secure.hilleberg.com",
+            "resolved": "secure.hilleberg.com.dns.foxycart.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "foxycart\\.com\\/aan\\.ecommerce\\.highwire\\.org\\/loader\\.js",
+            "rule": "foxycart\\.com\\/bmjpg\\.ecommerce\\.highwire\\.org\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "b3cd7bf10d5870bc439b80f92e106fb0ad837ea7559788e3fe666e2c74233a4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmj.com",
+                "casereports.bmj.com",
+                "gut.bmj.com",
+                "heart.bmj.com",
+                "pmj.bmj.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/bmjpg\\.ecommerce\\.highwire\\.org\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000339,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5,
+                "Screen.prototype.availWidth": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "1228d11574a2745b5660ce93c86ca9ee2b3ad45a4058b08cb690f173aa9dc1b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fcsid": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.000033886588366056485,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmj.com",
+                "casereports.bmj.com",
+                "gut.bmj.com",
+                "heart.bmj.com",
+                "pmj.bmj.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/bmjpg\\.ecommerce\\.highwire\\.org\\/responsive_styles\\.1678355198\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmj.com",
+                "casereports.bmj.com",
+                "gut.bmj.com",
+                "heart.bmj.com",
+                "pmj.bmj.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/erspublications\\.ecommerce\\.highwire\\.org\\/loader\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -42,22 +141,22 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d10b0c21de465bee2034967099ba39c330ab0a28a09c8cebc5eb5ec3f50712f9"
+                "d9e67983701146a464d0e4dcc15b6394aeeb73a649ae5c4b396d448f155318e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "neurology.org",
-                "n.neurology.org"
+                "ersjournals.com",
+                "erj.ersjournals.com"
             ]
         },
         {
-            "rule": "foxycart\\.com\\/aan\\.ecommerce\\.highwire\\.org\\/foxycart\\.jsonp\\.sidecart\\.min\\.1677278397\\.js",
-            "cookies": 0.0000166,
+            "rule": "foxycart\\.com\\/erspublications\\.ecommerce\\.highwire\\.org\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -68,28 +167,28 @@
                 "Screen.prototype.availWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "82f9756065b6ca7941fa954f2a00c3520c31db05fbd6d3d20fd6c1ca561945bc"
+                "f6315ab6dbec7a66fec09ed06c8ae6a9395a021279b270af3e156ac00c97f61e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "fcsid": {
                     "ttl": null,
                     "length": 26,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "neurology.org",
-                "n.neurology.org"
+                "ersjournals.com",
+                "erj.ersjournals.com"
             ]
         },
         {
-            "rule": "foxycart\\.com\\/aan\\.ecommerce\\.highwire\\.org\\/responsive_styles\\.1677294314\\.css",
+            "rule": "foxycart\\.com\\/erspublications\\.ecommerce\\.highwire\\.org\\/responsive_styles\\.1678359710\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -97,7 +196,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
@@ -106,28 +205,37 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "neurology.org",
-                "n.neurology.org"
+                "ersjournals.com",
+                "erj.ersjournals.com"
             ]
         },
         {
             "rule": "foxycart\\.com\\/cart",
-            "cookies": 0.0000663,
+            "cookies": 0.0000881,
             "fingerprinting": 0,
             "subdomains": [
+                "secure.hilleberg.com.dns",
                 "checkout.online.berklee.edu.dns",
                 "pickdawgz",
                 "brookings",
+                "coraevans",
                 "checkout.degruyter.com.dns",
                 "iconmedia",
                 "martinlogan",
                 "plough",
-                "cart.septicsolutions.com.dns"
+                "cart.septicsolutions.com.dns",
+                "pennpress",
+                "vanicream",
+                "cart.yinyanghouse.com.dns"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000663,
+            "sites": 13,
+            "prevalence": 0.0000881,
             "cnames": [
+                {
+                    "original": "secure.hilleberg.com",
+                    "resolved": "secure.hilleberg.com.dns.foxycart.com"
+                },
                 {
                     "original": "checkout.online.berklee.edu",
                     "resolved": "checkout.online.berklee.edu.dns.foxycart.com"
@@ -139,29 +247,120 @@
                 {
                     "original": "cart.septicsolutions.com",
                     "resolved": "cart.septicsolutions.com.dns.foxycart.com"
+                },
+                {
+                    "original": "cart.yinyanghouse.com",
+                    "resolved": "cart.yinyanghouse.com.dns.foxycart.com"
                 }
             ],
             "responseHashes": [
-                "9280d9b945709c655de00b8e1f1b014b4fc6c5daff65ed73f9080e2ca0331a76",
-                "4b65681f27783ccc3ce7b7af231d5367225ca0503fb8efd50326bc634bbd542e",
-                "5e096bd2afe91f2e567edf1248665569cbb9615a048748b3bade6e683e61d5a6",
-                "6f6e7eb7bbe9d0d191906550277080bcccbb03bb8c78cf20d0dc17cf9375cf66",
-                "f0d7f7b8c73aadc7d321407246628802b1978511865e8739bb367e2ebd5833ba",
-                "a7cb3678e94227183bb272fd75020d0c47e6f107145c842f193dfdf3c5058cc2",
-                "b4995b5a7db7c9726fc955159c02c4876ea909f789b2d23fa54f3cec5482e458"
+                "17a22cf902526bbb45ada507d32e3c6c620e7b97c3165cd3269df9e25581c780",
+                "63aa4ab3ba3ce2a2b37f120417ab501af3e8b2419745b0a1dae3c5bb3228e4b0",
+                "b96eb66103589946dfb3ce2f9ca503845aedd6fc267d1465c76dd97748ab7a8a",
+                "1df0ce1faa2bb3149e24e71d91030dd2e8a2a53215828247884ca8d41954dc92",
+                "2f80f9bb8947092c43d1a1b83768eea318b791b4e0c5c1b629de4a41bc3867ec",
+                "9c9d12e4eb121c973b3c4c081ff0fdf1081ff2bfadef2c3ee611a2c6786f4cb4",
+                "5730b14d29823504d5b26305710f42dbe0007402f9df020ea8885e1259834768",
+                "8ef2b37273610b702c9b29385057c11c210e03e55b94c2cea5d7e2e4db98d7cb",
+                "6a207d38dd00c9c235bb88f9fa3dad174195857d6bfeab8eb569105f244cc5da",
+                "acc86e84e743ac55a98c0cbea749e4d375f1a262c6ec37fbdd24bd5cce2167f2",
+                "9afac5e6362e86210e3b47e46a0c20ca8cddecb1413e16597b077e18ab7a6ba2",
+                "a195e72ab2f403ebdc321824eb9f21f59678a66a33b9d3890ce3c190d310d968"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "berklee.edu",
+                "hilleberg.com",
+                "online.berklee.edu",
                 "pickdawgz.com",
                 "www.brookings.edu",
+                "www.coraevans.com",
                 "www.degruyter.com",
                 "www.fueloffroad.com",
                 "www.martinlogan.com",
                 "www.plough.com",
-                "www.septicsolutions.com"
+                "www.septicsolutions.com",
+                "www.upenn.edu",
+                "www.vanicream.com",
+                "yinyanghouse.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/aan\\.ecommerce\\.highwire\\.org\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fc8e57f3b930ac4b987666bbcc8d36327fc5fbaddcfe04a868ec65e463286e0f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neurology.org",
+                "n.neurology.org"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/aan\\.ecommerce\\.highwire\\.org\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.availWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f67a2c2450c1b07d445ee2e79fa50ea8472a0da0527cd42f729266cb800a3f67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fcsid": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neurology.org",
+                "n.neurology.org"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/aan\\.ecommerce\\.highwire\\.org\\/responsive_styles\\.1678354516\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neurology.org",
+                "n.neurology.org"
             ]
         },
         {
@@ -173,10 +372,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8d05f067e93cc4b4bc8bbab117bd3edd7b9df78b027e9b0aa910519ee0d0d453"
+                "602a6cd49f017417be36c5fe4b09fc9b46ceb1ab0821a514172ab37ebfd878f9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -187,8 +386,8 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/brookings\\/foxycart\\.jsonp\\.sidecart\\.min\\.1677278397\\.js",
-            "cookies": 0.0000166,
+            "rule": "foxycart\\.com\\/brookings\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -199,7 +398,7 @@
                 "Screen.prototype.availWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c1fb2f681707faca50a7f176b3876adeee6e0239f7ad3503b3256d49b4556cad"
@@ -209,7 +408,7 @@
                 "fcsid": {
                     "ttl": null,
                     "length": 26,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -220,7 +419,7 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/brookings\\/responsive_styles\\.1677279443\\.css",
+            "rule": "foxycart\\.com\\/brookings\\/responsive_styles\\.1678357467\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -228,7 +427,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
@@ -242,6 +441,160 @@
             ]
         },
         {
+            "rule": "foxycart\\.com\\/cma\\.ecommerce\\.highwire\\.org\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0103113f565d2826ab998e6152917eac83845c6a8d036cd4bf11c88ee1b1a75"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cmaj.ca",
+                "www.cmaj.ca"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/cma\\.ecommerce\\.highwire\\.org\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.availWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e95a44376a7f70a1a621a1fac4c705f88551050fc9d0399022d5cb786e6f2cc8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fcsid": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cmaj.ca",
+                "www.cmaj.ca"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/cma\\.ecommerce\\.highwire\\.org\\/responsive_styles\\.1678356467\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cmaj.ca",
+                "www.cmaj.ca"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/coraevans\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "234837519f686ebf9a20e28e366d40d6b9c2d81d9d381761d0a9ca5eddbbdf8c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coraevans.com",
+                "www.coraevans.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/coraevans\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.availWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a94fd34d9911e401b46029fe20462eac16c1fbd656769e57d96424fd48bbafe2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fcsid": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coraevans.com",
+                "www.coraevans.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/coraevans\\/responsive_styles\\.1678426166\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coraevans.com",
+                "www.coraevans.com"
+            ]
+        },
+        {
             "rule": "foxycart\\.com\\/checkout\\.degruyter\\.com\\/loader\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -250,10 +603,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b6608ae38baf069a5d04b1f31bef3b39e2aa051385b2f98ee4787e4baf040938"
+                "1c6bdf91dc179c29d90cca69d309f82780e905d32319e80b73e015500ecc45fe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -264,8 +617,8 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/checkout\\.degruyter\\.com\\/foxycart\\.jsonp\\.sidecart\\.with-jquery\\.min\\.1677278397\\.js",
-            "cookies": 0.0000166,
+            "rule": "foxycart\\.com\\/checkout\\.degruyter\\.com\\/foxycart\\.jsonp\\.sidecart\\.with-jquery\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -277,17 +630,17 @@
                 "Screen.prototype.availWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "749ef7470e2c277e71ee85d6c49a682328b2b2598df3c81abda8c02b26204091"
+                "3c20ff0972ce46fcdebff1226f4a317be814f24ab0ff8d506f8caa124834a2ab"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "fcsid": {
                     "ttl": null,
                     "length": 26,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -298,7 +651,7 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/checkout\\.degruyter\\.com\\/responsive_styles\\.1677283768\\.css",
+            "rule": "foxycart\\.com\\/checkout\\.degruyter\\.com\\/responsive_styles\\.1678356205\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -306,7 +659,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
@@ -328,10 +681,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "52a6621c1ec1b285fa945a39bc279eb32bb1c3c2c9e436aad4844da4fcb863d7"
+                "6c72a6895dbf0cb5c7836278064082a28c0d89d08bd70a9c71d71924077fae88"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -342,8 +695,8 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/martinlogan\\/foxycart\\.jsonp\\.sidecart\\.min\\.1677278397\\.js",
-            "cookies": 0.0000166,
+            "rule": "foxycart\\.com\\/martinlogan\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -354,17 +707,17 @@
                 "Screen.prototype.availWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "245bd5f1a9ff8cf9849d0329a1380effe990a8c1c2ff4d689408d486dad71703"
+                "3318c7f99e178fab158653901ecfbb95c7b71c5a64fa31c791a8aa117ed8232b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "fcsid": {
                     "ttl": null,
                     "length": 26,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -375,7 +728,7 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/martinlogan\\/responsive_styles\\.1677305184\\.css",
+            "rule": "foxycart\\.com\\/martinlogan\\/responsive_styles\\.1678377153\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -383,7 +736,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
@@ -405,12 +758,67 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8826a4a4e16ad589f5cb02887ab9f24406ddf2322dbe5560431870ed777bcb40"
+                "fe03a5c878d17dcac8019a7727f38f5b7f1833c46de9a7fe3e16ee8f2c9679b2"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plough.com",
+                "www.plough.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/plough\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.availWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8afb0be00ec38a836b8185830a5bea035fe68278fcb06c99a7b7063973a04ea3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fcsid": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plough.com",
+                "www.plough.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/plough\\/responsive_styles\\.1678401373\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -427,10 +835,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3301485596f627896b5fc53a000689167624442f8203929167f3c4cbeae631a1"
+                "67058310088875af4751a7188d11feaed4e934357509f8874e2474ab3985dbc9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -441,8 +849,8 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/cart\\.septicsolutions\\.com\\/foxycart\\.jsonp\\.sidecart\\.min\\.1677278397\\.js",
-            "cookies": 0.0000166,
+            "rule": "foxycart\\.com\\/cart\\.septicsolutions\\.com\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -453,17 +861,17 @@
                 "Screen.prototype.availWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b81d45da8b85141763120a5c30395a0aa688e2b82a3b11401350d21baf9244b2"
+                "292ee005fb21fcc3e0b04c164c7160945f6c06a26bd04ac3df5d77212b72b3ee"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "fcsid": {
                     "ttl": null,
                     "length": 26,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -474,7 +882,7 @@
             ]
         },
         {
-            "rule": "foxycart\\.com\\/cart\\.septicsolutions\\.com\\/responsive_styles\\.1677322045\\.css",
+            "rule": "foxycart\\.com\\/cart\\.septicsolutions\\.com\\/responsive_styles\\.1678365125\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -482,7 +890,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f48a0f2ec9eb75b40a47fa377dc05669fd0d33c9d40e64e3bb95e4dcea3ede49"
@@ -494,41 +902,126 @@
                 "septicsolutions.com",
                 "www.septicsolutions.com"
             ]
+        },
+        {
+            "rule": "foxycart\\.com\\/vanicream\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "26b63b5660920e747f37e8e160446f0a40b6da580f70392fbd09791de8f643cd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanicream.com",
+                "www.vanicream.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/vanicream\\/foxycart\\.jsonp\\.sidecart\\.min\\.1678352106\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.availWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dda2719b3d9ab032c6341765a212bb89262baf42ad7fc3603622bf491a70d31f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fcsid": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanicream.com",
+                "www.vanicream.com"
+            ]
+        },
+        {
+            "rule": "foxycart\\.com\\/vanicream\\/responsive_styles\\.1678371096\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cc188738534d50932d6ecd909f12948ea2f555450882f42ea28d3e931b90ba29"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanicream.com",
+                "www.vanicream.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000133,
+    "cookies": 0.00023,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6923076923076923
-        },
-        {
-            "domain": "jquery.com",
-            "prevalence": 0.10256410256410256
+            "prevalence": 0.6756756756756757
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.10256410256410256
+            "prevalence": 0.10810810810810811
         },
         {
             "domain": "foxycart.com",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.06756756756756757
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.05405405405405406
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.05405405405405406
+        },
+        {
+            "domain": "pennpress.org",
+            "prevalence": 0.02702702702702703
         },
         {
             "domain": "cookiebot.com",
-            "prevalence": 0.02564102564102564
+            "prevalence": 0.013513513513513514
         }
     ],
     "types": {
-        "Script": 30,
-        "Stylesheet": 10
+        "Script": 63,
+        "Stylesheet": 25
     },
     "nameservers": [
         "ns-304.awsdns-38.com",
-        "ns-1351.awsdns-40.org",
+        "ns-733.awsdns-27.net",
         "ns-1803.awsdns-33.co.uk",
-        "ns-733.awsdns-27.net"
+        "ns-1351.awsdns-40.org"
     ]
 }

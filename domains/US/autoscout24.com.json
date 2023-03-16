@@ -7,36 +7,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000058,
+    "prevalence": 0.0000474,
     "sites": 7,
     "subdomains": [
+        "watchlist.a",
         "plankton-gtm.a",
-        "www",
         "listing-search.api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "autoscout24\\.com\\/events",
+            "rule": "autoscout24\\.com\\/favorites\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "plankton-gtm.a"
+                "watchlist.a"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autoscout24.be",
-                "www.autoscout24.be",
+                "www.autoscout24.de",
+                "www.autoscout24.es"
+            ]
+        },
+        {
+            "rule": "autoscout24\\.com\\/favorites\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "watchlist.a"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "85a3fccf742be6f4eb8fc93aca90b4fa2e6811a618af42e9b62b2f6c227f81c4",
+                "f282efdf2db5d207d34ce45e152d5e7e634aea99cca60e69a17e470cc6007938"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autoscout24.be",
                 "www.autoscout24.de",
                 "www.autoscout24.es"
             ]
@@ -50,7 +71,30 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autoscout24.be",
+                "www.autoscout24.de",
+                "www.autoscout24.es"
+            ]
+        },
+        {
+            "rule": "autoscout24\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "plankton-gtm.a"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -63,30 +107,6 @@
             ]
         },
         {
-            "rule": "autoscout24\\.com\\/assets\\/as24-cmp\\/consent-banner\\/de-DE\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "03bf23732e50239a1e5e7a2463516a1b7d8fd32aa378514bad901ffab72bc7e7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autoscout24.de",
-                "www.autoscout24.de"
-            ]
-        },
-        {
             "rule": "autoscout24\\.com\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
@@ -94,8 +114,8 @@
                 "listing-search.api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000415,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -103,7 +123,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autoscout24.de",
-                "www.autoscout24.de",
                 "www.autoscout24.es",
                 "www.autoscout24.fr",
                 "www.autoscout24.nl"
@@ -117,21 +136,19 @@
                 "listing-search.api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000415,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "53665469ab6b199da9304af11264b213d988182ba84d25de2b830955328642e7",
-                "bc4009ce651c015f9f2248c75b1f136e98beeba104a3a66db650df37b69a71e9",
-                "9e2bcaa12e92a810921256b89132e1f01c0701e6c6cfc1db9153633a4c6a7cd4",
-                "02e1e2443bed0abe21a8ffe76c910986589276fa101cbcc731e7b798763b5061"
+                "53f1da1dbf96042cfa26f3e3223bbe94b9f4970f2797260f3242570686c555a6",
+                "b9905b432035043ad5fa1b65a1886290ac6d8bb0ad2ebe34128e50c1d01393ee",
+                "6c8b6aaf3635799bf94f8f194f4097d884e31a8b9254f5174f2908efa9ac64fa"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autoscout24.de",
-                "www.autoscout24.de",
                 "www.autoscout24.es",
                 "www.autoscout24.fr",
                 "www.autoscout24.nl"
@@ -144,23 +161,22 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.7105263157894737
+            "prevalence": 0.6071428571428571
         },
         {
             "domain": "first party",
-            "prevalence": 0.2894736842105263
+            "prevalence": 0.39285714285714285
         }
     ],
     "types": {
-        "XHR": 4,
-        "Preflight": 8,
-        "Script": 2,
-        "Fetch": 5
+        "Preflight": 10,
+        "Fetch": 7,
+        "XHR": 3
     },
     "nameservers": [
         "ns-947.awsdns-54.net",
-        "ns-1427.awsdns-50.org",
+        "ns-210.awsdns-26.com",
         "ns-2031.awsdns-61.co.uk",
-        "ns-210.awsdns-26.com"
+        "ns-1427.awsdns-50.org"
     ]
 }

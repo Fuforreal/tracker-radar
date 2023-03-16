@@ -4,14 +4,66 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000058,
-    "sites": 7,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
+        "api",
         "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "bam-x\\.com\\/api\\/v0\\/auction\\/",
+            "cookies": 0.0000339,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "eeab8fa2ca699276581c17da826c74534c54b456cb4aa1c1afcf105be1ef90dd",
+                "d0935c37d6413d1fa7803766eb96e6b5f1a6215d7eaf018a94e7526117c54511",
+                "02063bb0682941c523626f34b9db62f80331a88ad238af472ffbbd5ab493116f",
+                "66d9e24d57035679e8abda0253fc1476b58443bb242093b1f73a32a2c77ae48c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gizmodo.com",
+                "kotaku.com",
+                "lifehacker.com",
+                "www.usmagazine.com",
+                "www.wisebread.com"
+            ]
+        },
+        {
+            "rule": "bam-x\\.com\\/api\\/v0\\/auction\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gizmodo.com",
+                "kotaku.com",
+                "lifehacker.com",
+                "www.usmagazine.com",
+                "www.wisebread.com"
+            ]
+        },
         {
             "rule": "bam-x\\.com\\/tags\\/bergdorf\\.js",
             "cookies": 0,
@@ -24,7 +76,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "97dfb48530c3c9940fe40b9f4a990aeee7f96b8bfbe605933c9bc78611e0642b"
@@ -35,6 +87,32 @@
             "exampleSites": [
                 "bergdorfgoodman.com",
                 "www.bergdorfgoodman.com"
+            ]
+        },
+        {
+            "rule": "bam-x\\.com\\/tags\\/forward\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2cd37469549bf44d51b4334545581e2c746be05fb7a527912252441f5a92271a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fwrd.com",
+                "www.fwrd.com"
             ]
         },
         {
@@ -50,7 +128,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "03cb07ca36b7a8caa98151e71941c19c9a62c247d5a7defa7016b1887f6cf540"
@@ -75,7 +153,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d4dd9dbc6099790b3a3807c15f4ef9b8e71cab2a4a646e256b47248a8c430d09"
@@ -91,32 +169,34 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000829,
+    "cookies": 0.0000474,
     "topInitiators": [
         {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.2857142857142857
+            "domain": "narrativ.com",
+            "prevalence": 0.7948717948717948
         },
         {
             "domain": "px-cloud.net",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.10256410256410256
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.05128205128205128
         },
         {
             "domain": "first party",
-            "prevalence": 0.2857142857142857
-        },
-        {
-            "domain": "narrativ.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.05128205128205128
         }
     ],
     "types": {
-        "Script": 6
+        "XHR": 5,
+        "Preflight": 5,
+        "Script": 8
     },
     "nameservers": [
-        "ns-534.awsdns-02.net",
-        "ns-437.awsdns-54.com",
         "ns-1821.awsdns-35.co.uk",
-        "ns-1225.awsdns-25.org"
+        "ns-437.awsdns-54.com",
+        "ns-1225.awsdns-25.org",
+        "ns-534.awsdns-02.net"
     ]
 }

@@ -7,35 +7,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000829,
-    "sites": 1,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
-        "services",
+        "cdn-media",
         "events"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "brightline\\.tv\\/api\\/v2\\/config\\/1035",
+            "rule": "brightline\\.tv\\/sdk\\/gen2\\/webkit\\/media\\/js\\/brightline\\.webkit\\.sdk\\.2\\.1\\.3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "services"
+                "cdn-media"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "87079b6c240c0588225c59e14770960533e9bc555ae08ca65fbea24b375fb151"
+                "e0de41f00c1301ebf1bf1e3c97abf31c5bea62dd3757e64ef0372e4e9789adc6"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ncaa.com",
-                "www.ncaa.com"
+                "nbcsports.com",
+                "www.nbc.com",
+                "www.usanetwork.com"
             ]
         },
         {
@@ -47,7 +48,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -67,7 +68,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -87,18 +88,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.875
+        },
+        {
+            "domain": "nbc.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "XHR": 4,
-        "Preflight": 2
+        "Script": 3,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns4.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
         "ns1.dnsmadeeasy.com",
         "ns3.dnsmadeeasy.com",
-        "ns0.dnsmadeeasy.com",
-        "ns2.dnsmadeeasy.com"
+        "ns2.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com"
     ]
 }

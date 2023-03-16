@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "cdn",
         "api2"
@@ -15,36 +15,37 @@
     "resources": [
         {
             "rule": "jarvisml\\.com\\/jarvisml-sdk\\.min\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000203,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "59d5652ce4ffe10a0dee97c5b3230de2b30802325ae03d26004fe68766f427fe"
+                "064830d31c80ac80e51afee67d7f6f929a31a53ae11c6fa6553e060ed118f33a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_jarvis_cid": {
-                    "ttl": 604806,
+                    "ttl": 604803,
                     "length": 29,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.00002033195301963389,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "plantdelights.com",
-                "www.plantdelights.com"
+                "www.plantdelights.com",
+                "www.twiddy.com"
             ]
         },
         {
@@ -55,20 +56,22 @@
                 "api2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "8c88dfd2e082b790ba8d01ed78c4d05a359d5eadb7db71e38ea6da7284a21b6a"
+                "eead376286ea57e67753a1088158184db0375635e2745ba0c19c94c373d47eb7",
+                "f9b24cd718548937b83f1e84b78a3a99ce458824bcbff0d08a44ee6b1b0b7cb6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000033166945821794
+                "_ga": 0.00002033195301963389
             },
             "exampleSites": [
                 "plantdelights.com",
-                "www.plantdelights.com"
+                "www.plantdelights.com",
+                "www.twiddy.com"
             ]
         },
         {
@@ -79,43 +82,74 @@
                 "api2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000033166945821794
+                "_ga": 0.00002033195301963389
             },
             "exampleSites": [
                 "plantdelights.com",
-                "www.plantdelights.com"
+                "www.plantdelights.com",
+                "www.twiddy.com"
+            ]
+        },
+        {
+            "rule": "jarvisml\\.com\\/\\/pixel\\/pixel2\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b3da89922d333d106b84fefeebd7b16bfebf4cfbd7bef37fa10a47c471ae64c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027109270692845184,
+                "_jarvis_cid": 0.000013554635346422592
+            },
+            "exampleSites": [
+                "twiddy.com",
+                "www.twiddy.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
-            "domain": "first party",
+            "domain": "googletagmanager.com",
             "prevalence": 0.5
         },
         {
+            "domain": "first party",
+            "prevalence": 0.35714285714285715
+        },
+        {
             "domain": "shopify.com",
-            "prevalence": 0.5
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Script": 2,
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 3,
+        "Fetch": 3,
+        "Preflight": 3,
+        "Image": 2
     },
     "nameservers": [
-        "ns-cloud-e4.googledomains.com",
         "ns-cloud-e1.googledomains.com",
-        "ns-cloud-e3.googledomains.com",
-        "ns-cloud-e2.googledomains.com"
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e3.googledomains.com"
     ]
 }

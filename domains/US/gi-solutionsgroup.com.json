@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000829,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
-        "tag"
+        "tag",
+        "tagcdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "gi-solutionsgroup\\.com\\/matomo\\.php",
@@ -21,13 +22,58 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Ping",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "charlestyrwhitt.com",
+                "www.charlestyrwhitt.com"
+            ]
+        },
+        {
+            "rule": "gi-solutionsgroup\\.com\\/matomo\\.js",
+            "cookies": 0.00000678,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagcdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.platform": 1,
+                "Document.cookie setter": 1,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b8b772279455f56d78e225827bcec08458b006e99a13b56ac5eb6fde0c7f40bb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.16.c682": {
+                    "ttl": 33955204,
+                    "length": 52,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "_pk_ses.16.c682": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "charlestyrwhitt.com",
@@ -37,15 +83,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000678,
     "topInitiators": [
         {
             "domain": "tag4arm.com",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Ping": 2
+        "Ping": 2,
+        "Script": 2
     },
     "nameservers": [
         "pdns12.domaincontrol.com",

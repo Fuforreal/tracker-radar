@@ -7,12 +7,32 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000249,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "quoteapi\\.com\\/api\\/v5\\/markets\\/asx\\/time",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c19815dcccd31120910b97cce9bdc58da1be6a1b36566b2fe2f9973cbe780c62"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stockhead.com.au",
+                "www.marketindex.com.au"
+            ]
+        },
         {
             "rule": "quoteapi\\.com\\/lib\\/1\\.15\\.7\\/quoteapi\\.css",
             "cookies": 0,
@@ -20,7 +40,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "86fef44fd85b95c12f69afdda00881d5db0777b8522e33de7f94c68e15ec5be5"
@@ -40,10 +60,10 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6faea3d90d4a496a0de708d307aa670a97f69909dc40f32ab815d019573f6fbb"
+                "11c0fc5e7e558de0a997310e9644b6ce544a9b77a07931b5f8af7e2d6817c7a2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -54,22 +74,42 @@
             ]
         },
         {
-            "rule": "quoteapi\\.com\\/api\\/v5\\/markets\\/asx\\/time",
+            "rule": "quoteapi\\.com\\/api\\/v5\\/symbols\\/xko\\.asx\\/ticks",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5c73c05fed0aff37e459492f1ba72cd3c535c98cfa77cd6910df9b8dd6ed8c70"
+                "1ca9428091bbe8a40fc0460fbee0a523b029541180f44fffb228be0aaf056be1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fool.com.au",
+                "marketindex.com.au",
+                "www.marketindex.com.au"
+            ]
+        },
+        {
+            "rule": "quoteapi\\.com\\/api\\/v5\\/symbols\\/xjo\\.asx\\/ticks",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1a918b123d34ba8bd1ac4214d13b4693999bd7ad1218ce1f5867dba3f45b4d50"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketindex.com.au",
                 "www.marketindex.com.au"
             ]
         }
@@ -80,17 +120,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9259259259259259
+        },
+        {
+            "domain": "stocknessmonster.com",
+            "prevalence": 0.07407407407407407
         }
     ],
     "types": {
-        "Stylesheet": 2,
-        "XHR": 4
+        "XHR": 8,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-122.awsdns-15.com",
-        "ns-858.awsdns-43.net",
         "ns-1261.awsdns-29.org",
-        "ns-1969.awsdns-54.co.uk"
+        "ns-122.awsdns-15.com",
+        "ns-1969.awsdns-54.co.uk",
+        "ns-858.awsdns-43.net"
     ]
 }

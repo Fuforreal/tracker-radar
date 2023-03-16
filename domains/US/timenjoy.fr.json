@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "widget"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "timenjoy\\.fr\\/",
@@ -21,7 +21,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "88d5d66fbea108fc8c401a7286fec791c0baade3d1227e6ff37f3e08b3cc0f66"
@@ -37,13 +37,16 @@
         {
             "rule": "timenjoy\\.fr\\/timenjoy-api\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "widget"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 1,
+                "window.localStorage": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "90ce9d75aba5bc5e060d437ffaf1fe133d30446f59582dce22564d111e815d9a"
@@ -71,7 +74,7 @@
         "Script": 2
     },
     "nameservers": [
-        "dns200.anycast.me",
-        "ns200.anycast.me"
+        "ns200.anycast.me",
+        "dns200.anycast.me"
     ]
 }

@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
-        "trck"
+        "trck",
+        "cs.cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "linkster\\.co\\/trck\\/etms\\/eatms\\.js",
@@ -20,8 +21,8 @@
                 "trck"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "3f42a99f1741656700326afb31137538bd2f57d1c4eb79625d344561363f597d"
@@ -30,9 +31,36 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lelo.com",
+                "brain-effect.com",
+                "www.brain-effect.com",
+                "www.giesswein.com",
                 "www.lelo.com",
                 "www.nastygal.com"
+            ]
+        },
+        {
+            "rule": "linkster\\.co\\/main\\/scripts\\/shopify\\/client-script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cs.cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "50c656687551f2add61ab34de6195e7274bcb00f96466c707ac653b5676f22b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "giesswein.com",
+                "www.giesswein.com"
             ]
         }
     ],
@@ -41,15 +69,19 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.6
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 7
     },
     "nameservers": [
-        "ns27.domaincontrol.com",
-        "ns28.domaincontrol.com"
+        "ns28.domaincontrol.com",
+        "ns27.domaincontrol.com"
     ]
 }

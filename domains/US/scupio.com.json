@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000995,
-    "sites": 12,
+    "prevalence": 0.000115,
+    "sites": 17,
     "subdomains": [
         "img",
         "bw",
@@ -29,12 +29,12 @@
             "apis": {
                 "Date.prototype.getTime": 3,
                 "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 2,
+                "window.localStorage": 3,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "0b7c985fafda17e8085fb6ba1cc58444ae9aad39a3f721a627db9e64d4491cea"
@@ -50,19 +50,19 @@
         },
         {
             "rule": "scupio\\.com\\/html\\/ad\\.html",
-            "cookies": 0.00000829,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "img"
             ],
             "apis": {
-                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 2,
                 "window.localStorage": 3,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 3
             },
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "f670c1ad9fafff4387b4474fda0e68b090c975ddc416cf9f2aa64f50e1a4077c"
@@ -70,10 +70,10 @@
             "type": "Document",
             "firstPartyCookies": {
                 "__sccookie_exp1n": {
-                    "ttl": 31536001,
+                    "ttl": 31536005,
                     "length": 33,
-                    "prevalence": 0.0000082917364554485,
-                    "uniqueness": 1
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -86,14 +86,14 @@
         },
         {
             "rule": "scupio\\.com\\/adpinline\\/adreqlog\\.aspx",
-            "cookies": 0.0000332,
+            "cookies": 0.0000271,
             "fingerprinting": 0,
             "subdomains": [
                 "bw"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -110,25 +110,30 @@
         },
         {
             "rule": "scupio\\.com\\/js\\/prebid\\.js",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 2,
             "subdomains": [
                 "img"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.cookieEnabled": 3,
+                "window.sessionStorage": 2,
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
                 "Navigator.prototype.language": 3,
                 "Navigator.prototype.doNotTrack": 3,
-                "window.localStorage": 3,
-                "Document.cookie setter": 3,
-                "Document.cookie getter": 3,
-                "window.sessionStorage": 1
+                "Screen.prototype.orientation": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "97a8ac3778e546a6f181085011be6050889e44dd212ac3e9782389f0b853c23d"
@@ -136,16 +141,16 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592001,
+                    "ttl": 2592007,
                     "length": 16,
-                    "prevalence": 0.0000082917364554485,
-                    "uniqueness": 1
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 0.5
                 },
                 "ucf_uid": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.0000082917364554485,
-                    "uniqueness": 1
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -165,10 +170,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "a58f0b003dd308a2f86a4ee74095058bc1b74ee2dad65088a2997d10e015f32c"
+                "4fd0e20e3989866247c520a236d084234eac01ecc6f5f74f9f5d25726922cb7c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -187,14 +192,15 @@
                 "prebid"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000058,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
-                "e25a2eee7e6ac777fce484b0f5f465944d8b70dcd038e5eb038d9dbd10e26763",
-                "37d0edbbc1602fe76bd056718410ba513d548fb47cd8885cee02f45c32323f2f",
+                "074b0349099d1689cd92ea2bee11334a83897567bfedf72084b4180e91905002",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "9b9e047baf86e83516c61677522f1eeec1c141d1084e3ce12a5229f330162e5f"
+                "ab59680239b4062067af841758bab09e3acabdbd5b87d64b815749a347f50ba6",
+                "4553dfc73918d7db9d20b90f82d468a9dc976ee27542f4a1d1c84f4b7f0607b2",
+                "a2cd5fa27270eb847bc2312b53b36e2e66c41170afe8e300eb786d954a28e0c0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -202,8 +208,10 @@
             "exampleSites": [
                 "udn.com",
                 "blog.udn.com",
+                "health.udn.com",
                 "m.mobile01.com",
                 "mojim.com",
+                "star.ettoday.net",
                 "www.chinatimes.com",
                 "www.ettoday.net",
                 "www.mobile01.com"
@@ -211,18 +219,18 @@
         },
         {
             "rule": "scupio\\.com\\/adpinline\\/bidinfo\\.aspx",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "bw"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "f664f5292b4f3a9770d49bc76a9d8627a50282d05ae1fc2f65c21e197d1d1307",
-                "16b5a342707b23197748b48f6d5f27299bfb72639b39b72568961f29eb497a61"
+                "b911aad5d1d1d75ceb343018b4347bd5009135e9097990eaa0db8811adc69ac3",
+                "dc3ab1dbfa39710c3076a434b1be1867be2b141819e1453ab185934f21260515"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -236,13 +244,16 @@
         {
             "rule": "scupio\\.com\\/html\\/ls\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "img"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 1
+            },
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "204b096d37249d9125a8b3450e44a31773cb148dba50c88d1fd26a0b914216ce"
@@ -258,38 +269,15 @@
             ]
         },
         {
-            "rule": "scupio\\.com\\/recweb\\/uxid\\.aspx",
-            "cookies": 0.0000249,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rec"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
-            "cnames": [],
-            "responseHashes": [
-                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "udn.com",
-                "blog.udn.com",
-                "mojim.com"
-            ]
-        },
-        {
             "rule": "scupio\\.com\\/recweb\\/ggid\\.aspx",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "rec"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -303,20 +291,189 @@
             ]
         },
         {
+            "rule": "scupio\\.com\\/recweb\\/uxid\\.aspx",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udn.com",
+                "mojim.com"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/recweb\\/js\\/rec\\.js",
+            "cookies": 0.00000678,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rec"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e7ae7978e9374bdfa25d15aa5622977abdd1a1844f24d5e4b98da369f03a2cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__BWfp": {
+                    "ttl": 863996410,
+                    "length": 24,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udn.com",
+                "mojim.com"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/js\\/rec\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e7ae7978e9374bdfa25d15aa5622977abdd1a1844f24d5e4b98da369f03a2cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udn.com",
+                "mojim.com"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/js\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0fb170f24675c84f8228ad6b61d69bf6705030949cc2fec316b3a006eab282f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udn.com",
+                "mojim.com"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/recweb\\/rec\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "64f76a3e71ed016b0b557254e63f93cfe98ccebf2fcc2f54b71e45cf6b8e468f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udn.com",
+                "mojim.com"
+            ]
+        },
+        {
             "rule": "scupio\\.com\\/adpinline\\/rubiconid\\.aspx",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "bw"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udn.com",
+                "mojim.com"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/staticfiles\\/4c91fff1cc948dd6d366fd7e5d3ae2243ff81dc3\\/scripts\\/adbanner\\/build\\/adimg\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "96ab2c962212f8af22ffc89817fe5094db6a0d27b8cbaacd34323aa9007ca7fa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "udn.com",
+                "mojim.com"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/staticfiles\\/4c91fff1cc948dd6d366fd7e5d3ae2243ff81dc3\\/scripts\\/adbanner\\/build\\/CoverImage\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9ee1b5f0991caed05a8149e2e2d86f43a8a0d8600d5c83d2799601714a8af3c6"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -333,7 +490,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e64cd3d63467a570ac7dcc5dc9925a9d37f846a6bbfa7b11abec507bbc4cc53f"
@@ -348,7 +505,7 @@
         },
         {
             "rule": "scupio\\.com\\/js\\/pixel\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "img"
@@ -360,7 +517,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4f2f76062ee54874987613350a26852c03169cf816bd4c65cb3e906deed85618"
@@ -368,15 +525,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "__BWtransf": {
-                    "ttl": 863996407,
+                    "ttl": 863996411,
                     "length": 24,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "__BWfp": {
-                    "ttl": 863996407,
+                    "ttl": 863996411,
                     "length": 24,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -388,14 +545,14 @@
         },
         {
             "rule": "scupio\\.com\\/v0\\/event",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "pixel-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "784c24269e0dc7390e240f37102dabed0389ca58de0728e84e471656f652c81b"
@@ -411,47 +568,47 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000332,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
-            "domain": "ajax.googleapis.com",
-            "prevalence": 0.36585365853658536
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.36585365853658536
+            "prevalence": 0.43137254901960786
         },
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.0975609756097561
-        },
-        {
-            "domain": "rubiconproject.com",
-            "prevalence": 0.04878048780487805
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "udn.com.tw",
-            "prevalence": 0.04878048780487805
+            "prevalence": 0.0784313725490196
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.058823529411764705
+        },
+        {
+            "domain": "rubiconproject.com",
+            "prevalence": 0.0392156862745098
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.04878048780487805
+            "prevalence": 0.0392156862745098
         },
         {
             "domain": "appier.net",
-            "prevalence": 0.024390243902439025
+            "prevalence": 0.0196078431372549
         }
     ],
     "types": {
-        "Script": 13,
+        "Script": 19,
         "Document": 8,
-        "XHR": 19,
-        "Image": 5
+        "XHR": 27,
+        "Image": 4
     },
     "nameservers": [
         "ns-639.awsdns-15.net",
-        "ns-1834.awsdns-37.co.uk",
         "ns-500.awsdns-62.com",
+        "ns-1834.awsdns-37.co.uk",
         "ns-1225.awsdns-25.org"
     ]
 }

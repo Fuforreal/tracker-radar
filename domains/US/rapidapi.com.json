@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
-        "telize-v1.p"
+        "telize-v1.p",
+        "transloc-api-1-2.p"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -41,7 +42,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ebbdafdd07df85683104828384202968cc274a4c4ae63b38b60023ee778afba2"
@@ -55,6 +56,48 @@
             ]
         },
         {
+            "rule": "rapidapi\\.com\\/vehicles\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "transloc-api-1-2.p"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "utk.edu",
+                "www.utk.edu"
+            ]
+        },
+        {
+            "rule": "rapidapi\\.com\\/vehicles\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "transloc-api-1-2.p"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e09b797b8e621814a69db54d4d027531e72f4ce0ef6d0cba90a6ebe02b4f2d09"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "utk.edu",
+                "www.utk.edu"
+            ]
+        },
+        {
             "rule": "rapidapi\\.com\\/location",
             "cookies": 0,
             "fingerprinting": 0,
@@ -63,10 +106,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "261c436f90cf80a5c4059ea57eec5468706999a6b987a20d7e1675fc1f9d2f51"
+                "5fd7547b209ca91885f428ce2024d4ae6af1a81d8607d6831dcf3ced806a631e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -83,16 +126,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.8181818181818182
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.5
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
-        "Preflight": 2,
-        "XHR": 2,
+        "Preflight": 4,
+        "XHR": 4,
         "Script": 2
     },
     "nameservers": [

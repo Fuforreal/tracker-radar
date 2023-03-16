@@ -7,13 +7,24 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000498,
-    "sites": 6,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
         "toprated",
-        "sslweb"
+        "wfprmag",
+        "sslweb",
+        "wgprwpr"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "abbonamenti.gazzetta.it",
+            "resolved": "wfprmag.rcs.it"
+        },
+        {
+            "original": "static2.strade-bianche.it",
+            "resolved": "wgprwpr.rcs.it"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -24,13 +35,12 @@
                 "toprated"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "b3cf215a258b385ff4b3a4461bef6cce972027e2018557a838c1bcf26a33cb25",
-                "72e40e34ffccde8b8758ff5d0a7ad74bb41797187596fb717a565648df752ff1",
-                "4490f1c58e129c7f06df76886b90bdc1312cd671a598755d600d1ca88c4c9489"
+                "7134e67d572e886006d123afcff291b7fdac856d1221864f0bddfbb731bbb656",
+                "acca68801146ad9f543920a9d1e61b17033d8bf56975fb82ec081e1ad56eb183"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -38,7 +48,33 @@
             "exampleSites": [
                 "fcinter1908.it",
                 "www.fcinter1908.it",
-                "www.forzaroma.info",
+                "www.gazzetta.it"
+            ]
+        },
+        {
+            "rule": "rcs\\.it\\/wp-content\\/uploads\\/json\\/topBarOfferteGazzetta\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wfprmag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "abbonamenti.gazzetta.it",
+                    "resolved": "wfprmag.rcs.it"
+                }
+            ],
+            "responseHashes": [
+                "fd5340275b7fcadc9e6a685117b2d16898a5c69492e6adc343cb0cc3813522fa"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gazzetta.it",
                 "www.gazzetta.it"
             ]
         },
@@ -51,7 +87,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -71,7 +107,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5310dbf48b9265c7cfeaf6820108fd31171cfc26f0bcdccfd3d4b77c4fe0a8fb"
@@ -83,25 +119,80 @@
                 "iodonna.it",
                 "www.iodonna.it"
             ]
+        },
+        {
+            "rule": "rcs\\.it\\/wp-content\\/uploads\\/2021\\/02\\/Squadre_\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wgprwpr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static2.strade-bianche.it",
+                    "resolved": "wgprwpr.rcs.it"
+                }
+            ],
+            "responseHashes": [
+                "a382db18ebfd51e359e680065c46cf35900e34abd5513e377275d9056f6b11ef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strade-bianche.it",
+                "www.strade-bianche.it"
+            ]
+        },
+        {
+            "rule": "rcs\\.it\\/wp-content\\/uploads\\/2021\\/02\\/Hospitality_\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wgprwpr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static2.strade-bianche.it",
+                    "resolved": "wgprwpr.rcs.it"
+                }
+            ],
+            "responseHashes": [
+                "2e1bca69a9fcbae20477f50d0deae5796c322057199d9ee700cd72d7b048768c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strade-bianche.it",
+                "www.strade-bianche.it"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000829,
+    "cookies": 0.00000678,
     "topInitiators": [
         {
             "domain": "gazzettaobjects.it",
-            "prevalence": 0.8461538461538461
+            "prevalence": 0.8333333333333334
         },
         {
             "domain": "first party",
-            "prevalence": 0.15384615384615385
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Fetch": 4,
+        "Fetch": 5,
         "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Image": 4
     },
     "nameservers": [
         "dnsgeo5.tuonomeregistrar.com",

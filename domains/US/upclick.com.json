@@ -4,23 +4,28 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 5,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "gate",
-        "cgate.sodapdf"
+        "cgate.sodapdf",
+        "store.pdfforge-org"
     ],
     "cnames": [
         {
             "original": "cgate.sodapdf.com",
             "resolved": "cgate.sodapdf.upclick.com"
+        },
+        {
+            "original": "store.pdfforge.org",
+            "resolved": "store.pdfforge-org.upclick.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "upclick\\.com\\/btn\\/visitor\\.min\\.js",
-            "cookies": 0.0000332,
+            "cookies": 0.0000271,
             "fingerprinting": 1,
             "subdomains": [
                 "gate"
@@ -31,7 +36,7 @@
                 "Document.cookie setter": 4
             },
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "7d528b4e0a23066b3ca098bf67a953053da106d378fb370a7794bc4ffeafa7e8"
@@ -41,7 +46,7 @@
                 "vst": {
                     "ttl": 10368001,
                     "length": 12,
-                    "prevalence": 0.000033166945821794,
+                    "prevalence": 0.000027109270692845184,
                     "uniqueness": 0.25
                 }
             },
@@ -55,7 +60,7 @@
         },
         {
             "rule": "upclick\\.com\\/click\\.aspx",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "gate",
@@ -63,7 +68,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "cgate.sodapdf.com",
@@ -76,18 +81,47 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "qti": 0.000016583472910897
+                "qti": 0.00002033195301963389
             },
             "exampleSites": [
                 "pdfescape.com",
                 "www.pdfescape.com",
                 "www.sodapdf.com"
             ]
+        },
+        {
+            "rule": "upclick\\.com\\/clickgate\\/click\\.aspx",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "store.pdfforge-org"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "store.pdfforge.org",
+                    "resolved": "store.pdfforge-org.upclick.com"
+                }
+            ],
+            "responseHashes": [
+                "c78bf59ce77e2917422a9e7509414ccc942203e2dd763af1d80422d5d424a7cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "qti": 0.000013554635346422592
+            },
+            "exampleSites": [
+                "pdfforge.org",
+                "www.pdfforge.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "lulusoft.com",
@@ -95,16 +129,16 @@
         },
         {
             "domain": "upclick.com",
-            "prevalence": 0.375
+            "prevalence": 0.4
         },
         {
             "domain": "first party",
-            "prevalence": 0.125
+            "prevalence": 0.1
         }
     ],
     "types": {
         "Script": 4,
-        "Image": 3
+        "Image": 5
     },
     "nameservers": [
         "ns1.upclick.com",

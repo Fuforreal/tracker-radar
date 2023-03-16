@@ -7,40 +7,81 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000498,
-    "sites": 6,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
+        "api",
         "smetrics",
         "auth-id",
-        "api",
         "static.www",
-        "static.clubs"
+        "static.clubs",
+        "o300810-mp-lura-live.ctl"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "nfl\\.com\\/identity\\/v3\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commanders.com",
+                "www.commanders.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.com\\/identity\\/v3\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c59e720994f45c5033c2935e631d7cdd78ea7b96ff6a58439e5a95eb849329ae"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commanders.com",
+                "www.commanders.com"
+            ]
+        },
+        {
             "rule": "nfl\\.com\\/id",
-            "cookies": 0.0000249,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "smetrics"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fbec0211ac2d53c87304592a05f4619d308b48d77d9783d346d6bde3d2d7e9e4",
-                "fbc611edb334d2fad1dfec6d7758681ddbdf10bbbae223509d50c5214df9b3b3"
+                "e16abe100e468b0f8a1970171dfa7555d6453db8277fce01ed4978d555989acb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nflgamepass.com",
-                "www.nflgamepass.com",
-                "www.tennesseetitans.com"
+                "commanders.com",
+                "www.commanders.com"
             ]
         },
         {
@@ -51,20 +92,40 @@
                 "auth-id"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e9795acfc846552b47fa73babae1d529f8d191c164d196a3a6647033559c8e20",
-                "14ec234df0fbfc4ef84359a5b20dba8979bda2848ac5cd051e06f6beae2e31cb"
+                "fae4e25f92a8683d6f8c5941f430071c635bb2c5d8ab8f0116241959c03243ce"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nflgamepass.com",
-                "www.nflgamepass.com",
-                "www.tennesseetitans.com"
+                "commanders.com",
+                "www.commanders.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.com\\/t_q-best\\/league\\/api\\/clubs\\/logos\\/WAS",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "78577de6dd1f49b7b694c7bb10f52567a1d2ecd5519429ab74a15f94468c7713"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commanders.com",
+                "www.commanders.com"
             ]
         },
         {
@@ -75,39 +136,63 @@
                 "auth-id"
             ],
             "apis": {
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "93b85b15221becad88dac87417857122537a63e39438f9d861a59351b6f2b604",
-                "63ae9a2aed4676b01a4827e36df34c759f4f5f90f0cd5c62237e4f09b4873f9a"
+                "234b07e5413434c77b88fcd3e976a7ad897b8558a5f9cd50565e0787cc2b81d5"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nflgamepass.com",
-                "www.nflgamepass.com",
-                "www.tennesseetitans.com"
+                "commanders.com",
+                "www.commanders.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.com\\/image\\/private\\/f_auto\\/redskins\\/br6u4z66iqm5bk6tau6n",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.clubs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe688d0e5574f041990ca9f7f1b1b0a7e8a9e572b4db53d8afeb67405271eccc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commanders.com",
+                "www.commanders.com"
             ]
         },
         {
             "rule": "nfl\\.com\\/gs\\/sso\\.htm",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "auth-id"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appVersion": 3,
-                "Navigator.prototype.mimeTypes": 3,
-                "Date.prototype.getTime": 3
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "9e210d8934e373acac189bb512f08da9a9a2d156c735bbae316ff206668f3750"
@@ -116,13 +201,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nflgamepass.com",
-                "www.nflgamepass.com",
-                "www.tennesseetitans.com"
+                "commanders.com",
+                "www.commanders.com"
             ]
         },
         {
-            "rule": "nfl\\.com\\/identity\\/v3\\/token",
+            "rule": "nfl\\.com\\/play\\/v1\\/asset\\/1441122",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -130,63 +214,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tennesseetitans.com",
-                "www.tennesseetitans.com"
-            ]
-        },
-        {
-            "rule": "nfl\\.com\\/identity\\/v3\\/token",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8306819940517624569e6b42edea4aaf760d4c0c4c34f40320dc268e966475ea"
+                "8813e98ae66224afb043a10fa9c85b767005f290c3e8a98968704d0c2a468a95"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tennesseetitans.com",
-                "www.tennesseetitans.com"
+                "commanders.com",
+                "www.commanders.com"
             ]
         },
         {
-            "rule": "nfl\\.com\\/t_q-best\\/league\\/api\\/clubs\\/logos\\/TEN",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "a12a4a09060d3086540848fb8b6f5c602b04c3611e02322f7fb3600f835c9c2d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tennesseetitans.com",
-                "www.tennesseetitans.com"
-            ]
-        },
-        {
-            "rule": "nfl\\.com\\/image\\/private\\/titans\\/goh5bo73dxy6xflarxon",
+            "rule": "nfl\\.com\\/image\\/private\\/t_editorial_landscape_12_desktop\\/redskins\\/wivi3n4fpaat9i7elgwc",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -194,47 +236,71 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e2c6215a5e98a3a7b0fb82f6aea84fafe58f22a67f93652bd1dc14686bdc8f8a"
+                "2e3e22e5e2b19435a044d517867739d462560ccd64b9f4f1611985f221251b88"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tennesseetitans.com",
-                "www.tennesseetitans.com"
+                "commanders.com",
+                "www.commanders.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.com\\/1\\/73\\/5691\\/22\\/10\\/14\\/1441122\\/F6D920B251939CE6DC733DF76D6717EB017F3B73B395D1-1\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "o300810-mp-lura-live.ctl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commanders.com",
+                "www.commanders.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000332,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5161290322580645
+            "prevalence": 0.46808510638297873
         },
         {
             "domain": "gigya.com",
-            "prevalence": 0.3387096774193548
-        },
-        {
-            "domain": "adobedtm.com",
-            "prevalence": 0.11290322580645161
+            "prevalence": 0.2553191489361702
         },
         {
             "domain": "nfltags.com",
-            "prevalence": 0.03225806451612903
+            "prevalence": 0.10638297872340426
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.0851063829787234
+        },
+        {
+            "domain": "lura.live",
+            "prevalence": 0.0851063829787234
         }
     ],
     "types": {
-        "XHR": 3,
-        "Fetch": 5,
-        "Document": 6,
         "Preflight": 2,
-        "Image": 4
+        "Fetch": 6,
+        "XHR": 4,
+        "Image": 6,
+        "Document": 4
     },
     "nameservers": [
         "udns1.ultradns.net",

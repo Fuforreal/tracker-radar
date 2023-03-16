@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.000061,
+    "sites": 9,
     "subdomains": [
         "tg1",
-        "servt"
+        "servt",
+        "serv",
+        "servs"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,21 +23,26 @@
                 "tg1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appVersion": 3
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.appVersion": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
-                "f68ee25ab1c629bb1f84d1940f90d7017b68aad77f144c8aa08b082ebb434965",
-                "7e1a1149d83da636aad14e299ec0144e7f4a7946c48e0f96d27c27b90e1c3cad"
+                "19bd10190b6acc7cb2a78ab6ded14215553cafd8a9efe92954abfb7c1551e83c",
+                "c723846252527e1b3237e3f91a6c1220d47f650d2c3e45cd032f1141794593a7",
+                "dc07a666e00f67c0e734b32ffe729fa38e343f3eea6e00ffdf2a4a8e32fa13a9",
+                "d034a2d46666236f299ae40f3536201b09e3bf82729bc76e254cb358e3fff2d0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "forextuner.xyz",
+                "fullfights.net",
+                "racereplay.net",
+                "www.dimsumdaily.hk",
                 "www.youm7.com",
                 "www1.yalla-shoot-as.com"
             ]
@@ -48,8 +55,8 @@
                 "servt"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -57,30 +64,86 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000082917364554485
+                "lotame_domain_check": 0.000006777317673211296
             },
             "exampleSites": [
                 "forextuner.xyz",
+                "racereplay.net",
+                "www.dimsumdaily.hk",
                 "www.youm7.com",
                 "www1.yalla-shoot-as.com"
+            ]
+        },
+        {
+            "rule": "modoro360\\.com\\/api\\/adserver\\/tag\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "650de607fe7d927d39e7555fcc6fb9570da548b3f75df565756a371bcddad802"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "racereplay.net",
+                "www.dimsumdaily.hk"
+            ]
+        },
+        {
+            "rule": "modoro360\\.com\\/cookiesyncendpoint",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "racereplay.net",
+                "www.dimsumdaily.hk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000203,
     "topInitiators": [
         {
+            "domain": "aniview.com",
+            "prevalence": 0.6470588235294118
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.2647058823529412
+        },
+        {
+            "domain": "pubmatic.com",
+            "prevalence": 0.08823529411764706
         }
     ],
     "types": {
-        "Script": 3,
-        "Image": 3
+        "Script": 6,
+        "Image": 5,
+        "XHR": 2,
+        "Document": 2
     },
     "nameservers": [
-        "elmo.ns.cloudflare.com",
-        "maya.ns.cloudflare.com"
+        "maya.ns.cloudflare.com",
+        "elmo.ns.cloudflare.com"
     ]
 }

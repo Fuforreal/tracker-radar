@@ -7,38 +7,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000663,
-    "sites": 8,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "tags.cgcmd",
+        "vodstreaming01.video",
         "live.video",
-        "horizon-track"
+        "barra",
+        "id",
+        "horizon-schemas",
+        "globo-ab",
+        "horizon",
+        "horizon-track",
+        "usergate"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "globo\\.com\\/gp\\/efb13e1a-2ada-4f0a-94e8-87095042887d\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tags.cgcmd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "3e1860dde71f8294c2fccc457c9b4b41eae8e30c0d843011e0efc1ed2a4f23d4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "educamaisbrasil.com.br",
-                "www.educamaisbrasil.com.br"
-            ]
-        },
         {
             "rule": "globo\\.com\\/gp\\/4b6a6b4b-dba9-4238-91f1-33a393f7677d\\.js",
             "cookies": 0,
@@ -48,7 +33,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5821afe3de00c9b6e2ac5de7d9e7373bc5c7be5a7d2e20aa1ba902bf7c12fc2c"
@@ -66,15 +51,14 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "vodstreaming01.video",
                 "live.video"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "13348a5efc450ea05bab020b8e54e8e467c1055e4eb7579d7868e12832958eef"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -84,15 +68,127 @@
             ]
         },
         {
+            "rule": "globo\\.com\\/gl\\/ba\\/oidcprodutos\\/css\\/barra-globocom\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "barra"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d01b2cf5b15e8ea0ef57c0ccc66a390b354d8dbc11410035fb73eb12ab3ee514"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/auth\\/realms\\/globo\\.com\\/protocol\\/openid-connect\\/auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "id"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "25fb23868ebf48348f9e438e00cb9b9d9b3a054f32482a781c762cc4f9cc6393"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/schemas",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "horizon-schemas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a26d0a6708e7988527607e7f1081462ef3ff628178932e832e656ec2a9bbfa6e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/v2\\/selected-alternatives",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "globo-ab"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bd7bf1cfff50d8725ef850f4847aa1dc0b2a29f2ac6be3485ccc77a68b363ee2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/auth-session\\/activity\\/techtudo\\/horizon-pageview",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "horizon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013554635346422592
+            },
+            "exampleSites": [
+                "techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
             "rule": "globo\\.com\\/event\\/techtudo",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "horizon-track"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -104,42 +200,64 @@
                 "techtudo.com.br",
                 "www.techtudo.com.br"
             ]
+        },
+        {
+            "rule": "globo\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usergate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2af921f96b618475ba87948891bf844483be715971a4d4b69c4b596afd6c1691"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.4
+            "domain": "glbimg.com",
+            "prevalence": 0.5757575757575758
         },
         {
-            "domain": "glbimg.com",
-            "prevalence": 0.24
+            "domain": "googletagmanager.com",
+            "prevalence": 0.24242424242424243
         },
         {
             "domain": "perfops.net",
-            "prevalence": 0.16
-        },
-        {
-            "domain": "ampproject.org",
-            "prevalence": 0.16
+            "prevalence": 0.09090909090909091
         },
         {
             "domain": "first party",
-            "prevalence": 0.04
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 2,
+        "Script": 2,
+        "XHR": 4,
+        "Stylesheet": 2,
+        "Document": 2,
+        "Fetch": 4,
+        "Image": 2,
         "Ping": 2
     },
     "nameservers": [
-        "ns04.globo.com",
         "ns03.globo.com",
         "ns02.globo.com",
-        "ns01.globo.com"
+        "ns01.globo.com",
+        "ns04.globo.com"
     ]
 }

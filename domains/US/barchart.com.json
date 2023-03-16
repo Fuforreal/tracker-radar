@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 5,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
         "ondemand.websol",
         "barchartwidgets.websol"
@@ -16,6 +16,50 @@
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "barchart\\.com\\/getQuote\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ondemand.websol"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9d348bc5148244400d3d3db505af5fc8f2dffba2b4dd189ed710bd9817825c64"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tradingcharts.com",
+                "futures.tradingcharts.com"
+            ]
+        },
+        {
+            "rule": "barchart\\.com\\/getLeaders\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ondemand.websol"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a357569ab97dc16a83f65dba812facd5c50c1a11949bacc3dd169998a114d0d2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tradingcharts.com",
+                "futures.tradingcharts.com"
+            ]
+        },
         {
             "rule": "barchart\\.com\\/chart\\.png",
             "cookies": 0,
@@ -25,10 +69,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "81cb742ce5513bc65f6de8fa0a6abd6c5395912941bbd09e5ea59cb0d74cff94"
+                "66fce1370b76683032d3b4b32f6450a6f6812ae6cdb26022e25b0be2d63693b0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -40,14 +84,14 @@
         },
         {
             "rule": "barchart\\.com\\/",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "barchartwidgets.websol"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e0417f4aa809f2fcd50262a095dcd445daf677a7b3d42421f2da04c3cd3148bb"
@@ -63,21 +107,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000249,
+    "cookies": 0.0000203,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8125
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.1875
         }
     ],
     "types": {
+        "XHR": 4,
         "Image": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "ns-1489.awsdns-58.org",
-        "ns-886.awsdns-46.net",
         "ns-171.awsdns-21.com",
-        "ns-1993.awsdns-57.co.uk"
+        "ns-886.awsdns-46.net",
+        "ns-1993.awsdns-57.co.uk",
+        "ns-1489.awsdns-58.org"
     ]
 }

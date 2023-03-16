@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000141,
-    "sites": 17,
+    "prevalence": 0.000203,
+    "sites": 30,
     "subdomains": [
+        "ssl",
         "pro",
-        "ssl"
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,25 +22,28 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "pro",
-                "ssl"
+                "ssl",
+                "pro"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 10,
-                "Navigator.prototype.appVersion": 9
+                "Navigator.prototype.userAgent": 15,
+                "Navigator.prototype.appVersion": 14
             },
-            "sites": 10,
-            "prevalence": 0.0000829,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
-                "ddd1d5fe0f1ab51c4b45780ef012230ee513d976ac9ac3471c90b0fabe378a23",
-                "8c1ac0c62322f5f7514fe5b4990039a92a8165b6b9f870d34d2f9e5269f585a5"
+                "8c1ac0c62322f5f7514fe5b4990039a92a8165b6b9f870d34d2f9e5269f585a5",
+                "ddd1d5fe0f1ab51c4b45780ef012230ee513d976ac9ac3471c90b0fabe378a23"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "daiichisankyo-hc.co.jp",
+                "monex.co.jp",
+                "info.monex.co.jp",
+                "qa.smbc-card.com",
+                "www.daiichisankyo-hc.co.jp",
                 "www.driveplaza.com",
                 "www.iodata.jp",
                 "www.kewpie.co.jp",
@@ -48,7 +52,57 @@
                 "www.netbk.co.jp",
                 "www.saisoncard.co.jp",
                 "www.shinchosha.co.jp",
-                "www.smbc.co.jp"
+                "www.smbc-card.com",
+                "www.smbc.co.jp",
+                "www.takaratomy.co.jp"
+            ]
+        },
+        {
+            "rule": "syncsearch\\.jp\\/libs\\/suggest_version\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "804760a1239f3ee1f378d7ebbce8c6cbe545a40eb712d5a115227447caa14717"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuronekoyamato.co.jp",
+                "www.kyowakirin.co.jp",
+                "www.orico.co.jp"
+            ]
+        },
+        {
+            "rule": "syncsearch\\.jp\\/libs\\/suggest_1\\.0\\.5\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "2a970c63b9de889abecbf5e179a004903a71f1b42d6465055648d7dbf1394bc1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuronekoyamato.co.jp",
+                "www.kyowakirin.co.jp",
+                "www.orico.co.jp"
             ]
         }
     ],
@@ -62,10 +116,11 @@
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 18,
+        "XHR": 3
     },
     "nameservers": [
-        "ns2.syncsearch.jp",
-        "ns1.syncsearch.jp"
+        "ns1.syncsearch.jp",
+        "ns2.syncsearch.jp"
     ]
 }

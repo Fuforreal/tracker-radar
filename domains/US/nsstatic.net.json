@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000746,
-    "sites": 9,
+    "prevalence": 0.0000949,
+    "sites": 14,
     "subdomains": [
         "cdn"
     ],
@@ -36,10 +36,10 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f8be97ec433d49ed874dd0ca9077dcb9732fc000169bb6435fcc91d1b0852c83"
+                "94bbe43072f899351541b8ce714dc34bdb61d093f112a21767203d08976eecd5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -47,6 +47,56 @@
             "exampleSites": [
                 "aftvnews.com",
                 "www.aftvnews.com"
+            ]
+        },
+        {
+            "rule": "nsstatic\\.net\\/ns\\/dealsofamerica\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "09ac49dd10fe5d3def4cc05eaa00913459afe5f0af456ffb669cfdec94c0d94d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dealsofamerica.com",
+                "www.dealsofamerica.com"
+            ]
+        },
+        {
+            "rule": "nsstatic\\.net\\/ns\\/dealsofamerica\\.com\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c3d36e64927023431c249366c4612c28e1a3978464431fc6b0921a97d333e252"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dealsofamerica.com",
+                "www.dealsofamerica.com"
             ]
         },
         {
@@ -71,7 +121,7 @@
                 "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "374f80a47b62a2e4da2daf138c21918719cbb10883e177708865c8dd24e553b8"
@@ -82,6 +132,37 @@
             "exampleSites": [
                 "neoseeker.com",
                 "www.neoseeker.com"
+            ]
+        },
+        {
+            "rule": "nsstatic\\.net\\/ns\\/phonearena\\.com\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "71cabfd70ab1686dc16c2a2ea892f0c56e2119bdaaf074799c3cc1a63c22a3fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000027109270692845184
+            },
+            "exampleSites": [
+                "phonearena.com",
+                "www.phonearena.com"
             ]
         }
     ],
@@ -94,25 +175,26 @@
             "prevalence": 0.7
         },
         {
+            "domain": "geoedge.be",
+            "prevalence": 0.15
+        },
+        {
             "domain": "doubleclick.net",
             "prevalence": 0.1
         },
         {
-            "domain": "geoedge.be",
-            "prevalence": 0.1
-        },
-        {
             "domain": "confiant-integrations.net",
-            "prevalence": 0.1
+            "prevalence": 0.05
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 8,
+        "Stylesheet": 2
     },
     "nameservers": [
+        "ns-1970.awsdns-54.co.uk",
         "ns-1382.awsdns-44.org",
         "ns-988.awsdns-59.net",
-        "ns-153.awsdns-19.com",
-        "ns-1970.awsdns-54.co.uk"
+        "ns-153.awsdns-19.com"
     ]
 }

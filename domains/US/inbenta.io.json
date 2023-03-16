@@ -4,18 +4,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00039,
-    "sites": 47,
+    "prevalence": 0.000373,
+    "sites": 55,
     "subdomains": [
         "sdk",
         "api-gcu3",
         "api",
         "api-gca01",
+        "api-gce3",
         "cdn"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "inbenta\\.io\\/km\\/1\\.22\\.3\\/space-cowboy\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b7027ba1faa0e5c60231ffce409084f2d12917341c21c256162ab5d73e586680"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laposte.fr",
+                "aide.laposte.fr"
+            ]
+        },
         {
             "rule": "inbenta\\.io\\/search\\/1\\.49\\.4\\/inbenta-search-client\\.js",
             "cookies": 0,
@@ -24,10 +47,11 @@
                 "sdk"
             ],
             "apis": {
-                "Navigator.prototype.product": 2
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7e76b1b8c12c3340e5dc4701bb1c51eb4777c7c5421c3c237e0a54ef2750054a"
@@ -49,10 +73,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0461daaa0decda5af3a8902299aa8793cbd18f90ccecf93fd0f1914c08cf849c"
+                "710c4b1c6ccfa89c96366bc56058f0b408b5a3f90b69a7f2bc9e85ce65f84858"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -71,7 +95,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -84,7 +108,7 @@
         },
         {
             "rule": "inbenta\\.io\\/km\\/1\\.35\\/inbenta-km-sdk\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "sdk"
@@ -98,7 +122,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "389de0312b1b70e59639210eb217db8450cd6f53af433b82434e9cea9c9c26dd"
@@ -107,14 +131,14 @@
             "firstPartyCookies": {
                 "inbenta-km-session-token": {
                     "ttl": 86407,
-                    "length": 417,
-                    "prevalence": 0.000016583472910897,
+                    "length": 420,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "inbenta-km-session-id": {
                     "ttl": 86407,
                     "length": 40,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -133,7 +157,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "55f304e51abdc852695249609a9befc50fb5909eea1914beb5a85450f91d37df"
@@ -154,18 +178,20 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "401fab0d5297c3f2894538ca4c4e79354d13cefbd06b2d96f7f17d0c7515ddc8"
+                "5e55d4ee0175c6f867921c521be81f145ee7f58c0729809ba3cac952392c1007",
+                "182a38c3b8f8c6ad4775886b31c89cc46461f6b756fbfcfb898c1779a40080a1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "woolworths.com.au",
-                "mobile.woolworths.com.au"
+                "mobile.woolworths.com.au",
+                "www.volkswagen.de"
             ]
         },
         {
@@ -176,8 +202,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -185,29 +211,33 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "woolworths.com.au",
-                "mobile.woolworths.com.au"
+                "mobile.woolworths.com.au",
+                "www.volkswagen.de"
             ]
         },
         {
             "rule": "inbenta\\.io\\/prod\\/km\\/v1\\/tracking\\/session",
-            "cookies": 0.0000166,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
-                "api-gca01"
+                "api-gca01",
+                "api-gce3"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "504fb97da588f85dca0998dfdeb142d0ed7789fd132b620e79beb75a56fa528f"
+                "1805106589752121a70ae2b69073a0e899f7f053b89965ef60dabc64a6c9d5b7",
+                "61d818baf87fca1d3aa4e8f3f0672bac2e14bcefb60e91e052c005bfa06a4b5c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "woolworths.com.au",
-                "mobile.woolworths.com.au"
+                "mobile.woolworths.com.au",
+                "www.volkswagen.de"
             ]
         },
         {
@@ -215,11 +245,33 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "api-gca01",
+                "api-gce3"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "woolworths.com.au",
+                "mobile.woolworths.com.au",
+                "www.volkswagen.de"
+            ]
+        },
+        {
+            "rule": "inbenta\\.io\\/prod\\/km\\/v1\\/app\\/data\\/Telco",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
                 "api-gca01"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -239,7 +291,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "67a2db8bbc6ac1f0cc8c22167f066494da88006b414774d3e80249c3e1196b94"
@@ -253,35 +305,16 @@
             ]
         },
         {
-            "rule": "inbenta\\.io\\/prod\\/km\\/v1\\/app\\/data\\/Telco",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-gca01"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "woolworths.com.au",
-                "mobile.woolworths.com.au"
-            ]
-        },
-        {
             "rule": "inbenta\\.io\\/prod\\/km\\/v1\\/tracking\\/session\\/user",
-            "cookies": 0.0000166,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
-                "api-gca01"
+                "api-gca01",
+                "api-gce3"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -291,7 +324,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "woolworths.com.au",
-                "mobile.woolworths.com.au"
+                "mobile.woolworths.com.au",
+                "www.volkswagen.de"
             ]
         },
         {
@@ -299,11 +333,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-gca01"
+                "api-gca01",
+                "api-gce3"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -311,29 +346,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "woolworths.com.au",
-                "mobile.woolworths.com.au"
-            ]
-        },
-        {
-            "rule": "inbenta\\.io\\/static\\/fonts\\/ps-fonts\\/Roboto\\/Roboto-Bold\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "1d411b25a3e98d0377a631902de5d696a0772cf39ae933420ed2d346d51187a7"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allegion.com",
-                "www.schlage.com"
+                "mobile.woolworths.com.au",
+                "www.volkswagen.de"
             ]
         },
         {
@@ -348,7 +362,7 @@
                 "Navigator.prototype.product": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "20b8490fe4a4a64995eba8554b6aa9fa5b0b6052b836ce9b36e40127dab5a38f"
@@ -376,7 +390,7 @@
                 "HTMLMediaElement.prototype.canPlayType": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e07f94de0a91a224b6da040e8baa3770b152032b35964438030e8aba790c8e8f"
@@ -398,7 +412,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a997b4abc37e205665dd7e2b9944da06458652a09bfdf73036d439449580ebf1"
@@ -423,7 +437,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "9fc5eb005591e9652d7aa7a02820477a86cab490e6b1eda141b25378cbc9210d"
@@ -445,7 +459,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6524b33d3c148445f20deba8417cff10383fa7491e3f8890a87bf7194b65239c"
@@ -467,7 +481,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000498,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "da988b13308d8d41afd54de8f899d9337811461d4eac8416a6f4fb9aa96fda48"
@@ -497,7 +511,7 @@
                 "window.localStorage": 4
             },
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "0e94826e7c6a41a738b55d1002e6b199aef6dc7e10653177bdaece96e05d13ea"
@@ -521,7 +535,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "f48ee67e2d706a31b3e9b3cf92fe87f909df9e8c64187fb3bbdaf46a6a38bfe9"
@@ -537,6 +551,59 @@
             ]
         },
         {
+            "rule": "inbenta\\.io\\/chatbot\\/1\\.37\\.0\\/inbenta-chatbot-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.indexedDB": 2,
+                "window.localStorage": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "16763ed2c906fb983941c7bf9ac19d4cab026c0a19d31e262bd2628208564318"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benefitcosmetics.com",
+                "www.benefitcosmetics.com"
+            ]
+        },
+        {
+            "rule": "inbenta\\.io\\/chatbot\\/1\\.37\\.0\\/space-cowboy\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "29f586797ab09288118541057925b53fb4bd2368d3d1981d3da42b8f044795dc"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benefitcosmetics.com",
+                "www.benefitcosmetics.com"
+            ]
+        },
+        {
             "rule": "inbenta\\.io\\/chatbot\\/1\\.48\\.0\\/inbenta-chatbot-sdk\\.js",
             "cookies": 0,
             "fingerprinting": 3,
@@ -544,23 +611,23 @@
                 "sdk"
             ],
             "apis": {
-                "window.name": 7,
-                "window.screenX": 7,
-                "window.screenY": 7,
-                "window.devicePixelRatio": 7,
-                "window.screenLeft": 7,
-                "window.screenTop": 7,
-                "window.indexedDB": 8,
-                "window.sessionStorage": 7,
-                "Date.prototype.getTimezoneOffset": 11,
-                "Date.prototype.getTime": 11,
-                "Navigator.prototype.product": 9,
-                "Navigator.prototype.userAgent": 9,
-                "window.localStorage": 8,
-                "HTMLMediaElement.prototype.canPlayType": 8
+                "window.name": 9,
+                "window.screenX": 9,
+                "window.screenY": 9,
+                "window.devicePixelRatio": 9,
+                "window.screenLeft": 9,
+                "window.screenTop": 9,
+                "window.indexedDB": 9,
+                "window.sessionStorage": 9,
+                "Date.prototype.getTimezoneOffset": 12,
+                "Date.prototype.getTime": 12,
+                "Navigator.prototype.product": 10,
+                "Navigator.prototype.userAgent": 10,
+                "window.localStorage": 9,
+                "HTMLMediaElement.prototype.canPlayType": 9
             },
-            "sites": 11,
-            "prevalence": 0.0000912,
+            "sites": 12,
+            "prevalence": 0.0000813,
             "cnames": [],
             "responseHashes": [
                 "74de26ddc96d2949e3dfb92c039c5df078348880605096b576dfa3533cfaf831"
@@ -579,6 +646,7 @@
                 "www.snowshoemtn.com",
                 "www.solitudemountain.com",
                 "www.stratton.com",
+                "www.sugarbush.com",
                 "www.winterparkresort.com"
             ]
         },
@@ -590,8 +658,8 @@
                 "sdk"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000912,
+            "sites": 12,
+            "prevalence": 0.0000813,
             "cnames": [],
             "responseHashes": [
                 "7e31a39656d6f3429249e590d6f1a89e8ff386539fd1ee5ce3cb93da8e1907af"
@@ -610,6 +678,7 @@
                 "www.snowshoemtn.com",
                 "www.solitudemountain.com",
                 "www.stratton.com",
+                "www.sugarbush.com",
                 "www.winterparkresort.com"
             ]
         },
@@ -622,7 +691,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000498,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "6524b33d3c148445f20deba8417cff10383fa7491e3f8890a87bf7194b65239c"
@@ -640,6 +709,53 @@
             ]
         },
         {
+            "rule": "inbenta\\.io\\/chatbot\\/1\\.68\\.5\\/inbenta-chatbot-sdk\\.js",
+            "cookies": 0.00000678,
+            "fingerprinting": 3,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "window.name": 1,
+                "window.screenX": 1,
+                "window.screenY": 1,
+                "window.devicePixelRatio": 1,
+                "window.screenLeft": 1,
+                "window.screenTop": 1,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "BroadcastChannel.prototype.constructor": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "578b475bd89b686b4d1bf292149db9d277c1b88b600d50ba7f3ccc478e49f4d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bmw_chatbot_nlhyperchat_session": {
+                    "ttl": 1808,
+                    "length": 9,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.nl",
+                "www.repsol.es"
+            ]
+        },
+        {
             "rule": "inbenta\\.io\\/km\\/1\\.50\\.0\\/inbenta-km-client\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -651,7 +767,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "22b8a24603888625557cf035d1b7d64c9750f050ee1f4a5829484deeb5e85fb3"
@@ -665,57 +781,6 @@
             ]
         },
         {
-            "rule": "inbenta\\.io\\/search\\/1\\.42\\.9\\/inbenta-search-sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "0e94826e7c6a41a738b55d1002e6b199aef6dc7e10653177bdaece96e05d13ea"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schlage.com",
-                "www.schlage.com"
-            ]
-        },
-        {
-            "rule": "inbenta\\.io\\/km\\/1\\.42\\.0\\/inbenta-km-sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "0fed7d1703841dd1d13c4638e81243c29313aa297e579ce48f2134f4b08bd282"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schlage.com",
-                "www.schlage.com"
-            ]
-        },
-        {
             "rule": "inbenta\\.io\\/km\\/1\\.42\\.0\\/space-cowboy\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -724,7 +789,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "64df07c825f23b7763897bd1f5d4ee821d0904bac8baf4003c49de86487ce52b"
@@ -734,79 +799,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "schlage.com",
-                "www.schlage.com"
-            ]
-        },
-        {
-            "rule": "inbenta\\.io\\/search\\/1\\.42\\.9\\/inbenta-search-sdk-space-cowboy\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "f48ee67e2d706a31b3e9b3cf92fe87f909df9e8c64187fb3bbdaf46a6a38bfe9"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schlage.com",
-                "www.schlage.com"
-            ]
-        },
-        {
-            "rule": "inbenta\\.io\\/chatbot\\/1\\.17\\.0\\/inbenta-chatbot-sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.indexedDB": 2,
-                "window.localStorage": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "875ccf757d9277673cace39573459cfbd79133fd0af5c8608d2bd4be90ea286b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schlage.com",
-                "www.schlage.com"
-            ]
-        },
-        {
-            "rule": "inbenta\\.io\\/chatbot\\/1\\.17\\.0\\/space-cowboy\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "d91e20c70d10a14f96cacaf5e63d4a8f6e454db6a7992fe0cd28e445457b7e11"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schlage.com",
-                "www.schlage.com"
+                "www.skyairline.com"
             ]
         },
         {
@@ -824,7 +817,7 @@
                 "HTMLMediaElement.prototype.canPlayType": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "21886d199bfabb4a2875b2fb9c0084035482653ea5af84420c8b7e5a6d9cbd15"
@@ -846,7 +839,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "80b2cd20d8727cb3900247418a0b6ec9ef14437375e92f288f132ac13bd9d226"
@@ -857,60 +850,6 @@
             "exampleSites": [
                 "voegol.com.br",
                 "www.voegol.com.br"
-            ]
-        },
-        {
-            "rule": "inbenta\\.io\\/chatbot\\/1\\.65\\/inbenta-chatbot-sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.indexedDB": 2,
-                "window.localStorage": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "Document.cookie getter": 2,
-                "BroadcastChannel.prototype.constructor": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "68f19015ff7d113b2c842a7a641abf48317c2dcd575a9f97146c7b0e2aaf4199"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "volotea.com",
-                "www.volotea.com"
-            ]
-        },
-        {
-            "rule": "inbenta\\.io\\/chatbot\\/1\\.65\\/space-cowboy\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "699750a4a62abf55da1d132d9f818523aad5b8052acd16a6eb48b1124a6f04f5"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "volotea.com",
-                "www.volotea.com"
             ]
         },
         {
@@ -925,7 +864,7 @@
                 "Navigator.prototype.product": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5a14afe2b838d7f5b535402cf7226e5a322c046ba7336e1b24d0b54a9b012446"
@@ -947,7 +886,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b7027ba1faa0e5c60231ffce409084f2d12917341c21c256162ab5d73e586680"
@@ -969,7 +908,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "fea070ed249a016e790fe3a37e54a14ce5b30934ae31c5103f8c99105676b21b"
@@ -991,7 +930,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ba744732f13607c779b7c895f366694d3471a300eac02a58f13373f0a395bdfa"
@@ -1013,7 +952,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c5aa8b6432cc38e957ffe055ba95b397478f0ea5d4cc5881166afd19f2424d06"
@@ -1035,7 +974,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b9ef3808995b85d05d071fdbdeaee7c5f905dfbfb64a023e1df9be036eab666c"
@@ -1051,45 +990,53 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000249,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7964601769911505
+            "prevalence": 0.7364341085271318
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.10619469026548672
+            "prevalence": 0.09302325581395349
+        },
+        {
+            "domain": "lighthouselabs.eu",
+            "prevalence": 0.06201550387596899
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.031007751937984496
         },
         {
             "domain": "ensighten.com",
-            "prevalence": 0.035398230088495575
+            "prevalence": 0.031007751937984496
         },
         {
             "domain": "alterramtnco.com",
-            "prevalence": 0.02654867256637168
-        },
-        {
-            "domain": "dlvt1u0vrr0ux.cloudfront.net",
-            "prevalence": 0.017699115044247787
+            "prevalence": 0.023255813953488372
         },
         {
             "domain": "inbenta.services",
-            "prevalence": 0.017699115044247787
+            "prevalence": 0.015503875968992248
+        },
+        {
+            "domain": "baqend.com",
+            "prevalence": 0.007751937984496124
         }
     ],
     "types": {
-        "Script": 39,
-        "XHR": 10,
-        "Preflight": 10,
-        "Stylesheet": 31,
-        "Font": 16,
-        "Image": 8
+        "Stylesheet": 30,
+        "Script": 36,
+        "XHR": 13,
+        "Preflight": 13,
+        "Image": 8,
+        "Font": 14
     },
     "nameservers": [
         "ns-406.awsdns-50.com",
+        "ns-1752.awsdns-27.co.uk",
         "ns-726.awsdns-26.net",
-        "ns-1207.awsdns-22.org",
-        "ns-1752.awsdns-27.co.uk"
+        "ns-1207.awsdns-22.org"
     ]
 }

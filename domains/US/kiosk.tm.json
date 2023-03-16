@@ -4,42 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000058,
-    "sites": 7,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
-        "centrocdn",
         "pixel",
+        "centrocdn",
         "apigateway"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "kiosk\\.tm\\/assets\\/up\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "centrocdn"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000249,
-            "cnames": [],
-            "responseHashes": [
-                "25b33a7a853f39e447b14be3e6662ccbb0fbce73620bf7778d194cb3fef1d3ab"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affirm.com",
-                "www.gsb.stanford.edu",
-                "www.paylocity.com"
-            ]
-        },
         {
             "rule": "kiosk\\.tm\\/dmp\\/asyncPixelSync",
             "cookies": 0,
@@ -48,57 +22,17 @@
                 "pixel"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [
-                "e3e105c2a6961730efc70fc2ef15c332735987148769eed25a0c50a9f6479348"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "affirm.com",
+                "rbcwealthmanagement.com",
+                "www.affirm.com",
                 "www.rbcwealthmanagement.com"
-            ]
-        },
-        {
-            "rule": "kiosk\\.tm\\/kixel",
-            "cookies": 0.0000166,
-            "fingerprinting": 1,
-            "subdomains": [
-                "apigateway"
-            ],
-            "apis": {
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 2
-            },
-            "sites": 3,
-            "prevalence": 0.0000249,
-            "cnames": [],
-            "responseHashes": [
-                "b979ceb7b4861dacab9db22dd96ea9b45836f81339edceb1a1e11d88f9ec911a",
-                "4c451f91d66d33719fc46e7b4a9317f80a690bd69c4d03b3a3d7592ea1c11c8d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "smartrfi_lead_source": {
-                    "ttl": null,
-                    "length": 160,
-                    "prevalence": 0.000016583472910897,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {
-                "_ga": 0.0000746256280990365,
-                "_gid": 0.0000248752093663455,
-                "smartrfi_prospect_id": 0.0000248752093663455,
-                "_gcl_au": 0.0000082917364554485
-            },
-            "exampleSites": [
-                "stanford.edu",
-                "www.gsb.stanford.edu",
-                "www.paylocity.com"
             ]
         },
         {
@@ -110,7 +44,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -122,19 +56,79 @@
                 "rbcwealthmanagement.com",
                 "www.rbcwealthmanagement.com"
             ]
+        },
+        {
+            "rule": "kiosk\\.tm\\/assets\\/up\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "centrocdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "25b33a7a853f39e447b14be3e6662ccbb0fbce73620bf7778d194cb3fef1d3ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affirm.com",
+                "www.gsb.stanford.edu"
+            ]
+        },
+        {
+            "rule": "kiosk\\.tm\\/kixel",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apigateway"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "c3cf08f050d13ab36d453e6b544c1ae5c82c218ba07e6f602ca48328b3e0d0f8",
+                "09a4f3ec3686f5bed8d304279a218889074b747c7c0e8b99acee72c715415f8c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "smartrfi_lead_source": {
+                    "ttl": null,
+                    "length": 160,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {
+                "_gcl_au": 0.00002033195301963389,
+                "_ga": 0.000060995859058901666,
+                "_gid": 0.00002033195301963389,
+                "smartrfi_prospect_id": 0.00002033195301963389
+            },
+            "exampleSites": [
+                "stanford.edu",
+                "www.gsb.stanford.edu",
+                "www.paylocity.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.3333333333333333
-        },
-        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.26666666666666666
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "google-analytics.com",
@@ -142,18 +136,22 @@
         },
         {
             "domain": "first party",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.2
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 6,
-        "Document": 2,
-        "Image": 2
+        "Document": 3,
+        "Image": 2,
+        "Script": 5
     },
     "nameservers": [
-        "ns-348.awsdns-43.com",
-        "ns-1849.awsdns-39.co.uk",
+        "ns-537.awsdns-03.net",
         "ns-1517.awsdns-61.org",
-        "ns-537.awsdns-03.net"
+        "ns-348.awsdns-43.com",
+        "ns-1849.awsdns-39.co.uk"
     ]
 }

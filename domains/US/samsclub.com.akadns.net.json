@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000249,
-    "sites": 3,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "beacon-cdn"
     ],
@@ -24,21 +24,23 @@
     "resources": [
         {
             "rule": "samsclub\\.com\\.akadns\\.net\\/rum\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "beacon-cdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "beacon.samsclub.com",
                     "resolved": "beacon-cdn.samsclub.com.akadns.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "65eb9a62adad1293c6be40ce2de69eefc25113f1bbd948a349844453b86748c1"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -48,15 +50,43 @@
             ]
         },
         {
+            "rule": "samsclub\\.com\\.akadns\\.net\\/ll\\.gif",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon-cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "beacon.samsclub.com",
+                    "resolved": "beacon-cdn.samsclub.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "13f86bd1a6d578ee82ca0c54a9a634e03d8d7db09380d72590b158f173f53790"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "samsclub.com",
+                "links.samsclub.com",
+                "www.samsclub.com"
+            ]
+        },
+        {
             "rule": "samsclub\\.com\\.akadns\\.net\\/rum\\.gif",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "beacon-cdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "beacon.samsclub.com",
@@ -73,54 +103,27 @@
                 "samsclub.com",
                 "www.samsclub.com"
             ]
-        },
-        {
-            "rule": "samsclub\\.com\\.akadns\\.net\\/ll\\.gif",
-            "cookies": 0.0000166,
-            "fingerprinting": 0,
-            "subdomains": [
-                "beacon-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "beacon.samsclub.com",
-                    "resolved": "beacon-cdn.samsclub.com.akadns.net"
-                }
-            ],
-            "responseHashes": [
-                "13f86bd1a6d578ee82ca0c54a9a634e03d8d7db09380d72590b158f173f53790"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "samsclub.com",
-                "www.samsclub.com"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000249,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.75
+            "prevalence": 0.6
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.25
+            "prevalence": 0.4
         }
     ],
     "types": {
         "Script": 2,
-        "Image": 2,
-        "Fetch": 2
+        "Fetch": 3,
+        "Image": 2
     },
     "nameservers": []
 }

@@ -4,21 +4,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000406,
-    "sites": 49,
+    "prevalence": 0.0004,
+    "sites": 59,
     "subdomains": [
-        "frag-mutti",
-        "yield",
-        "prebid-server",
         "fansites",
+        "yield",
         "violations",
+        "prebid-server",
+        "anderes-wort",
+        "frag-mutti",
         "aerzte",
         "camping",
         "chinahandys",
         "cdialer",
+        "fahrplan",
+        "gutefrage",
         "helpster",
         "lovelybooks",
         "news",
+        "qiez",
         "sanego",
         "speisekarte",
         "stylight",
@@ -29,67 +33,68 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "h5v\\.eu\\/159\\/moli_ce28c7102cc3ce79e84a\\.min\\.mjs",
-            "cookies": 0.0000249,
+            "rule": "h5v\\.eu\\/33\\/moli\\.mjs",
+            "cookies": 0.0000203,
             "fingerprinting": 2,
             "subdomains": [
-                "frag-mutti"
+                "fansites"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
+                "window.sessionStorage": 3,
                 "Navigator.prototype.appName": 3,
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.cookieEnabled": 3,
                 "window.localStorage": 3,
-                "Document.cookie setter": 3,
+                "Navigator.prototype.cookieEnabled": 3,
                 "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
                 "NavigatorUAData.prototype.getHighEntropyValues": 3,
                 "window.innerWidth": 3,
                 "window.innerHeight": 3,
                 "Navigator.prototype.doNotTrack": 3,
                 "Navigator.prototype.language": 3,
-                "Screen.prototype.height": 3,
                 "Screen.prototype.width": 3,
-                "Navigator.prototype.connection": 3,
-                "window.name": 2,
-                "window.sessionStorage": 2
+                "Screen.prototype.height": 3,
+                "window.name": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "PerformanceTiming.prototype.navigationStart": 3
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "c55a8b0df0925847a36ae8e697cfcc5f0989a42076fa40cc36ede47e4c5584ab"
+                "ea5b2143c4f1e276201bcea71109142c019d297b7c8135ed8e7eef555db7e1d3"
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592002,
+                    "length": 16,
+                    "prevalence": 0.00002033195301963389,
+                    "uniqueness": 0.3333333333333333
+                },
                 "cto_bundle": {
-                    "ttl": 33696002,
-                    "length": 233,
-                    "prevalence": 0.0000248752093663455,
+                    "ttl": 33696001,
+                    "length": 253,
+                    "prevalence": 0.00002033195301963389,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696002,
-                    "length": 168,
-                    "prevalence": 0.0000248752093663455,
+                    "ttl": 33696001,
+                    "length": 190,
+                    "prevalence": 0.00002033195301963389,
                     "uniqueness": 1
-                },
-                "_pbjs_userid_consent_data": {
-                    "ttl": 2592005,
-                    "length": 16,
-                    "prevalence": 0.000016583472910897,
-                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "frag-mutti.de",
-                "forum.frag-mutti.de",
-                "www.frag-mutti.de"
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "wow.4fansites.de"
             ]
         },
         {
-            "rule": "h5v\\.eu\\/config\\/frag_mutti",
+            "rule": "h5v\\.eu\\/config\\/fansites",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -97,40 +102,84 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
-            "cnames": [],
-            "responseHashes": [
-                "820475e941b13121396fd9bbfb15c9a34d2451b82f347b3ffccf4171bb4fd741",
-                "37f0bbf2cbad9c5fa5a8dccc23cb161eb9bfbadf691a5d361ca2f58cd41e9b5b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frag-mutti.de",
-                "forum.frag-mutti.de",
-                "www.frag-mutti.de"
-            ]
-        },
-        {
-            "rule": "h5v\\.eu\\/config\\/frag_mutti",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "yield"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "frag-mutti.de",
-                "forum.frag-mutti.de",
-                "www.frag-mutti.de"
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "wow.4fansites.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/config\\/fansites",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yield"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "93821096bcca5743a85c5fccde96a0d7341ab844e3a5aa45df5d52d47d4397ab",
+                "effd83c61b76e632dee29922bc87da123e671755b0449fae341b78c0906c4b3a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "wow.4fansites.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/media\\/fansites\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "violations"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "wow.4fansites.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/media\\/fansites\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "violations"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "d7b6fcfbb09f9e9b885ed181f07eb67faba97ee88219bc6580411128dfa8d419"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "wow.4fansites.de"
             ]
         },
         {
@@ -141,29 +190,34 @@
                 "prebid-server"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.000116,
+            "sites": 17,
+            "prevalence": 0.000115,
             "cnames": [],
             "responseHashes": [
-                "5fdbf69a9b7af43f7bbca42bcb17eb285b4a1b99a9740ed3ce8a00402da43e72",
-                "811b4913429f51d26e4b492ea107faa57540d3862be8c761972f4be12a44b7bb",
-                "8b73310b9095c52fcc9aa101dc935fb7b368dcb7128d541825c5b8a2dd2309b3",
-                "8ef95f7bd783cc04b7f84e6a1d9b1906c4936aa3f44e34a2be672d03fdc9f034",
-                "35ba1b986ec76c7ff372a4cd175fe94b11d89f59fc455e12c8694adbd7ce56f5",
-                "2664b670973fcac26e38ff7e0ea7ed2b40091ef2bfb6d966ec4b3fb78c099fa8",
-                "6ad04b01cdbef3a435a6c82e8b205513fa53b048b5bdca2f299da880706881f7",
-                "700e5643ae3c5c5eebe2d180ad7cb2bc626ce0ea3c0b0e2daeeb04ba1f712978",
-                "b6a4a89300447c89b77f28c203786fc79688ef49a301d1493a0dad05dba06f7b",
-                "16439e67f1e60d324c3a5bee57eec7b90397332699e8a7c06c8758ea16573b6a",
-                "0aa7631b273299c76a0d8769c2d958a9fa96705e7d0d7f2447b9a5a843198d84",
-                "500eb26c6031099fb2a9a1b98866ea6764330e2bd7a6096335f74c890906b702",
-                "b341639d58d16566ef81b95be2db308ae397dcc37e0cec50bf66a74843a4ec6a"
+                "10676bd5949304d91831407799bbfe77411fe8e29e66b4e3a23384ca43b4f4e0",
+                "f5812a868f6e4f0f8b25300b955e2770ffd35c79acf0c28cbcd8a96603290532",
+                "b296b4ca69c5daf851b0b80fc7e94e53dba3544d61d90b765a94670398b99ef1",
+                "54d90972eb1cbdb95b0a281bf84a908516363ec358aa2248080d7cd5dfd29ade",
+                "860fc69a4135eb8e4c999917a7258c372f46d7763828dcfad69ab0c2598f7f27",
+                "33cf2237bc4fd9a5adeb97f5a04c824036662b40bc8896532157ad024c50ffcf",
+                "06b2f50a15720ac01f77fad2b3c9d5567a1597bff625baf14745beb46fabf01e",
+                "77e7b6e1ad9960acd71dd9871a4be6e83781867572989410bcd2bdbc5babb599",
+                "a9b74306f747750b051dff3cbf240b2e01f95d2b6c42c31d72608d1b19e85165",
+                "f059e6c05ca496c4cb61adfe15e662b66e8fbffb685a8012ec55ee4f497ab84c",
+                "a5dac5e88fd6742e8d977f30c5c56bb9b703aa50d1f8ba96065cd7904ea5369c",
+                "dd8f1a697f81540fadfaea288759ded359217ae2a27f3ffd821854603000d9a6",
+                "13596b31760bb753d72a70fe1f1e121f5decf944f2d5cc9bf87806454440d4df",
+                "79273649a96caf22399aae72ce482363576dc737b68d2fe34f674c6ac43a389d",
+                "ddd1509c98be3d4d3c0af9cc401a574c965dc581d1e1779a36f9b3fa785bb551",
+                "4a6464e1db2c0028f8fa40cdcc22b35e410504db64615f2b79a4e6961b094bb0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "frag-mutti.de",
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "ein.anderes-wort.de",
                 "forum.frag-mutti.de",
                 "stellplatz.info",
                 "wow.4fansites.de",
@@ -175,6 +229,7 @@
                 "www.helpster.de",
                 "www.lovelybooks.de",
                 "www.sanego.de",
+                "www.schicksal.com",
                 "www.speisekarte.de",
                 "www.testedich.de"
             ]
@@ -187,29 +242,34 @@
                 "prebid-server"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.000116,
+            "sites": 17,
+            "prevalence": 0.000115,
             "cnames": [],
             "responseHashes": [
-                "3d85a5a751998e870b066705bc9cf973d03d62153726455d3d3dd36c580b123f",
-                "fe265ec9d1973a7161a27425c4781b33cbfae2f7fdeeb51e0a1135a0bcc0b7af",
-                "1b61c8c24172461cdf13f7b4af270e68e866e6090870d569d961e44133a1f94c",
-                "eee7733b40d339ba5a477307c8111ac38f61adf23ec97f9f1b870a6f03722f47",
-                "9de8a6b954ad470590666098f5d23a0f740f63ff39331e336bae171d4a814b5a",
-                "0529d46c49c772ed51927fb144f86fa38a4046243b2015c3190ae1cda41b472c",
-                "f48a775cc38f163087ada6e24fd01e19eabb8b5b9c76e9d55b8a57dc47ce0234",
-                "f8164ab3a671875e50fea293964f6de0b1910e5cc2c683cdf2f06914b3bf719a",
-                "3746ecf747359cdf630d3021d627b64ff3580367848e2db687998cbb606dc9a1",
-                "1feaa6887ca9b632a7f78adfdaf74399a6c2f2105e6c6b75ffc7987cf5b9ebb8",
-                "6eb899a42a69cd45c00252e09bfc86ac6f2833e0414c27d2ea55fb37bcd274ca",
-                "34a388e7b60f55981ded33ab65c77667d52d7d95921d9686078bd4ce03584f17",
-                "6a24a53c66e7a60724a61b412b0d584d0f4cc4e3d1fc54616d65e432696bd0fe"
+                "089e6d1a21a868232b230ffc14242818164ca7239ac5da03d0d19d6ff215b5e6",
+                "692760d31702f582b278ec9d0931d0f785c694478a270ffdf28e1004c9ce83c3",
+                "dab618e50515999387b3d6fdf638765d745ebab572c5abe89f67005ec41a8a34",
+                "2fbf80317a3276c96f99b2397ff63dbe0d05c3f17852129d7d10d00152aece26",
+                "b0a00f57fb6bf01702cb19ec0343c3291e3a983316ae6844558e2d56eac78ce3",
+                "fecb43b5a2c9a1ad8ed09971bd831e0c10928479f7c931045f1e45322c3c6da7",
+                "b7b92c650ffcbd25d065bd3600bd0d0b9e6831d789db3524cd1753eab8c20d61",
+                "dc452f3a516f5c7e15f0a851d6805c07c501ec603061210e9ec30e74c0b47510",
+                "15962d2f98a1d6a6901c7c39004d25cbe802896004f532b22d74e997fe600b41",
+                "dded962cf7ce5c10471eb8462a015ab46ed5d833f241f0cd99c7cae0740e6017",
+                "44786faac3614172a3b4309b4c4581fec9080128d2e598a72c3c830e00c1d6c0",
+                "7132ac21a121153592c86d66ab2a43cf214b8f47ffac6c146ea79a196c30cbe9",
+                "b3978fc44d4472ee47226f8e285c64bbe76427a305a569f473e57d39b762a92d",
+                "d95db0c5bc51e053797390025a2989e00c7c6f5fc257a83dde418697f3298668",
+                "822cedd5aa41968e947800f18efe493011782b47a825e7fafcfbc6651ca2d9da",
+                "8f02bb4b1cc27085c3cee9eb0168b9a59e82ac92ce98c2576a7dc81f48dbf00b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "frag-mutti.de",
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "ein.anderes-wort.de",
                 "forum.frag-mutti.de",
                 "stellplatz.info",
                 "wow.4fansites.de",
@@ -221,20 +281,21 @@
                 "www.helpster.de",
                 "www.lovelybooks.de",
                 "www.sanego.de",
+                "www.schicksal.com",
                 "www.speisekarte.de",
                 "www.testedich.de"
             ]
         },
         {
             "rule": "h5v\\.eu\\/setuid",
-            "cookies": 0.000116,
+            "cookies": 0.000115,
             "fingerprinting": 0,
             "subdomains": [
                 "prebid-server"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.000116,
+            "sites": 17,
+            "prevalence": 0.000115,
             "cnames": [],
             "responseHashes": [
                 "c956a8bbf43bb56f60d1beefcc5a70f2cb0725083a00e8a0daf423176509fd18",
@@ -244,7 +305,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "frag-mutti.de",
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "ein.anderes-wort.de",
                 "forum.frag-mutti.de",
                 "stellplatz.info",
                 "wow.4fansites.de",
@@ -256,16 +319,17 @@
                 "www.helpster.de",
                 "www.lovelybooks.de",
                 "www.sanego.de",
+                "www.schicksal.com",
                 "www.speisekarte.de",
                 "www.testedich.de"
             ]
         },
         {
-            "rule": "h5v\\.eu\\/32\\/moli\\.mjs",
-            "cookies": 0.0000166,
+            "rule": "h5v\\.eu\\/latest\\/moli\\.mjs",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
-                "fansites"
+                "anderes-wort"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
@@ -278,47 +342,47 @@
                 "Document.cookie setter": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
                 "Navigator.prototype.language": 2,
-                "window.name": 2
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.width": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "21a7cac0901154277175929bd72d546739200319a917007a4292fcd78fad41f0"
+                "d6521fe7f6b290eccfefbbaeecc394271f605dac7fe15acbbfec43f9af39519c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592004,
+                    "ttl": 2592003,
                     "length": 16,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
-                    "ttl": 33696003,
-                    "length": 216,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696001,
+                    "length": 221,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696003,
-                    "length": 162,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696001,
+                    "length": 160,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "4fansites.de",
-                "wow.4fansites.de"
+                "anderes-wort.de",
+                "ein.anderes-wort.de"
             ]
         },
         {
-            "rule": "h5v\\.eu\\/config\\/fansites",
+            "rule": "h5v\\.eu\\/config\\/anderes-wort",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -326,21 +390,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "bd73559076e32e582bd81e6eb2255be873908d80fc22cd5268b496c288852fc9"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "4fansites.de",
-                "wow.4fansites.de"
+                "anderes-wort.de",
+                "ein.anderes-wort.de"
             ]
         },
         {
-            "rule": "h5v\\.eu\\/config\\/fansites",
+            "rule": "h5v\\.eu\\/config\\/anderes-wort",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -348,62 +410,194 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "4fansites.de",
-                "wow.4fansites.de"
-            ]
-        },
-        {
-            "rule": "h5v\\.eu\\/media\\/fansites\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "violations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "4fansites.de",
-                "wow.4fansites.de"
-            ]
-        },
-        {
-            "rule": "h5v\\.eu\\/media\\/fansites\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "violations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d7b6fcfbb09f9e9b885ed181f07eb67faba97ee88219bc6580411128dfa8d419"
+                "be29491dd317927d0c782249b4734e56143c34652ed8ea329c955143f41c7d69"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "4fansites.de",
-                "wow.4fansites.de"
+                "anderes-wort.de",
+                "ein.anderes-wort.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/media\\/anderes-wort\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "violations"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anderes-wort.de",
+                "ein.anderes-wort.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/media\\/anderes-wort\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "violations"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9b1ac350ddf805ad602971630240837fdbca41495fce06b1ed7eba048a5ef510"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anderes-wort.de",
+                "ein.anderes-wort.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/setuid",
+            "cookies": 0.0000339,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid-server"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anderes-wort.de",
+                "ein.anderes-wort.de",
+                "www.aerzte.de",
+                "www.anisearch.com",
+                "www.speisekarte.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/159\\/moli_ce28c7102cc3ce79e84a\\.min\\.mjs",
+            "cookies": 0.0000203,
+            "fingerprinting": 2,
+            "subdomains": [
+                "frag-mutti"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.sessionStorage": 3,
+                "Navigator.prototype.appName": 3,
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "Navigator.prototype.language": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.width": 3,
+                "window.name": 2,
+                "Navigator.prototype.connection": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "c55a8b0df0925847a36ae8e697cfcc5f0989a42076fa40cc36ede47e4c5584ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592001,
+                    "length": 16,
+                    "prevalence": 0.00002033195301963389,
+                    "uniqueness": 0.3333333333333333
+                },
+                "cto_bundle": {
+                    "ttl": 33696001,
+                    "length": 258,
+                    "prevalence": 0.00002033195301963389,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696001,
+                    "length": 187,
+                    "prevalence": 0.00002033195301963389,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frag-mutti.de",
+                "forum.frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/config\\/frag_mutti",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yield"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frag-mutti.de",
+                "forum.frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/config\\/frag_mutti",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yield"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "d927c97acfbc55693fba73bc6c6b1c4b0198a3a28fc622c5e29e1b1ce4f62f1a",
+                "2f965800c32d8e359f8e4163e83aaa3210c6f0e78d8d874f52e1f528d12b9f80"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frag-mutti.de",
+                "forum.frag-mutti.de",
+                "www.frag-mutti.de"
             ]
         },
         {
             "rule": "h5v\\.eu\\/13\\/moli_09ad5fbe3da457e94177\\.min\\.mjs",
-            "cookies": 0.00000829,
+            "cookies": 0.00000678,
             "fingerprinting": 2,
             "subdomains": [
                 "aerzte"
@@ -421,7 +615,7 @@
                 "window.innerHeight": 1
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a20fcb697b68c62f50cc0be3cad7c75bfa71431745bd82ee3f34abb515acb0e2"
@@ -431,91 +625,91 @@
                 "_pbjs_userid_consent_data": {
                     "ttl": 2592004,
                     "length": 16,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "cto_bundle": {
-                    "ttl": 33696003,
-                    "length": 188,
-                    "prevalence": 0.0000082917364554485,
+                    "ttl": 33696002,
+                    "length": 247,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696003,
-                    "length": 140,
-                    "prevalence": 0.0000082917364554485,
+                    "ttl": 33696002,
+                    "length": 156,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "pbjs-id5id": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "pbjs-id5id_nb": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "pbjs-id5id_435_nb": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "pbjs-id5id_last": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id.1st": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id.1st_nb": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id.1st_435_nb": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id.1st_last": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id_nb": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id_435_nb": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "id5id_last": {
-                    "ttl": -86395,
+                    "ttl": -86396,
                     "length": 3,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 }
             },
@@ -523,29 +717,6 @@
             "exampleSites": [
                 "aerzte.de",
                 "www.aerzte.de"
-            ]
-        },
-        {
-            "rule": "h5v\\.eu\\/setuid",
-            "cookies": 0.0000249,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prebid-server"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aerzte.de",
-                "www.anisearch.com",
-                "www.speisekarte.de"
             ]
         },
         {
@@ -557,7 +728,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -577,10 +748,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "40f6a0e1d797d0e04a97a50b4179f4cb05d556b065c32dbe60e7b904247b75c3"
+                "9d5f5a1a1fbc6b35f7968c635929f4f5319ca1ffb99ef6bc3c0d4183dafda7a3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -599,7 +770,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -619,7 +790,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d4a0229cae0ac66b6529c6b82ffe0fa2ed5c8a27f4ac8bc8055abfa4d6d10afe"
@@ -641,12 +812,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "cca32291b49e0de9152cbd75cd4703d0d9cdbbc0fbb1d86a4ecaac123fb481e1"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -663,10 +832,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "ed3c9812254706b4ecec1b55ba545d74cf7a98917bd699d86650532680dc4057"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -683,32 +854,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "astrosofa.com",
-                "www.astrosofa.com"
-            ]
-        },
-        {
-            "rule": "h5v\\.eu\\/media\\/astrosofa\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "violations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d617190d850a08e11f4de4cd8f92402acbbac5a0414fc02a1a00334e8881a500"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "astrosofa.com",
+                "www.astrosofa.com"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/media\\/astrosofa\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "violations"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -733,7 +904,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e9c94298d8d5da8b52ede52faf0a06b6c2a2b2384f412e7e604b767b24bba7a3"
@@ -761,7 +932,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0e8e489989ae2cd8c010380d4604206b06c6d8178a8e9747e4eeafc13dfd74df"
@@ -791,7 +962,7 @@
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "008558cc121497045f90fa170f34fac92c137060501ea1101c2be4a307e3069a"
@@ -814,7 +985,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -834,10 +1005,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fa861579a0e9585c2b300d3fefb0393fbdfc00f3a1143db04bd8d0fc3e6b932a"
+                "2d49d564cb8e89f2e73cbaf21184452f8d1b370e6e0b262dabf393ec8b296971"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -856,7 +1027,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -876,7 +1047,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "df3d3eccc66abf64dd402794d1bdbbffe63f4e7c2e8f023f471de4bb94a70f97"
@@ -890,8 +1061,64 @@
             ]
         },
         {
-            "rule": "h5v\\.eu\\/139\\/moli_73001c7a4b97bde06472\\.min\\.mjs",
-            "cookies": 0.0000166,
+            "rule": "h5v\\.eu\\/16\\/moli\\.min\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fahrplan"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9997e71958498bf77d883623e7f3d90c46f6469954d8c93998f6c5777021aae0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fahrplan.guru",
+                "www.fahrplan.guru"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/583\\/moli_1c51bb33fb711adc9fca\\.min\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gutefrage"
+            ],
+            "apis": {
+                "window.sessionStorage": 3,
+                "Navigator.prototype.appName": 3,
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "82fc664bfee520cccd073068905f9bf162bdb894e0ab85b15d7c749483b1b5df"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finanzfrage.net",
+                "www.gesundheitsfrage.net",
+                "www.gutefrage.net"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/141\\/moli_cf1535e1ee177a32a00f\\.min\\.mjs",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "helpster"
@@ -910,35 +1137,37 @@
                 "window.innerHeight": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.language": 2,
-                "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "window.name": 2,
                 "Navigator.prototype.connection": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "963b16f5086dcfe98e469843bfebca878944c686f691f712963ec5e3e249294a"
+                "082cfa7ac082748ae19ccde5609655a2190c9c48df4dd3a637cad738e97f2dff"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592007,
+                    "ttl": 2592003,
                     "length": 16,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
-                    "ttl": 33696004,
-                    "length": 190,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696001,
+                    "length": 249,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696004,
-                    "length": 138,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696001,
+                    "length": 167,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -957,10 +1186,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "2faf750adca2ca8df7100c5edf8563d7173e0e615a9e9836d8f66628ab7fb79b"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -977,29 +1208,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "92a93aebc02e63b49fc8266990ae8ee308b80361354357793b189fbffa7eb834"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "helpster.de",
-                "www.helpster.de"
-            ]
-        },
-        {
-            "rule": "h5v\\.eu\\/media\\/helpster\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "violations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1019,7 +1228,27 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "helpster.de",
+                "www.helpster.de"
+            ]
+        },
+        {
+            "rule": "h5v\\.eu\\/media\\/helpster\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "violations"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "976fea6a94a73aa80bccde641cb0dae92f191d5ce9e6c21cae0061053ed99c3a"
@@ -1034,7 +1263,7 @@
         },
         {
             "rule": "h5v\\.eu\\/73\\/moli_4cf7cf5b6ecbcd7e8bb2\\.min\\.mjs",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "lovelybooks"
@@ -1058,7 +1287,7 @@
                 "Navigator.prototype.connection": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "29e04b70ee030a319ddc833d80943ba1902f2d471d61ce803a660f2e3863c562"
@@ -1066,21 +1295,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592003,
+                    "ttl": 2592005,
                     "length": 16,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
-                    "ttl": 33696001,
-                    "length": 218,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696002,
+                    "length": 250,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696001,
-                    "length": 167,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696002,
+                    "length": 187,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -1099,10 +1328,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9b54243defde5c1b75f4c0517ef94f36bcee203031d32bee4c202b7d0d528b76"
+                "1c8a74dc8f10877a9cb8e214daca796cdfbbdf3093a0fd1860f138ed46dae649"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1121,7 +1350,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1141,7 +1370,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1161,7 +1390,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5527eb36319f56c21aa529e9e9ad4e278040104140610860cda5ffd29936088b"
@@ -1189,7 +1418,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "da6f6bd5e8be88e533c2338e6ecf3ebda885b5a513ae07cd485522c4041eb63d"
@@ -1203,8 +1432,36 @@
             ]
         },
         {
+            "rule": "h5v\\.eu\\/11\\/moli_b6a715211289b8fcfcf2\\.min\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "qiez"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0af3394fc80c400770bde94f0e860f9d51d97b582403e2b16da209acc5c9e2e0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qiez.de",
+                "www.qiez.de"
+            ]
+        },
+        {
             "rule": "h5v\\.eu\\/49\\/moli_a091b0b9d1b7d3b1d91c\\.min\\.mjs",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "sanego"
@@ -1223,11 +1480,10 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
                 "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Navigator.prototype.connection": 1
+                "Screen.prototype.width": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ce0c1dd43cc4822bdfbc2540bba01d63bb603a2a0d9725669b666798de823668"
@@ -1235,21 +1491,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592002,
+                    "ttl": 2592003,
                     "length": 16,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
-                    "ttl": 33696001,
-                    "length": 182,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696002,
+                    "length": 246,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696001,
-                    "length": 138,
-                    "prevalence": 0.000016583472910897,
+                    "ttl": 33696002,
+                    "length": 162,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -1268,7 +1524,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1288,10 +1544,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b234e32251529db45179e896e0654d757615ffe8bf1e5183b35cb9fb3b68c8e2"
+                "545177241114b7f37dea4ed8f3c531c6089bd02b044d43e3dfd77fd3fdd7572c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1310,7 +1566,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1330,7 +1586,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "36802f963882353b58ca1879665df8fd2b6935b9ee7b51448ea619c939852c50"
@@ -1345,7 +1601,7 @@
         },
         {
             "rule": "h5v\\.eu\\/89\\/moli_87cac30d20148da1140d\\.min\\.mjs",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "speisekarte"
@@ -1360,16 +1616,16 @@
                 "Document.cookie setter": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
-                "Navigator.prototype.connection": 2,
                 "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.name": 2,
+                "Navigator.prototype.connection": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.language": 2,
-                "window.name": 2
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "502f28acc932fee52a6daadd4b6433905d606555c455984b8992c44c0073c6bd"
@@ -1377,21 +1633,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592001,
+                    "ttl": 2592002,
                     "length": 16,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
                     "ttl": 33696001,
-                    "length": 257,
-                    "prevalence": 0.000016583472910897,
+                    "length": 254,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
                     "ttl": 33696001,
-                    "length": 183,
-                    "prevalence": 0.000016583472910897,
+                    "length": 187,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -1410,7 +1666,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1430,10 +1686,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3bccf288ec010bf9198f6fa0f3c56e34a1370a37a00c2e5e1539e9123db5454e"
+                "d7c91511e7e70824d5abd7d8551e46bb35d2d909e300b0cd076a31198bb3c1a8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1452,7 +1708,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1472,7 +1728,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "719ffd2e23186cce8200c503ca1a4dd924e203a8e99d2aa23e0a10b8fd9be0e8"
@@ -1500,7 +1756,7 @@
                 "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "234f54b99bff7d72515dfe4e8276d96381e31b619c8294a822c409976f55ba33"
@@ -1523,7 +1779,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1543,10 +1799,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d400eb6d6a320e27b96abf911552d09abd79976fd2e3b0756e477f6c445f0157"
+                "7ffbe395aeca3859b5b363026162fcf5b9fb64fa996ba2d0b8b86edf686ed3b9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1565,7 +1821,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1585,7 +1841,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c0ba82b6cd48f990ec1488a0d0d40f0cdb3a9f1b3a1634ff7f2d74d68a0b93bd"
@@ -1613,10 +1869,10 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "71013693d5529ece9510ceb24d8e21b2ca8535e92a4599a29ff4266abc425c06"
+                "418b0bac9ced3a57ca4aae0c5ba51f43b4d29612dbe8204031eb6ed15167cc59"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1641,7 +1897,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "fd3c00e0b6bbd5134be9b834db6013176e1ad274e69292807623e21d6cdd4a94"
@@ -1657,49 +1913,53 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000207,
+    "cookies": 0.000203,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6805555555555556
-        },
-        {
-            "domain": "3lift.com",
-            "prevalence": 0.09722222222222222
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.0763888888888889
-        },
-        {
-            "domain": "adscale.de",
-            "prevalence": 0.0625
-        },
-        {
-            "domain": "pubmatic.com",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.7017543859649122
         },
         {
             "domain": "openx.net",
-            "prevalence": 0.034722222222222224
+            "prevalence": 0.06432748538011696
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.06432748538011696
+        },
+        {
+            "domain": "pubmatic.com",
+            "prevalence": 0.04678362573099415
+        },
+        {
+            "domain": "3lift.com",
+            "prevalence": 0.04678362573099415
+        },
+        {
+            "domain": "adscale.de",
+            "prevalence": 0.03508771929824561
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.029239766081871343
         },
         {
             "domain": "casalemedia.com",
-            "prevalence": 0.006944444444444444
+            "prevalence": 0.011695906432748537
         }
     ],
     "types": {
-        "Script": 31,
-        "Fetch": 39,
-        "Preflight": 39,
-        "XHR": 28,
-        "Image": 14,
-        "Document": 3
+        "Script": 41,
+        "Preflight": 45,
+        "Fetch": 45,
+        "XHR": 34,
+        "Image": 17,
+        "Document": 5
     },
     "nameservers": [
-        "ns-102.awsdns-12.com",
         "ns-1912.awsdns-47.co.uk",
-        "ns-1392.awsdns-46.org",
-        "ns-971.awsdns-57.net"
+        "ns-971.awsdns-57.net",
+        "ns-102.awsdns-12.com",
+        "ns-1392.awsdns-46.org"
     ]
 }

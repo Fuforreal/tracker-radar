@@ -9,21 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000323,
-    "sites": 39,
+    "prevalence": 0.000339,
+    "sites": 50,
     "subdomains": [
-        "lxjgbeqsbbfm7fba3otqmiie4e.appsync-api",
-        "nsei6eihgzhsxptxxiawzkzpsi.appsync-api",
+        "7zat78927l.execute-api",
+        "n3k5k32e00.execute-api",
         "cognito-identity",
         "3mgwwwklgg.execute-api",
         "fraaws-public-slb-ec53ddffde80b088.elb",
         "rkkck31tec.execute-api",
-        "5ltfktxjv5.execute-api",
         "acrrozfmvf.execute-api",
         "xrw5bc93v0.execute-api",
         "v957ap1x34.execute-api",
+        "nsei6eihgzhsxptxxiawzkzpsi.appsync-api",
         "marxy-loadb-1cliaiz2fmbra-ebfbbb46c39c8b69.elb",
-        "n3k5k32e00.execute-api",
         "sdx7nmjqg7.execute-api",
         "d-27lyv9kpda.execute-api",
         "3qas14kvni.execute-api"
@@ -45,24 +44,48 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/graphql",
+            "rule": "eu-central-1\\.amazonaws\\.com\\/production\\/thumbnailer",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "lxjgbeqsbbfm7fba3otqmiie4e.appsync-api",
-                "nsei6eihgzhsxptxxiawzkzpsi.appsync-api"
+                "7zat78927l.execute-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "debijbel.nl",
-                "www.maingau-energie.de"
+                "prusa3d.com",
+                "blog.prusa3d.com",
+                "forum.prusa3d.com"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/production\\/userinfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "n3k5k32e00.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6512f368133af534f1c8f8f0e83e50ea90034235c4fd29397cde196e977743ab"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paessler.com",
+                "kb.paessler.com"
             ]
         },
         {
@@ -73,8 +96,8 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -82,7 +105,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sensiseeds.com",
+                "www.medpets.de",
+                "www.medpets.nl",
+                "www.nationsphotolab.com",
                 "www.petsplace.nl",
+                "www.shogun.nl",
                 "www.toolnation.nl"
             ]
         },
@@ -95,34 +122,42 @@
                 "3mgwwwklgg.execute-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [],
             "responseHashes": [
+                "6255391ae69282594133c0081d092666b245d192add97d3cf7ba324266a6606c",
+                "cb2b8137e4232eff524e79c74882d61ed504cd654e11166b1c24beb747afbe31",
                 "717427c2587b9f94427ad6ac1e4b92061070cec794e635568afb6543fd192b74",
-                "0b1dc33ac8e06a90c5c7babc4d0fae73b38e0548e6dbf5ee301f800289d3a0fa",
-                "1b9cb64aca0057166849a87464d90c95cb69102b40cd563c5e16e3089fb44a36"
+                "97a3981899169644e4aa3599a000e2c4e206f06e4c05e990af81c62386b662ff",
+                "4f40cbbb4be6507d4eeb40b1bfe8e99089e638ca34803450e38ad1ac5c6a962a",
+                "488d7188f90f02e17d42b2a9a87385443002c00dbf842c075026a0f071abc2f4",
+                "914847a3262f6a964d0e8472a34905d4c8bc50bce2c40400e7297b5e4b13ec0d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sensiseeds.com",
+                "www.medpets.de",
+                "www.medpets.nl",
                 "www.mondoconv.it",
+                "www.nationsphotolab.com",
                 "www.petsplace.nl",
+                "www.shogun.nl",
                 "www.toolnation.nl"
             ]
         },
         {
             "rule": "eu-central-1\\.amazonaws\\.com\\/v2\\/d",
-            "cookies": 0.0000166,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "fraaws-public-slb-ec53ddffde80b088.elb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "chloro.trip.com",
@@ -130,13 +165,15 @@
                 }
             ],
             "responseHashes": [
-                "0b3b5eba11c2c5fc80a8a04f7209310bc4d0509464124f425e0c55b9d0808f61"
+                "13864db18b6a141b4cf5329d3dfee17d287f1327c202d9b434dfe6f58fcec9f4",
+                "9c7756dd32ca4c5c611d95250a50fe9ac6abefd1acaba7813e4ccf5ae56a238c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "trip.com",
+                "us.trip.com",
                 "www.trip.com"
             ]
         },
@@ -148,8 +185,8 @@
                 "rkkck31tec.execute-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -161,49 +198,8 @@
                 "888poker.com",
                 "www.cameranu.nl",
                 "www.handyhuellen.de",
+                "www.lastdodo.nl",
                 "www.welkoop.nl"
-            ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/prod",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "5ltfktxjv5.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ab-in-den-urlaub.de",
-                "www.ab-in-den-urlaub.de"
-            ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/prod",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "5ltfktxjv5.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "ad4f85a8ac8c2203792457ee6c685b8011da79b959aef137a277e6868077a192"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ab-in-den-urlaub.de",
-                "www.ab-in-den-urlaub.de"
             ]
         },
         {
@@ -215,10 +211,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "608ec6c48581bd7b0bcba4e2d5d86e0b9fcdc7d77a20bc2572672f644814ff28"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -235,12 +233,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "59b4bcaf0bac47c03ad5cf52a281bd7e43156d59176a1d6c9d87a6eb5ac4a9c4"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -257,10 +253,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "50fda228b900c1a636dd91984af663007b77b5d1065d1819de94dc364f0dc645"
+                "7add7444ba4e07cc1fcc2f679d07607a46155588af0751382e791f3b7597cd3a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -279,9 +275,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "c29d34ad1190a1cc0414356f59dd42a2bc1eb883a16ea258c37033b983c9bb72"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -300,10 +298,30 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maingau-energie.de",
+                "www.maingau-energie.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nsei6eihgzhsxptxxiawzkzpsi.appsync-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6af18f112d3819a3a1cb623bfab1ceec88bcb4799d66475340ad5e9d091db514"
+                "1aa7e3684f6b850288b69465f4772462caa811d58d2f206c73fd5905326deb8d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -322,7 +340,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "mg-marxy.mall.cz",
@@ -349,7 +367,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6512f368133af534f1c8f8f0e83e50ea90034235c4fd29397cde196e977743ab"
@@ -371,11 +389,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "72b2f2d95d30445c0977af395ccc2cb7279ff9c46b903ccf80a28cf6624d89c0",
-                "d08dc09521fbae11eabdcf36026a619b9ac0abaf6b6ada177be2cb1e23159f9b"
+                "4afb7b2e316818bda174941fcdec6d824802a237ec27ce1b648a374f0b7d0f26",
+                "faf74a1df77fc28309b417476d31713b1741838ba919d492157dedbc8a340ef9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -395,7 +413,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.cloud.tui.com",
@@ -420,7 +438,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.cloud.tui.com",
@@ -428,7 +446,7 @@
                 }
             ],
             "responseHashes": [
-                "6de2c1c6e4bc04b1015680c22bb25d030d1e7b25db47fbdc550d975db5abc094"
+                "8ccd4e05876cdb7b8c677fb1f367fb276ba4175f4eaf1c840045526911333c2e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -447,7 +465,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.cloud.tui.com",
@@ -474,7 +492,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.cloud.tui.com",
@@ -499,7 +517,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a74ca7b2c6d663aee6c1338062d79e15bac91e0108bd4185ac8693b38f831894"
@@ -517,70 +535,70 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.56
+            "prevalence": 0.34615384615384615
         },
         {
             "domain": "sooqr.com",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.28205128205128205
         },
         {
             "domain": "d5yoctgpv4cpx.cloudfront.net",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.08974358974358974
         },
         {
             "domain": "tripcdn.com",
-            "prevalence": 0.04
+            "prevalence": 0.05128205128205128
         },
         {
             "domain": "steadycdn.com",
-            "prevalence": 0.04
+            "prevalence": 0.038461538461538464
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.04
+            "prevalence": 0.038461538461538464
+        },
+        {
+            "domain": "plentymarkets.com",
+            "prevalence": 0.038461538461538464
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.02564102564102564
         },
         {
             "domain": "ferryhopper.com",
-            "prevalence": 0.02666666666666667
+            "prevalence": 0.02564102564102564
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.02666666666666667
-        },
-        {
-            "domain": "adobedtm.com",
-            "prevalence": 0.013333333333333334
-        },
-        {
-            "domain": "d19jstis2ivb20.cloudfront.net",
-            "prevalence": 0.013333333333333334
+            "prevalence": 0.02564102564102564
         }
     ],
     "types": {
-        "Preflight": 13,
-        "XHR": 18,
-        "Ping": 4,
-        "Document": 2,
-        "Image": 3,
-        "Fetch": 7
+        "Image": 6,
+        "Fetch": 9,
+        "Preflight": 15,
+        "XHR": 21,
+        "Ping": 5,
+        "Document": 2
     },
     "nameservers": [
-        "pdns5.ultradns.info",
-        "pdns3.ultradns.org",
-        "ns2.p31.dynect.net",
-        "u5.amazonaws.com",
-        "ns4.p31.dynect.net",
+        "pdns1.ultradns.net",
+        "u2.amazonaws.com",
         "u3.amazonaws.com",
         "u1.amazonaws.com",
-        "ns1.p31.dynect.net",
-        "ns3.p31.dynect.net",
         "u6.amazonaws.com",
-        "u2.amazonaws.com",
+        "ns2.p31.dynect.net",
         "u4.amazonaws.com",
-        "pdns1.ultradns.net"
+        "pdns3.ultradns.org",
+        "ns3.p31.dynect.net",
+        "ns1.p31.dynect.net",
+        "pdns5.ultradns.info",
+        "u5.amazonaws.com",
+        "ns4.p31.dynect.net"
     ]
 }

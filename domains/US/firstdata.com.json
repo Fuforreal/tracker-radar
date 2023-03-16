@@ -7,16 +7,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000498,
-    "sites": 6,
+    "prevalence": 0.0000881,
+    "sites": 13,
     "subdomains": [
-        "cdn",
         "lib.paymentjs",
+        "cdn",
         "docs.paymentjs"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "firstdata\\.com\\/prod\\/client-2\\.0\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lib.paymentjs"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "fa62120188bd5d5a4d071b941ef8f055c04ced53c26fcbe16e24247da889a79f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipotle.com",
+                "www.americasbest.com",
+                "www.eyeglassworld.com",
+                "www.zyrtec.com"
+            ]
+        },
         {
             "rule": "firstdata\\.com\\/global\\/stylesheets\\/vendor\\/fontawesome-pro-5\\.0\\.12\\/css\\/fontawesome-all\\.min\\.css",
             "cookies": 0,
@@ -26,7 +50,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "170f6f3bf935abdfb170ce0f871755db1fd5e473317c659b551fb542d02b2844"
@@ -40,28 +64,6 @@
             ]
         },
         {
-            "rule": "firstdata\\.com\\/prod\\/client-2\\.0\\.0\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lib.paymentjs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "19644a1090bf59f9d8a35f1b4b492caf20133e47f1f32ead0485884156cac609"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americasbest.com",
-                "www.eyeglassworld.com"
-            ]
-        },
-        {
             "rule": "firstdata\\.com\\/lib\\/prod\\/client-2\\.0\\.0\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -69,8 +71,8 @@
                 "docs.paymentjs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "89852810f8e3af0beb4656b2791591e8b0edd601dbde21d25429c3ff3f0830c2"
@@ -80,7 +82,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "megaplextheatres.com",
-                "www.megaplextheatres.com"
+                "www.megaplextheatres.com",
+                "www.petvalu.ca"
+            ]
+        },
+        {
+            "rule": "firstdata\\.com\\/lib\\/uat\\/client-2\\.0\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "docs.paymentjs"
+            ],
+            "apis": {
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2e93f8cf260022dad6671019d1a965bb82ce6c4e159de288b41ac2a044aec7af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "randl.com",
+                "www.randl.com"
             ]
         }
     ],
@@ -90,17 +117,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6153846153846154
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "centarro.io",
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "sdiapi.com",
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Stylesheet": 2,
-        "Script": 4
+        "Script": 9,
+        "Stylesheet": 2
     },
     "nameservers": [
+        "ns2.p10.dynect.net",
         "dns4.p07.nsone.net",
-        "dns2.p07.nsone.net",
         "ns1.p10.dynect.net",
-        "ns2.p10.dynect.net"
+        "dns2.p07.nsone.net"
     ]
 }

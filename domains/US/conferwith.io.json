@@ -4,14 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "expert"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "conferwith\\.io\\/public\\/api\\/ip-black-list\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "expert"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "houseofbruar.com",
+                "www.hughes.co.uk"
+            ]
+        },
         {
             "rule": "conferwith\\.io\\/public\\/api\\/check-availability",
             "cookies": 0,
@@ -21,7 +43,27 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hughes.co.uk",
+                "www.hughes.co.uk"
+            ]
+        },
+        {
+            "rule": "conferwith\\.io\\/public\\/api\\/check-availability",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "expert"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "31d6bc17c6ffde8ddcd4ca08f5c51d388404d6b90ba8eb24729ff23816432ac1"
@@ -37,23 +79,28 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000829,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
+            "domain": "global-e.com",
+            "prevalence": 0.5714285714285714
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.2857142857142857
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns1.wordpress.com",
         "ns2.wordpress.com",
+        "ns1.wordpress.com",
         "ns3.wordpress.com"
     ]
 }

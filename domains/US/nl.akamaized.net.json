@@ -9,17 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000498,
-    "sites": 6,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
         "image.buienradar",
-        "screenshots.rtl",
-        "processing-cdn.buienradar",
         "forecast.buienradar",
-        "image-cdn.buienradar",
         "graphdata.buienradar",
         "photovideoapi.buienradar",
-        "wildcard.rtlnieuws",
+        "image-cdn.buienradar",
+        "screenshots.rtl",
+        "processing-cdn.buienradar",
         "api.buienradar",
         "data.buienradar"
     ],
@@ -57,10 +56,6 @@
             "resolved": "processing-cdn.buienradar.nl.akamaized.net"
         },
         {
-            "original": "redactie.rtl.nl",
-            "resolved": "wildcard.rtlnieuws.nl.akamaized.net"
-        },
-        {
             "original": "screenshots.rtl.nl",
             "resolved": "screenshots.rtl.nl.akamaized.net"
         }
@@ -68,15 +63,123 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/image\\/single\\/RadarMapRainWebmercatorNL",
-            "cookies": 0.0000166,
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/hqmedia",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "image.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image.buienradar.nl",
+                    "resolved": "image.buienradar.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "f14aa43db5daa8fb522a04d37d9f5cc875948ea8bab7be6f9b8ee0826fb26757"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.be",
+                "www.buienradar.be"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/2800866",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forecast.buienradar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "forecast.buienradar.nl",
+                    "resolved": "forecast.buienradar.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "cd62a0d88ead6df75521def18b8daff5351a7714f5a4f409fcc60a0958d2a517"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.be",
+                "www.buienradar.be"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/geo\\/RainHistoryForecast",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graphdata.buienradar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "graphdata.buienradar.nl",
+                    "resolved": "graphdata.buienradar.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "77ac95cc11dfda8e179dbfe6005ae6672c4817fbdbc89df0869f66c6cec7fa89"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.be",
+                "www.buienradar.nl"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/\\/api\\/newzulu\\/media\\/AnonymousGetCollectionFiles\\/306\\/0\\/6",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "photovideoapi.buienradar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "photovideoapi.buienradar.nl",
+                    "resolved": "photovideoapi.buienradar.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "f5f7da4716e40f8e79fee74ec6f69bee6cccb499d0ffa93157a5f532a3959980"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.be",
+                "www.buienradar.nl"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/image\\/single\\/RadarMapRainWebmercatorNL",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image.buienradar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "image.buienradar.nl",
@@ -93,23 +196,73 @@
             ]
         },
         {
-            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/image\\/single\\/WeatherMapTemperatureActualNL",
-            "cookies": 0.00000829,
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/image\\/single\\/WeatherMapWindNL",
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "image.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "image.buienradar.nl",
                     "resolved": "image.buienradar.nl.akamaized.net"
                 }
             ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.nl",
+                "www.buienradar.nl"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/image\\/single\\/WeatherMapVisibilityNL",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image.buienradar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image.buienradar.nl",
+                    "resolved": "image.buienradar.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.nl",
+                "www.buienradar.nl"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/RadarMapRainWebmercatorNL\\/Single\\/202303101525__550x475_False_False_True_0_0_0_0_run202303101500\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image-cdn.buienradar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image-cdn.buienradar.nl",
+                    "resolved": "image-cdn.buienradar.nl.akamaized.net"
+                }
+            ],
             "responseHashes": [
-                "ae8fad62685d7c66d77e3d19b9a71324debcef83dd0db981e82b7d6b7a1b31e7"
+                "a689458c691d89f6828c54f284721e2d21f5f7772e392440d8e4f34761d5b5f5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -120,23 +273,23 @@
             ]
         },
         {
-            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/image\\/single\\/RadarMapSunNL",
-            "cookies": 0.00000829,
+            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/WeatherMapWindNL\\/Single\\/202303101510__350x421_False_False_False_0_0_0_0_c\\.png",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "image.buienradar"
+                "image-cdn.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "image.buienradar.nl",
-                    "resolved": "image.buienradar.nl.akamaized.net"
+                    "original": "image-cdn.buienradar.nl",
+                    "resolved": "image-cdn.buienradar.nl.akamaized.net"
                 }
             ],
             "responseHashes": [
-                "31e72e2895405f0915916e6e7b50d7fd5793274bf0ce09b3e6c1fd651c2580ab"
+                "34dd1caed28c4cde89899270d85cf8e5c77e9749753d85ab716a2f529565dbdf"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -147,7 +300,34 @@
             ]
         },
         {
-            "rule": "nl\\.akamaized\\.net\\/system\\/thumb\\/sz=720x404\\/uuid=e1ad90a3-ef79-4e66-8c38-2b94dbce9731",
+            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/WeatherMapVisibilityNL\\/Single\\/202303101500__350x421_False_False_False_0_0_0_0_c\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image-cdn.buienradar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image-cdn.buienradar.nl",
+                    "resolved": "image-cdn.buienradar.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "c67dd737c20ee1cd5adb18e2c8e70c9e26420f0c1fa54f22a23edc5637adf811"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.nl",
+                "www.buienradar.nl"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/system\\/thumb\\/sz=720x404\\/uuid=2c69dac9-7246-41a3-bd43-18911faef927",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -155,7 +335,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "screenshots.rtl.nl",
@@ -163,7 +343,7 @@
                 }
             ],
             "responseHashes": [
-                "cba138c66f0c605828d865f7231e3f015ef24de77363140cd5e33deef1875265"
+                "01e5df62f734336503975e70f377cd558c88258a51624fe4fe2654adf47a3ff0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -174,7 +354,7 @@
             ]
         },
         {
-            "rule": "nl\\.akamaized\\.net\\/hqmedia\\/74791e98-a240-4dff-b4ba-ab07beee5510_large\\.jpg",
+            "rule": "nl\\.akamaized\\.net\\/hqmedia\\/162c705f-edb4-41e0-bd1a-212b6d641e8a_large\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -182,7 +362,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "processing-cdn.buienradar.nl",
@@ -190,7 +370,7 @@
                 }
             ],
             "responseHashes": [
-                "65442e4b2fa07f3eb13d9921ca777a8a5a13655806fd4c83acdcdb8eeac34428"
+                "52185a11e3aed0189c00f28d523703996e52dfea4389b5333171cf04615c46b2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -202,14 +382,14 @@
         },
         {
             "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/2757783",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "forecast.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "forecast.buienradar.nl",
@@ -217,7 +397,7 @@
                 }
             ],
             "responseHashes": [
-                "59d35a2af2427660009605495551cacbb6bbfdbc6c8659efa6a3e8d6fe3b6c96"
+                "99f6693fd6ef5650090375fe4e2514cc1d1feb485d5a5961b14a1dcaca44fa85"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -229,14 +409,14 @@
         },
         {
             "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/season\\/2757783",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "forecast.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "forecast.buienradar.nl",
@@ -244,88 +424,7 @@
                 }
             ],
             "responseHashes": [
-                "70d70ef42d3d315be413842123e883398cab07eded04591a1c03bbdaad46df00"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "buienradar.nl",
-                "www.buienradar.nl"
-            ]
-        },
-        {
-            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/RadarMapRainWebmercatorNL\\/Single\\/202303060835__550x475_False_False_True_0_0_0_0_run202303060820\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "image-cdn.buienradar"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "image-cdn.buienradar.nl",
-                    "resolved": "image-cdn.buienradar.nl.akamaized.net"
-                }
-            ],
-            "responseHashes": [
-                "7802cd871e0fb13fb3430cd6dee7f0a6e3b775e6794d32c35e3ff2d4d15b4338"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "buienradar.nl",
-                "www.buienradar.nl"
-            ]
-        },
-        {
-            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/geo\\/RainHistoryForecast",
-            "cookies": 0.0000166,
-            "fingerprinting": 0,
-            "subdomains": [
-                "graphdata.buienradar"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "graphdata.buienradar.nl",
-                    "resolved": "graphdata.buienradar.nl.akamaized.net"
-                }
-            ],
-            "responseHashes": [
-                "f26e326d57f0a727467dc0a5131225da61c7e2109970405dd57545d9f047923c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "buienradar.nl",
-                "www.buienradar.nl"
-            ]
-        },
-        {
-            "rule": "nl\\.akamaized\\.net\\/\\/api\\/newzulu\\/media\\/AnonymousGetCollectionFiles\\/306\\/0\\/6",
-            "cookies": 0.0000166,
-            "fingerprinting": 0,
-            "subdomains": [
-                "photovideoapi.buienradar"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "photovideoapi.buienradar.nl",
-                    "resolved": "photovideoapi.buienradar.nl.akamaized.net"
-                }
-            ],
-            "responseHashes": [
-                "e2ab2015e278cc7a3330ffc44e9cb7ba4b6eadfae16660b596d7170430fe65d1"
+                "cb8a0b80aced6e16efbe8030f6c03686424b3d4f97ed612a4ffaa0504e128f33"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -344,7 +443,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "image.buienradar.nl",
@@ -352,7 +451,7 @@
                 }
             ],
             "responseHashes": [
-                "61ceedb70572503cae2de94c449d80466d65483b595f9e06c9f4e826c80ca021"
+                "36c6a89d56319d5c809135e802d5b47baa7a080f4499c62337efb0bc1b26a028"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -363,7 +462,7 @@
             ]
         },
         {
-            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/RadarMapSunNL\\/Single\\/202303060815__350x325_False_False_True_0_0_0_0_c\\.png",
+            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/RadarMapRainWebmercatorNL\\/Sprite\\/202303101525__550x475_False_False_True_0_12_0_0_run202303101500\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -371,7 +470,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "image-cdn.buienradar.nl",
@@ -379,7 +478,7 @@
                 }
             ],
             "responseHashes": [
-                "2f0a5a2d7c177ca70b78abe2a5aeda0345864a8ffd0bc5b3d4f14b937036c793"
+                "f85bbc4ea471888ae8867a06ee9b4bcba79c0139378e86078d4189090700086c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -387,87 +486,6 @@
             "exampleSites": [
                 "buienradar.nl",
                 "www.buienradar.nl"
-            ]
-        },
-        {
-            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/WeatherMapTemperatureActualNL\\/Single\\/202303060810__350x421_False_False_False_0_0_0_0_c\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "image-cdn.buienradar"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "image-cdn.buienradar.nl",
-                    "resolved": "image-cdn.buienradar.nl.akamaized.net"
-                }
-            ],
-            "responseHashes": [
-                "8d747d5fd99c3ab2cb5c6983a164c6082e0fc1946bd50846949a8c92ba6cf155"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "buienradar.nl",
-                "www.buienradar.nl"
-            ]
-        },
-        {
-            "rule": "nl\\.akamaized\\.net\\/br-processing\\/image-api\\/RadarMapRainWebmercatorNL\\/Sprite\\/202303060835__550x475_False_False_True_0_12_0_0_run202303060820\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "image-cdn.buienradar"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "image-cdn.buienradar.nl",
-                    "resolved": "image-cdn.buienradar.nl.akamaized.net"
-                }
-            ],
-            "responseHashes": [
-                "4f51c7327ce705856b7fcac58dc46e67c3c48bc40a45d90ca201f0011b6f1991"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "buienradar.nl",
-                "www.buienradar.nl"
-            ]
-        },
-        {
-            "rule": "nl\\.akamaized\\.net\\/sites\\/default\\/files\\/content\\/images\\/2023\\/03\\/06\\/HMMIK\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wildcard.rtlnieuws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "redactie.rtl.nl",
-                    "resolved": "wildcard.rtlnieuws.nl.akamaized.net"
-                }
-            ],
-            "responseHashes": [
-                "9595439ca10b3201301b6c8e7cec1df595514b5ad8a27f28a49efdeca9a57c83"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rtl.nl",
-                "www.rtl.nl"
             ]
         },
         {
@@ -479,7 +497,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.buienradar.nl",
@@ -497,14 +515,14 @@
         },
         {
             "rule": "nl\\.akamaized\\.net\\/1\\.0\\/traffic\\/all",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "data.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "data.buienradar.nl",
@@ -512,7 +530,7 @@
                 }
             ],
             "responseHashes": [
-                "01c982706a09f98ce084afab2cc84789cd728ab4f6b0bc43913a8df62b74a2e3"
+                "47f2d9319d1205296e50f14447391171481ec4985859e59105185af99ecdd1d3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -527,7 +545,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000332,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
@@ -536,7 +554,7 @@
     ],
     "types": {
         "Image": 22,
-        "XHR": 12
+        "XHR": 14
     },
     "nameservers": []
 }

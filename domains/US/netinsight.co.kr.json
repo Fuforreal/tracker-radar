@@ -4,12 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000058,
-    "sites": 7,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
-        "neon-imp"
+        "neon-imp",
+        "dcinside-worker"
     ],
     "cnames": [
+        {
+            "original": "addc.dcinside.com",
+            "resolved": "dcinside-worker.netinsight.co.kr"
+        },
         {
             "original": "cast.imp.joins.com",
             "resolved": "neon-imp.netinsight.co.kr"
@@ -19,14 +24,14 @@
     "resources": [
         {
             "rule": "netinsight\\.co\\.kr\\/persona\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "neon-imp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cast.imp.joins.com",
@@ -34,7 +39,7 @@
                 }
             ],
             "responseHashes": [
-                "40daa8d738a92d9fc32528f9be2d809c5aeb6b82ca8d1079612a82b3584230bd"
+                "e51220e7e9345f5baefea0b24511eeba8cf50180ece4b0c8ca385ee8b3c7d051"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,36 +48,63 @@
                 "joins.com",
                 "koreajoongangdaily.joins.com"
             ]
+        },
+        {
+            "rule": "netinsight\\.co\\.kr\\/NetInsight\\/js\\/dcinside\\/pc\\/etc@main_center",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcinside-worker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "addc.dcinside.com",
+                    "resolved": "dcinside-worker.netinsight.co.kr"
+                }
+            ],
+            "responseHashes": [
+                "457a7438c37c6b312ad8413f26e8295c73f71d01f4c6304dc96bb82d1a3eeb2d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dcinside.com",
+                "www.dcinside.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000332,
+    "cookies": 0.0000474,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.625
+            "prevalence": 0.5
         },
         {
             "domain": "joins.com",
-            "prevalence": 0.1875
+            "prevalence": 0.25
         },
         {
             "domain": "clickmon.co.kr",
-            "prevalence": 0.125
+            "prevalence": 0.2
         },
         {
             "domain": "heraldm.com",
-            "prevalence": 0.0625
+            "prevalence": 0.05
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
-        "ns-1396.awsdns-46.org",
-        "ns-662.awsdns-18.net",
         "ns-498.awsdns-62.com",
-        "ns-1661.awsdns-15.co.uk"
+        "ns-1661.awsdns-15.co.uk",
+        "ns-1396.awsdns-46.org",
+        "ns-662.awsdns-18.net"
     ]
 }

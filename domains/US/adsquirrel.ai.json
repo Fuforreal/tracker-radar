@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000995,
-    "sites": 12,
+    "prevalence": 0.000115,
+    "sites": 17,
     "subdomains": [
         "ue",
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,8 +22,8 @@
                 "ue"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000663,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -30,6 +31,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "spitogatos.gr",
+                "www.bank-codes.com",
                 "www.efsyn.gr",
                 "www.el.gr",
                 "www.lifo.gr",
@@ -47,8 +49,8 @@
                 "ue"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000663,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
                 "0501ff0326680044298a3aee49f95e4ca72db046a7f520b6c7f64683da02ff26"
@@ -58,6 +60,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "spitogatos.gr",
+                "www.bank-codes.com",
                 "www.efsyn.gr",
                 "www.el.gr",
                 "www.lifo.gr",
@@ -75,20 +78,48 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "9675732a6149844e8ac95606dab090b6541f79f3cb52700d306addca7a4c032d"
+                "614117d8abd667de411775915ffbaaa665543fefa813740ab9b17370a45a03ae",
+                "b60a1d9016a784bdd8d1abb8345e8d7b6de42faa05683a9e8521ca3915a5d14b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000016583472910897
+                "lotame_domain_check": 0.000013554635346422592
             },
             "exampleSites": [
-                "lifo.gr",
+                "el.gr",
+                "www.lifo.gr",
                 "www.news247.gr"
+            ]
+        },
+        {
+            "rule": "adsquirrel\\.ai\\/ethnos\\.gr\\/chirp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b879b3de7a16de3e34ae7d6c973ff7d355f1f4fcef5475b6dc49a6d0a8a406d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ethnos.gr",
+                "www.ethnos.gr"
             ]
         }
     ],
@@ -98,24 +129,25 @@
     "topInitiators": [
         {
             "domain": "orangeclickmedia.com",
-            "prevalence": 0.7647058823529411
+            "prevalence": 0.7272727272727273
         },
         {
             "domain": "first party",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.045454545454545456
         },
         {
             "domain": "cleverpush.com",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "Preflight": 8,
-        "XHR": 10
+        "Preflight": 9,
+        "XHR": 12,
+        "Script": 2
     },
     "nameservers": [
         "marek.ns.cloudflare.com",

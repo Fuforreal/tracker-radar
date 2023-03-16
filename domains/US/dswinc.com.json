@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000829,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "digital-utilities"
     ],
@@ -18,6 +18,58 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "dswinc\\.com\\/config\\/api\\/v1\\/value\\/ecomm_dsw_us\\/WEB\\/PROD",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "digital-utilities"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.dsw.com",
+                    "resolved": "digital-utilities.dswinc.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dsw.com",
+                "www.dsw.com"
+            ]
+        },
+        {
+            "rule": "dswinc\\.com\\/config\\/api\\/v1\\/value\\/ecomm_dsw_us\\/WEB\\/PROD",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "digital-utilities"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.dsw.com",
+                    "resolved": "digital-utilities.dswinc.com"
+                }
+            ],
+            "responseHashes": [
+                "9e29a61bec4ae10c29cc41fb5d67a69056a4bf5834a2a3a4707fb4632964b148"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dsw.com",
+                "www.dsw.com"
+            ]
+        },
+        {
             "rule": "dswinc\\.com\\/content\\/api\\/v2\\/page",
             "cookies": 0,
             "fingerprinting": 0,
@@ -26,7 +78,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.dsw.com",
+                    "resolved": "digital-utilities.dswinc.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "prev_page_type": 0.000006777317673211296
+            },
+            "exampleSites": [
+                "dsw.com",
+                "www.dsw.com"
+            ]
+        },
+        {
+            "rule": "dswinc\\.com\\/content\\/api\\/v2\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "digital-utilities"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.dsw.com",
@@ -34,11 +113,13 @@
                 }
             ],
             "responseHashes": [
-                "1efd011f4017df75d41a071f7823ce53d86c7c22e330db9370abdffce6bd9875"
+                "e79394a9603fe146a11d009d5da49f3e428af5c442a5c923fe9300b08c951ec5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "prev_page_type": 0.000013554635346422592
+            },
             "exampleSites": [
                 "dsw.com",
                 "www.dsw.com"
@@ -55,10 +136,11 @@
         }
     ],
     "types": {
-        "XHR": 2
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
-        "dns1.cscdns.net",
-        "dns2.cscdns.net"
+        "dns2.cscdns.net",
+        "dns1.cscdns.net"
     ]
 }

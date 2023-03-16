@@ -4,27 +4,82 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "prebid"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "relestar\\.com\\/static\\/prebid\\/rconfig-prod\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "prebid"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "URL.createObjectURL": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e70931ec588e2d321f7c84a72742fb56d11f4e591b456df1e2ef34e34004ea5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "huskermax.com",
+                "www.huskermax.com"
+            ]
+        },
+        {
+            "rule": "relestar\\.com\\/static\\/prebid\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {
+                "window.sessionStorage": 1,
+                "Navigator.prototype.appName": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "huskermax.com",
+                "www.huskermax.com"
+            ]
+        },
+        {
+            "rule": "relestar\\.com\\/static\\/prebid\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {
+                "window.sessionStorage": 1,
+                "Navigator.prototype.appName": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a19e64f8b1dc627a4c20d68aa55493468fedfee988a524004173877fc05f4ea6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -45,7 +100,8 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns59.domaincontrol.com",

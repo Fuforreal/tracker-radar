@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "cdn",
-        "api"
+        "api",
+        "ykb.api",
+        "cdn-ykb"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,22 +23,22 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.orientation": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "window.indexedDB": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Notification.permission": 2,
-                "Navigator.prototype.permissions": 2,
+                "Navigator.prototype.product": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.language": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.orientation": 3,
+                "window.localStorage": 3,
+                "window.sessionStorage": 3,
+                "window.indexedDB": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Notification.permission": 3,
+                "Navigator.prototype.permissions": 3,
                 "Navigator.prototype.cookieEnabled": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "20efccc3a2a862fd1ed88276dc6cfd37ba75ea6702630951a17fd86e82be6278"
@@ -46,7 +48,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flypgs.com",
-                "www.flypgs.com"
+                "www.flypgs.com",
+                "www.yapikredi.com.tr"
             ]
         },
         {
@@ -58,7 +61,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0541db81ff32d4817940e7937ee546ad78fbb63a7ec998574f67ebdde626f2a1"
@@ -80,7 +83,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -100,7 +103,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
@@ -120,7 +123,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a24932c1c82a2d20209bcab667c6159e0776d059a5bd62fa23d65126af64fd6c"
@@ -135,14 +138,15 @@
         },
         {
             "rule": "dataroid\\.com\\/inapp-message\\/in-app",
-            "cookies": 0,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "api",
+                "ykb.api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "933f6040f6e4c3f8072f039463b8e04167cc57f28bc0d49dad99fa78bbfd7014"
@@ -152,19 +156,21 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flypgs.com",
-                "www.flypgs.com"
+                "www.flypgs.com",
+                "www.yapikredi.com.tr"
             ]
         },
         {
             "rule": "dataroid\\.com\\/inapp-message\\/in-app",
-            "cookies": 0,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "api",
+                "ykb.api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -172,28 +178,77 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flypgs.com",
-                "www.flypgs.com"
+                "www.flypgs.com",
+                "www.yapikredi.com.tr"
+            ]
+        },
+        {
+            "rule": "dataroid\\.com\\/sdk-config\\/922f551c-3d56-11ec-ace7-452448567e3f",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ykb.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "845edbd699775506d0acdbe9d31910829ecdb9f03742832612a65fef75175ff8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yapikredi.com.tr",
+                "www.yapikredi.com.tr"
+            ]
+        },
+        {
+            "rule": "dataroid\\.com\\/sdk-config\\/922f551c-3d56-11ec-ace7-452448567e3f\\/config\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-ykb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "845edbd699775506d0acdbe9d31910829ecdb9f03742832612a65fef75175ff8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yapikredi.com.tr",
+                "www.yapikredi.com.tr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4444444444444444
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 8,
-        "Preflight": 4
+        "Script": 3,
+        "XHR": 13,
+        "Preflight": 5
     },
     "nameservers": [
-        "ns-1523.awsdns-62.org",
-        "ns-626.awsdns-14.net",
         "ns-1991.awsdns-56.co.uk",
-        "ns-395.awsdns-49.com"
+        "ns-626.awsdns-14.net",
+        "ns-395.awsdns-49.com",
+        "ns-1523.awsdns-62.org"
     ]
 }

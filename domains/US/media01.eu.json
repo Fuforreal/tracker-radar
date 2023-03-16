@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "engelhorn",
-        "traveltrex"
+        "traveltrex",
+        "pb"
     ],
     "cnames": [
         {
@@ -19,11 +20,11 @@
             "resolved": "engelhorn.media01.eu"
         }
     ],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "media01\\.eu\\/tm_js\\.aspx",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "engelhorn",
@@ -31,7 +32,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "media.engelhorn.de",
@@ -39,8 +40,8 @@
                 }
             ],
             "responseHashes": [
-                "82c92e734ab2d0ab489c38d01ec64ff4c78f91ebca9a6b8fb77d58c72ab2eac8",
-                "3d655ac2cb6b629e8450877e94e20fc9035483bcb7bf7211cc7025783f08099a"
+                "2afd697fbd29d859f7be4f7db3f5ccb995db1e03efbad1d3085d786fe5713375",
+                "06581851e82eb77e0523db8126e54ca35c8c245c80d7c8ec497283336d474e88"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -53,14 +54,14 @@
         },
         {
             "rule": "media01\\.eu\\/tm\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.00000678,
             "fingerprinting": 2,
             "subdomains": [
                 "engelhorn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "media.engelhorn.de",
@@ -80,7 +81,7 @@
         },
         {
             "rule": "media01\\.eu\\/tm_response\\.aspx",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "engelhorn",
@@ -88,7 +89,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "media.engelhorn.de",
@@ -97,7 +98,7 @@
             ],
             "responseHashes": [
                 "95b7d74d6d57494495e9ce69a11cf1d12ef3d211734aa35a20a554e69f6302b5",
-                "6d35b923191616798dc6a8d67c201741de1cf24d76ce33c7dd88fbd07476bc2d"
+                "2b470c4d6c4e70b80b6419a1bcf16d0e4f3c7d0e80ec4e289546939c438ab860"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -109,8 +110,30 @@
             ]
         },
         {
+            "rule": "media01\\.eu\\/view\\.aspx",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hamburg.de",
+                "www.hamburg.de"
+            ]
+        },
+        {
             "rule": "media01\\.eu\\/tmf\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "traveltrex"
@@ -138,7 +161,7 @@
                 "Navigator.prototype.language": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "83b10b58fd0e7feda459fe85158f421b9da62e853cad8daff9f2c24d298d6736"
@@ -148,13 +171,13 @@
                 "dt_sc": {
                     "ttl": null,
                     "length": 40,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "dtou": {
-                    "ttl": 63113907,
+                    "ttl": 63113906,
                     "length": 32,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
@@ -167,31 +190,36 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000332,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
-            "domain": "d2wy8f7a9ursnm.cloudfront.net",
+            "domain": "ad4m.at",
             "prevalence": 0.5
         },
         {
-            "domain": "d1brno4kbxrfxy.cloudfront.net",
+            "domain": "d2wy8f7a9ursnm.cloudfront.net",
             "prevalence": 0.25
         },
         {
+            "domain": "d1brno4kbxrfxy.cloudfront.net",
+            "prevalence": 0.125
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.25
+            "prevalence": 0.125
         }
     ],
     "types": {
         "Script": 7,
-        "XHR": 3
+        "XHR": 3,
+        "Image": 2
     },
     "nameservers": [
+        "ns61.constellix.net",
         "ns51.constellix.net",
-        "ns31.constellix.com",
         "ns11.constellix.com",
         "ns21.constellix.com",
-        "ns61.constellix.net",
-        "ns41.constellix.net"
+        "ns41.constellix.net",
+        "ns31.constellix.com"
     ]
 }

@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000207,
-    "sites": 25,
+    "prevalence": 0.00021,
+    "sites": 31,
     "subdomains": [
         "www.nyc",
         "www.iowa",
+        "sancert.weather",
         "11492.nrcs.usda",
         "secure.fisheries.noaa",
         "iservprod.medicare",
@@ -28,6 +29,10 @@
         {
             "original": "data.usajobs.gov",
             "resolved": "www.usajobs.gov.edgekey.net"
+        },
+        {
+            "original": "forecast.weather.gov",
+            "resolved": "sancert.weather.gov.edgekey.net"
         },
         {
             "original": "frontend.medicare.gov",
@@ -57,28 +62,86 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/images\\/global\\/accessibility_icon\\.svg",
-            "cookies": 0.0000166,
+            "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/js\\/webtrends\\/webtrends_v10\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.nyc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
                     "resolved": "www.nyc.gov.edgekey.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Image",
+            "responseHashes": [
+                "d840176ff7842ec20d3a9a99f6e5238210208cbdea0b59561f610c363006db46"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nyc.gov",
-                "www.nyc.gov"
+                "access.nyc.gov"
+            ]
+        },
+        {
+            "rule": "gov\\.edgekey\\.net\\/sliver\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.iowa"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "sliver.iowa.gov",
+                    "resolved": "www.iowa.gov.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6d46cdae6003477bfc75fe66a57b91910ebe3167afbaf806b810c24386e2d01e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iowa.gov",
+                "hhs.iowa.gov",
+                "tax.iowa.gov"
+            ]
+        },
+        {
+            "rule": "gov\\.edgekey\\.net\\/sliver\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.iowa"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "sliver.iowa.gov",
+                    "resolved": "www.iowa.gov.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "278945fd32c293541f6aee734eb0075c29701df347a2dfc2f4f4de2399e73822"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iowa.gov",
+                "hhs.iowa.gov",
+                "tax.iowa.gov"
             ]
         },
         {
@@ -90,14 +153,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
                     "resolved": "www.nyc.gov.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "ad91b8313c4c9cb3aa4f9051ad0bd030eb073a3f967f2e92a0915ad734644620"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -109,14 +174,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/css\\/pages\\/311\\/311header-and-footer-v2\\.css",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.nyc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -143,7 +208,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -170,7 +235,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -190,14 +255,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/js\\/webtrends\\/webtrends\\.311-load\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.nyc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -217,14 +282,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/js\\/libs\\/modernizr-2\\.6\\.2\\.min\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.nyc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -244,14 +309,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/js\\/utils\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.nyc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -271,14 +336,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/js\\/libs\\/class\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.nyc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -298,14 +363,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/assets\\/home\\/js\\/pages\\/311\\/header-footer\\/classes\\/NYC\\.MainNav\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.nyc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -332,7 +397,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -359,7 +424,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -386,7 +451,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -413,7 +478,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -440,7 +505,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -467,7 +532,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www1.nyc.gov",
@@ -486,57 +551,30 @@
             ]
         },
         {
-            "rule": "gov\\.edgekey\\.net\\/sliver\\.js",
+            "rule": "gov\\.edgekey\\.net\\/wwamap\\/png\\/ak\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "www.iowa"
+                "sancert.weather"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "sliver.iowa.gov",
-                    "resolved": "www.iowa.gov.edgekey.net"
+                    "original": "forecast.weather.gov",
+                    "resolved": "sancert.weather.gov.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "6d46cdae6003477bfc75fe66a57b91910ebe3167afbaf806b810c24386e2d01e"
+                "95b1bc101e821907e48c2964c8448eba7a6720f6a960ae9d3ae752376001695b"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "iowa.gov",
-                "tax.iowa.gov"
-            ]
-        },
-        {
-            "rule": "gov\\.edgekey\\.net\\/sliver\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www.iowa"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "sliver.iowa.gov",
-                    "resolved": "www.iowa.gov.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "278945fd32c293541f6aee734eb0075c29701df347a2dfc2f4f4de2399e73822"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "iowa.gov",
-                "tax.iowa.gov"
+                "weather.gov",
+                "www.weather.gov"
             ]
         },
         {
@@ -548,16 +586,14 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.nrcs.usda.gov",
                     "resolved": "11492.nrcs.usda.gov.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "91e9dedc145c351aa835beff0c8ab7c7e36ee3f54dc46a8a666bd0770badce57"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -575,7 +611,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.nrcs.usda.gov",
@@ -602,7 +638,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.nrcs.usda.gov",
@@ -629,7 +665,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.nrcs.usda.gov",
@@ -656,7 +692,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.nrcs.usda.gov",
@@ -675,6 +711,58 @@
             ]
         },
         {
+            "rule": "gov\\.edgekey\\.net\\/wps\\/contenthandler\\/wcc\\/!ut\\/p\\/digest!IWh9Tej8N5X0l5VorKGqAA\\/mashup\\/ra:collection",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "11492.nrcs.usda"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www.nrcs.usda.gov",
+                    "resolved": "11492.nrcs.usda.gov.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usda.gov",
+                "wcc.sc.egov.usda.gov"
+            ]
+        },
+        {
+            "rule": "gov\\.edgekey\\.net\\/wps\\/contenthandler\\/wcc\\/!ut\\/p\\/digest!FHffDCnCJ5vSSu3PPPsQTA\\/mashup\\/ra:collection",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "11492.nrcs.usda"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www.nrcs.usda.gov",
+                    "resolved": "11492.nrcs.usda.gov.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c5be81af31edc65422c75485d64a95194070bb4f4577454d8e7fa12c249e6adc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usda.gov",
+                "wcc.sc.egov.usda.gov"
+            ]
+        },
+        {
             "rule": "gov\\.edgekey\\.net\\/2023-03\\/FishWatch_Banner_Desktop_final\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -683,7 +771,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "media.fisheries.noaa.gov",
@@ -710,7 +798,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "media.fisheries.noaa.gov",
@@ -737,7 +825,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -764,7 +852,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -791,7 +879,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -818,7 +906,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -845,7 +933,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -872,7 +960,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -899,7 +987,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -926,7 +1014,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -953,7 +1041,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -980,7 +1068,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "frontend.medicare.gov",
@@ -1000,14 +1088,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/verify",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "iservprod.medicare"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.medicare.gov",
@@ -1027,39 +1115,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/siteActivity",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "iservprod.medicare"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [
-                {
-                    "original": "api.medicare.gov",
-                    "resolved": "iservprod.medicare.gov.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "medicare.gov",
-                "www.medicare.gov"
-            ]
-        },
-        {
-            "rule": "gov\\.edgekey\\.net\\/siteActivity",
-            "cookies": 0.0000166,
-            "fingerprinting": 0,
-            "subdomains": [
-                "iservprod.medicare"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.medicare.gov",
@@ -1078,6 +1141,31 @@
             ]
         },
         {
+            "rule": "gov\\.edgekey\\.net\\/siteActivity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iservprod.medicare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.medicare.gov",
+                    "resolved": "iservprod.medicare.gov.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "medicare.gov",
+                "www.medicare.gov"
+            ]
+        },
+        {
             "rule": "gov\\.edgekey\\.net\\/nhgov-fonts\\/open-sans\\/opensans\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1086,7 +1174,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.app-support.nh.gov",
@@ -1113,7 +1201,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.app-support.nh.gov",
@@ -1140,7 +1228,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "www.app-support.nh.gov",
@@ -1160,14 +1248,14 @@
         },
         {
             "rule": "gov\\.edgekey\\.net\\/csp-report",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www.usajobs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "data.usajobs.gov",
@@ -1188,7 +1276,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000829,
+    "cookies": 0.0000746,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
@@ -1196,12 +1284,12 @@
         }
     ],
     "types": {
+        "Script": 33,
+        "Stylesheet": 7,
         "Image": 39,
-        "Stylesheet": 6,
-        "Script": 26,
         "XHR": 2,
-        "Preflight": 2,
         "Ping": 2,
+        "Preflight": 2,
         "Font": 6,
         "Other": 2
     },

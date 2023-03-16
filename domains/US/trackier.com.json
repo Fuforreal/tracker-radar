@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
         "static-cdn"
@@ -13,36 +13,44 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "trackier\\.com\\/js\\/trackier-web-sdk\\.js",
-            "cookies": 0,
+            "rule": "trackier\\.com\\/js\\/trackier-lp-v1\\.1\\.0\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "static-cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3b55ec26c1517c0e6a7c2a9a43add5b0994c634fca354b902bbff47ae440d462"
+                "c718303a4051d81778042219f7e65afa01b4939b106a528f8a6e1bef42667c39"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "tr_utm_camp": {
+                    "ttl": 31536015,
+                    "length": 54,
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gonoise.com",
-                "www.gonoise.com"
+                "zivame.com",
+                "www.zivame.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
-            "domain": "first party",
+            "domain": "googletagmanager.com",
             "prevalence": 1
         }
     ],
@@ -50,9 +58,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-cloud-d2.googledomains.com",
-        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d3.googledomains.com",
         "ns-cloud-d4.googledomains.com",
-        "ns-cloud-d3.googledomains.com"
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d2.googledomains.com"
     ]
 }

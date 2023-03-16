@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
         "video-api.prod.video",
         "avia.prod.video"
@@ -31,7 +31,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "video-api.cbssports.com",
@@ -57,7 +57,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "video-api.cbssports.com",
@@ -65,8 +65,8 @@
                 }
             ],
             "responseHashes": [
-                "4c20b36c416f7d8f79312896981c451e57be79c48c678b6acaa2338a2cd7a0ac",
-                "66f45a5aaa9125c32a0d189bdd1070e45dcd498c96feb16487bc538a41226853"
+                "4f701fc570b313f4b0233fe795a3c914223abc888cae58455d2cc234906ee06f",
+                "27bc8906c4ae4072a1e5e01cd6ac43a1110b9ad8d4c5ee6ea1b6d394480060d1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -78,29 +78,30 @@
             ]
         },
         {
-            "rule": "cbssports\\.cloud\\/latest\\/video-avia-wrapper\\.min\\.js",
+            "rule": "cbssports\\.cloud\\/vms\\/fms\\/proxy\\/v1",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
-                "avia.prod.video"
+                "video-api.prod.video"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
-                    "original": "avia.cbssports.com",
-                    "resolved": "avia.prod.video.cbssports.cloud"
+                    "original": "video-api.cbssports.com",
+                    "resolved": "video-api.prod.video.cbssports.cloud"
                 }
             ],
             "responseHashes": [
-                "0aae6776be3f421a370795ce72e75aeaf4b4dab3724cfabd3b4918edfd995236"
+                "fad8fd1edd06f555b2d270813cadd09bb07889ad41820d8ab72ccf6e41fbaca9"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sportsline.com",
+                "cbssports.com",
+                "www.cbssports.com",
                 "www.sportsline.com"
             ]
         },
@@ -112,8 +113,8 @@
                 "video-api.prod.video"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "video-api.cbssports.com",
@@ -125,30 +126,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sportsline.com",
+                "cbssports.com",
+                "www.cbssports.com",
                 "www.sportsline.com"
             ]
         },
         {
-            "rule": "cbssports\\.cloud\\/vms\\/fms\\/proxy\\/v1",
+            "rule": "cbssports\\.cloud\\/latest\\/video-avia-wrapper\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "video-api.prod.video"
+                "avia.prod.video"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "video-api.cbssports.com",
-                    "resolved": "video-api.prod.video.cbssports.cloud"
+                    "original": "avia.cbssports.com",
+                    "resolved": "avia.prod.video.cbssports.cloud"
                 }
             ],
             "responseHashes": [
-                "78c4f6e29bee46a4cc18930895ee642d2f564c2911606a334527fdca6f81671a"
+                "e2d8ba07df758f0025e3f3a1343d6fbd1a46fa1ec9568f37afcf2033c68a9c99"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -162,20 +164,28 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "rum.us-east-1.amazonaws.com",
+            "prevalence": 0.4
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.4
+        },
+        {
+            "domain": "akamaihd.net",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Preflight": 5,
+        "Preflight": 6,
         "Fetch": 3,
-        "Script": 2,
-        "XHR": 2
+        "XHR": 3,
+        "Script": 2
     },
     "nameservers": [
-        "ns-953.awsdns-55.net",
         "ns-1343.awsdns-39.org",
         "ns-113.awsdns-14.com",
-        "ns-1856.awsdns-40.co.uk"
+        "ns-1856.awsdns-40.co.uk",
+        "ns-953.awsdns-55.net"
     ]
 }

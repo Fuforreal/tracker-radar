@@ -7,29 +7,63 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
+        "shpog-pol",
         "shpog-ath"
     ],
     "cnames": [
         {
             "original": "analytics-2.athome.com",
             "resolved": "shpog-ath.ovative.com"
+        },
+        {
+            "original": "analytics-2.polaris.com",
+            "resolved": "shpog-pol.ovative.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "ovative\\.com\\/pc\\/polaris-map\\/",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shpog-pol"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [
+                {
+                    "original": "analytics-2.polaris.com",
+                    "resolved": "shpog-pol.ovative.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__ogfpid": 0.000027109270692845184
+            },
+            "exampleSites": [
+                "polaris.com",
+                "slingshot.polaris.com",
+                "snowmobiles.polaris.com",
+                "www.polaris.com"
+            ]
+        },
+        {
             "rule": "ovative\\.com\\/pc\\/athome-map\\/",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "shpog-ath"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "analytics-2.athome.com",
@@ -40,8 +74,8 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "gpv_Page": 0.000016583472910897,
-                "gpv_PageType": 0.0000082917364554485
+                "gpv_Page": 0.000006777317673211296,
+                "gpv_PageType": 0.000006777317673211296
             },
             "exampleSites": [
                 "athome.com",
@@ -51,12 +85,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000407,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Fetch": 2
+        "Fetch": 6
     },
     "nameservers": [
-        "tess.ns.cloudflare.com",
-        "west.ns.cloudflare.com"
+        "west.ns.cloudflare.com",
+        "tess.ns.cloudflare.com"
     ]
 }

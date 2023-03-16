@@ -7,28 +7,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000498,
-    "sites": 6,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
         "www",
+        "cdn",
         "www2"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "clustrmaps\\.com\\/map_v2\\.png",
-            "cookies": 0.0000249,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "3914aaee662234597bbe1fe21ae31d3e7629640ee21f7cab1a25de4d29d18c5f"
+                "049dd34790983e8858aaba9b38d4a42e6761bc636648c0a3c7010577392a22ec"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -40,18 +41,42 @@
             ]
         },
         {
+            "rule": "clustrmaps\\.com\\/globe\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0706ac35408c05e25873a0437250dd593c5f8bf8ca31ee5b61a927c4dd0b65be"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "honeybeesuite.com",
+                "www.honeybeesuite.com"
+            ]
+        },
+        {
             "rule": "clustrmaps\\.com\\/counter\\/index2\\.php",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www2"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1e77b9e17ef359c3bd9ccfa77c1873ec4c733491121930640f52eb2e12226cee"
+                "dbd2e962fcacabdeaa9dd9343b664d502d3f9cf18d2961b131dda9a6f8bdf35b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -64,18 +89,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000498,
+    "cookies": 0.0000474,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Image": 5
+        "Image": 5,
+        "Script": 2
     },
     "nameservers": [
-        "liz.ns.cloudflare.com",
-        "jay.ns.cloudflare.com"
+        "jay.ns.cloudflare.com",
+        "liz.ns.cloudflare.com"
     ]
 }

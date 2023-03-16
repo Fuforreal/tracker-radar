@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00104,
-    "sites": 125,
+    "prevalence": 0.000942,
+    "sites": 139,
     "subdomains": [
         "js",
         "assets",
@@ -28,10 +28,10 @@
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 5
             },
-            "sites": 6,
-            "prevalence": 0.0000498,
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
                 "b23dc12557153d518538d7b2f011ded0be477c1b18ba014e811530bf25650daf"
@@ -42,6 +42,7 @@
             "exampleSites": [
                 "casper.com",
                 "www.americanmuscle.com",
+                "www.americantrucks.com",
                 "www.boats.net",
                 "www.everythingbutwater.com",
                 "www.extremeterrain.com",
@@ -51,13 +52,15 @@
         {
             "rule": "braintreegateway\\.com\\/web\\/3\\.85\\.3\\/js\\/data-collector\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "js"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "c46bd70559c0fe5398b80e45ef1eb05e3d69b5d6382a9108a8739558c9d6786f"
@@ -67,7 +70,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "casper.com",
-                "www.everythingbutwater.com"
+                "www.everythingbutwater.com",
+                "www.stvincentdepaul.net"
             ]
         },
         {
@@ -79,7 +83,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "942b778efb06246fa0c1aa0aff376d42d83b445a1bc0ebd6d56d98c67380f365"
@@ -100,8 +104,8 @@
                 "js"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000498,
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
                 "97053f3ac692e9219b08bb8c326260d324aa51d2a9a816ed6fd260092607e20c"
@@ -112,10 +116,39 @@
             "exampleSites": [
                 "casper.com",
                 "www.americanmuscle.com",
+                "www.americantrucks.com",
                 "www.boats.net",
                 "www.everythingbutwater.com",
                 "www.extremeterrain.com",
                 "www.partzilla.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/v2\\/braintree\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "2f57fab97c15bf3519176fcd494f12d36d24ca3d761a787a1e66a1058bc6b30f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salvationarmy.org",
+                "ghostinc.com",
+                "www.lls.org",
+                "www.rainforest-alliance.org",
+                "www.thetrevorproject.org"
             ]
         },
         {
@@ -128,8 +161,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "854c5b1976ce30f6525483c00574f5211e283d48be2174a2020900eb440530c8"
@@ -139,33 +172,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eeuroparts.com",
-                "workboots.com",
-                "www.outdooractive.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.88\\.6\\/js\\/data-collector\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1,
-                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "63a854c88ec8b7731d0ac234ecfcd990cd85bccbbc4388ff0b100a34672fecab"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eeuroparts.com",
-                "www.outdooractive.com"
+                "workboots.com"
             ]
         },
         {
@@ -177,7 +184,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d60bad7c6996db4e80c692d5657e41c62192ded3aab68f0ca69bdd25cd5fd47f"
@@ -198,44 +205,181 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "117b0ca38f3c939204ba44ac348cf3b414f07a4018622f8adcc2afdd6acff936"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eeuroparts.com",
                 "placeit.net",
-                "www.elephantjournal.com",
-                "www.whitehelmets.org"
+                "www.elephantjournal.com"
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/v2\\/braintree\\.js",
+            "rule": "braintreegateway\\.com\\/web\\/3\\.82\\.0\\/js\\/client\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.appName": 3,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "2f57fab97c15bf3519176fcd494f12d36d24ca3d761a787a1e66a1058bc6b30f"
+                "27bcd2acc73668e7b9065fb74adc90c4f61620aeac567102935423e42167cf4a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ghostinc.com",
-                "www.lls.org",
-                "www.thetrevorproject.org"
+                "givebutter.com",
+                "www.heraldnet.com",
+                "www.sportsshoes.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.82\\.0\\/js\\/paypal-checkout\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "ed12847b89e6f0723c7d2441f6fea3007e31ec4dd5c99850e917796825f0cd04"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "givebutter.com",
+                "www.heraldnet.com",
+                "www.sportsshoes.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.82\\.0\\/js\\/venmo\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "37e7667e22a5ffc932fecd589c759c9b83fb38d591677650b1b6353a495852f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "givebutter.com",
+                "www.heraldnet.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.82\\.0\\/js\\/data-collector\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "0ea2ce36f8ed44170944c91be86d68f96caabf8f6cbb54b797c9e8d8ce01adb8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "givebutter.com",
+                "www.heraldnet.com",
+                "www.sportsshoes.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.73\\.1\\/js\\/client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "310336679f4286ee64a46f8c4b1e317cd54ab42650be8b62b7a3de37a92171a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harrysholsters.com",
+                "www.bowlerx.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.73\\.1\\/js\\/apple-pay\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41986dc95c7bca045a015d3ff1e912f681de0b9c6653de34050d84677fea637b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harrysholsters.com",
+                "www.bowlerx.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/js\\/braintree-2\\.32\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "33fbeff23dbe05cfff2f5dada83491b6ce2de07a90e7be63a838b9b73fdf10d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "interestingengineering.com",
+                "www.versobooks.com"
             ]
         },
         {
@@ -249,7 +393,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "4a3569fc82e8fef2a9125e05232c934b475e8c895e2454de87877d78da71a325"
@@ -274,7 +418,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "2f502042efa3bddb6a712e08df94e1dfec86c4ec79c14e81c404fcdf8df6cb84"
@@ -299,7 +443,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "106cc265f34c25113c1c57a7b606878708cbb4205a66e82f495cd40014b24258"
@@ -324,7 +468,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "bbdb499ada9a9b54877bce6e362d9dc0745374dcc39ed49ba2ee210b1429255f"
@@ -347,7 +491,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "10a8fbaa0884f4deedfb149d83b3345d7489f9995d0737d35b3282132cd04452"
@@ -370,7 +514,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "3d9ef05bcd150166c1f5163efaa04d78e47390892439d4f9bcb4d22a6b579762"
@@ -392,7 +536,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -406,6 +550,28 @@
             ]
         },
         {
+            "rule": "braintreegateway\\.com\\/web\\/dropin\\/1\\.27\\.0\\/js\\/dropin\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0ad49c097a54acddb64f276105be65fc78cd5e8ab5bce67b0c70b2ec9b474b34"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realmahjongg.com",
+                "www.nokillnetwork.org"
+            ]
+        },
+        {
             "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.4\\/js\\/client\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -415,8 +581,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 1
             },
-            "sites": 8,
-            "prevalence": 0.0000663,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [],
             "responseHashes": [
                 "445bd8e136fd11ec104f8626d7e72c0caa4f7b97fcc11d120a61c01d82516d3d"
@@ -426,12 +592,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rmsothebys.com",
-                "www.bangordailynews.com",
                 "www.irobot.com",
+                "www.landsend.co.uk",
                 "www.landsend.de",
                 "www.nn.de",
-                "www.shawlocal.com",
                 "www.storedj.com.au",
+                "www.thelocal.ch",
+                "www.thelocal.de",
+                "www.thelocal.es",
                 "www.thelocal.se"
             ]
         },
@@ -443,10 +611,10 @@
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 5,
-            "prevalence": 0.0000415,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "c313a3064a78603167052a8b7cf8556d86a23440be1a18de83e47c1d99a7db27"
@@ -456,9 +624,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rmsothebys.com",
-                "www.bangordailynews.com",
                 "www.nn.de",
-                "www.shawlocal.com",
+                "www.thelocal.ch",
+                "www.thelocal.de",
+                "www.thelocal.es",
                 "www.thelocal.se"
             ]
         },
@@ -471,7 +640,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "2055480fe24b6b261cc35f714820f19aa6183cf863fe6af3f1e91cd1d1a0090b"
@@ -498,7 +667,7 @@
                 "Navigator.prototype.userAgent": 5
             },
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "392c1cfd7dba03273c21a643e0aa17b3374383d575c55e6b23c99f873227ae32"
@@ -523,7 +692,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a38be85daeb6788a0b0516a2f6009b31e418cfa8d1e9b3d52401b467ff622b9a"
@@ -545,7 +714,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "13575b73cac87583ac763ca4c7686f8afa32e1073005708e2cbe60c7f6ebb24a"
@@ -568,7 +737,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5311d8cb47cc3d756e1ca347b69066a7e93218cdc96332f2beef4838ee020d8d"
@@ -590,7 +759,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -610,7 +779,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4ba7d495ae72b3ff6cabfe8c46f8d954d149e370983b52c5fabdf32864cafaef"
@@ -632,7 +801,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -654,7 +823,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -674,7 +843,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "e06210e9c55988a94bb91af0fb9b739a550e0f54c6a7ed76f2a7642d68b74335"
@@ -699,7 +868,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "3f14e19369143b63cf53c58b9e470a21238c6e732cf1124f0f09b854a887f083"
@@ -724,7 +893,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "f333f3c8552bc56e72f4b50189879a18f4bdb87c17e309ca27503930f04578af"
@@ -749,7 +918,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "d3aefb2b6cacb5ed40780c469da8daee7b4314d6e738d4eab20e3b61e9898789"
@@ -776,7 +945,7 @@
                 "Navigator.prototype.userAgent": 5
             },
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "abf5dbb8d259b25b54c6d6a2aabb996c6833a7d1f8004fc535b603f522aed0a9"
@@ -801,7 +970,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "8b997d8220cead9e201c78062bd936483d5ad6098a3cf662f12db442a4674fb8"
@@ -826,7 +995,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "105b4ff644ee9a361289d52c3c63e41b068ea56aefb96ddb074630c85df0a605"
@@ -843,80 +1012,91 @@
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.4\\/js\\/paypal-checkout\\.min\\.js",
+            "rule": "braintreegateway\\.com\\/5wjrstjtm3hrxcs3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000058,
-            "cnames": [],
-            "responseHashes": [
-                "c86f10fa8ffeb4f1d3a9be48855d18d4eca3e9846e5da4d4ca9e8e83947a88eb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bangordailynews.com",
-                "www.irobot.com",
-                "www.landsend.de",
-                "www.nn.de",
-                "www.shawlocal.com",
-                "www.storedj.com.au",
-                "www.thelocal.se"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.4\\/js\\/three-d-secure\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
+                "client-analytics"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [
-                "51963320596251cfc38004ba663fb70867ca0890d7eb1723fb0ef286d279e909"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bangordailynews.com",
-                "www.nn.de",
-                "www.shawlocal.com",
-                "www.thelocal.se"
+                "americanmuscle.com",
+                "www.americanmuscle.com",
+                "www.americantrucks.com",
+                "www.extremeterrain.com"
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.4\\/js\\/data-collector\\.min\\.js",
+            "rule": "braintreegateway\\.com\\/5wjrstjtm3hrxcs3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "js"
+                "client-analytics"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000498,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "99188b87710c2ff716f2efa308c42adfd225fc87881c12c67659bbdaae2628b8"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bangordailynews.com",
-                "www.irobot.com",
-                "www.landsend.de",
-                "www.nn.de",
-                "www.shawlocal.com",
-                "www.thelocal.se"
+                "americanmuscle.com",
+                "www.americanmuscle.com",
+                "www.americantrucks.com",
+                "www.extremeterrain.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/8q4fft3vv39mct4f",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "audubon.org",
+                "www.audubon.org"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/8q4fft3vv39mct4f",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "audubon.org",
+                "www.audubon.org"
             ]
         },
         {
@@ -929,8 +1109,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f05b1bfe0ba17ee79b6d32a84f86c53d597d19052d77d9d4209099ebe3caf332"
@@ -940,8 +1120,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "billoreilly.com",
-                "www.billoreilly.com",
-                "www.ihatestevensinger.com"
+                "www.billoreilly.com"
             ]
         },
         {
@@ -954,8 +1133,8 @@
             "apis": {
                 "Date.prototype.getTime": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4e7e09acc1fe85f5113ec796055fb40011a09f1c59233949cbd96d5cb0abc57b"
@@ -965,8 +1144,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "billoreilly.com",
-                "www.billoreilly.com",
-                "www.ihatestevensinger.com"
+                "www.billoreilly.com"
             ]
         },
         {
@@ -977,10 +1155,10 @@
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6fc74fd210976524940834be96656ffc910d305131ab0a6a264459386910e8d5"
@@ -990,8 +1168,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "billoreilly.com",
-                "www.billoreilly.com",
-                "www.ihatestevensinger.com"
+                "www.billoreilly.com"
             ]
         },
         {
@@ -1002,8 +1179,8 @@
                 "js"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e2d20424677fe53e314ee8a39dfb8cd0fd9bf324354a322421df072e7aeefccb"
@@ -1013,8 +1190,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "billoreilly.com",
-                "www.billoreilly.com",
-                "www.ihatestevensinger.com"
+                "www.billoreilly.com"
             ]
         },
         {
@@ -1026,7 +1202,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1046,7 +1222,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1068,7 +1244,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1088,7 +1264,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1112,7 +1288,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5281aa023e41e5b9858a4fbd3054bdd9646290eac3bbe18cadbe570f56e61f62"
@@ -1136,7 +1312,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2d23da2b45029ea0a8db411b22a99ba6beef599f896ed0a3e3bea1e2b3b18b14"
@@ -1158,7 +1334,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6c0ba46d59948c121263f6c9a4439e7e2bfc270e4f5310eea82f50d41336ee20"
@@ -1180,7 +1356,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6d592b15019beeb692ccb4a537e33c298a67b769d3e29d64f03a71720ec75920"
@@ -1202,7 +1378,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b0526dfd81b42dce596539007dcb006058bf62c4af1c11406714a6170ed53494"
@@ -1224,7 +1400,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5c1fb371ae679a141d2449e1dcedb16bb4b03a50b77e55ec22f20ec4a758a293"
@@ -1246,7 +1422,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "220151e0b61c9dcec8fa781b70923b10068b67a542b2b5ec08f5b104e742cec4"
@@ -1268,7 +1444,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1288,7 +1464,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1310,7 +1486,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e4b280fb4e7d17870e81dfb66905ac369de2b966b58a9cf13211ab52c3c1d01f"
@@ -1333,7 +1509,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1354,7 +1530,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1377,7 +1553,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ee4fce91733f5f25d0ba0bba8aa5bfa8ffd1f224b92cd532f353d4e27e76034e"
@@ -1399,7 +1575,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4a162c40cc75d1b2aef368f06fb0026bd783b3848e88754027be97b9db284854"
@@ -1421,7 +1597,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "eea2b6efa88ccf81903dbdcdd0d2ed62f18ea5ae49ec60545b6a7bd732ddc87f"
@@ -1443,7 +1619,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1463,7 +1639,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1485,7 +1661,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1505,7 +1681,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1519,59 +1695,15 @@
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/tcq93drtf7b9b94x",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crs.org",
-                "www.crs.org"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/tcq93drtf7b9b94x",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crs.org",
-                "www.crs.org"
-            ]
-        },
-        {
             "rule": "braintreegateway\\.com\\/web\\/3\\.69\\.0\\/js\\/client\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "js"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 7,
-            "prevalence": 0.000058,
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "0c7426dab3210a5bf3c4b4924bc678c0001f4765137ba482ac8fc07fb4f32001"
@@ -1585,22 +1717,19 @@
                 "www.editorialedomani.it",
                 "www.kregtool.com",
                 "www.thelott.com",
-                "www.ufseeds.com",
-                "www.whitehelmets.org"
+                "www.ufseeds.com"
             ]
         },
         {
             "rule": "braintreegateway\\.com\\/web\\/3\\.69\\.0\\/js\\/data-collector\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "js"
             ],
-            "apis": {
-                "Date.prototype.getTime": 1
-            },
-            "sites": 6,
-            "prevalence": 0.0000498,
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "2f3793dd173f59b85a16571e416ccf588b2034dded889a21b1a1251a1ada52b8"
@@ -1613,8 +1742,7 @@
                 "www.dooney.com",
                 "www.kregtool.com",
                 "www.thelott.com",
-                "www.ufseeds.com",
-                "www.whitehelmets.org"
+                "www.ufseeds.com"
             ]
         },
         {
@@ -1626,7 +1754,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "45edea8c04b5211f5bf27bd1bb456ce9203a0ed3359ee0fbd7ff472dd37dc429"
@@ -1650,7 +1778,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000498,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "82c5d8a4e72a8b9e301e9e7ddeb16266699162e3dfe95b9764ccf05b7b8e0a43"
@@ -1678,7 +1806,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "793825d74272ea186f52b849a9a7f925c922ca514e00c4f4d82eb48a01d09fcd"
@@ -1703,7 +1831,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "86177c93aa89328f7c360d2f7cdb759992fdb987441c8bdb9a53f580e02b0184"
@@ -1725,7 +1853,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "cbf2cc04487bd081cbabc7dee6eacb5d0168812fc91b53b80fdb603a708c2ff3"
@@ -1748,7 +1876,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "77b3520ccbddb368160e59b36ac894337fc4875c1375d6c769b50f10e86051f2"
@@ -1756,7 +1884,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.000016583472910897
+                "G_ENABLED_IDPS": 0.000013554635346422592
             },
             "exampleSites": [
                 "elephantjournal.com",
@@ -1773,7 +1901,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "049b87aa264f665ac92336b3e4b56176282704395f353b76db651f96ddd6eaf7"
@@ -1798,7 +1926,7 @@
                 "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e690a82558bf9615e53fd5a6aca57473173db8ea1040b668e238daf7c293e454"
@@ -1820,7 +1948,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1840,7 +1968,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1865,7 +1993,7 @@
                 "window.name": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "48ec446fef7f964e1cdd3a78dda2307311f72a265e4b1fafb8267e472064de51"
@@ -1879,45 +2007,27 @@
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/5wjrstjtm3hrxcs3",
+            "rule": "braintreegateway\\.com\\/web\\/dropin\\/1\\.18\\.0\\/js\\/dropin\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "client-analytics"
+                "js"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "extremeterrain.com",
-                "www.extremeterrain.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/5wjrstjtm3hrxcs3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "dfff0b5fa24f89dcaf05b528724fb9f831ae25d28e51bc8dbe27bdacecf049a3"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "extremeterrain.com",
-                "www.extremeterrain.com"
+                "falcoholsters.com",
+                "www.falcoholsters.com"
             ]
         },
         {
@@ -1929,7 +2039,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1949,7 +2059,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1970,10 +2080,11 @@
                 "assets"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "69976183a43f554653d0e0631500b3dfaf2471935f734bf2ebe7a5cd34a17ed3"
@@ -1987,74 +2098,6 @@
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.82\\.0\\/js\\/client\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "27bcd2acc73668e7b9065fb74adc90c4f61620aeac567102935423e42167cf4a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "heraldnet.com",
-                "www.sportsshoes.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.82\\.0\\/js\\/paypal-checkout\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "ed12847b89e6f0723c7d2441f6fea3007e31ec4dd5c99850e917796825f0cd04"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "heraldnet.com",
-                "www.sportsshoes.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.82\\.0\\/js\\/data-collector\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "0ea2ce36f8ed44170944c91be86d68f96caabf8f6cbb54b797c9e8d8ce01adb8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "heraldnet.com",
-                "www.sportsshoes.com"
-            ]
-        },
-        {
             "rule": "braintreegateway\\.com\\/mq2mvv4k6c7ckqn2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2063,27 +2106,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hoteltonight.com",
-                "www.hoteltonight.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/mq2mvv4k6c7ckqn2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2097,69 +2120,52 @@
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.34\\.0\\/js\\/apple-pay\\.min\\.js",
+            "rule": "braintreegateway\\.com\\/mq2mvv4k6c7ckqn2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "js"
+                "client-analytics"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "06324d4849d5639cda90634913fa2132841fb1d8ca37323b3b683f7ff5c2ea96"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ihatestevensinger.com",
-                "www.ihatestevensinger.com"
+                "hoteltonight.com",
+                "www.hoteltonight.com"
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.34\\.0\\/js\\/paypal\\.min\\.js",
+            "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.4\\/js\\/data-collector\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "js"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
-                "0ac73002196c8a14d0f6b9f47a5de0a8a3e9dffab3e6c3e340ef9468a8e6f40f"
+                "99188b87710c2ff716f2efa308c42adfd225fc87881c12c67659bbdaae2628b8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ihatestevensinger.com",
-                "www.ihatestevensinger.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.34\\.0\\/js\\/three-d-secure\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "61d8ec7fa471d79aa62a2b9538cb1782908b525df7adb8b8ca8d14592a71b7cc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ihatestevensinger.com",
-                "www.ihatestevensinger.com"
+                "irobot.com",
+                "www.irobot.com",
+                "www.landsend.co.uk",
+                "www.landsend.de",
+                "www.nn.de",
+                "www.thelocal.ch",
+                "www.thelocal.de",
+                "www.thelocal.es",
+                "www.thelocal.se"
             ]
         },
         {
@@ -2170,8 +2176,8 @@
                 "js"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "0538b302395f4eeb3438884dafcb142a00262d1b40826febb948ffb11f2fda90"
@@ -2182,7 +2188,104 @@
             "exampleSites": [
                 "irobot.com",
                 "www.irobot.com",
+                "www.landsend.co.uk",
                 "www.landsend.de"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.4\\/js\\/paypal-checkout\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000678,
+            "cnames": [],
+            "responseHashes": [
+                "c86f10fa8ffeb4f1d3a9be48855d18d4eca3e9846e5da4d4ca9e8e83947a88eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "irobot.com",
+                "www.irobot.com",
+                "www.landsend.co.uk",
+                "www.landsend.de",
+                "www.nn.de",
+                "www.storedj.com.au",
+                "www.thelocal.ch",
+                "www.thelocal.de",
+                "www.thelocal.es",
+                "www.thelocal.se"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.60\\.0\\/js\\/client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1e4639a42b337592bb7a05870cee005b268bcd5d831b9a8f0b0ae97dc8c326c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "modere.com",
+                "www.modere.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.60\\.0\\/js\\/paypal-checkout\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6a246ba160a0aa36b7b8a3578b66acead220528e72b6768d4d839bcae8d74501"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "modere.com",
+                "www.modere.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.60\\.0\\/js\\/data-collector\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "36c79905a1ea8cd7e2b1f5538c3952ffe96f32b29cd75671dc27bfbb6b3ca62e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "modere.com",
+                "www.modere.com"
             ]
         },
         {
@@ -2193,10 +2296,10 @@
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "809bf9289e544c43d9f17a1a313f8204e9ee5a92f656221162248e497ae970c9"
@@ -2207,8 +2310,7 @@
             "exampleSites": [
                 "myfamilymobile.com",
                 "www.myfamilymobile.com",
-                "www.sportoptics.com",
-                "www.vexrobotics.com"
+                "www.sportoptics.com"
             ]
         },
         {
@@ -2219,8 +2321,8 @@
                 "js"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "dbce01fd8435b665ef63cc1431c6432d38565d8fefd34c5b581c82112f1ba7e0"
@@ -2231,8 +2333,7 @@
             "exampleSites": [
                 "myfamilymobile.com",
                 "www.myfamilymobile.com",
-                "www.sportoptics.com",
-                "www.vexrobotics.com"
+                "www.sportoptics.com"
             ]
         },
         {
@@ -2243,10 +2344,10 @@
                 "js"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "863d9c66fe7ab05c3aad79ae240faac56a2c66e8fc71b5b2ca2d6a469b570cb9"
@@ -2257,8 +2358,32 @@
             "exampleSites": [
                 "myfamilymobile.com",
                 "www.myfamilymobile.com",
-                "www.sportoptics.com",
-                "www.vexrobotics.com"
+                "www.sportoptics.com"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.76\\.4\\/js\\/three-d-secure\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "51963320596251cfc38004ba663fb70867ca0890d7eb1723fb0ef286d279e909"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nn.de",
+                "www.thelocal.ch",
+                "www.thelocal.de",
+                "www.thelocal.es",
+                "www.thelocal.se"
             ]
         },
         {
@@ -2270,7 +2395,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "323c3400e5ea1661417e5adcb3872cecb631d77066a6c0c43ea50796d7d07809"
@@ -2292,7 +2417,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -2313,7 +2438,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2336,7 +2461,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -2356,7 +2481,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2378,7 +2503,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -2398,7 +2523,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2420,7 +2545,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -2440,7 +2565,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2462,7 +2587,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -2482,7 +2607,47 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "storedj.com.au",
+                "www.storedj.com.au"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/2y9wvxqy9cfkrwfg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stvincentdepaul.net",
+                "www.stvincentdepaul.net"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/2y9wvxqy9cfkrwfg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2491,8 +2656,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "storedj.com.au",
-                "www.storedj.com.au"
+                "stvincentdepaul.net",
+                "www.stvincentdepaul.net"
+            ]
+        },
+        {
+            "rule": "braintreegateway\\.com\\/web\\/3\\.85\\.3\\/html\\/hosted-fields-frame\\.min\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f484884fce932cb4dd8f2044e77346c91b530c3120f3389f57f87928c61f2f09"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stvincentdepaul.net",
+                "www.stvincentdepaul.net"
             ]
         },
         {
@@ -2503,10 +2693,10 @@
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "38e7c1f2b12b0503566f214cfcde7353ab180deab7a4ec39d539c0b4623bb761"
@@ -2516,8 +2706,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "thelott.com",
-                "www.thelott.com",
-                "www.whitehelmets.org"
+                "www.thelott.com"
             ]
         },
         {
@@ -2528,10 +2717,10 @@
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "28e0c23278b516040413db264c90929581a34de52e2296f2d73e3b2e9633e7fa"
@@ -2553,7 +2742,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "8aebd723727b803b367e947bc61786e88cbe087b6894c5032f94180a6ce677ce"
@@ -2576,7 +2765,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "8c47ba1541857eb23ede10895238cdf71cb09bd35fdda5443cfdb581da15c858"
@@ -2599,7 +2788,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "80699377dbc26eef324ba18bf57f0373dd8e5779214f14259ef044705a98e2d6"
@@ -2622,7 +2811,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "eca743a0d07fc795b53480bba91e41d63f09cbfdbf3a14732fe1b1f0beac5874"
@@ -2644,7 +2833,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7d96057e6f74427599755f8aac8bb4ae0df5e14b84e6f23958c4577e213cbe2b"
@@ -2666,7 +2855,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "916dd3839977cec6be1f32b03c6fd2124e3ac192cc7c0233b23bf9f11b1dd16f"
@@ -2680,159 +2869,6 @@
             ]
         },
         {
-            "rule": "braintreegateway\\.com\\/jz2y9dc8yhpzvpgc",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vexrobotics.com",
-                "www.vexrobotics.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/jz2y9dc8yhpzvpgc",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vexrobotics.com",
-                "www.vexrobotics.com"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.69\\.0\\/js\\/three-d-secure\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "a68f878b0525f6d9ab5cad197a55bf60f8610e4bd0f9867dca3daaf25e99bdfb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "whitehelmets.org",
-                "www.whitehelmets.org"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.69\\.0\\/js\\/us-bank-account\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "84b343633e2b0f92ed854df2f6c90c3b92c01f9e52f596e12abc4bbeec8afaac"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "whitehelmets.org",
-                "www.whitehelmets.org"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/sc43bt4dw7x7z4js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "whitehelmets.org",
-                "www.whitehelmets.org"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/sc43bt4dw7x7z4js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "client-analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "whitehelmets.org",
-                "www.whitehelmets.org"
-            ]
-        },
-        {
-            "rule": "braintreegateway\\.com\\/web\\/3\\.69\\.0\\/html\\/hosted-fields-frame\\.min\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.name": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "3599fbdd9e28340d8db2d380e4b37ec509828b0dde2a37a5785d2da96dd2f426"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "whitehelmets.org",
-                "www.whitehelmets.org"
-            ]
-        },
-        {
             "rule": "braintreegateway\\.com\\/wdh3fh2y67c3ccz5",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2841,7 +2877,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -2861,9 +2897,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2881,12 +2919,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2903,10 +2939,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2921,56 +2959,56 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9016393442622951
+            "prevalence": 0.8931698774080561
         },
         {
             "domain": "tinypass.com",
-            "prevalence": 0.0273224043715847
+            "prevalence": 0.03502626970227671
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.010507880910683012
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.01092896174863388
+            "prevalence": 0.010507880910683012
         },
         {
             "domain": "piano.io",
-            "prevalence": 0.009107468123861567
+            "prevalence": 0.008756567425569177
         },
         {
             "domain": "kaptcha.com",
-            "prevalence": 0.007285974499089253
-        },
-        {
-            "domain": "d3rse9xjbp8270.cloudfront.net",
-            "prevalence": 0.007285974499089253
+            "prevalence": 0.0070052539404553416
         },
         {
             "domain": "pelcro.com",
-            "prevalence": 0.007285974499089253
+            "prevalence": 0.0070052539404553416
         },
         {
             "domain": "givebutter.com",
-            "prevalence": 0.007285974499089253
-        },
-        {
-            "domain": "instana.io",
-            "prevalence": 0.007285974499089253
+            "prevalence": 0.0070052539404553416
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.00546448087431694
+            "prevalence": 0.005253940455341506
+        },
+        {
+            "domain": "instana.io",
+            "prevalence": 0.005253940455341506
         }
     ],
     "types": {
-        "Script": 257,
-        "Document": 10,
+        "Script": 271,
+        "Document": 9,
         "Image": 2,
         "Preflight": 46,
         "XHR": 46
     },
     "nameservers": [
         "ns2.p57.dynect.net",
-        "pdns100.ultradns.net",
         "pdns100.ultradns.com",
-        "ns1.p57.dynect.net"
+        "ns1.p57.dynect.net",
+        "pdns100.ultradns.net"
     ]
 }

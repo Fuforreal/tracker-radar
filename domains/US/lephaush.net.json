@@ -4,12 +4,39 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "lephaush\\.net\\/tag\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.innerHeight": 1,
+                "Screen.prototype.availHeight": 1,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "beafb263bd83b76addbc0124686e3d9f7f3faf2df2f5430e0229b883238800b7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sflix.se",
+                "www.thenetnaija.net"
+            ]
+        },
         {
             "rule": "lephaush\\.net\\/5\\/801499",
             "cookies": 0,
@@ -17,7 +44,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,16 +64,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "netnaija.com",
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "anihdplay.com",
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
+        "ns-219.awsdns-27.com",
         "ns-652.awsdns-17.net",
-        "ns-1729.awsdns-24.co.uk",
         "ns-1413.awsdns-48.org",
-        "ns-219.awsdns-27.com"
+        "ns-1729.awsdns-24.co.uk"
     ]
 }

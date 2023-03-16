@@ -4,15 +4,58 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 5,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
+        "personalize.mat",
         "anon.oauth",
         "website-pricing-service-cdn.prices"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "cimpress\\.io\\/personalize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "personalize.mat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pens.com",
+                "www.pens.com"
+            ]
+        },
+        {
+            "rule": "cimpress\\.io\\/personalize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "personalize.mat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "72b3a23031955dd6fde594bea183cd8918ef36f75ef3f9059c2d564372954d8c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pens.com",
+                "www.pens.com"
+            ]
+        },
         {
             "rule": "cimpress\\.io\\/v0\\/7AeLhPS4Ab7fztoMVAchwX\\/token",
             "cookies": 0,
@@ -21,12 +64,14 @@
                 "anon.oauth"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "4b9d732bf9b29c2b8b73f9fadc694a7210ae9f30d6183a69b8efed07e35a4d6f",
-                "2badc04987b5c0c8be1863cba8df82c9fb1ae52b613013edd501fa78e0cbfe59"
+                "9d10296f07701b8aac40ca22d06280162af7ed8a5d76421a1c5d2fe37ef02ba6",
+                "81d9eadaa2b4795a6fd50131fa115a7d30bdec118c4b7201d75745b80983d8e9",
+                "654fd905fa9232d6d81148542853afff68d35b519de2426ec7f6ffaf840b4282",
+                "584176402bcf400470f0435da097497cf0b265032b303b18c9792e387541c136"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -34,7 +79,31 @@
             "exampleSites": [
                 "vistaprint.co.uk",
                 "www.vistaprint.co.uk",
+                "www.vistaprint.de",
+                "www.vistaprint.fr",
                 "www.vistaprint.com"
+            ]
+        },
+        {
+            "rule": "cimpress\\.io\\/v4\\/prices\\/startingAt\\/estimated\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "website-pricing-service-cdn.prices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "049bfc85d2ab2cfa91ebcd0599be7197dfd1bd174c434a1a2350434751fb6cf2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.de",
+                "www.vistaprint.de"
             ]
         },
         {
@@ -46,7 +115,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a435116bacb6b2833138d9f10a16f8f6089eecf393c4dc10faf32267e4b3788e"
@@ -66,16 +135,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "vpsvc.com",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "XHR": 5
+        "Preflight": 2,
+        "Fetch": 2,
+        "XHR": 9
     },
     "nameservers": [
         "ns-723.awsdns-26.net",
         "ns-1522.awsdns-62.org",
-        "ns-30.awsdns-03.com",
-        "ns-1688.awsdns-19.co.uk"
+        "ns-1688.awsdns-19.co.uk",
+        "ns-30.awsdns-03.com"
     ]
 }

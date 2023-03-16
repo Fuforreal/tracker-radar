@@ -7,14 +7,124 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000249,
-    "sites": 3,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
+        "static",
         "u"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "mailkit\\.eu\\/_system\\/subform\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9b96e7338833c32aec3aa44b46f093bcb0c4ee050c262152f51bd231abc8c2ce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mk_89088_total_site_visit": {
+                    "ttl": 31536003,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "mk_89088_total_page_visit": {
+                    "ttl": 31536003,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "mk_89088_last_visited_on": {
+                    "ttl": 31536003,
+                    "length": 10,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "mk_80686_total_site_visit": {
+                    "ttl": 31536011,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "mk_80686_total_page_visit": {
+                    "ttl": 31536011,
+                    "length": 1,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "mk_80686_last_visited_on": {
+                    "ttl": 31536011,
+                    "length": 10,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        },
+        {
+            "rule": "mailkit\\.eu\\/_system\\/subform-lang\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2b338e8dacc17a718c692e2c7085e497cd58f7c80bd939c54253569bba9c8246"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        },
+        {
+            "rule": "mailkit\\.eu\\/_system\\/subform-conf\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4c6488b26169b7e599e302985f33496394ca4bc6169906c1ad5172096a738fda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        },
         {
             "rule": "mailkit\\.eu\\/js\\/jsapi_v2\\.js",
             "cookies": 0,
@@ -23,10 +133,10 @@
                 "u"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "e24d84f0889c6491aacf1f86311365d8b0fdfbf508882c0723a90f001024e49d"
@@ -35,8 +145,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "notino.pl",
-                "www.notino.pl"
+                "notino.co.uk",
+                "www.notino.co.uk",
+                "www.notino.pl",
+                "www.notino.ro"
             ]
         },
         {
@@ -47,8 +159,8 @@
                 "u"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "f8388ad1dc35405a2a67e793de895380250b75168c6164b64171ec6f0bbf2909"
@@ -57,23 +169,25 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "notino.pl",
-                "www.notino.pl"
+                "notino.co.uk",
+                "www.notino.co.uk",
+                "www.notino.pl",
+                "www.notino.ro"
             ]
         },
         {
             "rule": "mailkit\\.eu\\/js\\/jsapi_bootstrap\\.js",
-            "cookies": 0.00000829,
+            "cookies": 0.0000203,
             "fingerprinting": 1,
             "subdomains": [
                 "u"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "51b332c34db04fdff17cb93a02cc400da9c87dad325b9523d847928985b1cf9b"
@@ -82,33 +196,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "notino.pl",
-                "www.notino.pl"
+                "notino.co.uk",
+                "www.notino.co.uk",
+                "www.notino.pl",
+                "www.notino.ro"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000407,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.5714285714285714
         },
         {
             "domain": "notinoimg.com",
-            "prevalence": 0.4
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 2
+        "Script": 12,
+        "XHR": 6
     },
     "nameservers": [
-        "ns4.mailkit.eu",
-        "ns1.mailkit.eu",
+        "ns3.mailkit.eu",
         "ns2.mailkit.eu",
         "ns5.mailkit.eu",
-        "ns3.mailkit.eu"
+        "ns1.mailkit.eu",
+        "ns4.mailkit.eu"
     ]
 }

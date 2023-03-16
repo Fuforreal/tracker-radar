@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000332,
-    "sites": 40,
+    "prevalence": 0.000346,
+    "sites": 51,
     "subdomains": [
         "js",
         "ws"
@@ -15,170 +15,218 @@
     "resources": [
         {
             "rule": "qualified\\.com\\/qualified\\.js",
-            "cookies": 0.000158,
+            "cookies": 0.000176,
             "fingerprinting": 1,
             "subdomains": [
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 21,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 22,
-                "Document.cookie getter": 19,
-                "Document.cookie setter": 19,
-                "Date.prototype.getTime": 21
+                "Navigator.prototype.userAgent": 28,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 28,
+                "Document.cookie getter": 27,
+                "Document.cookie setter": 26,
+                "Date.prototype.getTime": 27
             },
-            "sites": 22,
-            "prevalence": 0.000182,
+            "sites": 29,
+            "prevalence": 0.000197,
             "cnames": [],
             "responseHashes": [
-                "f4ec809a6551ba1e61af9abfeb017a054a2ef24b6cc1ebddd8188774f886ddbe",
-                "45d094e77e78d77669bd8444a0fd56d570c8f0ace15e0bb47aa93e70cb847a8f",
-                "5471dc1142cd7b547afe24b28317db33eb1cfe52a067a3bbc11c0b75e795828a",
-                "ca5385ba354eeea71d76b49c992a315489f4edd642301a1b4465ac2480fe1559",
-                "6b2500d0805e6dc466de5af5dca3b8fbf93231b8aab3a78b9b1a3fd397fe9920",
-                "28e4e3c918c7d47d2e8ca6b0ac3b7d92e175d73d65e68f4bd1ba15d77bc82881",
-                "87d19cc47d68200b14dddee8c6872914694b6a98e7ca2cba241f3f50863cb2a7",
-                "3fb07d391db004cb146a6b70e52e8ed9fcacff85be82153539f596d111298225",
-                "bc92d9cd99edf0f577dbb92708b81c2965b9ff6b615bf3f2916a7ab46a9c82f9",
-                "3674d9ed3c984f124c5a003dc28cb4c56268268884e9e80c8c9d9d5a9c9fb032",
-                "7ffc3910ca5cbaef3275f528cd11097802a22d636fc9e825500f375eb475738d",
-                "c14c9fac70903aa5133e09ce328eb25540a8d50d48bf0b0f5b21099f52180492",
-                "21920a51ad04e550eaeccb161e4e4b26a893bf830281417e153424056b232397",
-                "124a2e1449ca252a1ab3c3f4e27402e6f4899ebebd77ba5a4ab7d320cedd578b",
-                "f1624e1c3818036e739b765c0fdf1072095b825030c20792692483ba910c7a6a",
-                "ab988752caf27e45e06a5ae600d93821332ec3b2ea2a88944569250597bfdf89",
-                "4eb06b4a5fcffdb0fdcd4456a77f2515b0c344d158647be0cca629b7931a7930",
-                "bfeed63fc8afc30eecf90404456e738886ba82a607dc8fa315f5321e84063969",
-                "fc80cb8eee76ac6d47ce02b32502b6ac0f53359d4d92ef4577f540554b8b0a2d",
-                "5ca999c722b89dba13ac524c21075f859a95998ad5f48a390cf2e698f8a8153b"
+                "3d97cfc823b0e7e93cf740e372407e76c0d0fd4f5880a6dcc75187f10a43d5b3",
+                "77c9dbe904721927da362a5c95e7b41dced2ed985452268939383a12e600a99a",
+                "4f07308f9abada0e8ad64f074174893a1c7ebfcd9ccc016a462cd94902582168",
+                "c0916cd16a768a79122517ac0ffda04b62b28b3ced0f774ac5796dc4b8bbf9c3",
+                "8876452e6310a612d1d53ffeda92ea2d8014a4633f206f34cc64eac2a64ba9cc",
+                "9c48feb68809d0c9be8a7158731ec33d39bcb177ee77a578fe07b2fcf55676d9",
+                "766e1397a601280b7ca38abe9ddb89650bd023f95fd1bd94b227f0edf4fd4b94",
+                "6517d4cee8d52111c31d8d6653949443f6b6ee8b202b52b49741515fbc59204c",
+                "54e8aff4ccccb7fa2b157002a00973bcf8b1b2c57598ba7b5be0570da4d480d0",
+                "8587ce12b3ec2df5591cf2981f9cc72bf38ad778b55b4f5e1a8c893ce741db13",
+                "20a4b628782c10550265e28ce391389003d77e3d3fc800f46df0720e12ef4cdf",
+                "65b962ca3dbf29e5dedb788a3c97db04528568004bd94f9d73057cebef5b88cb",
+                "1cc05e8e2dda17c09621ad062a27e9dce2f0da788bd10f6841dee873fb3714af",
+                "9b71b9e28fa35d20e5b655b6b9cf24e82112007462d0e066685de0f277dbeac0",
+                "c739547de5e5abab4b5cae31e2df006b9a162b34b21c2625911e55425a66af13",
+                "289b1963c8969f969c16187a65b65768422c57bafeb1ada42fd510f3da3e61c6",
+                "072131cce0607125436b58dc0b1c49b982c1f137251d66bb6bf231ab2b3d04ae",
+                "75c660f12cdf3f34634afe3dc9b832d5b38b131f1d95cde15b90acd774760a24",
+                "eb1469393544fa2aad84cbddfefce83c185d0b34734945208d9ca2de8a788a39",
+                "920165cc14c042130e605c417fdabd09b2bd65e6110750814e4d9f5bf8e9a447",
+                "f2fed023e3d46ace878db0fc6835d6c4aa1f6552e6840e59513b67e51b4df962",
+                "250703f89f21d3c95589ad8249613a1a82494dcddf78be2bfb0321e34cb5dabb",
+                "1540ead324a515bac9b46d41c787e4f5c6775a5e40739cc49273531723474313",
+                "0e765216617a262e7d43e825cc5f02d0760e3301539495dcdea1fe47d6fc6d4b",
+                "ed1aaa2fa14b25d8f17ab1fba11cf902d858c7ac4a86ec344131cba9c9734fd2",
+                "5b4ab19da8630abab7d0091d2a06206ba73224a87e2d96750bb14509bfae5a1d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__q_state_GGMDJ3ggUAAbPTXz": {
-                    "ttl": 315360003,
+                    "ttl": 315360006,
                     "length": 100,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_kVsi41Wf6jpT71mB": {
-                    "ttl": 315360001,
+                    "ttl": 315360002,
                     "length": 99,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_2qYJ2dzsqrwWZnjR": {
-                    "ttl": 315360005,
+                    "ttl": 315360007,
                     "length": 102,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "__q_state_GWPbwWJLtjykim4W": {
+                    "ttl": 315360002,
+                    "length": 106,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_SKqQ8nnADD22cAnc": {
-                    "ttl": 315360002,
-                    "length": 99,
-                    "prevalence": 0.0000248752093663455,
+                    "ttl": 315360005,
+                    "length": 100,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "__q_state_mdpGqx2V2oJXA51Q": {
                     "ttl": 315360001,
                     "length": 110,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "__q_state_FFqmhCUUwBbiAUQe": {
+                    "ttl": 315360003,
+                    "length": 99,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "__q_state_L7VQ8cN31TRnP5Jw": {
+                    "ttl": 315360003,
+                    "length": 100,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_LbVXn1ec37MJMdaY": {
-                    "ttl": 315360002,
+                    "ttl": 315360001,
                     "length": 110,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_5dKaepxMpCC7Nc4y": {
-                    "ttl": 315360008,
+                    "ttl": 315360011,
                     "length": 112,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_DtHY5Nh73qQ5jPtj": {
-                    "ttl": 315360001,
+                    "ttl": 315360000,
                     "length": 106,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_CWQA3q9CaEKHNF2t": {
-                    "ttl": 315360001,
+                    "ttl": 315360004,
                     "length": 104,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_rjUDMX3UdWjunyWG": {
-                    "ttl": 315360002,
+                    "ttl": 315360000,
                     "length": 104,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "__q_state_Pqk9aJLakiaj6v1G": {
+                    "ttl": 315360002,
+                    "length": 102,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_ajAThxcaogd4A5og": {
-                    "ttl": 315360001,
+                    "ttl": 315360002,
                     "length": 104,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_w3xYYhgyKv4ngYra": {
                     "ttl": 315360002,
                     "length": 98,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_ZmUVticjuuprF56R": {
                     "ttl": 315360002,
                     "length": 104,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_ZQoyHXFTqngPcfcB": {
-                    "ttl": 315360001,
+                    "ttl": 315360002,
                     "length": 107,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_9u7uiM39FyWVMWQF": {
                     "ttl": 315360002,
                     "length": 106,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_gENo5PdgCpoQrHDm": {
-                    "ttl": 315360004,
+                    "ttl": 315360003,
                     "length": 100,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "__q_state_A18yWcFkZ54r64fk": {
+                    "ttl": 315360001,
+                    "length": 100,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 },
                 "__q_state_nURZ19iRbY6McYk3": {
-                    "ttl": 315360016,
+                    "ttl": 315360015,
                     "length": 99,
-                    "prevalence": 0.0000082917364554485,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "__q_state_ubFjDH1QLqM69tJc": {
+                    "ttl": 315360000,
+                    "length": 95,
+                    "prevalence": 0.000006777317673211296,
+                    "uniqueness": 1
+                },
+                "__q_state_3pv64tx4kZTN4zXc": {
+                    "ttl": 315360001,
+                    "length": 112,
+                    "prevalence": 0.000006777317673211296,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.zeromotorcycles.com",
-                "www.fireengineering.com",
-                "clickup.com",
-                "www.similarweb.com",
-                "vmware.com",
-                "www.veeam.com",
-                "www.freshbooks.com",
-                "rancher.com",
-                "www.sentinelone.com",
-                "www.mailgun.com",
-                "www.kornferry.com",
-                "www.classy.org",
-                "www.poly.com",
-                "www.apollographql.com",
-                "www.parchment.com",
-                "documentation.suse.com",
-                "www.cockroachlabs.com",
                 "www.talend.com",
-                "www.suse.com",
-                "carta.com"
+                "www.rolanddga.com",
+                "www.sentinelone.com",
+                "www.fireengineering.com",
+                "support.poly.com",
+                "www.freshbooks.com",
+                "www.poly.com",
+                "www.classy.org",
+                "vmware.com",
+                "www.trinet.com",
+                "rancher.com",
+                "carta.com",
+                "www.similarweb.com",
+                "www.wiz.io",
+                "www.parchment.com",
+                "www.veeam.com",
+                "www.linksys.com",
+                "www.rippling.com",
+                "clickup.com",
+                "www.suse.com"
             ]
         },
         {
@@ -189,65 +237,73 @@
                 "ws"
             ],
             "apis": {},
-            "sites": 22,
-            "prevalence": 0.000182,
+            "sites": 28,
+            "prevalence": 0.00019,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.parchment.com",
-                "documentation.suse.com",
-                "www.fireengineering.com",
-                "www.poly.com",
-                "www.freshbooks.com",
-                "www.rolanddga.com",
-                "www.apollographql.com",
-                "www.kornferry.com",
-                "www.sentinelone.com",
-                "www.mailgun.com",
-                "www.suse.com",
-                "vmware.com",
-                "www.cockroachlabs.com",
                 "rancher.com",
-                "www.veeam.com",
-                "www.zeromotorcycles.com",
-                "carta.com",
-                "www.classy.org",
+                "www.apollographql.com",
+                "www.hashicorp.com",
+                "www.mailgun.com",
+                "www.rippling.com",
+                "www.trinet.com",
+                "www.suse.com",
+                "www.linksys.com",
+                "www.sentinelone.com",
                 "clickup.com",
-                "www.hashicorp.com"
+                "www.kornferry.com",
+                "www.fireengineering.com",
+                "carta.com",
+                "vmware.com",
+                "www.classy.org",
+                "www.canto.com",
+                "www.wiz.io",
+                "www.zeromotorcycles.com",
+                "www.cockroachlabs.com",
+                "www.similarweb.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000307,
+    "cookies": 0.000312,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.5
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.38095238095238093
+            "prevalence": 0.41818181818181815
         },
         {
-            "domain": "onetrust.com",
-            "prevalence": 0.047619047619047616
+            "domain": "googletagmanager.com",
+            "prevalence": 0.38181818181818183
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.047619047619047616
+            "prevalence": 0.07272727272727272
+        },
+        {
+            "domain": "onetrust.com",
+            "prevalence": 0.03636363636363636
+        },
+        {
+            "domain": "transcend.io",
+            "prevalence": 0.03636363636363636
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.03636363636363636
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.01818181818181818
         }
     ],
     "types": {
-        "Script": 22,
-        "WebSocket": 22
+        "Script": 29,
+        "WebSocket": 28
     },
     "nameservers": [
         "bart.ns.cloudflare.com",

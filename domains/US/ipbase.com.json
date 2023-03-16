@@ -4,14 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 5,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
         "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "ipbase\\.com\\/v1\\/json\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "addictedtoaudio.com.au",
+                "www.unique-vintage.com"
+            ]
+        },
         {
             "rule": "ipbase\\.com\\/v2\\/info",
             "cookies": 0,
@@ -21,7 +43,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -41,10 +63,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d501cbb16d44c5c205d12b7f3da69b94c71cb43c946e79ab591c8c1ef015cf27"
+                "ec59011398587bc6edbdfe274c73d3357e6ec4dd726a9ff1530af323a97b2f29"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -52,28 +74,6 @@
             "exampleSites": [
                 "rolanddga.com",
                 "www.rolanddga.com"
-            ]
-        },
-        {
-            "rule": "ipbase\\.com\\/v1\\/json\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "unique-vintage.com",
-                "www.unique-vintage.com"
             ]
         }
     ],
@@ -83,21 +83,21 @@
     "topInitiators": [
         {
             "domain": "jquery.com",
-            "prevalence": 0.4
+            "prevalence": 0.5714285714285714
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.4
+            "prevalence": 0.2857142857142857
         },
         {
             "domain": "first party",
-            "prevalence": 0.2
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
+        "Script": 2,
         "Preflight": 2,
-        "XHR": 2,
-        "Script": 2
+        "XHR": 2
     },
     "nameservers": [
         "autumn.ns.cloudflare.com",

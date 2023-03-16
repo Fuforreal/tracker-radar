@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000249,
-    "sites": 3,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
-        "adorch"
+        "adorch",
+        "platforms",
+        "adengine"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,7 +26,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -37,17 +39,17 @@
         },
         {
             "rule": "makemytrip\\.com\\/ext\\/user\\/serve\\/ad",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "adorch"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "77ab5827e4a809e477a424a6cd26f2826187265baab6b3e9c8bc6729c36376a9"
+                "b6794b2f89b3e760fc13e4b356d08a813b59d1c0899b4638321d0f0b282e8b9f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -56,11 +58,76 @@
                 "redbus.in",
                 "www.redbus.in"
             ]
+        },
+        {
+            "rule": "makemytrip\\.com\\/contents\\/f39a7647-cf35-48a1-9ffd-909318fb5c00",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platforms"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5ccdef8df4eb0289700480228874259bae56db8366600350aaf6f9e29d78941b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbus.in",
+                "www.redbus.in"
+            ]
+        },
+        {
+            "rule": "makemytrip\\.com\\/contents\\/3db1e6f2-270b-4783-8330-710d4950f6b0",
+            "cookies": 0.00000678,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platforms"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "b0a2040a7e52e8497a4d599fdccc0417862ea6e7c973620578da47402cb81918"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbus.in",
+                "www.goibibo.com",
+                "www.redbus.in"
+            ]
+        },
+        {
+            "rule": "makemytrip\\.com\\/ext\\/user\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adengine"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goibibo.com",
+                "www.goibibo.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000249,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
@@ -68,15 +135,16 @@
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Preflight": 4,
+        "Fetch": 2,
+        "Image": 5
     },
     "nameservers": [
-        "pdns2.ultradns.net",
-        "pdns1.ultradns.net",
+        "pdns3.ultradns.org",
+        "pdns5.ultradns.info",
         "pdns4.ultradns.org",
         "pdns6.ultradns.co.uk",
-        "pdns3.ultradns.org",
-        "pdns5.ultradns.info"
+        "pdns1.ultradns.net",
+        "pdns2.ultradns.net"
     ]
 }

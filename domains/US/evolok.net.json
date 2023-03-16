@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000912,
-    "sites": 11,
+    "prevalence": 0.000136,
+    "sites": 20,
     "subdomains": [
         "ndcx",
         "abpn",
         "elp",
         "rcp",
         "syn",
+        "lok",
         "top"
     ],
     "cnames": [],
@@ -19,7 +20,7 @@
     "resources": [
         {
             "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/authorize\\/json",
-            "cookies": 0.000058,
+            "cookies": 0.0000678,
             "fingerprinting": 0,
             "subdomains": [
                 "ndcx",
@@ -29,16 +30,19 @@
                 "syn"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000058,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [],
             "responseHashes": [
-                "f2b4b75b27cec1c827e52977ce3f4c2e0af1f596f5d3839e980159665ed6f3c3",
-                "69b29f0a1d39b5fc031fa98ce27f2188a7b64a5cdb4d422f10d90c1fa0982bee",
-                "a30cbfd9f136eb28f71d77bfc1c4ff5e0e031e7c21f6c3042f0e3248a2c2e93f",
-                "cf8edf10e6d95333f9076a1ed42ca54e3f98ce97cba0bb04f1aebdf5485f012e",
-                "999e0ead72a06f4f988f3862d9e4b805978cfcff1ecc489b1d7400be37e2f439",
-                "88484d5f53ac6d205ef61b3c70eec4fd88872023f790de2f93034bf29878707e"
+                "2cf39cd1edeab0845daecf9b8e24ab92997873f331b022cbff9992f7e021fa1a",
+                "c4144fdc5527b4cefedce78bd234b0544b10e7cd55a49c9a90d49a61ff0bcdb3",
+                "9c89c55d50c3065afb8fb3d13aa5955c8a1b8bac776a67f8d171460fb7e8c988",
+                "09f1775a7dfb2a08007f083cadf2831e3fc6458f6cd6cc673f2a91550594420e",
+                "a2e3a58e116545d367b3adea18c9c91cc4ced507f60d253d098d5439a7f67e13",
+                "905140d77207433ecc5dc3872a19b26c6fc63431ae9df6996e116056a5b1317c",
+                "316dea9255e5b126dbbda62ac84ee5ecd417f82c08450bfc7207a06015890e94",
+                "c75721a92de3a43376e5085abf94344fab626debf8af1cc51cc97ab8c97ab941",
+                "5ff6ae1c680407b6476dae65311fd099871e02d4c5f9d1e4e2caa10d727c9910"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -46,11 +50,36 @@
             "exampleSites": [
                 "dvhn.nl",
                 "lc.nl",
+                "marathi.abplive.com",
                 "news.abplive.com",
                 "www.abplive.com",
                 "www.elpais.com.uy",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
                 "www.realclearscience.com",
                 "www.synonymer.se"
+            ]
+        },
+        {
+            "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/content\\/recommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lok"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f8231e1bf1ab6d54c6f0d37bde6ac4747f1d344a6ebd12e3c6e6d980c2b9c93"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lokmat.com",
+                "m.lokmat.com"
             ]
         },
         {
@@ -61,8 +90,8 @@
                 "abpn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -70,6 +99,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abplive.com",
+                "marathi.abplive.com",
                 "news.abplive.com",
                 "www.abplive.com"
             ]
@@ -83,8 +113,8 @@
                 "top"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "44a7786347f8ba6ceb88e49692ffac8b097dffb84d96115922332804f8d1301b",
@@ -95,9 +125,144 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abplive.com",
+                "marathi.abplive.com",
                 "news.abplive.com",
                 "www.abplive.com",
                 "www.theolivepress.es"
+            ]
+        },
+        {
+            "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/widgets\\/templates\\/dwellTime",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abpn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abplive.com",
+                "news.abplive.com"
+            ]
+        },
+        {
+            "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/widgets\\/templates\\/dwellTime",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abpn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abplive.com",
+                "news.abplive.com"
+            ]
+        },
+        {
+            "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/widgets\\/templates\\/notifier",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abpn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abplive.com",
+                "news.abplive.com"
+            ]
+        },
+        {
+            "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/widgets\\/templates\\/notifier",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abpn",
+                "rcp",
+                "syn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abplive.com",
+                "news.abplive.com",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
+                "www.synonymer.se"
+            ]
+        },
+        {
+            "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/widgets\\/templates\\/dwellTime",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "elp",
+                "rcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elpais.com.uy",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com"
+            ]
+        },
+        {
+            "rule": "evolok\\.net\\/acd\\/api\\/3\\.0\\/widgets\\/templates\\/notifier",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rcp",
+                "syn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearhistory.com",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
+                "www.synonymer.se"
             ]
         },
         {
@@ -109,7 +274,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -129,7 +294,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a820028681c7ff5ef4dce1d0ac2640f3df04a04e61653d86b437a8f6189fd9db"
@@ -151,7 +316,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -171,7 +336,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f3a0160c716a71f0939b4cd1d2022a167d2b45403f67cda89f48e94ad37eed71"
@@ -187,29 +352,34 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000746,
+    "cookies": 0.000108,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.782608695652174
+            "prevalence": 0.8409090909090909
         },
         {
             "domain": "brightspotcdn.com",
-            "prevalence": 0.13043478260869565
+            "prevalence": 0.06818181818181818
         },
         {
             "domain": "ndcmediagroep.nl",
-            "prevalence": 0.08695652173913043
+            "prevalence": 0.045454545454545456
+        },
+        {
+            "domain": "d3pc1xvrcw35tl.cloudfront.net",
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "XHR": 15,
-        "Preflight": 7
+        "XHR": 26,
+        "Fetch": 6,
+        "Preflight": 15
     },
     "nameservers": [
-        "ns-576.awsdns-08.net",
+        "ns-1485.awsdns-57.org",
         "ns-243.awsdns-30.com",
         "ns-1891.awsdns-44.co.uk",
-        "ns-1485.awsdns-57.org"
+        "ns-576.awsdns-08.net"
     ]
 }

@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 5,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
+        "admiral",
         "splice",
         "media"
     ],
@@ -14,7 +15,29 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "amlg\\.io\\/api\\/v2\\/video\\/dpi5AkcfGrKFiDynsO_zzbK_EyzsEG21\\/preview\\/high69\\.mp4",
+            "rule": "amlg\\.io\\/api\\/v1\\/content_suitability_id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "admiral"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "565db93b3eaba9d5fce05508c41f7e1a96d39ce28b108fd6711d252af32ddb2d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbsnews.com"
+            ]
+        },
+        {
+            "rule": "amlg\\.io\\/api\\/v2\\/video\\/fzkR4UjGIizQtw3_ZepB6MNoGobpvtt0\\/preview\\/high69\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -22,19 +45,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbs.com",
-                "www.cbs.com"
+                "nickjr.com",
+                "www.nickjr.com"
             ]
         },
         {
-            "rule": "amlg\\.io\\/assets\\/splice_preview\\/b9575d2c9191cad16e765a0a7b4e50e93c7bb1851f3942f015d6e01387f1e577_3128\\.mp4",
+            "rule": "amlg\\.io\\/assets\\/splice_preview\\/c91fa297602d504c2f13f48676da97f6995cc6b77344c2353736d17d2a52619e_3128\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -42,15 +65,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbs.com",
-                "www.cbs.com"
+                "nickjr.com",
+                "www.nickjr.com"
             ]
         }
     ],
@@ -60,20 +83,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.967741935483871
+            "prevalence": 0.8235294117647058
+        },
+        {
+            "domain": "paramountplus.com",
+            "prevalence": 0.11764705882352941
         },
         {
             "domain": "cbsi.com",
-            "prevalence": 0.03225806451612903
+            "prevalence": 0.029411764705882353
+        },
+        {
+            "domain": "rum.us-east-1.amazonaws.com",
+            "prevalence": 0.029411764705882353
         }
     ],
     "types": {
+        "Fetch": 2,
         "Media": 4
     },
     "nameservers": [
-        "ns-cloud-a3.googledomains.com",
-        "ns-cloud-a1.googledomains.com",
         "ns-cloud-a4.googledomains.com",
+        "ns-cloud-a1.googledomains.com",
+        "ns-cloud-a3.googledomains.com",
         "ns-cloud-a2.googledomains.com"
     ]
 }

@@ -4,14 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "widget"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "time\\.is\\/t\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "03d06b84aed185ec658d4eede7823fd6ca89a9ca4f0d1b94c4d60584161797d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conformingtojesus.com",
+                "www.herzschlag-der-erde.de"
+            ]
+        },
         {
             "rule": "time\\.is\\/",
             "cookies": 0,
@@ -20,18 +44,42 @@
                 "widget"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "260108f152c1c2f28dcd0be20e503445a143b3438befcfae28230a6b9334cebe"
+                "6485df178469b16507bc3eee21c1a59ef92e649efdae93b1ebdc1f2962ff79d4",
+                "e479a85bd1c3bbdd402475accb7aef16f1f530f71071a8f4941048ea222a1cc6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "conformingtojesus.com",
-                "www.conformingtojesus.com"
+                "www.conformingtojesus.com",
+                "www.herzschlag-der-erde.de"
+            ]
+        },
+        {
+            "rule": "time\\.is\\/r\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conformingtojesus.com",
+                "www.herzschlag-der-erde.de"
             ]
         }
     ],
@@ -45,7 +93,7 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 7
     },
     "nameservers": [
         "zeus.ns.cloudflare.com",

@@ -4,14 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000249,
-    "sites": 3,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
         "cdn",
-        "cache"
+        "cache",
+        "api",
+        "record"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "caast\\.tv\\/caast-latest\\/caast\\.js",
@@ -21,19 +23,22 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 5
             },
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "f97b6cd1bd9583890c60371fe92b49f0b097b7c88747c19c78d377037b6cbf95"
+                "159974a7764014425de4fb065e17b01926c0b318ed40c6ae023bbb1877c6a912"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "darty.com",
+                "engie.fr",
+                "mypower.engie.fr",
+                "particuliers.engie.fr",
+                "www.darty.com",
                 "www.electrodepot.fr"
             ]
         },
@@ -45,38 +50,109 @@
                 "cache"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
-            "cnames": [],
-            "responseHashes": [
-                "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "darty.com",
-                "www.electrodepot.fr"
-            ]
-        },
-        {
-            "rule": "caast\\.tv\\/v1\\/load",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cache"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "darty.com",
+                "engie.fr",
+                "mypower.engie.fr",
+                "particuliers.engie.fr",
+                "www.darty.com",
                 "www.electrodepot.fr"
+            ]
+        },
+        {
+            "rule": "caast\\.tv\\/v1\\/load",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+                "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engie.fr",
+                "mypower.engie.fr",
+                "particuliers.engie.fr",
+                "www.darty.com",
+                "www.electrodepot.fr"
+            ]
+        },
+        {
+            "rule": "caast\\.tv\\/v1\\/record\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engie.fr",
+                "mypower.engie.fr"
+            ]
+        },
+        {
+            "rule": "caast\\.tv\\/v1\\/record\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engie.fr",
+                "mypower.engie.fr"
+            ]
+        },
+        {
+            "rule": "caast\\.tv\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "record"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engie.fr",
+                "mypower.engie.fr"
             ]
         }
     ],
@@ -86,16 +162,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "tagcommander.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2,
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 5,
+        "Preflight": 7,
+        "Fetch": 7,
+        "XHR": 2
     },
     "nameservers": [
-        "ken.ns.cloudflare.com",
-        "nina.ns.cloudflare.com"
+        "nina.ns.cloudflare.com",
+        "ken.ns.cloudflare.com"
     ]
 }

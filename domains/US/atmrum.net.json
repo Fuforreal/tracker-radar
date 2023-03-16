@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000332,
-    "sites": 4,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
         "www"
     ],
@@ -20,24 +20,51 @@
         {
             "rule": "atmrum\\.net\\/rum\\.js",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "80afdcdab5af95e11f8edac404947668a91582b9799723a8d5272483a010f23d",
+                "8819ce3ecf4c945ce3aa5afbde442b550a272ce30e7c8bdb71e4226c2d8af56d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comptia.org",
+                "www.cruiseamerica.com",
+                "www.ithaca.edu",
+                "www.kerrygoldusa.com"
+            ]
+        },
+        {
+            "rule": "atmrum\\.net\\/report\\/v1\\/atm\\/r\\.gif",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "80afdcdab5af95e11f8edac404947668a91582b9799723a8d5272483a010f23d"
+                "f82624464e9e95dfae29e0e54c360aff84dda3c419fc8c3bd10ef668bbe7df9e"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bonnieraitt.com",
-                "www.comptia.org",
-                "www.cruiseamerica.com"
+                "comptia.org",
+                "www.cruiseamerica.com",
+                "www.ithaca.edu"
             ]
         },
         {
@@ -51,7 +78,7 @@
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "32ea28e4cc9fb2662d406bc5e859f774b58f927861c31864c33cb81aa8263aac"
@@ -60,9 +87,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bonnieraitt.com",
-                "www.comptia.org",
-                "www.cruiseamerica.com"
+                "cruiseamerica.com",
+                "www.cruiseamerica.com",
+                "www.ithaca.edu"
             ]
         },
         {
@@ -74,7 +101,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "72766f736186eb5c7c6d08502f3bf28da0092e8ea85cf3b5413c9daf8dc2d94a"
@@ -83,32 +110,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bonnieraitt.com",
-                "www.comptia.org",
-                "www.cruiseamerica.com"
-            ]
-        },
-        {
-            "rule": "atmrum\\.net\\/report\\/v1\\/atm\\/r\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000249,
-            "cnames": [],
-            "responseHashes": [
-                "f82624464e9e95dfae29e0e54c360aff84dda3c419fc8c3bd10ef668bbe7df9e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bonnieraitt.com",
-                "www.comptia.org",
-                "www.cruiseamerica.com"
+                "cruiseamerica.com",
+                "www.cruiseamerica.com",
+                "www.ithaca.edu"
             ]
         }
     ],
@@ -118,21 +122,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.25
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 6,
+        "Script": 7,
         "XHR": 6
     },
     "nameservers": [
-        "ns1-05.azure-dns.com",
         "ns3-05.azure-dns.org",
-        "ns2-05.azure-dns.net",
-        "ns4-05.azure-dns.info"
+        "ns4-05.azure-dns.info",
+        "ns1-05.azure-dns.com",
+        "ns2-05.azure-dns.net"
     ]
 }

@@ -4,17 +4,58 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000166,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
+        "apm",
         "accounts"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "tnet\\.nl\\/intake\\/v2\\/rum\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dumpert.nl",
+                "www.wort.lu"
+            ]
+        },
+        {
+            "rule": "tnet\\.nl\\/intake\\/v2\\/rum\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dumpert.nl",
+                "www.wort.lu"
+            ]
+        },
+        {
             "rule": "tnet\\.nl\\/static\\/assets\\/js\\/login_v2\\.js",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "accounts"
@@ -27,7 +68,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "fec6941e17846374873967f5af53a78ccdfb9b7fb8ad7bc5d7391d3360ee19fa"
@@ -37,7 +78,7 @@
                 "ssoLastChecked": {
                     "ttl": 300,
                     "length": 13,
-                    "prevalence": 0.000016583472910897,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 0.5
                 }
             },
@@ -56,10 +97,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d7fc50861da6f915092ad5fa1b9d07b877289dfe1e9f0a2cfff40c2953371c89"
+                "07bcb85d0721f43c9bc7290e345b1267bed745a2e1faddfb8ef1968d65335b6d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -72,14 +113,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "agnoplay.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
+        "Fetch": 2,
+        "Preflight": 2,
         "Script": 2,
         "Document": 2
     },

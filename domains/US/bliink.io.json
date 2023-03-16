@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000249,
+    "prevalence": 0.0000203,
     "sites": 3,
     "subdomains": [
-        "tag"
+        "tag",
+        "engine"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,10 +22,103 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f0370c30b7e33979d5e8331004a5039799120a365d1fba644f3f3ccc2eecbcb6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turfomania.fr",
+                "www.turfomania.fr"
+            ]
+        },
+        {
+            "rule": "bliink\\.io\\/sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "48c076b0310959b37cbe904e6b9940e3ad174ec69af05a6a1e28dfba0cf9e28c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turfomania.fr",
+                "www.turfomania.fr"
+            ]
+        },
+        {
+            "rule": "bliink\\.io\\/prebid-bliink-4\\.36\\.0-1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.appName": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f27ff71775254810318ac1ce01d62557bd16be27cbb56d7261f58f5e0591aec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turfomania.fr",
+                "www.turfomania.fr"
+            ]
+        },
+        {
+            "rule": "bliink\\.io\\/config\\/a3357694-bd18-11ea-985c-02f399eb7e41",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "engine"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turfomania.fr",
+                "www.turfomania.fr"
+            ]
+        },
+        {
+            "rule": "bliink\\.io\\/config\\/a6325088-bd18-11ea-84ba-1ef205cbd91a",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "engine"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -39,15 +133,16 @@
     "topInitiators": [
         {
             "domain": "seedtag.com",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.9
         },
         {
             "domain": "ssm.codes",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6,
+        "Fetch": 4
     },
     "nameservers": [
         "ns200.anycast.me",

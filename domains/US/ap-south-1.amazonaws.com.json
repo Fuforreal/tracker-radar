@@ -9,13 +9,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000746,
-    "sites": 9,
+    "prevalence": 0.0000813,
+    "sites": 12,
     "subdomains": [
         "in-dataops-cs-nlb-3eb2bf8ed59f4d0e.elb",
-        "03nwj0csy5.execute-api"
+        "03nwj0csy5.execute-api",
+        "k8s-default-infraing-95e370ee93-2020264ac0c0fa61.elb"
     ],
     "cnames": [
+        {
+            "original": "apiconversion.zivame.com",
+            "resolved": "k8s-default-infraing-95e370ee93-2020264ac0c0fa61.elb.ap-south-1.amazonaws.com"
+        },
         {
             "original": "clickstream-in.bookmyshow.com",
             "resolved": "in-dataops-cs-nlb-3eb2bf8ed59f4d0e.elb.ap-south-1.amazonaws.com"
@@ -32,7 +37,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "clickstream-in.bookmyshow.com",
@@ -57,9 +62,12 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3ae7f075a6f5c96c60682fdf71c78518ef96a42437ab6fbba1c2307382fca79",
+                "b24fb8af8d3f21a5e4fab2c83efb1e569b27aa1eb2b20d2a0eea275cb4c2cc75"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -67,6 +75,31 @@
                 "wionews.com",
                 "www.wionews.com",
                 "zeenews.india.com"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k8s-default-infraing-95e370ee93-2020264ac0c0fa61.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "apiconversion.zivame.com",
+                    "resolved": "k8s-default-infraing-95e370ee93-2020264ac0c0fa61.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zivame.com",
+                "www.zivame.com"
             ]
         }
     ],
@@ -78,38 +111,42 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.4642857142857143
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.25
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.15
+            "prevalence": 0.10714285714285714
         },
         {
             "domain": "vidgyor.com",
-            "prevalence": 0.15
+            "prevalence": 0.10714285714285714
         },
         {
             "domain": "bmscdn.com",
-            "prevalence": 0.1
+            "prevalence": 0.07142857142857142
         }
     ],
     "types": {
         "WebSocket": 2,
-        "XHR": 3
+        "XHR": 5
     },
     "nameservers": [
-        "u4.amazonaws.com",
         "u5.amazonaws.com",
-        "pdns3.ultradns.org",
         "u1.amazonaws.com",
+        "pdns3.ultradns.org",
+        "u3.amazonaws.com",
+        "pdns5.ultradns.info",
+        "u6.amazonaws.com",
+        "ns4.p31.dynect.net",
+        "ns3.p31.dynect.net",
         "u2.amazonaws.com",
         "pdns1.ultradns.net",
         "ns1.p31.dynect.net",
-        "u6.amazonaws.com",
-        "u3.amazonaws.com",
-        "ns3.p31.dynect.net",
-        "pdns5.ultradns.info",
         "ns2.p31.dynect.net",
-        "ns4.p31.dynect.net"
+        "u4.amazonaws.com"
     ]
 }

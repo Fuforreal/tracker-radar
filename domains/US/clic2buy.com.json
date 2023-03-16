@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000133,
-    "sites": 16,
+    "prevalence": 0.000122,
+    "sites": 18,
     "subdomains": [
         "t",
         "rs",
@@ -27,7 +27,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000498,
+            "prevalence": 0.0000407,
             "cnames": [],
             "responseHashes": [
                 "d867f9f21d76196e9da8e652dac4e082c66d22478f70e64b17493f0b24997052"
@@ -55,7 +55,7 @@
                 "Navigator.prototype.appName": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0bc6531cfdca1f3c32fc256547b30cf666b47eccc8e16233fd5fa73e635f87b1"
@@ -79,7 +79,7 @@
                 "Navigator.prototype.userAgent": 4
             },
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "ca74aed06112fb6bc441adc94c396546c605a45c65a122ad0f03b01528d87b65"
@@ -102,10 +102,10 @@
                 "analytics"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000332,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "aa00607299fe59e439e9c120aea496778db2db7197ef32148d29b34c20e9fbba"
@@ -116,6 +116,7 @@
             "exampleSites": [
                 "bfgoodrichtires.com",
                 "www.bfgoodrichtires.com",
+                "www.legrand.fr",
                 "www.michelin.co.uk",
                 "www.michelinman.com"
             ]
@@ -131,7 +132,7 @@
                 "Navigator.prototype.appName": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e7d4ca8d90478a0670d943be86cf353f3dce8d267fc9301f2501d83f212ff510"
@@ -145,6 +146,48 @@
             ]
         },
         {
+            "rule": "clic2buy\\.com\\/api\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "legrand.fr",
+                "www.legrand.fr"
+            ]
+        },
+        {
+            "rule": "clic2buy\\.com\\/api\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "legrand.fr",
+                "www.legrand.fr"
+            ]
+        },
+        {
             "rule": "clic2buy\\.com\\/retailers\\/manor-delivery-ch\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -155,7 +198,7 @@
                 "Navigator.prototype.appName": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "11511a794f51b54178b147c5113d997b2c46978d887b2bbb9c4ae51082a578f6"
@@ -179,7 +222,7 @@
                 "Navigator.prototype.appName": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e28732b2a168a4eb9046ab1f554df923b033847f6befce400535d503de9dcd8f"
@@ -203,7 +246,7 @@
                 "Navigator.prototype.appName": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e906806483be94c8e4b9971438588e0a94e4bc1d0661a3e8c2dd9ddc49943057"
@@ -223,20 +266,22 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "prevalence": 0.45454545454545453
         },
         {
             "domain": "first party",
-            "prevalence": 0.4
+            "prevalence": 0.45454545454545453
         },
         {
             "domain": "cookiebot.com",
-            "prevalence": 0.1
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
         "Document": 6,
-        "Script": 18
+        "Script": 19,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "dns200.anycast.me",

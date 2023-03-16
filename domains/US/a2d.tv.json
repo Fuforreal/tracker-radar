@@ -4,30 +4,32 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000058,
+    "prevalence": 0.0000474,
     "sites": 7,
     "subdomains": [
         "tv4-login",
         "imageproxy",
-        "ovp-highlights-and-previews.cdn"
+        "ovp-highlights-and-previews.cdn",
+        "tv4se-graphql",
+        "trailer-cdn"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
             "rule": "a2d\\.tv\\/ps-ak-bm",
-            "cookies": 0.0000166,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "tv4-login"
             ],
             "apis": {
-                "DeviceMotionEvent.prototype.acceleration": 2,
-                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2,
-                "DeviceMotionEvent.prototype.rotationRate": 2,
                 "DeviceOrientationEvent.prototype.alpha": 2,
                 "DeviceOrientationEvent.prototype.beta": 2,
                 "DeviceOrientationEvent.prototype.gamma": 2,
+                "DeviceMotionEvent.prototype.acceleration": 2,
+                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2,
+                "DeviceMotionEvent.prototype.rotationRate": 2,
                 "Document.cookie getter": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Screen.prototype.pixelDepth": 2,
@@ -43,7 +45,7 @@
                 "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "fa43fd4073d3976c0bc94de0d58e6f81290443515528b60e80aa889fa38f80c2"
@@ -65,12 +67,12 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000332,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "06c82b4b1ea9e38abb01cdc68d0c323c5a0fc73177b16fc52b308bddeb61f272",
-                "cf33ab277746cf5cf885d0c232c66fb3fdef593e85a0f633291ea5d3ff0f0a15",
-                "a16f480ea728bc2e984be051a854006cb3c2d19a61f7f20f9b3ae370062c9559"
+                "11bd25398156ed0703c459bfa7a964cdcf0da098bdd1520b584aa1027ca3fd90",
+                "2343ffedca8993c88fa5c8968168e43b285b42a4c9493cd17e13841d59170503",
+                "55e12949d9c2b0007a8e4dc314f0081dcb6dfbea83565b99acea6567eb3d55e6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -83,7 +85,7 @@
             ]
         },
         {
-            "rule": "a2d\\.tv\\/20439229\\/action_\\(20439229_MP4-5005\\)\\.mp4",
+            "rule": "a2d\\.tv\\/20441239\\/action_\\(20441239_MP4-5005\\)\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -91,10 +93,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "792c041561136a51c93550d1947d7db3bb2bb8836e1ce8b790e1e129651ad1c3"
+                "21ce9cd66da6d17e06efe62b411a92326c173b73527df614758088f966713844"
             ],
             "type": "Media",
             "firstPartyCookies": {},
@@ -103,11 +105,75 @@
                 "mtv.fi",
                 "www.mtv.fi"
             ]
+        },
+        {
+            "rule": "a2d\\.tv\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tv4se-graphql"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tv4.se",
+                "www.tv4.se"
+            ]
+        },
+        {
+            "rule": "a2d\\.tv\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tv4se-graphql"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0efd6dd7b31be23e1917f3482800650c98cb124250664f79b5e70e26a66b3b79"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tv4.se",
+                "www.tv4.se"
+            ]
+        },
+        {
+            "rule": "a2d\\.tv\\/comet\\/f73bc5df-d807-4ecd-8681-e76cbb5c4d89\\.webm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trailer-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aa156388856be6f405141d6405a21dbc7ce3abbcba7296fd404f319d9748f784"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tv4play.se",
+                "www.tv4play.se"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000166,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -117,12 +183,14 @@
     "types": {
         "Script": 2,
         "Image": 4,
-        "Media": 2
+        "Media": 4,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-601.awsdns-11.net",
-        "ns-1730.awsdns-24.co.uk",
         "ns-1092.awsdns-08.org",
-        "ns-84.awsdns-10.com"
+        "ns-84.awsdns-10.com",
+        "ns-601.awsdns-11.net",
+        "ns-1730.awsdns-24.co.uk"
     ]
 }

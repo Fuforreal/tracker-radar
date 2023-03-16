@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000141,
-    "sites": 17,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
         "cdn",
         "api"
@@ -17,29 +17,287 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "reproio\\.com\\/web\\/v2\\/repro-sdk\\.min\\.js",
-            "cookies": 0.0000249,
+            "rule": "reproio\\.com\\/web\\/poc\\/common\\/repro-sdk\\.min\\.js",
+            "cookies": 0.0000542,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.platform": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.onLine": 3,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
-                "window.sessionStorage": 3,
-                "window.innerHeight": 3,
-                "window.innerWidth": 3,
-                "Navigator.prototype.connection": 3,
-                "Notification.permission": 3
+                "Navigator.prototype.userAgent": 8,
+                "Date.prototype.getTime": 8,
+                "Document.cookie getter": 8,
+                "Document.cookie setter": 8,
+                "Navigator.prototype.platform": 8,
+                "window.localStorage": 8,
+                "Navigator.prototype.onLine": 8,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 7,
+                "window.sessionStorage": 6,
+                "window.innerHeight": 6,
+                "window.innerWidth": 6,
+                "Navigator.prototype.connection": 6,
+                "Notification.permission": 6
             },
-            "sites": 3,
-            "prevalence": 0.0000249,
+            "sites": 8,
+            "prevalence": 0.0000542,
+            "cnames": [],
+            "responseHashes": [
+                "8080c403317ef30985629ede012c2588a6a16b23f0a2d5a94d12778be2c4f18e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rpr_opted_in": {
+                    "ttl": 63068406,
+                    "length": 1,
+                    "prevalence": 0.00005421854138569037,
+                    "uniqueness": 0.125
+                },
+                "rpr_uid": {
+                    "ttl": 63068414,
+                    "length": 36,
+                    "prevalence": 0.00005421854138569037,
+                    "uniqueness": 1
+                },
+                "rpr_is_first_session": {
+                    "ttl": 63068414,
+                    "length": 46,
+                    "prevalence": 0.00005421854138569037,
+                    "uniqueness": 1
+                },
+                "rpr_prc_group": {
+                    "ttl": 63068410,
+                    "length": 48,
+                    "prevalence": 0.00004744122371247907,
+                    "uniqueness": 0.5714285714285714
+                },
+                "rpr_event_last_tracked_at": {
+                    "ttl": 63068414,
+                    "length": 13,
+                    "prevalence": 0.00004744122371247907,
+                    "uniqueness": 1
+                },
+                "rpr_session_started_at": {
+                    "ttl": 63068414,
+                    "length": 13,
+                    "prevalence": 0.00004744122371247907,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "www.2ndstreet.jp",
+                "www.beams.co.jp",
+                "www.dot-st.com",
+                "www.lixil.co.jp",
+                "www.palcloset.jp",
+                "www.sanspo.com",
+                "www.zakzak.co.jp"
+            ]
+        },
+        {
+            "rule": "reproio\\.com\\/v1\\/internal\\/web\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000678,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "tver.jp",
+                "wowma.jp",
+                "www.2ndstreet.jp",
+                "www.beams.co.jp",
+                "www.dot-st.com",
+                "www.lixil.co.jp",
+                "www.palcloset.jp",
+                "www.sanspo.com",
+                "www.zakzak.co.jp"
+            ]
+        },
+        {
+            "rule": "reproio\\.com\\/v1\\/internal\\/web\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000678,
+            "cnames": [],
+            "responseHashes": [
+                "626f06673677b58937e564a8e2849a85b75d9896d919044917408e22027ac5d0",
+                "588187a0e3b2fab68cf53e37a02df3bdf4a3c879a4812544a8cf02527794e1b1",
+                "c065443ec63ccd8412b234e1523f6769fbde61d6cd366753ba64dbfd33d47dda",
+                "e410e0a6dc19c234d08ad3554a5f2d954a94435d5d97ff895f3163b99ca01cd5",
+                "9468c32769d8df0d7c963c570a8c29aff2e1d1a33f887199f759898b8e0dbfda",
+                "e0f367ce73c21b686e0aa56b98e863ad60110559e4022cd7313fe522c686935c",
+                "803793a565258520791458a6828e53fb83c03b2df4dd872f0e4c58772f22d745",
+                "1e5ffa4d33b21b20c5507b48711daf6f267d3a9ededed2e9daecfe2062740ced"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "tver.jp",
+                "wowma.jp",
+                "www.2ndstreet.jp",
+                "www.beams.co.jp",
+                "www.dot-st.com",
+                "www.lixil.co.jp",
+                "www.palcloset.jp",
+                "www.sanspo.com",
+                "www.zakzak.co.jp"
+            ]
+        },
+        {
+            "rule": "reproio\\.com\\/v3\\/internal\\/web_messages",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000678,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rpr_uid": 0.00006777317673211297
+            },
+            "exampleSites": [
+                "world.co.jp",
+                "tver.jp",
+                "wowma.jp",
+                "www.2ndstreet.jp",
+                "www.beams.co.jp",
+                "www.dot-st.com",
+                "www.lixil.co.jp",
+                "www.palcloset.jp",
+                "www.sanspo.com",
+                "www.zakzak.co.jp"
+            ]
+        },
+        {
+            "rule": "reproio\\.com\\/v3\\/internal\\/web_messages",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000678,
+            "cnames": [],
+            "responseHashes": [
+                "766b4d920d702b56be3eadf9e22ef4d7bbcd3b16a408f6115dbce3f35d16b1e3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rpr_uid": 0.00006777317673211297
+            },
+            "exampleSites": [
+                "world.co.jp",
+                "tver.jp",
+                "wowma.jp",
+                "www.2ndstreet.jp",
+                "www.beams.co.jp",
+                "www.dot-st.com",
+                "www.lixil.co.jp",
+                "www.palcloset.jp",
+                "www.sanspo.com",
+                "www.zakzak.co.jp"
+            ]
+        },
+        {
+            "rule": "reproio\\.com\\/v2\\/internal\\/event-chunks",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000542,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "tver.jp",
+                "wowma.jp",
+                "www.2ndstreet.jp",
+                "www.beams.co.jp",
+                "www.dot-st.com",
+                "www.lixil.co.jp",
+                "www.palcloset.jp"
+            ]
+        },
+        {
+            "rule": "reproio\\.com\\/v2\\/internal\\/event-chunks",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000542,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "tver.jp",
+                "wowma.jp",
+                "www.2ndstreet.jp",
+                "www.beams.co.jp",
+                "www.dot-st.com",
+                "www.lixil.co.jp",
+                "www.palcloset.jp"
+            ]
+        },
+        {
+            "rule": "reproio\\.com\\/web\\/v2\\/repro-sdk\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.onLine": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.connection": 2,
+                "Notification.permission": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0e62095cd5e93f507dc7fcea28f47d5925eaa549b45864cfeaf855ad4aeadf37"
@@ -47,293 +305,40 @@
             "type": "Script",
             "firstPartyCookies": {
                 "rpr_opted_in": {
-                    "ttl": 63072003,
+                    "ttl": 63068405,
                     "length": 1,
-                    "prevalence": 0.0000248752093663455,
-                    "uniqueness": 0.3333333333333333
+                    "prevalence": 0.000013554635346422592,
+                    "uniqueness": 0.5
                 },
                 "rpr_uid": {
-                    "ttl": 63072004,
+                    "ttl": 63068410,
                     "length": 36,
-                    "prevalence": 0.0000248752093663455,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "rpr_is_first_session": {
-                    "ttl": 63072004,
+                    "ttl": 63068410,
                     "length": 46,
-                    "prevalence": 0.0000248752093663455,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "rpr_event_last_tracked_at": {
-                    "ttl": 63072004,
+                    "ttl": 63068410,
                     "length": 13,
-                    "prevalence": 0.0000248752093663455,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 },
                 "rpr_session_started_at": {
-                    "ttl": 63072004,
+                    "ttl": 63068410,
                     "length": 13,
-                    "prevalence": 0.0000248752093663455,
+                    "prevalence": 0.000013554635346422592,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tver.jp",
-                "wowma.jp",
-                "www.saisoncard.co.jp"
-            ]
-        },
-        {
-            "rule": "reproio\\.com\\/v1\\/internal\\/web\\/config",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000746,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tver.jp",
-                "wowma.jp",
-                "www.2ndstreet.jp",
-                "www.beams.co.jp",
-                "www.lixil.co.jp",
-                "www.palcloset.jp",
-                "www.saisoncard.co.jp",
-                "www.sanspo.com",
-                "www.zakzak.co.jp"
-            ]
-        },
-        {
-            "rule": "reproio\\.com\\/v1\\/internal\\/web\\/config",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000746,
-            "cnames": [],
-            "responseHashes": [
-                "a14734f17e7bd7ad0650d2076586bd6c6ea06c33199a418ce6f548091099a4b3",
-                "97a3def960a15034a68c1b884a5bbeb99605d06d5b3d2db66e0aabbeb087418c",
-                "b42c6deb42cbe2d4b842ecd5af078cc7b79345751b6da2cd804c6d3f7dea97c2",
-                "c0bc581c2a86fe06ed5048b271cf200b28ec12877604628449962286d04353a8",
-                "e97708b2767c0c70d4745c51976991a36fac3b1ab310cf0c8ed36d0072d895e6",
-                "54b2167c48b4c1ed348e819cbf21affb4433b1248442395565cc9e3f0eef4ed1",
-                "705702eed8ee97031e76e49e075e1765940cc7524f805302b9af51993f853fed",
-                "cb63b28cf4684ef39008c2bc6094f8f6003eff9bc54bc525af8886bce9bd6225"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tver.jp",
-                "wowma.jp",
-                "www.2ndstreet.jp",
-                "www.beams.co.jp",
-                "www.lixil.co.jp",
-                "www.palcloset.jp",
-                "www.saisoncard.co.jp",
-                "www.sanspo.com",
-                "www.zakzak.co.jp"
-            ]
-        },
-        {
-            "rule": "reproio\\.com\\/v3\\/internal\\/web_messages",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000746,
-            "cnames": [],
-            "responseHashes": [
-                "766b4d920d702b56be3eadf9e22ef4d7bbcd3b16a408f6115dbce3f35d16b1e3",
-                "10bb71a47f1e7e83c622920008a4101c14e153c32bd476fe1ca16b8d1f5dbb48"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rpr_uid": 0.0000746256280990365
-            },
-            "exampleSites": [
-                "tver.jp",
-                "wowma.jp",
-                "www.2ndstreet.jp",
-                "www.beams.co.jp",
-                "www.lixil.co.jp",
-                "www.palcloset.jp",
-                "www.saisoncard.co.jp",
-                "www.sanspo.com",
-                "www.zakzak.co.jp"
-            ]
-        },
-        {
-            "rule": "reproio\\.com\\/v3\\/internal\\/web_messages",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000746,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rpr_uid": 0.0000746256280990365
-            },
-            "exampleSites": [
-                "tver.jp",
-                "wowma.jp",
-                "www.2ndstreet.jp",
-                "www.beams.co.jp",
-                "www.lixil.co.jp",
-                "www.palcloset.jp",
-                "www.saisoncard.co.jp",
-                "www.sanspo.com",
-                "www.zakzak.co.jp"
-            ]
-        },
-        {
-            "rule": "reproio\\.com\\/v2\\/internal\\/event-chunks",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000058,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tver.jp",
-                "wowma.jp",
-                "www.2ndstreet.jp",
-                "www.beams.co.jp",
-                "www.lixil.co.jp",
-                "www.palcloset.jp",
-                "www.saisoncard.co.jp"
-            ]
-        },
-        {
-            "rule": "reproio\\.com\\/v2\\/internal\\/event-chunks",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000058,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tver.jp",
-                "wowma.jp",
-                "www.2ndstreet.jp",
-                "www.beams.co.jp",
-                "www.lixil.co.jp",
-                "www.palcloset.jp",
-                "www.saisoncard.co.jp"
-            ]
-        },
-        {
-            "rule": "reproio\\.com\\/web\\/poc\\/common\\/repro-sdk\\.min\\.js",
-            "cookies": 0.000058,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "Date.prototype.getTime": 7,
-                "Document.cookie getter": 7,
-                "Document.cookie setter": 7,
-                "Navigator.prototype.platform": 7,
-                "window.localStorage": 7,
-                "Navigator.prototype.onLine": 7,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
-                "window.sessionStorage": 5,
-                "window.innerHeight": 5,
-                "window.innerWidth": 5,
-                "Navigator.prototype.connection": 5,
-                "Notification.permission": 5
-            },
-            "sites": 7,
-            "prevalence": 0.000058,
-            "cnames": [],
-            "responseHashes": [
-                "de6e9921b06fc7fa13c7323a4abbf904e3d8fc657f1bba960456b9dadfe8d392"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "rpr_opted_in": {
-                    "ttl": 63072004,
-                    "length": 1,
-                    "prevalence": 0.0000580421551881395,
-                    "uniqueness": 0.14285714285714285
-                },
-                "rpr_uid": {
-                    "ttl": 63072012,
-                    "length": 36,
-                    "prevalence": 0.0000580421551881395,
-                    "uniqueness": 1
-                },
-                "rpr_is_first_session": {
-                    "ttl": 63072012,
-                    "length": 46,
-                    "prevalence": 0.0000580421551881395,
-                    "uniqueness": 1
-                },
-                "rpr_prc_group": {
-                    "ttl": 63072008,
-                    "length": 48,
-                    "prevalence": 0.0000414586822772425,
-                    "uniqueness": 0.6
-                },
-                "rpr_event_last_tracked_at": {
-                    "ttl": 63072008,
-                    "length": 13,
-                    "prevalence": 0.0000414586822772425,
-                    "uniqueness": 1
-                },
-                "rpr_session_started_at": {
-                    "ttl": 63072008,
-                    "length": 13,
-                    "prevalence": 0.0000414586822772425,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "2ndstreet.jp",
-                "www.2ndstreet.jp",
-                "www.beams.co.jp",
-                "www.lixil.co.jp",
-                "www.palcloset.jp",
-                "www.sanspo.com",
-                "www.zakzak.co.jp"
+                "wowma.jp"
             ]
         },
         {
@@ -345,7 +350,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "0c24efc0a05b4724d6ab9160f6585ec47a0339d2ae88733263f30b61e3d01cab"
@@ -367,10 +372,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000166,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "108897a683b4e76509cb12a13d6088b2bf4b0f085a8f22a761a8f73e68f16988"
+                "ee30ba8e248a3cc79759e5716d9a3d6fb3052e7445cc62b04ad5b32e57933951"
             ],
             "type": "Other",
             "firstPartyCookies": {},
@@ -383,27 +388,31 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000124,
+    "cookies": 0.000115,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.7794117647058824
+            "prevalence": 0.8157894736842105
         },
         {
             "domain": "first party",
-            "prevalence": 0.22058823529411764
+            "prevalence": 0.17105263157894737
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.013157894736842105
         }
     ],
     "types": {
         "Script": 12,
-        "Preflight": 25,
-        "Fetch": 25,
+        "Preflight": 28,
+        "Fetch": 28,
         "Other": 2
     },
     "nameservers": [
-        "ns-778.awsdns-33.net",
         "ns-290.awsdns-36.com",
-        "ns-1300.awsdns-34.org",
-        "ns-1781.awsdns-30.co.uk"
+        "ns-778.awsdns-33.net",
+        "ns-1781.awsdns-30.co.uk",
+        "ns-1300.awsdns-34.org"
     ]
 }

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 5,
+    "prevalence": 0.0000813,
+    "sites": 12,
     "subdomains": [
-        "assets"
+        "assets",
+        "uploader"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,11 +21,11 @@
                 "assets"
             ],
             "apis": {
-                "window.localStorage": 2,
+                "window.localStorage": 3,
                 "window.innerWidth": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000166,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "9a89dea4e2217d0660176390cb483ea4be7b1fadffd27c872a1763fe99ee44ef"
@@ -34,7 +35,77 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "meritpages.com",
+                "www.awakeningevents.com",
                 "www.ronspomeroutdoors.com"
+            ]
+        },
+        {
+            "rule": "squarewebsites\\.org\\/sqs-map-utils\\/init\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "99232aef847ef421d43cc6b92cbc32807286dfcf5f67a09e7f08224130510375"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "voltnederland.org",
+                "www.awakeningevents.com"
+            ]
+        },
+        {
+            "rule": "squarewebsites\\.org\\/sqs-map-utils\\/styles\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "925cde6e79c663ab7f75fd79629d1e195f85dd6e5e9c2bddaa4df8dda58cd1ef"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "voltnederland.org",
+                "www.awakeningevents.com"
+            ]
+        },
+        {
+            "rule": "squarewebsites\\.org\\/sqs-form-upload\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "uploader"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "a594913ec7d7a6d547957b39c881a739d89c50406344ba1a7ac9cc656a6de9af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "awakeningevents.com",
+                "www.awakeningevents.com",
+                "www.round1usa.com"
             ]
         },
         {
@@ -46,11 +117,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "28df2ce1c97ac905573b6d10936ef1d529bfe11491cdf6467108bdbaa8372799",
-                "b226eedb8cfa4de125eeeb80a55e38910d1160e66ea317f99e75ecc8e1ccf1c4"
+                "28df2ce1c97ac905573b6d10936ef1d529bfe11491cdf6467108bdbaa8372799"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -70,7 +140,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000249,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "5c9d3ff6c387b8146a91655b605a745d31c08674a435c3d6cd5ee84406349d90"
@@ -91,12 +161,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8214285714285714
+        },
+        {
+            "domain": "squarespace.com",
+            "prevalence": 0.17857142857142858
         }
     ],
     "types": {
-        "Script": 5,
-        "Stylesheet": 3
+        "Script": 11,
+        "Stylesheet": 5
     },
     "nameservers": [
         "lakas.ns.cloudflare.com",
