@@ -25,7 +25,7 @@
         {
             "rule": "mscdirect\\.com\\.edgekey\\.net\\/global\\/application-content\\/js\\/jquery-ui\\.1\\.9\\.2\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "san"
             ],
@@ -48,13 +48,39 @@
                 "mscdirect.com",
                 "www.mscdirect.com"
             ]
+        },
+        {
+            "rule": "mscdirect\\.com\\.edgekey\\.net\\/global\\/api\\/service-alert\\.json",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.mscdirect.com",
+                    "resolved": "san.mscdirect.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mscdirect.com",
+                "www.mscdirect.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.000101,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

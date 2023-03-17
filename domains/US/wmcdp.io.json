@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000705,
-    "sites": 7,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "psm",
-        "receive"
+        "receive",
+        "inbrain"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -26,8 +27,8 @@
                 "psm"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "3166ddb18a7c073185864a44a253427c52edb30f5d15b06a399f686eb7340df3"
@@ -40,7 +41,10 @@
                 "www.discoveryplus.com",
                 "www.discovery.com",
                 "www.food.com",
+                "www.foodnetwork.com",
+                "www.hbomax.com",
                 "www.hbo.com",
+                "www.hgtv.com",
                 "www.tlc.com",
                 "www.travelchannel.com"
             ]
@@ -53,8 +57,8 @@
                 "psm"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -65,7 +69,10 @@
                 "www.discoveryplus.com",
                 "www.discovery.com",
                 "www.food.com",
+                "www.foodnetwork.com",
+                "www.hbomax.com",
                 "www.hbo.com",
+                "www.hgtv.com",
                 "www.tlc.com",
                 "www.travelchannel.com"
             ]
@@ -78,8 +85,8 @@
                 "receive"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -90,7 +97,10 @@
                 "www.discoveryplus.com",
                 "www.discovery.com",
                 "www.food.com",
+                "www.foodnetwork.com",
+                "www.hbomax.com",
                 "www.hbo.com",
+                "www.hgtv.com",
                 "www.tlc.com",
                 "www.travelchannel.com"
             ]
@@ -103,8 +113,8 @@
                 "receive"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -117,9 +127,54 @@
                 "www.discoveryplus.com",
                 "www.discovery.com",
                 "www.food.com",
+                "www.foodnetwork.com",
+                "www.hbomax.com",
                 "www.hbo.com",
+                "www.hgtv.com",
                 "www.tlc.com",
                 "www.travelchannel.com"
+            ]
+        },
+        {
+            "rule": "wmcdp\\.io\\/v1\\/render",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inbrain"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.hbomax.com"
+            ]
+        },
+        {
+            "rule": "wmcdp\\.io\\/v1\\/render",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inbrain"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fdc87d089e9377525e3e15470bd811401eba663f8d09128136fa6f7cc8945fc9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.hbomax.com"
             ]
         }
     ],
@@ -128,17 +183,17 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "warnermediacdn.com",
-            "prevalence": 0.6842105263157895
+            "domain": "first party",
+            "prevalence": 0.75
         },
         {
-            "domain": "first party",
-            "prevalence": 0.3157894736842105
+            "domain": "warnermediacdn.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "XHR": 14,
-        "Preflight": 14
+        "XHR": 22,
+        "Preflight": 22
     },
     "nameservers": [
         "ns-505.awsdns-63.com",

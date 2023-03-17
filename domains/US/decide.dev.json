@@ -7,7 +7,8 @@
     "prevalence": 0.000906,
     "sites": 9,
     "subdomains": [
-        "cdn2"
+        "cdn2",
+        "cdn1"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -15,13 +16,11 @@
         {
             "rule": "decide\\.dev\\/_js\\/ajs\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn2"
             ],
-            "apis": {
-                "window.name": 1
-            },
+            "apis": {},
             "sites": 9,
             "prevalence": 0.000906,
             "cnames": [],
@@ -33,51 +32,78 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dmtalkies.com",
+                "powerball.com",
                 "puppyfinder.com",
-                "reason.com",
                 "thelibertydaily.com",
                 "timesofsandiego.com",
                 "ugetube.com",
-                "watchcharts.com",
                 "www.investmentwatchblog.com",
-                "www.uexpress.com"
+                "www.uexpress.com",
+                "www.webmd.com"
+            ]
+        },
+        {
+            "rule": "decide\\.dev\\/uploads\\/9e423ca4ad86c720da72b5ee3f57c3d5d5a1e062654dce3b151adca2993f36d4_small",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6e14de1c9c00693ee506784abfce501adb5eb1788096e239007455c121dc402b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelibertydaily.com",
+                "ugetube.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000604,
+    "cookies": 0.000805,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.38461538461538464
+            "prevalence": 0.3076923076923077
         },
         {
             "domain": "sentry-cdn.com",
             "prevalence": 0.23076923076923078
         },
         {
+            "domain": "lockerdomecdn.com",
+            "prevalence": 0.15384615384615385
+        },
+        {
             "domain": "confiant-integrations.net",
             "prevalence": 0.15384615384615385
         },
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.15384615384615385
+            "domain": "googlesyndication.com",
+            "prevalence": 0.07692307692307693
         },
         {
-            "domain": "lockerdomecdn.com",
+            "domain": "doubleclick.net",
             "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Script": 9
+        "Script": 9,
+        "Image": 2
     },
     "nameservers": [
+        "ns15.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com",
         "ns10.dnsmadeeasy.com"
     ]
 }

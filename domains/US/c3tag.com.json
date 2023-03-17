@@ -9,10 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "img"
+        "img",
+        "804-ct",
+        "562-ct"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -25,8 +27,8 @@
                 "img"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
@@ -36,6 +38,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "llflooring.com",
+                "www.usbank.com",
                 "www.vikings.com"
             ]
         },
@@ -47,8 +50,8 @@
                 "img"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -56,7 +59,60 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "llflooring.com",
+                "www.usbank.com",
                 "www.vikings.com"
+            ]
+        },
+        {
+            "rule": "c3tag\\.com\\/c3metrics\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "804-ct",
+                "562-ct"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d4272a00b8ed5518e85dbb4ee2e6fa4dcf929b23c79082656cf66cc37d36bc8f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "C3UID-562": 0.00010063399416322834,
+                "C3UID": 0.00010063399416322834
+            },
+            "exampleSites": [
+                "llflooring.com",
+                "www.usbank.com"
+            ]
+        },
+        {
+            "rule": "c3tag\\.com\\/ctv4\\/ctcall\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "804-ct",
+                "562-ct"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "C3UID-562": 0.00010063399416322834,
+                "C3UID": 0.00010063399416322834
+            },
+            "exampleSites": [
+                "llflooring.com",
+                "www.usbank.com"
             ]
         }
     ],
@@ -67,29 +123,34 @@
         "Third-Party Analytics Marketing"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.5
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Fetch": 5,
+        "Preflight": 3,
+        "Script": 2
     },
     "nameservers": [
-        "ns2-38.azure-dns.net",
-        "ns-754.awsdns-30.net",
-        "ns-1234.awsdns-26.org",
-        "ns1-38.azure-dns.com",
         "ns-273.awsdns-34.com",
+        "ns-754.awsdns-30.net",
+        "ns-1706.awsdns-21.co.uk",
+        "ns-1234.awsdns-26.org",
         "ns4-38.azure-dns.info",
         "ns3-38.azure-dns.org",
-        "ns-1706.awsdns-21.co.uk"
+        "ns2-38.azure-dns.net",
+        "ns1-38.azure-dns.com"
     ]
 }

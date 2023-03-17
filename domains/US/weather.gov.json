@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000705,
+    "prevalence": 0.000704,
     "sites": 7,
     "subdomains": [
         "www",
@@ -15,7 +15,7 @@
         "forecast"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "weather\\.gov\\/js\\/federated-analytics\\.js",
@@ -76,7 +76,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1670f9898d7b46b5aa899cd711eb2ab4993dc76be652fc4199e8c19c9088c442"
+                "b3f72e8bda5da83f09336e76c112ed25da55b7c29a502a012e6c69b750a4d72c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -98,7 +98,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3ae5240ff05298b19d8b965585307a2ce2a9742672e2750cb8866f8f1d90ad4c"
+                "fb77b9e21731a71311b73d56a8f539f6b006f58dceb5c6d7283479e88f4f5fe7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -138,7 +138,8 @@
                 "radar"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -231,9 +232,7 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "89bcaa7ad9496561dd141e0996d7f27b02cd4c83f7d6d7c4f6a415c3ed233731"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -253,9 +252,83 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "f88d013847e9a87b2dbcbe22b8cbda459db5ec383b75071019dd44e1d7b543f8"
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orlandosentinel.com",
+                "www.orlandosentinel.com"
+            ]
+        },
+        {
+            "rule": "weather\\.gov\\/cmi-radar\\/cmi-radar\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "radar"
             ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9b4ac42939526f1a6dc1b60825e56a5611118ba28d7e923eb46abf392f7db2f7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orlandosentinel.com",
+                "www.orlandosentinel.com"
+            ]
+        },
+        {
+            "rule": "weather\\.gov\\/cmi-radar\\/cmi-radar\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "radar"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.product": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTime": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "CanvasRenderingContext2D.prototype.measureText": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "504bca9349f9f5587ed7774deaf5cbf99ab1c23911791ff358b6b1d0b9859609"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orlandosentinel.com",
+                "www.orlandosentinel.com"
+            ]
+        },
+        {
+            "rule": "weather\\.gov\\/cmi-radar\\/fontawesome-webfont\\.af7ae505\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "radar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -275,18 +348,18 @@
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 6,
         "Document": 2,
         "Image": 10,
-        "Stylesheet": 2,
-        "Font": 4
+        "Stylesheet": 4,
+        "Font": 6
     },
     "nameservers": [
-        "a11-66.akam.net",
-        "a6-65.akam.net",
-        "a1-97.akam.net",
         "a7-66.akam.net",
-        "a26-64.akam.net",
-        "a18-67.akam.net"
+        "a11-66.akam.net",
+        "a1-97.akam.net",
+        "a18-67.akam.net",
+        "a6-65.akam.net",
+        "a26-64.akam.net"
     ]
 }

@@ -21,9 +21,9 @@
                 "media"
             ],
             "apis": {
-                "Date.prototype.getTime": 7,
-                "window.sessionStorage": 6,
-                "window.localStorage": 6
+                "Date.prototype.getTime": 9,
+                "window.sessionStorage": 8,
+                "window.localStorage": 8
             },
             "sites": 9,
             "prevalence": 0.000906,
@@ -54,8 +54,8 @@
                 "participants"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -68,7 +68,101 @@
                 "community.verizon.com",
                 "login.verizonwireless.com",
                 "secure.verizon.com",
+                "www.verizon.com",
                 "www.verizonwireless.com"
+            ]
+        },
+        {
+            "rule": "evolv\\.ai\\/v1\\/230a431cb7\\/84257032_1678893521260\\/assets\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "participants"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a1c1580f5bcd9e51011ea20e042ce368443988d0d674dc48f3d8e53ad62f48ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "www.directv.com"
+            ]
+        },
+        {
+            "rule": "evolv\\.ai\\/v1\\/230a431cb7\\/84257032_1678893521260\\/assets\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "participants"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0dbfd8afbf2a7d5d4f8f97dfd54a988abc1e9ccca4c7bd0232092e76cc6302ee"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "www.directv.com"
+            ]
+        },
+        {
+            "rule": "evolv\\.ai\\/v1\\/230a431cb7\\/84257032_1678893521260\\/configuration\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "participants"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5f713c143e18d2525032852052e304acf749886bebc05c3210da78445c0d8e37"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "www.directv.com"
+            ]
+        },
+        {
+            "rule": "evolv\\.ai\\/v1\\/230a431cb7\\/84257032_1678893521260\\/allocations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "participants"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4d40d3f29a96f7e5f263aad15c2db47c8325e0b2b26ed970b27c980c02c83c51"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "www.directv.com"
             ]
         },
         {
@@ -82,9 +176,7 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -104,9 +196,7 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -188,33 +278,35 @@
     "topInitiators": [
         {
             "domain": "contentsquare.net",
-            "prevalence": 0.3157894736842105
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.2631578947368421
+            "prevalence": 0.22727272727272727
         },
         {
             "domain": "first party",
-            "prevalence": 0.2631578947368421
+            "prevalence": 0.22727272727272727
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 9,
-        "Ping": 15
+        "Script": 11,
+        "Ping": 16,
+        "Stylesheet": 2,
+        "XHR": 4
     },
     "nameservers": [
+        "ns-1117.awsdns-11.org",
         "ns-1771.awsdns-29.co.uk",
         "ns-313.awsdns-39.com",
-        "ns-896.awsdns-48.net",
-        "ns-1117.awsdns-11.org"
+        "ns-896.awsdns-48.net"
     ]
 }

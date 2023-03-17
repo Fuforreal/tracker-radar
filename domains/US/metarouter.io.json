@@ -34,26 +34,6 @@
             ]
         },
         {
-            "rule": "metarouter\\.io\\/v1\\/t",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "e"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foodrevolution.org",
-                "www.awaytravel.com"
-            ]
-        },
-        {
             "rule": "metarouter\\.io\\/v1\\/p",
             "cookies": 0,
             "fingerprinting": 0,
@@ -68,6 +48,26 @@
                 "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foodrevolution.org",
+                "www.awaytravel.com"
+            ]
+        },
+        {
+            "rule": "metarouter\\.io\\/v1\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -149,12 +149,12 @@
             "apis": {
                 "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
-                "window.indexedDB": 2,
+                "window.indexedDB": 1,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.cookieEnabled": 1,
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
-                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTimezoneOffset": 1,
                 "Navigator.prototype.onLine": 2,
                 "Navigator.prototype.language": 2
             },
@@ -167,34 +167,34 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ajs_anonymous_id": {
-                    "ttl": 31536001,
+                    "ttl": 31536004,
                     "length": 36,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "_fbp": {
-                    "ttl": 7776000,
+                    "ttl": 7776001,
                     "length": 29,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_meta_facebookTag_sync": {
-                    "ttl": 7776000,
+                    "ttl": 7776001,
                     "length": 13,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_meta_metarouter_sessionID": {
-                    "ttl": 1800,
+                    "ttl": 1801,
                     "length": 13,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_meta_metarouter_timezone_offset": {
-                    "ttl": 2592000,
+                    "ttl": 2592001,
                     "length": 3,
-                    "prevalence": 0.0002013895881582922,
-                    "uniqueness": 0.5
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -210,11 +210,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7272727272727273
+            "prevalence": 0.7
         },
         {
             "domain": "visualwebsiteoptimizer.com",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.3
         }
     ],
     "types": {
@@ -223,7 +223,7 @@
         "Script": 2
     },
     "nameservers": [
-        "porter.ns.cloudflare.com",
-        "nelci.ns.cloudflare.com"
+        "nelci.ns.cloudflare.com",
+        "porter.ns.cloudflare.com"
     ]
 }

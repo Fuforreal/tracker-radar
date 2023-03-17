@@ -13,7 +13,8 @@
         "smetrics",
         "signin-static-js",
         "www",
-        "dynatrace"
+        "dynatrace",
+        "signin"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -30,9 +31,8 @@
             "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "35ac8a2eed552a82f6e280252485ffc6024df5608dd4ca73d81a0e141f989459",
-                "203f83917c7ce88239b77cd15a30f4ae59ddca83b8c0b253fae251452c90d045",
-                "43e676020e8ed2e61ac085763a78eaa48b92b8a3d4f555785c90367ebcfcca42"
+                "907c88eecfe5cd8fe7cdfa0b7954d4e613b37dfae71678484cf58c17713041d5",
+                "795c3dfaa3ca56c02c1e6276f14e3ca7e796db1a8b5d74709ab5eae12475711e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -52,56 +52,57 @@
                 "signin-static-js"
             ],
             "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.vendorSub": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.webdriver": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "window.outerHeight": 2,
+                "window.outerWidth": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "BarProp.prototype.visible": 2,
+                "RTCPeerConnection.prototype.constructor": 1,
                 "DeviceOrientationEvent.prototype.alpha": 1,
                 "DeviceOrientationEvent.prototype.beta": 1,
                 "DeviceOrientationEvent.prototype.gamma": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
                 "RTCPeerConnectionIceEvent.prototype.candidate": 1,
+                "Navigator.prototype.mediaDevices": 1,
+                "MediaDevices.prototype.enumerateDevices": 1,
+                "window.matchMedia(\"prefers-color-scheme\")": 1,
                 "WebGLRenderingContext.prototype.getParameter": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
                 "WebGLRenderingContext.prototype.getContextAttributes": 2,
                 "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "window.matchMedia(\"prefers-color-scheme\")": 1,
                 "HTMLCanvasElement.prototype.toDataURL": 2,
                 "CanvasRenderingContext2D.prototype.measureText": 2,
                 "CanvasRenderingContext2D.prototype.getImageData": 1,
-                "Navigator.prototype.mediaDevices": 1,
-                "MediaDevices.prototype.enumerateDevices": 1,
-                "window.localStorage": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
                 "window.sessionStorage": 1,
-                "window.innerHeight": 1,
-                "window.innerWidth": 1,
-                "window.outerHeight": 1,
-                "window.outerWidth": 1,
-                "window.screenX": 1,
-                "window.screenY": 1,
-                "window.devicePixelRatio": 1,
-                "BarProp.prototype.visible": 1,
-                "Navigator.prototype.userAgent": 1,
                 "Document.cookie getter": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.pixelDepth": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
                 "Date.prototype.getTime": 1,
-                "Navigator.prototype.vendor": 1,
                 "Navigator.prototype.storage": 1,
-                "Navigator.prototype.appCodeName": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.productSub": 1,
-                "Navigator.prototype.vendorSub": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.webdriver": 1,
                 "Screen.prototype.orientation": 1,
                 "Document.cookie setter": 1
             },
@@ -132,11 +133,11 @@
                 "Document.cookie getter": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 1,
-                "window.innerHeight": 1,
-                "window.innerWidth": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Date.prototype.getTime": 1
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -186,16 +187,38 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0dd3620d56701ab04683b7def0cd0467f0ef0ef6b23d6e5cf3a133afcc29898a"
+                "74e300e46a344f39b39cb6ddddb7e2f9a8aa78001ac838efbde83c320f91b5a2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dtCookie": 0.0001006947940791461
+                "dtCookie": 0.00010063399416322834
             },
             "exampleSites": [
                 "directv.com",
                 "stream.directv.com"
+            ]
+        },
+        {
+            "rule": "att\\.com\\/static\\/ciam\\/en\\/common\\/js\\/keepAlive\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "signin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "33a050282e9356be2f2d8538f376fcbc4c7bbc778c4517375b44dad46d48389e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "www.directv.com"
             ]
         }
     ],
@@ -205,32 +228,32 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4166666666666667
-        },
-        {
-            "domain": "quantummetric.com",
-            "prevalence": 0.25
-        },
-        {
-            "domain": "yimg.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.35714285714285715
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "quantummetric.com",
+            "prevalence": 0.21428571428571427
+        },
+        {
+            "domain": "yimg.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "XHR": 6,
-        "Script": 4,
+        "Script": 6,
         "Fetch": 2
     },
     "nameservers": [
-        "a22-67.akam.net",
         "a5-66.akam.net",
-        "a4-64.akam.net",
-        "a1-187.akam.net",
+        "a22-67.akam.net",
+        "a11-65.akam.net",
         "a2-64.akam.net",
-        "a11-65.akam.net"
+        "a1-187.akam.net",
+        "a4-64.akam.net"
     ]
 }

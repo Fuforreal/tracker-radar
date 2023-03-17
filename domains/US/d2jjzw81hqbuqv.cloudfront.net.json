@@ -17,12 +17,14 @@
     "resources": [
         {
             "rule": "d2jjzw81hqbuqv\\.cloudfront\\.net\\/integration\\/clients\\/j-crew\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -31,7 +33,14 @@
                 "00f153b5cd17a9085d82e72d53f1321124e9392ff69d7bb2cc156b28d5b55b7b"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "tkbl_cvuuid": {
+                    "ttl": 630720002,
+                    "length": 36,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jcrew.com",
@@ -43,32 +52,32 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.00141,
+    "cookies": 0.00161,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5769230769230769
+            "prevalence": 0.6521739130434783
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2692307692307692
+            "prevalence": 0.17391304347826086
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.11538461538461539
+            "prevalence": 0.13043478260869565
         },
         {
             "domain": "talkable.com",
-            "prevalence": 0.038461538461538464
+            "prevalence": 0.043478260869565216
         }
     ],
     "types": {
         "Script": 2
     },
     "nameservers": [
-        "ns-908.awsdns-49.net",
         "ns-196.awsdns-24.com",
         "ns-1029.awsdns-00.org",
+        "ns-908.awsdns-49.net",
         "ns-1896.awsdns-45.co.uk"
     ]
 }

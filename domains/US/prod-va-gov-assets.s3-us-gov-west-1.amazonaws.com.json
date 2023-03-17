@@ -13,10 +13,33 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "prod-va-gov-assets\\.s3-us-gov-west-1\\.amazonaws\\.com\\/generated\\/vendor\\.entry\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b083556291f1b93ec9232df046885b2c4537ffa6042359729cc85512e8bf251c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "va.gov",
+                "www.va.gov"
+            ]
+        },
+        {
+            "rule": "prod-va-gov-assets\\.s3-us-gov-west-1\\.amazonaws\\.com\\/img\\/VCL-icon-white\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -24,8 +47,50 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "e20054382c057e1088b927dcdf6090eb5f64d1a4c6b00e6d96dd0fa5144d82f5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "va.gov",
+                "www.va.gov"
+            ]
+        },
+        {
+            "rule": "prod-va-gov-assets\\.s3-us-gov-west-1\\.amazonaws\\.com\\/img\\/arrow-down-white\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "64f6048a6e3f8bc47fefc659b50ec202619991724540d2cebdb53e05369f0b53"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "va.gov",
+                "www.va.gov"
+            ]
+        },
+        {
+            "rule": "prod-va-gov-assets\\.s3-us-gov-west-1\\.amazonaws\\.com\\/img\\/vcl-logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "42c44c9c978a067dc21815606b43f6f9148b3775debf7987a3436bb2e75e9ae4"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -38,7 +103,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
@@ -46,12 +111,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Image": 6
     },
     "nameservers": [
         "ns-1114.awsdns-11.org",
+        "ns-899.awsdns-48.net",
         "ns-148.awsdns-18.com",
-        "ns-1798.awsdns-32.co.uk",
-        "ns-899.awsdns-48.net"
+        "ns-1798.awsdns-32.co.uk"
     ]
 }

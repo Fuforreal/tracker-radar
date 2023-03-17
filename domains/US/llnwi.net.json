@@ -7,34 +7,67 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000705,
-    "sites": 7,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
-        "foxvideo.s"
+        "toi.s",
+        "perfops.s",
+        "perfops-cds.s"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "img.etimg.com",
+            "resolved": "toi.s.llnwi.net"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "llnwi\\.net\\/pulsar-test\\/p-2mb\\.png",
+            "rule": "llnwi\\.net\\/photo\\/msid-74451948,quality-100\\/et-logo\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "foxvideo.s"
+                "toi.s"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "img.etimg.com",
+                    "resolved": "toi.s.llnwi.net"
+                }
+            ],
             "responseHashes": [
-                "a6b91a10956267b38fe6fe48a7d12676aac3e436c9ef28321f84ba46c85dd107"
+                "114b9462ef3a8d9fd26a0544bfc5c5719e86bf25437a4ab0457824edbfcd1074"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fox.com",
-                "www.fox.com"
+                "indiatimes.com",
+                "economictimes.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "llnwi\\.net\\/500b-bench\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "perfops.s",
+                "perfops-cds.s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opensubtitles.org",
+                "www.opensubtitles.org"
             ]
         }
     ],
@@ -42,32 +75,29 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9295774647887324
-        },
-        {
-            "domain": "ns1p.net",
-            "prevalence": 0.04225352112676056
+            "prevalence": 0.9558823529411765
         },
         {
             "domain": "perfops.net",
-            "prevalence": 0.014084507042253521
+            "prevalence": 0.029411764705882353
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.014084507042253521
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.014705882352941176
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "dns23.llnwi.net",
-        "dns26.llnwi.net",
         "dns24.llnwi.net",
-        "dns25.llnwi.net"
+        "dns25.llnwi.net",
+        "dns23.llnwi.net",
+        "dns26.llnwi.net"
     ]
 }

@@ -10,6 +10,7 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
+        "cdn",
         "ssl-avd",
         "avd"
     ],
@@ -17,16 +18,38 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "innity\\.net\\/analytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d86f773cc0628268e605173f2d589ee2ec9ecfd150e454514240eb2bfcb1fb82"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hottg.com",
+                "www.hottg.com"
+            ]
+        },
+        {
             "rule": "innity\\.net\\/1\\/container_576b5a051c51b1c0244bca09\\.js",
-            "cookies": 0.000201,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "ssl-avd"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -35,20 +58,7 @@
                 "95a0c82e573c532cfd2c44a4ee7135c80531d0f2c40374d6f29e0b92e46ef446"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "freq.5e661e8b47e7043d03000003": {
-                    "ttl": 86402,
-                    "length": 1,
-                    "prevalence": 0.0002013895881582922,
-                    "uniqueness": 0.5
-                },
-                "freq.5f462d2c47e7044a01000002": {
-                    "ttl": 86402,
-                    "length": 1,
-                    "prevalence": 0.0002013895881582922,
-                    "uniqueness": 0.5
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hottg.com",
@@ -80,27 +90,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "iUUID": {
-                    "ttl": 63072004,
+                    "ttl": 63072003,
                     "length": 32,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 },
                 "innity.dmp.0.sess": {
-                    "ttl": 1804,
+                    "ttl": 1803,
                     "length": 43,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 },
                 "innity.dmp.0.sess.id": {
-                    "ttl": 1804,
+                    "ttl": 1803,
                     "length": 25,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 },
                 "innity.dmp.cks.innity": {
                     "ttl": 86403,
                     "length": 1,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 }
             },
@@ -117,15 +127,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7142857142857143
-        },
-        {
-            "domain": "innity.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
         "ns1.cdnetdns.net",

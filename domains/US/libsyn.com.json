@@ -392,6 +392,28 @@
             ]
         },
         {
+            "rule": "libsyn\\.com\\/secure\\/item\\/26209887\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b33109ea20f78703fc17c0ee6bdc2d66dbe0835294926d785003db1b93af1d4e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spglobal.com",
+                "www.spglobal.com"
+            ]
+        },
+        {
             "rule": "libsyn\\.com\\/secure\\/item\\/26183238\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -436,20 +458,22 @@
             ]
         },
         {
-            "rule": "libsyn\\.com\\/secure\\/item\\/26160885\\/",
+            "rule": "libsyn\\.com\\/embed\\/episode\\/id\\/26209887\\/height\\/90\\/theme\\/custom\\/thumbnail\\/yes\\/direction\\/backward\\/render-playlist\\/no\\/custom-color\\/000000\\/menu\\/no\\/20659985",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "assets"
+                "html5-player"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b33109ea20f78703fc17c0ee6bdc2d66dbe0835294926d785003db1b93af1d4e"
+                "ec4585fff95913740b55427b52107a1db5d89860d6b52a0ad3c1309101c2fd21"
             ],
-            "type": "Image",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -496,30 +520,6 @@
             "cnames": [],
             "responseHashes": [
                 "6f0143c01f079aedf49bae13bb7754a14c5c7a37a02d7c9a011341c0e4a6d144"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "spglobal.com",
-                "www.spglobal.com"
-            ]
-        },
-        {
-            "rule": "libsyn\\.com\\/embed\\/episode\\/id\\/26160885\\/height\\/90\\/theme\\/custom\\/thumbnail\\/yes\\/direction\\/backward\\/render-playlist\\/no\\/custom-color\\/000000\\/menu\\/no\\/20659985",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "html5-player"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "3b7e93d13493b537a2fcc6e1b9f0aade84ea5cfa0217277f6aaa962423fd09f5"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -717,15 +717,15 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7391304347826086
+            "prevalence": 0.7619047619047619
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.1956521739130435
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "charismapodcastnetwork.com",
-            "prevalence": 0.06521739130434782
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
@@ -736,12 +736,14 @@
         "Document": 6
     },
     "nameservers": [
-        "ns4.libsyn.com",
-        "ns7.dnsmadeeasy.com",
+        "ns5.dnsmadeeasy.com",
         "ns6.dnsmadeeasy.com",
+        "ns7.dnsmadeeasy.com",
         "ns2.libsyn.com",
         "ns1.libsyn.com",
-        "ns5.dnsmadeeasy.com",
-        "ns3.libsyn.com"
+        "ns3.libsyn.com",
+        "ns4.libsyn.com",
+        "ns5.libsyn.com",
+        "ns6.libsyn.com"
     ]
 }

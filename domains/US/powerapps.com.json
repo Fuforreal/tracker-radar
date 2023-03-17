@@ -152,10 +152,10 @@
                 "content"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTimezoneOffset": 1
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -201,8 +201,8 @@
                 "content"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.sessionStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -226,8 +226,8 @@
                 "content"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.sessionStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -267,16 +267,14 @@
         },
         {
             "rule": "powerapps\\.com\\/resource\\/powerappsportal\\/dist\\/postpreform\\.bundle-f4f91a6eb4\\.js",
-            "cookies": 0.000101,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "content"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Date.prototype.getTimezoneOffset": 1
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -285,32 +283,7 @@
                 "6c4d5b7620ce512b94e0478cc2fa9436c1c78346537b471862004be97509782d"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "timezoneoffset": {
-                    "ttl": null,
-                    "length": 3,
-                    "prevalence": 0.0001006947940791461,
-                    "uniqueness": 1
-                },
-                "isDSTSupport": {
-                    "ttl": null,
-                    "length": 4,
-                    "prevalence": 0.0001006947940791461,
-                    "uniqueness": 1
-                },
-                "isDSTObserved": {
-                    "ttl": null,
-                    "length": 4,
-                    "prevalence": 0.0001006947940791461,
-                    "uniqueness": 1
-                },
-                "ContextLanguageCode": {
-                    "ttl": null,
-                    "length": 5,
-                    "prevalence": 0.0001006947940791461,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "spirit.com",
@@ -319,13 +292,15 @@
         },
         {
             "rule": "powerapps\\.com\\/resource\\/powerappsportal\\/dist\\/app\\.bundle-1c3eb4f558\\.js",
-            "cookies": 0,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "content"
             ],
             "apis": {
-                "Date.prototype.getTimezoneOffset": 1
+                "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -334,7 +309,32 @@
                 "407159c708efad11d8c438c07d25332c6e6320a53afb371865adcdd472dff292"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "timezoneoffset": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "isDSTSupport": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "isDSTObserved": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "ContextLanguageCode": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "spirit.com",
@@ -380,8 +380,8 @@
     },
     "nameservers": [
         "ns1-36.azure-dns.com",
-        "ns3-36.azure-dns.org",
         "ns2-36.azure-dns.net",
-        "ns4-36.azure-dns.info"
+        "ns4-36.azure-dns.info",
+        "ns3-36.azure-dns.org"
     ]
 }

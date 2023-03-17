@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00171,
-    "sites": 17,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
         "api.wdprapps.disney",
         "ase.clmbtech",
+        "gbxgateway.dell",
         "api-dep.keurig"
     ],
     "cnames": [
@@ -28,9 +29,13 @@
         {
             "original": "ase.clmbtech.com",
             "resolved": "ase.clmbtech.com-v1.edgekey.net"
+        },
+        {
+            "original": "gbxgateway.dell.com",
+            "resolved": "gbxgateway.dell.com-v1.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "com-v1\\.edgekey\\.net\\/pep\\/content\\/message-center",
@@ -75,7 +80,8 @@
                 }
             ],
             "responseHashes": [
-                "01bd713601ffdeb1e7bac4bfb26aeff7224821ce107484e1fda34171ddbcf3c0"
+                "4a073c8452ae41d556859ce9e7a5767b4fc26dc61ec26d6efb255056af17d2c5",
+                "2531ee2429c1133f09daad8085bcaa491fed8d4b875d4b46bf163f3dc63e19f4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -103,7 +109,7 @@
                 }
             ],
             "responseHashes": [
-                "fd826ef783d320e75580d712cacf8e40b4e2d6b88528b361a0fc4f5ea16bf807"
+                "89244af9f920b2a90dace51f0c2fbd71ca9020cecc90d0dd2b1e5d754fc26efb"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -142,14 +148,14 @@
         },
         {
             "rule": "com-v1\\.edgekey\\.net\\/pep\\/content\\/footer",
-            "cookies": 0.000302,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "api.wdprapps.disney"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "api.wdprapps.disney.com",
@@ -157,27 +163,26 @@
                 }
             ],
             "responseHashes": [
-                "51026553ebc158897949f1e6346c4248ca65e6a4504d95c268eb82ed98c6ee6c"
+                "8ba1a3bf96e2509db8e68e2de89765e6608d8faa741ecc7314ebb570d7222f54"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "go.com",
-                "disneyworld.disney.go.com",
                 "disneyland.disney.go.com"
             ]
         },
         {
             "rule": "com-v1\\.edgekey\\.net\\/pep\\/content\\/footer",
-            "cookies": 0.000302,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "api.wdprapps.disney"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "api.wdprapps.disney.com",
@@ -190,20 +195,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "go.com",
-                "disneyworld.disney.go.com",
                 "disneyland.disney.go.com"
             ]
         },
         {
             "rule": "com-v1\\.edgekey\\.net\\/message",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "ase.clmbtech"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "ase.clmbtech.com",
@@ -218,7 +222,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "indiatimes.com",
-                "m.photos.timesofindia.com"
+                "m.photos.timesofindia.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/post\\/WEB\\/report",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gbxgateway.dell"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "gbxgateway.dell.com",
+                    "resolved": "gbxgateway.dell.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f0c298ef454d2535057bfdd0780e37cdb7a357bee3880ca41e9778a9d29b5a8f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dell.com",
+                "www.dell.com"
             ]
         },
         {
@@ -263,7 +295,7 @@
                 }
             ],
             "responseHashes": [
-                "7eb85875e334bebdf1b3dab0d8862c917d6c896c69e5147a6d8ee05924d39176"
+                "46d0314303d84dff6673173b7e0a4350db8491389862d59c750d932af8abd6d8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -290,7 +322,7 @@
                 }
             ],
             "responseHashes": [
-                "ad26db93bbbfcf74e097216de8717ead64663215f3ec5beaa7b26258e913627a"
+                "d4b8f8d76e8ba67aa66b2131e6fc07aacaaeb418710624cae8faa13e022b0d3d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -328,11 +360,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00101,
+    "cookies": 0.00121,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.42857142857142855
         },
         {
             "domain": "appdynamics.com",
@@ -340,7 +372,7 @@
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "medscapestatic.com",
@@ -352,9 +384,10 @@
         }
     ],
     "types": {
-        "Preflight": 13,
-        "Fetch": 13,
-        "Image": 2
+        "Preflight": 12,
+        "Fetch": 12,
+        "Image": 3,
+        "XHR": 2
     },
     "nameservers": []
 }

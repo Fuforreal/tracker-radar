@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
         "service"
     ],
@@ -29,14 +29,15 @@
             "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
-                "77955e373a5d571999d34502dd983778bfe3a078341806d59ea2c005401d255d",
-                "5abd7eea6cd7dcd38cda93766ff665d3291b523fc63344933f94650306689940",
-                "e6271571a41e61d56951bbbcfec2c501a1f16858f4ea61c7cf0c647b6b82e532",
-                "7f44032ac9440dad02f459267dc32c08853c4582625b1fb0085955aa2879c539",
-                "e4caaef9876145f9ad7e8533fda77c1e60589cb47537252744ef69e8fe2b3ca9",
-                "d81f34ede0b14ff1b105f06704ba5d10df0ae012bdccbbc973beca260e1a8222",
-                "5b544ef4f580b5a5c3802ae26bb256e582c5cbcad216a3953f10a924d5a21823",
-                "8e7791317b517723fb65135c60db3c81b7bb81af6100ba4a28839bae5674bfa6"
+                "294d20f9f46f2b31b512152a3c78cca238b917237450528af565484f619e0759",
+                "b8056d5f1e9c5afe7814077f1c5e3097bcbeaa0f7d1c827428174f81c2e891b6",
+                "cb0edc2a70e83af5ee05468461131acc50a5562f10e9ed71496f50ed27aadf37",
+                "24559cca27d4effe3be6cd3eeaf44d1925c76e049681cc8ec7133e4aa7e2bbbe",
+                "c3adcc31726053646008a3f49e5cd9a43505dd37c3cf250bc3b27e8f371c77be",
+                "93ecc688bd86d8a38a0d9a070ddb6fed0fbbd703b59dabd3d7c74ec71dfe26db",
+                "52e30eb4b567e1839756e5d944a73e16a68f359cff16fc40a3afa530fee012b8",
+                "2fb04a983569a542d3a09e267275a62015ced4e66e374fbc77644a9a6a6ee51f",
+                "e02b71f7a2c00a76ef864d18988077c0cfdbd9af8ee3c0542fe01d875905df97"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -57,22 +58,39 @@
         },
         {
             "rule": "maxymiser\\.net\\/platform\\/us\\/api\\/mmpackage-1\\.27\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.000101,
+            "fingerprinting": 1,
             "subdomains": [
                 "service"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 1,
+                "window.innerWidth": 1,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5baccf38e1c7e2c823a87d69d55b1d68f6db0bbf11ade1386fcd97c19fab20b2"
+            ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mm_experience": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "spirit.com",
-                "www.healthgrades.com"
+                "www.healthgrades.com",
+                "www.spirit.com",
+                "www.usaa.com"
             ]
         },
         {
@@ -102,27 +120,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mmcore.tst": {
-                    "ttl": 864008,
+                    "ttl": 864009,
                     "length": 5,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "mmapi.store.p.0": {
                     "ttl": 31536019,
-                    "length": 418,
-                    "prevalence": 0.0002013895881582922,
+                    "length": 419,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "mmapi.store.s.0": {
                     "ttl": null,
                     "length": 59,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 },
                 "mmcore.bid": {
-                    "ttl": 619,
+                    "ttl": 618,
                     "length": 13,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 }
             },
@@ -159,18 +177,14 @@
         {
             "rule": "maxymiser\\.net\\/cdn\\/etrade\\/js\\/mmcore\\.js",
             "cookies": 0.000201,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "service"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -181,27 +195,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mmapi.p.pd": {
-                    "ttl": 31536001,
-                    "length": 245,
-                    "prevalence": 0.0002013895881582922,
+                    "ttl": 31536002,
+                    "length": 247,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 },
                 "mmapi.p.bid": {
-                    "ttl": 600,
+                    "ttl": 602,
                     "length": 19,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 },
                 "mmapi.p.srv": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 19,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 },
                 "mmapi.p.uat": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 518,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 0.5
                 }
             },
@@ -267,39 +281,43 @@
         "Third-Party Analytics Marketing"
     ],
     "performance": {},
-    "cookies": 0.000806,
+    "cookies": 0.000906,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.39285714285714285
+            "prevalence": 0.5
         },
         {
             "domain": "ensighten.com",
-            "prevalence": 0.21428571428571427
+            "prevalence": 0.16666666666666666
         },
         {
             "domain": "site_spareactclutch.js",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "oracleinfinity.io",
-            "prevalence": 0.10714285714285714
+            "prevalence": 0.08333333333333333
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.05555555555555555
         },
         {
             "domain": "ecomm6343rebrandhomepagepersonalization_rendering.js",
-            "prevalence": 0.03571428571428571
+            "prevalence": 0.027777777777777776
         },
         {
             "domain": "site_actionsandevents.js",
-            "prevalence": 0.03571428571428571
+            "prevalence": 0.027777777777777776
+        },
+        {
+            "domain": "t80abpncacqautbothmmpubhomepaydbannertest_e1_vb.js",
+            "prevalence": 0.027777777777777776
         }
     ],
     "types": {
-        "Script": 23
+        "Script": 25
     },
     "nameservers": [
         "ns1.p201.dns.oraclecloud.net",

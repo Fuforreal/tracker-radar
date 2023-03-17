@@ -30,7 +30,7 @@
     "resources": [
         {
             "rule": "exponea\\.com\\/js\\/exponea\\.min\\.js",
-            "cookies": 0.000806,
+            "cookies": 0.00101,
             "fingerprinting": 2,
             "subdomains": [
                 "api",
@@ -40,14 +40,14 @@
                 "msl-api.us"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "window.indexedDB": 6,
-                "window.localStorage": 6,
-                "window.sessionStorage": 6,
+                "Navigator.prototype.userAgent": 7,
+                "window.indexedDB": 7,
+                "window.localStorage": 7,
+                "window.sessionStorage": 7,
                 "Document.cookie getter": 6,
                 "Date.prototype.getTime": 8,
-                "Document.cookie setter": 7,
-                "Navigator.prototype.vendor": 6
+                "Document.cookie setter": 8,
+                "Navigator.prototype.vendor": 7
             },
             "sites": 11,
             "prevalence": 0.00111,
@@ -64,26 +64,27 @@
             "responseHashes": [
                 "2325ee43e0b032f0b637f08f38f3077c6ffbf71e909056e2475a67111c590c9b",
                 "7292aa075e1ff182cf66c35259bab8ff888c5f9fb8340481affe4312385ff0d3",
+                "7b5fac5b80e4d5e298554d36ad9d5d19f697b705e6d303f58a29c79d24735b69",
                 "a09ef5944c6d05b5bfb51a00820de061743bf4e9db3411fab916f1b88d847427"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__exponea_etc__": {
-                    "ttl": 94608003,
+                    "ttl": 94608004,
                     "length": 36,
-                    "prevalence": 0.0007048635585540227,
+                    "prevalence": 0.0008050719533058267,
                     "uniqueness": 1
                 },
                 "__exponea_time2__": {
-                    "ttl": 3603,
-                    "length": 20,
-                    "prevalence": 0.0007048635585540227,
+                    "ttl": 3604,
+                    "length": 19,
+                    "prevalence": 0.0008050719533058267,
                     "uniqueness": 1
                 },
                 "PJEsegment": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 }
             },
@@ -104,32 +105,39 @@
         },
         {
             "rule": "exponea\\.com\\/bulk",
-            "cookies": 0.000906,
+            "cookies": 0.00111,
             "fingerprinting": 0,
             "subdomains": [
                 "api",
                 "api.uk",
                 "api.us1",
+                "dnb-api.us",
                 "msl-api.us"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000906,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [
+                {
+                    "original": "exponea-api.dnb.com",
+                    "resolved": "dnb-api.us.exponea.com"
+                },
                 {
                     "original": "exponea-api.michiganlottery.com",
                     "resolved": "msl-api.us.exponea.com"
                 }
             ],
             "responseHashes": [
-                "778d838b6801a8622b3cbe4ba7a65b579558dc004fa5042abc7bcdebadbfbfbc",
-                "459d06ef6923d237ebb3137915d6f01149587ca691e348578c7fc0355854f6e9",
-                "faa610271d1183d58a4a228681d2e10c28634ecd4be6c5f24fab9a71764c9dcd",
-                "60f92e51a6cfabc145798e903056ce4640816c9953e8e879215cbb3909ca0fd5",
-                "8a7ef1a5d62a80adbcc07a88b16af61ea74a208544b6797cd55d445ba1e9d4d5",
-                "d2e2be49041a46ddba3815447076da8d5ab824a49b96b1a5465c99f2378a61b3",
-                "840d459d6a07b6b0b7753a5d3e21a6f5f2eaa1645892ea435ad6d1b0c76adfb6",
-                "abf449c695654e5c4359ccda2d3f05c04f563789b0d56829934385abb8b2fb2c"
+                "d7ea3566457f8f6c2972dafe05b76ed56809dd15c6fa04aeec970c531c7903b8",
+                "43333ce43d74643953d45c5d9e7f60bc68afde24aaaa3eb97c4b1f25730b64b3",
+                "19a888918a0f2dd9c1b04735afeffc6791185808ac9bed6e0411947bde4f4f6c",
+                "b741c731611f0ab733d8b8e2f15455fb3471393d48c0c5c1183d1da3bf6069df",
+                "7fb117a517e00c82410ce52ebd81b1acb196c49db66165c7370ba485e5a087c5",
+                "d8476f5b13c3e01ef66e0a95116171123c5959c632c6145df47d5ad50ff77dc5",
+                "0710ad8f7a4f4f99cd041b2a67b678fc575561527928c29df051ff174f58b2f1",
+                "8a2714a46c39778e3a41c4df2b532dbac2e858e8e90cb4556b13156ed68622b7",
+                "8dcd2298f3317742074fb6096499e7160745c9171cfb9af558fae89bb84eb12f",
+                "eed25c904b68b9c7a8eb57e2a4f210f590704bd3d9ee29d5fe1f9cc18643235a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -137,6 +145,8 @@
             "exampleSites": [
                 "olukai.com",
                 "patient.info",
+                "www.cheaperthandirt.com",
+                "www.dnb.com",
                 "www.gobrightline.com",
                 "www.jensonusa.com",
                 "www.livingspaces.com",
@@ -154,12 +164,17 @@
                 "api",
                 "api.uk",
                 "api.us1",
+                "dnb-api.us",
                 "msl-api.us"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000906,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [
+                {
+                    "original": "exponea-api.dnb.com",
+                    "resolved": "dnb-api.us.exponea.com"
+                },
                 {
                     "original": "exponea-api.michiganlottery.com",
                     "resolved": "msl-api.us.exponea.com"
@@ -176,6 +191,8 @@
             "exampleSites": [
                 "olukai.com",
                 "patient.info",
+                "www.cheaperthandirt.com",
+                "www.dnb.com",
                 "www.gobrightline.com",
                 "www.jensonusa.com",
                 "www.livingspaces.com",
@@ -195,8 +212,8 @@
                 "api.us1"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "exponea-api.michiganlottery.com",
@@ -213,52 +230,51 @@
             "exampleSites": [
                 "olukai.com",
                 "www.michiganlottery.com",
-                "www.sheetmusicplus.com",
                 "www.walmartpetrx.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000906,
+    "cookies": 0.00111,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6764705882352942
+            "prevalence": 0.6111111111111112
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.14705882352941177
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.058823529411764705
-        },
-        {
-            "domain": "cookielaw.org",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.1388888888888889
         },
         {
             "domain": "newrelic.com",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.027777777777777776
         },
         {
             "domain": "fullstory.com",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.027777777777777776
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.029411764705882353
+            "prevalence": 0.027777777777777776
         }
     ],
     "types": {
         "Script": 11,
-        "Fetch": 22
+        "Fetch": 25
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
-        "ns-cloud-e1.googledomains.com",
         "ns-cloud-e4.googledomains.com",
-        "ns-cloud-e3.googledomains.com"
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
     ]
 }

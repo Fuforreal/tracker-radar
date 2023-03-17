@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000604,
-    "sites": 6,
+    "prevalence": 0.000906,
+    "sites": 9,
     "subdomains": [
-        "js"
+        "js",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -40,6 +41,52 @@
                 "www.travelwisconsin.com",
                 "www.viz.com"
             ]
+        },
+        {
+            "rule": "iterable\\.com\\/api\\/users\\/update",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "4adfd26449b9fd387b77a94e9a6d0a44d3b8172c5e7bb39b1236288db11930ae",
+                "6ab27199823c6abfa6dce812d1497f2b8c4b2fa62a982de61a2361cc541f7064"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bravotv.com",
+                "www.bravotv.com",
+                "www.oxygen.com",
+                "www.syfy.com"
+            ]
+        },
+        {
+            "rule": "iterable\\.com\\/api\\/users\\/update",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bravotv.com",
+                "www.oxygen.com",
+                "www.syfy.com"
+            ]
         }
     ],
     "categories": [],
@@ -47,25 +94,31 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "unpkg.com",
+            "prevalence": 0.46153846153846156
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.3076923076923077
         },
         {
             "domain": "sdiapi.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 6,
+        "XHR": 4,
+        "Preflight": 3
     },
     "nameservers": [
-        "ns-250.awsdns-31.com",
         "ns-1028.awsdns-00.org",
-        "ns-877.awsdns-45.net",
-        "ns-2017.awsdns-60.co.uk"
+        "ns-2017.awsdns-60.co.uk",
+        "ns-250.awsdns-31.com",
+        "ns-877.awsdns-45.net"
     ]
 }

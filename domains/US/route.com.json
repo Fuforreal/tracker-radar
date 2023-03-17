@@ -12,7 +12,7 @@
         "shopify"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "route\\.com\\/checkout\\/routeimg\\.js",
@@ -40,11 +40,13 @@
         {
             "rule": "route\\.com\\/checkout\\/listener\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "bigcommerce"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 3,
             "prevalence": 0.000302,
             "cnames": [],
@@ -92,8 +94,8 @@
                 "protection-widget"
             ],
             "apis": {
-                "Navigator.prototype.product": 3,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 3,
             "prevalence": 0.000302,

@@ -9,7 +9,9 @@
     "subdomains": [
         "static2-ma-ht",
         "imageservice-assets-ht",
-        "onenavigation-ht"
+        "onenavigation-ht",
+        "media-public-hw",
+        "media-public-ht"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -308,19 +310,19 @@
                 "static2-ma-ht"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 1,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.doNotTrack": 1,
                 "Event.prototype.timeStamp": 2,
                 "window.sessionStorage": 2,
                 "window.innerHeight": 2,
                 "window.innerWidth": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
                 "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.doNotTrack": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -331,45 +333,45 @@
             "type": "Script",
             "firstPartyCookies": {
                 "atstrackPiece1": {
-                    "ttl": 86406,
+                    "ttl": 86409,
                     "length": 1000,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "ats": {
-                    "ttl": 86406,
+                    "ttl": 86409,
                     "length": 71,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "atstrackPiece2": {
-                    "ttl": 86406,
+                    "ttl": 86409,
                     "length": 483,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "atsd": {
-                    "ttl": 86406,
+                    "ttl": 86405,
                     "length": 36,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "atsm": {
-                    "ttl": 906,
+                    "ttl": 904,
                     "length": 36,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "atss": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 },
                 "etaguid": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00020126798832645668,
                     "uniqueness": 1
                 }
             },
@@ -387,7 +389,7 @@
                 "static2-ma-ht"
             ],
             "apis": {
-                "window.name": 2
+                "window.name": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -482,6 +484,52 @@
                 "brazzers.com",
                 "www.realitykings.com"
             ]
+        },
+        {
+            "rule": "project1content\\.com\\/m=eSuQ8f\\/27c\\/a2f\\/d72\\/080\\/469\\/dbc\\/455\\/403\\/d0e\\/4c5\\/91\\/poster\\/poster_01\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-public-hw",
+                "media-public-ht"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "30dc7c7507eb276bb496162d9fb169131bd5c2ef8f3018d68418ef94fa1e9b55"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realitykings.com",
+                "www.realitykings.com"
+            ]
+        },
+        {
+            "rule": "project1content\\.com\\/m=eSuQ8f\\/231\\/b2a\\/def\\/99a\\/4ba\\/38a\\/f8f\\/fed\\/609\\/1b5\\/63\\/poster\\/poster_01\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-public-hw",
+                "media-public-ht"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9ff95a47916cf95cca24358c134032b94fec8a87dad23a4e7f9d3c1905c584ac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realitykings.com",
+                "www.realitykings.com"
+            ]
         }
     ],
     "categories": [],
@@ -494,18 +542,18 @@
         }
     ],
     "types": {
-        "Image": 6,
+        "Image": 10,
         "Script": 28,
         "Fetch": 2
     },
     "nameservers": [
         "sdns3.ultradns.net",
-        "sdns3.ultradns.com",
-        "sdns3.ultradns.org",
         "sdns3.ultradns.biz",
-        "dns1.p03.nsone.net",
-        "dns2.p03.nsone.net",
         "dns3.p03.nsone.net",
-        "dns4.p03.nsone.net"
+        "dns4.p03.nsone.net",
+        "sdns3.ultradns.org",
+        "sdns3.ultradns.com",
+        "dns2.p03.nsone.net",
+        "dns1.p03.nsone.net"
     ]
 }

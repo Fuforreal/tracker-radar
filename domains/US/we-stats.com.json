@@ -4,16 +4,30 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "wup-5d65a0ab.us.v2",
-        "wup-edc5180c.us.v2"
+        "wup-edc5180c.us.v2",
+        "wup-532e636f.us.v2",
+        "cfr-edc5180c.us.v2",
+        "log-edc5180c.us.v2"
     ],
     "cnames": [
         {
+            "original": "bup.bankofamerica.com",
+            "resolved": "wup-532e636f.us.v2.we-stats.com"
+        },
+        {
+            "original": "contents1.00110.citi.com",
+            "resolved": "log-edc5180c.us.v2.we-stats.com"
+        },
+        {
             "original": "contents2.00110.citi.com",
             "resolved": "wup-edc5180c.us.v2.we-stats.com"
+        },
+        {
+            "original": "contents3.00110.citi.com",
+            "resolved": "cfr-edc5180c.us.v2.we-stats.com"
         }
     ],
     "fingerprinting": 0,
@@ -23,27 +37,87 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wup-5d65a0ab.us.v2",
-                "wup-edc5180c.us.v2"
+                "wup-edc5180c.us.v2",
+                "wup-532e636f.us.v2"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [
+                {
+                    "original": "contents2.00110.citi.com",
+                    "resolved": "wup-edc5180c.us.v2.we-stats.com"
+                },
+                {
+                    "original": "bup.bankofamerica.com",
+                    "resolved": "wup-532e636f.us.v2.we-stats.com"
+                }
+            ],
+            "responseHashes": [
+                "810c9e2decc4b776cb320dc78dc443f659ae9bfee81fa59e14946aba0c7fe9cc",
+                "21fdc05dc51be54f9b97f2274c97c2d6365a8912e095cff95350585e6273e123",
+                "5e4738ea164a2d9c72ec0aaafb6118b3b655754ec125e29f851b64082dc4f926"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "citi.com",
+                "online.citi.com",
+                "www.bankofamerica.com",
+                "www.citi.com"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/api\\/v1\\/cr\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cfr-edc5180c.us.v2"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "contents2.00110.citi.com",
-                    "resolved": "wup-edc5180c.us.v2.we-stats.com"
+                    "original": "contents3.00110.citi.com",
+                    "resolved": "cfr-edc5180c.us.v2.we-stats.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "citi.com",
+                "www.citi.com"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/api\\/v1\\/sendLogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log-edc5180c.us.v2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "contents1.00110.citi.com",
+                    "resolved": "log-edc5180c.us.v2.we-stats.com"
                 }
             ],
             "responseHashes": [
-                "4745e308e73da972175f7fe0d7bbe7cbdd6f22896b46118f93ae9f4c516a8a21"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mtb.com",
-                "online.citi.com"
+                "citi.com",
+                "www.citi.com"
             ]
         }
     ],
@@ -57,12 +131,7 @@
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 8
     },
-    "nameservers": [
-        "dns1.p07.nsone.net",
-        "dns2.p07.nsone.net",
-        "dns3.p07.nsone.net",
-        "dns4.p07.nsone.net"
-    ]
+    "nameservers": []
 }

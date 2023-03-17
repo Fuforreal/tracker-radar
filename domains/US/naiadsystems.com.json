@@ -10,10 +10,11 @@
     "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "hybridclient"
+        "hybridclient",
+        "cdn.hybridclient"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "naiadsystems\\.com\\/purecam",
@@ -27,9 +28,40 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9719bad7326a42f11cb5b2911105576141fd9bc3f73a1259acde13e96d240674"
+                "8487e0042f6e6828e9f49bc928f7bcd27b488c5bc1cccd06315c0f5c87ea56c7"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "erothots.co",
+                "www.camwhoreshd.com"
+            ]
+        },
+        {
+            "rule": "naiadsystems\\.com\\/dist\\/pure\\/2\\.4\\.3\\/pure\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.hybridclient"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.mediaDevices": 1,
+                "window.localStorage": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaSource.isTypeSupported": 1,
+                "Navigator.prototype.platform": 1,
+                "RTCPeerConnection.prototype.constructor": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "654c161b2d2d9f7ea2dfb9d84151a504d7de4461f26e9f37ecd71397c06af0fa"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -56,10 +88,11 @@
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Script": 2
     },
     "nameservers": [
-        "ns2.flyingcroc.net",
-        "ns1.flyingcroc.net"
+        "ns1.flyingcroc.net",
+        "ns2.flyingcroc.net"
     ]
 }

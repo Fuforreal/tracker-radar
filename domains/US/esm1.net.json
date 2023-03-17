@@ -7,56 +7,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000604,
-    "sites": 6,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
-        "pixall",
         "pixall-qa",
+        "pixall",
         "cs"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "esm1\\.net\\/v2\\/attribution\\/iframe",
             "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
-                "pixall",
-                "pixall-qa"
+                "pixall-qa",
+                "pixall"
             ],
             "apis": {},
             "sites": 4,
             "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "80155058ac4b8460155abdfcce2877c9920d3434f20f4f7552451541c21c8a09",
-                "05fb17daaf5356138ae75a385ea4965c652efe2db9d7f627ae6031cd487f42f5",
-                "d67d1c7943ee4c1c31e787f316e0a3ded5e746c8aed749ffdefe397d889894fd"
+                "7d63145a73f8b2e8a10218525651122f25bd8221a9f60eeaf3bb5db8cb2a9d90",
+                "01cbe148886739d70cda708e4fcac66e98af48e3eee19bee78ab84aedf312ba1",
+                "48c4e56e22883182765b816c36eb15ff1d37d6bbb540cb28a78c75ffc11dfdda"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "pxa_id": 0.0004027791763165844
+                "pxa_id": 0.000301901982489685,
+                "abc": 0.00010063399416322834
             },
             "exampleSites": [
-                "honda.com",
-                "www.acura.com",
+                "acura.com",
                 "www.audiusa.com",
+                "www.kbb.com",
                 "www.subaru.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/pageload",
-            "cookies": 0.000403,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
-                "pixall",
-                "pixall-qa"
+                "pixall-qa",
+                "pixall"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -64,27 +65,26 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "pxa_id": 0.0004027791763165844,
-                "s_pltp": 0.0001006947940791461
+                "pxa_id": 0.000301901982489685,
+                "s_pltp": 0.00010063399416322834
             },
             "exampleSites": [
-                "honda.com",
-                "www.acura.com",
+                "acura.com",
                 "www.audiusa.com",
                 "www.subaru.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/liveramp\\/callback",
-            "cookies": 0.000403,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
-                "pixall",
-                "pixall-qa"
+                "pixall-qa",
+                "pixall"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -93,54 +93,45 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "honda.com",
-                "www.acura.com",
+                "acura.com",
                 "www.audiusa.com",
                 "www.subaru.com"
             ]
         },
         {
-            "rule": "esm1\\.net\\/adstra",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pixall",
-                "pixall-qa"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "pxa_bc": 0.0002013895881582922
-            },
-            "exampleSites": [
-                "honda.com",
-                "www.acura.com"
-            ]
-        },
-        {
             "rule": "esm1\\.net\\/cookie-first\\.js",
             "cookies": 0.000201,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "pixall"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "00972e760cc39e42dbf7c6b87957adf0a9898e0742b2617504bb756f30f8c303"
+                "14bcadebec1d5f782e34a021f6d9e2734b2cfcc179c456e99cd92885c741fec6"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookies": {
+                "abc": {
+                    "ttl": 31622401,
+                    "length": 24,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 1
+                },
+                "pxa_ipv4": {
+                    "ttl": 31622401,
+                    "length": 13,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {
+                "abc": 0.00020126798832645668
+            },
             "exampleSites": [
                 "autotrader.com",
                 "www.kbb.com"
@@ -148,42 +139,46 @@
         },
         {
             "rule": "esm1\\.net\\/v2\\/iframe",
-            "cookies": 0.000302,
+            "cookies": 0.000403,
             "fingerprinting": 0,
             "subdomains": [
                 "pixall",
                 "cs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "b30dfa70176d92105c7ded4baaa9da37c0330f8c47ebef1206a50ef8f7e56cfe",
-                "081e16ca71c9e060e76ba589748f998722e8da44976e5303d2ec7b3e41cd0ea7"
+                "3ca167a7702b10c354e07517972a9c0b1a2fcb7adbece138e743dee6348d87df",
+                "ca2e87fdfe5abdf826a382d358d2312d0d5296366549e59dd5f7443fe490ab1e",
+                "b219efe669a0213022e79f7266fec80bf35561cc41346ba813e7a42ebc24cbfb"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "pxa_id": 0.0003020843822374383,
-                "s_pltp": 0.0002013895881582922
+                "s_pltp": 0.00020126798832645668,
+                "pxa_id": 0.000301901982489685,
+                "abc": 0.00010063399416322834,
+                "_schn": 0.00010063399416322834
             },
             "exampleSites": [
                 "audiusa.com",
                 "www.audiusa.com",
+                "www.kbb.com",
                 "www.subaru.com"
             ]
         },
         {
             "rule": "esm1\\.net\\/v2\\/exchange\\/callback\\/adx",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "cs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -193,6 +188,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "audiusa.com",
+                "www.kbb.com",
                 "www.subaru.com"
             ]
         },
@@ -221,26 +217,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000604,
+    "cookies": 0.000503,
     "topInitiators": [
         {
             "domain": "dealer.com",
-            "prevalence": 0.8666666666666667
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "first party",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Document": 7,
-        "Image": 14,
+        "Document": 8,
+        "Image": 11,
         "Script": 2
     },
     "nameservers": [
-        "ns-1266.awsdns-30.org",
-        "ns-1567.awsdns-03.co.uk",
         "ns-275.awsdns-34.com",
-        "ns-613.awsdns-12.net"
+        "ns-613.awsdns-12.net",
+        "ns-1567.awsdns-03.co.uk",
+        "ns-1266.awsdns-30.org"
     ]
 }

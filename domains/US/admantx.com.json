@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.00191,
+    "sites": 19,
     "subdomains": [
         "async01",
-        "euasync01"
+        "euasync01",
+        "usasync01"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,33 +25,39 @@
                 "async01"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.00111,
+            "sites": 13,
+            "prevalence": 0.00131,
             "cnames": [],
             "responseHashes": [
-                "99c489335967682f06da2de4c4dfc80e4072f644a50e96ea73bb15971e920a16",
-                "75bfd4b35499d2e8470738082c77214bca51a1091297d621a959c3285cf56209",
-                "2fa6276e97b6839ef5df7d0a7f2445220ba13237438bf7242c7e395802dee78c",
-                "2d82f87272342e4a3b64a044ee3436d671c3c94840bd8702e532ee06dc25f268",
-                "a7858c15171e059e72d550f8529bb2187b5ac9d8ebc267631f86b1bd4247c140",
-                "6acb956b202c5013a4e3644e452fa229ca8528f8ed28a5eb1b20bba76d1b8f57",
-                "92c9070a1d4cac3f2ea8714d862cc1d62e1fdc59f5dc60ee8c01a17c501a8ac5",
-                "fbfb04e76245be73d5dd0f0b83a501e6a974abbaf45db1a6c4cb055bce47d8d1",
-                "05e88d8e01cfd40362c78d74269b0b76bd6f3f4d6c84d76b62de28efedf89b00"
+                "148949e32206ccb56609f06637ea65001bc6ec1d5d68a68c1ac55386be7b5146",
+                "315eeb173b98526c45df9ccdceeb784b14879c75074ac0196585fd251e886cf0",
+                "e9be511e5b0fa3ce01aae0c939db85f4dd69553f66acb623e55edcf0e4254d7c",
+                "64f29d7dca603ad9f12d5112425987cb7a5f7732d995422cb67a06b68acd44ce",
+                "7be3f75531c6ef015540a69f395fe4b7b9df53b99a330ef8211d4e4ab1168954",
+                "c4968afd8cba54f44c0f3c1ebafadd2929f2cfa43be6222f59fab08fbac907d2",
+                "b53a472490b9c327172f994842b44c46553c847a801aeac0dfb430d662026b5f",
+                "a8434100a6562765c25771968edde0bf8587b670835d649a1f18d3b6338dac90",
+                "e53619d91aac1afc617a9f44bf06d45082baede9c7aaef54ea21b572be97bff9",
+                "7ec6aaaa910d4b4588f434212a7b5411b76e1e7c21405fb41195aa8ca7abe05a",
+                "cd6261bf893bb4ce4395ffc3d215af4cf3992270115db4c7ae97a4017aac4ed1",
+                "6e9e054d2a5d6d2db73a900e72b46c713c542e605e9027045fc147ab5cc42606"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0006041687644748766
+                "lotame_domain_check": 0.0007044379591425984,
+                "_li_dcdm_c": 0.00010063399416322834
             },
             "exampleSites": [
                 "basenotes.com",
                 "cheezburger.com",
                 "ebible.com",
+                "knowyourmeme.com",
                 "stylecaster.com",
                 "www.allthetests.com",
                 "www.brit.co",
                 "www.cracked.com",
+                "www.ebaumsworld.com",
                 "www.girlsaskguys.com",
                 "www.goldderby.com",
                 "www.smartcapitalmind.com",
@@ -68,13 +75,41 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4d4591fc2bdd219f079c58aabd7a2c7e4fb666a4c3526dc530e6b55ec86b6fc9"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "inews.co.uk",
                 "metro.co.uk"
+            ]
+        },
+        {
+            "rule": "admantx\\.com\\/admantx\\/service",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usasync01"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "e05ae40618d21d4eb6071b0f9a0ea279f332b3bb5adb24710d451e57086e4181",
+                "861ad6bc05c59323e1848c0b69e2d1851597a0a79e63b12edcf8a4a4f4cb61d4",
+                "455b3d3742e729da3838d9204f395fadf34b0d866dd449d51e57d4879bae6d2f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnbc.com",
+                "www.msnbc.com",
+                "www.nbcnews.com",
+                "www.today.com"
             ]
         }
     ],
@@ -84,25 +119,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7142857142857143
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "blogherads.com",
-            "prevalence": 0.21428571428571427
+            "prevalence": 0.16666666666666666
         },
         {
             "domain": "nbcuni.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "XHR": 11,
-        "Fetch": 2
+        "XHR": 13,
+        "Fetch": 2,
+        "Script": 4
     },
     "nameservers": [
         "ns-241.awsdns-30.com",
+        "ns-1963.awsdns-53.co.uk",
         "ns-623.awsdns-13.net",
-        "ns-1311.awsdns-35.org",
-        "ns-1963.awsdns-53.co.uk"
+        "ns-1311.awsdns-35.org"
     ]
 }

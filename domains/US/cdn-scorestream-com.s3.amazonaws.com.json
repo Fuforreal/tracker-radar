@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "cdn-scorestream-com\\.s3\\.amazonaws\\.com\\/cdn\\/css\\/widgets\\/scoreboards\\/vert\\.css",
@@ -38,9 +38,12 @@
         {
             "rule": "cdn-scorestream-com\\.s3\\.amazonaws\\.com\\/cdn\\/js\\/bundles\\/vertBundle\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2,
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -77,8 +80,8 @@
     },
     "nameservers": [
         "ns-1240.awsdns-27.org",
-        "ns-1872.awsdns-42.co.uk",
         "ns-151.awsdns-18.com",
+        "ns-1872.awsdns-42.co.uk",
         "ns-526.awsdns-01.net"
     ]
 }

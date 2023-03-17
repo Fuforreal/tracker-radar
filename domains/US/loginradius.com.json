@@ -7,12 +7,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "postmedia.hub"
+        "postmedia.hub",
+        "cbc-login.hub"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "login.cbc.ca",
+            "resolved": "cbc-login.hub.loginradius.com"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -42,19 +48,55 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "postmedia.hub"
+                "postmedia.hub",
+                "cbc-login.hub"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
+                }
+            ],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nationalpost.com",
-                "torontosun.com"
+                "torontosun.com",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "postmedia.hub",
+                "cbc-login.hub"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
+                }
+            ],
+            "responseHashes": [
+                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalpost.com",
+                "torontosun.com",
+                "www.cbc.ca"
             ]
         }
     ],
@@ -63,17 +105,18 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "postmedia.digital",
-            "prevalence": 0.6666666666666666
+            "domain": "lrcontent.com",
+            "prevalence": 0.6
         },
         {
-            "domain": "lrcontent.com",
-            "prevalence": 0.3333333333333333
+            "domain": "postmedia.digital",
+            "prevalence": 0.4
         }
     ],
     "types": {
         "Fetch": 2,
-        "Preflight": 2
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns2.p14.dynect.net",

@@ -37,7 +37,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
             "prevalence": 0.000302,
@@ -53,6 +53,26 @@
                 "www.generalflynn.com",
                 "www.moongiant.com"
             ]
+        },
+        {
+            "rule": "sibforms\\.com\\/forms\\/end-form\\/elastic-apm-rum\\.umd\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartgardenguide.com",
+                "www.generalflynn.com"
+            ]
         }
     ],
     "categories": [],
@@ -66,7 +86,7 @@
     ],
     "types": {
         "Stylesheet": 3,
-        "Script": 3
+        "Script": 5
     },
     "nameservers": [
         "josh.ns.cloudflare.com",

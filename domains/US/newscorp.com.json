@@ -4,19 +4,28 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
-        "v2.pixel.nypp.data"
+        "v2.pixel.nypp.data",
+        "v2.pixel.nukp.data"
     ],
     "cnames": [
         {
-            "original": "sac.decider.com",
+            "original": "sac.nypost.com",
             "resolved": "v2.pixel.nypp.data.newscorp.com"
         },
         {
             "original": "sac.pagesix.com",
             "resolved": "v2.pixel.nypp.data.newscorp.com"
+        },
+        {
+            "original": "sac.the-sun.com",
+            "resolved": "v2.pixel.nukp.data.newscorp.com"
+        },
+        {
+            "original": "sac.thesun.co.uk",
+            "resolved": "v2.pixel.nukp.data.newscorp.com"
         }
     ],
     "fingerprinting": 0,
@@ -33,7 +42,7 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "sac.decider.com",
+                    "original": "sac.nypost.com",
                     "resolved": "v2.pixel.nypp.data.newscorp.com"
                 },
                 {
@@ -41,21 +50,83 @@
                     "resolved": "v2.pixel.nypp.data.newscorp.com"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_dor": 0.0001006947940791461
+                "_dor": 0.00020126798832645668
             },
             "exampleSites": [
-                "decider.com",
+                "nypost.com",
                 "pagesix.com"
+            ]
+        },
+        {
+            "rule": "newscorp\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2.pixel.nukp.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sac.the-sun.com",
+                    "resolved": "v2.pixel.nukp.data.newscorp.com"
+                },
+                {
+                    "original": "sac.thesun.co.uk",
+                    "resolved": "v2.pixel.nukp.data.newscorp.com"
+                }
+            ],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "the-sun.com",
+                "www.thesun.co.uk"
+            ]
+        },
+        {
+            "rule": "newscorp\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2.pixel.nukp.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sac.the-sun.com",
+                    "resolved": "v2.pixel.nukp.data.newscorp.com"
+                },
+                {
+                    "original": "sac.thesun.co.uk",
+                    "resolved": "v2.pixel.nukp.data.newscorp.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "the-sun.com",
+                "www.thesun.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000403,
     "topInitiators": [
         {
             "domain": "storage.googleapis.com",
@@ -63,7 +134,8 @@
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": []
 }

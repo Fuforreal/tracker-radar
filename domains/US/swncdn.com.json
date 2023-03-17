@@ -7,14 +7,37 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000806,
+    "prevalence": 0.000805,
     "sites": 8,
     "subdomains": [
+        "i",
         "media"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "swncdn\\.com\\/media\\/400w\\/via\\/images\\/2023\\/02\\/28\\/29641\\/29641-istockgetty-images-pluslaflor-1_source_file\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "64842fd091f7e855c713920e6a86e06ddd014c0d74aca0fbb0db129b19036018"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christianity.com",
+                "www.christianheadlines.com"
+            ]
+        },
         {
             "rule": "swncdn\\.com\\/js\\/prebid\\/script\\.js",
             "cookies": 0,
@@ -23,12 +46,13 @@
                 "media"
             ],
             "apis": {
-                "window.sessionStorage": 5,
+                "window.sessionStorage": 6,
+                "Date.prototype.getTime": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
-                "Date.prototype.getTime": 1,
                 "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 1,
                 "Screen.prototype.height": 1,
                 "Screen.prototype.colorDepth": 1,
@@ -44,8 +68,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "christianheadlines.com",
-                "www.christianity.com",
+                "christianity.com",
+                "www.christianheadlines.com",
                 "www.crosswalk.com",
                 "www.ibelieve.com",
                 "www.oneplace.com",
@@ -53,24 +77,68 @@
             ]
         },
         {
-            "rule": "swncdn\\.com\\/ads\\/banners\\/2017\\/hurricane-alert-bar-background\\.webp",
+            "rule": "swncdn\\.com\\/media\\/64w\\/christianity\\/resource\\/areas\\/newchristianity\\/resources\\/images\\/plus\\/Plus-Badge-CCOM\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "media"
+                "i"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b8373eb3dfbd19b0b696fe32307c677ff4ef06aada605f752a67f841c13d780b"
+                "d1f16408817d12dbe723eb8055df953f5528571e1eeec1ead0021bdd29e01041"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "christianheadlines.com",
+                "christianity.com",
+                "www.christianity.com"
+            ]
+        },
+        {
+            "rule": "swncdn\\.com\\/media\\/620w\\/crosswalk\\/resource\\/areas\\/crosswalk\\/resources\\/images\\/backgrounds\\/feature-text-gradient\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3a81f51191cc0163d6c226f8afb3e592e6c54e20bd827bca6102ee485f201005"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crosswalk.com",
+                "www.crosswalk.com"
+            ]
+        },
+        {
+            "rule": "swncdn\\.com\\/media\\/64w\\/crosswalk\\/resource\\/areas\\/crosswalk\\/resources\\/images\\/plus\\/Plus-Badge-CW\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "267a7d711ff00f43d986f8c7019fb688ce31b685cef508a2bcdbacc0200e8d02"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crosswalk.com",
                 "www.crosswalk.com"
             ]
         }
@@ -81,17 +149,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.993421052631579
+        },
+        {
+            "domain": "tinypass.com",
+            "prevalence": 0.006578947368421052
         }
     ],
     "types": {
-        "Script": 6,
-        "Image": 2
+        "Image": 8,
+        "Script": 6
     },
     "nameservers": [
-        "ns-cloud-d1.googledomains.com",
-        "ns-cloud-d2.googledomains.com",
         "ns-cloud-d3.googledomains.com",
-        "ns-cloud-d4.googledomains.com"
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d4.googledomains.com",
+        "ns-cloud-d2.googledomains.com"
     ]
 }

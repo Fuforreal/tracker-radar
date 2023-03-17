@@ -16,12 +16,17 @@
         "dpservice",
         "sitecatalyst",
         "assets",
+        "clix",
         "wsclix"
     ],
     "cnames": [
         {
             "original": "assets.fidelity.com",
             "resolved": "assets.fidelity.com.edgekey.net"
+        },
+        {
+            "original": "clix.fidelity.com",
+            "resolved": "clix.fidelity.com.edgekey.net"
         },
         {
             "original": "dmt.fidelity.com",
@@ -59,7 +64,7 @@
                 }
             ],
             "responseHashes": [
-                "4ce55bea84f2058b227bee4a010d14022180888cf92a4fd69231410d3b1840e3"
+                "a92451f397051f7621910b5e78dd10521347f0b46f772844886a97132a0c4e76"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -86,7 +91,8 @@
                 }
             ],
             "responseHashes": [
-                "c310934131541a9bf507ba48d34aa7dd4de3feb70ebd165f623fa6525cc350c9"
+                "3da59b7408d6e96587474edea9502ef2295a8e002e5f0928ad1c5674643b1dc1",
+                "8c5354c6a8fdc36ff344aa72866dc8d2b400f6b9e89c8bb8669e6544eea642f6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -114,7 +120,7 @@
                 }
             ],
             "responseHashes": [
-                "29a8b4dce1aa804233884e03103817660758238c1851062b9f56afb3dd3b2c5e"
+                "8cf37da2d36a71357da41bebb8f0931d4b16036b2e55f0390c0e185cb131afe4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -222,7 +228,9 @@
                     "resolved": "dmt.fidelity.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "bd45742c550b947b81356a794fdae0ed270d74a49399775d43249130d1a8ea08"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -275,7 +283,9 @@
                     "resolved": "dmt.fidelity.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "8694a68ec6ba7d2ceb22c024960e51727891b2e82b78f8622af0e2333d94d2e1"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -336,6 +346,33 @@
             "exampleSites": [
                 "fidelity.com",
                 "fundresearch.fidelity.com",
+                "www.fidelity.com"
+            ]
+        },
+        {
+            "rule": "fidelity\\.com\\.edgekey\\.net\\/clix",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "clix.fidelity.com",
+                    "resolved": "clix.fidelity.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fidelity.com",
                 "www.fidelity.com"
             ]
         },
@@ -403,7 +440,7 @@
     ],
     "types": {
         "Script": 11,
-        "XHR": 8,
+        "XHR": 10,
         "Font": 6,
         "Image": 3,
         "Stylesheet": 2

@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000806,
+    "prevalence": 0.000805,
     "sites": 8,
     "subdomains": [
         "cs629.wpc",
+        "cs931.wpc",
         "cs509.adn"
     ],
     "cnames": [
+        {
+            "original": "edgecast-cf-prod.yahoo.net",
+            "resolved": "cs931.wpc.lambdacdn.net"
+        },
         {
             "original": "o.aolcdn.com",
             "resolved": "cs629.wpc.lambdacdn.net"
@@ -142,8 +147,8 @@
                 "cs629.wpc"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "o.aolcdn.com",
@@ -158,6 +163,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "techcrunch.com",
+                "www.aol.com",
                 "www.autoblog.com",
                 "www.engadget.com"
             ]
@@ -170,8 +176,8 @@
                 "cs629.wpc"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "o.aolcdn.com",
@@ -186,6 +192,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "techcrunch.com",
+                "www.aol.com",
                 "www.autoblog.com",
                 "www.engadget.com"
             ]
@@ -211,6 +218,7 @@
                 }
             ],
             "responseHashes": [
+                "130a1b433e5354b90e5b401273de9d60f5518a283cefe58895f419d73820ee30",
                 "fcb71d958c7661385182a7628cb5d17c4959cca476bfc5141898a2b6845619b3"
             ],
             "type": "Image",
@@ -220,6 +228,33 @@
                 "aol.com",
                 "www.aol.com",
                 "www.engadget.com"
+            ]
+        },
+        {
+            "rule": "lambdacdn\\.net\\/timeinc\\/7\\/5\\/c1eb3cda-c025-4e22-bf79-79ca1b895081_jH-GN_clXJbC7wALxsHOr-Yw1HxylEUuZl5iMrvIElz1RjS3Ti-mr6i7NynlWZBHJm_vrVz1dM0-_14_0\\.webm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs931.wpc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "edgecast-cf-prod.yahoo.net",
+                    "resolved": "cs931.wpc.lambdacdn.net"
+                }
+            ],
+            "responseHashes": [
+                "ab3cb88cb477e5f94b5fdbebf447e6454f07294cd0c6fc46381f55ae55eed960"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.aol.com"
             ]
         },
         {
@@ -239,7 +274,7 @@
                 }
             ],
             "responseHashes": [
-                "139d62865363ef283712c0571cca223b06bef7aec4ddce0527e9dfab47b4f3d9"
+                "76b3cf1d61ce69b05d01ebc5d7478a4b84771d3b866c6c1eb77a93705ec2b4fc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -256,20 +291,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.873015873015873
+            "prevalence": 0.8433734939759037
         },
         {
             "domain": "yahoosandbox.com",
-            "prevalence": 0.09523809523809523
+            "prevalence": 0.10843373493975904
         },
         {
             "domain": "yimg.com",
-            "prevalence": 0.031746031746031744
+            "prevalence": 0.04819277108433735
         }
     ],
     "types": {
         "Font": 6,
-        "Image": 11,
+        "Image": 13,
+        "Media": 2,
         "Script": 2
     },
     "nameservers": []

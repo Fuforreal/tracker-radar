@@ -7,16 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00393,
-    "sites": 39,
+    "prevalence": 0.00403,
+    "sites": 40,
     "subdomains": [
         "marvel-b2-cdn",
         "consents-cf",
         "cookie-cdn",
+        "marvel-processor",
         "ixfd2-api",
         "cdn",
-        "marvel-processor",
-        "marvel-b4-cdn"
+        "marvel-b4-cdn",
+        "marvel-b1-cdn"
     ],
     "cnames": [
         {
@@ -34,8 +35,8 @@
                 "marvel-b2-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.appVersion": 5
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.appVersion": 6
             },
             "sites": 14,
             "prevalence": 0.00141,
@@ -65,7 +66,7 @@
         },
         {
             "rule": "bc0a\\.com\\/consentbar\\/corejs\\/becookiebar\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "consents-cf"
@@ -73,8 +74,8 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -85,9 +86,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "BE_COOKIE_UDID": {
-                    "ttl": 604800003,
+                    "ttl": 604800001,
                     "length": 36,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 }
             },
@@ -129,7 +130,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b5319ea3cf4f8fe4833eec866f9ecec7ed08b4ebd57bb07c22269bf9416edc09"
+                "d1b700c5ad599eba6ee5a89527b7cfa71ff98f6e5a6feecfa3ef6ed99fbe20c6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -137,6 +138,39 @@
             "exampleSites": [
                 "rangeusa.com",
                 "www.leupold.com"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/snowcloud\\/v1\\/api\\/loadUrl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "marvel-processor"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000805,
+            "cnames": [],
+            "responseHashes": [
+                "fdcfd3b6e44060be40fcd83ab78f87e8631a8fb249109e900580111e267550b9",
+                "6051881d94496cc51a8891f49aa579011b14b264e79c60db0b55220262af9616",
+                "1e44a828a689762295e0e816916436cbcb71483e57fab8e92dffac8ae9cdb02d",
+                "a407cc9d0d4c17d53f865ffa6392c139f94fa206a7352ca6cba08373023c031f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dy_fs_page": 0.00010063399416322834
+            },
+            "exampleSites": [
+                "rangeusa.com",
+                "www.enginebuildermag.com",
+                "www.fjallraven.com",
+                "www.hoopladigital.com",
+                "www.lifetime.com",
+                "www.pgatoursuperstore.com",
+                "www.primaryarms.com",
+                "www.rockbottomgolf.com"
             ]
         },
         {
@@ -156,7 +190,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_schn": 0.0002013895881582922
+                "_schn": 0.00020126798832645668
             },
             "exampleSites": [
                 "behr.com",
@@ -171,10 +205,10 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.appVersion": 4,
-                "Date.prototype.getTimezoneOffset": 2
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appVersion": 5,
+                "Date.prototype.getTimezoneOffset": 3
             },
             "sites": 5,
             "prevalence": 0.000503,
@@ -191,36 +225,6 @@
                 "www.gunbroker.com",
                 "www.minted.com",
                 "www.reviewjournal.com"
-            ]
-        },
-        {
-            "rule": "bc0a\\.com\\/snowcloud\\/v1\\/api\\/loadUrl",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "marvel-processor"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000604,
-            "cnames": [],
-            "responseHashes": [
-                "63bb19a4c26d7008d7ce88efec8ff187cc57da4711a077038fc7e1ec9cdf02c3",
-                "f535759c0eab3d29a2fedd28b7374c14a1860e023ec63cf04df8d24847d74f6f",
-                "b737f27080b51206002401d17e16d9fcaf9ba70ee646a216ca87900a05f05dca",
-                "cbeb978c849d34cde794e66bfa38ecc84c3a9e16ccf1f3281675f3ca24f2bf65",
-                "512742e07bd24d1e1baa5d2d74c70cc84b0c22a33242b926d9a9abd7116c1700"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "enginebuildermag.com",
-                "www.fjallraven.com",
-                "www.hoopladigital.com",
-                "www.lifetime.com",
-                "www.primaryarms.com",
-                "www.rockbottomgolf.com"
             ]
         },
         {
@@ -276,59 +280,81 @@
                 "primaryarms.com",
                 "www.primaryarms.com"
             ]
+        },
+        {
+            "rule": "bc0a\\.com\\/f00000000221167\\/www\\.rockbottomgolf\\.com\\/R0lGODlhAQABAIAAAP\\/\\/\\/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "marvel-b1-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dy_fs_page": 0.00020126798832645668
+            },
+            "exampleSites": [
+                "rockbottomgolf.com",
+                "www.rockbottomgolf.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9182058047493403
+            "prevalence": 0.7894736842105263
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.036939313984168866
+            "prevalence": 0.16475972540045766
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.0158311345646438
+            "prevalence": 0.013729977116704805
         },
         {
             "domain": "windows.net",
-            "prevalence": 0.013192612137203167
+            "prevalence": 0.011441647597254004
         },
         {
             "domain": "broadstreetads.com",
-            "prevalence": 0.002638522427440633
-        },
-        {
-            "domain": "pushcrew.com",
-            "prevalence": 0.002638522427440633
-        },
-        {
-            "domain": "cookielaw.org",
-            "prevalence": 0.002638522427440633
-        },
-        {
-            "domain": "yottaa.com",
-            "prevalence": 0.002638522427440633
-        },
-        {
-            "domain": "btstatic.com",
-            "prevalence": 0.002638522427440633
+            "prevalence": 0.004576659038901602
         },
         {
             "domain": "bigcommerce.com",
-            "prevalence": 0.002638522427440633
+            "prevalence": 0.004576659038901602
+        },
+        {
+            "domain": "pushcrew.com",
+            "prevalence": 0.002288329519450801
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.002288329519450801
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.002288329519450801
+        },
+        {
+            "domain": "btstatic.com",
+            "prevalence": 0.002288329519450801
         }
     ],
     "types": {
         "Script": 21,
         "Preflight": 2,
         "Fetch": 2,
-        "XHR": 2,
-        "Image": 10
+        "Image": 14,
+        "XHR": 2
     },
     "nameservers": [
         "pdns10.domaincontrol.com",

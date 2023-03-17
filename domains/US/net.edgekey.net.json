@@ -9,20 +9,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00232,
-    "sites": 23,
+    "prevalence": 0.00272,
+    "sites": 27,
     "subdomains": [
         "ssl2.tiles.virtualearth",
         "lib.intuitcdn",
         "static.cimcontent",
         "star.cdn.nintendo",
         "int-qbo.intuitcdn",
-        "cert1.a2.atm.aqfer"
+        "cert1.a2.atm.aqfer",
+        "api.wsj"
     ],
     "cnames": [
         {
             "original": "alps.cdn.nintendo.net",
             "resolved": "star.cdn.nintendo.net.edgekey.net"
+        },
+        {
+            "original": "api.wsj.net",
+            "resolved": "api.wsj.net.edgekey.net"
         },
         {
             "original": "aut.pendleton-usa.com",
@@ -64,7 +69,8 @@
                 }
             ],
             "responseHashes": [
-                "86a73f350a5a10a39a74cbc41462f042dadc77d2c43af1034930b17b19ecd7d6"
+                "c4d22bb0b5b0b67df1cedbdcee84ebddd842295fc52f677a5fa5b2907a472eff",
+                "7de097ea834512bd3ce963b8050a793e1418bc658d1852e38a9e1b5c6673c66b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -175,7 +181,9 @@
                     "resolved": "lib.intuitcdn.net.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "6cffe8aad4616ce8e8194202dbe082efbcdb37bac3cea64f9051fc04669196de"
+            ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -241,14 +249,14 @@
         },
         {
             "rule": "net\\.edgekey\\.net\\/libs\\/decibel\\/1\\.0\\.6\\/di\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.000302,
             "fingerprinting": 2,
             "subdomains": [
                 "lib.intuitcdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "lib.intuitcdn.net",
@@ -263,26 +271,27 @@
                 "da_sid": {
                     "ttl": 1800,
                     "length": 42,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.000301901982489685,
                     "uniqueness": 1
                 },
                 "da_lid": {
                     "ttl": 31536000,
                     "length": 40,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.000301901982489685,
                     "uniqueness": 1
                 },
                 "da_intState": {
                     "ttl": 1800,
                     "length": 11,
-                    "prevalence": 0.0001006947940791461,
-                    "uniqueness": 1
+                    "prevalence": 0.000301901982489685,
+                    "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "intuit.com",
                 "myturbotax.intuit.com",
+                "ttlc.intuit.com",
                 "turbotax.intuit.com"
             ]
         },
@@ -353,8 +362,8 @@
                 "static.cimcontent"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "static.cimcontent.net",
@@ -369,7 +378,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "xfinity.com",
-                "my.xfinity.com"
+                "my.xfinity.com",
+                "www.xfinity.com"
             ]
         },
         {
@@ -410,8 +420,8 @@
                 "static.cimcontent"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [
                 {
                     "original": "static.cimcontent.net",
@@ -427,32 +437,8 @@
             "exampleSites": [
                 "xfinity.com",
                 "login.xfinity.com",
-                "my.xfinity.com"
-            ]
-        },
-        {
-            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/news\\/ic_news_outline\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cimcontent"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.cimcontent.net",
-                    "resolved": "static.cimcontent.net.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xfinity.com",
-                "login.xfinity.com"
+                "my.xfinity.com",
+                "www.xfinity.com"
             ]
         },
         {
@@ -480,56 +466,6 @@
             "exampleSites": [
                 "xfinity.com",
                 "customer.xfinity.com",
-                "login.xfinity.com"
-            ]
-        },
-        {
-            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/privacysettings\\/ic_privacysettings_outline\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cimcontent"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.cimcontent.net",
-                    "resolved": "static.cimcontent.net.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xfinity.com",
-                "login.xfinity.com"
-            ]
-        },
-        {
-            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/ad_choices\\/ic_ad_choices_outline\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cimcontent"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.cimcontent.net",
-                    "resolved": "static.cimcontent.net.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xfinity.com",
                 "login.xfinity.com"
             ]
         },
@@ -564,31 +500,6 @@
             ]
         },
         {
-            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/privacypolicy\\/ic_privacypolicy_outline\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cimcontent"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.cimcontent.net",
-                    "resolved": "static.cimcontent.net.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xfinity.com",
-                "login.xfinity.com"
-            ]
-        },
-        {
             "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/compare_plans\\/ic_compare_plans_outline\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -604,7 +515,117 @@
                     "resolved": "static.cimcontent.net.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "49d45f5f866d942326f54add7c539def2ed3d98e57de9d26eba50b800e94ea26"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xfinity.com",
+                "login.xfinity.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/ad_choices\\/ic_ad_choices_outline\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cimcontent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.cimcontent.net",
+                    "resolved": "static.cimcontent.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6413dae993c5fadfedc2a757f7a7c143c6656cc489285effb8fc13ed560acede"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xfinity.com",
+                "login.xfinity.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/privacypolicy\\/ic_privacypolicy_outline\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cimcontent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.cimcontent.net",
+                    "resolved": "static.cimcontent.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3e4e368e25d11142aa18d1527e29207b0043f2f81a0adfeda6fa775cce9c8e1f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xfinity.com",
+                "login.xfinity.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/privacysettings\\/ic_privacysettings_outline\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cimcontent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.cimcontent.net",
+                    "resolved": "static.cimcontent.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7e6a4f53a96a1b0d5ae94ff09cc16abe2548804d97ea790c82ee0846d6324fcd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xfinity.com",
+                "login.xfinity.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/common-web-assets\\/xds_icons\\/svg\\/news\\/ic_news_outline\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cimcontent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.cimcontent.net",
+                    "resolved": "static.cimcontent.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "214d8d95711727419c62d8a9a90cbf3919d7e8d4a6539cb72593998d3d912be9"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -629,7 +650,9 @@
                     "resolved": "star.cdn.nintendo.net.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "576b6f7a56a871f2dd4ef5a7e2685cea9f428bbe3f2a466154e20d363f914c7c"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -690,6 +713,916 @@
             "exampleSites": [
                 "xfinity.com",
                 "www.xfinity.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/5197\\.5a5de377d3d8bab5058b0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "03e2e70c455f9d44d850387c3db4bea0618008e0ed7cb72e1560ee70d4916828"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/5219\\.e611959c0cd6b28fad560fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a7407849033625b27639e59d383d42c9210de20f2b5d285fddb483d887e5c953"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/6010\\.b29bf2c442f084efc00a0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1a5eecf1161b4f8118026da59b747464317b9eaf1a9744ac1cb332c4f8a8d475"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/3486\\.24e13d89356a2c5e3ac40fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3cee6c0ab73b9edba62e581cd1d79536ff4facda93090648b0ead6d423bdc6c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/3659\\.155aec5964530d4601930fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ebe92d2d3a2411733e5f119c3d84615a877be46f8d73c53652ebeae833366278"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2248\\.5787c5ceb8f369bb7c7a0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c2075847c06cdef9061f1f50a770f8b5bb014629b8691ab2434579396e354ed9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/3917\\.a534f5c3fb38df63897e0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6571c590163b9320651904cf98d060e443db871c9a7455faeaf186b552ad13a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/5815\\.f7be7bfc806f8981263b0fce0240\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e9b7eb911a8c9cf848f8d2ab8998badfa8b6ba6cdcc3f84e64e379c66bc9e31d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "qbn.loginWorkflowTraceId": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "qbn.iux_known_auto": {
+                    "ttl": -86398,
+                    "length": 4,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "ius_session": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/327\\.0d801d04264d52f16bdc0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ddc5ab920b4e70365e013cfc2a5c4dfb9d357fee9eb689673dfcc47d7ca5e9ee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/8620\\.782e2d1cfdc309439d5e0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ca0e7d11ddb35cb6d350d6ef8387dd4514d8f197eefc32a77cb422846ae1f8c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/3590\\.adbf6f2105d5ab883a4b0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2ff95515055839e8f533b3392682c1749ed8884d0dfb8b9b7db41377efc5b079"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/336\\.6c35e4e26955124a2a330fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5bec84ee3f640596ead34b54bf9ce051d505eced3ea4fff87244c007a9081619"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2005\\.c7fb5bb87301820a37940fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bf6000325bfa2bd852d645e015d4f3f19d5efa37142f18ca577934c4e5f9fd1a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2482\\.072aed4dac8f75b9c17a0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "58d5991cf1d3254c38cccd6e50e69e5d4bb550a97bb277d342d71d35ee71701a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/6516\\.cd8227479c759ca9b1b10fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a2dea5c1dcf0cc77a04265fd1912dc9ee94e38b9c81fedc4902931bd4817449a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2816\\.51a377c5be399edd3e420fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "580c5d579a92a9e9fc40dc09522495a02e10e45843c8d8ee7b1dc034b9a6574b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/3183\\.b6896d3c5fc9f41a53eb0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6613004fc80e3d70acb585f756e6f98470764c6b45bece8f258803a60c1f8e42"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/8489\\.3d9f1a1222ca114280ae0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "40457b0acea4d872aaffb20a41bef517556343c5726ed8324bc1342a0d0a7b44"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/1058\\.e3fc6bf0c75babc2dd830fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "46c81359a137f6287b5c5d87a001f3c3f2d8f4c13acad5509abcfc1a4844d6b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2465\\.dc962dc436881abf63490fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "297348c148f75437011435c26312d5f3c1ed639eb1b174951add9dee1b7c6df1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2243\\.0e8aef37375f58baf0ff0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2f57f07a8f6ae532942e04ee4281b6350a0d2e351ec54ddba44139050a190778"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/1667\\.528206f9a7f4e75a42790fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8c5716046b36239e93054c7d0ad1118cf66dabeb2acb40d6a6094b08d13b503b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/6232\\.cffff37dee1b2bce698f0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1776f6e3ed6c5db66cb4531c7e5b6f13dc36d2626166e4f3cd3ac268e0b883a4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/6397\\.c4a092cb2a62223224b30fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "946b3ec39b71dfac4ae4d1d0b690e2d5880e695643f0d4ca0b250cd594cb475c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/7712\\.e5f48f1a153408f079330fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "cb55d8536240ca6145c3a85915d3f5082c0f4faae69069961809c30a0c87b571"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/8433\\.797450dbd86402c5dd970fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "39761452ab07bbcc2c0701d1f6869a082788d21a90280f1b0abfd1c3bbcf9143"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/8682\\.6edb00aee91128238ba60fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "88aade578904fb592fbe3f06cfa3deb1a8671951ffc570b43d469e1eb47d08be"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2320\\.2ce84f08e178639a66a40fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4a2e7d68b34001f64eaf6f751389a0b3c12553f21ad57cf4556cf70c2c91baad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/2238\\.15637355e500e4ab472c0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "85acdb3073c1458ee2a2431290306f59f987410dbd8cf6dde20968905ab66734"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/7067\\.5b73b1d884e705fa9cfc0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b8ad5c67112d1a9187e452809c29008ffa21b58bc0909646743c26bfcb270018"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/4895\\.dfaeacb6f9f502b27dc00fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "0bd70ff2aac11daff066c06ba5ace5c66a9c6f60df65a198692cb4a34de8ac29"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/1083\\.74a275f05ba8a17f61d40fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "555e2d7233bf4fd96859e538ecac35dbf35958faafa98418c7e93cc7ca2dd8a7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/9685\\.39b045b931c49ebcb06f0fce0240\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "384c029a28bb251645c1759873c5cbb4a96c2c244967d79fdc2daccbfb2e3596"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
             ]
         },
         {
@@ -938,7 +1871,7 @@
         {
             "rule": "net\\.edgekey\\.net\\/web-shell\\/3\\.344\\.0\\/web-shell-runtime-configs\\.edc8ad39273c4fbc4da2\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "int-qbo.intuitcdn"
             ],
@@ -1045,8 +1978,8 @@
         },
         {
             "rule": "net\\.edgekey\\.net\\/web-shell\\/3\\.344\\.0\\/tracking-core\\.8037bff3158b8b0412a5\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.000101,
+            "fingerprinting": 2,
             "subdomains": [
                 "int-qbo.intuitcdn"
             ],
@@ -1063,7 +1996,20 @@
                 "3fdff47650287739cd20f4d70d95e9b8fbdcb77d62839d20c854448ae87bb11b"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "provisional_ivid": {
+                    "ttl": 157680002,
+                    "length": 36,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "pageProperties": {
+                    "ttl": null,
+                    "length": 82,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "intuit.com",
@@ -1152,6 +2098,384 @@
             ]
         },
         {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/react-080bcc96\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9ab5032b5da854d576d84fa9f6a43f7e9b8f3ceb4629dbd3f8d80430080d7298"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/react-dom-610cedb4\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6c4522bc3ca61d17031c9d43917cf57db37aee113ce1aa9d29e81e88ab820fd0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/simple-sign-in-cf9459d0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6b31f1503bc1f413bae894863ced27f6478d555e7b22e45f54acb32ba7ea8bf8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/5197-96d5241d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "12b0d13ed51738adafd2f847dae041ff37c3f7289cfafabc651d39975838373b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/9905-412eb7f1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b0c32e5813513833fc91417dfc010db01c0001ac8a8fce3fc8793790a24a5c5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/3935-1a092e39\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "dafb7fae0b7884aab69566eb047d301cd24c711bbb39ce2fea5041e12ca97805"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/3573-6400afc4\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b0582e45d3190dc642f3b7a02efbcdb6dad7f7696fca527c1a644c6f1cdae8b8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/3487-59b1b2ca\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a9855fa4fc876a9cc3435cc0faeda95299946c06c4e82ab3aa426b68bc0e3dbc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/867-6303b5ed\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "de3cb08238884645d168edeb4a401a6be8f0caba504cc7fd4cc6a72503f27a82"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/1297-34800e78\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "636d3356d253b006ca5951ca45a627289d09c9f6ed72c12aec905925c59260cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/6837-5ecdd837\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "adbb99d5982c66d6c5648bbb1573e8d4044e16dfe03a4ebf5a60b8cbf7827f15"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/5034-0cfbe799\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f2bc3197ea4fbebb498addf1c7f638558064b6439fbf166487bba57138cfcd4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/6629-552aeaff\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3f328f02eec0d84082834739e7bd9ad379072b1db00b5ed652daec9976ee715d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/identity-authn-core-ui\\/scripts\\/4054-096e8529\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "int-qbo.intuitcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "plugin.intuitcdn.net",
+                    "resolved": "int-qbo.intuitcdn.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ad9151a01c1fe56b996c71389ba7028900a2d4e38d6c3a2315d80d4f3802b5c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "turbotax.intuit.com"
+            ]
+        },
+        {
             "rule": "net\\.edgekey\\.net\\/d\\/a\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1177,46 +2501,77 @@
                 "pendleton-usa.com",
                 "www.pendleton-usa.com"
             ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/api\\/dylan\\/quotes\\/v2\\/comp\\/quoteByDialect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.wsj"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.wsj.net",
+                    "resolved": "api.wsj.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c7b1930e7c93dd35a5c1fe86abb6e419429b8cef92b7ef2dd03ef48acae624ad"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "www.wsj.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000604,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9291338582677166
+            "prevalence": 0.6966292134831461
+        },
+        {
+            "domain": "quickbooks.com",
+            "prevalence": 0.25617977528089886
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.023622047244094488
+            "prevalence": 0.015730337078651686
         },
         {
             "domain": "comcast.com",
-            "prevalence": 0.01968503937007874
+            "prevalence": 0.015730337078651686
         },
         {
             "domain": "msn.com",
-            "prevalence": 0.011811023622047244
+            "prevalence": 0.006741573033707865
         },
         {
             "domain": "securiti.ai",
-            "prevalence": 0.007874015748031496
+            "prevalence": 0.0044943820224719105
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.003937007874015748
+            "prevalence": 0.0022471910112359553
         },
         {
             "domain": "stmllc.wpenginepowered.com",
-            "prevalence": 0.003937007874015748
+            "prevalence": 0.0022471910112359553
         }
     ],
     "types": {
         "XHR": 3,
-        "Font": 35,
-        "Script": 44,
-        "Fetch": 13,
+        "Font": 37,
+        "Script": 139,
+        "Fetch": 15,
         "Stylesheet": 4,
         "Image": 2
     },

@@ -7,15 +7,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000906,
-    "sites": 9,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "us.tags",
         "hc.tags",
         "au.tags",
-        "v2.pixel"
+        "v2.pixel",
+        "au.pixel"
     ],
     "cnames": [
+        {
+            "original": "ncg.tags.news.com.au",
+            "resolved": "au.tags.newscgp.com"
+        },
         {
             "original": "tags.barrons.com",
             "resolved": "us.tags.newscgp.com"
@@ -29,15 +34,15 @@
             "resolved": "us.tags.newscgp.com"
         },
         {
-            "original": "tags.mansionglobal.com",
-            "resolved": "us.tags.newscgp.com"
-        },
-        {
-            "original": "tags.marketwatch.com",
+            "original": "tags.realtor.com",
             "resolved": "us.tags.newscgp.com"
         },
         {
             "original": "tags.thetimes.co.uk",
+            "resolved": "us.tags.newscgp.com"
+        },
+        {
+            "original": "tags.wsj.com",
             "resolved": "us.tags.newscgp.com"
         }
     ],
@@ -45,7 +50,7 @@
     "resources": [
         {
             "rule": "newscgp\\.com\\/prod\\/ncg\\/ncg\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000805,
             "fingerprinting": 2,
             "subdomains": [
                 "us.tags",
@@ -53,25 +58,27 @@
                 "au.tags"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
+                "window.localStorage": 8,
+                "Document.cookie getter": 8,
+                "window.sessionStorage": 8,
+                "Document.cookie setter": 8,
+                "Date.prototype.getTime": 8,
+                "Navigator.prototype.language": 7,
+                "Navigator.prototype.doNotTrack": 7,
+                "Navigator.prototype.cookieEnabled": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "Screen.prototype.colorDepth": 7,
+                "Date.prototype.getTimezoneOffset": 7,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 6,
+                "Navigator.prototype.userAgent": 7,
+                "window.innerWidth": 8,
+                "window.innerHeight": 8,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.javaEnabled": 1
             },
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "cce4ed0f75fe50cb7431c44d94643bdeb12fcf7b8c04af83d76f24fc875a704c",
@@ -80,39 +87,111 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_ncg_domain_id_": {
-                    "ttl": 1741798685,
+                    "ttl": 1741964649,
                     "length": 60,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00060380396497937,
                     "uniqueness": 1
                 },
-                "_ncg_sp_ses.e48a": {
-                    "ttl": 1822,
+                "_ncg_sp_ses.f6a2": {
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
-                "_ncg_sp_id.e48a": {
-                    "ttl": 63072022,
+                "_ncg_sp_id.f6a2": {
+                    "ttl": 63072003,
                     "length": 108,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_ncg_id_": {
-                    "ttl": 63072019,
+                    "ttl": 63072006,
                     "length": 36,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00060380396497937,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_id.0bcc": {
+                    "ttl": 63072014,
+                    "length": 108,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_ses.0bcc": {
+                    "ttl": 1814,
+                    "length": 1,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_ses.2a92": {
+                    "ttl": 1810,
+                    "length": 1,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_id.2a92": {
+                    "ttl": 63072010,
+                    "length": 108,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_ses.cc72": {
+                    "ttl": 1821,
+                    "length": 1,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_id.cc72": {
+                    "ttl": 63072021,
+                    "length": 108,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_ses.0ca1": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_id.0ca1": {
+                    "ttl": 63072006,
+                    "length": 108,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_ses.6312": {
+                    "ttl": 1807,
+                    "length": 1,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_id.6312": {
+                    "ttl": 63072007,
+                    "length": 108,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_ncg_sp_ses.ff8a": {
-                    "ttl": 1807,
+                    "ttl": 1809,
                     "length": 1,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "_ncg_sp_id.ff8a": {
-                    "ttl": 63072007,
+                    "ttl": 63072009,
                     "length": 108,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_ses.5378": {
+                    "ttl": 1813,
+                    "length": 1,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "_ncg_sp_id.5378": {
+                    "ttl": 63072013,
+                    "length": 108,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 }
             },
@@ -121,51 +200,25 @@
                 "barrons.com",
                 "www.biblegateway.com",
                 "www.investors.com",
+                "www.marketwatch.com",
                 "www.news.com.au",
-                "www.thetimes.co.uk"
-            ]
-        },
-        {
-            "rule": "newscgp\\.com\\/prod\\/ncg\\/cookie\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us.tags"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "tags.mansionglobal.com",
-                    "resolved": "us.tags.newscgp.com"
-                },
-                {
-                    "original": "tags.marketwatch.com",
-                    "resolved": "us.tags.newscgp.com"
-                }
-            ],
-            "responseHashes": [
-                "be33c364e784f14ebca2c4a7caba16a3b32046c6f0dedc1f1caf0d05d280a9c4"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "barrons.com",
-                "www.barrons.com"
+                "www.realtor.com",
+                "www.the-sun.com",
+                "www.thesun.co.uk",
+                "www.thetimes.co.uk",
+                "www.wsj.com"
             ]
         },
         {
             "rule": "newscgp\\.com\\/i",
-            "cookies": 0.000503,
+            "cookies": 0.000805,
             "fingerprinting": 0,
             "subdomains": [
                 "v2.pixel"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 8,
+            "prevalence": 0.000805,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -173,32 +226,34 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ncg_id_": 0.0003020843822374383
+                "_ncg_id_": 0.0007044379591425984,
+                "_li_dcdm_c": 0.00020126798832645668,
+                "_dor": 0.00020126798832645668,
+                "_schn": 0.00010063399416322834
             },
             "exampleSites": [
-                "barrons.com",
-                "www.barrons.com",
+                "biblegateway.com",
                 "www.biblegateway.com",
                 "www.investors.com",
-                "www.thetimes.co.uk"
+                "www.realtor.com",
+                "www.the-sun.com",
+                "www.thesun.co.uk",
+                "www.thetimes.co.uk",
+                "www.wsj.com"
             ]
         },
         {
             "rule": "newscgp\\.com\\/cs\\/sync\\/i",
-            "cookies": 0.000503,
+            "cookies": 0.000805,
             "fingerprinting": 0,
             "subdomains": [
-                "us.tags",
-                "hc.tags"
+                "hc.tags",
+                "us.tags"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 8,
+            "prevalence": 0.000805,
             "cnames": [
-                {
-                    "original": "tags.barrons.com",
-                    "resolved": "us.tags.newscgp.com"
-                },
                 {
                     "original": "tags.biblegateway.com",
                     "resolved": "hc.tags.newscgp.com"
@@ -208,7 +263,15 @@
                     "resolved": "us.tags.newscgp.com"
                 },
                 {
+                    "original": "tags.realtor.com",
+                    "resolved": "us.tags.newscgp.com"
+                },
+                {
                     "original": "tags.thetimes.co.uk",
+                    "resolved": "us.tags.newscgp.com"
+                },
+                {
+                    "original": "tags.wsj.com",
                     "resolved": "us.tags.newscgp.com"
                 }
             ],
@@ -219,11 +282,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "barrons.com",
-                "www.barrons.com",
+                "biblegateway.com",
                 "www.biblegateway.com",
                 "www.investors.com",
-                "www.thetimes.co.uk"
+                "www.realtor.com",
+                "www.the-sun.com",
+                "www.thesun.co.uk",
+                "www.thetimes.co.uk",
+                "www.wsj.com"
             ]
         },
         {
@@ -231,15 +297,16 @@
             "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
-                "us.tags"
+                "us.tags",
+                "hc.tags"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 8,
+            "prevalence": 0.000805,
             "cnames": [
                 {
-                    "original": "tags.barrons.com",
-                    "resolved": "us.tags.newscgp.com"
+                    "original": "tags.biblegateway.com",
+                    "resolved": "hc.tags.newscgp.com"
                 }
             ],
             "responseHashes": [
@@ -247,46 +314,105 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.00020126798832645668,
+                "_schn": 0.00010063399416322834
+            },
+            "exampleSites": [
+                "biblegateway.com",
+                "www.biblegateway.com",
+                "www.investors.com",
+                "www.realtor.com",
+                "www.the-sun.com",
+                "www.thesun.co.uk",
+                "www.thetimes.co.uk",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "newscgp\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "au.pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "barrons.com",
-                "www.barrons.com",
-                "www.biblegateway.com",
-                "www.thetimes.co.uk"
+                "news.com.au",
+                "www.news.com.au"
+            ]
+        },
+        {
+            "rule": "newscgp\\.com\\/prod\\/ncg\\/cookie\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "au.tags",
+                "us.tags"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ncg.tags.news.com.au",
+                    "resolved": "au.tags.newscgp.com"
+                },
+                {
+                    "original": "tags.barrons.com",
+                    "resolved": "us.tags.newscgp.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "news.com.au",
+                "www.wsj.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000805,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.64
+            "prevalence": 0.631578947368421
         },
         {
             "domain": "newscgp.com",
-            "prevalence": 0.28
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.04
+            "prevalence": 0.2631578947368421
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.04
+            "prevalence": 0.07894736842105263
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.02631578947368421
         }
     ],
     "types": {
-        "Script": 5,
-        "Document": 2,
-        "XHR": 5,
-        "Image": 9
+        "Script": 10,
+        "XHR": 10,
+        "Image": 16,
+        "Document": 2
     },
     "nameservers": [
-        "ns-1297.awsdns-34.org",
         "ns-26.awsdns-03.com",
         "ns-757.awsdns-30.net",
+        "ns-1297.awsdns-34.org",
         "ns-2035.awsdns-62.co.uk"
     ]
 }

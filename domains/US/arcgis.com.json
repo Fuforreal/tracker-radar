@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000604,
-    "sites": 6,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "usdaars.maps",
         "www",
-        "basemaps",
-        "js"
+        "js",
+        "basemaps"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -23,14 +23,15 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "usdaars.maps"
+                "usdaars.maps",
+                "www"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c0981c62e0e0406538dfff278c1259a250bb15ab237c421c25c57a07fba5eef0"
+                "849c5fa6d053f46180aee7bbc964167f9b6df80ce064887abe7aa8610b624b79"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -53,9 +54,75 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "49356faa70bdd38a0f83ef85742010d311c2da0a31cdb35abeb49735a7048fde"
+                "ef3292b55a03df2058af7dd850cac51b68fa256693ebd98c49a19a0dee53dc76"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usda.gov",
+                "planthardiness.ars.usda.gov"
+            ]
+        },
+        {
+            "rule": "arcgis\\.com\\/3\\.43\\/esri\\/layers\\/vectorTiles\\/core\\/workers\\/worker-init\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7838555770d55f28c1e8e1ee10caf3084cbf3cba5497564a6ca8ec5c3f56d1ee"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usda.gov",
+                "planthardiness.ars.usda.gov"
+            ]
+        },
+        {
+            "rule": "arcgis\\.com\\/3\\.43\\/esri\\/config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cfc7942277938f4efaffa6eb524655b90413dfe08f2ee919dfe5c5cd6adb8859"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usda.gov",
+                "planthardiness.ars.usda.gov"
+            ]
+        },
+        {
+            "rule": "arcgis\\.com\\/3\\.43\\/esri\\/layers\\/vectorTiles\\/core\\/workers\\/nls\\/worker-init_en-us\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7da9656e9995aafc482784e6425d54c51143894c64bb9aff42a6688235a6d56a"
+            ],
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -86,28 +153,6 @@
             ]
         },
         {
-            "rule": "arcgis\\.com\\/arcgis\\/rest\\/services\\/World_Basemap_v2\\/VectorTileServer",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "basemaps"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ba6a33930cfb810a0b98d974f6461c3a0324cb04a5e576bd4cb1e97542b90d3c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "congress.gov",
-                "www.txdot.gov"
-            ]
-        },
-        {
             "rule": "arcgis\\.com\\/4\\.14\\/dojo\\/dojo-lite\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -127,6 +172,28 @@
             "exampleSites": [
                 "congress.gov",
                 "www.congress.gov"
+            ]
+        },
+        {
+            "rule": "arcgis\\.com\\/arcgis\\/rest\\/services\\/World_Basemap_v2\\/VectorTileServer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "basemaps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ba6a33930cfb810a0b98d974f6461c3a0324cb04a5e576bd4cb1e97542b90d3c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "congress.gov",
+                "www.txdot.gov"
             ]
         },
         {
@@ -167,8 +234,8 @@
     ],
     "types": {
         "XHR": 4,
-        "Fetch": 4,
-        "Other": 4
+        "Other": 10,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-423.awsdns-52.com",

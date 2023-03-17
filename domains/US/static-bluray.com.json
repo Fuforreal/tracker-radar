@@ -7,22 +7,20 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "ssl"
+        "ssl",
+        "images"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "static-bluray\\.com\\/bluray\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "ssl"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -30,6 +28,72 @@
                 "82e3c9b3635581816dda6cd45d3e5f3f4038319374110a0029db89e176296677"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blu-ray.com",
+                "www.blu-ray.com"
+            ]
+        },
+        {
+            "rule": "static-bluray\\.com\\/movies\\/covers\\/334475_medium\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b21c62afb0b9657ab6f8fdda14548095ccc72b44db172eacfe4b0014b97a904b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blu-ray.com",
+                "www.blu-ray.com"
+            ]
+        },
+        {
+            "rule": "static-bluray\\.com\\/movies\\/covers\\/334620_medium\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "799e3ff05ce3231b7131fc34f1492e55dbe36cd24806b7ebdc41ca7c6661010a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blu-ray.com",
+                "www.blu-ray.com"
+            ]
+        },
+        {
+            "rule": "static-bluray\\.com\\/movies\\/covers\\/334666_medium\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1cc0c613d4a438e6689b82c66d18ad10125a33cd85cb4273b6c215d6dadb4209"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -44,11 +108,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7597402597402597
+        },
+        {
+            "domain": "d25lqe4mlyaln6.cloudfront.net",
+            "prevalence": 0.24025974025974026
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Image": 6
     },
     "nameservers": [
         "cloe.ns.cloudflare.com",

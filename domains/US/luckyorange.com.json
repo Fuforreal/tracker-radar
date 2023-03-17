@@ -12,6 +12,7 @@
     "subdomains": [
         "tools",
         "realtime",
+        "api-preview",
         "settings"
     ],
     "cnames": [],
@@ -25,8 +26,8 @@
                 "tools"
             ],
             "apis": {
-                "window.localStorage": 14,
-                "Document.cookie getter": 13,
+                "window.localStorage": 12,
+                "Document.cookie getter": 12,
                 "Date.prototype.getTime": 4
             },
             "sites": 15,
@@ -65,17 +66,17 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.doNotTrack": 3,
                 "Date.prototype.getTime": 4,
                 "Document.cookie getter": 4,
                 "Document.cookie setter": 4,
-                "Navigator.prototype.language": 2,
+                "Navigator.prototype.language": 3,
                 "window.innerWidth": 4,
                 "window.innerHeight": 4,
                 "window.sessionStorage": 4,
-                "window.localStorage": 4,
-                "URL.createObjectURL": 4
+                "window.localStorage": 3,
+                "URL.createObjectURL": 3
             },
             "sites": 4,
             "prevalence": 0.000403,
@@ -84,7 +85,20 @@
                 "9558ebf11e706a8a7866f500f390dd49cf3f42949cf581bfae441b3ff0bdd302"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "lo-uid": {
+                    "ttl": 63158413,
+                    "length": 39,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                },
+                "lo-visits": {
+                    "ttl": 63158413,
+                    "length": 1,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "denniskirk.com",
@@ -123,8 +137,8 @@
                 "tools"
             ],
             "apis": {
-                "window.localStorage": 3,
-                "Navigator.prototype.userAgent": 3
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 4
             },
             "sites": 4,
             "prevalence": 0.000403,
@@ -136,7 +150,55 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "denniskirk.com",
+                "eaa.org",
+                "www.eaa.org",
+                "www.northerntool.com",
+                "www.trex-arms.com"
+            ]
+        },
+        {
+            "rule": "luckyorange\\.com\\/public-auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-preview"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "486421d9273523e91b0a744b8cf69f3df96bafc31011584023421b8b2b9e578b",
+                "6fdcdcda5444d0ecf27a28b286d9c87356f79e490171e1418c43ffda15f8f89a",
+                "fd28f4359c9c1d1e4d2b9e04d86756f1af68b1dc8b66ada081c5fc1a8961ae0c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eaa.org",
+                "www.eaa.org",
+                "www.northerntool.com",
+                "www.trex-arms.com"
+            ]
+        },
+        {
+            "rule": "luckyorange\\.com\\/public-auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-preview"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eaa.org",
                 "www.eaa.org",
                 "www.northerntool.com",
                 "www.trex-arms.com"
@@ -154,7 +216,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "dd2cb9a22223e758e9e97ac6453ef25d215c4ae4a245e08610fb77f09694585f"
+                "8cc277f1931190050509c82faf718dc46ae952d80b486a9db45042f1e461cff5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -191,29 +253,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5555555555555556
+            "prevalence": 0.5862068965517241
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.3103448275862069
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.07407407407407407
+            "prevalence": 0.06896551724137931
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.037037037037037035
+            "prevalence": 0.034482758620689655
         }
     ],
     "types": {
         "Script": 23,
         "WebSocket": 4,
-        "Fetch": 2,
-        "Preflight": 2
+        "Fetch": 6,
+        "Preflight": 6
     },
     "nameservers": [
-        "olga.ns.cloudflare.com",
-        "sam.ns.cloudflare.com"
+        "sam.ns.cloudflare.com",
+        "olga.ns.cloudflare.com"
     ]
 }

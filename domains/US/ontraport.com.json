@@ -14,12 +14,16 @@
     "resources": [
         {
             "rule": "ontraport\\.com\\/tracking\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
                 "optassets"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -27,7 +31,20 @@
                 "631b53cee14f8501d01fe646031ad98faaf9e5e0b3581109ab05bfe74864acc0"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "sess_": {
+                    "ttl": 468490274,
+                    "length": 20,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 1
+                },
+                "lastvisit": {
+                    "ttl": 468490274,
+                    "length": 10,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "foodrevolution.org",
@@ -37,7 +54,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",

@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "ads",
         "tracking"
@@ -46,15 +46,11 @@
         {
             "rule": "jetpackdigital\\.com\\/lib\\/gzip\\/jquery-1\\.7\\.2\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "ads"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -84,6 +80,7 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.vendor": 2,
                 "Navigator.prototype.connection": 2,
@@ -312,7 +309,11 @@
     "topInitiators": [
         {
             "domain": "webcontentassessor.com",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "adlightning.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
@@ -321,9 +322,9 @@
         "XHR": 2
     },
     "nameservers": [
-        "ns-1472.awsdns-56.org",
         "ns-11.awsdns-01.com",
+        "ns-669.awsdns-19.net",
         "ns-1881.awsdns-43.co.uk",
-        "ns-669.awsdns-19.net"
+        "ns-1472.awsdns-56.org"
     ]
 }

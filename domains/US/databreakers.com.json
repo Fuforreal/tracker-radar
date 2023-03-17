@@ -7,18 +7,39 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "api",
+        "us-individualizer",
         "us-api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "databreakers\\.com\\/v1\\/individualizer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-individualizer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f82c38403dc321f6a46b7e6b6a9e8a8ed739488db98e83050506f74d286755d4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.com",
+                "www.groupon.com"
+            ]
+        },
         {
             "rule": "databreakers\\.com\\/v1\\/groupon_us\\/dataPoint",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api",
                 "us-api"
             ],
             "apis": {},
@@ -47,7 +68,7 @@
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 4
     },
     "nameservers": [
         "ns2.ignum.cz",

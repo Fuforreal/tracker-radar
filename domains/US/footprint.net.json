@@ -7,12 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00161,
-    "sites": 16,
+    "prevalence": 0.00171,
+    "sites": 17,
     "subdomains": [
+        "fonts.ea.com.c",
         "sslpxc.futurecdn.net.c"
     ],
     "cnames": [
+        {
+            "original": "fonts.ea.com",
+            "resolved": "fonts.ea.com.c.footprint.net"
+        },
         {
             "original": "vanilla.futurecdn.net",
             "resolved": "sslpxc.futurecdn.net.c.footprint.net"
@@ -21,57 +26,59 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "footprint\\.net\\/space\\/643699\\/media\\/shared\\/fonts\\/OpenSans-400-Regular\\.woff2",
+            "rule": "footprint\\.net\\/ipn3tud\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "sslpxc.futurecdn.net.c"
+                "fonts.ea.com.c"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "vanilla.futurecdn.net",
-                    "resolved": "sslpxc.futurecdn.net.c.footprint.net"
+                    "original": "fonts.ea.com",
+                    "resolved": "fonts.ea.com.c.footprint.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Font",
+            "responseHashes": [
+                "0a1f0837de6175eb5c04d61f4d34967f6acf9ce0da1f12f77c9a603780f78487"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "space.com",
-                "www.space.com"
+                "ea.com",
+                "help.ea.com"
             ]
         },
         {
-            "rule": "footprint\\.net\\/space\\/643699\\/media\\/shared\\/fonts\\/OpenSans-700-Bold\\.woff2",
+            "rule": "footprint\\.net\\/k\\/c\\/ipn3tud-l\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sslpxc.futurecdn.net.c"
+                "fonts.ea.com.c"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "vanilla.futurecdn.net",
-                    "resolved": "sslpxc.futurecdn.net.c.footprint.net"
+                    "original": "fonts.ea.com",
+                    "resolved": "fonts.ea.com.c.footprint.net"
                 }
             ],
             "responseHashes": [],
-            "type": "Font",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "space.com",
-                "www.space.com"
+                "ea.com",
+                "help.ea.com"
             ]
         },
         {
-            "rule": "footprint\\.net\\/space\\/643699\\/media\\/shared\\/fonts\\/OpenSans-600-SemiBold\\.woff2",
+            "rule": "footprint\\.net\\/creativebloq\\/646036\\/media\\/shared\\/fonts\\/OpenSans-600-SemiBold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -91,12 +98,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "space.com",
-                "www.space.com"
+                "creativebloq.com",
+                "www.creativebloq.com"
             ]
         },
         {
-            "rule": "footprint\\.net\\/space\\/643699\\/media\\/shared\\/fonts\\/OpenSans-300-Light\\.woff2",
+            "rule": "footprint\\.net\\/creativebloq\\/646036\\/media\\/shared\\/fonts\\/OpenSans-400-Regular\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -116,8 +123,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "space.com",
-                "www.space.com"
+                "creativebloq.com",
+                "www.creativebloq.com"
+            ]
+        },
+        {
+            "rule": "footprint\\.net\\/creativebloq\\/646036\\/media\\/shared\\/fonts\\/OpenSans-700-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sslpxc.futurecdn.net.c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "vanilla.futurecdn.net",
+                    "resolved": "sslpxc.futurecdn.net.c.footprint.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "creativebloq.com",
+                "www.creativebloq.com"
             ]
         }
     ],
@@ -127,11 +159,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9681528662420382
+        },
+        {
+            "domain": "d4el4parm0zb3.cloudfront.net",
+            "prevalence": 0.03184713375796178
         }
     ],
     "types": {
-        "Font": 8
+        "Script": 2,
+        "Stylesheet": 2,
+        "Font": 6
     },
     "nameservers": []
 }

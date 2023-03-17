@@ -9,34 +9,35 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "ee.channels.ocs",
         "sc40562060us3.cobrowse",
         "msoprodconfigsc73578190us1.cobrowse",
         "sc79643106llms1.cobrowse",
+        "sc67825794llms2.cobrowse",
         "public.cobrowse",
         "experiments-prod-us.occa.ocs",
         "visit-prod-us.occa.ocs",
         "recs.occa.us-phoenix-1.ocs"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "oraclecloud\\.com\\/js\\/eesvcs\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "ee.channels.ocs"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.appName": 1,
-                "Navigator.prototype.appVersion": 1
+                "Navigator.prototype.appVersion": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -49,44 +50,22 @@
                 "xdVisitorId": {
                     "ttl": null,
                     "length": 51,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "atgRecVisitorId": {
-                    "ttl": 467189530,
+                    "ttl": 467017997,
                     "length": 51,
-                    "prevalence": 0.0002013895881582922,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "atgRecSessionId": {
                     "ttl": null,
-                    "length": 75,
-                    "prevalence": 0.0002013895881582922,
+                    "length": 76,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "samsclub.com",
-                "www.keurig.com"
-            ]
-        },
-        {
-            "rule": "oraclecloud\\.com\\/js\\/inlayLoader\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ee.channels.ocs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "f3cea93e3b5b8faffb54cd5dd256cb034a39d8652c4050fc85fd62a345d38449"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "samsclub.com",
@@ -100,14 +79,17 @@
             "subdomains": [
                 "sc40562060us3.cobrowse",
                 "msoprodconfigsc73578190us1.cobrowse",
-                "sc79643106llms1.cobrowse"
+                "sc79643106llms1.cobrowse",
+                "sc67825794llms2.cobrowse"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "0812adc0c5937023d8ee0e069bbfd3d98daafc7c5d4709f19198f8a577e80ebe"
+                "0812adc0c5937023d8ee0e069bbfd3d98daafc7c5d4709f19198f8a577e80ebe",
+                "2adab73481d53be7ffa118c922d10851d7d9a501068a129ab4272872954389b1",
+                "8001d3639f089957da4735a3f254977f273f7e218cd38efd5ecffffcaf232306"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -115,7 +97,35 @@
             "exampleSites": [
                 "key.com",
                 "login.morganstanleyclientserv.com",
-                "www.academy.com"
+                "www.academy.com",
+                "www.samsclub.com"
+            ]
+        },
+        {
+            "rule": "oraclecloud\\.com\\/rely\\/global_launcher\\.es6\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "public.cobrowse"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "48a0b18bcf640494bfd1096757f91a4297184c4207d924e7343a298bc10a8e16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "key.com",
+                "www.samsclub.com"
             ]
         },
         {
@@ -126,19 +136,51 @@
                 "public.cobrowse"
             ],
             "apis": {
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "d4637eb830c4e16d44715277642270f0088ff631f1f338dbf377403b87d13f6d"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "key.com",
-                "login.morganstanleyclientserv.com"
+                "login.morganstanleyclientserv.com",
+                "www.academy.com",
+                "www.samsclub.com"
+            ]
+        },
+        {
+            "rule": "oraclecloud\\.com\\/rely\\/global_launcher\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "public.cobrowse"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8ca4e52383c80722fe7a35ec20d4c6705aec49ef14e7c607ae161633f4de7219"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morganstanleyclientserv.com",
+                "www.academy.com"
             ]
         },
         {
@@ -162,9 +204,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "atgRecVisitorId": {
-                    "ttl": 467185891,
+                    "ttl": 467017113,
                     "length": 51,
-                    "prevalence": 0.0003020843822374383,
+                    "prevalence": 0.000301901982489685,
                     "uniqueness": 1
                 }
             },
@@ -218,51 +260,51 @@
             "type": "Script",
             "firstPartyCookies": {
                 "xva1500499c1PRD_siteUS": {
-                    "ttl": 1635,
-                    "length": 41,
-                    "prevalence": 0.0001006947940791461,
+                    "ttl": 1638,
+                    "length": 40,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "xda1500499c1PRD_siteUS": {
-                    "ttl": 467209454,
+                    "ttl": 467040375,
                     "length": 107,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "xva1500499c1PRD_200002": {
-                    "ttl": 1632,
-                    "length": 40,
-                    "prevalence": 0.0001006947940791461,
+                    "ttl": 1633,
+                    "length": 42,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "xda1500499c1PRD_200002": {
-                    "ttl": 467203891,
+                    "ttl": 467035113,
                     "length": 107,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "xda1550007c1PRD_boss_en_us": {
-                    "ttl": 467203182,
+                    "ttl": 467034434,
                     "length": 107,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "xva1550007c1PRD_boss_en_us": {
-                    "ttl": 1634,
-                    "length": 38,
-                    "prevalence": 0.0001006947940791461,
+                    "ttl": 1633,
+                    "length": 41,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "xdp1383788c1PRD_siteUS": {
-                    "ttl": 467205438,
+                    "ttl": 467036605,
                     "length": 107,
-                    "prevalence": 0.0001006947940791461,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 },
                 "xvp1383788c1PRD_siteUS": {
-                    "ttl": 1621,
-                    "length": 41,
-                    "prevalence": 0.0001006947940791461,
+                    "ttl": 1622,
+                    "length": 40,
+                    "prevalence": 0.00010063399416322834,
                     "uniqueness": 1
                 }
             },
@@ -286,7 +328,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "43903a561225eec26f825925c24aa8006fd76bee4d3eed08a112aa2fd4e93dba"
+                "3fa25799720ba25ac825b1fcd356553ae833d5b068a1984fca6e6cf01a966a47"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -303,34 +345,34 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8064516129032258
+            "prevalence": 0.8181818181818182
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.12903225806451613
+            "prevalence": 0.12121212121212122
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.03225806451612903
+            "prevalence": 0.030303030303030304
         },
         {
-            "domain": "custhelp.com",
-            "prevalence": 0.03225806451612903
+            "domain": "googletagmanager.com",
+            "prevalence": 0.030303030303030304
         }
     ],
     "types": {
-        "Script": 17,
-        "Document": 2,
+        "Script": 20,
+        "Document": 4,
         "XHR": 2
     },
     "nameservers": [
-        "a11-66.akam.net",
-        "a1-160.akam.net",
-        "a18-67.akam.net",
+        "a13-65.akam.net",
         "ns2.p10.dynect.net",
-        "ns1.p10.dynect.net",
-        "ns3.p10.dynect.net",
         "ns4.p10.dynect.net",
-        "a13-65.akam.net"
+        "a1-160.akam.net",
+        "ns3.p10.dynect.net",
+        "a11-66.akam.net",
+        "ns1.p10.dynect.net",
+        "a18-67.akam.net"
     ]
 }

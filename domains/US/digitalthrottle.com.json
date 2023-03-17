@@ -13,7 +13,7 @@
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "digitalthrottle\\.com\\/pub\\/dtpbid\\.js",
@@ -23,12 +23,17 @@
                 "cdn"
             ],
             "apis": {
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "Date.prototype.getTime": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.cookieEnabled": 1
+                "window.sessionStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.name": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -66,7 +71,7 @@
         "Script": 2
     },
     "nameservers": [
-        "ns1.digitalthrottle.com",
-        "ns2.digitalthrottle.com"
+        "ns2.digitalthrottle.com",
+        "ns1.digitalthrottle.com"
     ]
 }

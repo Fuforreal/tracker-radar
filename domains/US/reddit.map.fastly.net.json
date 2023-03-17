@@ -11,15 +11,79 @@
     ],
     "prevalence": 0.000101,
     "sites": 1,
-    "subdomains": [],
+    "subdomains": [
+        "dualstack"
+    ],
     "cnames": [
+        {
+            "original": "alb.reddit.com",
+            "resolved": ".reddit.map.fastly.net"
+        },
         {
             "original": "gql.reddit.com",
             "resolved": ".reddit.map.fastly.net"
+        },
+        {
+            "original": "styles.redditmedia.com",
+            "resolved": "dualstack.reddit.map.fastly.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "reddit\\.map\\.fastly\\.net\\/t5_2cneq\\/styles\\/communityIcon_fy84mdgh75201\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "styles.redditmedia.com",
+                    "resolved": "dualstack.reddit.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4f259b3a5ece118bbff1505a1c2ddca06eb36747b3b96df427ac3ef895362c56"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reddit.com",
+                "www.reddit.com"
+            ]
+        },
+        {
+            "rule": "reddit\\.map\\.fastly\\.net\\/t5_35n7t\\/styles\\/communityIcon_cn66l18a5zf51\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "styles.redditmedia.com",
+                    "resolved": "dualstack.reddit.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "c36f152229b26a9f821b47538a5ec39631ec5b855659755382d530c591283459"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reddit.com",
+                "www.reddit.com"
+            ]
+        },
         {
             "rule": "reddit\\.map\\.fastly\\.net\\/",
             "cookies": 0,
@@ -44,6 +108,31 @@
                 "reddit.com",
                 "www.reddit.com"
             ]
+        },
+        {
+            "rule": "reddit\\.map\\.fastly\\.net\\/i\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "alb.reddit.com",
+                    "resolved": ".reddit.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reddit.com",
+                "www.reddit.com"
+            ]
         }
     ],
     "categories": [
@@ -60,15 +149,20 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.7
+            "domain": "redditstatic.com",
+            "prevalence": 0.7341772151898734
         },
         {
-            "domain": "redditstatic.com",
-            "prevalence": 0.3
+            "domain": "first party",
+            "prevalence": 0.25316455696202533
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.012658227848101266
         }
     ],
     "types": {
+        "Image": 6,
         "XHR": 2
     },
     "nameservers": []

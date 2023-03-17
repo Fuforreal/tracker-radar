@@ -11,9 +11,10 @@
     "sites": 4,
     "subdomains": [
         "static",
-        "bottle-brush",
         "event-logger",
-        "embed"
+        "embed",
+        "gibson",
+        "bottle-brush"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -43,50 +44,52 @@
             ]
         },
         {
-            "rule": "tagboard\\.com\\/embed\\/assets\\/css\\/_v1\\.0\\/grid\\/202302092312\\.css",
+            "rule": "tagboard\\.com\\/embed\\/assets\\/css\\/_v1\\.0\\/grid\\/202303141218\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "f62813081bae881f6750f598f29e93d52ce45e7c3317dafa0fb49c3267e8ef7a"
+                "45695d3ac88144f4ada59a8bb9562f7507da7804dfa09d798259bcd211e9da4f"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "milb.com",
-                "www.supercrosslive.com"
+                "www.supercrosslive.com",
+                "www.xfl.com"
             ]
         },
         {
-            "rule": "tagboard\\.com\\/embed\\/assets\\/js\\/_v1\\.0\\/grid\\/202302092312\\.js",
+            "rule": "tagboard\\.com\\/embed\\/assets\\/js\\/_v1\\.0\\/grid\\/202303141218\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 1
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "9fbfab9e2f04de30957267fd8be2efcd8e4368901dbdef0e2d961c86a8d9c0b5"
+                "8dbee29697e64e76d8738a402ef567f16d2909b38096864f0797bb7ca8174054"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "milb.com",
-                "www.supercrosslive.com"
+                "www.supercrosslive.com",
+                "www.xfl.com"
             ]
         },
         {
@@ -97,8 +100,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "51eb398873b385b73dfb265c5f0e9b3c8cd57c83e6413593b4c21320481659da"
@@ -108,7 +111,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "milb.com",
-                "www.usabaseball.com"
+                "www.usabaseball.com",
+                "www.xfl.com"
             ]
         },
         {
@@ -134,15 +138,38 @@
             ]
         },
         {
-            "rule": "tagboard\\.com\\/notify\\/media",
+            "rule": "tagboard\\.com\\/event\\/card",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bottle-brush"
+                "event-logger"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000503,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milb.com",
+                "www.milb.com",
+                "www.supercrosslive.com",
+                "www.usabaseball.com",
+                "www.xfl.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/event\\/card",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event-logger"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
@@ -154,51 +181,8 @@
                 "milb.com",
                 "www.milb.com",
                 "www.supercrosslive.com",
-                "www.usabaseball.com"
-            ]
-        },
-        {
-            "rule": "tagboard\\.com\\/event\\/card",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "event-logger"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "supercrosslive.com",
-                "www.supercrosslive.com",
-                "www.usabaseball.com"
-            ]
-        },
-        {
-            "rule": "tagboard\\.com\\/event\\/card",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "event-logger"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [
-                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "supercrosslive.com",
-                "www.supercrosslive.com",
-                "www.usabaseball.com"
+                "www.usabaseball.com",
+                "www.xfl.com"
             ]
         },
         {
@@ -209,30 +193,32 @@
                 "embed"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "43915f59d166004c5c87804c36c34da6d8ee6650b6da5c1c82c0f3e208b20e97"
+                "9cd2768290e3de282188640440e9e81a66689208a7ad0e164e03100966b3ff7a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "supercrosslive.com",
-                "www.usabaseball.com"
+                "milb.com",
+                "www.supercrosslive.com",
+                "www.usabaseball.com",
+                "www.xfl.com"
             ]
         },
         {
-            "rule": "tagboard\\.com\\/embed\\/assets\\/css\\/_modal\\/202302092312\\.css",
+            "rule": "tagboard\\.com\\/embed\\/assets\\/css\\/_modal\\/202303141218\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "c4eeb2c01857a5a086a9a85c749f64ca294f6a9cd2ac1e13a1134c2aa2cbf6f5"
@@ -241,34 +227,214 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "supercrosslive.com",
-                "www.usabaseball.com"
+                "milb.com",
+                "www.supercrosslive.com",
+                "www.usabaseball.com",
+                "www.xfl.com"
             ]
         },
         {
-            "rule": "tagboard\\.com\\/embed\\/assets\\/js\\/_modal\\/202302092312\\.js",
+            "rule": "tagboard\\.com\\/embed\\/assets\\/js\\/_modal\\/202303141218\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "03dc8949be4b6a216d5836b91f3d209e8780d860cacd25974fbca8313f42ed17"
+                "04dcb2adc26cda2f8e033e8b9e9b26b81093d0e2b396caf98918979906815f4e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "supercrosslive.com",
-                "www.usabaseball.com"
+                "milb.com",
+                "www.supercrosslive.com",
+                "www.usabaseball.com",
+                "www.xfl.com"
             ]
         },
         {
-            "rule": "tagboard\\.com\\/embed\\/assets\\/css\\/_v1\\.0\\/carousel\\/202302092312\\.css",
+            "rule": "tagboard\\.com\\/aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTUvMzMzNTk1NjIwXzE2ODE3MDgyMjMxMDE4Ml83MTM1MDQyNTgxMDcxNDgzMjI0X24uanBnP3N0cD1kc3QtanBnX2UxNV9wNjQweDY0MCZfbmNfaHQ9c2NvbnRlbnQuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwMiZfbmNfb2hjPV9MT0ItVHdjSWNFQVg5R2dLTE4mZWRtPUFNTzktSlFBQUFBQSZjY2I9Ny01Jm9oPTAwX0FmQ3BaUWZJNmpfSG9TYzNpZ1paM0QzTHpZOHlNX3gteW5EX3ltMlFiTWVkWmcmb2U9NjQxMTVERjcmX25jX3NpZD1iOWYyZWU=",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gibson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16366d2552aa8349747c1168a3ef03665652b08d80385b6664c4cbf6a5b2f932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTUvMzM1NDg1NTI2Xzc1MzU0MjI5NjM0NjczOV8zMDU2NzU3NjYyMzYzOTI5MzUxX24uanBnP3N0cD1kc3QtanBnX2UxNV9zNjQweDY0MCZfbmNfaHQ9c2NvbnRlbnQuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwMyZfbmNfb2hjPXlTcXUzWTFoZ3hZQVg4NnFLX1gmZWRtPUFNTzktSlFBQUFBQSZjY2I9Ny01Jm9oPTAwX0FmQkNDNThlWGFzd1FhbHkxS3V0S1M4a2FhSjBPcjlPcWF6TnMzb21hbVpkWFEmb2U9NjQxMTQyRjQmX25jX3NpZD1iOWYyZWU=",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gibson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16366d2552aa8349747c1168a3ef03665652b08d80385b6664c4cbf6a5b2f932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTUvMzM1Nzc0MDE2XzEzMTAyOTc1NDY1NjAxODJfODI0NjUxODY2MjM4MjcyMzY0MF9uLmpwZz9zdHA9ZHN0LWpwZ19lMTVfczY0MHg2NDAmX25jX2h0PXNjb250ZW50LmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDYmX25jX29oYz03RUJ4QTJpQzE2c0FYOENxbUNQJmVkbT1BTU85LUpRQUFBQUEmY2NiPTctNSZvaD0wMF9BZkJIcDFFQ2tWdmZtV0FhRkEwbEdHYUM1Z1M2ZU1BSFRCZEtpRFU4Q2tKWjBBJm9lPTY0MTEwQTFEJl9uY19zaWQ9YjlmMmVl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gibson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16366d2552aa8349747c1168a3ef03665652b08d80385b6664c4cbf6a5b2f932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTUvMzM1OTAxNTUwXzIyNzEyNDg1OTcxMDUwMF8yOTYxNjg2MjI3MjM0NDA2MV9uLmpwZz9zdHA9ZHN0LWpwZ19lMTVfcDY0MHg2NDAmX25jX2h0PXNjb250ZW50LmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDgmX25jX29oYz1fOFI4enNwMm9aY0FYODFqaXlmJmVkbT1BTU85LUpRQUFBQUEmY2NiPTctNSZvaD0wMF9BZkJ0b3ZtcmJBNmg2V3VEdFQzSDNBbEZxYVpiQ3hhWWk4TGZmMVY2M0hEWnRnJm9lPTY0MTAzRjQyJl9uY19zaWQ9YjlmMmVl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gibson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16366d2552aa8349747c1168a3ef03665652b08d80385b6664c4cbf6a5b2f932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/notify\\/media",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bottle-brush"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTUvMzM1NjUwODk2XzE2NzgzNDE4MjczMTQzMl8zMjgwMTMyNjcxNDEzMDY1OTc3X24uanBnP3N0cD1kc3QtanBnX2UxNV9wNjQweDY0MCZfbmNfaHQ9c2NvbnRlbnQuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwMCZfbmNfb2hjPUxHbDhreVpnVllrQVg4bzJNUnkmZWRtPUFNTzktSlFBQUFBQSZjY2I9Ny01Jm9oPTAwX0FmRGtiZTBBQ3BoU0pSczh0Z0hYZk5wVlVISEh4NHNLeFczd0VNVS15TTB4UkEmb2U9NjQwRkM1OTAmX25jX3NpZD1iOWYyZWU=",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gibson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16366d2552aa8349747c1168a3ef03665652b08d80385b6664c4cbf6a5b2f932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTUvMzM0Nzk3OTI1XzU2NzIyMDQxNzI5MDg3MDZfNjk5ODc4NTI3ODM2MzgyNDkyN19uLmpwZz9zdHA9ZHN0LWpwZ19lMTVfcDY0MHg2NDAmX25jX2h0PXNjb250ZW50LmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDYmX25jX29oYz1RcjYyRkhYXzdyWUFYOVdLbmRJJmVkbT1BTU85LUpRQUFBQUEmY2NiPTctNSZvaD0wMF9BZkRWTEdyRGJJLUFQYlB3MmdHY1ZKdjBlMEN2VDZqVGpWU1lPOGhPR1JkZGhBJm9lPTY0MTAyRTM2Jl9uY19zaWQ9YjlmMmVl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gibson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16366d2552aa8349747c1168a3ef03665652b08d80385b6664c4cbf6a5b2f932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTUvMzM1Njg2NzMyXzczNjg4ODk2Nzg0MTExNV81Mzk3MjQ2MTQ2MDYwNTkxMTE1X24uanBnP3N0cD1kc3QtanBnX2UxNV9wNjQweDY0MCZfbmNfaHQ9c2NvbnRlbnQuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwNyZfbmNfb2hjPWJvcGxwbHRpRkJNQVhfSU9ybnUmZWRtPUFNTzktSlFBQUFBQSZjY2I9Ny01Jm9oPTAwX0FmREcxMDFJcnl3Zi0zaGJWbm1GdzctN3U2MVFmUktNUzlhckFITlBmRmVOWEEmb2U9NjQwRkQ4MTImX25jX3NpZD1iOWYyZWU=",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gibson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16366d2552aa8349747c1168a3ef03665652b08d80385b6664c4cbf6a5b2f932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supercrosslive.com",
+                "www.supercrosslive.com"
+            ]
+        },
+        {
+            "rule": "tagboard\\.com\\/embed\\/assets\\/css\\/_v1\\.0\\/carousel\\/202303141218\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -290,21 +456,20 @@
             ]
         },
         {
-            "rule": "tagboard\\.com\\/embed\\/assets\\/js\\/_v1\\.0\\/carousel\\/202302092312\\.js",
+            "rule": "tagboard\\.com\\/embed\\/assets\\/js\\/_v1\\.0\\/carousel\\/202303141218\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e779c34046e975a2c680a2368e4fa19ff6808ccfeb1c77bf6b3e143e974e6b43"
+                "f04e8d2e228c32c02cd218440bbb95adc74a91df15025d85be67b929570539a8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -321,25 +486,25 @@
     "topInitiators": [
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.8604651162790697
+            "prevalence": 0.7126436781609196
         },
         {
             "domain": "first party",
-            "prevalence": 0.13953488372093023
+            "prevalence": 0.28735632183908044
         }
     ],
     "types": {
-        "Script": 10,
-        "Stylesheet": 6,
-        "Image": 4,
+        "Script": 13,
+        "Stylesheet": 9,
+        "Image": 19,
+        "Preflight": 5,
         "XHR": 7,
-        "Preflight": 3,
-        "Document": 2
+        "Document": 4
     },
     "nameservers": [
-        "ns-513.awsdns-00.net",
         "ns-481.awsdns-60.com",
-        "ns-1684.awsdns-18.co.uk",
-        "ns-1245.awsdns-27.org"
+        "ns-513.awsdns-00.net",
+        "ns-1245.awsdns-27.org",
+        "ns-1684.awsdns-18.co.uk"
     ]
 }

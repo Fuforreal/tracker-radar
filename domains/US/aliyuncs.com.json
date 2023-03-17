@@ -10,11 +10,44 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
+        "csdn.log-global",
         "retcode-us-west-1.arms"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "event.csdn.net",
+            "resolved": "csdn.log-global.aliyuncs.com"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "aliyuncs\\.com\\/logstores\\/csdn-pc-tracking-page-exposure\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csdn.log-global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "event.csdn.net",
+                    "resolved": "csdn.log-global.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "csdn.net",
+                "blog.csdn.net"
+            ]
+        },
         {
             "rule": "aliyuncs\\.com\\/r\\.png",
             "cookies": 0,
@@ -30,7 +63,7 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_bl_uid": 0.0002013895881582922
+                "_bl_uid": 0.00020126798832645668
             },
             "exampleSites": [
                 "dji.com",
@@ -44,14 +77,15 @@
     "topInitiators": [
         {
             "domain": "csdnimg.cn",
-            "prevalence": 0.6
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "alicdn.com",
-            "prevalence": 0.4
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
+        "XHR": 2,
         "Fetch": 2
     },
     "nameservers": [

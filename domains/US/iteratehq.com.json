@@ -15,7 +15,7 @@
         "platform"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "iteratehq\\.com\\/loader\\.js",
@@ -41,6 +41,43 @@
             ]
         },
         {
+            "rule": "iteratehq\\.com\\/match-prod-30beeaad6a5190cc0bec\\.js",
+            "cookies": 0.000302,
+            "fingerprinting": 1,
+            "subdomains": [
+                "platform"
+            ],
+            "apis": {
+                "console.memory": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "window.localStorage": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "cfab63d06487beb172acf6733a6450872a797f5c2aa96011110956d0d3a12743"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "iter_id": {
+                    "ttl": 315360008,
+                    "length": 203,
+                    "prevalence": 0.00020126798832645668,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nyt.com",
+                "www.propublica.org"
+            ]
+        },
+        {
             "rule": "iteratehq\\.com\\/api\\/v1\\/surveys\\/embed",
             "cookies": 0,
             "fingerprinting": 0,
@@ -51,7 +88,7 @@
             "cnames": [],
             "responseHashes": [
                 "ea939bd13d79a17cc436d4c3e102d4060cb7ebf0e8e61918f3d034580dff02b9",
-                "3627737f90f8891ea1bdc904db33958684dd369a9c3b40bc3dfcefdc8f74ad4c"
+                "98d8513d89927abcfe0f054f4e0822f2b3ee2f92534831d5e5587f9462a8e0da"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -80,47 +117,11 @@
                 "www.nyt.com",
                 "www.propublica.org"
             ]
-        },
-        {
-            "rule": "iteratehq\\.com\\/match-prod-30beeaad6a5190cc0bec\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "platform"
-            ],
-            "apis": {
-                "console.memory": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "cfab63d06487beb172acf6733a6450872a797f5c2aa96011110956d0d3a12743"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "iter_id": {
-                    "ttl": 315360002,
-                    "length": 203,
-                    "prevalence": 0.0001006947940791461,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyt.com",
-                "www.propublica.org"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "nyt.com",
@@ -136,7 +137,7 @@
         }
     ],
     "types": {
-        "Script": 5,
+        "Script": 6,
         "Fetch": 3,
         "Preflight": 3
     },
