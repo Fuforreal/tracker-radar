@@ -13,9 +13,9 @@
     "sites": 4,
     "subdomains": [
         "static.cdn.yle",
+        "image-via.katsomo",
         "www.mtvkatsomo",
-        "api.katsomo",
-        "image-via.katsomo"
+        "api.katsomo"
     ],
     "cnames": [
         {
@@ -65,6 +65,33 @@
             ]
         },
         {
+            "rule": "fi\\.edgekey\\.net\\/api\\/v2\\/img\\/63369287e4b0db53d521288e-1678491781922",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image-via.katsomo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image-via.katsomo.fi",
+                    "resolved": "image-via.katsomo.fi.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "249ef3444ab351a474b4d23f82a3c903188931e444227b6887d2c83b1534b4f4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mtv.fi",
+                "www.mtv.fi"
+            ]
+        },
+        {
             "rule": "fi\\.edgekey\\.net\\/fonts\\/fs_emeric_web-semibold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -108,7 +135,7 @@
                 }
             ],
             "responseHashes": [
-                "e1a0e2b516e7d21a9bcb1442b4023463ef11fc1629ad31f3b5fb9a827a469cfa"
+                "07614967ec49b7678e9c75320b1f125ccca370b0dc1c23904317032e2fc094e1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -136,33 +163,6 @@
             ],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mtv.fi",
-                "www.mtv.fi"
-            ]
-        },
-        {
-            "rule": "fi\\.edgekey\\.net\\/api\\/v2\\/img\\/63369287e4b0db53d521288e-1678491781922",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "image-via.katsomo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "image-via.katsomo.fi",
-                    "resolved": "image-via.katsomo.fi.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "249ef3444ab351a474b4d23f82a3c903188931e444227b6887d2c83b1534b4f4"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -294,10 +294,10 @@
     ],
     "types": {
         "Stylesheet": 2,
+        "Image": 10,
         "Font": 2,
         "Fetch": 2,
-        "Preflight": 2,
-        "Image": 10
+        "Preflight": 2
     },
     "nameservers": []
 }

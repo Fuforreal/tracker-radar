@@ -8,8 +8,8 @@
     "sites": 2,
     "subdomains": [
         "cdn",
-        "static",
-        "embed"
+        "embed",
+        "static"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -77,6 +77,31 @@
                 "ea3bf44dd57f323faf04ec3fbad80072b74445efa754dece194164e32a4e4844"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hockeyfeed.com",
+                "www.hockeyfeed.com"
+            ]
+        },
+        {
+            "rule": "attr\\.dev\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.mimeTypes": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9e89a92b0ee6959fc76460b414049e3bd12fbe00b119e5a6bdc51faf9f37a9cc"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -193,31 +218,6 @@
                 "hockeyfeed.com",
                 "www.hockeyfeed.com"
             ]
-        },
-        {
-            "rule": "attr\\.dev\\/embed\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "embed"
-            ],
-            "apis": {
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.mimeTypes": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9e89a92b0ee6959fc76460b414049e3bd12fbe00b119e5a6bdc51faf9f37a9cc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hockeyfeed.com",
-                "www.hockeyfeed.com"
-            ]
         }
     ],
     "categories": [],
@@ -235,9 +235,9 @@
         "Image": 12
     },
     "nameservers": [
-        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c3.googledomains.com"
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c1.googledomains.com"
     ]
 }

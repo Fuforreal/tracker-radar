@@ -148,31 +148,31 @@
                 "wt3_eid": {
                     "ttl": 15552002,
                     "length": 62,
-                    "prevalence": 0.000013554635346422592,
+                    "prevalence": 0.000013554543482975493,
                     "uniqueness": 1
                 },
                 "wt3_sid": {
                     "ttl": null,
                     "length": 18,
-                    "prevalence": 0.000013554635346422592,
+                    "prevalence": 0.000013554543482975493,
                     "uniqueness": 0.5
                 },
                 "wt_rla": {
                     "ttl": null,
                     "length": 35,
-                    "prevalence": 0.000013554635346422592,
+                    "prevalence": 0.000013554543482975493,
                     "uniqueness": 1
                 },
                 "wt_nv": {
                     "ttl": 15552002,
                     "length": 1,
-                    "prevalence": 0.000006777317673211296,
+                    "prevalence": 0.000006777271741487746,
                     "uniqueness": 1
                 },
                 "wt_nv_s": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000006777317673211296,
+                    "prevalence": 0.000006777271741487746,
                     "uniqueness": 1
                 }
             },
@@ -258,8 +258,10 @@
                     "resolved": "reichweite.heise.de"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -288,16 +290,58 @@
                     "resolved": "reichweite.heise.de"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "techstage.de",
                 "www.techstage.de",
                 "www.telepolis.de"
+            ]
+        },
+        {
+            "rule": "heise\\.de\\/assets\\/heise\\/fonts\\/source-sans-pro-v11-latin-regular\\.96b158\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e8e4ab0af17ce21fcc91ca78586a224acf1213e052f64dbd4b6c8c7c8f91c3dc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techstage.de",
+                "www.techstage.de"
+            ]
+        },
+        {
+            "rule": "heise\\.de\\/assets\\/heise\\/fonts\\/source-sans-pro-v11-latin-600\\.bd652d\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e532b4be3737bf78097e0c34c672e81247a3c482bc9e345529e1db3d85d4d7f"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techstage.de",
+                "www.techstage.de"
             ]
         },
         {
@@ -343,50 +387,6 @@
                 "771860f3b3a3f8107c55affd5387ed8420c5592282c297d17e8dfd05f0629ff9"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "techstage.de",
-                "www.techstage.de"
-            ]
-        },
-        {
-            "rule": "heise\\.de\\/assets\\/heise\\/fonts\\/source-sans-pro-v11-latin-regular\\.96b158\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e8e4ab0af17ce21fcc91ca78586a224acf1213e052f64dbd4b6c8c7c8f91c3dc"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "techstage.de",
-                "www.techstage.de"
-            ]
-        },
-        {
-            "rule": "heise\\.de\\/assets\\/heise\\/fonts\\/source-sans-pro-v11-latin-600\\.bd652d\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7e532b4be3737bf78097e0c34c672e81247a3c482bc9e345529e1db3d85d4d7f"
-            ],
-            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -612,17 +612,17 @@
     "types": {
         "Script": 17,
         "Image": 5,
-        "Preflight": 3,
         "XHR": 3,
-        "Stylesheet": 2,
+        "Preflight": 3,
         "Font": 8,
+        "Stylesheet": 2,
         "Other": 8
     },
     "nameservers": [
         "ns.plusline.de",
-        "ns.pop-hannover.de",
         "ns.s.plusline.de",
         "ns.heise.de",
-        "ns2.pop-hannover.net"
+        "ns2.pop-hannover.net",
+        "ns.pop-hannover.de"
     ]
 }
