@@ -71,7 +71,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "bc6764ef394f443804d6fdfdad020911a3927abc29e689fe93dcc8b3dc53842c"
+                "632304db64d46e6af7ee210cccf3e5d7cc08bdfc8a8aac1ae7e69f98c6839cf6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -84,17 +84,19 @@
         {
             "rule": "workpermit\\.com\\/firebase-app\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "pushmaze"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "4881594f300305bd9c05698948689fac0112ce88bce19b1c3f7ea5f96f1e66ea"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},

@@ -9,12 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
+    "prevalence": 0.000061,
     "sites": 9,
     "subdomains": [
+        "gui-ipv6",
         "events.api",
         "csp",
-        "gui-ipv6",
         "digitalcare"
     ],
     "cnames": [
@@ -38,6 +38,35 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/pcjson\\/applicationheader",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gui-ipv6"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [
+                {
+                    "original": "gui.godaddy.com",
+                    "resolved": "gui-ipv6.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "af83752d24abb2c0ec7e0c2f01741831ee78a8ff913747b8f17e468ea9bc51ba"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godaddy.com",
+                "account.godaddy.com",
+                "email.godaddy.com",
+                "sso.godaddy.com"
+            ]
+        },
+        {
             "rule": "godaddy\\.com\\.edgekey\\.net\\/image\\.aspx",
             "cookies": 0.0000339,
             "fingerprinting": 0,
@@ -58,7 +87,9 @@
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "pathway": 0.0000067723606417488944
+            },
             "exampleSites": [
                 "godaddy.com",
                 "account.godaddy.com",
@@ -90,8 +121,38 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000020313917742175756
+                "pathway": 0.0000067723606417488944,
+                "_ga": 0.000020317081925246682
             },
+            "exampleSites": [
+                "godaddy.com",
+                "account.godaddy.com",
+                "community.godaddy.com",
+                "email.godaddy.com",
+                "sso.godaddy.com",
+                "www.godaddy.com"
+            ]
+        },
+        {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csp"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000406,
+            "cnames": [
+                {
+                    "original": "csp.godaddy.com",
+                    "resolved": "csp.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "godaddy.com",
                 "account.godaddy.com",
@@ -131,64 +192,6 @@
             ]
         },
         {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "csp"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [
-                {
-                    "original": "csp.godaddy.com",
-                    "resolved": "csp.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "account.godaddy.com",
-                "community.godaddy.com",
-                "email.godaddy.com",
-                "sso.godaddy.com",
-                "www.godaddy.com"
-            ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/pcjson\\/salesheader",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gui-ipv6"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [
-                {
-                    "original": "gui.godaddy.com",
-                    "resolved": "gui-ipv6.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "103631b5b5d0bfcc01e11281d3b2edfe5541085513e3db8b60e2fc6e40bb51fc"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "account.godaddy.com",
-                "sso.godaddy.com",
-                "www.godaddy.com"
-            ]
-        },
-        {
             "rule": "godaddy\\.com\\.edgekey\\.net\\/b\\.aspx",
             "cookies": 0,
             "fingerprinting": 0,
@@ -209,7 +212,9 @@
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "pathway": 0.0000067723606417488944
+            },
             "exampleSites": [
                 "godaddy.com",
                 "account.godaddy.com",
@@ -236,7 +241,8 @@
                 }
             ],
             "responseHashes": [
-                "422da042bba7dacf38c2ea29d4d591126a3ce6cff2fc9a134e6ece8bad6f03ad"
+                "422da042bba7dacf38c2ea29d4d591126a3ce6cff2fc9a134e6ece8bad6f03ad",
+                "d241acea4429c9870ea94c4cb89ff1f5b43d77989c328789dcb26b9f177e691e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -264,8 +270,8 @@
                 }
             ],
             "responseHashes": [
-                "d0fa5db0a9f61cb095923db2f0901459efec3951ecf34b65867fa5c2ff3feeb7",
-                "a86b15855601a63fd705c6ae7dd21049de6d040b55c7b43ddeab63e891014d3a"
+                "d10546b2c65e0bac415b81f8d953324226dea842c9a3da7709b17bbb83f817a0",
+                "b27a84c179b2d7461936aee4aaeec98d2ccb78969527796dce19c40e63d3e525"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -305,7 +311,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000609,
+    "cookies": 0.000061,
     "topInitiators": [
         {
             "domain": "wsimg.com",

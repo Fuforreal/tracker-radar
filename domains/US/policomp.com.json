@@ -37,14 +37,11 @@
         {
             "rule": "policomp\\.com\\/CHAT\\/js\\/jquery-ui\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "webchatsii"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -132,13 +129,11 @@
         {
             "rule": "policomp\\.com\\/CHAT\\/js\\/jquery-3\\.6\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "webchatsii"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -205,7 +200,8 @@
                 "webchatsii"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -511,7 +507,7 @@
         "Stylesheet": 6
     },
     "nameservers": [
-        "ns2.policomp.com",
-        "ns1.policomp.com"
+        "ns1.policomp.com",
+        "ns2.policomp.com"
     ]
 }

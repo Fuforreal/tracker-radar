@@ -25,7 +25,9 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.appName": 4
+                "Navigator.prototype.appName": 4,
+                "Event.prototype.timeStamp": 4,
+                "Document.cookie getter": 4
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -39,8 +41,8 @@
             "exampleSites": [
                 "baileys.com",
                 "www.baileys.com",
-                "www.guinness.com",
-                "www.guinness-storehouse.com"
+                "www.guinness-storehouse.com",
+                "www.guinness.com"
             ]
         },
         {
@@ -51,8 +53,7 @@
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 4,
-                "Navigator.prototype.userAgent": 3
+                "Event.prototype.timeStamp": 4
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -66,8 +67,8 @@
             "exampleSites": [
                 "baileys.com",
                 "www.baileys.com",
-                "www.guinness.com",
-                "www.guinness-storehouse.com"
+                "www.guinness-storehouse.com",
+                "www.guinness.com"
             ]
         },
         {
@@ -78,7 +79,9 @@
                 "www"
             ],
             "apis": {
+                "Event.prototype.timeStamp": 3,
                 "Navigator.prototype.userAgent": 3,
+                "Element.prototype.getClientRects": 3,
                 "Date.prototype.getTime": 3,
                 "window.innerHeight": 3,
                 "window.innerWidth": 3
@@ -95,6 +98,33 @@
             "exampleSites": [
                 "baileys.com",
                 "www.baileys.com",
+                "www.guinness.com"
+            ]
+        },
+        {
+            "rule": "diageoagegate\\.com\\/api\\/country\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web",
+                "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "9cb3c92d27c14ea36a8ca4c3b4158b686333c057ed79e902b13c111242ea5cb5",
+                "845e4aab0049f68adf52b7099f7248dcea698a9f7fbbd808e3c329ac111f38a9",
+                "e0c80f1d3a97c4f7efb31928eb02e30aa06d6251f264ec172bf2a7b1fe4dc52e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baileys.com",
+                "www.baileys.com",
+                "www.guinness-storehouse.com",
                 "www.guinness.com"
             ]
         },
@@ -346,33 +376,6 @@
             ]
         },
         {
-            "rule": "diageoagegate\\.com\\/api\\/country\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www",
-                "web"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "f3039f8da706cd40893ad6161201499bfe30f0bb149224252f988f7f9579f059",
-                "3befca3ccab84fa84d26a157343ad91db54fa79448c21d76bf31b3409cfef2e8",
-                "b4ece17f9c15d4e79ade9a12dcef970c39a34606b03b94d8844da62eb81f3ccb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "baileys.com",
-                "www.baileys.com",
-                "www.guinness.com",
-                "www.guinness-storehouse.com"
-            ]
-        },
-        {
             "rule": "diageoagegate\\.com\\/media\\/templates\\/agegate\\.4c569dbf\\.html",
             "cookies": 0,
             "fingerprinting": 0,
@@ -595,7 +598,7 @@
         "Image": 5
     },
     "nameservers": [
-        "ns2.domainnetwork.se",
-        "ns.domainnetwork.se"
+        "ns.domainnetwork.se",
+        "ns2.domainnetwork.se"
     ]
 }

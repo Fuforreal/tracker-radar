@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "jandaqu\\.xyz\\/assets\\/css\\/style\\.css",
@@ -118,7 +118,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 1,
+                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
@@ -178,12 +178,15 @@
         {
             "rule": "jandaqu\\.xyz\\/assets\\/vendor\\/jwplayer8\\/jwplayer\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "window.localStorage": 1
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -228,8 +231,48 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4b7eb53314b0a5e035eff911c0b8f4ae01a5010bb6015bc07691e8c7ee20535f"
+            ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xbokepfb.top",
+                "xbokeponlineterbaru.info"
+            ]
+        },
+        {
+            "rule": "jandaqu\\.xyz\\/Film\\/xbfb\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "50027f501773646fc1fc3edbf83980d1ca46cff4e6ed9f919472da41efa6d65c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xbokepfb.top",
+                "xbokeponlineterbaru.info"
+            ]
+        },
+        {
+            "rule": "jandaqu\\.xyz\\/poster\\/",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -243,14 +286,19 @@
     "cookies": 0.0000135,
     "topInitiators": [
         {
+            "domain": "jwpcdn.com",
+            "prevalence": 0.6666666666666666
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
         "Stylesheet": 2,
         "Script": 18,
-        "XHR": 2
+        "XHR": 2,
+        "Image": 4
     },
     "nameservers": [
         "dns1.registrar-servers.com",

@@ -453,12 +453,9 @@
         {
             "rule": "mavs\\.wpenginepowered\\.com\\/wp-includes\\/js\\/jquery\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Element.prototype.getClientRects": 1,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -476,11 +473,9 @@
         {
             "rule": "mavs\\.wpenginepowered\\.com\\/wp-includes\\/js\\/jquery\\/jquery-migrate\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -507,7 +502,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "52984e532d02a87a060764ff400626a1b81cc316284a8ba1feab5d94697119a0"
+                "c4596b16b126326b0d8fc2fb8bf91389ad3dc4671a269187913c19a8f2ad1094"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -534,7 +529,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5d5160f0403d6432edd16aa185c6298855e3f68aa8f6a338d3eeb03c8e869cdc"
+                "f8b80561b0c5406641bb6b1558c2f3944062cb3b1b9e4a120410e771813f0571"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -547,9 +542,11 @@
         {
             "rule": "mavs\\.wpenginepowered\\.com\\/wp-content\\/themes\\/mavs\\/js\\/bootstrap\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -753,12 +750,9 @@
         {
             "rule": "mavs\\.wpenginepowered\\.com\\/wp-content\\/themes\\/mavs\\/js\\/jquery-ui\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -776,11 +770,9 @@
         {
             "rule": "mavs\\.wpenginepowered\\.com\\/wp-content\\/themes\\/mavs\\/js\\/jquery\\.maskedinput\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -925,7 +917,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d5b6e53c9833f0ab023135c4e3631a86d714c4b580b26c2ea979973ebb521a2c"
+                "95f59f9a4a19697496edc01bb55011ea4056f90625cc816a7f18256f056a6258"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1000,12 +992,9 @@
         {
             "rule": "mavs\\.wpenginepowered\\.com\\/wp-content\\/themes\\/mavs\\/js\\/fancybox\\/jquery\\.fancybox\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1206,26 +1195,6 @@
             ]
         },
         {
-            "rule": "mavs\\.wpenginepowered\\.com\\/wp-content\\/themes\\/mavs\\/fonts\\/AvenirMedium\\.otf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bd714ec9397df4d2261799a75df31f58dabed06490c67d0dccc434ced4ce103b"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mavs.com",
-                "www.mavs.com"
-            ]
-        },
-        {
             "rule": "mavs\\.wpenginepowered\\.com\\/wp-content\\/themes\\/mavs\\/js\\/slick\\/ajax-loader\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1238,6 +1207,26 @@
                 "2090d776b42269b51eed46da3e79041c47c27013d6d492de46d332c6bdbfe87a"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mavs.com",
+                "www.mavs.com"
+            ]
+        },
+        {
+            "rule": "mavs\\.wpenginepowered\\.com\\/wp-content\\/themes\\/mavs\\/fonts\\/AvenirMedium\\.otf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "bd714ec9397df4d2261799a75df31f58dabed06490c67d0dccc434ced4ce103b"
+            ],
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [

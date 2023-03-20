@@ -7,7 +7,9 @@
     "prevalence": 0.0000135,
     "sites": 2,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "static",
+        "media"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -26,7 +28,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "921322402e99eefa9ee9f31ce1d8cc8c70e1909231777aaacc5ed4d47a7ed645"
+                "6fcba0699e64b22edbae5d96027267869df9c2f61b75cb44d68f713c2c1e7d17"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -90,7 +92,7 @@
                 "bitmedia_fid": {
                     "ttl": 86400000,
                     "length": 116,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -134,7 +136,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "3f7e48a6df7402a36eea773c20b0a19c30af8dd7a6fb2d7a5591857388583b94"
+                "4e02f13877d2379e06a6ca1e05b0e8779f03d89f1c52d374f194b34b877aafa2"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -167,20 +169,42 @@
             ]
         },
         {
-            "rule": "bmcdn4\\.com\\/dn",
+            "rule": "bmcdn4\\.com\\/css\\/img\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "static"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e23a77c586f52ace7e17c5a06dc22f292a5ce6ce52d5909708c5910733db7103"
             ],
-            "type": "Document",
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anitube.biz",
+                "www.anitube.biz"
+            ]
+        },
+        {
+            "rule": "bmcdn4\\.com\\/static\\/f22b4da0-9024-11ed-9fd3-0d9cf2c0976dc41a02b0-104e-4091-88c3-4743d1e966e6\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4a333d38f6d5cf67a757a4201bb1548032fa0b07b44d4c74d6db9e33a4330059"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -200,8 +224,9 @@
     ],
     "types": {
         "Script": 4,
-        "Image": 4,
-        "Document": 4
+        "Image": 6,
+        "Document": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
         "dante.ns.cloudflare.com",

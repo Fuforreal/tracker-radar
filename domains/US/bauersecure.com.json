@@ -117,13 +117,11 @@
         {
             "rule": "bauersecure\\.com\\/dist\\/js\\/bower\\/jquery\\.min\\.d021c983bd6e7291\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "car-assets"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -151,28 +149,6 @@
             "cnames": [],
             "responseHashes": [
                 "2fb239d3645b6578989bbe01322082f3d78a8741fe7649cdf716bd0e596913b5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "carmagazine.co.uk",
-                "www.carmagazine.co.uk"
-            ]
-        },
-        {
-            "rule": "bauersecure\\.com\\/dist\\/js\\/onboarding\\/onboarding-script\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "car-assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -213,7 +189,8 @@
                 "car-assets"
             ],
             "apis": {
-                "window.localStorage": 1
+                "window.localStorage": 1,
+                "window.devicePixelRatio": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -232,11 +209,13 @@
         {
             "rule": "bauersecure\\.com\\/dist\\/js\\/bower\\/waypoints\\.min\\.5eab1a823ae8d3b4\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "car-assets"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -296,6 +275,30 @@
             ]
         },
         {
+            "rule": "bauersecure\\.com\\/dist\\/js\\/bower\\/fastclick\\.min\\.366d692a33f8b2f1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "car-assets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "3f430d6ae7145f49bcff244312546ba57df6032d6251cdd52a22533e60511be1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carmagazine.co.uk",
+                "www.carmagazine.co.uk"
+            ]
+        },
+        {
             "rule": "bauersecure\\.com\\/dist\\/css\\/icons\\/foundation-icons\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
@@ -318,27 +321,26 @@
             ]
         },
         {
-            "rule": "bauersecure\\.com\\/dist\\/js\\/bower\\/fastclick\\.min\\.366d692a33f8b2f1\\.js",
+            "rule": "bauersecure\\.com\\/images\\/animations\\/circleLoader\\.32x32\\.gif",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "car-assets"
+                "car-assets",
+                "todaysgolfer-assets"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "3f430d6ae7145f49bcff244312546ba57df6032d6251cdd52a22533e60511be1"
+                "3dfb7fe49a075332ac431e7bb5e8ff9044ed7d68829f59c66fc25b0f7cd4c169"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "carmagazine.co.uk",
-                "www.carmagazine.co.uk"
+                "www.todays-golfer.com"
             ]
         },
         {
@@ -432,29 +434,6 @@
             ]
         },
         {
-            "rule": "bauersecure\\.com\\/images\\/animations\\/circleLoader\\.32x32\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "car-assets",
-                "todaysgolfer-assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3dfb7fe49a075332ac431e7bb5e8ff9044ed7d68829f59c66fc25b0f7cd4c169"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "carmagazine.co.uk",
-                "www.todays-golfer.com"
-            ]
-        },
-        {
             "rule": "bauersecure\\.com\\/dist\\/js\\/bower\\/foundation\\.min\\.6b39961bc0d6f9a4\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -502,28 +481,28 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_gd1678709309080": {
+                "_gd1679094733641": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "_gd1679094734139": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pbjs_userid_consent_data": {
                     "ttl": 2592002,
                     "length": 16,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pubcid": {
                     "ttl": 31536002,
                     "length": 36,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "_gd1678709310821": {
-                    "ttl": null,
-                    "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -600,13 +579,14 @@
             ]
         },
         {
-            "rule": "bauersecure\\.com\\/js\\/parkers\\.common\\.3e7740600b7e5bccba50\\.min\\.js",
+            "rule": "bauersecure\\.com\\/js\\/parkers\\.common\\.90fe38ea3be0a9fff647\\.min\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
                 "parkers-assets"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
                 "window.devicePixelRatio": 2,
@@ -619,14 +599,14 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b1a314ebe2b6f6ab0ed110e3622b91244f10c8047ee8f4967abe1c65879fafc2"
+                "c9ef093ca9ae7ba55f388f98a3eb468bdecbdb94970ef8628d656fdcd20a4e73"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "Parkers.UI.Beta": {
-                    "ttl": 2592004,
+                    "ttl": 2592001,
                     "length": 51,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -730,7 +710,7 @@
             ]
         },
         {
-            "rule": "bauersecure\\.com\\/Images\\/Icons\\/icons_1677060472907\\.png",
+            "rule": "bauersecure\\.com\\/Images\\/Icons\\/icons_1679050592495\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -744,6 +724,28 @@
                 "8b95ae9bc7229545c6e0551664a3e279a290741e6d586d8d8bb3f2d5e04d95da"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parkers.co.uk",
+                "www.parkers.co.uk"
+            ]
+        },
+        {
+            "rule": "bauersecure\\.com\\/fonts\\/roboto_condensed\\/bold\\/latin\\/roboto-condensed-latin\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "edca2a1c73b32af9fa0bcd22f2863b727ae81863885e83b8486b74612faa9deb"
+            ],
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -776,6 +778,28 @@
             ]
         },
         {
+            "rule": "bauersecure\\.com\\/fonts\\/roboto_condensed\\/regular\\/latin\\/roboto-condensed-v25-latin-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "d0b9c05ce31708c1061e034b60c217a0d35afd201434c06d03ba5b20a19cee4d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parkers.co.uk",
+                "www.parkers.co.uk"
+            ]
+        },
+        {
             "rule": "bauersecure\\.com\\/images\\/rating\\/star\\.sprite\\.20x20\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -799,6 +823,28 @@
             ]
         },
         {
+            "rule": "bauersecure\\.com\\/fonts\\/roboto\\/regular\\/latin\\/roboto-latin\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c6bdd002d23dcb0adbd87e3518bdd994de73818a0f0f502707986301b9fbc404"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parkers.co.uk",
+                "www.parkers.co.uk"
+            ]
+        },
+        {
             "rule": "bauersecure\\.com\\/js\\/tgCommon\\.821f51ebc035ee151234\\.min\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 2,
@@ -812,6 +858,7 @@
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
+                "Element.prototype.getClientRects": 1,
                 "window.innerHeight": 2,
                 "window.devicePixelRatio": 2,
                 "Date.prototype.getTime": 2,
@@ -825,28 +872,28 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_gd1678709614702": {
+                "_gd1679095043986": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592014,
+                    "ttl": 2592010,
                     "length": 16,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pubcid": {
-                    "ttl": 31536014,
+                    "ttl": 31536010,
                     "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
-                "_gd1678709622622": {
+                "_gd1679095045134": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -907,32 +954,32 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8702702702702703
+            "prevalence": 0.9116022099447514
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.10270270270270271
+            "prevalence": 0.06077348066298342
         },
         {
             "domain": "aswpsdkeu.com",
-            "prevalence": 0.021621621621621623
+            "prevalence": 0.022099447513812154
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.005405405405405406
+            "prevalence": 0.0055248618784530384
         }
     ],
     "types": {
         "Stylesheet": 11,
-        "Script": 38,
+        "Script": 36,
         "Image": 20,
-        "Font": 5
+        "Font": 11
     },
     "nameservers": [
-        "ns2.brandshelter.de",
-        "ns1.brandshelter.com",
         "ns5.brandshelter.us",
+        "ns2.brandshelter.de",
+        "ns4.brandshelter.net",
         "ns3.brandshelter.info",
-        "ns4.brandshelter.net"
+        "ns1.brandshelter.com"
     ]
 }

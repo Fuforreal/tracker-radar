@@ -7,40 +7,13 @@
     "prevalence": 0.0000948,
     "sites": 14,
     "subdomains": [
-        "nc",
         "currency",
-        "pix",
-        "adsystem",
-        "ms"
+        "nc",
+        "pix"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
-        {
-            "rule": "pubpowerplatform\\.io\\/p\\/vld\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nc"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [
-                "76aacba4eece592e3a3281e69a5762c6f10b527a29fbba5eae5ac091f47ae554"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dalechatea.me",
-                "infofamouspeople.com",
-                "webnews21.com",
-                "www.fosslinux.com",
-                "www.scan-manga.com"
-            ]
-        },
         {
             "rule": "pubpowerplatform\\.io\\/rates\\.json",
             "cookies": 0,
@@ -53,17 +26,17 @@
             "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "dcd2e2fb48677059d5a37d35b3763a9dcd571e9bbfb0e95c6999a9969c6caf26",
-                "8d7af8f4a0b41a44112c5df4506164fee6815e52032f95e23cfbcabe95ad3491",
-                "377f721979b054614f9482d4ad06816ebf7de56d0333018115c0fe5869437786",
-                "48b84df6da22fca09acc144ef606fdb351ee4aaa0dcd52ea8c86bcb4562d8214",
-                "c81e2ff2d39b643ff077a88db2c2b0d3667bdd2e4f58958ac209bde7c1762206",
-                "c045d83cf58eb86bd454d24a4ec2438efe71fda664b161f38d8d6b88d2d11ed4"
+                "0fea685d724ee6cd7b4d050ccaa0d5b9d31f05bc2311386996cc774b6a9cb80d",
+                "eb62035a610c5ae660dea63da9f1097cc023c4b6b4cbe5463a0d577bb4591f38",
+                "b9998e10d6d83a528fa7578259fdb1d8b4d3403739034386a9eb33087dcec14d",
+                "c131d342b399d6d60d6177df43ddab111e13031560362c8547e6e244595356c8",
+                "52a70571ab651fbc6e76e71ec6b75386130fa061c027d3f4a64784c05fcf8ab7",
+                "6f33f98cb4dc9201d1c8de1a56a89cc9676d6b0a03eb0ad0cf591d61a7d1a26e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000006771305914058585
+                "lotame_domain_check": 0.0000067723606417488944
             },
             "exampleSites": [
                 "dalechatea.me",
@@ -104,16 +77,25 @@
         },
         {
             "rule": "pubpowerplatform\\.io\\/assets\\/plugins\\/safeframe\\/src\\/js\\/sf_host\\.min\\.js",
-            "cookies": 0.0000474,
-            "fingerprinting": 1,
+            "cookies": 0.0000406,
+            "fingerprinting": 2,
             "subdomains": [
                 "nc"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "Date.prototype.getTime": 7,
-                "Document.cookie setter": 7,
-                "Document.cookie getter": 7
+                "Navigator.prototype.userAgent": 6,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 6,
+                "Document.cookie getter": 6,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "window.screenY": 1,
+                "window.screenTop": 1,
+                "window.screenX": 1,
+                "window.screenLeft": 1
             },
             "sites": 7,
             "prevalence": 0.0000474,
@@ -124,10 +106,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "sf_ck_tst": {
-                    "ttl": 3,
+                    "ttl": 4,
                     "length": 4,
-                    "prevalence": 0.000047399141398410096,
-                    "uniqueness": 0.14285714285714285
+                    "prevalence": 0.000040634163850493365,
+                    "uniqueness": 0.16666666666666666
                 }
             },
             "firstPartyCookiesSent": {},
@@ -138,31 +120,6 @@
                 "webnews21.com",
                 "www.fosslinux.com",
                 "www.hearteyesmag.com",
-                "www.scan-manga.com"
-            ]
-        },
-        {
-            "rule": "pubpowerplatform\\.io\\/tf-v1\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pix"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dalechatea.me",
-                "infofamouspeople.com",
-                "webnews21.com",
-                "www.fosslinux.com",
                 "www.scan-manga.com"
             ]
         },
@@ -199,6 +156,31 @@
                 "pix"
             ],
             "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dalechatea.me",
+                "infofamouspeople.com",
+                "webnews21.com",
+                "www.fosslinux.com",
+                "www.hearteyesmag.com"
+            ]
+        },
+        {
+            "rule": "pubpowerplatform\\.io\\/imp-v7\\/cc\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -210,55 +192,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dalechatea.me",
-                "infofamouspeople.com",
-                "www.fosslinux.com"
-            ]
-        },
-        {
-            "rule": "pubpowerplatform\\.io\\/js\\/v1\\/adtag\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "adsystem"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "window.innerWidth": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "d4786044c2e82bf4834fb12af11e2e8ac3361cc71855548d95dc827c30bb2f70"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "infofamouspeople.com",
-                "webnews21.com",
-                "www.fosslinux.com"
-            ]
-        },
-        {
-            "rule": "pubpowerplatform\\.io\\/v2\\/videoplayback",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ms"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
                 "infofamouspeople.com",
                 "www.fosslinux.com"
             ]
@@ -292,18 +225,17 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Document.cookie getter": 2
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "window.sessionStorage": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Document.cookie getter": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "efcf2bd8e73b5add3bcbe8d603ee81b44923cb1394f8f560453269e4b7a50958",
-                "1645e8d24fff28638765db44437bead945fb4640b6af75555fcc499c5156160c"
+                "80a3e6bbc22e4bb04e5445efe9f1bb9a3aebf36d414c775651da60ff90263ffb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -322,22 +254,161 @@
                 "nc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "65af31015dd3164d57c5ae01c5ac760affaf7d0a4a00017f780ba273043c82c9"
+                "7799e24a5663292efdd30656e6d442f27c15cf3ff0797d2acb5a4be8dd7508aa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "scan-manga.com",
-                "m.scan-manga.com"
+                "m.scan-manga.com",
+                "www.scan-manga.com"
             ]
         },
         {
-            "rule": "pubpowerplatform\\.io\\/vld\\/1678786126\\/vl\\.json",
+            "rule": "pubpowerplatform\\.io\\/vld\\/1679043389\\/vl\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nc"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "76aacba4eece592e3a3281e69a5762c6f10b527a29fbba5eae5ac091f47ae554"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scan-manga.com",
+                "m.scan-manga.com",
+                "www.scan-manga.com"
+            ]
+        },
+        {
+            "rule": "pubpowerplatform\\.io\\/obj\\/1679043389\\/55a59401-2f19-488d-bae5-1fde93961cfb\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nc"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e1e54b05f270270602658e0fb05eff2ab87402030210920e9af1266a8cb5b3c1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scan-manga.com",
+                "m.scan-manga.com",
+                "www.scan-manga.com"
+            ]
+        },
+        {
+            "rule": "pubpowerplatform\\.io\\/pbs\\/55a59401-2f19-488d-bae5-1fde93961cfb\\/prebid-7\\.34\\.0\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [
+                "nc"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "b27a06e3d35393cf69cdf7de3ed66f7ebbf39ad6c15c69076fd4e63d456e8916"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592028,
+                    "length": 16,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scan-manga.com",
+                "m.scan-manga.com",
+                "www.scan-manga.com"
+            ]
+        },
+        {
+            "rule": "pubpowerplatform\\.io\\/w\\/03042d2c-930e-4c4e-8eac-4d56e4644f30\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "nc"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "db539c7a34f5ecd8b37be260b1c5b648c58e598b8eac03bcd2a1098ff4a800e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fosslinux.com",
+                "www.fosslinux.com"
+            ]
+        },
+        {
+            "rule": "pubpowerplatform\\.io\\/cli\\/03042d2c-930e-4c4e-8eac-4d56e4644f30\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "8e2764045525a0597d49874ed4b455956a469278073f75f2f4e61b044991426f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fosslinux.com",
+                "www.fosslinux.com"
+            ]
+        },
+        {
+            "rule": "pubpowerplatform\\.io\\/vld\\/1679043363\\/vl\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -354,118 +425,25 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "scan-manga.com",
-                "m.scan-manga.com"
-            ]
-        },
-        {
-            "rule": "pubpowerplatform\\.io\\/obj\\/1678786126\\/55a59401-2f19-488d-bae5-1fde93961cfb\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bae4ab1f9cc7d54143c726c01e907c344632656e85597b51f8a468bfa4c12f01"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scan-manga.com",
-                "m.scan-manga.com"
-            ]
-        },
-        {
-            "rule": "pubpowerplatform\\.io\\/pbs\\/55a59401-2f19-488d-bae5-1fde93961cfb\\/prebid-7\\.34\\.0\\.js",
-            "cookies": 0.0000203,
-            "fingerprinting": 1,
-            "subdomains": [
-                "nc"
-            ],
-            "apis": {
-                "window.sessionStorage": 3,
-                "Navigator.prototype.appName": 3,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "2592d41301e644ced13ccb0151d4fb9eb88383e8837720d2a0b395c5ce5798a0",
-                "c3d8760eff8eb96945f1891112044b8297be3ee16a1b13d4436e12402ff388d3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_pbjs_userid_consent_data": {
-                    "ttl": 2592004,
-                    "length": 16,
-                    "prevalence": 0.000020313917742175756,
-                    "uniqueness": 0.3333333333333333
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scan-manga.com",
-                "m.scan-manga.com",
-                "www.scan-manga.com"
-            ]
-        },
-        {
-            "rule": "pubpowerplatform\\.io\\/w\\/03042d2c-930e-4c4e-8eac-4d56e4644f30\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1adf894c6cff73633bbc1beb769e46a7d921f157cbad2e35f47176391eb2a7dd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
                 "fosslinux.com",
                 "www.fosslinux.com"
             ]
         },
         {
-            "rule": "pubpowerplatform\\.io\\/p\\/1677637422\\/03042d2c-930e-4c4e-8eac-4d56e4644f30\\.js",
+            "rule": "pubpowerplatform\\.io\\/obj\\/1679043363\\/03042d2c-930e-4c4e-8eac-4d56e4644f30\\.json",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
                 "nc"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "window.innerWidth": 2,
-                "window.localStorage": 2,
-                "window.innerHeight": 2,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "87fe1402d9c84ba36be30a3fa3e30bb464b0e523eda6c2102d16f12554290927"
+                "46805a1d51fe85fc6509ba7471b6ebee7ddef0d6f5e59b14ed933f3acfea321f"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -494,8 +472,8 @@
                 "window.innerHeight": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.language": 2,
-                "Screen.prototype.height": 2,
                 "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
                 "window.outerWidth": 2,
                 "window.outerHeight": 2,
                 "Screen.prototype.availWidth": 2,
@@ -509,32 +487,32 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "509ab1041b190374cc8bc22e34004c720e16cdbb70a925209f914265e7f69872"
+                "de38cd72cbea202551801e50e90086cbfca57bd414bc6c811c281784c88ec10b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592006,
+                    "ttl": 2592005,
                     "length": 16,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "ucf_uid": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "cto_bundle": {
-                    "ttl": 33696005,
-                    "length": 258,
-                    "prevalence": 0.00001354261182811717,
+                    "ttl": 33696004,
+                    "length": 249,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696005,
-                    "length": 186,
-                    "prevalence": 0.00001354261182811717,
+                    "ttl": 33696004,
+                    "length": 191,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -564,7 +542,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "daebb52fbb703dcb772b396551f0cabb63a303114a1bad98f78c25ddf50d807e"
+                "e8834e96fa736fab94f2c27658cb70ac9191b52c528c4dbce35617f1c30b0681"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -586,12 +564,12 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0113f2a04325c04d9e237f1c3c14f708d51764f67dca6880206cc69205afdbf5"
+                "d68eb8050d94e964edb80e5d2c2ee1a048e13c1988aca11f775126a06f312771"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00001354261182811717
+                "lotame_domain_check": 0.000013544721283497789
             },
             "exampleSites": [
                 "hearteyesmag.com",
@@ -599,7 +577,7 @@
             ]
         },
         {
-            "rule": "pubpowerplatform\\.io\\/vld\\/1678786111\\/vl\\.json",
+            "rule": "pubpowerplatform\\.io\\/vld\\/1679043372\\/vl\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -615,7 +593,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00001354261182811717
+                "lotame_domain_check": 0.000013544721283497789
             },
             "exampleSites": [
                 "hearteyesmag.com",
@@ -623,7 +601,7 @@
             ]
         },
         {
-            "rule": "pubpowerplatform\\.io\\/obj\\/1678786111\\/ce103f52-79f3-4923-9d48-388ba07e68e3\\.json",
+            "rule": "pubpowerplatform\\.io\\/obj\\/1679043372\\/ce103f52-79f3-4923-9d48-388ba07e68e3\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -634,12 +612,12 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "75bb32b5f2d2626266a724b3d49868d77c4c24be7652b8dc83b4beda354af1f3"
+                "3bd87915cdf75371ea7e976df2b270efe77fc20929d88ac674609833b213c219"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00001354261182811717
+                "lotame_domain_check": 0.000013544721283497789
             },
             "exampleSites": [
                 "hearteyesmag.com",
@@ -687,21 +665,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592002,
+                    "ttl": 2592003,
                     "length": 16,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "cto_bundle": {
-                    "ttl": 33696001,
-                    "length": 255,
-                    "prevalence": 0.000006771305914058585,
+                    "ttl": 33696003,
+                    "length": 316,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "cto_bidid": {
-                    "ttl": 33696001,
-                    "length": 186,
-                    "prevalence": 0.000006771305914058585,
+                    "ttl": 33696003,
+                    "length": 228,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -710,60 +688,37 @@
                 "hearteyesmag.com",
                 "www.hearteyesmag.com"
             ]
-        },
-        {
-            "rule": "pubpowerplatform\\.io\\/p\\/1670210533\\/55a59401-2f19-488d-bae5-1fde93961cfb\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "nc"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "8c71706995ee09c5d5e34403bff12aebf6579b602dbe93f71b924e18c2d12fad"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scan-manga.com",
-                "www.scan-manga.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000948,
+    "cookies": 0.0000813,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7611940298507462
+            "prevalence": 0.7911392405063291
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.208955223880597
+            "prevalence": 0.17721518987341772
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.029850746268656716
+            "prevalence": 0.02531645569620253
+        },
+        {
+            "domain": "cloudflareinsights.com",
+            "prevalence": 0.006329113924050633
         }
     ],
     "types": {
-        "XHR": 24,
-        "Script": 35,
+        "XHR": 28,
+        "Script": 28,
         "Image": 13,
-        "Media": 4
+        "Media": 2
     },
     "nameservers": [
-        "may.ns.cloudflare.com",
-        "theo.ns.cloudflare.com"
+        "theo.ns.cloudflare.com",
+        "may.ns.cloudflare.com"
     ]
 }

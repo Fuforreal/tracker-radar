@@ -218,14 +218,9 @@
         {
             "rule": "cesonline\\.azureedge\\.net\\/cesonline\\/js\\/jquery-3\\.5\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -243,11 +238,9 @@
         {
             "rule": "cesonline\\.azureedge\\.net\\/cesonline\\/js\\/popper\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -265,9 +258,11 @@
         {
             "rule": "cesonline\\.azureedge\\.net\\/cesonline\\/js\\/bootstrap\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -325,12 +320,9 @@
         {
             "rule": "cesonline\\.azureedge\\.net\\/cesonline\\/js\\/jquery-ui-1\\.12\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -413,7 +405,9 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "Element.prototype.getClientRects": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,

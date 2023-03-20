@@ -4,24 +4,28 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000677,
+    "sites": 10,
     "subdomains": [
-        "schema"
+        "schema",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "apolloplatform\\.com\\/clientJS\\/apolloDQ\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "schema"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "apis": {
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000406,
             "cnames": [],
             "responseHashes": [
                 "2cb34277a5434f95f67e8db342273633beb965b1e4151781e11145a76526437a"
@@ -32,7 +36,252 @@
             "exampleSites": [
                 "ajc.com",
                 "www.ajc.com",
+                "www.dayton.com",
+                "www.daytondailynews.com",
+                "www.journal-news.com",
                 "www.land.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/14850ea5-31b3-4a57-9105-cf2ae47c7a80\\/d527ad6f-0d67-4490-91c4-d094769ebd09\\/Page%20Load%20Started\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e8311ef6eacd068106709b5214b23b316760478eb4ba381fc8685234b94a600a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ajc.com",
+                "www.ajc.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/14850ea5-31b3-4a57-9105-cf2ae47c7a80\\/d527ad6f-0d67-4490-91c4-d094769ebd09\\/User%20Detected\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "bc38f95ec3190564f95651e7b683135ce156c6441442578ad2c2e517326d033e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ajc.com",
+                "www.ajc.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/14850ea5-31b3-4a57-9105-cf2ae47c7a80\\/d527ad6f-0d67-4490-91c4-d094769ebd09\\/Page%20Load%20Completed\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5196fbd9e57f656a5e2427051075259f256bb1e1929e6f587d4d3eb2829ba77d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ajc.com",
+                "www.ajc.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/a1182e04-e97d-40fc-af00-85946231f867\\/499fa125-ae54-4c7f-82e6-8f2f8eb5cca8\\/Page%20Load%20Started\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "0ef1b9e82fcc0ddb3a36999ee151d9e465baddf24444618b96009bef305c4177"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dayton.com",
+                "www.dayton.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/a1182e04-e97d-40fc-af00-85946231f867\\/499fa125-ae54-4c7f-82e6-8f2f8eb5cca8\\/User%20Detected\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "afd83ab3e63ac714aa791d4e3d9806c1638585a0388043a0eecd55807ac90605"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dayton.com",
+                "www.dayton.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/a1182e04-e97d-40fc-af00-85946231f867\\/499fa125-ae54-4c7f-82e6-8f2f8eb5cca8\\/Page%20Load%20Completed\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5196fbd9e57f656a5e2427051075259f256bb1e1929e6f587d4d3eb2829ba77d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dayton.com",
+                "www.dayton.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/0b5518c4-1f89-4aab-9ba2-d275583d2b4a\\/ca96dff3-2ab3-4d3d-ae9a-5df3468947a1\\/Page%20Load%20Started\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "78e2be338429e961ca7fba596c5d1e45bf311ff4be508bf9317c6aa663274e46"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daytondailynews.com",
+                "www.daytondailynews.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/0b5518c4-1f89-4aab-9ba2-d275583d2b4a\\/ca96dff3-2ab3-4d3d-ae9a-5df3468947a1\\/User%20Detected\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "afd83ab3e63ac714aa791d4e3d9806c1638585a0388043a0eecd55807ac90605"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daytondailynews.com",
+                "www.daytondailynews.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/0b5518c4-1f89-4aab-9ba2-d275583d2b4a\\/ca96dff3-2ab3-4d3d-ae9a-5df3468947a1\\/Page%20Load%20Completed\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5196fbd9e57f656a5e2427051075259f256bb1e1929e6f587d4d3eb2829ba77d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daytondailynews.com",
+                "www.daytondailynews.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/c92e6ef8-ced9-4968-9398-72bdcb7fa34f\\/f66f3e58-0375-4afa-9497-a086174002cb\\/Page%20Load%20Started\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e0c188a6c47671533d28466ab5c805c4f452283397d2c9666da3f7e36f5a2e48"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journal-news.com",
+                "www.journal-news.com"
+            ]
+        },
+        {
+            "rule": "apolloplatform\\.com\\/app\\/30dbc58b-1d7e-490b-bedc-246c2735703f\\/c92e6ef8-ced9-4968-9398-72bdcb7fa34f\\/f66f3e58-0375-4afa-9497-a086174002cb\\/Page%20Load%20Completed\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5196fbd9e57f656a5e2427051075259f256bb1e1929e6f587d4d3eb2829ba77d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journal-news.com",
+                "www.journal-news.com"
             ]
         }
     ],
@@ -42,16 +291,21 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.5882352941176471
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4117647058823529
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 6,
+        "Fetch": 22
     },
     "nameservers": [
+        "ns-193.awsdns-24.com",
         "ns-1202.awsdns-22.org",
         "ns-1009.awsdns-62.net",
-        "ns-193.awsdns-24.com",
         "ns-1851.awsdns-39.co.uk"
     ]
 }

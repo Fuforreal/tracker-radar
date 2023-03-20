@@ -64,13 +64,11 @@
         {
             "rule": "progressive\\.com\\/js\\/CDN\\/jquery\\/jquery-3\\.5\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 3
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -225,7 +223,7 @@
                 "TLTSID": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -292,8 +290,10 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -313,10 +313,8 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -338,15 +336,15 @@
     "types": {
         "Image": 10,
         "Script": 15,
-        "Preflight": 3,
-        "XHR": 3
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
+        "ns1.progressive.com",
         "ns2.progressive.com",
         "ns4.progressive.com",
-        "ns7.progressive.com",
-        "ns5.progressive.com",
         "ns3.progressive.com",
-        "ns1.progressive.com"
+        "ns5.progressive.com",
+        "ns7.progressive.com"
     ]
 }

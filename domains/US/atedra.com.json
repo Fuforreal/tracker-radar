@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
-        "adserve"
+        "adserve",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,13 +26,16 @@
                 "adserve"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "e0eb68a4f380fe93f8a0fc5c3bc1204dc1dd8cb93e05765a57ab3031e9ed4a8f"
+                "35f3d057feec45a2784947a18407d59bacf38b3240f77a62dcdae75c1246bd88",
+                "e0eb68a4f380fe93f8a0fc5c3bc1204dc1dd8cb93e05765a57ab3031e9ed4a8f",
+                "aff58a585887b27daf3d961b486628074e9d083990879d2159168dae2f661996",
+                "23cfa2845c9b6840dcbe3870bdf9237d40cb0e1ea436052baaf4c4a4a1f3b980"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,19 +43,45 @@
             "exampleSites": [
                 "hardcoresledder.com",
                 "www.hardcoresledder.com",
-                "www.iga.net"
+                "www.iga.net",
+                "www.snowmobile.com",
+                "www.snowmobilefanatics.com"
             ]
         },
         {
-            "rule": "atedra\\.com\\/impression\\.php",
-            "cookies": 0.0000135,
+            "rule": "atedra\\.com\\/zones\\.php",
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "adserve"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "8adcba2ef6b9112032d43eff2a1ddf1faff7861214742690a6998067988a52c9",
+                "7ab3f746003c3558c61d2ffa1f362eec13a3f37dc27b297832473f41ac7209cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hardcoresledder.com",
+                "www.iga.net",
+                "www.snowmobile.com"
+            ]
+        },
+        {
+            "rule": "atedra\\.com\\/impression\\.php",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adserve"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "ad08fe912067b894aaf2e64e0c025a3ee1792279f24ad12ad3337bd0baa1f758"
@@ -59,37 +89,67 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_adstanding_local_id": 0.00001354261182811717
+                "_adstanding_local_id": 0.000020317081925246682
             },
             "exampleSites": [
-                "iga.net",
-                "www.iga.net"
+                "hardcoresledder.com",
+                "www.iga.net",
+                "www.snowmobile.com"
+            ]
+        },
+        {
+            "rule": "atedra\\.com\\/media\\/00003\\/63518\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "746c444e2f717205e12cd1bd053556f6532334fa9fb1851b030473347a11aee1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snowmobile.com",
+                "www.snowmobile.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000339,
     "topInitiators": [
         {
+            "domain": "adstanding.com",
+            "prevalence": 0.5238095238095238
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.23809523809523808
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.3
+            "prevalence": 0.14285714285714285
         },
         {
-            "domain": "adstanding.com",
-            "prevalence": 0.2
+            "domain": "doubleclick.net",
+            "prevalence": 0.09523809523809523
         }
     ],
     "types": {
-        "Script": 3,
-        "Image": 2
+        "Script": 5,
+        "XHR": 3,
+        "Image": 5
     },
     "nameservers": [
+        "ns-2022.awsdns-60.co.uk",
+        "ns-790.awsdns-34.net",
         "ns-215.awsdns-26.com",
-        "ns-790.awsdns-34.net"
+        "ns-1137.awsdns-14.org"
     ]
 }

@@ -10,13 +10,42 @@
     "prevalence": 0.000122,
     "sites": 18,
     "subdomains": [
+        "adunit",
         "dmp",
-        "nodetracker",
-        "adunit"
+        "nodetracker"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "datawrkz\\.com\\/production\\/prebid\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "adunit"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.appName": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "technorozen.com",
+                "www.outlookindia.com"
+            ]
+        },
         {
             "rule": "datawrkz\\.com\\/pxl\\/core\\/core\\.min\\.js",
             "cookies": 0,
@@ -25,8 +54,8 @@
                 "dmp"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Date.prototype.getTime": 4
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -60,9 +89,7 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_schn": 0.000006771305914058585
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "coveredca.com",
                 "www.freddys.com",
@@ -86,9 +113,7 @@
             ],
             "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_schn": 0.000006771305914058585
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "coveredca.com",
                 "www.freddys.com",
@@ -246,9 +271,7 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "11510a1821797930e2d9246e8352287463d8b64b387bd9aeecdebcd4f4e308d5"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -264,28 +287,28 @@
     "topInitiators": [
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.3870967741935484
+            "prevalence": 0.36363636363636365
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2903225806451613
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "first party",
-            "prevalence": 0.1935483870967742
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.12903225806451613
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
-        "Script": 21,
+        "Script": 23,
         "XHR": 4,
         "Ping": 4
     },
     "nameservers": [
-        "ns45.domaincontrol.com",
-        "ns46.domaincontrol.com"
+        "ns46.domaincontrol.com",
+        "ns45.domaincontrol.com"
     ]
 }

@@ -4,12 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000135,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "kukrosti\\.com\\/pfe\\/current\\/tag\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Notification.permission": 2,
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "375ebc4a30fa70045e7cd2a6751d8522a0fcb520c879c5023639db325130c1ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "andrie.id",
+                "www.andrie.id"
+            ]
+        },
         {
             "rule": "kukrosti\\.com\\/zone",
             "cookies": 0,
@@ -24,9 +48,11 @@
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0000067723606417488944
+            },
             "exampleSites": [
-                "elevationmap.net",
+                "andrie.id",
                 "www.andrie.id"
             ]
         },
@@ -40,31 +66,9 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b07fe5fedf86a20cdca299146ba17d98f2b04a6d6805a311c767b81779c5b1ac"
+                "0a7db1c6141b9b83093b65416b4120700212d7c3e1d6d88f705b93eaf8551a21"
             ],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elevationmap.net",
-                "www.andrie.id"
-            ]
-        },
-        {
-            "rule": "kukrosti\\.com\\/pfe\\/current\\/tag\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "a8058312929d14dc5a7effdb3bc09f091d52252efddac4935835c04070e9e093"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -83,13 +87,13 @@
         }
     ],
     "types": {
-        "Fetch": 4,
-        "Script": 2
+        "Script": 2,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-43.awsdns-05.com",
+        "ns-1169.awsdns-18.org",
         "ns-1923.awsdns-48.co.uk",
-        "ns-756.awsdns-30.net",
-        "ns-1169.awsdns-18.org"
+        "ns-756.awsdns-30.net"
     ]
 }

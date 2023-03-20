@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.000061,
+    "sites": 9,
     "subdomains": [
         "www",
         "i1",
@@ -16,7 +16,7 @@
         "f2"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "vivocha\\.com\\/a\\/infocert\\/api\\/vivocha\\.js",
@@ -74,14 +74,20 @@
         },
         {
             "rule": "vivocha\\.com\\/w\\/i1\\/8\\.3\\.21\\/js\\/vivocha_data\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000203,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "apis": {
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "4162e13bf3056acbdc90e34430d9cef5d77c87b7e031f7922d283d1215163ba3"
@@ -91,7 +97,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "infocert.it",
-                "webmail.infocert.it"
+                "webmail.infocert.it",
+                "www.alpitour.it"
             ]
         },
         {
@@ -106,7 +113,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "4f93e3974f0d67ccfa29ab8a76df762f6232c2e27d93002390b604098cb6c38b"
+                "3d6c91f26bb621fd2ee53dc2108c1926a8004942ac9bf6def94d26789f1c1bac"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -132,7 +139,10 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "vvcu": 0.000013544721283497789,
+                "vvct": 0.000013544721283497789
+            },
             "exampleSites": [
                 "infocert.it",
                 "webmail.infocert.it"
@@ -141,15 +151,13 @@
         {
             "rule": "vivocha\\.com\\/a\\/alpitour_pro\\/api\\/vivocha\\.js",
             "cookies": 0,
-            "fingerprinting": 3,
+            "fingerprinting": 2,
             "subdomains": [
                 "www",
                 "i1"
             ],
             "apis": {
-                "window.localStorage": 1,
                 "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.mediaDevices": 1,
                 "Navigator.prototype.appName": 1,
                 "Navigator.prototype.language": 1,
                 "Screen.prototype.width": 1,
@@ -164,7 +172,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "87cb066a86a04b16941990d4629f10efa770e7f2872aa8032f5f3f6c0c78fb2a"
+                "b8f3ded99c6cc54df4aa720d697b4b39a485b476d76353a2e2e7a1e2633e67ed"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -186,36 +194,9 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c0f0c6c3b037b85dd8f3603d5bbd483802dd49724a01a7dd2dbb56571a41472b"
+                "db37377e3288ffd2531c4fb3d85ae398efd17842e552e7ce987f2c6377321a2c"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "alpitour.it",
-                "www.alpitour.it"
-            ]
-        },
-        {
-            "rule": "vivocha\\.com\\/w\\/i1\\/8\\.3\\.19\\/js\\/vivocha_data\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "079569a3601e0b01c6f7cd7e732643d3626cf53f0841ffc328842b94b211c431"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -235,7 +216,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "973b0e64c65c3515f84cb65825810f4fc111ff7f359b3830ba143de69148afe7"
+                "ff6c380f506ea507770addb2bf8c1aac721c1f205ffec8c2d58549ebb58a2949"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -262,8 +243,8 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "vvcu": 0.00001354261182811717,
-                "vvct": 0.00001354261182811717
+                "vvcu": 0.000013544721283497789,
+                "vvct": 0.000013544721283497789
             },
             "exampleSites": [
                 "alpitour.it",
@@ -315,7 +296,7 @@
             ]
         },
         {
-            "rule": "vivocha\\.com\\/a\\/alpitour_pro\\/w\\/i1\\/8\\.3\\.19\\/api\\/v3\\/public\\/campaigns\\/5d0774fbeb7fae0005e920ff\\/186\\/1589355286850\\/it\\/1d939872021a07d6\\/e2b5c6b2944b8593",
+            "rule": "vivocha\\.com\\/a\\/alpitour_pro\\/w\\/i1\\/8\\.3\\.21\\/api\\/v3\\/public\\/campaigns\\/5d0774fbeb7fae0005e920ff\\/186\\/1589355286850\\/it\\/1d939872021a07d6\\/e2b5c6b2944b8593",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -513,6 +494,283 @@
             ]
         },
         {
+            "rule": "vivocha\\.com\\/a\\/loccitane\\/api\\/vivocha\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www",
+                "f2"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "28723c56c76a5866dc8f0569ff37fbe6289b205bb89580884f33e2cd8767e1a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/a\\/loccitane\\/js\\/dataframe\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "650dffb746b75854fbcaea8d9bc19852d9b5a4f99cbad8622b28d7247d4fcd5a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.60\\/js\\/vivocha_data\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "fe3b2fa2a1bd4c7e2108cddbe53915534502c80b5b1631fc28b6ae57515b19c1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com",
+                "www.pfzw.nl"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/a\\/loccitane\\/api\\/v2\\/public\\/web-campaigns",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/a\\/loccitane\\/legacy\\/vivocha_user\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "f2"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "9cc0826f837b692ceb216c6372b0e0194c4a30e5f454603bc8a78e5ade18864d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/a\\/loccitane\\/legacy\\/dataframe\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "8f73f86cece2bb9376c4f3b068c533078a750c75b3fc4a699d55a9ab3c59c496"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/vivocha_data\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "c72e6617aca6a1605361dff72c1a8416e812a7f3936c4715587ec1719d095524"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com",
+                "www.pfzw.nl"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/jquery\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "fc0e8b08ba6e91319329a3370109d4a8935af8895b3b8e8da0c3707995faa1c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com",
+                "www.pfzw.nl"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/a\\/loccitane\\/api\\/service\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "vvcu": 0.0000067723606417488944,
+                "vvct": 0.0000067723606417488944
+            },
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/vivocha_ext\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "80476645c331653cad34c9f3175a5b29b03df993ff57e8d770e6d66ffbfe385e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com",
+                "www.pfzw.nl"
+            ]
+        },
+        {
+            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/vivocha_api\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "1cd924bd8d33429bee59b7d731e26e7b74034f5318015f76f2a9424d4c0721f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loccitane.com",
+                "www.loccitane.com",
+                "www.pfzw.nl"
+            ]
+        },
+        {
             "rule": "vivocha\\.com\\/a\\/pggm\\/api\\/vivocha\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -526,7 +784,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "28723c56c76a5866dc8f0569ff37fbe6289b205bb89580884f33e2cd8767e1a5"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -550,34 +810,6 @@
                 "650dffb746b75854fbcaea8d9bc19852d9b5a4f99cbad8622b28d7247d4fcd5a"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pfzw.nl",
-                "www.pfzw.nl"
-            ]
-        },
-        {
-            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.60\\/js\\/vivocha_data\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fe3b2fa2a1bd4c7e2108cddbe53915534502c80b5b1631fc28b6ae57515b19c1"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -664,53 +896,6 @@
             ]
         },
         {
-            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/vivocha_data\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c72e6617aca6a1605361dff72c1a8416e812a7f3936c4715587ec1719d095524"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pfzw.nl",
-                "www.pfzw.nl"
-            ]
-        },
-        {
-            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/jquery\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fc0e8b08ba6e91319329a3370109d4a8935af8895b3b8e8da0c3707995faa1c5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pfzw.nl",
-                "www.pfzw.nl"
-            ]
-        },
-        {
             "rule": "vivocha\\.com\\/a\\/pggm\\/api\\/service\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -730,55 +915,8 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "vvcu": 0.000020313917742175756,
-                "vvct": 0.00001354261182811717
+                "vvcu": 0.0000067723606417488944
             },
-            "exampleSites": [
-                "pfzw.nl",
-                "www.pfzw.nl"
-            ]
-        },
-        {
-            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/vivocha_ext\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "80476645c331653cad34c9f3175a5b29b03df993ff57e8d770e6d66ffbfe385e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pfzw.nl",
-                "www.pfzw.nl"
-            ]
-        },
-        {
-            "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/vivocha_api\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1cd924bd8d33429bee59b7d731e26e7b74034f5318015f76f2a9424d4c0721f2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pfzw.nl",
                 "www.pfzw.nl"
@@ -797,7 +935,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "87cb066a86a04b16941990d4629f10efa770e7f2872aa8032f5f3f6c0c78fb2a"
+                "b8f3ded99c6cc54df4aa720d697b4b39a485b476d76353a2e2e7a1e2633e67ed"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -810,21 +948,21 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000406,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.84
+            "prevalence": 0.9130434782608695
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.16
+            "prevalence": 0.08695652173913043
         }
     ],
     "types": {
-        "Script": 26,
-        "Document": 8,
-        "Fetch": 12,
+        "Script": 36,
+        "Document": 12,
+        "Fetch": 14,
         "Image": 12,
         "Stylesheet": 2,
         "Font": 6

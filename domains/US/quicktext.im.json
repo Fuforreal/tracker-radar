@@ -45,13 +45,14 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.product": 2,
-                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.language": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.cookieEnabled": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -139,15 +140,13 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "cfd966e3a1bf78c528d87d96ba46d478eae51d47467555e0c5a971f74757479c"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -159,20 +158,18 @@
         {
             "rule": "quicktext\\.im\\/static\\/js\\/8211\\.ced45953\\.chunk\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.onLine": 2
+                "window.localStorage": 1,
+                "Navigator.prototype.onLine": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "ce8a92520fbb9db88caf77ba83f2d571892aa4970440081fff24a6ebf2178663"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -224,72 +221,6 @@
                 "h-hotels.com",
                 "www.h-hotels.com"
             ]
-        },
-        {
-            "rule": "quicktext\\.im\\/assets\\/images\\/bot\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5d49c76b8e47d928c995ca2461f7643e9fb4d86d9858aeef9c78cab1fd69c5c4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "h-hotels.com",
-                "www.h-hotels.com"
-            ]
-        },
-        {
-            "rule": "quicktext\\.im\\/assets\\/fonts\\/montserrat-v25-latin-regular\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5f9376c77618bf0ef43bcabf8228c9e2befde3731087b944e140a88c34066873"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "h-hotels.com",
-                "www.h-hotels.com"
-            ]
-        },
-        {
-            "rule": "quicktext\\.im\\/api\\/ping\\/env_production\\/license_8Vcku-10RH\\/event_render\\/host_www\\.h-hotels\\.com\\/path_%252Fen%252Fhplus%252Fhotels%252Fhplus-hotel-berlin-mitte",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "h-hotels.com",
-                "www.h-hotels.com"
-            ]
         }
     ],
     "categories": [],
@@ -304,14 +235,12 @@
     "types": {
         "Script": 8,
         "WebSocket": 2,
-        "XHR": 8,
-        "Stylesheet": 2,
-        "Image": 2,
-        "Font": 2
+        "XHR": 6,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-195-b.gandi.net",
+        "ns-55-a.gandi.net",
         "ns-167-c.gandi.net",
-        "ns-55-a.gandi.net"
+        "ns-195-b.gandi.net"
     ]
 }

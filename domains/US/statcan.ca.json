@@ -37,20 +37,55 @@
         },
         {
             "rule": "statcan\\.ca\\/server\\.php",
-            "cookies": 0.0000203,
+            "cookies": 0.0000271,
             "fingerprinting": 1,
             "subdomains": [
                 "livechat.prod.cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "5c2dc79b950d7cd4c4ea00d0b87f0456a17847472b7d7c8fce1da05584f1d24d",
+                "45d2e830f46251ef413ca2fde2e922bc777f517dcb67bae7c312b830a309cd1f",
+                "f3245c39fc64e2efce6b9e19f05a6ae50017b83c2588894b09fe34f27e17f4f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "statcan.gc.ca",
+                "www.statcan.gc.ca",
+                "www12.statcan.gc.ca",
+                "www150.statcan.gc.ca"
+            ]
+        },
+        {
+            "rule": "statcan\\.ca\\/resource\\.php",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "livechat.prod.cloud"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 3,
+                "Date.prototype.getTime": 3,
+                "window.name": 3,
+                "Screen.prototype.colorDepth": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.width": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "b7ff4398286c7f16ac2e95987303da985cab2c80e0b8fd8e2230a599653dc34d",
-                "937efa654e85e56418fe19284e045c46c0d6ca20bbfa91373b06729432aaa511"
+                "206f58d2303e79962373ee572230b4660c109c71e9d369f532df1465536ee577"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -64,45 +99,13 @@
         {
             "rule": "statcan\\.ca\\/resource\\.php",
             "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "livechat.prod.cloud"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 2,
-                "Date.prototype.getTime": 2,
-                "window.name": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "206f58d2303e79962373ee572230b4660c109c71e9d369f532df1465536ee577"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "statcan.gc.ca",
-                "www150.statcan.gc.ca"
-            ]
-        },
-        {
-            "rule": "statcan\\.ca\\/resource\\.php",
-            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "livechat.prod.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "9ec5115113c1ba037a643bb513dc3afcd2be1ed447319c2fca5278c23b3e4305"
@@ -112,6 +115,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "statcan.gc.ca",
+                "www12.statcan.gc.ca",
                 "www150.statcan.gc.ca"
             ]
         },
@@ -123,8 +127,8 @@
                 "livechat.prod.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "877763737970bc6f50e942a2f56d9ffe7f5541083856b464b09b9997f0f3a98e"
@@ -134,6 +138,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "statcan.gc.ca",
+                "www12.statcan.gc.ca",
                 "www150.statcan.gc.ca"
             ]
         },
@@ -145,8 +150,8 @@
                 "livechat.prod.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "fb7798d6ae327a947a4c943fb323fa80114b217e560c43ed06b75b37b221685e"
@@ -156,13 +161,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "statcan.gc.ca",
+                "www12.statcan.gc.ca",
                 "www150.statcan.gc.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000203,
     "topInitiators": [
         {
             "domain": "first party",
@@ -170,12 +176,12 @@
         }
     ],
     "types": {
-        "Script": 10,
-        "Stylesheet": 2,
-        "Font": 2
+        "Script": 13,
+        "Stylesheet": 3,
+        "Font": 3
     },
     "nameservers": [
-        "stcottem1.statcan.ca",
-        "stcottem2.statcan.ca"
+        "stcottem2.statcan.ca",
+        "stcottem1.statcan.ca"
     ]
 }

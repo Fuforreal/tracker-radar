@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "d166chel5lrjm5\\.cloudfront\\.net\\/skins\\/celebboutique\\/customer\\/css\\/ui\\/jqueryui\\.css",
@@ -338,13 +338,9 @@
         {
             "rule": "d166chel5lrjm5\\.cloudfront\\.net\\/lib\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -362,11 +358,9 @@
         {
             "rule": "d166chel5lrjm5\\.cloudfront\\.net\\/lib\\/js\\/jqueryui\\/jquery-ui\\.custom\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -444,13 +438,9 @@
         {
             "rule": "d166chel5lrjm5\\.cloudfront\\.net\\/js\\/core\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.language": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -528,9 +518,11 @@
         {
             "rule": "d166chel5lrjm5\\.cloudfront\\.net\\/addons\\/quick_search\\/js\\/func\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -703,9 +695,9 @@
         "Font": 2
     },
     "nameservers": [
-        "ns-1183.awsdns-19.org",
         "ns-1569.awsdns-04.co.uk",
-        "ns-391.awsdns-48.com",
-        "ns-802.awsdns-36.net"
+        "ns-802.awsdns-36.net",
+        "ns-1183.awsdns-19.org",
+        "ns-391.awsdns-48.com"
     ]
 }

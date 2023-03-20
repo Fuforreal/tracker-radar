@@ -79,6 +79,28 @@
             ]
         },
         {
+            "rule": "vbn\\.de\\/fahrplan\\/customer\\/vs_bsag\\/js\\/hafas_webapp_config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fahrplaner"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "d1e427c6a4bb6f982f498a959823a1101d9f7c356493955d22dabc8a0d12169a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bsag.de",
+                "www.bsag.de"
+            ]
+        },
+        {
             "rule": "vbn\\.de\\/hafas-res\\/css\\/hafas_web_suggest\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -123,35 +145,16 @@
             ]
         },
         {
-            "rule": "vbn\\.de\\/fahrplan\\/customer\\/vs_bsag\\/js\\/hafas_webapp_config\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fahrplaner"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d1e427c6a4bb6f982f498a959823a1101d9f7c356493955d22dabc8a0d12169a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bsag.de",
-                "www.bsag.de"
-            ]
-        },
-        {
             "rule": "vbn\\.de\\/fahrplan\\/js\\/hafas_webapp_application_widgets\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "fahrplaner"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1,
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -218,7 +221,9 @@
                 "fahrplaner"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 1,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -374,7 +379,9 @@
                 "fahrplaner"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 1,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -393,11 +400,14 @@
         {
             "rule": "vbn\\.de\\/fahrplan\\/js\\/hafas_lib_module_suggest\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "fahrplaner"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1,
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -985,7 +995,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "817b88a73dee64f32ca98454ae9a3d1d23fbd6ec32ff716c5167af1005e34e33"
+                "c538b2971d2d153493aeb2e4f1e95c40e6ae8d749f607b6d545f712591bf0e1b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1341,8 +1351,8 @@
         "XHR": 34
     },
     "nameservers": [
-        "ns2.plutex.de",
         "ns1.plutex.de",
+        "ns2.plutex.de",
         "ns3.plutex.de"
     ]
 }

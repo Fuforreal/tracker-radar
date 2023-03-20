@@ -12,7 +12,7 @@
         "vawidget"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "dhl\\.com\\/ServicePointLocator\\/restV3\\/translations",
@@ -26,7 +26,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1bccf91e2cb036ec5bc97f3403743b8b40a08f2657df575138f1bfa58ede3c5f"
+                "41a82ef20a1fbd3ceb0cb6fc70b526636585ecd7bccf04ce2f990260fcab7777"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -130,11 +130,14 @@
         {
             "rule": "dhl\\.com\\/latest\\/static\\/js\\/4\\.40019960\\.chunk\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "vawidget-eu"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.product": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -157,8 +160,10 @@
                 "vawidget-eu"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -369,11 +374,11 @@
         "Font": 4
     },
     "nameservers": [
-        "ns4.dhl.com",
         "ns2.dhl.com",
-        "ns4b.dhl.com",
         "ns2b.dhl.com",
+        "ns4.dhl.com",
         "ns6b.dhl.com",
-        "ns6.dhl.com"
+        "ns6.dhl.com",
+        "ns4b.dhl.com"
     ]
 }

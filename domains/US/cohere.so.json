@@ -9,7 +9,8 @@
     "subdomains": [
         "static",
         "voice",
-        "service"
+        "service",
+        "useast-2-sock"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -34,7 +35,7 @@
             "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "c7b0af48f80a863d07a625e99a0ea9acf43884225645c6af399df0d4cd0afc3b"
+                "1b44057b30904f0d075d042b33c266c4311045c9ee189ac4d4a194b29e37a18b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -198,9 +199,10 @@
                 "voice"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Navigator.prototype.connection": 2,
-                "Navigator.prototype.userAgent": 2
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "Navigator.prototype.connection": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 2
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -265,11 +267,33 @@
             ]
         },
         {
+            "rule": "cohere\\.so\\/ping",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6d7ce5ada0a7d0dd2b3487b17b0befbd3115c33950ac05e8888b487f1ec55f79"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rezi.ai",
+                "www.rezi.ai"
+            ]
+        },
+        {
             "rule": "cohere\\.so\\/client\\/7ESRcmFMI_x33YyrnLycJUmt",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "service"
+                "useast-2-sock"
             ],
             "apis": {},
             "sites": 2,
@@ -287,7 +311,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "first party",
@@ -298,6 +322,7 @@
         "Script": 32,
         "Document": 4,
         "Media": 2,
+        "Fetch": 2,
         "WebSocket": 2
     },
     "nameservers": [

@@ -240,9 +240,11 @@
         {
             "rule": "melonbooks\\.akamaized\\.net\\/user_data\\/packages\\/responsive\\/js\\/melonbooks_old\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -283,7 +285,9 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.innerWidth": 2
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -385,7 +389,6 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2
             },
@@ -406,9 +409,11 @@
         {
             "rule": "melonbooks\\.akamaized\\.net\\/user_data\\/packages\\/responsive\\/js\\/recommend\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -433,7 +438,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "91c172b0cf0d7870668e8fdad6a9ec96acfb5c57ad361506046542b2d618d145"
+                "302d4f46b89e401de92d15251c399335a06b45c617fc4b0f851cedc39bc84d9b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -446,11 +451,9 @@
         {
             "rule": "melonbooks\\.akamaized\\.net\\/user_data\\/packages\\/responsive\\/js\\/jquery\\.cookie\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -468,9 +471,11 @@
         {
             "rule": "melonbooks\\.akamaized\\.net\\/user_data\\/packages\\/responsive\\/js\\/coag\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -478,26 +483,6 @@
                 "211d3377cfc08f5aaa03900c616625871ac69878e050e17a314df2de773f4875"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "melonbooks.co.jp",
-                "www.melonbooks.co.jp"
-            ]
-        },
-        {
-            "rule": "melonbooks\\.akamaized\\.net\\/user_data\\/packages\\/responsive\\/js\\/jquery\\.mobile\\/images\\/ajax-loader\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b1238af27d6015181559e18a0cd2bb6d33715ed18805ab80d105bdd01fe24c41"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -516,6 +501,26 @@
             "cnames": [],
             "responseHashes": [
                 "3ba5c3d41fdc2b3e8c4bbe4b4a6efb1d6f9aab0437523e25608dddafbeb88bfa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "melonbooks.co.jp",
+                "www.melonbooks.co.jp"
+            ]
+        },
+        {
+            "rule": "melonbooks\\.akamaized\\.net\\/user_data\\/packages\\/responsive\\/js\\/jquery\\.mobile\\/images\\/ajax-loader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b1238af27d6015181559e18a0cd2bb6d33715ed18805ab80d105bdd01fe24c41"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -594,11 +599,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9210526315789473
+            "prevalence": 0.9178082191780822
         },
         {
             "domain": "rtoaster.jp",
-            "prevalence": 0.07894736842105263
+            "prevalence": 0.0821917808219178
         }
     ],
     "types": {

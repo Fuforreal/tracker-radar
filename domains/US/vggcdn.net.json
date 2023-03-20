@@ -24,7 +24,8 @@
                 "ws"
             ],
             "apis": {
-                "window.innerHeight": 1
+                "window.innerHeight": 1,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -42,18 +43,20 @@
         },
         {
             "rule": "vggcdn\\.net\\/scripts\\/d\\/e\\/r\\/viagogo-modules\\.55f4a814\\.chunk\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "cookies": 0.00000677,
+            "fingerprinting": 2,
             "subdomains": [
                 "ws"
             ],
             "apis": {
                 "PerformanceTiming.prototype.navigationStart": 2,
-                "Document.cookie getter": 2,
                 "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.onLine": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -63,10 +66,22 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "ai_user": {
+                    "ttl": 31536000,
+                    "length": 47,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "ai_session": {
+                    "ttl": 1800,
+                    "length": 50,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
                 "wsso": {
-                    "ttl": 31556908,
-                    "length": 460,
-                    "prevalence": 0.00001354261182811717,
+                    "ttl": 31556909,
+                    "length": 428,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -77,7 +92,7 @@
             ]
         },
         {
-            "rule": "vggcdn\\.net\\/scripts\\/d\\/e\\/r\\/icon\\.c66d96a5\\.chunk\\.js",
+            "rule": "vggcdn\\.net\\/scripts\\/d\\/e\\/r\\/icon\\.c2444036\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -88,7 +103,35 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b07cc183747ea36415bfc035c3d51bc747c669e7029c23d8a8382511f1730a1c"
+                "17c4dd9179d5194e11d449878335f496627c4e657b390e2e9e06d932059548fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stubhub.com",
+                "www.stubhub.com"
+            ]
+        },
+        {
+            "rule": "vggcdn\\.net\\/scripts\\/d\\/e\\/r\\/viagogo-home\\.19bcdb79\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Screen.prototype.width": 1,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1f021afe7eb5c9206e282992522f93763aa477415b0c1e529cc0bc1041e15d88"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -121,7 +164,7 @@
             ]
         },
         {
-            "rule": "vggcdn\\.net\\/scripts\\/d\\/e\\/r\\/lazy-footer\\.d4630c3c\\.chunk\\.js",
+            "rule": "vggcdn\\.net\\/scripts\\/d\\/e\\/r\\/lazy-footer\\.a5eb3a2c\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -132,7 +175,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ad806a87ae1f01c5f65a965326d9d278b97d2b7335a784f4eea826fb1d570e45"
+                "71cb0460e754c34d43110f0343cc4410c95a2710501a375780becd0eee6eb676"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -208,39 +251,11 @@
                 "stubhub.com",
                 "www.stubhub.com"
             ]
-        },
-        {
-            "rule": "vggcdn\\.net\\/scripts\\/d\\/e\\/r\\/viagogo-home\\.29919bdd\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ws"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "window.localStorage": 2,
-                "window.devicePixelRatio": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2e20b56c722080ee5365e2177453fdbd4fc671d9eb8ceb8b4d377e5ea0cbe4c3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "stubhub.com",
-                "www.stubhub.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000203,
     "topInitiators": [
         {
             "domain": "first party",
@@ -252,9 +267,9 @@
         "Image": 7
     },
     "nameservers": [
-        "ns2-05.azure-dns.net",
-        "ns1-05.azure-dns.com",
         "ns3-05.azure-dns.org",
-        "ns4-05.azure-dns.info"
+        "ns4-05.azure-dns.info",
+        "ns1-05.azure-dns.com",
+        "ns2-05.azure-dns.net"
     ]
 }

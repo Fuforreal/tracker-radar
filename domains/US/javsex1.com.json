@@ -169,14 +169,11 @@
         {
             "rule": "javsex1\\.com\\/skin\\/phimmoi\\/js\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "vlxx"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -194,14 +191,11 @@
         {
             "rule": "javsex1\\.com\\/skin\\/phimmoi\\/js\\/jquery-ui\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "vlxx"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -395,11 +389,13 @@
         {
             "rule": "javsex1\\.com\\/skin\\/phimmoi\\/js\\/bootstrap\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "vlxx"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -669,7 +665,7 @@
         "Font": 2
     },
     "nameservers": [
-        "harmony.ns.cloudflare.com",
-        "agustin.ns.cloudflare.com"
+        "agustin.ns.cloudflare.com",
+        "harmony.ns.cloudflare.com"
     ]
 }

@@ -203,14 +203,11 @@
         {
             "rule": "nettix\\.fi\\/extra\\/common_template\\/external\\/jquery-ui\\.v1\\.12\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "script"
             ],
-            "apis": {
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -277,13 +274,11 @@
         {
             "rule": "nettix\\.fi\\/extra\\/common_template\\/external\\/jquery\\.flexslider-min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "script"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
@@ -326,14 +321,11 @@
         {
             "rule": "nettix\\.fi\\/extra\\/common_template\\/external\\/jquery\\.fancybox\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "script"
             ],
-            "apis": {
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -426,11 +418,13 @@
         {
             "rule": "nettix\\.fi\\/extra\\/common_template\\/header_desktop\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "script"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -453,9 +447,10 @@
                 "script"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Element.prototype.getClientRects": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -597,8 +592,8 @@
                 "script"
             ],
             "apis": {
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -872,7 +867,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "05e32fc260a5e8f27b20749e1675743db86f536f596b9da824373c1990cdecd0"
+                "7c1902f0bd489e57ff7437d8b7b3c91214c1d7f08def26a9a29d37aceffe5d31"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -894,7 +889,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d4b5770953224ef777030159ef71e872c12aea40b055dad59bb9564742830548"
+                "63e1354b053058c31b2f1aa696129c7df83ddd8ffdff869b18017873dd1ce9a5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -938,7 +933,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ce7639fbb99a21a15a732b2005ef2d41e4df5731fea01a79db3b2d53dce6f787"
+                "e1e1514da019c2a746a9bd794d80c8b769928313dbab2e3b19985810ad1bd25f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -960,7 +955,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8e37f110e3a98c158b9dd60ecc9bdb5c390bc67fde152b057825907f3c99f7bc"
+                "b6dcdacbae16a967c2a69c535c8235eb2d8b0d960ef190205948921cf5e5a89d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1004,7 +999,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "37d43aee0aa058f2a22404c652e874dadeb0241ebc28fdc2926c59fed6db40f1"
+                "718885fcb0a94921145700ceb053816de2df5196c2e45c7b85d1abb6901ca67f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1026,7 +1021,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a2e230be263760b68e6763d11d5a332a1491edc1091964fcf57487efcb0d42e4"
+                "461e8f62fd82da239b519603f597b6400ad57865e17adf9110b3b2cd1d7016ed"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1083,14 +1078,11 @@
         {
             "rule": "nettix\\.fi\\/extra\\/common_template\\/external\\/jquery-ui\\.v1\\.12\\.1-custom\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "script"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1157,9 +1149,9 @@
                 "script"
             ],
             "apis": {
-                "window.innerHeight": 2,
-                "window.localStorage": 2,
-                "window.innerWidth": 2
+                "window.innerWidth": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1187,7 +1179,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c0ccdab88a5c1f798233053af98bdfca494c9804cd1c7b75779850de2a4298df"
+                "50aa5e11e1b42a1da86ebb04bb1f314ab59da85fb3da954da888a9e7569491ee"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1248,15 +1240,15 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.7577319587628866
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.2193877551020408
+            "prevalence": 0.211340206185567
         },
         {
             "domain": "nettiauto.com",
-            "prevalence": 0.030612244897959183
+            "prevalence": 0.030927835051546393
         }
     ],
     "types": {
@@ -1266,7 +1258,7 @@
         "Script": 63
     },
     "nameservers": [
-        "hope.ns.cloudflare.com",
-        "pete.ns.cloudflare.com"
+        "pete.ns.cloudflare.com",
+        "hope.ns.cloudflare.com"
     ]
 }

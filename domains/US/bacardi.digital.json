@@ -30,8 +30,10 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "7a356dcd855041724c2fd83c454f00907b49893cc5ff2e974fa814306795e23c"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -50,10 +52,8 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "7a356dcd855041724c2fd83c454f00907b49893cc5ff2e974fa814306795e23c"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -88,6 +88,28 @@
             ]
         },
         {
+            "rule": "bacardi\\.digital\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "age-gate-prod.prod"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bacardi.com",
+                "www.bacardi.com"
+            ]
+        },
+        {
             "rule": "bacardi\\.digital\\/cep\\/banner\\.jsonp",
             "cookies": 0.0000135,
             "fingerprinting": 0,
@@ -104,7 +126,7 @@
                 }
             ],
             "responseHashes": [
-                "590a1172653763047c7bef2872081f6c1a1d69675cd27462a333901651e5c86c"
+                "b9ac558edad49ac233025ca19cf8c98d7c2ad6e225ccb2cbd31ed97618dd4cfb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -131,33 +153,9 @@
                 }
             ],
             "responseHashes": [
-                "1bbe65ceed880a861c8e1c2f3938ecc0f862f7e6cc3e28fb7f04bf335a68fb13"
+                "1d0307fc59fee15277d2d919a60c5d9371c90d27ff92fbe30cf323ee28b3ff84"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bacardi.com",
-                "www.bacardi.com"
-            ]
-        },
-        {
-            "rule": "bacardi\\.digital\\/",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "age-gate-prod.prod"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6cff788517fd41167c2e2904b92e20079b8a0b05e8fb4737ac4db4fbd14aa6b3"
-            ],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -359,8 +357,8 @@
         }
     ],
     "types": {
-        "Preflight": 2,
         "Fetch": 2,
+        "Preflight": 2,
         "Script": 10,
         "Document": 2,
         "Stylesheet": 2,
@@ -368,9 +366,9 @@
         "Font": 4
     },
     "nameservers": [
-        "ns-530.awsdns-02.net",
-        "ns-1837.awsdns-37.co.uk",
         "ns-1076.awsdns-06.org",
-        "ns-276.awsdns-34.com"
+        "ns-530.awsdns-02.net",
+        "ns-276.awsdns-34.com",
+        "ns-1837.awsdns-37.co.uk"
     ]
 }

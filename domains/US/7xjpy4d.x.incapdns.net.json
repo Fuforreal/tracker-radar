@@ -20,8 +20,8 @@
     "resources": [
         {
             "rule": "7xjpy4d\\.x\\.incapdns\\.net\\/staticcontent\\/raclettejs-page\\.html",
-            "cookies": 0.0000203,
-            "fingerprinting": 1,
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 3,
@@ -33,11 +33,45 @@
                 }
             ],
             "responseHashes": [
-                "200e29395dce8a13811777fb2af25011b89f20884b46131b21b5787a8c3a6a80",
+                "d20f514bb536ab9ab2dba5ca9ac5498585d9ccc1e69b89ad619b7b121438d9b8",
                 "87c5bbbb4c918da666978e05f7911e10702c3dd81e60e73fae7ba54c4b0f8100"
             ],
             "type": "Document",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtransat.com",
+                "www.airtransat.com",
+                "www.transat.com"
+            ]
+        },
+        {
+            "rule": "7xjpy4d\\.x\\.incapdns\\.net\\/_Incapsula_Resource",
+            "cookies": 0.0000203,
+            "fingerprinting": 3,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "api.transat.com",
+                    "resolved": "7xjpy4d.x.incapdns.net"
+                }
+            ],
+            "responseHashes": [
+                "a656d522dc2aa5cc629f97c1dcc342cf0b665a77e4ec03872c6379b6f5891491",
+                "1a8f4240981bf0c42d34d14afeb6613230f270a850cc69ca55a9441238bb6054"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "___utmvc": {
+                    "ttl": 23,
+                    "length": 2851,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "airtransat.com",
@@ -97,41 +131,7 @@
         },
         {
             "rule": "7xjpy4d\\.x\\.incapdns\\.net\\/_Incapsula_Resource",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "api.transat.com",
-                    "resolved": "7xjpy4d.x.incapdns.net"
-                }
-            ],
-            "responseHashes": [
-                "659e084dacff4f16bc3653859276012ceaab36215524728834239e4caac18784",
-                "675bc85651f5b8411d9250a833251c463d6530b956c71c34aae0ef23300b9e2a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "___utmvc": {
-                    "ttl": 23,
-                    "length": 2851,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "airtransat.com",
-                "www.airtransat.com",
-                "www.transat.com"
-            ]
-        },
-        {
-            "rule": "7xjpy4d\\.x\\.incapdns\\.net\\/_Incapsula_Resource",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
@@ -170,13 +170,13 @@
                 }
             ],
             "responseHashes": [
-                "ceadb071b936191efedba5fe2aee39d4e1209a0e5f3b1e6426b60fbd98697aac",
-                "e0ddd0371524352265105626e354ac9f4724e68fb3dd8f023c4233c414fc78a2"
+                "18d6e122386668845b42c48205247ac5cf450c339cb2f9e85708f2560754af2f",
+                "f6bdb96fda99757dc6142f94ad9faa856d8bdacc8941be8464ba4ed0e752afbc"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000047399141398410096
+                "_ga": 0.000040634163850493365
             },
             "exampleSites": [
                 "airtransat.com",
@@ -224,7 +224,7 @@
                 }
             ],
             "responseHashes": [
-                "ac6856da3c777c70dfb576b0e08a700f2b56cda2745495d8050b19f391bf2f55"
+                "6366ceccd2315bca983ac65bcf3ca81e0f72d71869bfab6b3b8f191822b11c6f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -242,16 +242,12 @@
     "cookies": 0.0000271,
     "topInitiators": [
         {
-            "domain": "noibu.com",
-            "prevalence": 0.3333333333333333
+            "domain": "msecnd.net",
+            "prevalence": 0.4666666666666667
         },
         {
             "domain": "googletagmanager.com",
             "prevalence": 0.26666666666666666
-        },
-        {
-            "domain": "msecnd.net",
-            "prevalence": 0.2
         },
         {
             "domain": "first party",
@@ -260,13 +256,17 @@
         {
             "domain": "cloudflare.com",
             "prevalence": 0.06666666666666667
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
         "Document": 6,
+        "Script": 3,
         "XHR": 7,
         "Preflight": 3,
-        "Script": 3,
         "Image": 3
     },
     "nameservers": []

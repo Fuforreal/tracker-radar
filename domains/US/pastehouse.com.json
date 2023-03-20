@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "pastehouse\\.com\\/4m0wark0kj",
@@ -20,7 +20,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "70191b26cea3a6ab5cbe2cf19cd75ea96e14b12c81be0374372b4a84eaba11e3"
+                "8e1947ba60b794b3fe48f5584b483561d4e738bd44e86b1f2659c905095cd317"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -40,7 +40,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "df3a323cd77e27f7308c7a0cc591f3847e8eb258f31caa74157b648fd26c0249"
+                "d0d95399995b4d78d399bb423560a88ee242f1fbe016815c9115c98668a85f22"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -60,7 +60,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "fa64fef59308f95c80013227d3a591ae268343b10353b6b2e641f215192a7a1c"
+                "af0a3990d1ac0bd54209c4c4001acc05eda08a6769b7c4349127643766319a88"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -80,7 +80,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "caf3c86133470a72329793911ec336548e7c9eabbdaf9aa467e5d232b8259b8d"
+                "49c8230c8fd15ff61eb97d3dd35f325a4c433c5c79babdc3b61407fdd34febba"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -100,7 +100,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "be783709652bdb9e8d5270be17830b3d0ab5125b90df4553228e10296eacc630"
+                "bb0787e82ccd613b959d736b0caaca9108c0556081f64840d5ba411d4e025c4d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -253,9 +253,11 @@
         {
             "rule": "pastehouse\\.com\\/js\\/bootstrap\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -395,7 +397,7 @@
             ]
         },
         {
-            "rule": "pastehouse\\.com\\/cdn-cgi\\/challenge-platform\\/h\\/b\\/scripts\\/alpha\\/invisible\\.js",
+            "rule": "pastehouse\\.com\\/cdn-cgi\\/challenge-platform\\/h\\/g\\/scripts\\/alpha\\/invisible\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -404,7 +406,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "996af07423660d756c4be48da0df1474de765fcd1b46f27e89863cca5287816e"
+                "a2364ff1d7e15c119ceb682b5c9d2c366964cd6ac95b4f940d75ee101198c692"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -415,7 +417,7 @@
             ]
         },
         {
-            "rule": "pastehouse\\.com\\/cdn-cgi\\/challenge-platform\\/h\\/b\\/scripts\\/pica\\.js",
+            "rule": "pastehouse\\.com\\/cdn-cgi\\/challenge-platform\\/h\\/g\\/scripts\\/pica\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -424,9 +426,29 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "6d30bac95dfa319e7bb90db0e14b8796f57c7933b7fe71e8e4e5cd45186fa45b"
+                "2a2ce1a8e5343f9a2ccdfca017e65da53c7f6c5f4d3a359a5c0730febb4eea3c"
             ],
             "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doodla.cam",
+                "www.doodla.cam"
+            ]
+        },
+        {
+            "rule": "pastehouse\\.com\\/cdn-cgi\\/challenge-platform\\/h\\/g\\/scripts\\/cb\\/invisible\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6283d5c37bd78db34c5b16678fc4abfe79dc97f4a3af159479754007fbc0ff74"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -441,19 +463,23 @@
     "topInitiators": [
         {
             "domain": "vsdooodcammm.blogspot.com",
-            "prevalence": 1
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "Document": 10,
         "Stylesheet": 12,
         "Image": 2,
-        "Script": 12,
+        "Script": 14,
         "Font": 4,
         "Other": 2
     },
     "nameservers": [
-        "kiki.ns.cloudflare.com",
-        "zeus.ns.cloudflare.com"
+        "zeus.ns.cloudflare.com",
+        "kiki.ns.cloudflare.com"
     ]
 }

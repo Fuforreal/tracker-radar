@@ -8,9 +8,9 @@
     "sites": 4,
     "subdomains": [
         "static",
+        "ux",
         "vtc",
-        "vdata",
-        "ux"
+        "vdata"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,13 +23,13 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.hardwareConcurrency": 3,
-                "URL.createObjectURL": 3,
-                "window.devicePixelRatio": 3,
-                "WebGLRenderingContext.prototype.getExtension": 3,
-                "WebGLRenderingContext.prototype.getParameter": 3,
                 "Navigator.prototype.userAgent": 3,
-                "CanvasRenderingContext2D.prototype.getImageData": 3
+                "CanvasRenderingContext2D.prototype.getImageData": 3,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "URL.createObjectURL": 2,
+                "window.devicePixelRatio": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -231,6 +231,30 @@
             ]
         },
         {
+            "rule": "maptoolkit\\.net\\/set",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ux"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "duesseldorf-tourismus.de",
+                "www.duesseldorf-tourismus.de",
+                "www.hochschwarzwald.de",
+                "www.schwarzwald-tourismus.info"
+            ]
+        },
+        {
             "rule": "maptoolkit\\.net\\/mtk-contours\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -346,30 +370,6 @@
             ]
         },
         {
-            "rule": "maptoolkit\\.net\\/set",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ux"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "duesseldorf-tourismus.de",
-                "www.duesseldorf-tourismus.de",
-                "www.hochschwarzwald.de",
-                "www.schwarzwald-tourismus.info"
-            ]
-        },
-        {
             "rule": "maptoolkit\\.net\\/fonts\\/Noto%20Sans%20Bold\\/0-255\\.pbf",
             "cookies": 0,
             "fingerprinting": 0,
@@ -478,7 +478,7 @@
         "Image": 3
     },
     "nameservers": [
-        "owen.ns.cloudflare.com",
-        "elle.ns.cloudflare.com"
+        "elle.ns.cloudflare.com",
+        "owen.ns.cloudflare.com"
     ]
 }

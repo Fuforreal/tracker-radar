@@ -324,11 +324,13 @@
         {
             "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/header\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "global-fs"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -346,14 +348,11 @@
         {
             "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/jquery-ui-1\\.13\\.0\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "global-fs"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -370,15 +369,15 @@
         },
         {
             "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/common_functions\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "global-fs"
             ],
             "apis": {
-                "Document.cookie getter": 1,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1,
+                "Document.cookie setter": 2,
                 "window.localStorage": 1
             },
             "sites": 2,
@@ -390,9 +389,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "pages_net": {
-                    "ttl": 86405,
-                    "length": 31,
-                    "prevalence": 0.000006771305914058585,
+                    "ttl": 86404,
+                    "length": 29,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -405,11 +404,13 @@
         {
             "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/rc-carousel\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "global-fs"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -676,7 +677,7 @@
                 "global-fs"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -695,12 +696,15 @@
         {
             "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/retail_shop_header\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "global-fs"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2,
+                "window.devicePixelRatio": 1,
+                "Element.prototype.getClientRects": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -709,96 +713,6 @@
                 "4e056a18001579979028f570e876b3d29b2cd793bcac60d1959ba48a7dc475b9"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webike.net",
-                "japan.webike.net"
-            ]
-        },
-        {
-            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/select2\\/select2\\.full\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global-fs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "10212fd7e6428dbf534424aba7239452245e86c7a043b9df1a28872101b3e983"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webike.net",
-                "japan.webike.net"
-            ]
-        },
-        {
-            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/superfish\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "global-fs"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "df2221b9446781afc61c537a29df341b7779d16995d85eb89f463e779536869b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webike.net",
-                "japan.webike.net"
-            ]
-        },
-        {
-            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/top-search\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global-fs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "9c3a3ee2574b5f9dc65ed15b264e745955954396322c8b9baa4f03170616896e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webike.net",
-                "japan.webike.net"
-            ]
-        },
-        {
-            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/nossl_css\\/register-popup\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global-fs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6f56cc89d7a8d4f83aee42abcbf6180acc1b32215d2d67e2eda6f4250e62793d"
-            ],
-            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -909,6 +823,99 @@
                 "0aaef32da39962eb03dc32a8bc64e4892b92085cf4a79e94f35fe2313440594f"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webike.net",
+                "japan.webike.net"
+            ]
+        },
+        {
+            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/select2\\/select2\\.full\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global-fs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "10212fd7e6428dbf534424aba7239452245e86c7a043b9df1a28872101b3e983"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webike.net",
+                "japan.webike.net"
+            ]
+        },
+        {
+            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/superfish\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "global-fs"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "df2221b9446781afc61c537a29df341b7779d16995d85eb89f463e779536869b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webike.net",
+                "japan.webike.net"
+            ]
+        },
+        {
+            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/js\\/top-search\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "global-fs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "9c3a3ee2574b5f9dc65ed15b264e745955954396322c8b9baa4f03170616896e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webike.net",
+                "japan.webike.net"
+            ]
+        },
+        {
+            "rule": "webike-cdn\\.net\\/jp_statics\\/gfs\\/nossl_css\\/register-popup\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global-fs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6f56cc89d7a8d4f83aee42abcbf6180acc1b32215d2d67e2eda6f4250e62793d"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1293,13 +1300,11 @@
         {
             "rule": "webike-cdn\\.net\\/js\\/jquery\\/jquery\\.unveil\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "img"
             ],
-            "apis": {
-                "window.devicePixelRatio": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1316,15 +1321,12 @@
         },
         {
             "rule": "webike-cdn\\.net\\/js\\/jquery\\/jquery\\.cookie\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "img"
             ],
-            "apis": {
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1332,14 +1334,7 @@
                 "8f3e70af0f8458b79887f582bc50778220daa4b4de8aa51ced387248ad41b6ea"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "my_location": {
-                    "ttl": -86397,
-                    "length": 4,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "webike.net",
@@ -1349,11 +1344,14 @@
         {
             "rule": "webike-cdn\\.net\\/js\\/wbs\\/header-search\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "img"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1385,28 +1383,6 @@
                 "9de4086a8165c98058579f142a280051620a9462b8a2bdedef76cd3fc985688b"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webike.net",
-                "www.webike.net"
-            ]
-        },
-        {
-            "rule": "webike-cdn\\.net\\/sys_images\\/moto1\\/20200525_monthly_point_pr_336_280\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5a129cf39536c4fcd5e84a3bea6f9809f4cedf5f616cb650e734d2131fed68ab"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1549,27 +1525,27 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000203,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9515151515151515
+            "prevalence": 0.9589442815249267
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.048484848484848485
+            "prevalence": 0.04105571847507331
         }
     ],
     "types": {
-        "Image": 43,
+        "Image": 41,
         "Stylesheet": 42,
         "Script": 46,
         "Font": 6
     },
     "nameservers": [
-        "ns-cloud-b1.googledomains.com",
-        "ns-cloud-b2.googledomains.com",
         "ns-cloud-b3.googledomains.com",
+        "ns-cloud-b2.googledomains.com",
+        "ns-cloud-b1.googledomains.com",
         "ns-cloud-b4.googledomains.com"
     ]
 }

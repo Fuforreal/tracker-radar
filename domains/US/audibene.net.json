@@ -14,7 +14,7 @@
         "et.cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "audibene\\.net\\/sessionLayer\\.js",
@@ -24,12 +24,12 @@
                 "session.cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
                 "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "window.localStorage": 1,
-                "Navigator.prototype.connection": 1,
-                "window.sessionStorage": 1
+                "Navigator.prototype.connection": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -39,16 +39,16 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "act_history": {
-                    "ttl": 31536003,
-                    "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                "CMP_NO-ACT": {
+                    "ttl": 3606,
+                    "length": 308,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
-                "CMP_NO-ACT": {
-                    "ttl": 3600,
-                    "length": 308,
-                    "prevalence": 0.000006771305914058585,
+                "act_history": {
+                    "ttl": 31536012,
+                    "length": 36,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -70,7 +70,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "3d53befccd1f855ca083fa50341017a532961d7cafd6f5e82c465b8d37d8d6de"
+                "33dc770213b01294cf505e6fef6dfd52e0edfde15aac052da09caa636f7ba3c2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -97,7 +97,7 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00001354261182811717
+                "_li_dcdm_c": 0.000013544721283497789
             },
             "exampleSites": [
                 "hear.com",
@@ -169,9 +169,9 @@
         "Fetch": 8
     },
     "nameservers": [
-        "ns-426.awsdns-53.com",
         "ns-657.awsdns-18.net",
         "ns-1967.awsdns-53.co.uk",
+        "ns-426.awsdns-53.com",
         "ns-1469.awsdns-55.org"
     ]
 }

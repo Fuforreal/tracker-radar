@@ -12,7 +12,7 @@
         "web-analytics"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "botgenes\\.org\\/widget\\/botgenes\\.min\\.js",
@@ -108,13 +108,11 @@
         {
             "rule": "botgenes\\.org\\/widget\\/libraries\\/bg-jquery-ui\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -208,6 +206,7 @@
             "apis": {
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
                 "window.innerHeight": 2,
                 "window.innerWidth": 2
             },
@@ -215,7 +214,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9b2a01b11899f8cfc0acd8f1aec3e7b1fb84bc251c4d5eee292324bcaf8d2038"
+                "a4afbb1bf65c922a98ed52025313f8e1ee77fe3a1544fb4a8d52739f6bcc34f0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -248,6 +247,28 @@
             ]
         },
         {
+            "rule": "botgenes\\.org\\/widget\\/libraries\\/bg-web-analytics\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "19ca12e42b5487d8e62660c57e6f6b0e9c5aaa8683860a8ce8b7880b64cf968c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "equifax.ca",
+                "www.consumer.equifax.ca"
+            ]
+        },
+        {
             "rule": "botgenes\\.org\\/widget\\/libraries\\/9a0517c172\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -262,28 +283,6 @@
             "cnames": [],
             "responseHashes": [
                 "6951604ba7e42f0e053bec826d7052c9f86281ec32ffb90d6c0bdddea1567ab7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "equifax.ca",
-                "www.consumer.equifax.ca"
-            ]
-        },
-        {
-            "rule": "botgenes\\.org\\/widget\\/libraries\\/bg-web-analytics\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "19ca12e42b5487d8e62660c57e6f6b0e9c5aaa8683860a8ce8b7880b64cf968c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -379,10 +378,10 @@
         "Image": 2
     },
     "nameservers": [
-        "ns2.dnsmadeeasy.com",
-        "ns4.dnsmadeeasy.com",
-        "ns1.dnsmadeeasy.com",
         "ns3.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com",
+        "ns2.dnsmadeeasy.com",
         "ns0.dnsmadeeasy.com"
     ]
 }

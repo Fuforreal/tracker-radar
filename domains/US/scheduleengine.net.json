@@ -7,24 +7,53 @@
     "prevalence": 0.00000677,
     "sites": 1,
     "subdomains": [
+        "embed",
+        "webchat",
         "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "scheduleengine\\.net\\/se-analytics-service\\/v1\\/events",
+            "rule": "scheduleengine\\.net\\/schedule-engine-v3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "embed"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "b36ad57f8624b173ad33bd476c8a53ce0846c0a3529c6115a90149f27a5d8c80"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rheem.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/webchat-v1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "webchat"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "fbde780f512b399005fcc20be47562778876e9e5187139578e96ea7c9e287538"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -44,7 +73,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "51b20d287a5f265611b0c4fbdbd22a74268208018433dc3df4ec0418e509da9a"
+                "7239fa85ccebade15e62b9a3f167f9076f6e0f7f5e425644ddf62d4087cd0545"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -81,11 +110,15 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6
+        },
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Preflight": 2,
+        "Script": 4,
         "Fetch": 2,
         "WebSocket": 2
     },

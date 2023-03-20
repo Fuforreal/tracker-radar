@@ -9,13 +9,31 @@
     "subdomains": [
         "mon",
         "privacy",
-        "mcs",
-        "vcs",
-        "verify"
+        "mcs"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "zijieapi\\.com\\/monitor_web\\/settings\\/browser-settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "juejin.cn",
+                "www.douyin.com"
+            ]
+        },
         {
             "rule": "zijieapi\\.com\\/monitor_web\\/settings\\/browser-settings",
             "cookies": 0,
@@ -38,85 +56,17 @@
         },
         {
             "rule": "zijieapi\\.com\\/api\\/web-cmp\\/sdk\\/",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "privacy"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "4284978ad2e68edbd133ea1c3366b208b47f7e36063d1986f15f7f9576ff8e87"
-            ],
+            "responseHashes": [],
             "type": "Script",
-            "firstPartyCookies": {
-                "s_v_web_id": {
-                    "ttl": 5184005,
-                    "length": 52,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "bd_ticket_guard_client_data": {
-                    "ttl": null,
-                    "length": 706,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "msToken": {
-                    "ttl": 604818,
-                    "length": 131,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "ttcid": {
-                    "ttl": 604814,
-                    "length": 34,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "tt_scid": {
-                    "ttl": 604818,
-                    "length": 68,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "cookietest": {
-                    "ttl": -1678730829,
-                    "length": 1,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/webid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mcs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e43b891f05779f27520493871b616261d1673ca54ec3ee8cb8308e571869ff7b"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -136,159 +86,9 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/monitor_web\\/settings\\/browser-settings",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mon"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mcs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "75f71b77b1f99075cfa78126ec000ad63229746e0fd551c7211e896f85fab1ca"
-            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mcs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/vc\\/setting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vcs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5b4b8ff26621a55149a93c8c2ab513c99b8c91993624579333c4dd89b47b045a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/monitor_browser\\/collect\\/batch\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mon"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/monitor_browser\\/collect\\/batch\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mon"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "douyin.com",
-                "www.douyin.com"
-            ]
-        },
-        {
-            "rule": "zijieapi\\.com\\/captcha\\/get",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "verify"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "cc8551661639828527a84088d228b9fe056297aaf36f0761476cc56fbf43a10c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "s_v_web_id": 0.00001354261182811717
-            },
             "exampleSites": [
                 "douyin.com",
                 "www.douyin.com"
@@ -297,25 +97,21 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "bytescm.com",
-            "prevalence": 0.967032967032967
+            "prevalence": 0.75
         },
         {
             "domain": "first party",
-            "prevalence": 0.02197802197802198
-        },
-        {
-            "domain": "bytegoofy.com",
-            "prevalence": 0.01098901098901099
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "XHR": 12,
-        "Script": 2,
-        "Preflight": 8
+        "Other": 2,
+        "XHR": 4,
+        "Script": 2
     },
     "nameservers": [
         "vip3.alidns.com",

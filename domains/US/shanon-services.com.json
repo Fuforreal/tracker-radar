@@ -4,16 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000406,
+    "sites": 6,
     "subdomains": [
         "tracker"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "shanon-services\\.com\\/tracker\\/create_new_id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "2bd840dbfdd68adad173e81d9b88efa59c5202c70a9b8fce14e76fbcf09bb286",
+                "6fe9dc90637ee0dad99c30f5705fbb81ea7673070722d71bbd39eefa728963ed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gentosha-go.com",
+                "www.brother.co.jp",
+                "www.zeiri4.com"
+            ]
+        },
+        {
+            "rule": "shanon-services\\.com\\/tracker2\\/register",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,33 +48,86 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f2a5a034a0687cbf5887528580b13792b67684ba92083b2ebd110518f9f9c2d8"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__CAMVID": 0.000013544721283497789,
+                "__CAMSID": 0.000013544721283497789,
+                "__CAMINFO": 0.000013544721283497789
+            },
+            "exampleSites": [
+                "brother.co.jp",
+                "www.zeiri4.com"
+            ]
+        },
+        {
+            "rule": "shanon-services\\.com\\/static\\/js\\/cam3\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b00d3cff0f9a9463c17075bcc29b9808101597167e5db40d310efcfc451539fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__CAMVID": {
+                    "ttl": 31536004,
+                    "length": 11,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "__CAMSID": {
+                    "ttl": 1804,
+                    "length": 14,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "__CAMINFO": {
+                    "ttl": 31536004,
+                    "length": 33,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gentosha-go.com",
-                "www.brother.co.jp"
+                "zeiri4.com",
+                "www.zeiri4.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "smartseminar.jp",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 7
     },
     "nameservers": [
-        "ns-508.awsdns-63.com",
         "ns-668.awsdns-19.net",
-        "ns-1500.awsdns-59.org",
-        "ns-1613.awsdns-09.co.uk"
+        "ns-508.awsdns-63.com",
+        "ns-1613.awsdns-09.co.uk",
+        "ns-1500.awsdns-59.org"
     ]
 }

@@ -18,16 +18,11 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Date.prototype.getTime": 6,
-                "Event.prototype.timeStamp": 5,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.plugins": 3
-            },
+            "apis": {},
             "sites": 6,
             "prevalence": 0.0000406,
             "cnames": [],
@@ -54,7 +49,7 @@
                 "cdn"
             ],
             "apis": {
-                "HTMLMediaElement.prototype.canPlayType": 5
+                "HTMLMediaElement.prototype.canPlayType": 2
             },
             "sites": 7,
             "prevalence": 0.0000474,
@@ -73,28 +68,6 @@
                 "www.fullertontitans.com",
                 "www.naia.org",
                 "www.njcaa.org"
-            ]
-        },
-        {
-            "rule": "prestosports\\.com\\/action\\/cdn\\/logos\\/id\\/m52av9f062m4eqb6\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fbb61dd8faa6bf74f51c2a847ac7396d8d7e8203eb91241270ef2fc1eddb8534"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "asunsports.org",
-                "wacsports.com"
             ]
         },
         {
@@ -147,11 +120,14 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/carousel_plugin\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 5,
+                "Date.prototype.getTime": 5
+            },
             "sites": 5,
             "prevalence": 0.0000339,
             "cnames": [],
@@ -201,7 +177,7 @@
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 7
+                "Document.cookie getter": 3
             },
             "sites": 8,
             "prevalence": 0.0000542,
@@ -231,8 +207,8 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 8,
-                "Navigator.prototype.platform": 7
+                "Date.prototype.getTime": 6,
+                "Navigator.prototype.platform": 3
             },
             "sites": 8,
             "prevalence": 0.0000542,
@@ -257,11 +233,13 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/main\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
             "sites": 8,
             "prevalence": 0.0000542,
             "cnames": [],
@@ -346,9 +324,9 @@
                 "cdn"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 5,
                 "window.innerWidth": 6,
-                "window.innerHeight": 6,
-                "Navigator.prototype.userAgent": 7
+                "window.innerHeight": 6
             },
             "sites": 8,
             "prevalence": 0.0000542,
@@ -453,13 +431,14 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 1,
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "cc103fddba1149f7afb0256872ac224b8f348641ec94868a050eeaf0134c5216"
+                "7afb1656bc525f187cc1cbc701429dd78c5f8082cddb71073fc4a74f70f96ce2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -472,11 +451,13 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/jslider\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -494,11 +475,13 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/masonry\\.pkgd\\.min\\.4\\.2\\.2\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -590,14 +573,14 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.maxTouchPoints": 3,
-                "Navigator.prototype.languages": 3,
-                "HTMLMediaElement.prototype.canPlayType": 3,
-                "MediaSource.isTypeSupported": 3,
-                "Event.prototype.timeStamp": 3,
-                "URL.createObjectURL": 2
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.languages": 1,
+                "URL.createObjectURL": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaSource.isTypeSupported": 1,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -694,7 +677,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "0761ba7c67618f6a733790fbb6242b1ca362b59ed540738ed5aee6280d20d4e6"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -714,7 +699,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "434054c14768774c42a93b1af692d182ed6c36e7449f2fe2ffcf3602b828b603"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -734,7 +721,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "32f5196778b62d250c0fe7bc7673c96daa4c2c6b018396d175f3cc4119bd7399"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -754,7 +743,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "6601ed55d421151ec5eddd54c0dbae930a08c6d582fcce8a34b79f0dd04891e5"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -774,7 +765,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b537a73cca3adfa1706a1c11696f1ac2262a47f38a344bdff0d690010b448caa"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -794,7 +787,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "09315e79ad9d9f5fc1b9a0d3d82ee5d09bd6d53d97f2f70cd6d1a77ace3a0c3b"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -836,7 +831,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b4497f088c642a7dd17d02c1ad782af08b79d540e7b8004a7875437241993c85"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -856,7 +853,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "625813077df87672f0ae9ebd9be5d5c599e9f763f2b41d8fc5a56f69e5d3c1b7"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -876,7 +875,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "2df591bcbdad81629223ecee676dee7109810eba4f5dca6a73a984e0ac7e84c6"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -896,7 +897,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "8e2cf7ccf38d684e8895555d3cb96e54868f24289eb5a9b9046233dbe8b1910b"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -916,7 +919,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "fc328fd174bd149f5520405bf927a938099703f42f785b2f130cafc6945c207f"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -936,7 +941,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5e130faf08aafb9babded2c622d17dc15b128c8321e4ab37ea1981f478fa595d"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -956,7 +963,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1836142876df16a859db478d6c4451cc6eb909d8851c3be48dad34c57448ff13"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -976,7 +985,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9e11992f571eed4ab09aae9e7f7a0b6078058745d1e13aed9fd5587f94715326"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -996,7 +1007,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "ceb9b0226a706d45d79fef759799898f07856ab402b679a656f3388cc34ae310"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1008,13 +1021,11 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/jquery\\.lazyload\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Navigator.prototype.appVersion": 3
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -1033,11 +1044,13 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/animation\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1045,28 +1058,6 @@
                 "1a7f3a28967f4a23eafb7c2ea7791edc77c4c678a308e39013e70be489d62f56"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fullertontitans.com",
-                "www.fullertontitans.com"
-            ]
-        },
-        {
-            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=318\\/mh=316\\/cr=y\\/d=ivdfl\\/z071wzzyxzokkbcx\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b37cf1802a09bc8fbb32189d0c6e35cca5a5df102431119ec5d7a45b1ffc4b58"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1087,6 +1078,28 @@
             "cnames": [],
             "responseHashes": [
                 "d09c2b828293c7f99932fd2d96fa168777ff0b89d73ee847bdd98beff151cb12"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fullertontitans.com",
+                "www.fullertontitans.com"
+            ]
+        },
+        {
+            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=318\\/mh=316\\/cr=y\\/d=ivdfl\\/z071wzzyxzokkbcx\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b37cf1802a09bc8fbb32189d0c6e35cca5a5df102431119ec5d7a45b1ffc4b58"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1218,7 +1231,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "91e6a389554d3983727d5472d15048f03072e7e04d36b4653ff4a8fe7e64dfd1"
+                "bec49a2a5afa36de6356e004556d217a17b4cfededf49980cff464107e68e940"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1319,11 +1332,13 @@
         {
             "rule": "prestosports\\.com\\/action\\/cdn\\/info\\/bs-scripts\\/sticky-top-bs\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1349,7 +1364,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1413,7 +1430,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1453,7 +1472,9 @@
                 "cdn"
             ],
             "apis": {
-                "window.innerWidth": 3
+                "window.innerWidth": 2,
+                "Event.prototype.timeStamp": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -1562,7 +1583,7 @@
             ]
         },
         {
-            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=400\\/cr=n\\/d=rfvrp\\/gglpaf9nemo2eyzu\\.jpg",
+            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=400\\/cr=n\\/d=rol4f\\/q0k4y0hbfjronb63\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1573,7 +1594,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "577d428571fdd1291b20b7ffcdba5ba6b13f042851e8ca86c18d2c24214111ed"
+                "f60bf65ca1b0bfcf8d6256b9153289887f866fd04dcc32fb8eae3c764dc64d67"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1584,7 +1605,7 @@
             ]
         },
         {
-            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=400\\/cr=n\\/d=rf75a\\/b3qgpluyzkcfp3ii\\.jpg",
+            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=400\\/cr=n\\/d=rolp6\\/xo3iawkmwi506v2y\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1595,7 +1616,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5d89661eaf610ddd48e38c796b15aa8c860af1a99801ba570ad4565e91e47135"
+                "81af7a5b2f0bb6719ad16170903e7db0277dee72ab7112224254a3cf96de89f2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1606,7 +1627,7 @@
             ]
         },
         {
-            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=400\\/cr=n\\/d=rccvn\\/tjpa0rvxiabnq7iw\\.jpg",
+            "rule": "prestosports\\.com\\/action\\/cdn\\/img\\/mw=400\\/cr=n\\/d=rlhm1\\/aydsvrbx63hbi4u7\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1617,7 +1638,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0f865a6bd0d1a150ea21f4340edbf6dd0f01597e85e38dd9d5e00634e52ab250"
+                "d20b539f482d6005077f174bf2ac64958bf5d2ab940b51249379f4321e753453"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1722,24 +1743,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.954954954954955
+            "prevalence": 0.9495145631067962
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.043243243243243246
-        },
-        {
-            "domain": "doubleclick.net",
-            "prevalence": 0.0018018018018018018
+            "prevalence": 0.05048543689320388
         }
     ],
     "types": {
         "Script": 132,
-        "Image": 70,
+        "Image": 68,
         "Stylesheet": 21
     },
     "nameservers": [
-        "ingrid.ns.cloudflare.com",
-        "vick.ns.cloudflare.com"
+        "vick.ns.cloudflare.com",
+        "ingrid.ns.cloudflare.com"
     ]
 }

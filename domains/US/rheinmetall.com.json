@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "rheinmetall\\.com\\/media\\/internal_media\\/resources\\/styles_5\\/combined_ci\\.css",
@@ -89,9 +89,7 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "8c4bd832ab1db6821f5af358e69078efe8d77cd68f2694a3be3579f4a1a2b4a2"
-            ],
+            "responseHashes": [],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -145,13 +143,11 @@
         {
             "rule": "rheinmetall\\.com\\/media\\/internal_media\\/resources\\/scripts_1\\/libraries\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -169,15 +165,22 @@
         {
             "rule": "rheinmetall\\.com\\/media\\/internal_media\\/resources\\/scripts_1\\/libraries\\/modernizr-262min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "window.indexedDB": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "cf25ec18f223f4c51ce1128a42e644cdc2244d88f89d1a51440d9dbe51f4efe8"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -200,7 +203,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0c7178cc6ca34fb18e30f070a5e7a1c287b2d7ccfcba2cfdf06e0f46eda55740"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -244,7 +247,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "166a3b355a279f2148ec0dbc25e9cee25c5453fa1c008f485f49f5515b011988"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -265,7 +268,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9d4a429e982581288679cbf8fc75be2f61cab477a6437d5cf335f82566a5b474"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},

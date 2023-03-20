@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000196,
-    "sites": 29,
+    "prevalence": 0.00019,
+    "sites": 28,
     "subdomains": [
         "asset",
         "location",
@@ -16,21 +16,21 @@
         "connector-synchrony",
         "events-synchrony",
         "events-lifetimefitness",
-        "events-northerntool",
         "events-synnex.uk",
         "events-sandals",
         "events-coned",
         "events-jjillecp",
         "events-moneygram",
+        "events-northerntool",
         "events-seescandies",
         "events-vitacost",
         "events-wolseley.uk",
         "connector-lifetimefitness",
-        "connector-northerntool",
         "connector-synnex.uk",
         "connector-jjillecp",
         "connector-sandals",
         "connector-coned",
+        "connector-northerntool",
         "connector-wolseley.uk"
     ],
     "cnames": [],
@@ -49,14 +49,13 @@
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.appVersion": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "5d6a505f81f591824c3babfa89c616506aab8d8a71db0ea786f6b6affd0bb556"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -73,7 +72,8 @@
                 "asset"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -136,8 +136,8 @@
                 "location.uk"
             ],
             "apis": {},
-            "sites": 16,
-            "prevalence": 0.000108,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
                 "12b241c48e66fc39d3a1c04520ffc17156848d75c238ca5d3f642af48e2aad15"
@@ -148,7 +148,6 @@
             "exampleSites": [
                 "synchronybank.com",
                 "my.lifetime.life",
-                "northerntool.com",
                 "securelogin.synchronybank.com",
                 "www.actionfraud.police.uk",
                 "www.beaches.com",
@@ -176,7 +175,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f2165f3e7ee6c75ba6ffc2723458ee3696cdef5e7c257c7ea01f4c12a21eee11"
+                "db0458fe6fbf0cae91563db15491a1d848fa1e06c394bb404a087796f6faf202"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -184,51 +183,6 @@
             "exampleSites": [
                 "synchronybank.com",
                 "securelogin.synchronybank.com"
-            ]
-        },
-        {
-            "rule": "gomoxie\\.solutions\\/1\\.1\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events-synchrony",
-                "events-lifetimefitness",
-                "events-northerntool",
-                "events-synnex.uk",
-                "events-sandals",
-                "events-coned",
-                "events-jjillecp",
-                "events-moneygram",
-                "events-seescandies",
-                "events-vitacost",
-                "events-wolseley.uk"
-            ],
-            "apis": {},
-            "sites": 15,
-            "prevalence": 0.000102,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "synchronybank.com",
-                "my.lifetime.life",
-                "northerntool.com",
-                "securelogin.synchronybank.com",
-                "www.actionfraud.police.uk",
-                "www.beaches.com",
-                "www.coned.com",
-                "www.jjill.com",
-                "www.lifetime.life",
-                "www.moneygram.com",
-                "www.northerntool.com",
-                "www.sandals.com",
-                "www.sees.com",
-                "www.vitacost.com",
-                "www.wolseley.co.uk"
             ]
         },
         {
@@ -252,8 +206,10 @@
             "sites": 14,
             "prevalence": 0.0000948,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -274,6 +230,46 @@
             ]
         },
         {
+            "rule": "gomoxie\\.solutions\\/1\\.1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-synchrony",
+                "events-lifetimefitness",
+                "events-synnex.uk",
+                "events-sandals",
+                "events-coned",
+                "events-jjillecp",
+                "events-moneygram",
+                "events-northerntool",
+                "events-vitacost",
+                "events-wolseley.uk"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.000088,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "synchronybank.com",
+                "my.lifetime.life",
+                "securelogin.synchronybank.com",
+                "www.actionfraud.police.uk",
+                "www.beaches.com",
+                "www.coned.com",
+                "www.jjill.com",
+                "www.lifetime.life",
+                "www.moneygram.com",
+                "www.northerntool.com",
+                "www.sandals.com",
+                "www.vitacost.com",
+                "www.wolseley.co.uk"
+            ]
+        },
+        {
             "rule": "gomoxie\\.solutions\\/concierge\\/lifetimefitness\\/client\\/concierge-client\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -286,8 +282,7 @@
                 "window.localStorage": 3,
                 "window.sessionStorage": 3,
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.language": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -312,7 +307,8 @@
                 "asset"
             ],
             "apis": {
-                "window.localStorage": 3
+                "window.localStorage": 3,
+                "window.sessionStorage": 2
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -341,7 +337,7 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "9f7824faf9a315e228cb50dd88b56e5a9ad8d1ade76ab6708077e16e3ce28dc2"
+                "e837e9c0a4b94aef5128878eca12578fe3334902d4e9c409d0eb8a676db187b0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -387,8 +383,8 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "c9d596c277af9068cde72d1d636b36efad201d99da50171cb3514e20112acbfe",
-                "fbe1985e68114b53d6a1a9e22fcc5d2cb4c3afc1f79e9e08cf4a3750725ad32b"
+                "654a4bbdc4770e70ee00d69ee171970664a7616aefb88620be06fdbaf414b9ef",
+                "c3ae82f68d7053bf0e5a755cacbdcb0db0015a885eb755e3e103f4e5ebf033c1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -400,127 +396,6 @@
             ]
         },
         {
-            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/client\\/concierge-client\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "asset"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.appVersion": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5d6a505f81f591824c3babfa89c616506aab8d8a71db0ea786f6b6affd0bb556"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "northerntool.com",
-                "www.northerntool.com"
-            ]
-        },
-        {
-            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/config\\/latest\\/2\\/web\\/configuration\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "asset"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "21aad00f361749ea82a7e065bcfe59be1cd74cff31e14f4b9b5dca4213da95ea"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "northerntool.com",
-                "www.northerntool.com"
-            ]
-        },
-        {
-            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/client\\/storage_bridge\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "asset"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "window.sessionStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "97156698b8daf9b57e4c8f7dc95eb434011aef55ab60d5c8ffcec5039d5436a7"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "northerntool.com",
-                "www.northerntool.com"
-            ]
-        },
-        {
-            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/widgets\\/1673670432795\\/desktop\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "asset"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c8acae20b22b3c8686c53774d4b3843e9ee09d9b020c308eed62a2cc2c4efefd"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "northerntool.com",
-                "www.northerntool.com"
-            ]
-        },
-        {
-            "rule": "gomoxie\\.solutions\\/connector\\/channels\\/portals_with_queue_status\\/31\\/device\\/3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "connector-northerntool"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b006126086305ac77043fa2f545baeecba35be612e9495460848283a95c18637"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "northerntool.com",
-                "www.northerntool.com"
-            ]
-        },
-        {
             "rule": "gomoxie\\.solutions\\/concierge\\/synnex\\/client\\/concierge-client\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -528,12 +403,10 @@
                 "asset"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
                 "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 2,
                 "Navigator.prototype.appVersion": 2
             },
             "sites": 2,
@@ -631,7 +504,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "465b269e364f5fd8d826b0d06855d4d0d89bf9fa21256f730e445315963e1c19"
+                "532dea7a1013d03a4982c6867d90a04e4f91a21af59a56b927addffa9d2ba17f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -654,7 +527,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f5bdc18da860354a617649be21faf4b7b941022fbf57db2b748277bf34326335"
+                "05f090309024099ac5c08c57a828d0cef8e910dc344063e4d65aef332ea943db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -779,7 +652,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2bc11a087b7b16da51650807083bf40d072e5b1cff68d60e06ba8969f6935b90"
+                "7c838c5baa6fdd9721075245dc72c4bd8a671fc3bb5b5a79fb6e0dba5c2993fb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -827,7 +700,7 @@
             ],
             "apis": {
                 "window.localStorage": 2,
-                "window.sessionStorage": 1
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -899,7 +772,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b79d37eb7b32d2fb13fd1f14bebe78df5a9de44439d5936310c959250e166653"
+                "7b931d48846dfbea9f4cd8aa42d44f2abe1f00525387ecb0144e2335a634cf6f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -922,8 +795,8 @@
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.appVersion": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -947,8 +820,8 @@
                 "asset"
             ],
             "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1009,6 +882,127 @@
             ]
         },
         {
+            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/client\\/concierge-client\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "asset"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5d6a505f81f591824c3babfa89c616506aab8d8a71db0ea786f6b6affd0bb556"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "northerntool.com",
+                "www.northerntool.com"
+            ]
+        },
+        {
+            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/config\\/latest\\/2\\/web\\/configuration\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asset"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "894adaa30030b1c30d3b14f543f334b0cdfc153865556d72ef8fdeadc703613b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "northerntool.com",
+                "www.northerntool.com"
+            ]
+        },
+        {
+            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/client\\/storage_bridge\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "asset"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "97156698b8daf9b57e4c8f7dc95eb434011aef55ab60d5c8ffcec5039d5436a7"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "northerntool.com",
+                "www.northerntool.com"
+            ]
+        },
+        {
+            "rule": "gomoxie\\.solutions\\/concierge\\/northerntool\\/widgets\\/1673670432795\\/desktop\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asset"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c8acae20b22b3c8686c53774d4b3843e9ee09d9b020c308eed62a2cc2c4efefd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "northerntool.com",
+                "www.northerntool.com"
+            ]
+        },
+        {
+            "rule": "gomoxie\\.solutions\\/connector\\/channels\\/portals_with_queue_status\\/31\\/device\\/3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connector-northerntool"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "58dc18a3213f02f9a669670171a11c04a8c144c5645a26f4dda50b7b558c5076"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "northerntool.com",
+                "www.northerntool.com"
+            ]
+        },
+        {
             "rule": "gomoxie\\.solutions\\/connector\\/channels\\/portals_with_queue_status\\/197\\/device\\/3",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1020,7 +1014,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2c14dbc311014c301c554f0876ad0bdae3de5a1cb357527cb2c2118c2d7d49dd"
+                "a7cd417fbdd366057aa9e782ef0a129d3c4c4e3993a7d330d886526e021e45f2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1067,8 +1061,7 @@
                 "asset"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "window.sessionStorage": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1239,8 +1232,7 @@
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1265,7 +1257,7 @@
             ],
             "apis": {
                 "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1293,7 +1285,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d080f76d4db3f4b7d4e33317ff6a0159f76316f0aa76199dbe232edba5809b44"
+                "9469bebd0364d9f3f445d798f6b2e2165fea2b42f71757e550f07698837aec89"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1359,51 +1351,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c262c4ccf38969aa7038a2da7ae1cf763eb33bd4117f27f09a2399d6b51eb5d2"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wolseley.co.uk",
-                "www.wolseley.co.uk"
-            ]
-        },
-        {
-            "rule": "gomoxie\\.solutions\\/connector\\/channels\\/portals\\/30",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "connector-wolseley.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0a5996b4bea78b8fd74b13f9916643a0a8e5fbad50deae2e5e8336841a593e99"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wolseley.co.uk",
-                "www.wolseley.co.uk"
-            ]
-        },
-        {
-            "rule": "gomoxie\\.solutions\\/connector\\/channels\\/questionnaire\\/DE95DC0B-A042-41A8-97D6-06A2F45FF905\\/F28A6944-6D62-4B82-B5E1-B9626AABBA3D",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "connector-wolseley.uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fda8f79de43f94f9a259a6802e208c627154d1e69e76e26927163dc33b7249f2"
+                "e402ef7a15c1f452009fa1135b4401ef7d68874904b22a9121fc6ff804b708b5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1420,56 +1368,52 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.678082191780822
+            "prevalence": 0.7230769230769231
         },
         {
             "domain": "securedvisit.com",
-            "prevalence": 0.0684931506849315
+            "prevalence": 0.046153846153846156
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.06164383561643835
+            "prevalence": 0.046153846153846156
         },
         {
             "domain": "triggeredmail.appspot.com",
-            "prevalence": 0.06164383561643835
+            "prevalence": 0.046153846153846156
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.03424657534246575
+            "prevalence": 0.038461538461538464
         },
         {
             "domain": "fullstory.com",
-            "prevalence": 0.03424657534246575
+            "prevalence": 0.038461538461538464
         },
         {
             "domain": "azureedge.net",
-            "prevalence": 0.0273972602739726
+            "prevalence": 0.03076923076923077
         },
         {
             "domain": "acquia.com",
-            "prevalence": 0.0136986301369863
+            "prevalence": 0.015384615384615385
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.0136986301369863
-        },
-        {
-            "domain": "quantummetric.com",
-            "prevalence": 0.00684931506849315
+            "prevalence": 0.015384615384615385
         }
     ],
     "types": {
         "Script": 22,
         "Document": 22,
-        "XHR": 78,
+        "XHR": 72,
         "Stylesheet": 22,
-        "Preflight": 14
+        "Preflight": 13
     },
     "nameservers": [
         "ns-2001.awsdns-58.co.uk",
+        "ns-195.awsdns-24.com",
         "ns-811.awsdns-37.net",
-        "ns-1060.awsdns-04.org",
-        "ns-195.awsdns-24.com"
+        "ns-1060.awsdns-04.org"
     ]
 }

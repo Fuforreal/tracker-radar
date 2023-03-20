@@ -8,7 +8,8 @@
     "sites": 16,
     "subdomains": [
         "client",
-        "opzet"
+        "opzet",
+        "cdn2"
     ],
     "cnames": [
         {
@@ -83,12 +84,12 @@
                 }
             ],
             "responseHashes": [
-                "0c9b414c0a6177ee69b9bea1b0dd93dd5fe8fd7e6663bf9d264391aefecefb6d",
-                "a2e5a2712f38b813fa73c0122bf8d88cfa024e2f7d94ca48973b44b77943589f",
-                "93832761ee2a788286b3ebc2a7c3734534af38ca05d4749da378bf361a2d8d45",
-                "5344e49414e05d6675e8cc81c213dd4d1d342bcb083c26465b1b3a0c122dfe37",
-                "89b316b27cf5c67aed33a81dfa91cff677444398fed3ba8e2d12057668e1516b",
-                "3744ee9cb6bd5f1c39c6aafbde430801aee0291f8b1bb4718757a0a707c3c7e8"
+                "76a4e3ad617ff02066e8383749b57168eec743e8b19fd7e2f3cdd1ce4944671e",
+                "18a3205267ba35e750486fdb4580159d05599eef66756cc225fa8ea5d88be94d",
+                "52728d1e5e733a2ecd68dbf6bca912533236c8694cec364e8fa181d6047152c3",
+                "fe416f656002c493199ea914a6f89963fcd0dee98eea75918163ca9160d9c9ef",
+                "fd4437acfc6b4db7f4b974a041005d9e5b82ca09db4b7427dd0c1ab9c659ff34",
+                "60a9cc459e316c7d2bf5cb1ee36799128063eb94d2982a9a5bdbb99ff24fd210"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -140,11 +141,11 @@
                 }
             ],
             "responseHashes": [
-                "31f8ea4a7023162b37bd9825092d23b46506949a5193a8f88839068e70284b75",
-                "2cbd55233b0cd689f22b0ad5258ff194c32c12e55831971896fdc2bbbedab9bf",
-                "0b2470d6818b8d9b7c8cdd48b46292ca0c10ade240e6edac5b6f30073d7da56e",
-                "adf5674483a2802148296b35e76c7bf597e5d4b74ef1da3510be6f224b00435b",
-                "b71a82d9360d0cfdf2f0fc7809b9ea6e95ca73b7160faeec69a061921ba7840a"
+                "356133a408e144fc734f2b4a5cb3e21486b5af43d84ddde5ea66c82a590f37b7",
+                "64eca1b52b5f3b59397915cdb7a2a2eff3525b50acb32577e0b1405eb1361215",
+                "9fb8504b5603da472fc843b6b64a823558bc524e55a4b7ff8795be129a7b427b",
+                "ff48c82f2cf9d6376d8eac35562d3ccee2e814330fb406db3075e181656674d0",
+                "5d7e2d80d470d462ccedeb4dae7a15a5b7190d27833d8483cd36886a9dcdeb25"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -177,9 +178,9 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_dor_4NJ7Wk9c": 0.000006771305914058585,
-                "_dor_R2TzuPUp": 0.00001354261182811717,
-                "_dor_T0yOnGXo": 0.000006771305914058585
+                "_dor_4NJ7Wk9c": 0.0000067723606417488944,
+                "_dor_R2TzuPUp": 0.000013544721283497789,
+                "_dor_T0yOnGXo": 0.0000067723606417488944
             },
             "exampleSites": [
                 "faroutmagazine.co.uk",
@@ -231,9 +232,9 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_dor_4NJ7Wk9c": 0.000006771305914058585,
-                "_dor_R2TzuPUp": 0.000006771305914058585,
-                "_dor_T0yOnGXo": 0.000006771305914058585
+                "_dor_4NJ7Wk9c": 0.0000067723606417488944,
+                "_dor_R2TzuPUp": 0.0000067723606417488944,
+                "_dor_T0yOnGXo": 0.0000067723606417488944
             },
             "exampleSites": [
                 "faroutmagazine.co.uk",
@@ -242,6 +243,28 @@
                 "www.hitc.com",
                 "www.realitytitbit.com",
                 "www.sportsmole.co.uk"
+            ]
+        },
+        {
+            "rule": "grv\\.media\\/uploads\\/1\\/2022\\/12\\/Eve-Edwards\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "dd2afe05d26a1b6d1809357dbac7ae3da715da4e3dca93443c541f44268a0e78"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hitc.com",
+                "www.thefocus.news"
             ]
         }
     ],
@@ -264,10 +287,11 @@
     ],
     "types": {
         "Script": 7,
-        "Fetch": 17
+        "Fetch": 17,
+        "Image": 2
     },
     "nameservers": [
-        "amit.ns.cloudflare.com",
-        "emily.ns.cloudflare.com"
+        "emily.ns.cloudflare.com",
+        "amit.ns.cloudflare.com"
     ]
 }

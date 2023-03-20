@@ -13,12 +13,17 @@
     "sites": 6,
     "subdomains": [
         "ua",
-        "accounts"
+        "accounts",
+        "data"
     ],
     "cnames": [
         {
             "original": "accounts.indianexpress.com",
             "resolved": "accounts.indianexpress.com.edgekey.net"
+        },
+        {
+            "original": "data.indianexpress.com",
+            "resolved": "data.indianexpress.com.edgekey.net"
         },
         {
             "original": "ua.indianexpress.com",
@@ -44,8 +49,8 @@
                 }
             ],
             "responseHashes": [
-                "68f5af8d648887cca8525ebbd79abfbb5dc8e0754f8a220922a6899681052dc0",
-                "1231d83a217f1cc818793024de261e3013e03d2bae4434a44ed377ba7e4aed77"
+                "d193a513fd8abf577f12649c8a79a8d0bc02bab079a1b3e5b676c4abd4c92807",
+                "ab67b92e8d693ff1b72044a301ddb59d026274cc0f168ddacbfcb581f4591495"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -105,9 +110,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ssostate": {
-                    "ttl": 86401,
+                    "ttl": 86402,
                     "length": 6,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 }
             },
@@ -116,6 +121,60 @@
                 "financialexpress.com",
                 "www.financialexpress.com",
                 "www.loksatta.com"
+            ]
+        },
+        {
+            "rule": "indianexpress\\.com\\.edgekey\\.net\\/iframes\\/fe-assets\\/left-arrow-inactive\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "data.indianexpress.com",
+                    "resolved": "data.indianexpress.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d022c374157b9bab44f6a29eef116d22d2b8724e03af996b152ef413d341fc37"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "financialexpress.com",
+                "www.financialexpress.com"
+            ]
+        },
+        {
+            "rule": "indianexpress\\.com\\.edgekey\\.net\\/iframes\\/fe-assets\\/right-arrow-active\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "data.indianexpress.com",
+                    "resolved": "data.indianexpress.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "0acdbeb4c0c776c45c85b44b507dfc4bcc294d25f56bcbbff696eda9ad923442"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "financialexpress.com",
+                "www.financialexpress.com"
             ]
         }
     ],
@@ -131,7 +190,8 @@
     "types": {
         "Fetch": 3,
         "Preflight": 3,
-        "Script": 3
+        "Script": 3,
+        "Image": 4
     },
     "nameservers": []
 }

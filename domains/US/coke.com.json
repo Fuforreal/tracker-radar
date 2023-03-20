@@ -41,15 +41,11 @@
         {
             "rule": "coke\\.com\\/etc\\.clientlibs\\/clientlibs\\/granite\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "shared"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Element.prototype.getClientRects": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -116,13 +112,15 @@
                 "shared"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.indexedDB": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
+                "Element.prototype.getClientRects": 2,
                 "window.innerWidth": 2,
-                "window.innerHeight": 2
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.indexedDB": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -146,8 +144,9 @@
                 "shared"
             ],
             "apis": {
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.platform": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -211,28 +210,6 @@
             ]
         },
         {
-            "rule": "coke\\.com\\/fonts\\/nagbrands\\/unity\\/TCCC-UnityText-Bold\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4a707ba83f66d301a11507361cad5748d5c388b5ee9984653c5f57463a6ac652"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coca-cola.com",
-                "us.coca-cola.com"
-            ]
-        },
-        {
             "rule": "coke\\.com\\/etc\\.clientlibs\\/nextgen\\/clientlibs\\/ng-base\\/app\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -247,6 +224,28 @@
                 "db6be7f55966811140e1eb62aaf1ce3986e2af0363314313a9daf3ca5dab1507"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coca-cola.com",
+                "us.coca-cola.com"
+            ]
+        },
+        {
+            "rule": "coke\\.com\\/fonts\\/nagbrands\\/unity\\/TCCC-UnityText-Bold\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4a707ba83f66d301a11507361cad5748d5c388b5ee9984653c5f57463a6ac652"
+            ],
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -301,13 +300,11 @@
         {
             "rule": "coke\\.com\\/etc\\.clientlibs\\/nextgen\\/clientlibs\\/ng-base\\/app\\/lib\\/jquery-3\\.5\\.1\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "shared"
             ],
-            "apis": {
-                "window.innerWidth": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -847,9 +844,9 @@
         "XHR": 42
     },
     "nameservers": [
-        "ns4-09.azure-dns.info",
         "ns1-09.azure-dns.com",
+        "ns2-09.azure-dns.net",
         "ns3-09.azure-dns.org",
-        "ns2-09.azure-dns.net"
+        "ns4-09.azure-dns.info"
     ]
 }

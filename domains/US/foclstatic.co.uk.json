@@ -175,12 +175,9 @@
         {
             "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/lib\\/jquery\\/dist\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -201,9 +198,10 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
-                "Navigator.prototype.userAgent": 1
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -221,15 +219,16 @@
         },
         {
             "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/js\\/pkg\\.frontend-focl\\.lib\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
+                "window.devicePixelRatio": 2,
                 "Date.prototype.getTime": 2,
-                "window.devicePixelRatio": 1,
-                "window.innerWidth": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -242,7 +241,7 @@
                 "focl_cookie_consent_session": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -298,7 +297,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -317,10 +317,10 @@
         {
             "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/js\\/pwa\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.onLine": 1
+                "Navigator.prototype.onLine": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -575,26 +575,591 @@
                 "fredolsencruises.com",
                 "www.fredolsencruises.com"
             ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-BlogPages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "02daca6fa4d706983569dfebc13dbcd218a586538f9e00738ef8db753c74d638"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Core\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4f1129c76bc34c6897f4aa111721c4de3829b13f6ce20059f593e7b613527aed"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-CruisePages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1a698b33209c4e742e7c56cbf99b90dd388e6d2aa3b40a00c1490216de9df3cb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-DestinationsPages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "ad6bc939071cb63e9326133a6311d17b909cd48e7fb6f01901ef60c26697680d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-FavouritesPages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Loading\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "50e10f7839f84aa0317fed7b8a10b46b582dce466dadcb128764af0e5e4981ad"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Pages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "051f6f021d0177caa2afd0e9623508a19be135075cb5a69ecadf17b9772e5fd9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-MyCruises\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-PageElements\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-PortsPages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Widgets\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "0faf31e8c0cbdade61950732d8f2fb4a38d2ee02e75cb56bca020f7546861117"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Rivers-Core\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c51bddd8359f400daed05ff63ab967ed83a57a046726553770450fedff888f8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Rivers-CruisePages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "280585b5ef49487c960aa6898b6f8c79186df752d28ec6b179f27c569477bfb9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Rivers-Loading\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "2f099527056c50411c0e43c54ec7a922aaebae669cf193adfaf3a206352cdc40"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Rivers-Pages\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Rivers-PageElements\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "f98d3baba8c113883668b2c0e046ed5ef6e3c1dde35bfe6098741c0ddd38acd5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/FOCL-Rivers-Widgets\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4195f3458a21a6a74f28c58f68aa29baba81fea7e4c823be8168d239f276952d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/css\\/pkg\\.frontend-focl\\.lib\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/js\\/pwa\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.onLine": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "2b79377525e04e662c6598f3852ac238f495fddd219d0d8b9f6c41d9c62bc8f0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/js\\/pkg\\.frontend-focl\\.app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/js\\/pkg\\.frontend-focl\\.hbs\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/js\\/pkg\\.frontend-focl\\.lib\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "window.devicePixelRatio": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b7a5040b4a28c67b73cdbee53389f793ff90f2adfa762d508ccbe75e47d8e6db"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {
+                "focl_cookie_consent_session": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/js\\/pkg\\.lazy-site\\.lib\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/lib\\/handlebars\\/dist\\/handlebars\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6529eb58d68fcc67bcbf6e723f44ba61a31a0cb3130c70bee261d3c34c727449"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/lib\\/jquery\\/dist\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/images\\/Main\\/Logos\\/LogoLoginRegister\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c1517e510fb4209c0e2fde15260e6bc37b3a849a902eaea5c46e1c7f85a2dff6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
+        },
+        {
+            "rule": "foclstatic\\.co\\.uk\\/1678464755714\\/images\\/Main\\/Logos\\/FOCL_Primary_Logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "809b7f92648fe80833f5f407ae6cd1f357065992548556633e7399e108150414"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fredolsencruises.com",
+                "www.fredolsencruises.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.6
         },
         {
-            "domain": "storage.googleapis.com",
-            "prevalence": 0.42857142857142855
+            "domain": "first party",
+            "prevalence": 0.4
         }
     ],
     "types": {
         "Script": 16,
         "Stylesheet": 14,
         "Image": 6,
-        "Font": 18
+        "Font": 18,
+        "Fetch": 54
     },
     "nameservers": [
         "marek.ns.cloudflare.com",

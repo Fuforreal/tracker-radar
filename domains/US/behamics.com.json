@@ -4,37 +4,89 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
-    "sites": 9,
+    "prevalence": 0.0000677,
+    "sites": 10,
     "subdomains": [
-        "engine5",
-        "cdn"
+        "cdn",
+        "engine5"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
+            "rule": "behamics\\.com\\/christ\\/behamics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "036a54a6e80bbd9935dacbb2f94b1cefabf6c79e014fd0cef19f053d8fef6a5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christ.de",
+                "www.christ.de"
+            ]
+        },
+        {
+            "rule": "behamics\\.com\\/christ\\/behamics\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4971d96d7c3dbc80b026aef1a09c34d2f4d28865834c7c9ed4711ffe1b94d4da"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christ.de",
+                "www.christ.de"
+            ]
+        },
+        {
             "rule": "behamics\\.com\\/api\\/getmessage",
-            "cookies": 0.0000339,
+            "cookies": 0.0000406,
             "fingerprinting": 0,
             "subdomains": [
                 "engine5"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 6,
+            "prevalence": 0.0000406,
             "cnames": [],
             "responseHashes": [
-                "2c6e11540333667776c4e41ce40ee31fbaa5af7a1c81635ff5d0d8a2cbf15b0f",
-                "e01eeca7e06d9b61fbbb73b4c268eab7787b779a70f519a6c98b0feae608ddae",
-                "5235956f155b4a8b0fb6b096db9d781fe8ac0118a96519e3c08534d7c10ab106",
-                "2abbb5d96823d5cd9b3a913a28b3306071ca5d4bb1accbb71e67bcffbafdf1f6"
+                "0934f5680cfa2bc65b0da19ca9894f0b2a6e5a1f930d3d0669cce84e5bdfeb86",
+                "d60a0a78910ead4d6f5c62f60fa67c32b57dc724b3f888e76b3a776eb1162e10",
+                "0f71720e4f8e76c2f6ab3177e13383c957b20e4dcb2fafaf43e2d0e74cd06192",
+                "82f162e3c621d9164eeb8957b49e357a87c4c0f4bf6c8e554f98b0c1c670c199",
+                "75bfee0c322ad146bba1559d2678d12a7b73b1c443d0e442833b8711e29b89ac"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "christ.de",
+                "www.christ.de",
                 "www.coop.ch",
                 "www.fust.ch",
                 "www.manor.ch",
@@ -52,9 +104,9 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "window.innerHeight": 1,
                 "window.innerWidth": 2,
-                "Navigator.prototype.connection": 2
+                "Navigator.prototype.connection": 2,
+                "window.innerHeight": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -145,18 +197,11 @@
         {
             "rule": "behamics\\.com\\/manor\\/behamics\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2,
-                "window.innerWidth": 2,
-                "Navigator.prototype.connection": 2,
-                "window.innerHeight": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -231,9 +276,7 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "3d4b5f94d3e032cc87573aa5f3681d86b49c7f8e4136e4dfec276ef80c0c2a86"
-            ],
+            "responseHashes": [],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -245,29 +288,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000609,
+    "cookies": 0.0000677,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.45454545454545453
+            "prevalence": 0.5
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.36363636363636365
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "first party",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "XHR": 5,
-        "Script": 8,
-        "Stylesheet": 8
+        "Script": 10,
+        "Stylesheet": 10,
+        "XHR": 6
     },
     "nameservers": [
-        "ns.udag.de",
+        "ns.udag.net",
         "ns.udag.org",
-        "ns.udag.net"
+        "ns.udag.de"
     ]
 }

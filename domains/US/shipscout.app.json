@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000108,
-    "sites": 16,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "web",
         "current-test"
@@ -29,7 +29,14 @@
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "https://analytics.getshogun.com/collector.js?shop": 0.0000067723606417488944,
+                "https://faq.ddshopapps.com/js/frontend/scripttag.js?shop": 0.0000067723606417488944,
+                "https://scripts.juniphq.com/v1/junip_shopify.js?shop": 0.0000067723606417488944,
+                "https://cf.storeify.app/js/frontend/scripttag.js?shop": 0.0000067723606417488944,
+                "https://d275fvz7g8rvo.cloudfront.net/olipop-store.myshopify.com/online_store_script.js?shop": 0.0000067723606417488944,
+                "https://rebuyengine.com/?shop": 0.0000067723606417488944
+            },
             "exampleSites": [
                 "drinkolipop.com",
                 "liquiddeath.com",
@@ -106,50 +113,6 @@
                 "chubbiesshorts.com",
                 "www.chubbiesshorts.com"
             ]
-        },
-        {
-            "rule": "shipscout\\.app\\/simple-modern\\.myshopify\\.com\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "current-test"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "24b5112bcc509b7bad3e33d9a5bd13177263e676b4d329228009bdd422d88de0"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "simplemodern.com",
-                "www.simplemodern.com"
-            ]
-        },
-        {
-            "rule": "shipscout\\.app\\/app\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "simplemodern.com",
-                "www.simplemodern.com"
-            ]
         }
     ],
     "categories": [],
@@ -158,38 +121,33 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.37142857142857144
+            "prevalence": 0.4
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.2571428571428571
+            "prevalence": 0.26666666666666666
         },
         {
             "domain": "d2fj3s7h83rb61.cloudfront.net",
-            "prevalence": 0.11428571428571428
+            "prevalence": 0.13333333333333333
         },
         {
             "domain": "transcend.io",
-            "prevalence": 0.11428571428571428
-        },
-        {
-            "domain": "edgeme.sh",
-            "prevalence": 0.08571428571428572
+            "prevalence": 0.13333333333333333
         },
         {
             "domain": "shopifyorderlimits.s3.amazonaws.com",
-            "prevalence": 0.05714285714285714
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
         "Script": 8,
-        "XHR": 8,
-        "Fetch": 2
+        "XHR": 6
     },
     "nameservers": [
-        "ns-685.awsdns-21.net",
         "ns-432.awsdns-54.com",
         "ns-1884.awsdns-43.co.uk",
-        "ns-1320.awsdns-37.org"
+        "ns-1320.awsdns-37.org",
+        "ns-685.awsdns-21.net"
     ]
 }

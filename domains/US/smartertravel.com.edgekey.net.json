@@ -9,19 +9,62 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000745,
+    "sites": 11,
     "subdomains": [
-        "p.meta"
+        "p",
+        "p.meta",
+        "usermetrics"
     ],
     "cnames": [
         {
             "original": "p.meta.smartertravel.com",
             "resolved": "p.meta.smartertravel.com.edgekey.net"
+        },
+        {
+            "original": "p.smartertravel.com",
+            "resolved": "p.smartertravel.com.edgekey.net"
+        },
+        {
+            "original": "usermetrics.smartertravel.com",
+            "resolved": "usermetrics.smartertravel.com.edgekey.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "smartertravel\\.com\\.edgekey\\.net\\/ext\\/pixel\\/ta\\/seed\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000542,
+            "cnames": [
+                {
+                    "original": "p.smartertravel.com",
+                    "resolved": "p.smartertravel.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tripadvisor.com.hk",
+                "fr.tripadvisor.be",
+                "www.tripadvisor.ca",
+                "www.tripadvisor.com.au",
+                "www.tripadvisor.dk",
+                "www.tripadvisor.it",
+                "www.tripadvisor.jp",
+                "www.tripadvisor.pt"
+            ]
+        },
         {
             "rule": "smartertravel\\.com\\.edgekey\\.net\\/api\\/hotelPricing\\/byHotelIds",
             "cookies": 0,
@@ -30,8 +73,8 @@
                 "p.meta"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "p.meta.smartertravel.com",
@@ -39,42 +82,63 @@
                 }
             ],
             "responseHashes": [
-                "a233b338ca6093e2111698bdb037733ac61bd25152fcbf00be74d7f103bd3bbd",
-                "b80dafacdd79e7860647985161cb5077de6aede9bf647b8f8b6353b95abe4178"
+                "3b5b568c4556fd0b0cfe3325103734ba8e32338c61c9281d45fb846a0f027e27"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oyster.com",
+                "www.oyster.com"
+            ]
+        },
+        {
+            "rule": "smartertravel\\.com\\.edgekey\\.net\\/api\\/IDRPNntCTZ-mV9qg7Ce4DQ\\/page-view\\.gif",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usermetrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "usermetrics.smartertravel.com",
+                    "resolved": "usermetrics.smartertravel.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "uu": 0.00001354261182811717,
-                "page_state_id": 0.00001354261182811717,
-                "uu_persist": 0.00001354261182811717
+                "uu": 0.000013544721283497789,
+                "uu_persist": 0.000013544721283497789
             },
             "exampleSites": [
-                "familyvacationcritic.com",
-                "www.familyvacationcritic.com",
-                "www.oyster.com"
+                "smartertravel.com",
+                "www.smartertravel.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "stmllc.wpenginepowered.com",
-            "prevalence": 0.6
-        },
-        {
-            "domain": "wp.com",
-            "prevalence": 0.2
+            "prevalence": 0.5
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "XHR": 3
+        "Image": 10,
+        "XHR": 2
     },
     "nameservers": []
 }

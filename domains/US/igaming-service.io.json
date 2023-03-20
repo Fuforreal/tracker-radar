@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000813,
-    "sites": 12,
+    "prevalence": 0.0000677,
+    "sites": 10,
     "subdomains": [
         "ip-api",
         "ip-api-cf",
@@ -27,15 +27,15 @@
             "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "f117f13d4cc0fb7d0713e4d64219eba9200d699e7778e9c486a8756ffbefae9c",
-                "5e344e366a9de32ae23d574397d02dc577debe12591f9291197fa7cd3f6f7ca3"
+                "5e344e366a9de32ae23d574397d02dc577debe12591f9291197fa7cd3f6f7ca3",
+                "f117f13d4cc0fb7d0713e4d64219eba9200d699e7778e9c486a8756ffbefae9c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "highlightsfootball.net",
                 "rotogrinders.com",
+                "www.futbin.com",
                 "www.goal.pl",
                 "www.insidesport.in",
                 "www.scoresandodds.com"
@@ -63,20 +63,42 @@
         },
         {
             "rule": "igaming-service\\.io\\/futbin\\.com\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
             "subdomains": [
                 "intersc"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "36ee7213a52d09da6ad9d214bbdd3d9207ffb6016d8c0d1bf91e09cb00e67e2d"
+                "0b2ef83fae0d145f52cc3d62c63fbead201fc3235a1b5f6d4c719eab5df55c9a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_bc_int_ads_futbin.com_www.futbin.com": {
+                    "ttl": 31622403,
+                    "length": 21,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "_ia_loc_c": {
+                    "ttl": 31622406,
+                    "length": 2,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "_ia_loc_r": {
+                    "ttl": 31622406,
+                    "length": 2,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "futbin.com",
@@ -97,7 +119,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "efefcf6c7aa0c2409f711cd69b0bba4b399e55e37cee4ccae2ae5081da1e79ec"
+                "32d342aea8b8754f4f00084b2204a65c29e7388e2a351f4d6221a7b9e8140ba4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -116,6 +138,7 @@
             ],
             "apis": {
                 "Document.cookie getter": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
                 "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 2
             },
@@ -123,26 +146,26 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "82603d6a8c3b00ac3c3357431bfd8250b0c907a9f1d4894aa61e318cd3978cc0"
+                "1109c3d48e5a66368bf01d9cf304025d47b8d404fe42a9fb4c5a9564f3c8d0a1"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_bc_int_ads_insidesport.inen-US_www.insidesport.in": {
-                    "ttl": 31622401,
+                    "ttl": 31622403,
                     "length": 21,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_ia_loc_c": {
-                    "ttl": 31622401,
+                    "ttl": 31622403,
                     "length": 2,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_ia_loc_r": {
-                    "ttl": 31622401,
+                    "ttl": 31622403,
                     "length": 2,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -159,15 +182,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5333333333333333
+            "prevalence": 0.6153846153846154
         },
         {
             "domain": "bctn-sao.s3.amazonaws.com",
-            "prevalence": 0.3333333333333333
-        },
-        {
-            "domain": "highlightsfootball.com",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.38461538461538464
         }
     ],
     "types": {

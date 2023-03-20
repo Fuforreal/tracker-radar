@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
+    "prevalence": 0.000061,
     "sites": 9,
     "subdomains": [
         "www",
@@ -19,6 +19,7 @@
         "sw88",
         "fan.api",
         "broadband",
+        "assets",
         "log",
         "tredir"
     ],
@@ -28,19 +29,30 @@
         {
             "rule": "espn\\.com\\/soccer\\/",
             "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ecab077aaac3b89db7bd6cbc5f59a9a905d3003f16c308c31ff720582f2d0190"
+                "3156670d818deeac39179bcac24e085fe81d95231f2cdab22bcedd85f5590f9e"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_nr": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "espnsoccernet.com",
@@ -49,26 +61,53 @@
         },
         {
             "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/Bootstrap\\.js",
-            "cookies": 0,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "dcf"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
                 "Document.cookie getter": 3,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.language": 1
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "e88e4ff490b3515da0685b28030232de58709685159062e3c4de8d1be932f80e",
-                "f686a4077971417ae6be6271b9a2526d7d288b5c84d6e9ce9b0888ef7daa353e"
+                "8ca5cd8b925ef8d8c173d37da381eb3ab74741725aea54535f8afd27258d9b32"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "s_ensCDS": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "s_ensRegion": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "_dcf": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "s_ensNSL": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "espnsoccernet.com",
@@ -93,7 +132,9 @@
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0000067723606417488944
+            },
             "exampleSites": [
                 "espnsoccernet.com",
                 "www.espnsoccernet.com"
@@ -120,9 +161,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "usprivacy": {
-                    "ttl": 31536004,
+                    "ttl": 31536006,
                     "length": 4,
-                    "prevalence": 0.00002708522365623434,
+                    "prevalence": 0.000027089442566995578,
                     "uniqueness": 0.25
                 }
             },
@@ -215,73 +256,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0cfa00f817e5dc1c7f7bbb087c2920aa80319f5c0b2308d800e0703829d55c98"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espnsoccernet.com",
-                "www.espnsoccernet.com"
-            ]
-        },
-        {
-            "rule": "espn\\.com\\/apis\\/v2\\/recommendations\\/postalCode\\/23917",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fan.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4e460237f29e1c2c0fb13d04e1f6a7daf7e397e13b894130323ef84252a85413"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espnsoccernet.com",
-                "www.espnsoccernet.com"
-            ]
-        },
-        {
-            "rule": "espn\\.com\\/core\\/api\\/v0\\/nav\\/index",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "secure"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1b2ee6391c102c843cd5780a9d0cad906a0345ddd0a419a34aff3c4c44cd1005"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espnsoccernet.com",
-                "www.espnsoccernet.com"
-            ]
-        },
-        {
-            "rule": "espn\\.com\\/espn3\\/auth\\/watchespn\\/user",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "broadband"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bf67f6afe7cdc2e2d4b69ac5d8e55787e651b1ff0e6ea7c4604850ddd37dacc7"
+                "6b0b8d1b97a63ccf3a5343fbe902228151cc24e94e7687fb3a4eab2a3d04c912"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -314,6 +289,74 @@
             ]
         },
         {
+            "rule": "espn\\.com\\/apis\\/v2\\/recommendations\\/postalCode\\/23917",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fan.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4b97df850bf0e7ee08f2141481bbd828cc7595ac96909b7fbe12a75f08455b87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espnsoccernet.com",
+                "www.espnsoccernet.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/core\\/api\\/v0\\/nav\\/index",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1cececa7058e5d3d80163c36794f3c5b333e6978e7fa1709eb5b236a7642820b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0000067723606417488944
+            },
+            "exampleSites": [
+                "espnsoccernet.com",
+                "www.espnsoccernet.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/espn3\\/auth\\/watchespn\\/user",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "broadband"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "7cb05d63d4868aac6f5135c1a84c1cb9eac39379acf5f69e566e4c0856bb4336"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espnsoccernet.com",
+                "www.espnsoccernet.com"
+            ]
+        },
+        {
             "rule": "espn\\.com\\/login\\/responder\\/v4\\/index\\.html",
             "cookies": 0,
             "fingerprinting": 0,
@@ -336,54 +379,29 @@
             ]
         },
         {
-            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/serverComponent\\.php",
+            "rule": "espn\\.com\\/i\\/espnplus\\/espnPlusAllWhite\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "dcf"
+                "assets"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "38c3f0120d83add01d6f50a9d4edf739e0029a4e8668abef6c9d625b6177a7ea",
-                "cc9eef80ee7c2aff07b2cb4a0a049239f9a2982cde54e6a55f533ab52f82d54d"
+                "bc6531f16b30b277b6693464193fcad8e174fc59c4de05f75427620838394a88"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "espnsoccernet.com",
-                "www.natgeotv.com",
-                "www.secsports.com"
+                "www.espnsoccernet.com"
             ]
         },
         {
-            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/ed9cc89e72efe4115d590b2b9169c222\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dcf"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "09aa197b780bfe7b955974d6d0445d27e123088102766ce969315233d7379aad"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espnsoccernet.com",
-                "www.natgeotv.com",
-                "www.secsports.com"
-            ]
-        },
-        {
-            "rule": "espn\\.com\\/b\\/ss\\/wdgespfootytips,wdgespge\\/1\\/JS-2\\.8\\.2\\/s38256452288895",
+            "rule": "espn\\.com\\/b\\/ss\\/wdgespfootytips,wdgespge\\/1\\/JS-2\\.8\\.2\\/s18426757993358",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -398,11 +416,7 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "s_fid": 0.00001354261182811717,
-                "s_c24_s": 0.00001354261182811717,
-                "s_gpv_pn": 0.00001354261182811717
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "footytips.com.au",
                 "www.footytips.com.au"
@@ -431,7 +445,7 @@
             ]
         },
         {
-            "rule": "espn\\.com\\/b\\/ss\\/wdgespfootytips,wdgespge\\/1\\/JS-2\\.8\\.2\\/s34713821962494",
+            "rule": "espn\\.com\\/b\\/ss\\/wdgespfootytips,wdgespge\\/1\\/JS-2\\.8\\.2\\/s11341827025145",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -446,18 +460,14 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "s_fid": 0.00001354261182811717,
-                "s_c24_s": 0.00001354261182811717,
-                "s_gpv_pn": 0.00001354261182811717
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "footytips.com.au",
                 "www.footytips.com.au"
             ]
         },
         {
-            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/6aec35956f938b6f258fb404e6ffca6c\\.js",
+            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/serverComponent\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -468,7 +478,51 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5c273e72f31e661efeda48bb4ce2d40476d18601b4376d9d49fdd6d4bf7a9ba2"
+                "08ffae0c6aa4fbfab6492dae4d014fbc54e82f01d5f176afed9939afa23fc91a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natgeotv.com",
+                "www.secsports.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/ed9cc89e72efe4115d590b2b9169c222\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "09aa197b780bfe7b955974d6d0445d27e123088102766ce969315233d7379aad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natgeotv.com",
+                "www.secsports.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/d32f90f59e7e06ea5aa879bbca1d4c6e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "ee66f5b0eb3ae0a188a64b655e2cc261f965a11136e0cba901d8a458525fbe82"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -501,7 +555,7 @@
             ]
         },
         {
-            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/d5dcc62bf6722da018f5c7af06d6cb9e\\.js",
+            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/4194865173cd6e80ee5a9506a4370caf\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
@@ -526,26 +580,26 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "dab45856f08bba919288ca5fc6c41ceffc9496d03c735a1e6cddba6e227ebb9f"
+                "87ddd2c3124ff4b06f33c59fb42a59dfb34271e1caabbff0c78fc58ad30644ae"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "AMCV_EE0201AC512D2BE80A490D4C%40AdobeOrg": {
-                    "ttl": 63158407,
+                    "ttl": 63158412,
                     "length": 241,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "AMCVS_EE0201AC512D2BE80A490D4C%40AdobeOrg": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "s_cc": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -558,40 +612,40 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000609,
+    "cookies": 0.000061,
     "topInitiators": [
         {
             "domain": "espncdn.com",
-            "prevalence": 0.4883720930232558
+            "prevalence": 0.47619047619047616
         },
         {
             "domain": "nationalgeographic.com",
-            "prevalence": 0.23255813953488372
+            "prevalence": 0.23809523809523808
         },
         {
             "domain": "first party",
-            "prevalence": 0.13953488372093023
+            "prevalence": 0.14285714285714285
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.09302325581395349
+            "prevalence": 0.09523809523809523
         },
         {
             "domain": "go.com",
-            "prevalence": 0.046511627906976744
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
         "Document": 4,
-        "Script": 24,
+        "Script": 22,
         "XHR": 13,
-        "Image": 8,
+        "Image": 10,
         "Other": 2
     },
     "nameservers": [
-        "ns-1936.awsdns-50.co.uk",
         "ns-1045.awsdns-02.org",
-        "ns-846.awsdns-41.net",
-        "ns-122.awsdns-15.com"
+        "ns-122.awsdns-15.com",
+        "ns-1936.awsdns-50.co.uk",
+        "ns-846.awsdns-41.net"
     ]
 }

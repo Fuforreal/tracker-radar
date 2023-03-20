@@ -4,24 +4,30 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000677,
-    "sites": 10,
+    "prevalence": 0.0000745,
+    "sites": 11,
     "subdomains": [
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "feedgrabbr\\.com\\/widget\\/fgwidget\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "apis": {
+                "Event.prototype.timeStamp": 5,
+                "Element.prototype.getClientRects": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [],
             "responseHashes": [
                 "157e6053fcaf17f230e17043f6ed2f72ae04392804566740a76d3490a1fca685"
@@ -32,6 +38,7 @@
             "exampleSites": [
                 "boundingintocomics.com",
                 "forum.lowyat.net",
+                "news.walla.co.il",
                 "www.autopsyfiles.org",
                 "www.ergotron.com",
                 "www.nhmagazine.com",
@@ -105,10 +112,9 @@
             "prevalence": 0.0000406,
             "cnames": [],
             "responseHashes": [
-                "5995abdb8083b5db87fad5dffe88ed79809eb5cec45e91cbd5c6714f1eff1642",
-                "b27f6de2ea33090cd1891384471b7b583b32f68986b3e40ad4d05922ad47d259",
+                "8c2b0b07bcf98918db0147ea6c1c42fa82f03c11c8f8b33eb71cab09c5a2a75d",
                 "ee480d9feb655c754229d50a8263ae03d6863b89c702ce32d6a2bdfb2ba558ef",
-                "6852b885d2a2f05071c2356dee5f4694470bbfa93e85c7c46f374f0ed7c04b1d",
+                "13b33beb580c4ccd8b08175dbecd3ee7c548c85444623b8f6167eb2db265c63d",
                 "06bd78138eba57de1ac8b65d944603862af906b4d1c37d4bfa42bd7618eef8fe"
             ],
             "type": "Script",
@@ -172,29 +178,33 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.72
+            "prevalence": 0.6923076923076923
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.12
+            "prevalence": 0.11538461538461539
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.12
+            "prevalence": 0.11538461538461539
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.038461538461538464
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.04
+            "prevalence": 0.038461538461538464
         }
     ],
     "types": {
-        "Script": 13,
+        "Script": 14,
         "Stylesheet": 14,
         "Font": 2,
         "Image": 2
     },
     "nameservers": [
-        "ernest.ns.cloudflare.com",
-        "fay.ns.cloudflare.com"
+        "fay.ns.cloudflare.com",
+        "ernest.ns.cloudflare.com"
     ]
 }

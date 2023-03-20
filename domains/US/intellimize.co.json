@@ -15,6 +15,26 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "intellimize\\.co\\/user-alias",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greenhouse.io",
+                "www.mongodb.com"
+            ]
+        },
+        {
             "rule": "intellimize\\.co\\/logger",
             "cookies": 0,
             "fingerprinting": 0,
@@ -31,8 +51,7 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000006771305914058585,
-                "_schn": 0.000006771305914058585
+                "_li_dcdm_c": 0.0000067723606417488944
             },
             "exampleSites": [
                 "greenhouse.io",
@@ -48,38 +67,6 @@
                 "www.okta.com",
                 "www.tableau.com",
                 "www.zenefits.com"
-            ]
-        },
-        {
-            "rule": "intellimize\\.co\\/clientlogger",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "log"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000609,
-            "cnames": [],
-            "responseHashes": [
-                "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000006771305914058585,
-                "_schn": 0.000006771305914058585
-            },
-            "exampleSites": [
-                "greenhouse.io",
-                "boards.greenhouse.io",
-                "help.tableau.com",
-                "kb.tableau.com",
-                "www.blackriflecoffee.com",
-                "www.mercari.com",
-                "www.mongodb.com",
-                "www.okta.com",
-                "www.tableau.com"
             ]
         },
         {
@@ -105,27 +92,27 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "104c5917034ad4d9799383684d60dcf177f91bf9b198b4dcf9b8f90f40b9e418",
-                "76b8b9f522dc010b6dead1482a548a36e805898f508950b0dc3c87ef65fafdd9"
+                "0692e791d2c3247b2fb3b4d190adf0d89da1d33c918b0962f9ab5b2253908628",
+                "65a8ebd67b26f15617a3caedefe40b6f094c8bcd5f5058cc393e0dfbea933db2"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_intellimizeTest-1678712676506": {
-                    "ttl": -1678712674,
+                "_intellimizeTest-1679098178388": {
+                    "ttl": -1679098171,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
-                "_intellimizeTest-1678736197846": {
-                    "ttl": -1678736196,
+                "_intellimizeTest-1679122070812": {
+                    "ttl": -1679122066,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
-                "_intellimizeTest-1678707593777": {
-                    "ttl": -1678707592,
+                "_intellimizeTest-1679092936713": {
+                    "ttl": -1679092934,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -137,38 +124,55 @@
             ]
         },
         {
+            "rule": "intellimize\\.co\\/clientlogger",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000474,
+            "cnames": [],
+            "responseHashes": [
+                "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.0000067723606417488944
+            },
+            "exampleSites": [
+                "tableau.com",
+                "kb.tableau.com",
+                "www.blackriflecoffee.com",
+                "www.mercari.com",
+                "www.mongodb.com",
+                "www.okta.com",
+                "www.tableau.com"
+            ]
+        },
+        {
             "rule": "intellimize\\.co\\/client\\/117259329\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 2,
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "api"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.userAgent": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 2,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
+                "window.localStorage": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "26edac1adba52cbf5cd556f1e33b7cb9cc47e562ec0f640339348ff85c91e773"
+                "59d3f348c3d897cef6b0a1d5b40621ed03047d6e411685e3fd7d3a5973d64c18"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "_intellimizeTest-1678704894842": {
-                    "ttl": -1678704892,
-                    "length": 30,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blackriflecoffee.com",
@@ -177,36 +181,23 @@
         },
         {
             "rule": "intellimize\\.co\\/client\\/117936053\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 2,
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "api"
             ],
             "apis": {
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Date.prototype.getTime": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5f90a9e9856881abd4aaba66eb6e3d59d4adeab4b35736b086bb30ac4c61752c"
+                "c51d33cd0716499209f74dd1c67287a8c3976952e5e73fac6e0d59ade6239f13"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "_intellimizeTest-1678731284305": {
-                    "ttl": -1678731283,
-                    "length": 30,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "clio.com",
@@ -221,17 +212,14 @@
                 "cdn"
             ],
             "apis": {
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "77173fc58e905e4901a9ff008dbea4503454c3683c1186cf2b22a66fdd8def73"
+                "f94361d4b6e96671b36a40714e97438cc31ce32fc5a5c98779f125107b9ec94f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -253,7 +241,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c37bb1c5c1e54cbe3758f568db979d9aa86a9584f328ee9d2df054977a135bc7"
+                "fe967c4915a9bf7fce8596883b85c80e3fc835b790fdcdcaf06f567f3ed18d3b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -275,7 +263,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5ed143bc6af7812f099ab2aa55c84ec93e810108268ffa9c9d4659c4a93c25f6"
+                "338792394278a3abcc05d2b2a6e8592e6754c23765957fd6f908fe3deb876d16"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -293,6 +281,7 @@
                 "api"
             ],
             "apis": {
+                "Date.prototype.getTime": 2,
                 "window.localStorage": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
                 "Navigator.prototype.userAgent": 2,
@@ -300,39 +289,32 @@
                 "window.innerHeight": 2,
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
                 "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e6d4b690d0d700c5a739549aa0d8164eca4a666573e8e3a1f5c411be79e9a595"
+                "3674ec181688d663eaf3ff76168c572cb8111b52d1b3af72aac92b287da90381"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_intellimizeTest-1678644517663": {
-                    "ttl": -1678644515,
+                "_intellimizeTest-1679077946830": {
+                    "ttl": -1679077926,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
-                "_intellimizeTest-1678644534897": {
-                    "ttl": -1678644515,
+                "_intellimizeTest-1679077939038": {
+                    "ttl": -1679077926,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
-                "_intellimizeTest-1678644527415": {
-                    "ttl": -1678644515,
+                "_intellimizeTest-1679077946857": {
+                    "ttl": -1679077926,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "_intellimizeTest-1678644534201": {
-                    "ttl": -1678644515,
-                    "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -343,62 +325,34 @@
             ]
         },
         {
-            "rule": "intellimize\\.co\\/user-alias",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "log"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mongodb.com",
-                "www.mongodb.com"
-            ]
-        },
-        {
             "rule": "intellimize\\.co\\/client\\/117351982\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
             "apis": {
                 "window.localStorage": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e41bc731941fef1fc57bd0f8752d533c8da1079ce2e8d23ab03361d82d27757b"
+                "e80fd16e13a5860d786f3ef76962bce0499f8a6aceb081f5eccba9f4639f299a"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_intellimizeTest-1678705694843": {
-                    "ttl": -1678705692,
+                "_intellimizeTest-1679091006318": {
+                    "ttl": -1679091004,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "_intellimizeTest-1678705693935": {
-                    "ttl": -1678705692,
-                    "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -454,39 +408,33 @@
         },
         {
             "rule": "intellimize\\.co\\/client\\/117330432\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerWidth": 2,
+                "Date.prototype.getTime": 2,
                 "window.innerHeight": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "63b64e187d2c24a9ac60db12c13b3e8a84c0ce345ebb0b22c429a443bcb813f9"
+                "d5d994371198f2ea1fdb82741cc32ae8c1bee77aeacecc5b7a63e60c7aff934a"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_intellimizeTest-1678737747087": {
-                    "ttl": -1678737742,
+                "_intellimizeTest-1679123760789": {
+                    "ttl": -1679123756,
                     "length": 30,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "_intellimizeTest-1678737749110": {
-                    "ttl": -1678737744,
-                    "length": 30,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -499,49 +447,49 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000948,
+    "cookies": 0.0000745,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.44805194805194803
+            "domain": "intellimizeio.com",
+            "prevalence": 0.8121212121212121
         },
         {
-            "domain": "intellimizeio.com",
-            "prevalence": 0.42207792207792205
+            "domain": "first party",
+            "prevalence": 0.13737373737373737
         },
         {
             "domain": "mercdn.net",
-            "prevalence": 0.07792207792207792
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.01948051948051948
-        },
-        {
-            "domain": "contentsquare.net",
-            "prevalence": 0.012987012987012988
-        },
-        {
-            "domain": "greenhouse.com",
-            "prevalence": 0.006493506493506494
+            "prevalence": 0.01818181818181818
         },
         {
             "domain": "michiganrobotflower.com",
-            "prevalence": 0.006493506493506494
+            "prevalence": 0.01818181818181818
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.006060606060606061
+        },
+        {
+            "domain": "contentsquare.net",
+            "prevalence": 0.00404040404040404
+        },
+        {
+            "domain": "greenhouse.com",
+            "prevalence": 0.00202020202020202
         },
         {
             "domain": "optimizely.com",
-            "prevalence": 0.006493506493506494
+            "prevalence": 0.00202020202020202
         }
     ],
     "types": {
-        "Fetch": 28,
+        "Fetch": 26,
         "Script": 19
     },
     "nameservers": [
-        "ns-1204.awsdns-22.org",
         "ns-702.awsdns-23.net",
+        "ns-1650.awsdns-14.co.uk",
         "ns-331.awsdns-41.com",
-        "ns-1650.awsdns-14.co.uk"
+        "ns-1204.awsdns-22.org"
     ]
 }

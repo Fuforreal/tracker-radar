@@ -7,18 +7,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
+    "prevalence": 0.000061,
     "sites": 9,
     "subdomains": [
         "cdn-aitg",
-        "astg",
         "adtg",
-        "ax-tg",
+        "astg",
         "cdp-web",
-        "altg"
+        "altg",
+        "ax-tg"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "widerplanet\\.com\\/js\\/adr\\.js",
@@ -28,25 +28,24 @@
                 "cdn-aitg"
             ],
             "apis": {
-                "Date.prototype.getTime": 7,
-                "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 4,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.userAgent": 6,
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 6,
+                "Navigator.prototype.language": 3
             },
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "sites": 6,
+            "prevalence": 0.0000406,
             "cnames": [],
             "responseHashes": [
-                "90db70e496ef140375f9fabdf16ef7e78b59707d9e41d181c2687583a31a52f7",
                 "298bda559e8130a880498d96679d49fe5ae069bbdb2891643e3801ccd2f37b6d",
+                "90db70e496ef140375f9fabdf16ef7e78b59707d9e41d181c2687583a31a52f7",
                 "69294d9eabf85578b0fe43bfaffacd0c7342f14d7d02892c31b9e5af6219b44f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fmkorea.com",
-                "m.fmkorea.com",
+                "nate.com",
                 "news.nate.com",
                 "pann.nate.com",
                 "www.fmkorea.com",
@@ -55,15 +54,43 @@
             ]
         },
         {
+            "rule": "widerplanet\\.com\\/delivery\\/wjs\\.php",
+            "cookies": 0.0000271,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adtg"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "20e9a81ada38636a04f8b79fe62f7cc5904b95cbb3c87f8bf3f8e215ae9dde18",
+                "385582de76b0f2ad834212acba872bcbbacb6246cdfcde9dac96740055520fb2",
+                "112135e0c6dc8560469c910e8116bbf8622476182255a5d1ecf24e90ca93ad98"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nate.com",
+                "news.nate.com",
+                "pann.nate.com",
+                "www.fmkorea.com"
+            ]
+        },
+        {
             "rule": "widerplanet\\.com\\/delivery\\/storage",
             "cookies": 0.0000406,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "astg"
             ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000542,
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
                 "e270f53080812a5da2b2e937ce48dbc794f3442b872f1f2003e3bdd2d2d901dc"
@@ -72,82 +99,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fmkorea.com",
-                "m.fmkorea.com",
+                "nate.com",
                 "news.nate.com",
                 "pann.nate.com",
                 "www.airasia.com",
                 "www.fmkorea.com",
                 "www.ppomppu.co.kr",
-                "www.yna.co.kr"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/wjs\\.php",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adtg"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "81937d6a69033f38f2abde3f6c1c220895d8b1f61c5f6611e21d79af9cf73588",
-                "385582de76b0f2ad834212acba872bcbbacb6246cdfcde9dac96740055520fb2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fmkorea.com",
-                "news.nate.com",
-                "pann.nate.com"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/bid_common_tg",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ax-tg"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "cbe9251b385ef23607ead01e81f34ac8b03b5ad65a9c37f61d9c6ffc49e7c598",
-                "6429a9c240220eb5d96bebb4d207de57b99cdbaf0e03321a89b10ca9fd039cd8"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fmkorea.com",
-                "www.fmkorea.com",
-                "www.yna.co.kr"
-            ]
-        },
-        {
-            "rule": "widerplanet\\.com\\/delivery\\/bid_common_tg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ax-tg"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fmkorea.com",
-                "www.fmkorea.com",
                 "www.yna.co.kr"
             ]
         },
@@ -194,14 +151,14 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1641ba07aee70ed4de90655594d4f5e3cf5cbb8b096eef9881824640a3a7ab7e"
+                "219b0be1d23dceb6a1395783b58d8c944aff8c7e81d65cdd9660b78e300df76c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_wp_uid": {
-                    "ttl": 31536016,
-                    "length": 75,
-                    "prevalence": 0.00001354261182811717,
+                    "ttl": 31536014,
+                    "length": 76,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -228,7 +185,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5012da0a95096cdff89cda0cab33086576ba0965eb0ad1b5e82844819c5af0a8"
+                "63cc93436f8973060e5f138ede31723f589cebe0d7c219d6006a369de42beb77"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -293,7 +250,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -313,7 +272,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -333,7 +294,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -341,40 +304,87 @@
                 "airasia.com",
                 "www.airasia.com"
             ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/bid_common_tg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ax-tg"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fmkorea.com",
+                "www.fmkorea.com",
+                "www.ppomppu.co.kr",
+                "www.yna.co.kr"
+            ]
+        },
+        {
+            "rule": "widerplanet\\.com\\/delivery\\/bid_common_tg",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ax-tg"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "6837104965db1b1703aac1383ccdcd2ee895780a3a6dd2003517bfd1f15dafec",
+                "7693ca825df761cad3959d12bc4dabf96bface83a18676887cf4c46b8e499756"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fmkorea.com",
+                "www.fmkorea.com",
+                "www.ppomppu.co.kr",
+                "www.yna.co.kr"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000609,
+    "cookies": 0.0000542,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.14285714285714285
-        },
-        {
-            "domain": "mathtag.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.47058823529411764
         },
         {
             "domain": "ednplus.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.29411764705882354
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.11764705882352941
+        },
+        {
+            "domain": "mathtag.com",
+            "prevalence": 0.11764705882352941
         }
     ],
     "types": {
         "Script": 16,
-        "Document": 8,
-        "XHR": 5,
-        "Preflight": 3,
-        "Image": 8
+        "Document": 7,
+        "XHR": 6,
+        "Image": 8,
+        "Preflight": 4
     },
     "nameservers": [
-        "ns-1063.awsdns-04.org",
-        "ns-1687.awsdns-18.co.uk",
         "ns-409.awsdns-51.com",
+        "ns-1687.awsdns-18.co.uk",
+        "ns-1063.awsdns-04.org",
         "ns-854.awsdns-42.net"
     ]
 }

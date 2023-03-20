@@ -11,7 +11,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "kwipped\\.com\\/approve\\/plugin\\/3\\.0\\/approve_plugin_loader_alternate\\.php",
@@ -25,7 +25,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1c7c496c70073fc617777fc2427a1126f171176cac9e73659a24909776e495a3"
+                "76a591432692672391b11df26884d59215a905abaafe893128ed5e9ff38f2d00"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -61,20 +61,21 @@
         {
             "rule": "kwipped\\.com\\/approve\\/plugin\\/3\\.0\\/approve_plugin\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "Event.prototype.timeStamp": 3,
-                "Navigator.prototype.product": 3
+                "Navigator.prototype.product": 3,
+                "window.localStorage": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "86fc05de54783ebf453590206613c46f8f3d6a6896872279b6a54dd386165300"
+                "86d44f075778154f58e6edd8c6be718bbb8ae22b4d0605c45e84fd23e1419fe8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -140,8 +141,11 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "370abbb5e12f1dc315e913f602f1fdde8eb26c02a1716d35dd1ff237c0ef0334",
+                "921d17fb7ae051769a14d45acbc470ce920f570087a2bb4820efd72e5584d68b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -161,11 +165,8 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [
-                "370abbb5e12f1dc315e913f602f1fdde8eb26c02a1716d35dd1ff237c0ef0334",
-                "921d17fb7ae051769a14d45acbc470ce920f570087a2bb4820efd72e5584d68b"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -186,8 +187,8 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "4f91a33f63d0eab4878af9cb2d0ed912c92db2183c676b1e8e63cc5ba5342a3a",
-                "92f66b76a43ea14e515d2c1f794e584ecd9c6fa378f774b9713c21b6f3a1487c"
+                "008a06fc6fc4179e5d317e4e4f7d09dfb4b90d478cd13acb1493d4a87213227f",
+                "8c71e3d0b71f26ece4e8a9f37d36b0392e97917ab09a904363ddd41aefdf9684"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -231,7 +232,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "721d4c7a500af77ffcf8e6046dcd6b94600196103b514aa38700d2d318801eb3"
+                "5efce6e868b970df16197bc517a13c044b63d2d608b93b6684c1444129799249"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -301,8 +302,8 @@
     ],
     "types": {
         "Script": 18,
-        "Preflight": 6,
-        "XHR": 6
+        "XHR": 6,
+        "Preflight": 6
     },
     "nameservers": [
         "kara.ns.cloudflare.com",

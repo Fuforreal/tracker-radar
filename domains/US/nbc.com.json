@@ -12,10 +12,13 @@
     "prevalence": 0.0000203,
     "sites": 3,
     "subdomains": [
-        "www"
+        "www",
+        "static",
+        "img",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "nbc\\.com\\/generetic\\/identity\\/",
@@ -36,6 +39,166 @@
                 "usanetwork.com",
                 "www.usanetwork.com"
             ]
+        },
+        {
+            "rule": "nbc\\.com\\/prod\\/vpg\\.5\\.11\\.6\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "27defb0ec9a97e22b895435b859609c4eea60467b51067c6c4af0e49029fbb8f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/29\\/peacock_preview\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "bedb299ee5d91d8e778a10ac0c2cdf8938fddbe38e5fd7d09c832cffe1fd8fa0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/29\\/elements-search-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "cd472145c89700883cccc846a8e42c68b29da31b367e13a913177fcfc7f8503d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/30\\/elements-search-rollover-hover\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "7c5fab75bffab8bd3951c6dffa311dab13065978ab575f970bdb0c1fcb62fd99"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\/sites\\/nbcunbc\\/files\\/images\\/2021\\/6\\/29\\/elements-search-icon-active\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5e347d0f41b71ac004d3f341b81445d457563d0baa913044211ea19512a5ae54"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\/localized-mvpd\\/entitlements",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "44d29ecf7608b16cfe53478879f9f9302f687f5121a972656f50e9bdf961d1db"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
+            "rule": "nbc\\.com\\/preview\\/api\\/get_hashes\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c4506dad977f26947cf1f81d2a29ab468b8bff6abcf4888b348191a9a6b00d9b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usanetwork.com",
+                "www.usanetwork.com"
+            ]
         }
     ],
     "categories": [],
@@ -48,7 +211,10 @@
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Script": 2,
+        "Image": 8,
+        "XHR": 4
     },
     "nameservers": [
         "a13-66.akam.net",

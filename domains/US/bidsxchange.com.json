@@ -4,22 +4,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000135,
-    "sites": 20,
+    "prevalence": 0.000142,
+    "sites": 21,
     "subdomains": [
         "bsrv",
         "bsrv-qa",
-        "admin",
         "i",
         "de",
         "ssrv",
-        "ssrv-pixel"
+        "admin"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "bidsxchange\\.com\\/1637\\.js",
+            "rule": "bidsxchange\\.com\\/1640\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -28,7 +27,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 1,
-                "window.innerHeight": 1
+                "window.innerHeight": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -45,26 +45,32 @@
             ]
         },
         {
-            "rule": "bidsxchange\\.com\\/images\\/shards-dashboards-logo\\.png",
+            "rule": "bidsxchange\\.com\\/refresher-hb\\/refresher_hb\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "admin"
+                "i"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "apis": {
+                "Date.prototype.getTime": 5
+            },
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "563a2fcc62621a913c322baae6e9c8e117bd1d4b2b9a42cb629c439308f8d2a6"
+                "b8e4c51fb1a99e8c3fb7d0d138c8565cb3ce0bc961b9acb3fe369026162d81d8"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "udn.com",
-                "vnexpress.net",
-                "www.theweek.in"
+                "indiatimes.com",
+                "koreajoongangdaily.joins.com",
+                "timesofindia.indiatimes.com",
+                "www.24h.com.vn",
+                "www.joongang.co.kr",
+                "www.theweek.in",
+                "www.wishtv.com"
             ]
         },
         {
@@ -176,34 +182,6 @@
             ]
         },
         {
-            "rule": "bidsxchange\\.com\\/refresher-hb\\/refresher_hb\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 4
-            },
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [
-                "b8e4c51fb1a99e8c3fb7d0d138c8565cb3ce0bc961b9acb3fe369026162d81d8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "joins.com",
-                "koreajoongangdaily.joins.com",
-                "timesofindia.indiatimes.com",
-                "www.24h.com.vn",
-                "www.joongang.co.kr",
-                "www.theweek.in"
-            ]
-        },
-        {
             "rule": "bidsxchange\\.com\\/codebase\\/refresher\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -236,6 +214,7 @@
                 "bsrv-qa"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
                 "window.innerHeight": 1,
                 "Date.prototype.getTime": 1
             },
@@ -265,7 +244,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "80f01b53e020fc5edfa0736ee0a979b4ce27fa503fd963f5fa659ab601d975a2"
+                "d65fd025497a5a51c5238558da30615932ba5d906c6bcdfdcf1314cd3df7cf21"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -341,23 +320,23 @@
             ]
         },
         {
-            "rule": "bidsxchange\\.com\\/",
+            "rule": "bidsxchange\\.com\\/569\\/569\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ssrv-pixel"
+                "ssrv"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "vnexpress.net",
-                "www.theweek.in"
+                "ngoisao.vnexpress.net"
             ]
         },
         {
@@ -385,6 +364,28 @@
             "exampleSites": [
                 "indiatimes.com",
                 "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "bidsxchange\\.com\\/images\\/shards-dashboards-logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "admin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "563a2fcc62621a913c322baae6e9c8e117bd1d4b2b9a42cb629c439308f8d2a6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vnexpress.net",
+                "www.theweek.in"
             ]
         },
         {
@@ -469,7 +470,7 @@
             ]
         },
         {
-            "rule": "bidsxchange\\.com\\/bsrv\\/985",
+            "rule": "bidsxchange\\.com\\/bsrv\\/1131",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -480,7 +481,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "13db0caf5db465340a33b691ab49f710bd32e0f2a444833bcbbc78a5f9e9a951"
+                "e459e4b2954eda729fd25a738774740e68ef4d5ff2d52ae55f41182b7db66662"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -491,49 +492,7 @@
             ]
         },
         {
-            "rule": "bidsxchange\\.com\\/bsrv\\/985",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "de"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "24h.com.vn",
-                "www.24h.com.vn"
-            ]
-        },
-        {
-            "rule": "bidsxchange\\.com\\/bsrv\\/1337",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "de"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2e16a1c0056fc6d3aeb3c26ce24c9b63b5926d02a77d569a4d37485a2cf37b0a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "24h.com.vn",
-                "www.24h.com.vn"
-            ]
-        },
-        {
-            "rule": "bidsxchange\\.com\\/bsrv\\/1337",
+            "rule": "bidsxchange\\.com\\/bsrv\\/1131",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -645,7 +604,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "80e1a8ae32d8c9684c5e3c75662b5bb252da996ce402ca831a186b07c4865a1a"
+                "de21d6e9fa441ea9effbc94f9beb9d84eafb25d138f518a62fdd5591e6301bec"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -703,7 +662,7 @@
             ]
         },
         {
-            "rule": "bidsxchange\\.com\\/1407\\.js",
+            "rule": "bidsxchange\\.com\\/1409\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -730,17 +689,56 @@
             ]
         },
         {
+            "rule": "bidsxchange\\.com\\/bsrv\\/1409",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "8f2b010be3782f84964eb6bf0a3c3e91d4bff28721f6ca27de4308a71dbcaa37"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oto.com",
+                "www.oto.com"
+            ]
+        },
+        {
+            "rule": "bidsxchange\\.com\\/bsrv\\/1409",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oto.com",
+                "www.oto.com"
+            ]
+        },
+        {
             "rule": "bidsxchange\\.com\\/1401\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "bsrv",
                 "bsrv-qa"
             ],
-            "apis": {
-                "window.innerHeight": 1,
-                "Date.prototype.getTime": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -767,7 +765,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "18604ee2e2340e2eb245ae67ed64e490c977a06a0f7f6cbfff6c9b734a3dfb7b"
+                "ee3aa06ec014031252171bbe4d478f4707fe9d3fe562b1116795ff9f5debf772"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -860,7 +858,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "680483483365a4aae8ae4a65f87f5aa859fa91c67bddce5fa6ed17f6bf520374"
+                "baddda5dcb4a944bf9991d6558ac980448507ef7e1a92acf73aab9a843194694"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -898,7 +896,7 @@
                 "i"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 1
             },
             "sites": 2,
@@ -913,6 +911,33 @@
             "exampleSites": [
                 "team-bhp.com",
                 "www.team-bhp.com"
+            ]
+        },
+        {
+            "rule": "bidsxchange\\.com\\/1437\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bsrv",
+                "bsrv-qa"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.innerHeight": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theweek.in",
+                "www.theweek.in"
             ]
         },
         {
@@ -970,33 +995,6 @@
             ]
         },
         {
-            "rule": "bidsxchange\\.com\\/1437\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "bsrv",
-                "bsrv-qa"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.innerHeight": 1,
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "theweek.in",
-                "www.theweek.in"
-            ]
-        },
-        {
             "rule": "bidsxchange\\.com\\/1439\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1020,6 +1018,75 @@
                 "theweek.in",
                 "www.theweek.in"
             ]
+        },
+        {
+            "rule": "bidsxchange\\.com\\/1608\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bsrv",
+                "bsrv-qa"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.innerHeight": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wishtv.com",
+                "www.wishtv.com"
+            ]
+        },
+        {
+            "rule": "bidsxchange\\.com\\/bsrv\\/1608",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "d5cda4fc4dd3a73a5292a130675314f74e1495dba5c972506056cdd9f8b6e02c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wishtv.com",
+                "www.wishtv.com"
+            ]
+        },
+        {
+            "rule": "bidsxchange\\.com\\/bsrv\\/1608",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wishtv.com",
+                "www.wishtv.com"
+            ]
         }
     ],
     "categories": [],
@@ -1028,30 +1095,30 @@
     "topInitiators": [
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.8194444444444444
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.8378378378378378
         },
         {
             "domain": "adtelligent.com",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.08108108108108109
         },
         {
-            "domain": "avplayer.com",
-            "prevalence": 0.027777777777777776
+            "domain": "first party",
+            "prevalence": 0.04054054054054054
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.027777777777777776
+            "prevalence": 0.02702702702702703
+        },
+        {
+            "domain": "avplayer.com",
+            "prevalence": 0.013513513513513514
         }
     ],
     "types": {
-        "Script": 59,
-        "Image": 3,
+        "Script": 64,
         "Fetch": 14,
-        "Preflight": 12
+        "Preflight": 14,
+        "Image": 2
     },
     "nameservers": [
         "ns62.domaincontrol.com",

@@ -4,11 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
         "sportdaten.n-tv.de.cname",
-        "sportdaten.welt.de.cname"
+        "sportdaten.welt.de.cname",
+        "nrz.funke.cname",
+        "waz.funke.cname",
+        "wp.funke.cname"
     ],
     "cnames": [
         {
@@ -16,14 +19,26 @@
             "resolved": "sportdaten.n-tv.de.cname.weltsport.org"
         },
         {
+            "original": "sportdaten.nrz.de",
+            "resolved": "nrz.funke.cname.weltsport.org"
+        },
+        {
+            "original": "sportdaten.waz.de",
+            "resolved": "waz.funke.cname.weltsport.org"
+        },
+        {
             "original": "sportdaten.welt.de",
             "resolved": "sportdaten.welt.de.cname.weltsport.org"
+        },
+        {
+            "original": "sportdaten.wp.de",
+            "resolved": "wp.funke.cname.weltsport.org"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "weltsport\\.org\\/json\\/matches-by-ids\\/ma9417948\\/index\\.json",
+            "rule": "weltsport\\.org\\/json\\/matches-by-ids\\/ma9417858-9417876\\/index\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -44,7 +59,7 @@
                 }
             ],
             "responseHashes": [
-                "4672d81bd85963e304852b618490055d1a0a8d1424476ab9680d8b905504a8d9"
+                "a8b9dc1e3d1393d092f4d7c25ee0abb409ad92868f81ee58fd0caa742bb3c129"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -52,6 +67,42 @@
             "exampleSites": [
                 "n-tv.de",
                 "www.welt.de"
+            ]
+        },
+        {
+            "rule": "weltsport\\.org\\/widget\\/matchbar\\/co12\\/li9\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nrz.funke.cname",
+                "waz.funke.cname",
+                "wp.funke.cname"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "sportdaten.nrz.de",
+                    "resolved": "nrz.funke.cname.weltsport.org"
+                },
+                {
+                    "original": "sportdaten.waz.de",
+                    "resolved": "waz.funke.cname.weltsport.org"
+                },
+                {
+                    "original": "sportdaten.wp.de",
+                    "resolved": "wp.funke.cname.weltsport.org"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
             ]
         }
     ],
@@ -65,12 +116,13 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 2,
+        "Document": 3
     },
     "nameservers": [
-        "nsc3.schlundtech.de",
-        "nsa3.schlundtech.de",
         "nsb3.schlundtech.de",
-        "nsd3.schlundtech.de"
+        "nsc3.schlundtech.de",
+        "nsd3.schlundtech.de",
+        "nsa3.schlundtech.de"
     ]
 }

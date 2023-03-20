@@ -10,7 +10,7 @@
         "e"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "cdn1\\.org\\/i\\/en\\/glb\\.css",
@@ -37,11 +37,13 @@
         {
             "rule": "cdn1\\.org\\/i\\/en\\/glb\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "e"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -75,7 +77,7 @@
         "Script": 2
     },
     "nameservers": [
-        "kip.ns.cloudflare.com",
-        "michelle.ns.cloudflare.com"
+        "michelle.ns.cloudflare.com",
+        "kip.ns.cloudflare.com"
     ]
 }

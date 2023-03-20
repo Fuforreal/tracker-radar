@@ -45,11 +45,11 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.maxTouchPoints": 4,
-                "Navigator.prototype.languages": 4,
                 "HTMLMediaElement.prototype.canPlayType": 4,
-                "MediaSource.isTypeSupported": 4,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
+                "Navigator.prototype.languages": 3,
+                "MediaSource.isTypeSupported": 3,
                 "Event.prototype.timeStamp": 3
             },
             "sites": 4,
@@ -100,14 +100,14 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Screen.prototype.height": 4,
+                "Date.prototype.getTime": 4,
                 "window.innerWidth": 4,
                 "window.innerHeight": 4,
-                "Navigator.prototype.appName": 4,
-                "Navigator.prototype.appVersion": 4,
-                "Date.prototype.getTime": 4,
-                "window.localStorage": 4
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.appVersion": 3,
+                "window.localStorage": 3
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -148,6 +148,28 @@
             ]
         },
         {
+            "rule": "streamhoster\\.com\\/lib\\/platform-player\\/2\\.27\\/lib\\/casting\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c2a902c936397ebc67695c95d4e011c668c268749ec75d9891a293c202fdda1e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coloradowebcam.net",
+                "www.coloradowebcam.net"
+            ]
+        },
+        {
             "rule": "streamhoster\\.com\\/player-event",
             "cookies": 0,
             "fingerprinting": 0,
@@ -168,6 +190,28 @@
                 "coloradowebcam.net",
                 "www.coloradowebcam.net"
             ]
+        },
+        {
+            "rule": "streamhoster\\.com\\/client-player\\/live-status",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "3789512d5f6c35c8eba0c1631f6c373cdf77aa9325c6e0643f620bf4c1fb674d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coloradowebcam.net",
+                "www.coloradowebcam.net"
+            ]
         }
     ],
     "categories": [],
@@ -176,24 +220,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.8571428571428571
         },
         {
             "domain": "filesusr.com",
-            "prevalence": 0.25
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "Stylesheet": 4,
-        "Script": 12,
+        "Script": 14,
         "Font": 2,
-        "Fetch": 2
+        "Fetch": 4
     },
     "nameservers": [
         "ns4.dnsmadeeasy.com",
-        "ns2.dnsmadeeasy.com",
-        "ns3.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com",
         "ns0.dnsmadeeasy.com",
-        "ns1.dnsmadeeasy.com"
+        "ns2.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com"
     ]
 }

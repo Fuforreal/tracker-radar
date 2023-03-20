@@ -11,46 +11,6 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "pbh-network\\.com\\/ads\\/halfpage\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "833af011caa8bc292d484bc4d40f36080adbd35e18379bdfb6206baa5f06ba63"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pbh2.com",
-                "www.pbh2.com"
-            ]
-        },
-        {
-            "rule": "pbh-network\\.com\\/ads\\/leaderboard\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d9fa0dc352c5c9839dd05f2b34595a5c2b5478162e9f996c46801b525430a826"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pbh2.com",
-                "www.pbh2.com"
-            ]
-        },
-        {
             "rule": "pbh-network\\.com\\/ads\\/mrec\\.html",
             "cookies": 0,
             "fingerprinting": 0,
@@ -61,6 +21,26 @@
             "cnames": [],
             "responseHashes": [
                 "9384f43d73b1f86596824f027c726b144058439356a7b845b38e18ed15a4e67a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pbh2.com",
+                "www.pbh2.com"
+            ]
+        },
+        {
+            "rule": "pbh-network\\.com\\/ads\\/halfpage\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "833af011caa8bc292d484bc4d40f36080adbd35e18379bdfb6206baa5f06ba63"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -93,13 +73,17 @@
         {
             "rule": "pbh-network\\.com\\/ads\\/dfp-header\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1113969694fb1a117a0424f02c1994792a3a5cfa33ff09b0eafebfb485f6aeb4"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -117,7 +101,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "13161f845883ddc67c4adec84919b2350c3ab125c5c4263dbb736594c54ccd71"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -128,16 +114,28 @@
         },
         {
             "rule": "pbh-network\\.com\\/wordpress\\/wp-content\\/plugins\\/pbh-common\\/pbh-header\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "c94d826359f6f557b2c4adbfd3879051d81c19470cf4951b8fbda0491fbad2b6"
+            ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "campaign": {
+                    "ttl": 3630,
+                    "length": 8,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pbh2.com",
@@ -153,7 +151,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1f8dbd931977a779e92917e999678da5f8ebc36b30d4626f2bbbf50d1507c991"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -165,13 +165,21 @@
         {
             "rule": "pbh-network\\.com\\/wordpress\\/wp-content\\/plugins\\/pbh-common\\/pbh-pb\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9dbeef9ab2ce0055877b44ee2449b1837bb38db5586c139e355024143695a95e"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -183,23 +191,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
-            "domain": "confiant-integrations.net",
-            "prevalence": 0.5714285714285714
-        },
-        {
             "domain": "doubleclick.net",
-            "prevalence": 0.42857142857142855
+            "prevalence": 1
         }
     ],
     "types": {
-        "Document": 6,
+        "Document": 4,
         "Script": 12
     },
     "nameservers": [
-        "grace.ns.cloudflare.com",
-        "brett.ns.cloudflare.com"
+        "brett.ns.cloudflare.com",
+        "grace.ns.cloudflare.com"
     ]
 }

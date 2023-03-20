@@ -8,7 +8,7 @@
     "sites": 1,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "rbcdemo\\.com\\/en\\/registered\\/course\\/embedded\\/view-estatements-ios\\/",
@@ -52,17 +52,17 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "72599b7aa80d180a89d575d3efc2ad113ffbfdfc5b49ff744c8c8e14ecf793bf"
+                "73091b3ec8f651b34ade90156c7775b3fd3e12bab93257adad4ad55927a196c1"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -75,16 +75,14 @@
         {
             "rule": "rbcdemo\\.com\\/libs\\/jquery-1\\.11\\.3\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ecb916133a9376911f10bc5c659952eb0031e457f5df367cde560edbfba38fb8"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -183,7 +181,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -311,9 +311,7 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -478,9 +476,9 @@
         "XHR": 8
     },
     "nameservers": [
-        "edns3.ultradns.com",
         "edns3.ultradns.biz",
-        "edns3.ultradns.org",
-        "edns3.ultradns.net"
+        "edns3.ultradns.net",
+        "edns3.ultradns.com",
+        "edns3.ultradns.org"
     ]
 }

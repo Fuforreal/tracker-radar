@@ -174,6 +174,26 @@
             ]
         },
         {
+            "rule": "fotowissen\\.b-cdn\\.net\\/wp-content\\/plugins\\/aawp\\/assets\\/img\\/icon-check-prime\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5e87d974fc0a1a80151d32192d0e69ec8f2ba78b0f0a1022a1230feaca760d2b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fotowissen.eu",
+                "www.fotowissen.eu"
+            ]
+        },
+        {
             "rule": "fotowissen\\.b-cdn\\.net\\/wp-content\\/plugins\\/aawp\\/assets\\/img\\/icon-cart-white\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -184,46 +204,6 @@
             "cnames": [],
             "responseHashes": [
                 "777d9706bd1a3628e45e2653d144627329e0d9de94e51e0382b5417cd4227378"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fotowissen.eu",
-                "www.fotowissen.eu"
-            ]
-        },
-        {
-            "rule": "fotowissen\\.b-cdn\\.net\\/wp-content\\/plugins\\/aawp\\/assets\\/img\\/stars\\/v1\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5fa283304dfc8e087bbb61921272fb0173b19ebea8c1200a19556c00d9e06660"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fotowissen.eu",
-                "www.fotowissen.eu"
-            ]
-        },
-        {
-            "rule": "fotowissen\\.b-cdn\\.net\\/wp-content\\/plugins\\/aawp\\/assets\\/img\\/stars\\/v1-active\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "aec40db6693c7e2c0b9da28b6607a75cabd6985a3c35062fd311fdb48462bdf8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -256,12 +236,9 @@
         {
             "rule": "fotowissen\\.b-cdn\\.net\\/wp-includes\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -339,9 +316,11 @@
         {
             "rule": "fotowissen\\.b-cdn\\.net\\/wp-content\\/plugins\\/popup-by-supsystic\\/modules\\/popup\\/js\\/frontend\\.popup\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -541,12 +520,9 @@
         {
             "rule": "fotowissen\\.b-cdn\\.net\\/wp-content\\/themes\\/herald\\/assets\\/js\\/jquery\\.magnific-popup\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -611,7 +587,8 @@
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.devicePixelRatio": 2
+                "window.devicePixelRatio": 2,
+                "Element.prototype.getClientRects": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -670,12 +647,12 @@
         {
             "rule": "fotowissen\\.b-cdn\\.net\\/wp-content\\/plugins\\/meow-lightbox-pro\\/app\\/lightbox-pro\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.platform": 1,
-                "window.devicePixelRatio": 1
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.devicePixelRatio": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -719,8 +696,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Document.cookie getter": 1,
-                "Navigator.prototype.userAgent": 1
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -810,7 +787,7 @@
     ],
     "types": {
         "Stylesheet": 8,
-        "Image": 22,
+        "Image": 20,
         "Script": 46
     },
     "nameservers": []

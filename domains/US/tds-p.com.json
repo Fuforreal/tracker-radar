@@ -7,8 +7,8 @@
     "prevalence": 0.0000542,
     "sites": 8,
     "subdomains": [
-        "collect-com.prod",
-        "apigee"
+        "apigee",
+        "collect-com.prod"
     ],
     "cnames": [
         {
@@ -30,33 +30,6 @@
     ],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "tds-p\\.com\\/gtm\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "collect-com.prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "collect.conrad.com",
-                    "resolved": "collect-com.prod.tds-p.com"
-                }
-            ],
-            "responseHashes": [
-                "e6c190bdcddbd0c442818ccc0a07fed408b6dd146ad62f64b4ca0032fadf0ac7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.com",
-                "www.conrad.com"
-            ]
-        },
         {
             "rule": "tds-p\\.com\\/push-js-sdk\\/1\\/push-notifications\\.js",
             "cookies": 0,
@@ -95,6 +68,33 @@
             ]
         },
         {
+            "rule": "tds-p\\.com\\/gtm\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "collect-com.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "collect.conrad.com",
+                    "resolved": "collect-com.prod.tds-p.com"
+                }
+            ],
+            "responseHashes": [
+                "3ccb5082e5375f41e0b4d0897d857286fea9e4c83d78f69eabdc25d0d9635ca5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.com",
+                "www.conrad.com"
+            ]
+        },
+        {
             "rule": "tds-p\\.com\\/category\\/1\\/service\\/CQ_CH_B2C\\/tree",
             "cookies": 0,
             "fingerprinting": 0,
@@ -111,7 +111,7 @@
                 }
             ],
             "responseHashes": [
-                "49c6c68f0e0239250f824b4bc080dd9b20000b24fd9033cf2d1221bb4940c4e3"
+                "fb9c4d6d33f849e84103dfad4f5abd765ba317c801e913541c60cbae58cf572a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -210,7 +210,7 @@
                 }
             ],
             "responseHashes": [
-                "5e289a2d05ac981f85199da1f44073b3a8feb39e8bf86a6b41d6094b3f952018"
+                "5c39b8dabdc0128fc8441f6e0fa61c92f5f34f0abfe6571be461006b6cbf4a39"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -264,7 +264,7 @@
                 }
             ],
             "responseHashes": [
-                "1cb6d1c59a1b9a28a5a0b1c5878eedccf2147f8457fd80c77e6f5a7e8f3f2767"
+                "b7065b58039a1015971d4eb9556ed7680ad11c6770f010e1a24b0c8978601452"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -298,8 +298,12 @@
                     "resolved": "apigee.tds-p.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "148e45212ccb2a03780c2845cc8f53de9bfef6827aa9312e4af911236f72033e",
+                "209d7f58b2663d0e90499705f762f7900b1ae489df0f69da55cb5602fa9e4172",
+                "d126275daaca2fac050ed14a94e990bdfda19c8182eb35f79e9c2e589f9034ae"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -333,12 +337,8 @@
                     "resolved": "apigee.tds-p.com"
                 }
             ],
-            "responseHashes": [
-                "ebcaf7d0a5df866a8766f5df75211b73e2e63c022da8ed7a1fc991f54b44a3c6",
-                "814ff5b58407597774d542d666ca44cad9af3caa69412f14cd825b3db41b428d",
-                "1080a9e9f5948256bd90c26185006800e66357bc36e289698dde9fca0762634e"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -390,7 +390,7 @@
                 }
             ],
             "responseHashes": [
-                "7da08ad2b704513ac00e445af788a67bf66a4b5ab510c65a5c620c2d6aa425a1"
+                "08b68dc1eaf7b579594d66d1cd6e90860b2aa9829f21cb48ff644134fdd766fa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -460,9 +460,9 @@
                 }
             ],
             "responseHashes": [
-                "3bad45f5cc3bfab13ef390fb9a1ca4ccec5bf6b618f21ef3f9fd388b368f4d6c",
-                "8188a3fd743a99af9ae5c4efb88905248bf8a2df556b6e3075871287c7c0b378",
-                "b15d32334370c27cb74b3bf1a2fefe068e9c6859a88587939565e9adbf21a8c6"
+                "099fddfd75daaad2477a4c9aa09cc0dbebe6b297843d3286116b4dcedf184be2",
+                "1e2ddc2aba53a833782d238cf865eaf6208eb083029708fc96f3380eb7ba6c95",
+                "7e9217c19a8f91d4ebafa078390da2fdf996c25d7932ff3c879eb738b34f7fb2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -533,8 +533,8 @@
                 }
             ],
             "responseHashes": [
-                "853c088a7df3b1ad9cdf5492552b801d70a22965bf37d530783c624b206c7bed",
-                "379cf55d39a07be20adfb86d0322dcde4ad63195d4663d87d5d62f42fbb78440"
+                "7c5cc93a224e3776538bb64884bc1d58f9072aad9d0d90938139376c70e1caa4",
+                "07cdbb67e4538ce91d48199dacb310654c792d43a532241df46f4ccbf86c4102"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -562,7 +562,7 @@
                 }
             ],
             "responseHashes": [
-                "84f274b2314131b8f301f81c62d03566979830c453b224b11af2921f5b75a942"
+                "31b9d1f4ffc41aa3836090fcad1568a950a7a1e6bf018c4796723f494afcf1d6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -589,7 +589,7 @@
                 }
             ],
             "responseHashes": [
-                "a791c0d3b5038029aa6faafd03d3e8918911842d723f92b8c6bbf46e0ddc0ed1"
+                "6fa8a3059623e07ade9af2f7ed133cd326910edcc92b06dc2066466cee69a3c9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -616,7 +616,7 @@
                 }
             ],
             "responseHashes": [
-                "97513133776e2d72d7130774e99949fef0bd47e6ab6784f0cf53f1ddbc6c24ac"
+                "87f35e7e31045affff04a594bfa3cb2cdc9ab38a70a1593f2f2f34efbb931cc2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -643,7 +643,7 @@
                 }
             ],
             "responseHashes": [
-                "1dfe839035da81398c2faa8aa911b34c95ed45349d6ee90509cd28ed5104edd0"
+                "755b32d8a46c3958de62190a881bf65406a37f831e8964ca4ff545afb786db72"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -670,7 +670,7 @@
                 }
             ],
             "responseHashes": [
-                "e05c95c374c1e75a051172d861fa5c45e7eac4419cd28007318c67eb45a3e0f8"
+                "ac05b7e35488c2bee1ed6d2046528989d79548d5e67649e56afb2562df449dd6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -722,7 +722,7 @@
                 }
             ],
             "responseHashes": [
-                "483a6e5884d87251d8984a8971531d084a074ca7c658f3680d40be66110d48a4"
+                "ae12e7976a58c8dbfd2876d3da11f6d38cc9a183f81e6cb95b6e8237412883c7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -800,8 +800,10 @@
                     "resolved": "apigee.tds-p.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "02438442180dfd3037b71443e068267f27f8638023f6027697af31e185ebdfb7"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -825,10 +827,8 @@
                     "resolved": "apigee.tds-p.com"
                 }
             ],
-            "responseHashes": [
-                "65dd4cb3d02ac5a39782fb9b1346de4343b4c4f60205a8694a7e6c8d05b43092"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -852,7 +852,7 @@
         "Preflight": 23
     },
     "nameservers": [
-        "sofia.ns.cloudflare.com",
-        "kurt.ns.cloudflare.com"
+        "kurt.ns.cloudflare.com",
+        "sofia.ns.cloudflare.com"
     ]
 }

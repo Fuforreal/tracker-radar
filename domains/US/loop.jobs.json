@@ -10,21 +10,24 @@
         "upsform"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "loop\\.jobs\\/form\\/jobalert",
             "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "upsform"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ac4bae76eb0aafaa54482ec59f66cc27c719e935e9dba5ac9f40a0efa052dbb7"
+                "371522edaedca33da0a0bc2b0162b22d51f3ff7c59104a2404d8953fa8735559"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -59,20 +62,11 @@
         {
             "rule": "loop\\.jobs\\/bundles\\/jquery",
             "cookies": 0,
-            "fingerprinting": 3,
+            "fingerprinting": 0,
             "subdomains": [
                 "upsform"
             ],
-            "apis": {
-                "window.devicePixelRatio": 1,
-                "window.outerWidth": 1,
-                "Screen.prototype.availWidth": 1,
-                "window.outerHeight": 1,
-                "Screen.prototype.availHeight": 1,
-                "Navigator.prototype.userAgent": 2,
-                "Element.prototype.getClientRects": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -208,7 +202,8 @@
                 "upsform"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,

@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "tumgik\\.com\\/static\\/css\\/styles\\.css",
@@ -59,11 +59,14 @@
         {
             "rule": "tumgik\\.com\\/static\\/js\\/sticky-sidebar\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "Element.prototype.getClientRects": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -131,7 +134,7 @@
         "Script": 8
     },
     "nameservers": [
-        "melany.ns.cloudflare.com",
-        "ian.ns.cloudflare.com"
+        "ian.ns.cloudflare.com",
+        "melany.ns.cloudflare.com"
     ]
 }

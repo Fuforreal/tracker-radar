@@ -138,12 +138,9 @@
         {
             "rule": "d4804za1f1gw\\.cloudfront\\.net\\/wp-includes\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Event.prototype.timeStamp": 6,
-                "Element.prototype.getClientRects": 1
-            },
+            "apis": {},
             "sites": 6,
             "prevalence": 0.0000406,
             "cnames": [],
@@ -188,12 +185,13 @@
         },
         {
             "rule": "d4804za1f1gw\\.cloudfront\\.net\\/wp-content\\/mu-plugins\\/biblioweb\\/assets\\/js\\/dist\\/c-system-message\\.min\\.js",
-            "cookies": 0.0000406,
+            "cookies": 0.0000339,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Document.cookie getter": 6,
-                "Document.cookie setter": 6
+                "Document.cookie getter": 5,
+                "Event.prototype.timeStamp": 5,
+                "Document.cookie setter": 5
             },
             "sites": 6,
             "prevalence": 0.0000406,
@@ -206,8 +204,8 @@
                 "is_local_branch": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.00004062783548435151,
-                    "uniqueness": 0.16666666666666666
+                    "prevalence": 0.00003386180320874447,
+                    "uniqueness": 0.2
                 }
             },
             "firstPartyCookiesSent": {},
@@ -250,9 +248,11 @@
         {
             "rule": "d4804za1f1gw\\.cloudfront\\.net\\/wp-content\\/mu-plugins\\/bw-beaverbuilder\\/assets\\/js\\/dist\\/c-bw-bb\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 6
+            },
             "sites": 6,
             "prevalence": 0.0000406,
             "cnames": [],
@@ -301,7 +301,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 6,
             "prevalence": 0.0000406,
@@ -498,8 +498,8 @@
             "cnames": [],
             "responseHashes": [
                 "4a7625207f58c317240e45ca9e53e14b65f2e2318a54abed08f7ba1cc6191f7b",
-                "653d7cd6eb10fdefe35445b4192db8519f69ef1e8b332cb487ea6819fa7e07de",
-                "7e071c1c8f3a9d988b4bd2a8d29af09f5d80ac4c0bccb187016f184b5748b78f"
+                "c8b34e38fc1c84e73050945565303b61067199975a79e06312a4d82dd3a92bac",
+                "fd16cd1f397fd6b9e15cc125ac37abf0d2a58072f3b43dda8d1ca966fa5977d8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -558,7 +558,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.innerWidth": 2
+                "window.innerWidth": 2,
+                "Element.prototype.getClientRects": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -623,8 +624,26 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipublib.org",
+                "www.library.pima.gov"
+            ]
+        },
+        {
+            "rule": "d4804za1f1gw\\.cloudfront\\.net\\/wp-content\\/themes\\/bibliocommons\\/css\\/fontello\\/font\\/cms-wordpress\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
             "responseHashes": [
-                "82dd0a214b4fa1201ab816c59d10e148de716a0283f34c5c1fc4606ca245f02c"
+                "dcdf8bc884962c27e5efa39c77c9ed6d925d85054710c3b423a8b7fa61b07f4a"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -639,7 +658,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000813,
+    "cookies": 0.0000677,
     "topInitiators": [
         {
             "domain": "first party",
@@ -650,12 +669,12 @@
         "Stylesheet": 32,
         "Script": 73,
         "Image": 22,
-        "Font": 2
+        "Font": 4
     },
     "nameservers": [
-        "ns-995.awsdns-60.net",
-        "ns-1827.awsdns-36.co.uk",
         "ns-1389.awsdns-45.org",
-        "ns-504.awsdns-63.com"
+        "ns-1827.awsdns-36.co.uk",
+        "ns-504.awsdns-63.com",
+        "ns-995.awsdns-60.net"
     ]
 }

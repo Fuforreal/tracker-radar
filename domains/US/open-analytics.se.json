@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
-    "sites": 9,
+    "prevalence": 0.0000745,
+    "sites": 11,
     "subdomains": [
         "tracker.transportstyrelsen",
+        "tracker.hsb",
         "tracker.msb",
         "tracker.oph"
     ],
@@ -99,7 +100,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "fc5c5e4691d3b6e4801f507e7874b5f37181bbdbfc8f6625f861349486f94c70"
+                "d16d4ed0feb6870a5dc2577b8432655904bfccfe7097c4fb24b28f9f7694937a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -124,7 +125,7 @@
                 }
             ],
             "responseHashes": [
-                "9f4472b89bb8274883106f343981f89b19abee41fa0e9511adcfe427820a50f2"
+                "63257a5c49dfe447005875f905222a1de96f70dc9fa36db75f29393b2991e249"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -139,12 +140,13 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "tracker.hsb",
                 "tracker.msb",
                 "tracker.oph"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [
                 {
                     "original": "open-analytics.hrw.org",
@@ -168,8 +170,44 @@
             "exampleSites": [
                 "hrw.org",
                 "www.hrw.org",
+                "www.hsb.se",
                 "www.msb.se",
                 "www.oph.fi"
+            ]
+        },
+        {
+            "rule": "open-analytics\\.se\\/js\\/container_1D4aLUTE\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tracker.hsb"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.vendor": 2,
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 1,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "NavigatorUAData.prototype.brands": 1,
+                "NavigatorUAData.prototype.platform": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "ed8c65f1b8779564fe6f27da42c74b662d6c62558a8a310775184054feb86c11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hsb.se",
+                "www.hsb.se"
             ]
         },
         {
@@ -216,7 +254,7 @@
                 }
             ],
             "responseHashes": [
-                "30b08d3c677cd01da41cf97a0f72ae44daa0da7a92ff1157cf7a625e661a6b7f"
+                "c3d524d147d675fbaf4c500839174c81e3717c158d0a68d064e394fa8a0783a2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -264,11 +302,11 @@
         }
     ],
     "types": {
-        "Script": 12,
-        "Ping": 6
+        "Script": 14,
+        "Ping": 7
     },
     "nameservers": [
-        "ns2.dnshost.net",
-        "ns1.dnshost.net"
+        "ns1.dnshost.net",
+        "ns2.dnshost.net"
     ]
 }

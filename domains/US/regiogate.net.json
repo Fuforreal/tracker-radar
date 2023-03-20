@@ -309,14 +309,11 @@
         {
             "rule": "regiogate\\.net\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -339,7 +336,8 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -560,9 +558,9 @@
         "Script": 16
     },
     "nameservers": [
-        "c.ns14.net",
-        "b.ns14.net",
         "d.ns14.net",
-        "a.ns14.net"
+        "b.ns14.net",
+        "a.ns14.net",
+        "c.ns14.net"
     ]
 }

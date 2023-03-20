@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000542,
-    "sites": 8,
-    "subdomains": [],
+    "prevalence": 0.000061,
+    "sites": 9,
+    "subdomains": [
+        "cdn1"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
@@ -16,10 +18,10 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 5
+                "window.localStorage": 2
             },
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "55a8269a9ad8cd1bb408b968b3b2264430dd2cb68ddac8d5ee4e68ba802bb660"
@@ -28,13 +30,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "garant.ru",
-                "base.garant.ru",
                 "stopgame.ru",
                 "studme.org",
                 "svpressa.ru",
                 "www.audit-it.ru",
                 "zaycev.net"
+            ]
+        },
+        {
+            "rule": "moe\\.video\\/player\\/mvplayer\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6dc004174d69f0c18802730380e3147cfc0ced574e3d47cc36f74079b9efbebe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glavbukh.ru",
+                "www.glavbukh.ru"
             ]
         }
     ],
@@ -43,19 +65,24 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "moevideo.biz",
-            "prevalence": 0.6041666666666666
+            "domain": "playreplay.me",
+            "prevalence": 0.5
         },
         {
-            "domain": "playreplay.me",
-            "prevalence": 0.3958333333333333
+            "domain": "moevideo.biz",
+            "prevalence": 0.4444444444444444
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
-        "Document": 7
+        "Document": 5,
+        "Script": 2
     },
     "nameservers": [
-        "ns2.moe.video",
-        "ns3.moe.video"
+        "ns3.moe.video",
+        "ns2.moe.video"
     ]
 }

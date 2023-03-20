@@ -11,7 +11,7 @@
         "chat1-dialer.i6"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ssgocc\\.com\\/",
@@ -39,13 +39,14 @@
                 "webchat-dialer.i6"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2f91834388ae1a866a8a571178b569b888df66b15b2164a946e5862d95b18cec"
+                "c2ee3e00bb4236534769ed6c45f866118fec717edf65187aa7bdafdd93d6349b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -67,7 +68,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "70dbbf5f3cd84d24892a4b8125e4d7d610178a44db333aba8f1818aab88363f8"
+                "d5178b6c69662b18bc186fcdab6763f2a5e8ed37bb9446c780850166e6ccf48f"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -145,7 +146,7 @@
         },
         {
             "rule": "ssgocc\\.com\\/inconcert\\/apps\\/webdesigner\\/styles\\/webchat\\/webchat\\.min\\.css",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "chat1-dialer.i6"
@@ -167,7 +168,7 @@
         },
         {
             "rule": "ssgocc\\.com\\/inconcert\\/apps\\/webdesigner\\/styles\\/webchat\\/i6-chat-icons\\/i6-chat-icons\\.min\\.css",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [
                 "chat1-dialer.i6"
@@ -305,11 +306,13 @@
         {
             "rule": "ssgocc\\.com\\/inconcert\\/apps\\/webdesigner\\/clientlib\\/corelib-1457-minimizedchat\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "chat1-dialer.i6"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -423,32 +426,8 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "b6e4e718558563c18403249baa86f2079d78d0079ec068db2fef34b50b56ade5"
-            ],
+            "responseHashes": [],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "michaelkors.com",
-                "www.michaelkors.com"
-            ]
-        },
-        {
-            "rule": "ssgocc\\.com\\/inconcert\\/apps\\/webdesigner\\/alive\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "chat1-dialer.i6"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -473,15 +452,14 @@
     "types": {
         "Script": 22,
         "Document": 4,
-        "Stylesheet": 12,
-        "XHR": 2
+        "Stylesheet": 12
     },
     "nameservers": [
-        "ns15.dnsmadeeasy.com",
-        "ns12.dnsmadeeasy.com",
-        "ns13.dnsmadeeasy.com",
-        "ns10.dnsmadeeasy.com",
+        "ns14.dnsmadeeasy.com",
         "ns11.dnsmadeeasy.com",
-        "ns14.dnsmadeeasy.com"
+        "ns13.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
+        "ns12.dnsmadeeasy.com"
     ]
 }

@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000677,
-    "sites": 10,
+    "prevalence": 0.0000948,
+    "sites": 14,
     "subdomains": [
         "snippet",
-        "prompts"
+        "prompts",
+        "assets-cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,10 +22,10 @@
                 "snippet"
             ],
             "apis": {
-                "window.sessionStorage": 5
+                "window.sessionStorage": 7
             },
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [],
             "responseHashes": [
                 "1a74bee2729213cf4265c61d8a4f9a5448336e69818cb26038f1ccb3e9190ff9"
@@ -38,7 +39,9 @@
                 "iwaspoisoned.com",
                 "mkm.com",
                 "www.findmypast.co.uk",
-                "www.teachstarter.com"
+                "www.slbenfica.pt",
+                "www.teachstarter.com",
+                "www.trustradius.com"
             ]
         },
         {
@@ -49,13 +52,13 @@
                 "snippet"
             ],
             "apis": {
-                "window.localStorage": 5
+                "window.localStorage": 8
             },
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [],
             "responseHashes": [
-                "1cde562ca23e07008d7e36c5448be28d878a63073e07ad7550a10e6eb6c91872"
+                "c94aa789263973b2a1c2db3610a7f971daaa3d5c36124bcaa28a692f4109e03b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -66,7 +69,9 @@
                 "iwaspoisoned.com",
                 "mkm.com",
                 "www.findmypast.co.uk",
-                "www.teachstarter.com"
+                "www.slbenfica.pt",
+                "www.teachstarter.com",
+                "www.trustradius.com"
             ]
         },
         {
@@ -77,8 +82,8 @@
                 "prompts"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -89,7 +94,9 @@
                 "app.roll20.net",
                 "iwaspoisoned.com",
                 "mkm.com",
-                "www.teachstarter.com"
+                "www.slbenfica.pt",
+                "www.teachstarter.com",
+                "www.trustradius.com"
             ]
         },
         {
@@ -100,11 +107,12 @@
                 "prompts"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "d7b5cdd9b09b3fd0f9f8673e65a24885a913670cb512cb19fd8486dbb1177b07"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -114,7 +122,53 @@
                 "app.roll20.net",
                 "iwaspoisoned.com",
                 "mkm.com",
-                "www.teachstarter.com"
+                "www.slbenfica.pt",
+                "www.teachstarter.com",
+                "www.trustradius.com"
+            ]
+        },
+        {
+            "rule": "maze\\.co\\/contextualWidgetAppScaffold\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "snippet"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "31a3881ec7baf88d4ca500dedfb641e48b48945160e8702229cc63463bb48ffd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trustradius.com",
+                "www.trustradius.com"
+            ]
+        },
+        {
+            "rule": "maze\\.co\\/fonts\\/roobert-pro\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trustradius.com",
+                "www.trustradius.com"
             ]
         }
     ],
@@ -124,34 +178,35 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.47058823529411764
+            "prevalence": 0.5925925925925926
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.17647058823529413
+            "prevalence": 0.18518518518518517
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.17647058823529413
+            "prevalence": 0.1111111111111111
         },
         {
             "domain": "fullstory.com",
-            "prevalence": 0.11764705882352941
+            "prevalence": 0.07407407407407407
         },
         {
             "domain": "d3nd02ak4v4ued.cloudfront.net",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.037037037037037035
         }
     ],
     "types": {
-        "Script": 12,
-        "Preflight": 5,
-        "Fetch": 5
+        "Script": 18,
+        "Preflight": 7,
+        "Fetch": 7,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-807.awsdns-36.net",
         "ns-1436.awsdns-51.org",
-        "ns-311.awsdns-38.com",
-        "ns-2001.awsdns-58.co.uk"
+        "ns-807.awsdns-36.net",
+        "ns-2001.awsdns-58.co.uk",
+        "ns-311.awsdns-38.com"
     ]
 }

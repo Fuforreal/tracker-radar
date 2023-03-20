@@ -9,13 +9,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000142,
-    "sites": 21,
+    "prevalence": 0.000156,
+    "sites": 23,
     "subdomains": [
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "tqlkg\\.com\\/image-5694907-10780913",
@@ -64,16 +64,18 @@
         {
             "rule": "tqlkg\\.com\\/widgetcode-60ae2379e4c7af90cccb5653-4020001",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "45ee374152e3d76b0ab71548f0c4959043939a9afca860e561acffee6d3e04cd"
+                "af29dfc4629e81e84a6837d51e89505c186489d99221e552e8a0979e7008c763"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -94,9 +96,7 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [
-                "207436bbc21df7d51e28fc9a43f9eab9d852d7eb1814d70467923d5d34560bbb"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -157,15 +157,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.7878787878787878
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.15151515151515152
+        },
+        {
+            "domain": "confiant-integrations.net",
+            "prevalence": 0.030303030303030304
         },
         {
             "domain": "adocean.pl",
-            "prevalence": 0.03333333333333333
+            "prevalence": 0.030303030303030304
         }
     ],
     "types": {
@@ -174,13 +178,13 @@
         "Document": 2
     },
     "nameservers": [
-        "eur3.akam.net",
+        "ns1-100.akam.net",
         "use4.akam.net",
-        "asia9.akam.net",
         "eur7.akam.net",
-        "eur2.akam.net",
         "usw1.akam.net",
         "ns1-27.akam.net",
-        "ns1-100.akam.net"
+        "asia9.akam.net",
+        "eur3.akam.net",
+        "eur2.akam.net"
     ]
 }

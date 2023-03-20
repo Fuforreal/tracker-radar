@@ -171,8 +171,30 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1aauto.com",
+                "www.1aauto.com",
+                "www.mobilephonesdirect.co.uk"
+            ]
+        },
+        {
+            "rule": "brightpattern\\.com\\/clientweb\\/api\\/v1\\/availability",
+            "cookies": 0.00000677,
+            "fingerprinting": 0,
+            "subdomains": [
+                "1aauto",
+                "aomobile"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
             "responseHashes": [
-                "de5501e7b57219a4cc1c90450c7b17bea14f744faceade8b3634cc08f233baaa",
+                "c693536e1ba13aca7eb8e9acce62b6589877851a0ae732fae13ba3593cc71caf",
                 "db2a32adac1013d482ac4e06a1cfd86e4b4127b3b5b82452a89e9d74ae3dbefc"
             ],
             "type": "XHR",
@@ -201,28 +223,6 @@
                 "9d09d8be96b510713f4feac17d53a3a71ce7bb6061c3c3387e5d6dbbb002a3b2"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "1aauto.com",
-                "www.1aauto.com",
-                "www.mobilephonesdirect.co.uk"
-            ]
-        },
-        {
-            "rule": "brightpattern\\.com\\/clientweb\\/api\\/v1\\/availability",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1aauto",
-                "aomobile"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -301,13 +301,13 @@
         },
         {
             "rule": "brightpattern\\.com\\/clientweb\\/chat-client-v4\\/build\\/page-lib\\.min\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "aomobile"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -316,6 +316,54 @@
                 "a573a5c7e757fc9ff9bb66611d63178290d28423fa744badb37f71459e8910bb"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mobilephonesdirect.co.uk",
+                "www.mobilephonesdirect.co.uk"
+            ]
+        },
+        {
+            "rule": "brightpattern\\.com\\/clientweb\\/chat-client-v4\\/build\\/chat-widget\\.min\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
+            "subdomains": [
+                "aomobile"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "ade838b5b3facc5a1c627df351596a0229ada65c11ade324c636f8d8a6604240"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mobilephonesdirect.co.uk",
+                "www.mobilephonesdirect.co.uk"
+            ]
+        },
+        {
+            "rule": "brightpattern\\.com\\/clientweb\\/chat-client-v4\\/css\\/snippet\\.css",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aomobile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1eae87c50589775a5471dcc9fee06fb6d545e5c758f5fbb6ab1d97fcd846c76e"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -334,15 +382,15 @@
         }
     ],
     "types": {
-        "Script": 10,
-        "Stylesheet": 5,
+        "Script": 12,
+        "Stylesheet": 7,
         "Preflight": 9,
         "XHR": 9
     },
     "nameservers": [
+        "ns-1326.awsdns-37.org",
         "ns-41.awsdns-05.com",
         "ns-996.awsdns-60.net",
-        "ns-1326.awsdns-37.org",
         "ns-1753.awsdns-27.co.uk"
     ]
 }

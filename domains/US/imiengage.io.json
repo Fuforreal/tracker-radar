@@ -20,7 +20,7 @@
                 "attachments-ldn"
             ],
             "apis": {
-                "window.sessionStorage": 1,
+                "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2,
                 "window.localStorage": 1,
                 "Navigator.prototype.appVersion": 1,
@@ -44,14 +44,11 @@
         {
             "rule": "imiengage\\.io\\/widgetEU\\/js\\/jquery-3\\.1\\.1\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "attachments-ldn"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -137,11 +134,13 @@
         {
             "rule": "imiengage\\.io\\/widgetEU\\/js\\/bootstrap\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "attachments-ldn"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -217,9 +216,9 @@
         "Media": 2
     },
     "nameservers": [
-        "ns-312.awsdns-39.com",
-        "ns-866.awsdns-44.net",
+        "ns-1674.awsdns-17.co.uk",
         "ns-1051.awsdns-03.org",
-        "ns-1674.awsdns-17.co.uk"
+        "ns-312.awsdns-39.com",
+        "ns-866.awsdns-44.net"
     ]
 }

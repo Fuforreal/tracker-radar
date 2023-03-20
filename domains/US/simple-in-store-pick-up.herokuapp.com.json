@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "simple-in-store-pick-up\\.herokuapp\\.com\\/js\\/checkout_custom\\.js",
@@ -38,9 +38,11 @@
         {
             "rule": "simple-in-store-pick-up\\.herokuapp\\.com\\/js\\/in_store_pickup\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],

@@ -4,14 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000677,
-    "sites": 1,
+    "prevalence": 0.0000135,
+    "sites": 2,
     "subdomains": [
+        "tg1",
         "servt"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "adsparc\\.com\\/api\\/adserver\\/spt",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tg1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.appVersion": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c9acc0ae083881247b590691bef87e031fa178bde81e096de838f6f1c158b8d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "detik.com",
+                "www.ibtimes.sg"
+            ]
+        },
         {
             "rule": "adsparc\\.com\\/track",
             "cookies": 0,
@@ -30,7 +56,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ibtimes.sg",
+                "detik.com",
                 "www.ibtimes.sg"
             ]
         }
@@ -41,20 +67,25 @@
     "topInitiators": [
         {
             "domain": "aniview.com",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.25
         },
         {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
         }
     ],
     "types": {
+        "Script": 2,
         "Image": 2
     },
     "nameservers": [
-        "ns-630.awsdns-14.net",
-        "ns-1358.awsdns-41.org",
         "ns-1786.awsdns-31.co.uk",
-        "ns-353.awsdns-44.com"
+        "ns-630.awsdns-14.net",
+        "ns-353.awsdns-44.com",
+        "ns-1358.awsdns-41.org"
     ]
 }

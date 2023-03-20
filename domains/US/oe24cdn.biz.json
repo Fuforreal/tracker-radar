@@ -15,14 +15,11 @@
         {
             "rule": "oe24cdn\\.biz\\/jquery\\/jquery-3\\.6\\.0\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "web"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 3,
-                "Event.prototype.timeStamp": 1
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -41,11 +38,13 @@
         {
             "rule": "oe24cdn\\.biz\\/lightslider\\/js\\/lightslider\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "web"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 2
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -82,6 +81,28 @@
                 "oe24.at",
                 "www.oe24.at",
                 "www.wetter.at"
+            ]
+        },
+        {
+            "rule": "oe24cdn\\.biz\\/fonts\\/font-awesome\\/4\\.7\\.0\\/css\\/font-awesome\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "799aeb25cc0373fdee0e1b1db7ad6c2f6a0e058dfadaa3379689f583213190bd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oe24.at",
+                "www.oe24.at"
             ]
         },
         {
@@ -164,6 +185,28 @@
             "cnames": [],
             "responseHashes": [
                 "737f0782bd1dfd534b02685c9f512b3ac3aa6fa32593144b3a5cf574265c7341"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oe24.at",
+                "www.oe24.at"
+            ]
+        },
+        {
+            "rule": "oe24cdn\\.biz\\/fonts\\/font-awesome\\/4\\.7\\.0\\/fonts\\/fontawesome-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -264,11 +307,13 @@
         {
             "rule": "oe24cdn\\.biz\\/bootstrap\\/bootstrap-min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "web"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -286,14 +331,11 @@
         {
             "rule": "oe24cdn\\.biz\\/jq-typeahead\\/jquery-typeahead-min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "web"
             ],
-            "apis": {
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -386,7 +428,7 @@
             "apis": {
                 "window.indexedDB": 2,
                 "Navigator.prototype.cookieEnabled": 2,
-                "Notification.permission": 1
+                "Notification.permission": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -459,8 +501,8 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.languages": 2,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "MediaSource.isTypeSupported": 1
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -469,28 +511,6 @@
                 "61e2d63ca871533a6a91ab557bd50ac4d818967a137a8facb6cc5c2fb387620e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wetter.at",
-                "www.wetter.at"
-            ]
-        },
-        {
-            "rule": "oe24cdn\\.biz\\/fonts\\/roboto-condensed\\/RobotoCondensed-Regular\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "437c424ae2c33178b013590e4fc99f8584edc9893d9276067ef9f9c774d68f9f"
-            ],
-            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -543,6 +563,28 @@
             ]
         },
         {
+            "rule": "oe24cdn\\.biz\\/fonts\\/roboto-condensed\\/RobotoCondensed-Regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "437c424ae2c33178b013590e4fc99f8584edc9893d9276067ef9f9c774d68f9f"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wetter.at",
+                "www.wetter.at"
+            ]
+        },
+        {
             "rule": "oe24cdn\\.biz\\/fonts\\/roboto\\/Roboto-Bold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -576,11 +618,11 @@
     ],
     "types": {
         "Script": 22,
-        "Stylesheet": 9,
-        "Font": 21
+        "Stylesheet": 11,
+        "Font": 23
     },
     "nameservers": [
-        "sec2.rcode0.net",
-        "sec1.rcode0.net"
+        "sec1.rcode0.net",
+        "sec2.rcode0.net"
     ]
 }

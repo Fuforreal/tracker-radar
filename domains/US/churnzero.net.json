@@ -19,25 +19,20 @@
         {
             "rule": "churnzero\\.net\\/churnzero\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "analytics"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.cookieEnabled": 1
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "00c2b62b8aa0efa496fb587190f4b645f204219bbaf5d1f16fc227ab5f65689c"
+                "635f24c3d0146654e64f795b4c55d19423310ae54ef39ad35cba064565248af7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -59,7 +54,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "fc62572e365cc704eb415ef24e79963223960b757a042791f3c85579d014ac2c"
+                "7ae06420b39a3a84edc7e1f5cb1d1b427cc3f43e2d92ef9cada98408b442cdba"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -81,7 +76,73 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "63f9c1ac80ca5436952f0270c9e461a8e1d6d474254fa38911bb35d4657bd032"
+                "16269ee2450f74edb4b9333b94141214a2e24b2c9a45b2053678df27ca639f04"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/external\\/css\\/independent_frames\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sae.us1app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "0e25118d0437c5824ded894204110ebd8145479df6b0bfcf159f9ce7aab192d2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/external\\/css\\/announcements\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sae.us1app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "81437645d3861d151187255a27686f3168bb1179a342bbc5a9e655783c358738"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/api\\/v1\\/sockets\\/poll\\/3562",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sae.us1app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -107,12 +168,13 @@
     ],
     "types": {
         "Script": 2,
-        "XHR": 4
+        "XHR": 6,
+        "Stylesheet": 4
     },
     "nameservers": [
-        "ns-1806.awsdns-33.co.uk",
-        "ns-938.awsdns-53.net",
         "ns-117.awsdns-14.com",
+        "ns-938.awsdns-53.net",
+        "ns-1806.awsdns-33.co.uk",
         "ns-1256.awsdns-29.org"
     ]
 }

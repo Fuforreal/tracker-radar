@@ -14,15 +14,15 @@
     "subdomains": [
         "unagi-na",
         "unagi-eu",
-        "unagi",
         "fls-na",
         "fls-eu",
+        "unagi",
         "vs.aws",
         "g-images",
         "payments",
         "apay-us",
-        "payments-eu",
         "payments-de",
+        "payments-eu",
         "payments-uk",
         "payments-fe",
         "read",
@@ -97,6 +97,56 @@
             ]
         },
         {
+            "rule": "amazon\\.com\\/1\\/batch\\/1\\/OE\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fls-na",
+                "fls-eu"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000813,
+            "cnames": [
+                {
+                    "original": "fls-eu.amazon.com.be",
+                    "resolved": "fls-eu.amazon.com"
+                },
+                {
+                    "original": "fls-eu.amazon.eg",
+                    "resolved": "fls-eu.amazon.com"
+                },
+                {
+                    "original": "fls-eu.amazon.pl",
+                    "resolved": "fls-eu.amazon.com"
+                },
+                {
+                    "original": "fls-eu.amazon.se",
+                    "resolved": "fls-eu.amazon.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boardgames.com",
+                "freedomforce.live",
+                "readaloudrevival.com",
+                "www.acx.com",
+                "www.amazon.com.be",
+                "www.amazon.eg",
+                "www.amazon.pl",
+                "www.amazon.se",
+                "www.audible.com.au",
+                "www.hormonesmatter.com",
+                "www.shopbop.com",
+                "www.unz.com"
+            ]
+        },
+        {
             "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.csa\\.prod",
             "cookies": 0,
             "fingerprinting": 0,
@@ -136,8 +186,8 @@
                 "readaloudrevival.com",
                 "www.abebooks.co.uk",
                 "www.abebooks.de",
-                "www.abebooks.fr",
                 "www.abebooks.com",
+                "www.abebooks.fr",
                 "www.acx.com",
                 "www.amazon.com.be",
                 "www.amazon.eg",
@@ -160,9 +210,13 @@
                 "unagi-eu"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [
+                {
+                    "original": "unagi.amazon.com.be",
+                    "resolved": "unagi-eu.amazon.com"
+                },
                 {
                     "original": "unagi.amazon.eg",
                     "resolved": "unagi-eu.amazon.com"
@@ -184,58 +238,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boardgames.com",
-                "www.amazon.eg",
-                "www.amazon.pl",
-                "www.amazon.se"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/1\\/batch\\/1\\/OE\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fls-na",
-                "fls-eu"
-            ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000745,
-            "cnames": [
-                {
-                    "original": "fls-eu.amazon.com.be",
-                    "resolved": "fls-eu.amazon.com"
-                },
-                {
-                    "original": "fls-eu.amazon.eg",
-                    "resolved": "fls-eu.amazon.com"
-                },
-                {
-                    "original": "fls-eu.amazon.pl",
-                    "resolved": "fls-eu.amazon.com"
-                },
-                {
-                    "original": "fls-eu.amazon.se",
-                    "resolved": "fls-eu.amazon.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boardgames.com",
-                "readaloudrevival.com",
-                "www.acx.com",
                 "www.amazon.com.be",
                 "www.amazon.eg",
                 "www.amazon.pl",
-                "www.amazon.se",
-                "www.audible.com.au",
-                "www.hormonesmatter.com",
-                "www.shopbop.com",
-                "www.unz.com"
+                "www.amazon.se"
             ]
         },
         {
@@ -271,8 +277,8 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "17e064e7fa0698387bdaadca28c1016293d11c8120ccd742346ec8c235b78c24",
-                "840b8f543c2747d7d74516419d69284cdd838e0203cad9ce7ecd67ee8d54a08a"
+                "64ccb792026ac90c1a893fad39857d6a7bfe09c678f5cbcd42313d008f8ca66b",
+                "5d499508334894cbb1f04df87f4b4ad7668c3a3bf0574867803e3dbb495e0bd3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -310,118 +316,115 @@
         },
         {
             "rule": "amazon\\.com\\/gp\\/widgets\\/sessionstabilizer",
-            "cookies": 0.000393,
+            "cookies": 0.000379,
             "fingerprinting": 0,
             "subdomains": [
                 "payments",
                 "apay-us",
-                "payments-eu",
                 "payments-de",
+                "payments-eu",
                 "payments-uk",
                 "payments-fe"
             ],
             "apis": {},
-            "sites": 58,
-            "prevalence": 0.000393,
+            "sites": 56,
+            "prevalence": 0.000379,
             "cnames": [],
             "responseHashes": [
-                "deff3a5c8491605257222d6c0bfd949ffd93c089601dddb385c7cb814e3e1b8a",
-                "3370a780e4af7628cbaa343a691ebccb1420f4be73a6ed12ae82ff951cf1dda8",
-                "3ddf1763576fc7ecb599e966bc0d3e451287c516cabd84684df07e8009616151",
-                "3cbb76100154190867ac5f393cc91f3d100449da6cb1900de41129ff7db6b1a6",
-                "ea83904622e38015f76b69845f488bfadbeb5c69742808189644b8edc118ba0e",
-                "800228b4a703d2e1e07b6840836b1bedcc12ef2e7a60c9bdc838d10c0c81ec53",
-                "947c3c2660993aec2ddd09eefa428cd159a40db3ad6edc9aeaef8ff973414f60",
-                "966c00c3fe6e882b46da99a0870459ac46ac54d473cbe485d28559213e340730",
-                "87ad2d236a4b73fd55b8b43c78d8d70a5885518876de4c724a3400ef84325e7f",
-                "c80291a161a0673100e8b8a7b64ba692bd04d948db203de16fefb7c531e9ea6b",
-                "ce8d874bd4e5522c64c6468fba38428a9a93aa71c80acd9fd28d86c9e4f6867b",
-                "eb99ee596cb5368c95795ae4deaa26a342d3f6565cb3c36d6f05ef66248b7f0a",
-                "21419dbc1f1ce8762f936e8439c187c2e6ac96731fe78db8a500cc80813c94c1",
-                "d5377a42841f3bcd874426e363b3ca062378af9d6ecf6b314d9dfa79cbb7bfcc",
-                "3589402decdca29301516bfddb7371ed26cfdf331cf12c871c3e3a97e8cc212d",
-                "9b41d1c8847313c4701e3a2cc0facb5649ae183cdaf6440a5f177c6c22b5dfb7",
-                "afac7e4d3ed8a6ef89199a90b79c450d98aebcbaf11ea4d3503a828f3e7d3326",
-                "435fb1b0d10ed9af8d114fe341fd3d69ca2772e65b8f45f05581d060563726c1",
-                "ee6e9e424bfe5cad3b84866abcc2bf03e7745c7ef3d7a27f5fef0e8d998b5319",
-                "64adbecc9a3dc564487112e857e92d749ac09db07b63ee9f281ab3cf0b53cef1",
-                "0023315e6f8cdec2fe955d4b6be62cad46a6632eeb044f258adabff2cf376b0c",
-                "f090d999de7e08ea7d3594e977fc84e275a1f20e279946bcd351de8a6f6666e9",
-                "92cd48be6be09a6fb3fb1dd21c1769e27b45cf73aa61834eaf93193c98e0caf4",
-                "c83c82e7e43b38c8e25ecbc147da38c6cd346641cf97b7b81da6bab906266421",
-                "0cb77ca4b45a24cfda8174ac28d8d8cd4713d6a03eeb5c654b86f0182d90874c",
-                "17551e17d913346e3fb7d6c849b0258bfebd8f57df56f784829fcf522b71f01a",
-                "3b265220cb219cb484328bbaa1a110e283bd579231bcb89e5757b3f342a3e329",
-                "2a1ed918edfb48c070d4de096e1a638991fab38ce7976fb0a8994ddd0c05ba08",
-                "468670d50f7a556fc9168b1b55a228b5ebd13f57461fbdfb87ad9b30ddb25a8d",
-                "478fc9e4e598bef9a2082bf0322f0b03aab00045b375949cb8cf6802476f6fbf",
-                "9c01dee0f5da283e5b0fdaa1cd0afdde7bb7895b51e1a8399663b02ef9b6e015",
-                "439bf45dc263966a051d1678c8df48fd38e592a0ad6219c4d0448b07e41a8845",
-                "34564adc08a161707b387320af439b74152aa20b65b781e0d826fb7d707ed835",
-                "1e2af1e8b8c060a8088f05c744e0142c61ff7f5dc3377d33fcc2569a1d5ef598",
-                "19c74f97fc7857f3b71495adc3854e94a3351dc2cd303f06fd7c659b79c503af",
-                "4dab97b643def772d385ec0daa9edf5d9fc891811cba6ffc9f69b3d9bb91ec07",
-                "04c5f18c780eaf1de31e45e7bbb9cfb96d1ccb9675077d6ae374a35ac8805587",
-                "9bf5bf0bf62a0e2757a5aa7fb2379ec0f4afac4bfad8c88b2e83e436e7f8e0c3",
-                "f7ace89269bfd25935a9ad1addaae83aef368cfca862055d23bb9c7c34b357da",
-                "65c6f3c22407ea6663a19e237509d98b37ca357856f02f2fae802ad3997f4f96",
-                "606e9158af2107caac32bffe6e2a1d9429176e63026a6a110dbcf3c2bccce816",
-                "8894e4179d096de8abca71a94ad04273a4f5678297bea687eec249b54b9b7fb6",
-                "da5d7eab583fbf6e806b3455dcafa52f16623e8f2c885d5fe10153e044edf709",
-                "95fcaaf6e2e1623f1ef2f5be2a228c54aa1507b0aa35691379c8c2ca70dc5928",
-                "43b3be30089003b92364eb52f349d5c40025ee4ddb42c8f4be534d1098e99bab",
-                "0bad1e815a338af6fe63df6ff2ccf0e89e99d0c9bb6a4680f0508ac89b0c5123",
-                "4ea1bb881d903d5ac7153f9eaa8c825fe89475a16e08da79d6ddd3cf1e455267",
-                "c2120f5159b549ec639af5ebd29085d2d2da081c081ebb25d84eb561eca3209e",
-                "31701d021b65e440a950e376983e2418a6a779822cc3ddd1df187cf8ee678ded",
-                "a4eb48d519d12e88783b8a3f9781eabe936c059fd117ce44a59ac51321068e73",
-                "2beecb6d017fb081b51d534a86baa8fc05715a58ced0db66805aa255809d5757",
-                "6f598c9f7228f6858d8d9460de33cdbdc36dd918a0fbf29ccdfbc3f61f066de6",
-                "eac585bcc45003aac1e28a67d3b75f70325281d1c796f69c5f68fae39891d020",
-                "4b370c87c312b676514ea4a0864154a1da1987fe1888126694679708099dc8bf",
-                "d6fc189eb2b6880b6f55d84237067c6ea5952bea5686e60dadaea10c999f34e8",
-                "fc8c5d2a4e623c125232fe7c088a9470706593406333d000a795368885119db3",
-                "648db752ca386c049c6254d7d36819005ff5bbbc99e38a25da02021ae0ad3349"
+                "d662410fbe05be4a280fc778635d43ff1df662867746ba6f09e928ad68f5bbd7",
+                "5d743742b2c0ac5b01285512c570162589f6e475235941f7521c4c38b03bfd71",
+                "2bdff5155f2c9b3ddb086037ee2d29fc9f3cf3df4fdfe4c389827affb1217b53",
+                "0f70944d25671555e4b22b847da993987b51ee7d283b07d0d2ca0d469fd7f1bb",
+                "62a601586defaeba1c225d1f6425b43e6b98469680652bc63b5eb3c6eadae1ad",
+                "0c6c84e52492e1122f4a3295f3cdf72f2a0fb7cf993770c27137b87d38f2f14b",
+                "3145fa2d1b8101a3806af4d182f077a4816f95649c8f755082f58a198ac63e5c",
+                "b53f3065149bd5c00159711a90dcdda3444e7555d262139231f26abcccb4c82b",
+                "e82abd234bd9d00863978741fe10297d6ad76e2f07b667b9020e83770f41e4da",
+                "0f63706b747e09d28fe6039acdb0306f89b84a893f761e0cd670be598b33e39a",
+                "1b23c007f3bb34c200f3f2cbed506cba9a4a49a8d9a73b08a549a6a9ac96e6e6",
+                "b01f82bc329167552751e935b03b40b4f47d82e1d781b8d5025d773109c31b08",
+                "9c35363e620cbbda988f57ff47b13aaefa8e0e6368e08b883fa0911e8c5bd8c5",
+                "6e1cc22a610aa16fea12c7f8d438a1ee7526728d6891f4779808af79c73058f1",
+                "a346458642db11fe3755313035d80c0ce6ba8ecd44dc8cdb15ba384afcd3991d",
+                "76463c6795b2bcbe44adbc5de99e151b10abbf5de94e4b29f44a4c6df8d78fef",
+                "f45880ae97e63f72aa8c9a2ef0f48d3cf84897970d863a6a27c390a00e0648ad",
+                "b45d937e58a0eb74a7eccfa7b193cf3e741784fb186d4ec450e4efb8f46ec954",
+                "d90c729b956538052f99b045cb2f5c6292295f5986e38d8ed432c0572208c485",
+                "632503f3c6a33ce8ac06dacb29edd3968448616e5ec56351097d41cc036d2a5b",
+                "7936c80c5141c51969ebb488e0a1c0fe1237c8b25a29cde5cbe2ab2b0ec76ee1",
+                "58fd090db03d33612e73006a9afb5ac7ce996daa10b89786ff8792a9b9b75c3a",
+                "2322697734a50f2fe8d99f6ab24ee6a99dbcb235370ad29cdd35a824c01f3b5b",
+                "84a9069e245400a70d3eec86be105aa336831dccab459f37c962c3c440ed69ff",
+                "aea9106f9caef832ca25cf610052e7e52f5234617cbc49323eac7373fe26f7fc",
+                "27dee8547569c2f4032e2a6bde601e53e9e3bb1af4746868ad09f6c8f683eb22",
+                "d808acdd399bcdf63421714e7ed6d738c1d27c5e080499ba9a7e07ece4bcc0be",
+                "280d0b7484128d658ecb44fa6337054d1d372efac3bdba812188992f037df582",
+                "8d21d03bffaba7ff8a029ee4bc2894a9b2e3d21bfe7a50a0d7fc1c85ba081b7f",
+                "048c1cb3db91a9312060edfa47b8660651532df32cc82941ce07e1b2a14fdb8e",
+                "b8257366a05e202e0a0b215c6fb610a27506a5a8931af0c044eabacd0639bd09",
+                "ef5ab0ee65901a1890399873b2b9a1edd0246cd4d71356cccfa74887a2513a10",
+                "d8e23d0fc89cf6652d6d359772e561e5ce83028bd24ab144cedfcb72b89b2125",
+                "0fd7d70635b8918448ccfb7a1046a89cbae83ccee901c9910552272ab4a7e157",
+                "9126e2d2bdfc8ecda484a11915592060b991879f540762e20e67256d07d14a35",
+                "68ac8eaf7717b54332b02e1632fa111ab70568820bad51864a4a5ba3eb82ce92",
+                "f6e441af8431ae396bb9a8e1e34de46b53eac26909407363240fef75addacad0",
+                "8a48e356215a4ab30e09bc08a0da2864c172dc1c6fdf29af6100341532131364",
+                "35e0fe59e8d6b82ba47c0f5c14abf729096a4337475d3cbb9769d9ae2e3b7218",
+                "a6cfe91cd2f59c46e63937a85b7f6c3a4c3bffc93e21f8db4ba6c918ebaf6744",
+                "7764fbbf8d6472f037f44521def150ac77dfe1d8d7817a5589fccb1a26a0a276",
+                "dd8d58e802a8a77637d513815a9d888b3853410989ba89e64f5552b17af855e8",
+                "56540d672aa183c046afc6b429a4ac3ea3fb0c0e3d0f1553d7dad63229328dc2",
+                "e84c23e28ab0342986206ddfe313b7bdeae373a2c6441b43637cbfb1a28b4489",
+                "2501f349835f8d1134b93c21a827b62b78f71d085e0950eee4e1823741b86f1a",
+                "89c2a2ca76faa1a8c6c1a43e527da463c8ee9b0167320ea7560cfb65618af3ca",
+                "1448432b7531fe3c1a8e9f8230bcfce355e6a9af6d5196773f7dc291b44b1b9d",
+                "f29bde217655736431373996a1dead621960df3764ba98aaaae5c48b0f546703",
+                "c5dd7cb04d657051ab3296c45cd56d741f3d6a1c320ec07d93e5617b1419913f",
+                "168b6fdb08509d5e386eea327a82c25c3ebffb9774bf0d314a609699941d773f",
+                "0239c16c3cf30ae84dfbe4db1f10ae052346e054d9bd113b97ce184b3be4cc0f",
+                "b56c9b3ba7b473142e5e29193b786ae33fc605dbae5e840b1415503167575671",
+                "0d6ff37735bd549299bd5788c5c0a6bf1769c27e33ddea1e6053b289d0a40cf3",
+                "bd2d188bae7cb6b7f6a8377b218313e21c2d2ef1868a5bdf9c900a1c8f1539e7",
+                "5f03767c542f86b51d67d578ad188eb940cf4afebbeb669f7bb12dc71beb3783"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.swissgear.com",
+                "www.cartoys.com",
+                "www.mathway.com",
+                "www.photovoltaik4all.de",
+                "www.oxygenconcentratorstore.com",
                 "www.bremer-gewuerzhandel.de",
-                "www.ofenseite.com",
-                "www.billoreilly.com",
-                "www.simon-o.com",
+                "www.nomatic.com",
                 "www.fredhutch.org",
-                "www.gooddevil.com",
-                "olukai.com",
+                "www.ofenseite.com",
+                "www.befestigungsfuchs.de",
+                "www.chiefaircraft.com",
+                "www.bike-mailorder.de",
                 "www.justkampers.com",
-                "www.dynafit.com",
-                "www.sofmap.com",
-                "www.sportnahrung-engel.de",
-                "shop.zweirad-stadler.de",
-                "www.uswatersystems.com",
-                "www.1800lighting.com",
-                "www.vaerwatches.com",
-                "www.woodcraft.com",
-                "www.alteserien.de",
-                "www.akkushop.de",
-                "www2.heart.org"
+                "gfuel.com",
+                "www.thedressoutlet.com",
+                "www.discountfilters.com",
+                "shop.teslarati.com",
+                "www.zauberdergewuerze.de",
+                "www.sanicare.de",
+                "www.simon-o.com",
+                "www.sofmap.com"
             ]
         },
         {
             "rule": "amazon\\.com\\/cs\\/uedata",
-            "cookies": 0.0000677,
+            "cookies": 0.0000542,
             "fingerprinting": 0,
             "subdomains": [
                 "apay-us",
                 "payments",
-                "payments-de",
-                "payments-eu"
+                "payments-de"
             ],
             "apis": {},
-            "sites": 41,
-            "prevalence": 0.000278,
+            "sites": 42,
+            "prevalence": 0.000284,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -430,31 +433,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tartecosmetics.com",
-                "www.sanicare.de",
-                "www.mathway.com",
-                "olukai.com",
-                "www.1000bulbs.com",
-                "www.satisfyer.com",
-                "www.swissgear.com",
-                "www.fredhutch.org",
-                "www.discountfilters.com",
                 "www.alteserien.de",
-                "www.gooddevil.com",
-                "www.photovoltaik4all.de",
-                "viridianweapontech.com",
-                "www.woodcraft.com",
+                "gfuel.com",
+                "www.uswatersystems.com",
+                "www.discountfilters.com",
+                "vetopropac.com",
+                "www.aquasana.com",
+                "www.bremer-gewuerzhandel.de",
+                "www.vineyardvines.com",
+                "www.ofenseite.com",
+                "www.worldofwatches.com",
+                "www.alle-noten.de",
+                "www.kirstein.de",
+                "www.fredhutch.org",
+                "www.dynafit.com",
                 "www.nomatic.com",
-                "www.thedressoutlet.com",
-                "www.orthoticshop.com",
+                "www.simon-o.com",
+                "shop.zweirad-stadler.de",
                 "www.1800lighting.com",
-                "www2.heart.org",
-                "www.dynafit.com"
+                "militaryuniformsupply.com",
+                "www.gruntstyle.com"
             ]
         },
         {
             "rule": "amazon\\.com\\/abTestV2",
-            "cookies": 0.000088,
+            "cookies": 0.0000745,
             "fingerprinting": 0,
             "subdomains": [
                 "payments",
@@ -479,7 +482,7 @@
                 "filterbuy.com",
                 "jovialfoods.com",
                 "nicksboots.com",
-                "r2-bike.com",
+                "viridianweapontech.com",
                 "workingperson.com",
                 "www.befestigungsfuchs.de",
                 "www.chiefaircraft.com",
@@ -487,136 +490,70 @@
                 "www.fredhutch.org",
                 "www.hifix.co.uk",
                 "www.justkampers.com",
+                "www.merchbar.com",
                 "www.oxygenconcentratorstore.com",
                 "www.sofmap.com",
                 "www.sportnahrung-engel.de",
-                "www.tuttofarma.it",
                 "www.zauberdergewuerze.de"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/cs\\/uedata",
-            "cookies": 0.0000948,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apay-us",
-                "payments-eu",
-                "payments-fe"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000948,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jovialfoods.com",
-                "nicksboots.com",
-                "r2-bike.com",
-                "workingperson.com",
-                "www.befestigungsfuchs.de",
-                "www.chiefaircraft.com",
-                "www.engelhorn.de",
-                "www.hifix.co.uk",
-                "www.justkampers.com",
-                "www.oxygenconcentratorstore.com",
-                "www.sofmap.com",
-                "www.sportnahrung-engel.de",
-                "www.tuttofarma.it",
-                "www.zauberdergewuerze.de"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/promotionalMicrotextMessage",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apay-us",
-                "payments-eu"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [],
-            "responseHashes": [
-                "e374e3ec10b61c0dd4f6a16fc26acaa89d6dc070a4478ae94ff858fcb3575602",
-                "35ca93431b38c647a1060896db63a0c6cbd5f2ba66b901fb5b6543c62ddb19e9"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nicksboots.com",
-                "r2-bike.com",
-                "www.engelhorn.de",
-                "www.sportnahrung-engel.de",
-                "www.tuttofarma.it"
             ]
         },
         {
             "rule": "amazon\\.com\\/kp\\/card",
-            "cookies": 0.0000203,
+            "cookies": 0.0000271,
             "fingerprinting": 3,
             "subdomains": [
                 "read"
             ],
             "apis": {
+                "window.name": 3,
+                "Date.prototype.getTime": 4,
                 "PerformanceTiming.prototype.navigationStart": 3,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 3,
-                "Date.prototype.getTime": 3,
-                "window.innerHeight": 3,
-                "window.innerWidth": 3,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.connection": 3,
+                "Document.cookie setter": 4,
                 "Screen.prototype.width": 3,
                 "Screen.prototype.availWidth": 3,
                 "Screen.prototype.height": 3,
                 "Screen.prototype.availHeight": 3,
                 "Screen.prototype.colorDepth": 3,
                 "Screen.prototype.pixelDepth": 3,
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "Navigator.prototype.hardwareConcurrency": 3,
-                "Navigator.prototype.deviceMemory": 1,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Navigator.prototype.webdriver": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.vendor": 3,
-                "Navigator.prototype.languages": 3,
-                "Navigator.prototype.mimeTypes": 3,
-                "Navigator.prototype.appName": 3,
-                "window.outerHeight": 2,
-                "window.outerWidth": 2,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.maxTouchPoints": 3,
-                "Navigator.prototype.appVersion": 3,
-                "window.name": 3
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.webdriver": 2,
+                "window.outerHeight": 1,
+                "window.outerWidth": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "1d726489e9d9fdbdaa7e685105d0a77d17d2fdc40d859c255dccc07e8b6cc6c6",
-                "2bf94a01e0c4cc65a78eba281905cc952c7b1f645b9edf935cb884a411a14a7c"
+                "40f06b91980cbda2cc31b615c403161e6cdf997e91cf5bdaeb0b9111706fab47",
+                "62d01713173fb9ef675e7180f2405954af6ed190c3be0832981c6a55bfc32625",
+                "bb29028b7306280b225aad62e2aa99881d42edefa6a07048ed89eada056349b0"
             ],
             "type": "Document",
             "firstPartyCookies": {
                 "csm-hit": {
-                    "ttl": 30240002,
+                    "ttl": 30240006,
                     "length": 68,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000027089442566995578,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "freedomforce.live",
                 "readaloudrevival.com",
                 "www.hormonesmatter.com",
                 "www.unz.com"
@@ -630,8 +567,8 @@
                 "read"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "63399381d17fc090a5db0c8a814dc3d806bdb5397feffa4ea16ebc5c9c977b89"
@@ -640,9 +577,69 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "freedomforce.live",
                 "readaloudrevival.com",
                 "www.hormonesmatter.com",
                 "www.unz.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/cs\\/uedata",
+            "cookies": 0.000088,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apay-us",
+                "payments-eu",
+                "payments-fe"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.000088,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jovialfoods.com",
+                "nicksboots.com",
+                "viridianweapontech.com",
+                "workingperson.com",
+                "www.befestigungsfuchs.de",
+                "www.chiefaircraft.com",
+                "www.engelhorn.de",
+                "www.hifix.co.uk",
+                "www.justkampers.com",
+                "www.oxygenconcentratorstore.com",
+                "www.sofmap.com",
+                "www.sportnahrung-engel.de",
+                "www.zauberdergewuerze.de"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/promotionalMicrotextMessage",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apay-us",
+                "payments-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e374e3ec10b61c0dd4f6a16fc26acaa89d6dc070a4478ae94ff858fcb3575602"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nicksboots.com",
+                "www.engelhorn.de",
+                "www.sportnahrung-engel.de"
             ]
         },
         {
@@ -684,15 +681,14 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "3882d042da5bac1936a614b3347dcbda704d7b34e18a725488c5bc4745eff791",
-                "f2c96af523eb568da7db0028f93216e1ec143c910f18c3580b5b78aa58f8895b"
+                "46d9f1db87c849e2f5a54adf85218fb87336e6d913aecc71fea502ad08832f0f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ubid_ovr": {
-                    "ttl": 31536001,
+                    "ttl": 31536003,
                     "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -1072,7 +1068,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ac9956d726a80d840ddb0eec6240037b2e0c5ac082230e55c4525255a6b44afc"
+                "5b7a6f4266ec804bfff868a55ef5d84d24545779d6326a1bd5f8c18f808081e1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1127,6 +1123,28 @@
             ]
         },
         {
+            "rule": "amazon\\.com\\/api\\/rum\\/appmonitors\\/cd3154d3-3a98-43da-99ec-aebb0a4af37b",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "order.buywithprime"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sarasotaavionics.com",
+                "www.wyze.com"
+            ]
+        },
+        {
             "rule": "amazon\\.com\\/widgets\\/q",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1146,55 +1164,6 @@
             "exampleSites": [
                 "vintagemachinery.org",
                 "www.vintagemachinery.org"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/1\\/msa-vowels\\/1\\/OP\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fls-eu"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "fls-eu.amazon.eg",
-                    "resolved": "fls-eu.amazon.com"
-                }
-            ],
-            "responseHashes": [
-                "eb69be7b93584bcd4f54b90cdbee282baea8b34fbf08dcd1d80875ae27601344"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "amazon.eg",
-                "www.amazon.eg"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.Vowels\\.ClientMetrics",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unagi-na"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "amazon.eg",
-                "www.amazon.eg"
             ]
         },
         {
@@ -1311,48 +1280,6 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/merchantAccount\\/A3T4QQ1VJDOYWU\\/accountStatus",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apay-us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oxygenconcentratorstore.com",
-                "www.oxygenconcentratorstore.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.eel\\.katal\\.metrics\\.core\\.nexus",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unagi-na"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopbop.com",
-                "www.shopbop.com"
-            ]
-        },
-        {
             "rule": "amazon\\.com\\/merchantAccount\\/AGRM8QEODZCR2\\/accountStatus",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1450,65 +1377,65 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000718,
+    "cookies": 0.000731,
     "topInitiators": [
         {
             "domain": "payments-amazon.com",
-            "prevalence": 0.409683426443203
+            "prevalence": 0.3996212121212121
         },
         {
             "domain": "first party",
-            "prevalence": 0.22905027932960895
+            "prevalence": 0.22348484848484848
         },
         {
             "domain": "ssl-images-amazon.com",
-            "prevalence": 0.1191806331471136
+            "prevalence": 0.1268939393939394
         },
         {
             "domain": "audible.com",
-            "prevalence": 0.055865921787709494
+            "prevalence": 0.058712121212121215
         },
         {
             "domain": "media-amazon.com",
-            "prevalence": 0.04283054003724395
+            "prevalence": 0.03409090909090909
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.040968342644320296
+            "prevalence": 0.030303030303030304
         },
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 0.027932960893854747
+            "prevalence": 0.026515151515151516
         },
         {
             "domain": "abebookscdn.com",
-            "prevalence": 0.0260707635009311
-        },
-        {
-            "domain": "awsstatic.com",
-            "prevalence": 0.0111731843575419
+            "prevalence": 0.02462121212121212
         },
         {
             "domain": "d3u8ewz6c11pt5.cloudfront.net",
-            "prevalence": 0.00931098696461825
+            "prevalence": 0.015151515151515152
+        },
+        {
+            "domain": "awsstatic.com",
+            "prevalence": 0.011363636363636364
         }
     ],
     "types": {
-        "Ping": 53,
-        "XHR": 138,
+        "Ping": 49,
+        "XHR": 137,
         "Preflight": 3,
         "Fetch": 10,
-        "Image": 12,
-        "Document": 3,
+        "Image": 10,
+        "Document": 4,
         "Script": 42,
         "Stylesheet": 2
     },
     "nameservers": [
         "ns2.p31.dynect.net",
-        "pdns6.ultradns.co.uk",
-        "ns4.p31.dynect.net",
         "ns3.p31.dynect.net",
-        "ns1.p31.dynect.net",
-        "pdns1.ultradns.net"
+        "ns4.p31.dynect.net",
+        "pdns1.ultradns.net",
+        "pdns6.ultradns.co.uk",
+        "ns1.p31.dynect.net"
     ]
 }

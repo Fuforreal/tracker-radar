@@ -20,8 +20,8 @@
                 "dc"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "sites": 6,
+            "prevalence": 0.0000406,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -31,7 +31,6 @@
                 "mt.gov",
                 "leg.mt.gov",
                 "www.cdtfa.ca.gov",
-                "www.hud.gov",
                 "www.leg.mt.gov",
                 "www.seattle.gov",
                 "www.waukeshacounty.gov"
@@ -64,6 +63,26 @@
                 "www.seattle.gov",
                 "www.waukeshacounty.gov"
             ]
+        },
+        {
+            "rule": "applicationinsights\\.us\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hud.gov",
+                "www.hud.gov"
+            ]
         }
     ],
     "categories": [],
@@ -76,13 +95,14 @@
         }
     ],
     "types": {
-        "Preflight": 7,
-        "XHR": 7
+        "Preflight": 6,
+        "XHR": 7,
+        "Other": 2
     },
     "nameservers": [
-        "ns3-02.azure-dns.org",
-        "ns4-02.azure-dns.info",
         "ns2-02.azure-dns.net",
+        "ns4-02.azure-dns.info",
+        "ns3-02.azure-dns.org",
         "ns1-02.azure-dns.com"
     ]
 }

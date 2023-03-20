@@ -55,7 +55,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f47a8b7152b5f956946abb4cbb7320d54b5883ff7bc4a6e9041e77542303a41c"
+                "bec400c636e519fde91b14106a8de704de9e5da02c1df16f07da08f97fc115f2"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -73,22 +73,22 @@
                 "static"
             ],
             "apis": {
-                "window.sessionStorage": 10,
-                "Navigator.prototype.cookieEnabled": 11,
-                "window.innerWidth": 10,
-                "window.innerHeight": 10,
-                "Navigator.prototype.doNotTrack": 11,
                 "Navigator.prototype.userAgent": 11,
-                "Navigator.prototype.language": 11,
-                "Date.prototype.getTime": 11,
-                "window.localStorage": 10,
-                "Screen.prototype.width": 11,
-                "Screen.prototype.height": 11,
-                "window.name": 9,
-                "Document.cookie getter": 10,
-                "Screen.prototype.colorDepth": 10,
-                "Date.prototype.getTimezoneOffset": 10,
-                "NavigatorUAData.prototype.getHighEntropyValues": 5
+                "Navigator.prototype.cookieEnabled": 11,
+                "window.sessionStorage": 7,
+                "window.innerWidth": 7,
+                "window.innerHeight": 7,
+                "Navigator.prototype.doNotTrack": 7,
+                "Navigator.prototype.language": 7,
+                "Date.prototype.getTime": 7,
+                "Document.cookie getter": 7,
+                "window.localStorage": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "window.name": 6,
+                "Screen.prototype.colorDepth": 6,
+                "Date.prototype.getTimezoneOffset": 6,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2
             },
             "sites": 11,
             "prevalence": 0.0000745,
@@ -133,83 +133,6 @@
             "exampleSites": [
                 "abbreviations.com",
                 "www.abbreviations.com"
-            ]
-        },
-        {
-            "rule": "stands4\\.com\\/app_common\\/fonts\\/glyphicons-halflings-regular\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000745,
-            "cnames": [],
-            "responseHashes": [
-                "ba3fe63eac33e099b1600d123a80bc075696219926d63f6adc4b9401aad71ca9"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abbreviations.com",
-                "www.abbreviations.com",
-                "www.definitions.net",
-                "www.lyrics.com",
-                "www.phrases.com",
-                "www.poetry.com",
-                "www.quotes.net",
-                "www.rhymes.com",
-                "www.scripts.com",
-                "www.symbols.com",
-                "www.synonyms.com"
-            ]
-        },
-        {
-            "rule": "stands4\\.com\\/images\\/user\\/4038",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "8d6e71704c5744413f05f49038a6ed89e7e60da9a66e80a9455aff3fac5f89e7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abbreviations.com",
-                "www.grammar.com"
-            ]
-        },
-        {
-            "rule": "stands4\\.com\\/images\\/user\\/2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "8ecfbcd092a5a4242d2c82e85372199e57cc5d9e2fd48ac18d9424eadf966f97"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abbreviations.com",
-                "www.quotes.net",
-                "www.symbols.com",
-                "www.synonyms.com"
             ]
         },
         {
@@ -340,6 +263,37 @@
             ]
         },
         {
+            "rule": "stands4\\.com\\/app_common\\/fonts\\/glyphicons-halflings-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000745,
+            "cnames": [],
+            "responseHashes": [
+                "ba3fe63eac33e099b1600d123a80bc075696219926d63f6adc4b9401aad71ca9"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abbreviations.com",
+                "www.abbreviations.com",
+                "www.definitions.net",
+                "www.lyrics.com",
+                "www.phrases.com",
+                "www.poetry.com",
+                "www.quotes.net",
+                "www.rhymes.com",
+                "www.scripts.com",
+                "www.symbols.com",
+                "www.synonyms.com"
+            ]
+        },
+        {
             "rule": "stands4\\.com\\/app_common\\/js\\/page\\.analytics\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -374,11 +328,13 @@
         {
             "rule": "stands4\\.com\\/app_abbreviations\\/js\\/abbr\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -394,18 +350,65 @@
             ]
         },
         {
-            "rule": "stands4\\.com\\/app_common\\/img\\/selectad-primary-120x40\\.png",
+            "rule": "stands4\\.com\\/images\\/user\\/4038",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000745,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "af48658a376eb696035d953751903f5caaef567e84a7abfde38c9a6650be0dd6"
+                "8d6e71704c5744413f05f49038a6ed89e7e60da9a66e80a9455aff3fac5f89e7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abbreviations.com",
+                "www.grammar.com"
+            ]
+        },
+        {
+            "rule": "stands4\\.com\\/images\\/user\\/2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "8ecfbcd092a5a4242d2c82e85372199e57cc5d9e2fd48ac18d9424eadf966f97"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abbreviations.com",
+                "www.quotes.net",
+                "www.scripts.com",
+                "www.symbols.com",
+                "www.synonyms.com"
+            ]
+        },
+        {
+            "rule": "stands4\\.com\\/app_common\\/img\\/cite-me-gray\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000542,
+            "cnames": [],
+            "responseHashes": [
+                "08c52b4fe4aa97550003ebdd2d33239e870e059090339f26243afdb35294d50b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -416,12 +419,9 @@
                 "www.grammar.com",
                 "www.lyrics.com",
                 "www.phrases.com",
-                "www.poetry.com",
                 "www.quotes.net",
                 "www.rhymes.com",
-                "www.scripts.com",
-                "www.symbols.com",
-                "www.synonyms.com"
+                "www.symbols.com"
             ]
         },
         {
@@ -489,6 +489,37 @@
             ]
         },
         {
+            "rule": "stands4\\.com\\/app_common\\/webfonts\\/fa-regular-400\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000745,
+            "cnames": [],
+            "responseHashes": [
+                "7f8b45f908de977ba672237d04ed3c78ec4b24c4d7255fd98351e221d44554f1"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abbreviations.com",
+                "www.definitions.net",
+                "www.grammar.com",
+                "www.lyrics.com",
+                "www.phrases.com",
+                "www.poetry.com",
+                "www.quotes.net",
+                "www.rhymes.com",
+                "www.scripts.com",
+                "www.symbols.com",
+                "www.synonyms.com"
+            ]
+        },
+        {
             "rule": "stands4\\.com\\/app_abbreviations\\/js\\/common\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -496,14 +527,14 @@
                 "static"
             ],
             "apis": {
-                "speechSynthesis.__proto__.getVoices": 2,
-                "window.innerHeight": 1
+                "Element.prototype.getClientRects": 1,
+                "speechSynthesis.__proto__.getVoices": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "92b601c0ab452c3a93ad8d124b2d6f211c52105de01af15c7171897c5ca7d6fc"
+                "e93d280d11c07b936d122a65b6e563be06e617c08a436016ebe21d8e12774c5d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -511,6 +542,37 @@
             "exampleSites": [
                 "abbreviations.com",
                 "www.abbreviations.com"
+            ]
+        },
+        {
+            "rule": "stands4\\.com\\/app_common\\/img\\/selectad-primary-120x40\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000745,
+            "cnames": [],
+            "responseHashes": [
+                "af48658a376eb696035d953751903f5caaef567e84a7abfde38c9a6650be0dd6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abbreviations.com",
+                "www.definitions.net",
+                "www.grammar.com",
+                "www.lyrics.com",
+                "www.phrases.com",
+                "www.poetry.com",
+                "www.quotes.net",
+                "www.rhymes.com",
+                "www.scripts.com",
+                "www.symbols.com",
+                "www.synonyms.com"
             ]
         },
         {
@@ -546,65 +608,6 @@
             ]
         },
         {
-            "rule": "stands4\\.com\\/app_common\\/img\\/cite-me-gray\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000542,
-            "cnames": [],
-            "responseHashes": [
-                "08c52b4fe4aa97550003ebdd2d33239e870e059090339f26243afdb35294d50b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abbreviations.com",
-                "www.definitions.net",
-                "www.grammar.com",
-                "www.lyrics.com",
-                "www.phrases.com",
-                "www.quotes.net",
-                "www.rhymes.com",
-                "www.symbols.com"
-            ]
-        },
-        {
-            "rule": "stands4\\.com\\/app_common\\/webfonts\\/fa-regular-400\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000745,
-            "cnames": [],
-            "responseHashes": [
-                "7f8b45f908de977ba672237d04ed3c78ec4b24c4d7255fd98351e221d44554f1"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abbreviations.com",
-                "www.definitions.net",
-                "www.grammar.com",
-                "www.lyrics.com",
-                "www.phrases.com",
-                "www.poetry.com",
-                "www.quotes.net",
-                "www.rhymes.com",
-                "www.scripts.com",
-                "www.symbols.com",
-                "www.synonyms.com"
-            ]
-        },
-        {
             "rule": "stands4\\.com\\/app_common\\/css\\/defn\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -616,7 +619,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0cf8d4586a96a216e8d59aa8d86a4c87d6f0ab0edd150c8a724748e504e4d116"
+                "bc5e5bfcc10c6b9d65df51b0ed8f881e6316a538700b0f0a6c7aead9eb414bb9"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -679,7 +682,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
                 "2efc55b77292e55713a08f06c2be1358a87ade7498c332e1bcad256c260987c0"
@@ -702,11 +705,13 @@
         {
             "rule": "stands4\\.com\\/app_definitions\\/js\\/defn\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -729,6 +734,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 2
             },
@@ -781,7 +787,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "326df289f1f9609213cd83354c8e5908dd1cea3023890e04855c064d2acd375e"
+                "e88598c5205bd41394da70884fcb9bccdea9ed95de6e554294803aef41914b8c"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -885,11 +891,13 @@
         {
             "rule": "stands4\\.com\\/app_grammar\\/js\\/gram\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -912,6 +920,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 1
             },
@@ -941,7 +950,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "420b6f39694c73aae06bcaa675c057bf8d548f168c53d07bfdcc0e49e749ed90"
+                "830ac9ae15484cbf3431247c49e5966bc97ab4dab2c89283ee826022bc172575"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -976,16 +985,18 @@
         {
             "rule": "stands4\\.com\\/app_lyrics\\/js\\/lyrc\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "648e4d0143519c0439652bcfddb50cab9515602363e799fe7f15a1329bd13c45"
+                "06aec6c3beb0bf28053cb5975c20b03fbfb590f1fa9cfff4b7d2ef116b9953c2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1025,6 +1036,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.localStorage": 1,
                 "Date.prototype.getTime": 1
@@ -1033,7 +1045,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "6d1363f5a5435651c80c53c534994e4e5753af7f5b0fe9fd5d02af5dfa4b14db"
+                "aae8dceed61df510a7f794e20f28c67a20e3efb10e21a52ee4f4539737599363"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1078,7 +1090,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5e0589d34c748cb6519d1cee3c96be18dd2f33c43c513472893ef2b2825edeec"
+                "d2219bff2a588f0c49c6245f46c4b0f039c22052ec9516d636d9c9c9903f8ee8"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1113,11 +1125,13 @@
         {
             "rule": "stands4\\.com\\/app_phrases\\/js\\/phra\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1140,6 +1154,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 1
             },
@@ -1147,7 +1162,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0b0002e6f0105b445861c35de14680a71b90f4a1ee7a74fc569b9eb0dfb6bf2d"
+                "184376408c8bd7362374b262ddd37ef9806da750c13750106266da6590b75309"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1169,7 +1184,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "fbde18650268c52f56f78765868e80450aee7b6e4d837f4e21aa177bdc045a71"
+                "269e62a5d37fbdde9535990f9bfed97c3fdc9004fa9b12c517755fafeea97e84"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1204,16 +1219,18 @@
         {
             "rule": "stands4\\.com\\/app_poetry\\/js\\/poe\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c3c350c2751251df80c076ba0aadc60c3be798e13c6cc2b9a6c742be3c5f8653"
+                "931ee6a3f09d695bd08c556069088c65f3b7057e205486e9ea1773c58636f540"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1253,6 +1270,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "Navigator.prototype.userAgent": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 2
@@ -1261,7 +1279,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "928603563785ae75394376d1a3a7b7a5410b0bd7cfea796911fa5c1a70a23705"
+                "d62aca1c202a0e06291514d46e210de2330a51791db1ada32af95fb6c738e49e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1308,7 +1326,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ab3c2f89b1baba8155a794a84385f2acfa4a538be503fe63831aaa6810f67518"
+                "1b08fa7905e5d4cc024c5604eadba398f58e8005e012e74618b48f3740d8fd5a"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1343,16 +1361,18 @@
         {
             "rule": "stands4\\.com\\/app_quotes\\/js\\/quot\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c5f112664aa38f716e8a099d51c90c4490f1c2763ccb0c64be9e89c55ec72456"
+                "13fcfe091da7d5433d17e70246a2a7b6108b82b144e3004a62a04ff02efd7c1e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1370,6 +1390,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 1,
                 "window.localStorage": 1,
@@ -1379,7 +1400,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d3b4a1b90be70840938faa10fbfa37596069240ca5d7d418a9d50de958f69b94"
+                "877c716415385d3554f2f8775e9a8951a5d38bd560a7948198a40343f6341af7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1401,7 +1422,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "fa36c8305fa5e71240bfd7ea967241a0cb0f2bba59657c2329682de19f6e7493"
+                "5d23a46bf26acfe5e4592d547ca3ff9d0da7fe708a4e7ab52073530e5bbc0f98"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1436,11 +1457,13 @@
         {
             "rule": "stands4\\.com\\/app_rhymes\\/js\\/rhym\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1463,6 +1486,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 2,
                 "Navigator.prototype.userAgent": 1
@@ -1542,7 +1566,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9b7eafaf038894f8624d7baa5670a28bb8267e0ec302c9e48a9b73ce74a9a0bc"
+                "7768ebe13797b21e3cd1d4bb4ff1d1ec45842da7e173e1157d0cf4312b7624bc"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1577,16 +1601,18 @@
         {
             "rule": "stands4\\.com\\/app_scripts\\/js\\/scr\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "de99a7b3758ffe277dcf59155a2a02390830a8612161f778ed821bfdd2ee9de4"
+                "7696561cbcfc95b4fbf9722f741ed200168d50d3cd3a201db542a04f98d9e4a1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1604,6 +1630,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 1
             },
@@ -1611,7 +1638,32 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "89bb0d23bf9db65abbf1337dcc1891c1f4c6cbfb8befcf1cdb3bb50246e6749f"
+                "5859ae3b446288efb6f6e8a73d5853d486e834d2184516eca84d9f85d0c49402"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scripts.com",
+                "www.scripts.com"
+            ]
+        },
+        {
+            "rule": "stands4\\.com\\/app_scripts\\/js\\/dfp_header\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "523840958ff26460ed040c890c2fb28cc8c8bb5d33f5d9eeaf5d248bdf158909"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1633,7 +1685,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2a086a5a9c8147789533b9bd67a21b3e61455fcc9b1f054ee3f1bc4a3124e8a1"
+                "ea5e6a83e4900ad10b9bd40046df5b01b86d3e7318e2ee924efa622c824e0f9f"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1668,11 +1720,13 @@
         {
             "rule": "stands4\\.com\\/app_symbols\\/js\\/symb\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1690,11 +1744,13 @@
         {
             "rule": "stands4\\.com\\/app_symbols\\/js\\/common\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1721,7 +1777,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "bc164d7b927ccdd3bec69adc90fa4a23ac4d71e438cec4dbe8d8f6081c09e106"
+                "938df16c06670299b83dfcee3b3c9266ab8cc2e5a8710d5670d761fa4e6b98d8"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1778,11 +1834,13 @@
         {
             "rule": "stands4\\.com\\/app_synonyms\\/js\\/syno\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1805,6 +1863,7 @@
                 "static"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
                 "window.innerHeight": 1
             },
@@ -1812,7 +1871,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8bfb723f5df872d2964d48e6d85a5aaa3fb5a612d11d79b33de47080a7cd0c4d"
+                "6ab2af8ae3c040e63ea921ceae590cf008f70b3d22a0f5bf6ca526526e964d0f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1829,17 +1888,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8464491362763915
+            "prevalence": 0.852670349907919
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.15355086372360843
+            "prevalence": 0.14732965009208104
         }
     ],
     "types": {
         "Stylesheet": 60,
-        "Script": 123,
-        "Image": 58,
+        "Script": 125,
+        "Image": 59,
         "Font": 46
     },
     "nameservers": [

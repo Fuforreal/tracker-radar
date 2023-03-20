@@ -8,7 +8,8 @@
     "sites": 19,
     "subdomains": [
         "cdn",
-        "embed"
+        "embed",
+        "prebid"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -90,6 +91,32 @@
             ]
         },
         {
+            "rule": "cwi\\.re\\/v1\\/bid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "f0310a1c5d5877f6b70b025c4826e3e62abddcf73a5c0616d0bd7a4220a28c40",
+                "31bc04685a0f75745f7ead5106e42b4f51b83bd4558b2fa5bb593f7a445d1602",
+                "f098bb78cc6286c64a7383743a8067e30a8bb2526893ba6f4e3f3c31421d6536"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beobachter.ch",
+                "www.handelszeitung.ch",
+                "www.lematin.ch",
+                "www.schweizer-illustrierte.ch"
+            ]
+        },
+        {
             "rule": "cwi\\.re\\/delivery\\/prebid",
             "cookies": 0,
             "fingerprinting": 0,
@@ -97,24 +124,20 @@
                 "embed"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "3259bed60b0f610a6c0e439bd2747bccc5c27c4e24d1aea2900f933548879cb1",
-                "bb4f81bfd2c5ede4c3c5f8dd0927be38b4bd8ec77853a767bdd8eb45bae634d7",
-                "68410c10c1754cc729962a025a47effdaf99e6840a0bcbb799714f70530aec6e",
-                "a32c22e8e01281b7dc5a74d785501f42e16f8b908e590ac08e49f6d45bac8f9d",
-                "8861667d3accb265209d96d2c393bcfebf7fe89719e0976aa2f33c598a772c0e"
+                "d1f964f5da903ef300667ca720afe3d8e4992e2e3ed1e6b9b6586483b09f4b96",
+                "df8036b92ebee0efc017fd7997a311fd97881c4e835dd9310bbb8e2fbf4516c3",
+                "25d37f907d7134bcc5de7c0a4876e363986ae736aeb7916d70ca409c561ba243"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "beobachter.ch",
-                "www.bernerzeitung.ch",
+                "bernerzeitung.ch",
                 "www.derbund.ch",
-                "www.schweizer-illustrierte.ch",
                 "www.tagesanzeiger.ch",
                 "www.tio.ch"
             ]
@@ -258,26 +281,26 @@
     "topInitiators": [
         {
             "domain": "admeira.ch",
-            "prevalence": 0.64
+            "prevalence": 0.625
         },
         {
             "domain": "first party",
-            "prevalence": 0.2
+            "prevalence": 0.20833333333333334
         },
         {
             "domain": "da-services.ch",
-            "prevalence": 0.16
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
         "Script": 14,
-        "XHR": 14,
+        "XHR": 16,
         "Preflight": 8
     },
     "nameservers": [
         "ns-1478.awsdns-56.org",
-        "ns-368.awsdns-46.com",
         "ns-618.awsdns-13.net",
+        "ns-368.awsdns-46.com",
         "ns-1911.awsdns-46.co.uk"
     ]
 }

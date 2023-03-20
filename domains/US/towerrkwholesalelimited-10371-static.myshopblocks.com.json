@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "towerrkwholesalelimited-10371-static\\.myshopblocks\\.com\\/bower_components\\/bootstrap\\/dist\\/css\\/bootstrap\\.min\\.css",
@@ -1515,12 +1515,9 @@
         {
             "rule": "towerrkwholesalelimited-10371-static\\.myshopblocks\\.com\\/default-layouts\\/js\\/libraries\\/jquery-3\\.5\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Element.prototype.getClientRects": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1561,7 +1558,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.innerWidth": 2
+                "window.innerWidth": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1698,31 +1696,13 @@
             ]
         },
         {
-            "rule": "towerrkwholesalelimited-10371-static\\.myshopblocks\\.com\\/images\\/2022\\/05\\/original\\/af5139c15fbaf38a9a49a74c9d5a0f71\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "67027870c0b75cfe8a634dfc062ef829f706a889bf91471f2a1e2c53d9c77c58"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "towerhousewares.co.uk",
-                "www.towerhousewares.co.uk"
-            ]
-        },
-        {
             "rule": "towerrkwholesalelimited-10371-static\\.myshopblocks\\.com\\/default-layouts\\/js\\/min\\/global\\.shopblocks\\.core\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1990,12 +1970,12 @@
     "types": {
         "Stylesheet": 18,
         "Script": 24,
-        "Image": 148,
+        "Image": 146,
         "Font": 6
     },
     "nameservers": [
-        "ns1.digitalocean.com",
         "ns2.digitalocean.com",
+        "ns1.digitalocean.com",
         "ns3.digitalocean.com"
     ]
 }

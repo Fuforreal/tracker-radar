@@ -172,13 +172,11 @@
         {
             "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/JS\\/jquery\\.js",
             "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.apps"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -223,7 +221,7 @@
                 "assets.apps"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -248,6 +246,7 @@
             ],
             "apis": {
                 "Navigator.prototype.platform": 2,
+                "Event.prototype.timeStamp": 2,
                 "window.innerWidth": 2
             },
             "sites": 2,
@@ -267,6 +266,28 @@
         {
             "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/JS\\/jquery\\.cookie\\.js",
             "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.apps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "8de3c69167586aa5e95b77e613f84846384cbab1189183c1bd792451f482c66f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fishandboat.com",
+                "www.fishandboat.com"
+            ]
+        },
+        {
+            "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/JS\\/fontsizer\\.js",
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "assets.apps"
@@ -279,39 +300,17 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8de3c69167586aa5e95b77e613f84846384cbab1189183c1bd792451f482c66f"
+                "b633f4dae41bfed5afa7efc79a1dbcdd5afb7f39cbba25bb1da2a4a4fb002eea"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "paGov": {
                     "ttl": 1728001,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fishandboat.com",
-                "www.fishandboat.com"
-            ]
-        },
-        {
-            "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/JS\\/fontsizer\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.apps"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b633f4dae41bfed5afa7efc79a1dbcdd5afb7f39cbba25bb1da2a4a4fb002eea"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fishandboat.com",
@@ -368,14 +367,11 @@
         {
             "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/JS\\/jquery-ui\\.js",
             "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.apps"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -539,9 +535,9 @@
         "Font": 8
     },
     "nameservers": [
-        "dns3.pa.gov",
-        "dns5.pa.gov",
         "dns2.pa.gov",
-        "dns4.pa.gov"
+        "dns4.pa.gov",
+        "dns3.pa.gov",
+        "dns5.pa.gov"
     ]
 }

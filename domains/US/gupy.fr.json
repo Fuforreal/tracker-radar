@@ -148,13 +148,11 @@
         {
             "rule": "gupy\\.fr\\/wp-includes\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -220,11 +218,13 @@
         {
             "rule": "gupy\\.fr\\/wp-content\\/plugins\\/wpvr-bingescout\\/assets\\/js\\/scripts\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -678,6 +678,28 @@
                 "voiranime.fr",
                 "www.voiranime.fr"
             ]
+        },
+        {
+            "rule": "gupy\\.fr\\/2020\\/10\\/Chihayafuru-poster-400x600\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "333de5877ae95e50106669090ecabf4d74185e9a99b117fb4c90e37570a122fa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "voiranime.fr",
+                "www.voiranime.fr"
+            ]
         }
     ],
     "categories": [],
@@ -692,11 +714,11 @@
     "types": {
         "Stylesheet": 12,
         "Script": 8,
-        "Image": 38,
+        "Image": 40,
         "Font": 2
     },
     "nameservers": [
-        "newt.ns.cloudflare.com",
-        "alla.ns.cloudflare.com"
+        "alla.ns.cloudflare.com",
+        "newt.ns.cloudflare.com"
     ]
 }

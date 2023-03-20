@@ -15,17 +15,17 @@
     "resources": [
         {
             "rule": "kuzen\\.io\\/chat_app_logic\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 1,
             "subdomains": [
                 "dialog",
                 "cbgw"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -36,9 +36,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "client": {
-                    "ttl": 315360003,
+                    "ttl": 315360002,
                     "length": 32,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -140,7 +140,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "client": 0.00001354261182811717
+                "client": 0.0000067723606417488944
             },
             "exampleSites": [
                 "motor-fan.jp",
@@ -160,8 +160,8 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "a9d51e282444d4c68baa87f9d242865a01ec3eb6542edc2167f8a6b3054412e9",
-                "3073e04f689804481713a751f2b6170c565e090185121ec1f15542770aa7446a"
+                "90075f9dc6b414423a94392c04e32f6e19ffbf5a93c1ccbcf5e6ab26c151687d",
+                "915a9e274c02ea5ce63add3a2af424038bbab1c8dfdfdf1e30e3fba6ad31291f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -169,6 +169,26 @@
             "exampleSites": [
                 "motor-fan.jp",
                 "www.city.hiroshima.lg.jp",
+                "www.mitsubishielectric.co.jp"
+            ]
+        },
+        {
+            "rule": "kuzen\\.io\\/cable",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cbgw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mitsubishielectric.co.jp",
                 "www.mitsubishielectric.co.jp"
             ]
         }
@@ -189,12 +209,13 @@
     "types": {
         "Script": 4,
         "XHR": 7,
-        "Stylesheet": 2
+        "Stylesheet": 2,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns-2006.awsdns-58.co.uk",
+        "ns-635.awsdns-15.net",
         "ns-1439.awsdns-51.org",
-        "ns-485.awsdns-60.com",
-        "ns-635.awsdns-15.net"
+        "ns-485.awsdns-60.com"
     ]
 }

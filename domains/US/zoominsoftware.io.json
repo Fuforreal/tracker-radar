@@ -49,9 +49,10 @@
                 "window.localStorage": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.product": 2,
+                "Event.prototype.timeStamp": 2,
                 "Navigator.prototype.vendor": 2,
-                "OfflineAudioContext.prototype.constructor": 2,
                 "window.innerWidth": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
                 "AudioBuffer.prototype.getChannelData": 2,
                 "Screen.prototype.availTop": 2,
                 "Screen.prototype.width": 2,
@@ -59,10 +60,8 @@
                 "Screen.prototype.availLeft": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.availHeight": 2,
-                "window.innerHeight": 1,
                 "Screen.prototype.colorDepth": 2,
                 "Navigator.prototype.deviceMemory": 2,
-                "Event.prototype.timeStamp": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
                 "window.sessionStorage": 2,
@@ -73,6 +72,7 @@
                 "HTMLCanvasElement.prototype.toDataURL": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
                 "Document.cookie setter": 2,
+                "window.innerHeight": 1,
                 "PerformanceTiming.prototype.navigationStart": 1,
                 "Element.prototype.getClientRects": 1
             },
@@ -85,9 +85,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1678758740,
+                    "ttl": -1679146894,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -393,7 +393,7 @@
             "apis": {
                 "NavigatorUAData.prototype.brands": 2,
                 "NavigatorUAData.prototype.platform": 2,
-                "window.matchMedia(\"prefers-color-scheme\")": 2
+                "window.matchMedia(\"prefers-color-scheme\")": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -434,13 +434,11 @@
         {
             "rule": "zoominsoftware\\.io\\/vendors\\/jquery\\/3\\.2\\.1\\/jquery\\.slim\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -592,11 +590,13 @@
         {
             "rule": "zoominsoftware\\.io\\/vendors\\/bootstrap\\/4\\.1\\.3\\/bootstrap\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],

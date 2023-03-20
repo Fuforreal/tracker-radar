@@ -8,7 +8,8 @@
     "sites": 17,
     "subdomains": [
         "hub",
-        "consent"
+        "consent",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -168,7 +169,7 @@
             "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "f960c36456f0e178d014e68c3d103fa546727ea99b1cdece1c64316ea1eac274"
+                "c9cbc92916476365bcb22c556ff100cb1c9cb5265cb1d719a3637df5bbcd3d9e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -378,20 +379,20 @@
                 "consent"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.sessionStorage": 4,
                 "window.localStorage": 4,
+                "window.sessionStorage": 4,
                 "Navigator.prototype.doNotTrack": 4,
-                "Document.cookie getter": 4,
-                "Date.prototype.getTime": 4
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 4
             },
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "405ad0ca33f4fb135e7528a232ff8d178c3dcc0898d5539291490d46061ed519",
-                "3a960b5c1f5ab4f742e63a8fb6d8ad6dfb950a7403c58a83b217a31ebf1aa486",
-                "170caec47541039d3f08892551275960ea6a9d81d2cbf64069a86828f965600c"
+                "4d423476988b7ad7b7639c6ec02942e2544ee28c04648ef2fdcc8ffd8407121a",
+                "01617e81951717ade54885108a979215fbf310a21c962aa2c2ff1c8ad0b1f0cd",
+                "8bc56f929f76fc20b1de437ad021dc7064141779029411ba0800389a2a862693"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -513,7 +514,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1a9dc3b5c37af628ac97d019e249768500a223a5c62da73229c363c1047848d8"
+                "8fd4fdc7234d3e722de53aa88c88ef7c9a3797589e8ef552856fadaf199db42e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -535,7 +536,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2d52f18444e5dd0b090abf460caa1b2d42a0b05e919b8fc0c2850a0623a5fc68"
+                "0e05aa0b3641686d69eafda806b67602500d0368af328c8757d63d901dcf8fd3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -546,23 +547,25 @@
             ]
         },
         {
-            "rule": "daa\\.net\\/page_check\\/report",
+            "rule": "daa\\.net\\/p\\/heizung_badcc18bcf\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "consent"
+                "cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "5f0879297695f9f054c55eb39b423924a67646a63bdcfa5a6ac4dfb6e35c3aa7"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "heizungsfinder.de",
-                "www.solaranlagen-portal.com"
+                "www.heizungsfinder.de"
             ]
         },
         {
@@ -588,6 +591,48 @@
             ]
         },
         {
+            "rule": "daa\\.net\\/page_check\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "consent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heizungsfinder.de",
+                "www.solaranlagen-portal.com"
+            ]
+        },
+        {
+            "rule": "daa\\.net\\/p\\/cm_255af9a385\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "bfc2eca798919e2d90d0ea68174d791d2cf2f208de8927b59fb03f155968d6eb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heizungsfinder.de",
+                "www.solaranlagen-portal.com"
+            ]
+        },
+        {
             "rule": "daa\\.net\\/embed\\/6fb6e2568aa34b9b9c4f7857a7e8588a",
             "cookies": 0,
             "fingerprinting": 0,
@@ -599,7 +644,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0bc97e7ba24ad674ea1834d1c13b8b88669372be8649f264b834beb896b75a62"
+                "a216b87f12edf9cd07d57e050348ca9545b3db1aac3ab0552b15ef2e328d02d3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -622,7 +667,7 @@
     "types": {
         "Stylesheet": 25,
         "Script": 31,
-        "Image": 30,
+        "Image": 34,
         "Font": 7,
         "Preflight": 6,
         "Other": 4,
@@ -630,8 +675,8 @@
         "Document": 6
     },
     "nameservers": [
+        "helium.ns.hetzner.de",
         "hydrogen.ns.hetzner.com",
-        "oxygen.ns.hetzner.com",
-        "helium.ns.hetzner.de"
+        "oxygen.ns.hetzner.com"
     ]
 }

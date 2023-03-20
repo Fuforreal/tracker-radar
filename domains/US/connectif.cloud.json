@@ -14,7 +14,7 @@
         "eu2-api"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "connectif\\.cloud\\/iframe\\/index\\.html",
@@ -49,6 +49,7 @@
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Notification.permission": 2,
                 "window.outerWidth": 2,
                 "window.outerHeight": 2,
                 "Screen.prototype.height": 2,
@@ -57,7 +58,6 @@
                 "Navigator.prototype.cookieEnabled": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.platform": 2,
-                "Notification.permission": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -86,7 +86,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "067437cbfb5e3abd5bd7fb415fc25b38f914ee6a738bdd6cfc08509bde848a20"
+                "3c15deaf4b765ae335dd73720cad444455ec80b716435e392744a9fe40f97e05"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -105,6 +105,7 @@
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Notification.permission": 2,
                 "window.outerWidth": 2,
                 "window.outerHeight": 2,
                 "Screen.prototype.height": 2,
@@ -113,7 +114,6 @@
                 "Navigator.prototype.cookieEnabled": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.platform": 2,
-                "Notification.permission": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -142,7 +142,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5f6f922edd005079667421ac569b885e52f030b8cc328350cc7efb29ba274f1b"
+                "f23029bd42242d823cd23b4b4987de046f42535dbab47b65d6ca60406ed09120"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -153,6 +153,28 @@
             ]
         },
         {
+            "rule": "connectif\\.cloud\\/integration-type\\/system\\/scrippet-notification\\/1f37ffa6-2472-4256-95a7-4fd7c8eb51e1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1685aa0e2f5826c7e8387fbc9c4263381f240525ec384963ad95f279b74f8c6e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "growbarato.net",
+                "www.growbarato.net"
+            ]
+        },
+        {
             "rule": "connectif\\.cloud\\/eu4\\/client-script\\/147b51fe-d2ff-4ffa-8e3b-b6e016dfe711",
             "cookies": 0,
             "fingerprinting": 3,
@@ -160,9 +182,9 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
                 "Notification.permission": 2,
+                "window.localStorage": 2,
                 "window.outerWidth": 2,
                 "window.outerHeight": 2,
                 "Screen.prototype.height": 2,
@@ -199,7 +221,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c1be5b8b35195f5da774701d67005ab285d6ef9e532002c1141a0e5f8f84dbbd"
+                "49f013fb3771f9450caf51fcf0ebc5d7945a9a79ae32a7c10faf3e88c8323d4d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -256,7 +278,7 @@
         {
             "rule": "connectif\\.cloud\\/eu2\\/client-script\\/19357a0c-6552-4e10-b742-56238fd83be4",
             "cookies": 0,
-            "fingerprinting": 3,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
@@ -271,8 +293,7 @@
                 "Screen.prototype.colorDepth": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "Navigator.prototype.language": 2,
-                "Navigator.prototype.platform": 2,
-                "window.innerWidth": 1
+                "Navigator.prototype.platform": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -300,7 +321,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "10b69b67d3899e87573105a57038fd6fb1b5b5de67fbf55916b8f1997ef2eefc"
+                "8a0a707668cdebb689a0d7a3632e8c5af10af82e016b27c5560d5785f403e7fc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -339,23 +360,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6923076923076923
+            "prevalence": 0.6410256410256411
         },
         {
             "domain": "googletagmanager.com",
             "prevalence": 0.3076923076923077
+        },
+        {
+            "domain": "inspectlet.com",
+            "prevalence": 0.05128205128205128
         }
     ],
     "types": {
         "Document": 2,
         "Script": 8,
-        "XHR": 8,
+        "XHR": 10,
         "Image": 6
     },
     "nameservers": [
-        "ns1-08.azure-dns.com",
         "ns2-08.azure-dns.net",
-        "ns3-08.azure-dns.org",
-        "ns4-08.azure-dns.info"
+        "ns1-08.azure-dns.com",
+        "ns4-08.azure-dns.info",
+        "ns3-08.azure-dns.org"
     ]
 }

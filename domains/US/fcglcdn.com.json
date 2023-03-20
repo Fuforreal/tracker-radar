@@ -81,13 +81,11 @@
         {
             "rule": "fcglcdn\\.com\\/brainbees\\/php\\/js\\/jquery\\.2\\.0\\.0\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -170,13 +168,15 @@
         },
         {
             "rule": "fcglcdn\\.com\\/brainbees\\/php\\/js\\/cart-deployment-v2\\.11\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -185,7 +185,20 @@
                 "3c5830bcf3d15eaddd210dacd1abc243e6bfe8c9542aeb5018058326ce6e0053"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_ICU_": {
+                    "ttl": 31536002,
+                    "length": 9,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "_$FC$_cookies_": {
+                    "ttl": 604802,
+                    "length": 5,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "firstcry.com",
@@ -244,13 +257,14 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "window.localStorage": 2,
-                "window.name": 2
+                "Event.prototype.timeStamp": 1,
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.appName": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -260,58 +274,10 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_ICU_": {
-                    "ttl": 31536003,
-                    "length": 9,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "footerstatus": {
-                    "ttl": 31536004,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "_$FC$_cookies_": {
-                    "ttl": 604803,
-                    "length": 5,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "$FC_Register_cookies$": {
-                    "ttl": 2592003,
-                    "length": 1,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "FC_session_ck": {
-                    "ttl": null,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "_$FC_TrackingMkt$": {
-                    "ttl": 2592004,
-                    "length": 6,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "_$FC_TrackingMkt3$": {
-                    "ttl": 2592004,
-                    "length": 6,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "_$FC_SID$": {
-                    "ttl": 31536004,
-                    "length": 36,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
                 "_$FCC$_": {
-                    "ttl": 2592004,
+                    "ttl": 2592003,
                     "length": 2,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -337,216 +303,6 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstcry.com",
-                "www.firstcry.com"
-            ]
-        },
-        {
-            "rule": "fcglcdn\\.com\\/brainbees\\/images\\/n\\/ic_to_arrow\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "f7ffa177736237201b008c1b62ca890705ad2e79e21653011305ae5651933f96"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstcry.com",
-                "www.firstcry.com"
-            ]
-        },
-        {
-            "rule": "fcglcdn\\.com\\/brainbees\\/images\\/LodingCart\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "aa1c4f92a4085deb47ba51563321247ca84493ade7e9d54091ed063e5d29010d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstcry.com",
-                "www.firstcry.com"
-            ]
-        },
-        {
-            "rule": "fcglcdn\\.com\\/brainbees\\/community\\/jarvissdk\\/jssdk-jarviscoreindia\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "48dcc62de9a7cdeedaf70a217fb67503ede00e447f9d5059dd358b823baed22f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstcry.com",
-                "www.firstcry.com"
-            ]
-        },
-        {
-            "rule": "fcglcdn\\.com\\/brainbees\\/js\\/v7\\/menu-1\\.9-mg-head\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "005f93eab7a0a42740551157ffa0a2f0b0013ccda21b3e2d9762fb338b81840c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstcry.com",
-                "www.firstcry.com"
-            ]
-        },
-        {
-            "rule": "fcglcdn\\.com\\/brainbees\\/php\\/js\\/footerstrip2\\.5\\.9\\.r21\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "81fe5908b76b7b91b9ca4f32a3f2b70bbed88f1775b1e05bf594829168598a6c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstcry.com",
-                "www.firstcry.com"
-            ]
-        },
-        {
-            "rule": "fcglcdn\\.com\\/brainbees\\/checkout\\/imprint\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.availWidth": 2,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "window.devicePixelRatio": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getContextAttributes": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b78c9c12bc6347a6a84a4c209747df32aaac094bc81055c0f7dd12b32f2a13a2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "FingerPrint": {
-                    "ttl": 4632637155,
-                    "length": 106,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstcry.com",
-                "www.firstcry.com"
-            ]
-        },
-        {
-            "rule": "fcglcdn\\.com\\/brainbees\\/php\\/js\\/internalwebengage\\.min\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.platform": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bf5c39583cdad81db05ce70ac694f434dc53d4ffc07bc3cd5576363e573e10f1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "fc_eng_cur_sid": {
-                    "ttl": 31506003,
-                    "length": 9,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                }
-            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "firstcry.com",
@@ -609,7 +365,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "3f69f55b52d660ac05dab04094b0c0fd81d6828cacce87629ff1fee4e2875d07"
+                "9fed39d05b913a4ff27687c55f32d9fe22197d760add26379090c67121d39224"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -635,6 +391,227 @@
             ],
             "type": "Font",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstcry.com",
+                "www.firstcry.com"
+            ]
+        },
+        {
+            "rule": "fcglcdn\\.com\\/brainbees\\/images\\/n\\/ic_to_arrow\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "f7ffa177736237201b008c1b62ca890705ad2e79e21653011305ae5651933f96"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstcry.com",
+                "www.firstcry.com"
+            ]
+        },
+        {
+            "rule": "fcglcdn\\.com\\/brainbees\\/images\\/LodingCart\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "aa1c4f92a4085deb47ba51563321247ca84493ade7e9d54091ed063e5d29010d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstcry.com",
+                "www.firstcry.com"
+            ]
+        },
+        {
+            "rule": "fcglcdn\\.com\\/brainbees\\/community\\/jarvissdk\\/jssdk-jarviscoreindia\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "48dcc62de9a7cdeedaf70a217fb67503ede00e447f9d5059dd358b823baed22f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstcry.com",
+                "www.firstcry.com"
+            ]
+        },
+        {
+            "rule": "fcglcdn\\.com\\/brainbees\\/js\\/v7\\/menu-1\\.9-mg-head\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "005f93eab7a0a42740551157ffa0a2f0b0013ccda21b3e2d9762fb338b81840c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstcry.com",
+                "www.firstcry.com"
+            ]
+        },
+        {
+            "rule": "fcglcdn\\.com\\/brainbees\\/php\\/js\\/footerstrip2\\.5\\.9\\.r21\\.min\\.js",
+            "cookies": 0.00000677,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "81fe5908b76b7b91b9ca4f32a3f2b70bbed88f1775b1e05bf594829168598a6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "footerstatus": {
+                    "ttl": 31536002,
+                    "length": 1,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstcry.com",
+                "www.firstcry.com"
+            ]
+        },
+        {
+            "rule": "fcglcdn\\.com\\/brainbees\\/checkout\\/imprint\\.js",
+            "cookies": 0.00000677,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.colorDepth": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.availWidth": 1,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
+                "HTMLCanvasElement.prototype.toDataURL": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "window.indexedDB": 1,
+                "Navigator.prototype.language": 1,
+                "window.localStorage": 1,
+                "window.devicePixelRatio": 1,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "WebGLRenderingContext.prototype.getContextAttributes": 1,
+                "WebGLRenderingContext.prototype.getExtension": 1,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b78c9c12bc6347a6a84a4c209747df32aaac094bc81055c0f7dd12b32f2a13a2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "FingerPrint": {
+                    "ttl": 4632116226,
+                    "length": 106,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstcry.com",
+                "www.firstcry.com"
+            ]
+        },
+        {
+            "rule": "fcglcdn\\.com\\/brainbees\\/php\\/js\\/internalwebengage\\.min\\.js",
+            "cookies": 0.00000677,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "bf5c39583cdad81db05ce70ac694f434dc53d4ffc07bc3cd5576363e573e10f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fc_eng_cur_sid": {
+                    "ttl": 31503482,
+                    "length": 9,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "firstcry.com",
@@ -675,7 +652,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0054435929b1238b00f0e5cd50bb0aa4668c0e5301989a6d4aeef657ee531da3"
+                "c767c0919ac90acf37c397d3e2e285815c2721fda9dfdb292a173b4433bbeb95"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -697,7 +674,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a46e762031faefe583f94033f0be3b38d6c26ee4cae81851d9c4f7082acf35cc"
+                "6260561d5f7e2b49ea37015ac143c38242eaed5fd486447e8880de36156b8213"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -880,8 +857,8 @@
     },
     "nameservers": [
         "ns-1344.awsdns-40.org",
-        "ns-385.awsdns-48.com",
+        "ns-761.awsdns-31.net",
         "ns-1589.awsdns-06.co.uk",
-        "ns-761.awsdns-31.net"
+        "ns-385.awsdns-48.com"
     ]
 }

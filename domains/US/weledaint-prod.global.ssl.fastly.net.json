@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/webfiles\\/1678098206608\\/css\\/style\\.css",
@@ -37,13 +37,18 @@
         },
         {
             "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/webfiles\\/1678098206608\\/js\\/script\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "window.name": 2,
                 "Event.prototype.timeStamp": 2
             },
             "sites": 2,
@@ -53,7 +58,14 @@
                 "fc2a8d2df7faefd1c0492cbf9661352297ee3509d29f8a57f6ba8016424505a4"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "weledaCookieOptInState": {
+                    "ttl": 63072002,
+                    "length": 19,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weleda.de",
@@ -201,7 +213,7 @@
             ]
         },
         {
-            "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/binaries\\/content\\/assets\\/json\\/products\\/products_deu-de_1678731220008\\.json",
+            "rule": "weledaint-prod\\.global\\.ssl\\.fastly\\.net\\/binaries\\/content\\/assets\\/json\\/products\\/products_deu-de_1679119985245\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -210,7 +222,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1d68279d8b1de0dcc7378049d34cb14c3c530f8fdcbee644bb3d719c57505403"
+                "78afaa245b91061f55e4f09575d15453c612a6d72af16c48b8672f13351432ba"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -232,7 +244,7 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "first party",

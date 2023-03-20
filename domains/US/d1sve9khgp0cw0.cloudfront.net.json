@@ -258,12 +258,9 @@
         {
             "rule": "d1sve9khgp0cw0\\.cloudfront\\.net\\/wp-includes\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Element.prototype.getClientRects": 1,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -301,9 +298,11 @@
         {
             "rule": "d1sve9khgp0cw0\\.cloudfront\\.net\\/wp-content\\/plugins\\/cph-pd-site-plugin\\/base\\/add-ons\\/dfp\\/js\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -564,7 +563,9 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 1,
+                "Element.prototype.getClientRects": 1,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -743,7 +744,7 @@
             ]
         },
         {
-            "rule": "d1sve9khgp0cw0\\.cloudfront\\.net\\/wp-content\\/uploads\\/2018\\/03\\/CC0429_UNDERWOOD_STEAK_730555-1-150x150\\.jpg",
+            "rule": "d1sve9khgp0cw0\\.cloudfront\\.net\\/wp-content\\/uploads\\/2023\\/03\\/QyJ59BFC7mnNDwaZMIWuZqkzshQ-150x150\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -752,27 +753,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b8a690f6a6529c5edc59eb230667beab7a3f189408415e8311db1e2feb85fd8f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sonomamag.com",
-                "www.sonomamag.com"
-            ]
-        },
-        {
-            "rule": "d1sve9khgp0cw0\\.cloudfront\\.net\\/wp-content\\/uploads\\/2023\\/02\\/MarkMalicki_02-150x150\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e5a3a22124e8fa7d65198dcf595b247e0db0dc368d2aa89566435dcd94995d63"
+                "4f31b79f5358f999d3544ebc2f60f8f3bd8cff7a7eec7da20297cf6a2fbc944a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -801,12 +782,12 @@
     "types": {
         "Stylesheet": 26,
         "Script": 38,
-        "Image": 12
+        "Image": 10
     },
     "nameservers": [
         "ns-1507.awsdns-60.org",
         "ns-1841.awsdns-38.co.uk",
-        "ns-348.awsdns-43.com",
-        "ns-539.awsdns-03.net"
+        "ns-539.awsdns-03.net",
+        "ns-348.awsdns-43.com"
     ]
 }

@@ -126,11 +126,13 @@
         {
             "rule": "champdogs\\.net\\/qtip\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "nstatic"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -229,7 +231,7 @@
         "Script": 4
     },
     "nameservers": [
-        "ns1.peer1.net",
-        "ns2.peer1.net"
+        "ns2.peer1.net",
+        "ns1.peer1.net"
     ]
 }

@@ -10,7 +10,7 @@
         "assets"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "identitymgmt\\.net\\/rapididentity\\/2022\\.0\\.5-22955\\/idp\\/assets\\/vendor-d41d8cd98f00b204e9800998ecf8427e\\.css\\.gz",
@@ -59,11 +59,14 @@
         {
             "rule": "identitymgmt\\.net\\/rapididentity\\/2022\\.0\\.5-22955\\/idp\\/assets\\/vendor-a29eda583906c05e117c899383a2b7e0\\.js\\.gz",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -81,11 +84,15 @@
         {
             "rule": "identitymgmt\\.net\\/rapididentity\\/2022\\.0\\.5-22955\\/idp\\/assets\\/idauto-idp-ui-60cb924275f6cd66371343faa28f6a84\\.js\\.gz",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 3,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.mediaDevices": 1,
+                "MediaDevices.prototype.enumerateDevices": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -116,8 +123,8 @@
     },
     "nameservers": [
         "ns-79.awsdns-09.com",
-        "ns-869.awsdns-44.net",
         "ns-1734.awsdns-24.co.uk",
+        "ns-869.awsdns-44.net",
         "ns-1532.awsdns-63.org"
     ]
 }

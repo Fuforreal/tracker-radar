@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000609,
-    "sites": 9,
+    "prevalence": 0.0000745,
+    "sites": 11,
     "subdomains": [],
     "cnames": [
         {
@@ -20,6 +20,31 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "dt5ybsiymktit\\.cloudfront\\.net\\/mclics\\/v2\\/prints\\/external\\/MLM\\/count",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "print1.mercadoclics.com",
+                    "resolved": "dt5ybsiymktit.cloudfront.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mercadolibre.com.mx",
+                "listado.mercadolibre.com.mx"
+            ]
+        },
         {
             "rule": "dt5ybsiymktit\\.cloudfront\\.net\\/mclics\\/v2\\/prints\\/external\\/MLB\\/count",
             "cookies": 0.0000271,
@@ -48,7 +73,7 @@
             ]
         },
         {
-            "rule": "dt5ybsiymktit\\.cloudfront\\.net\\/mclics\\/v2\\/prints\\/external\\/MLA\\/count",
+            "rule": "dt5ybsiymktit\\.cloudfront\\.net\\/display\\/prints\\/MLB\\/count",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [],
@@ -61,40 +86,13 @@
                     "resolved": "dt5ybsiymktit.cloudfront.net"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mercadolibre.com.ar",
-                "listado.mercadolibre.com.ar"
-            ]
-        },
-        {
-            "rule": "dt5ybsiymktit\\.cloudfront\\.net\\/mclics\\/v2\\/prints\\/external\\/MLM\\/count",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "print1.mercadoclics.com",
-                    "resolved": "dt5ybsiymktit.cloudfront.net"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mercadolibre.com.mx",
-                "listado.mercadolibre.com.mx"
+                "mercadolivre.com.br",
+                "www.mercadolivre.com.br"
             ]
         }
     ],
@@ -102,20 +100,25 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000609,
+    "cookies": 0.0000745,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9545454545454546
+        },
+        {
+            "domain": "mlstatic.com",
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "XHR": 8
+        "XHR": 6,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-10.awsdns-01.com",
         "ns-1709.awsdns-21.co.uk",
+        "ns-560.awsdns-06.net",
         "ns-1186.awsdns-20.org",
-        "ns-560.awsdns-06.net"
+        "ns-10.awsdns-01.com"
     ]
 }

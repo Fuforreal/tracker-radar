@@ -10,35 +10,13 @@
     "prevalence": 0.0000135,
     "sites": 2,
     "subdomains": [
-        "smetrics",
         "www",
+        "smetrics",
         "gcptm"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
-        {
-            "rule": "bmo\\.com\\/id",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "smetrics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d1e3a53d7ca042dc28ed004da9be33355f7052e8b7f0a017e6ecfe3ee5fe908a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bmoinvestorline.com",
-                "www.secure.bmoinvestorline.com"
-            ]
-        },
         {
             "rule": "bmo\\.com\\/self-directed",
             "cookies": 0.0000135,
@@ -51,9 +29,31 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ebf165d0272b232fc3ce5a210721003ba71ba3578c89360c8ba4a7031cd5eaae"
+                "1b1319ebbb3c44877bc1b0b881e4f6873450510962eddd25c9f9fe40c043a302"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmoinvestorline.com",
+                "www.secure.bmoinvestorline.com"
+            ]
+        },
+        {
+            "rule": "bmo\\.com\\/id",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smetrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "fac82b97947375d78bac57b7ecbdb7b68b0a49e9c291988559e621d916da2bec"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -84,7 +84,7 @@
             ]
         },
         {
-            "rule": "bmo\\.com\\/ACFc1x\\/9\\/8\\/b4-nFglvoHdn\\/E35DNDfLr7Ei\\/TXZPMGgAJwM\\/N0F-Q\\/QQxJFM",
+            "rule": "bmo\\.com\\/Skp1X5OTJ5\\/D4vwo9lMld\\/7aEcbtQkOL\\/OBoxAQ\\/FCNeaUJF\\/Vns",
             "cookies": 0.0000135,
             "fingerprinting": 3,
             "subdomains": [
@@ -112,6 +112,12 @@
                 "Navigator.prototype.webkitTemporaryStorage": 2,
                 "Navigator.prototype.webdriver": 2,
                 "NavigatorUAData.prototype.brands": 2,
+                "DeviceMotionEvent.prototype.acceleration": 2,
+                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2,
+                "DeviceMotionEvent.prototype.rotationRate": 2,
+                "DeviceOrientationEvent.prototype.alpha": 2,
+                "DeviceOrientationEvent.prototype.beta": 2,
+                "DeviceOrientationEvent.prototype.gamma": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Screen.prototype.pixelDepth": 2,
                 "Navigator.prototype.cookieEnabled": 2,
@@ -123,12 +129,6 @@
                 "window.indexedDB": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
-                "DeviceMotionEvent.prototype.acceleration": 2,
-                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2,
-                "DeviceMotionEvent.prototype.rotationRate": 2,
-                "DeviceOrientationEvent.prototype.alpha": 2,
-                "DeviceOrientationEvent.prototype.beta": 2,
-                "DeviceOrientationEvent.prototype.gamma": 2,
                 "window.devicePixelRatio": 2,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
@@ -165,8 +165,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "gpv_p5": 0.00001354261182811717,
-                "_ga": 0.00004062783548435151
+                "gpv_p5": 0.000013544721283497789,
+                "_ga": 0.000040634163850493365
             },
             "exampleSites": [
                 "bmoinvestorline.com",
@@ -190,7 +190,7 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00004062783548435151
+                "_ga": 0.000040634163850493365
             },
             "exampleSites": [
                 "bmoinvestorline.com",
@@ -204,30 +204,34 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.5625
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.3125
+        },
+        {
+            "domain": "youtube.com",
+            "prevalence": 0.0625
         },
         {
             "domain": "decibelinsight.net",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "XHR": 8,
         "Document": 2,
+        "XHR": 8,
         "Ping": 2
     },
     "nameservers": [
         "asia1.akam.net",
-        "eur2.akam.net",
-        "ns1-200.akam.net",
-        "ns1-217.akam.net",
-        "asia3.akam.net",
-        "eur4.akam.net",
         "eur5.akam.net",
-        "eur6.akam.net"
+        "ns1-217.akam.net",
+        "eur6.akam.net",
+        "ns1-200.akam.net",
+        "eur4.akam.net",
+        "asia3.akam.net",
+        "eur2.akam.net"
     ]
 }

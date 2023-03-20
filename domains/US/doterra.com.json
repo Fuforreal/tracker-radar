@@ -59,7 +59,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "dc797672dd707498a210d127e76dfbbf8bedbb545e803457c8cb95527242e2cc"
+                "409564322c3c4e9fbc562a392cf0eec1697dbb0e4dffba4f48e8446a6113a62a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -177,7 +177,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "4f9b0cd3873a4f70772862e1274ea6f2cdc020211377a8bfda7eabbfb85b78df"
+                "5239686fe61a373f8f2b8a9399bd94fcc6f8e3c75362b214702482c7f9e63828"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -189,22 +189,26 @@
         },
         {
             "rule": "doterra\\.com\\/gs\\/webSdk\\/Api\\.aspx",
-            "cookies": 0,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "sdk.login"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.mimeTypes": 2
+                "Navigator.prototype.mimeTypes": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b9bd0834fc55f63d0d1442c56a6145ce639123914355b29d2e558f6792578950"
+                "879078f4970b9d4acdc1646225bdc0a70027032a34af6e186fbb5ef0d50c508f"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -215,39 +219,23 @@
             ]
         },
         {
-            "rule": "doterra\\.com\\/accounts\\.webSdkBootstrap",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "rule": "doterra\\.com\\/JS\\/gigya\\.oidc\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "sdk.login"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "913b21e4bbfa2faf9e587f600fd1219f1dd0f112ff3aae7a8f0969774c832c89"
+                "f5b31d6a5b82b61157ab3dd6fe9fe80fda5586b183fde45a2a934e35db42ffc9"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mydoterra.com",
-                "www.mydoterra.com"
-            ]
-        },
-        {
-            "rule": "doterra\\.com\\/JS\\/gigya\\.oidc\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk.login"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -271,6 +259,26 @@
                 "da298619609610ffc1ea0a37f6cb56bb48123da37a8d5fd211463eea72fb1c32"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydoterra.com",
+                "www.mydoterra.com"
+            ]
+        },
+        {
+            "rule": "doterra\\.com\\/accounts\\.webSdkBootstrap",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk.login"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -389,6 +397,28 @@
                 "mydoterra.com",
                 "www.mydoterra.com"
             ]
+        },
+        {
+            "rule": "doterra\\.com\\/js\\/gigya\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk.login"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5bb6f1dca10ea911605ea51763e1354bf09f02f0915d33ff2d0757f31face669"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydoterra.com",
+                "www.mydoterra.com"
+            ]
         }
     ],
     "categories": [],
@@ -397,11 +427,15 @@
     "topInitiators": [
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.8888888888888888
+            "prevalence": 0.7619047619047619
+        },
+        {
+            "domain": "canary.js",
+            "prevalence": 0.14285714285714285
         },
         {
             "domain": "first party",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.09523809523809523
         }
     ],
     "types": {
@@ -409,13 +443,13 @@
         "Script": 8,
         "Stylesheet": 4,
         "Fetch": 2,
-        "XHR": 2,
-        "Image": 10
+        "Image": 10,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-1470.awsdns-55.org",
         "ns-218.awsdns-27.com",
+        "ns-590.awsdns-09.net",
         "ns-1691.awsdns-19.co.uk",
-        "ns-590.awsdns-09.net"
+        "ns-1470.awsdns-55.org"
     ]
 }

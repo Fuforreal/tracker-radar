@@ -10,16 +10,18 @@
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "neatab\\.com\\/splittest\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
@@ -69,7 +71,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ab6de0c3c7ca5c51f6410af8a9135f21a79486c1f6c28eaf62506205658e4491"
+                "4eee36c0d864e8c24a9b89f84f22253393bb6687360acffd263cc2325ede6e26"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -86,7 +88,7 @@
     "topInitiators": [
         {
             "domain": "shopify.com",
-            "prevalence": 0.5789473684210527
+            "prevalence": 0.47368421052631576
         },
         {
             "domain": "first party",
@@ -94,6 +96,10 @@
         },
         {
             "domain": "yottaa.com",
+            "prevalence": 0.10526315789473684
+        },
+        {
+            "domain": "routeapp.io",
             "prevalence": 0.10526315789473684
         }
     ],
@@ -103,8 +109,8 @@
     },
     "nameservers": [
         "ns-589.awsdns-09.net",
-        "ns-458.awsdns-57.com",
         "ns-1039.awsdns-01.org",
+        "ns-458.awsdns-57.com",
         "ns-2041.awsdns-63.co.uk"
     ]
 }

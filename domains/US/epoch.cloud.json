@@ -4,42 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000745,
-    "sites": 11,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
-        "services",
         "subsapi",
+        "services",
         "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "epoch\\.cloud\\/\\/public-labs\\/src\\/push_notifications\\/push_notif\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "services"
-            ],
-            "apis": {
-                "window.localStorage": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "0523c13750f634735ff97f98cc6b2d0100bc0aab4d8f703ad3b6952731d7a545"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "theepochtimes.com",
-                "m-news.theepochtimes.com",
-                "m.theepochtimes.com",
-                "www.theepochtimes.com"
-            ]
-        },
         {
             "rule": "epoch\\.cloud\\/db\\/senddata",
             "cookies": 0,
@@ -77,6 +51,32 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theepochtimes.com",
+                "m-news.theepochtimes.com",
+                "m.theepochtimes.com",
+                "www.theepochtimes.com"
+            ]
+        },
+        {
+            "rule": "epoch\\.cloud\\/\\/public-labs\\/src\\/push_notifications\\/push_notif\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "window.localStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "0523c13750f634735ff97f98cc6b2d0100bc0aab4d8f703ad3b6952731d7a545"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -258,7 +258,7 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00001354261182811717
+                "_li_dcdm_c": 0.000013544721283497789
             },
             "exampleSites": [
                 "theepochtimes.com",
@@ -317,8 +317,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "4800cb3cdaed240af90e90c92e2448f7d358a8fc762ea31017a5a0aab4c7bce6"
@@ -328,8 +328,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "theepochtimes.com",
-                "mb.ntd.com",
-                "www.ntd.com",
                 "www.theepochtimes.com"
             ]
         }
@@ -340,24 +338,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.7647058823529411
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.17647058823529413
         },
         {
             "domain": "epochbase.com",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
-        "Script": 7,
         "XHR": 4,
         "Preflight": 4,
+        "Script": 7,
         "Image": 14,
         "Ping": 2,
-        "Font": 6
+        "Font": 4
     },
     "nameservers": [
         "darl.ns.cloudflare.com",

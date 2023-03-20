@@ -143,7 +143,7 @@
         {
             "rule": "univtec\\.com\\/js\\/new\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "snippet"
             ],
@@ -151,7 +151,9 @@
                 "window.localStorage": 5,
                 "Navigator.prototype.userAgent": 4,
                 "HTMLMediaElement.prototype.canPlayType": 4,
-                "Navigator.prototype.vendor": 4
+                "Navigator.prototype.vendor": 4,
+                "Element.prototype.getClientRects": 4,
+                "Event.prototype.timeStamp": 4
             },
             "sites": 5,
             "prevalence": 0.0000339,
@@ -307,12 +309,8 @@
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [
-                "9588c5b433945d4595b4a2bbf838384df64147c44c3e11537c5b764a4eea2509",
-                "5ea333774fd6826a8a3fe3f6af258ea9e02806a88ffde4de980671046996284e",
-                "34c42b81f231291109d1978e82af321ae518b8f62693d324cbe0ad08ba877a84"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -334,8 +332,12 @@
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "9588c5b433945d4595b4a2bbf838384df64147c44c3e11537c5b764a4eea2509",
+                "5ea333774fd6826a8a3fe3f6af258ea9e02806a88ffde4de980671046996284e",
+                "34c42b81f231291109d1978e82af321ae518b8f62693d324cbe0ad08ba877a84"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -396,9 +398,9 @@
         "Preflight": 4
     },
     "nameservers": [
+        "ns-1817.awsdns-35.co.uk",
         "ns-999.awsdns-60.net",
-        "ns-189.awsdns-23.com",
         "ns-1095.awsdns-08.org",
-        "ns-1817.awsdns-35.co.uk"
+        "ns-189.awsdns-23.com"
     ]
 }

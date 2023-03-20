@@ -12,7 +12,8 @@
     "subdomains": [
         "static",
         "hosted",
-        "cheesecake"
+        "cheesecake",
+        "locations"
     ],
     "cnames": [
         {
@@ -91,7 +92,7 @@
                 "hosted"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6
+                "Navigator.prototype.userAgent": 5
             },
             "sites": 7,
             "prevalence": 0.0000474,
@@ -121,10 +122,10 @@
                 "hosted"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.appVersion": 6,
-                "window.innerHeight": 6,
-                "window.innerWidth": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appVersion": 5,
+                "window.innerHeight": 5,
+                "window.innerWidth": 4,
                 "Navigator.prototype.language": 3,
                 "Document.cookie getter": 2
             },
@@ -156,9 +157,9 @@
                 "hosted"
             ],
             "apis": {
-                "CanvasRenderingContext2D.prototype.getImageData": 4,
-                "Navigator.prototype.userAgent": 3,
-                "window.devicePixelRatio": 3
+                "Navigator.prototype.userAgent": 5,
+                "window.devicePixelRatio": 4,
+                "CanvasRenderingContext2D.prototype.getImageData": 4
             },
             "sites": 5,
             "prevalence": 0.0000339,
@@ -789,15 +790,13 @@
         {
             "rule": "where2getit\\.com\\/w2gi\\/javascript\\/backbone\\/bb\\/lib\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static",
                 "cheesecake",
                 "hosted"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [
@@ -897,7 +896,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1bce38720a1ce2e83600f3625b4dfd6a29b1d64c0e726fca0bf66182c66b2169"
+                "1b78b633d978dfb220deb92373127d3736de5d1ea0bb261f3a65c07f807064fa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -927,6 +926,50 @@
             "exampleSites": [
                 "napoleon.com",
                 "www.napoleon.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/officedepot\\/images\\/heart-regular\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "locations"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1d3051a0ca5d67bff3b32c55c1692a7e8bc351bd76797e58af831d74ce4e2890"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "officedepot.com",
+                "www.officedepot.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/officedepot\\/images\\/heart-solid\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "locations"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "809d437e462383f530911b99ff8f71afd955145d3254e448e4f7dd6b43247f62"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "officedepot.com",
+                "www.officedepot.com"
             ]
         },
         {
@@ -1010,34 +1053,30 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8858447488584474
+            "prevalence": 0.8909090909090909
         },
         {
             "domain": "google.com",
-            "prevalence": 0.1050228310502283
+            "prevalence": 0.10454545454545454
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.0045662100456621
-        },
-        {
-            "domain": "glassboxcdn.com",
-            "prevalence": 0.0045662100456621
+            "prevalence": 0.004545454545454545
         }
     ],
     "types": {
         "Stylesheet": 22,
         "Script": 58,
-        "Image": 55,
+        "Image": 59,
         "XHR": 8,
         "Document": 4
     },
     "nameservers": [
-        "ns15.dnsmadeeasy.com",
-        "ns10.dnsmadeeasy.com",
-        "ns14.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
+        "ns13.dnsmadeeasy.com",
         "ns11.dnsmadeeasy.com",
-        "ns13.dnsmadeeasy.com"
+        "ns14.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com"
     ]
 }

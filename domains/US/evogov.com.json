@@ -42,6 +42,7 @@
                 "evocloud-prod1-static"
             ],
             "apis": {
+                "Event.prototype.timeStamp": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2
             },
@@ -284,11 +285,13 @@
         {
             "rule": "evogov\\.com\\/evo_layers\\/evo_ol\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "evocloud-prod1-static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -388,9 +391,9 @@
         "Stylesheet": 2
     },
     "nameservers": [
-        "ns-567.awsdns-06.net",
-        "ns-1157.awsdns-16.org",
         "ns-497.awsdns-62.com",
+        "ns-1157.awsdns-16.org",
+        "ns-567.awsdns-06.net",
         "ns-1845.awsdns-38.co.uk"
     ]
 }

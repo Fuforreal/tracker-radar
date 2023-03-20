@@ -333,13 +333,9 @@
         {
             "rule": "angelfireresor\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/search-by-algolia-instant-relevant-results\\/js\\/algoliasearch\\/algoliasearch\\.jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -360,7 +356,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -528,7 +524,8 @@
                 "window.innerHeight": 2,
                 "window.innerWidth": 2,
                 "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -579,6 +576,26 @@
                 "ef9c24e9283aeb9681eddde538642816aa7b981dae1fd839d4c61647929cae65"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "angelfireresort.com",
+                "www.angelfireresort.com"
+            ]
+        },
+        {
+            "rule": "angelfireresor\\.wpenginepowered\\.com\\/wp-content\\/uploads\\/2022\\/12\\/Winter\\.mov",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e56a1e95a1798f4c7fc4129927159a50b4f13260b51d633ddc5d9d12f1030e0d"
+            ],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -665,26 +682,6 @@
                 "angelfireresort.com",
                 "www.angelfireresort.com"
             ]
-        },
-        {
-            "rule": "angelfireresor\\.wpenginepowered\\.com\\/wp-content\\/uploads\\/2022\\/12\\/Winter\\.mov",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e56a1e95a1798f4c7fc4129927159a50b4f13260b51d633ddc5d9d12f1030e0d"
-            ],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "angelfireresort.com",
-                "www.angelfireresort.com"
-            ]
         }
     ],
     "categories": [],
@@ -700,8 +697,8 @@
         "Stylesheet": 18,
         "Script": 26,
         "Image": 18,
-        "Font": 2,
-        "Media": 2
+        "Media": 2,
+        "Font": 2
     },
     "nameservers": []
 }

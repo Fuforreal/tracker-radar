@@ -13,7 +13,6 @@
     "sites": 48,
     "subdomains": [
         "apim-gw-azu-nyc-prod",
-        "gf-api-apim-p-azwe",
         "davisgateway-apiman-prd",
         "apm-digitalgate-serverless-v1-prd-ol",
         "apm-publicapps-v1-pro-crd-hd",
@@ -37,10 +36,6 @@
             "resolved": "drinkaware-apim.azure-api.net"
         },
         {
-            "original": "api.grundfos.com",
-            "resolved": "gf-api-apim-p-azwe.azure-api.net"
-        },
-        {
             "original": "api.nyc.gov",
             "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
         },
@@ -60,6 +55,61 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [
+                "1cfa3fa6d2bc62b71a6665e68397c5e95ee030d0821fefb48a16c710c8995670",
+                "ece2502909921208b41343cab873887c5370fc30a0f2556e00785322453c428a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www.nyc.gov",
+                "www1.nyc.gov"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www.nyc.gov",
+                "www1.nyc.gov"
+            ]
+        },
+        {
             "rule": "azure-api\\.net\\/calendar\\/search",
             "cookies": 0.0000203,
             "fingerprinting": 0,
@@ -76,8 +126,8 @@
                 }
             ],
             "responseHashes": [
-                "2d6d9cc052c88b2286faf1c210c2f8c370dd49f054f181bdb644aa0492e60d8b",
-                "7124a4194f692555b76673a1dc85d9c5a082cf114caf38cfa8368ac07869f3b9"
+                "6c42e1f14632a485983aa6535e2628c641b71440b301349e4810a34a2e2d2a04",
+                "31664bd2293ee09ba8c8660dfd08882bb356e7f257286e500518816f4dda2526"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -115,88 +165,6 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim-gw-azu-nyc-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "api.nyc.gov",
-                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyc.gov",
-                "www.nyc.gov",
-                "www1.nyc.gov"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim-gw-azu-nyc-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "api.nyc.gov",
-                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
-                }
-            ],
-            "responseHashes": [
-                "8dc564355e96e889f937351020479e2f0962679ae795d5c4beafd4066b22e9d3",
-                "ca0ed2e2bea40f2439bafc14b9c4e2e1508a2d87326439c2d415af98b7e903cf"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyc.gov",
-                "www.nyc.gov",
-                "www1.nyc.gov"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/gpi\\/imaging\\/productgroup",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gf-api-apim-p-azwe"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.grundfos.com",
-                    "resolved": "gf-api-apim-p-azwe.azure-api.net"
-                }
-            ],
-            "responseHashes": [
-                "e7489680517f64347a18502154cb1721c73a2b95bb1ab4027c3c34c706714533"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grundfos.com",
-                "product-selection.grundfos.com"
-            ]
-        },
-        {
             "rule": "azure-api\\.net\\/api\\/digitalinterface\\/1\\.2\\/Account\\/GetTokenAnonym",
             "cookies": 0,
             "fingerprinting": 0,
@@ -213,7 +181,7 @@
                 }
             ],
             "responseHashes": [
-                "25a9946aa4986b6caeec7e1836bbd74cfe56bd92450ef7be4413a7ee75a164a4"
+                "15613bf3f7e9021f1a257b8e6d222c013854ced537fc30b7393d908baccf5338"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -290,7 +258,111 @@
                 }
             ],
             "responseHashes": [
-                "5e53625d2dba9f18665a5714f5845108b0ab349c1539c4b9891b9238f6c0663b"
+                "063dc2e3563317bc496203334a99c792551168ceb55db20a06eb7fc6f9b0950f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.de",
+                "service.vattenfall.de"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/api\\/digitalinterface\\/1\\.3\\/Inhalte\\/GetInhalt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "davisgateway-apiman-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "davis.vattenfall.de",
+                    "resolved": "davisgateway-apiman-prd.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.de",
+                "service.vattenfall.de"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/api\\/digitalinterface\\/1\\.3\\/Inhalte\\/GetInhalt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "davisgateway-apiman-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "davis.vattenfall.de",
+                    "resolved": "davisgateway-apiman-prd.azure-api.net"
+                }
+            ],
+            "responseHashes": [
+                "4009d5eeea237c3832e4fbba9ffa516042dab1ea545e42387a0e4b066d356019"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.de",
+                "service.vattenfall.de"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/api\\/digitalinterface\\/1\\.3\\/Dienstleister\\/GetDienstleisterInformation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "davisgateway-apiman-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "davis.vattenfall.de",
+                    "resolved": "davisgateway-apiman-prd.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.de",
+                "service.vattenfall.de"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/api\\/digitalinterface\\/1\\.3\\/Dienstleister\\/GetDienstleisterInformation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "davisgateway-apiman-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "davis.vattenfall.de",
+                    "resolved": "davisgateway-apiman-prd.azure-api.net"
+                }
+            ],
+            "responseHashes": [
+                "999b9d811cded4c3be0d57babc60fba622a85f438048906826260fdbb1405368"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -317,7 +389,7 @@
                 }
             ],
             "responseHashes": [
-                "8d3c806e0b67d850f8813d0ef62c3c6b8b6a0f2e40f3a86c682e7ef7c77ec86c"
+                "a873bd08945a987e67ea910df3b3e1b824a352037d85b088b047f87f6ee72992"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -351,7 +423,7 @@
         },
         {
             "rule": "azure-api\\.net\\/digital-gate\\/digitalGateApi\\/accountwithchannels",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "apm-publicapps-v1-pro-crd-hd"
@@ -361,7 +433,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9c301c80a71c79ddfaf2e9af3d4481cfe4f97b1da9837875b5ad9691b045ff0a"
+                "109068934f7ebd83cc34a513f8eb1ac88dc65f1f49a02f20eb7acc85f71c7dfa"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -424,10 +496,8 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -446,8 +516,10 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -466,10 +538,8 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -489,8 +559,10 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -616,7 +688,7 @@
                 }
             ],
             "responseHashes": [
-                "f31ae9cce76c21c515a5c00aefdd45d400d79b49c8ff4c33a6273726aa4de8cc"
+                "012a4b7ad7f93a788591837e7942247841ca0bd1179a98937ca53c54078de673"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -761,7 +833,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c3adea99d23d33ae857231b4dd9c369a5a03459ec9a762f643b1a95819216d2f"
+                "a24bac397ef547d38782814c2bd2525983d065cf842af795c000e63b7a884fb8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -783,7 +855,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "eeb64db6f25be06d8dcd8161676dfc1cccedab07e84fe3abd6b32158a5969996"
+                "c0145361e4d96a88807122b267269b04f7735e9dad1b2c312a3ecd8abd719948"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -827,7 +899,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "89ed5c52442f1fceea92abd11d50c47d7e00735421a6daf4559f13ee9148965f"
+                "d637bdfd4323c198b55aaec2af475f60b62236e575c78c5db67655e9883b6eaa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -849,7 +921,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f6ee2e24e7274f330b40d6ea13ae3a6dad5977fe6b65b4d3bdf4a39c8be73f55"
+                "66213128b82a4120e8e6dd925095bde6bd9ded9a7d4a3035a4729ac9617a29d6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -871,9 +943,29 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "78b8d4f53997b4a493e127b76ee46c195757dcb6f1632b861cfe57e46fa5d28b"
+                "8e6b653ab5cbb35c9ea5673e21ffb42aff27da7d39b14df18899a07cc22c36df"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kotipizza.fi",
+                "www.kotipizza.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/pricing\\/pricing\\/customer\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-kotipizza-ecom-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -904,26 +996,6 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/pricing\\/pricing\\/customer\\/cart",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim-kotipizza-ecom-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kotipizza.fi",
-                "www.kotipizza.fi"
-            ]
-        },
-        {
             "rule": "azure-api\\.net\\/prod-lynkco\\/gems\\/api\\/v1\\.0\\/Setting\\/site\\/country",
             "cookies": 0,
             "fingerprinting": 0,
@@ -934,10 +1006,8 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "75a6b562f64280187291f80aa7abf1213494a066fbb54282a9508fb5c4df530f"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -956,8 +1026,10 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "75a6b562f64280187291f80aa7abf1213494a066fbb54282a9508fb5c4df530f"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1007,7 +1079,7 @@
                 }
             ],
             "responseHashes": [
-                "60d52f48101611894136df88eaa42af40ae180da75753580413406defc49257e"
+                "4e12e097cab1d71218da535a7aa56be4a831f11f078bd0527533362465d1933a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1025,13 +1097,13 @@
                 "voiceintuitive"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8bcb2eacb0dc4d1ac0de70c04e378ca1ce0411ecaafe9122ac2461fc09b2d6bb"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1559,7 +1631,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d0eff977093ffadbb68000a2fb53b57d02420386122ac429b6caafd3d604f593"
+                "a13b235e844cca80c1dcf9f22b5d8876d75ae7c136df83179f89b9bc53191399"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1571,7 +1643,7 @@
         },
         {
             "rule": "azure-api\\.net\\/legacyidentityhelper\\/GetSRAContactInfomation",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [
                 "nraapimprod"
@@ -1580,7 +1652,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "8891851a362f22a2e9e3d8981ee5788913a3fec41f6989c59009df74c855eee1"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1605,10 +1679,8 @@
                     "resolved": "uiapim2b80e30deb7e.azure-api.net"
                 }
             ],
-            "responseHashes": [
-                "91e560ff0c93360ad272cdffba3bd6830aeb86dedcb5f3994592efc75ce68516"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1632,8 +1704,10 @@
                     "resolved": "uiapim2b80e30deb7e.azure-api.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "3fd23740a9ea810d8599f34aef1ed11e4fdc8ec5624fcc8c0c9b6096d589c1c2"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1673,29 +1747,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "eb3a7b9c1fcb4ed27122ee35fc43947a5cee1e6e33022fd8b996b30667a4182c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "usedcars.com",
-                "www.usedcars.com"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/vis\\/v3\\/prod\\/get-images",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apimgs-jamstack-prod-wus3-001"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c6a53141d40cd3d3d1b06ef9c9b580875f3cd3b0ea09cc2361299a89bc0ef574"
+                "9ea0195b278dd01c67abaf35a44d69579a5f64d543e43851c6ebe6269c3ac27b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1718,6 +1770,28 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usedcars.com",
+                "www.usedcars.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/vis\\/v3\\/prod\\/get-images",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apimgs-jamstack-prod-wus3-001"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "081d8dba5ad593a54c1a5e46846c616d837a775c2c51c6ff20fa715f4b976d00"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1742,7 +1816,7 @@
                 }
             ],
             "responseHashes": [
-                "1062dc47951cf36b92bf38ea5263fdbb5983b9eb73d708ee08149c7235fae9bd"
+                "1f6d3c2f59b3bc90a913c85a50f817ea155df82d2e977d1f6640ee00dcbe651a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1780,60 +1854,60 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000122,
+    "cookies": 0.000135,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.32857142857142857
+            "prevalence": 0.4161490683229814
         },
         {
             "domain": "trackjs.com",
-            "prevalence": 0.18571428571428572
+            "prevalence": 0.17391304347826086
         },
         {
             "domain": "msecnd.net",
-            "prevalence": 0.16428571428571428
-        },
-        {
-            "domain": "azure.com",
             "prevalence": 0.14285714285714285
         },
         {
-            "domain": "azureedge.net",
-            "prevalence": 0.05714285714285714
+            "domain": "azure.com",
+            "prevalence": 0.12422360248447205
         },
         {
-            "domain": "bazaarvoice.com",
-            "prevalence": 0.04285714285714286
+            "domain": "azureedge.net",
+            "prevalence": 0.07453416149068323
         },
         {
             "domain": "app-digitalgate-prd-ol.azurewebsites.net",
-            "prevalence": 0.02857142857142857
+            "prevalence": 0.024844720496894408
         },
         {
             "domain": "bigcommerce.com",
-            "prevalence": 0.014285714285714285
+            "prevalence": 0.012422360248447204
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.014285714285714285
+            "prevalence": 0.012422360248447204
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.014285714285714285
+            "prevalence": 0.012422360248447204
+        },
+        {
+            "domain": "discoveruni.gov.uk",
+            "prevalence": 0.006211180124223602
         }
     ],
     "types": {
-        "XHR": 51,
-        "Preflight": 41,
-        "Image": 48,
+        "XHR": 55,
+        "Preflight": 45,
         "Fetch": 12,
-        "Script": 2
+        "Script": 2,
+        "Image": 46
     },
     "nameservers": [
         "ns2-05.azure-dns.net",
-        "ns3-05.azure-dns.org",
+        "ns4-05.azure-dns.info",
         "ns1-05.azure-dns.com",
-        "ns4-05.azure-dns.info"
+        "ns3-05.azure-dns.org"
     ]
 }

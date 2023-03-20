@@ -34,14 +34,14 @@
                 "konradin"
             ],
             "apis": {
-                "Date.prototype.getTime": 12,
-                "Navigator.prototype.plugins": 11,
-                "Navigator.prototype.mimeTypes": 11,
-                "Screen.prototype.width": 11,
-                "Screen.prototype.height": 11,
-                "window.innerWidth": 11,
-                "window.innerHeight": 11,
-                "Document.cookie getter": 11
+                "Date.prototype.getTime": 10,
+                "Navigator.prototype.plugins": 9,
+                "Navigator.prototype.mimeTypes": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.height": 9,
+                "window.innerWidth": 9,
+                "window.innerHeight": 9,
+                "Document.cookie getter": 9
             },
             "sites": 12,
             "prevalence": 0.0000813,
@@ -68,6 +68,28 @@
             ]
         },
         {
+            "rule": "adspirit\\.de\\/adview\\.php",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aponet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pharmazeutische-zeitung.de",
+                "www.pharmazeutische-zeitung.de"
+            ]
+        },
+        {
             "rule": "adspirit\\.de\\/adresponsivescript\\.php",
             "cookies": 0.0000339,
             "fingerprinting": 0,
@@ -81,10 +103,10 @@
             "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "be46b9b1773df053a17afaa4449cf8603f0853cfd9c3ab4ff7e6de1edfccaabb",
-                "0b07688a93e29f25ed95f86508610f5e03fda10d02ec5f5804be005a4a45cdcb",
-                "687ec9e2ec296c890d3b7d95f87e0d3bd0794ec2e3bb74d90a5b1f3db9b48a91",
-                "b34bb663ef0e603ce2f5c2318271da7efc14d8490b4375ee26babcf486362082"
+                "d312664c4d797403c5dff6612f822025f134d073b99a54c7f96a818170b37f64",
+                "3c1424ce296e844ab91e4db216f256ea0ad71a7ed216d270dde09deecff3fb83",
+                "9330fbf9cea44dc235a47d20d090c6168f2f1cccb29f8010457a2d703389c73d",
+                "516f38963762870bd8447eb6909fdb269056f6a7806b369181f239289bc067a8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -100,7 +122,7 @@
         {
             "rule": "adspirit\\.de\\/adscript\\.php",
             "cookies": 0.0000677,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "aponet",
                 "szdm",
@@ -111,26 +133,31 @@
                 "optel",
                 "konradin"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
             "sites": 11,
             "prevalence": 0.0000745,
             "cnames": [],
             "responseHashes": [
-                "069a5fae0495fb639e493c5b862d8fb482b92cc94abfeaaf79aafddafa1b36f1",
-                "587b5c57f508ff629131a9fc2613cef0bc9e44b8a4fd5e1b800d7b3f37cfa5fb",
-                "19965c9183d4827b381a373c4b06b4537eaa0ed8ff866d17488e5ecdba0880e7",
-                "684e1b905665a057e6d8dce342a3b24642cfd919effd562d16128bb5804e2bdc",
-                "049ed4990568ab6c3a955a4c0f399718d96ff0014cefcf66451d57be4af1a105",
-                "bac0eb9a9c8765b59c2a83c8f26c40c0ccb7171f4f44fcfab5c65c431a949a13",
-                "b33d0dc11d855e0357cfe2194c79c88c7d25662edea257c0ce3af4c1fb4d53a7",
-                "91ad4019839062c667601244fa7b74d5d8c91ba2e7b65bc57fd7b0da25d72598",
-                "2c38dfcb277b13aba637c124242688b050ec61b98d387f6b7b96abc7b5adcd0a",
-                "8e78e0c5ad8b4e8a9c608bfc65e15ddddf8fb0f1ef16077a873237400805764b"
+                "83c28e18fc66b81e3f192bac987578c22a03e520c9b9179b06d79f18720167b6",
+                "7c3ad137cea4af43b9f608bf554ca67b696b6660c57f45c7e36b211d26619626",
+                "29d6239760512e43f1dffa8d307c35cbdc59a634a804b8c75863001604d6b000",
+                "7b451d40b4a87102ba3a36c463c9011e6ffdf69423afd4f50724b42b776858bf",
+                "9d6be98c84f21caac235732ed122bd9d4a67307b2cea2c12329d7135f7fdbb8d",
+                "1ec9b993fdd6f5a087ad682b4a6a4b7310221fe2880b2a042980fd0a0c47c3da",
+                "7d73fe9f4f972c30a7fd3fec7562e9660f0a972c640acd985ca3780e2d5cc7fe",
+                "eb2b637632461424f5cf7481c8b01f73044035ff3b9f7f9a06ffd2179dc2cf6d",
+                "e6fb00d1d1991bb0b6ae74b95e6fd73009624d1c1e500ff87380f48095ecdd35",
+                "4ce84c7e24e6a53b58ac536f81e754d2491c89d1a9d09a5998bb3430c77daea4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__cmpconsentx23857": 0.000006771305914058585
+                "__cmpconsentx23857": 0.0000067723606417488944
             },
             "exampleSites": [
                 "pharmazeutische-zeitung.de",
@@ -142,8 +169,8 @@
                 "www.paket.net",
                 "www.pharmazeutische-zeitung.de",
                 "www.sueddeutsche.de",
-                "www.wissen.de",
-                "www.wissenschaft.de"
+                "www.wissenschaft.de",
+                "www.wissen.de"
             ]
         },
         {
@@ -179,7 +206,7 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 13
+                "Date.prototype.getTime": 12
             },
             "sites": 13,
             "prevalence": 0.000088,
@@ -202,8 +229,8 @@
                 "www.paket.net",
                 "www.pharmazeutische-zeitung.de",
                 "www.sueddeutsche.de",
-                "www.wissen.de",
-                "www.wissenschaft.de"
+                "www.wissenschaft.de",
+                "www.wissen.de"
             ]
         },
         {
@@ -231,7 +258,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__cmpconsentx23857": 0.000006771305914058585
+                "__cmpconsentx23857": 0.0000067723606417488944
             },
             "exampleSites": [
                 "pharmazeutische-zeitung.de",
@@ -245,53 +272,8 @@
                 "www.paket.net",
                 "www.pharmazeutische-zeitung.de",
                 "www.sueddeutsche.de",
-                "www.wissen.de",
-                "www.wissenschaft.de"
-            ]
-        },
-        {
-            "rule": "adspirit\\.de\\/adview\\.php",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "aponet"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pharmazeutische-zeitung.de",
-                "ptaforum.pharmazeutische-zeitung.de",
-                "www.pharmazeutische-zeitung.de"
-            ]
-        },
-        {
-            "rule": "adspirit\\.de\\/banner\\/aponet\\/2071\\/2019-05-17\\/0_Transparent_1x1\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pharmazeutische-zeitung.de",
-                "www.pharmazeutische-zeitung.de"
+                "www.wissenschaft.de",
+                "www.wissen.de"
             ]
         },
         {
@@ -315,6 +297,28 @@
                 "zum.de",
                 "unterrichten.zum.de"
             ]
+        },
+        {
+            "rule": "adspirit\\.de\\/banner\\/aponet\\/2071\\/2019-05-17\\/0_Transparent_1x1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1cfaf533b9965b7d9cf11f372b0eecdc7839642d73db9971d7533b9ad4cbc54c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pharmazeutische-zeitung.de",
+                "www.pharmazeutische-zeitung.de"
+            ]
         }
     ],
     "categories": [],
@@ -323,24 +327,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.813953488372093
+            "prevalence": 0.8048780487804879
         },
         {
             "domain": "consentmanager.net",
-            "prevalence": 0.09302325581395349
+            "prevalence": 0.0975609756097561
         },
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.09302325581395349
+            "prevalence": 0.0975609756097561
         }
     ],
     "types": {
         "Script": 41,
-        "Image": 22,
+        "Image": 21,
         "Document": 2
     },
     "nameservers": [
-        "ns1.ns-serve.net",
-        "ns2.ns-serve.net"
+        "ns2.ns-serve.net",
+        "ns1.ns-serve.net"
     ]
 }

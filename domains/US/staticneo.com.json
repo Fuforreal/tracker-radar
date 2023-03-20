@@ -59,11 +59,17 @@
         {
             "rule": "staticneo\\.com\\/neoassets\\/assets\\/core_guest\\.1677796235\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.appVersion": 1,
+                "window.devicePixelRatio": 1,
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -125,7 +131,7 @@
         "Script": 4
     },
     "nameservers": [
-        "cody.ns.cloudflare.com",
-        "elle.ns.cloudflare.com"
+        "elle.ns.cloudflare.com",
+        "cody.ns.cloudflare.com"
     ]
 }

@@ -8,7 +8,8 @@
     "sites": 16,
     "subdomains": [
         "collecty.prod-eks",
-        "nps"
+        "nps",
+        "faye.prod-eks"
     ],
     "cnames": [
         {
@@ -174,10 +175,6 @@
                 {
                     "original": "ocular.pepper.pl",
                     "resolved": "collecty.prod-eks.pepper.com"
-                },
-                {
-                    "original": "ocular.promodescuentos.com",
-                    "resolved": "collecty.prod-eks.pepper.com"
                 }
             ],
             "responseHashes": [
@@ -188,8 +185,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chollometro.com",
-                "www.pepper.pl",
-                "www.promodescuentos.com"
+                "www.chollometro.com",
+                "www.pepper.pl"
             ]
         },
         {
@@ -213,6 +210,28 @@
                 "desidime.com",
                 "www.desidime.com"
             ]
+        },
+        {
+            "rule": "pepper\\.com\\/faye",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "faye.prod-eks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "7842ce4605782d623d901fc8663e88090436b65f4beab11b494b7b2ba4a52d90"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pepper.pl",
+                "www.pepper.pl"
+            ]
         }
     ],
     "categories": [],
@@ -228,7 +247,7 @@
         "Ping": 8,
         "XHR": 8,
         "Image": 3,
-        "Script": 2
+        "Script": 4
     },
     "nameservers": [
         "tara.ns.cloudflare.com",

@@ -25,7 +25,9 @@
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "0f674190f221319a0460cb4dc5472a9773baf4da1ec102343060e44027d6f38c"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -46,7 +48,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -63,8 +67,8 @@
                 "centrocdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -82,26 +86,36 @@
         },
         {
             "rule": "kiosk\\.tm\\/kixel",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
             "subdomains": [
                 "apigateway"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 2
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "aa7006cbc0a78583c7bf4371b49962f8760902de70e5a487627fe5e6aa551154",
-                "d27db74007ed26d79a2d019c04ece7ff00308e0e6f88a2b1ef9195ca7f0a061f"
+                "65cd1d6e2a26209e4e3867fcf3d65863a5e319696f1913b8829195a8d532155f",
+                "ca2070d21f20c87331ca1f3e8fb967850423b04ecb310dff78e65f15342b9f4e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "smartrfi_lead_source": {
+                    "ttl": null,
+                    "length": 160,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {
-                "_gcl_au": 0.000020313917742175756,
-                "_ga": 0.00006094175322652727,
-                "_gid": 0.000020313917742175756,
-                "smartrfi_prospect_id": 0.000020313917742175756
+                "_gcl_au": 0.000013544721283497789,
+                "_ga": 0.000040634163850493365,
+                "_gid": 0.000013544721283497789,
+                "smartrfi_prospect_id": 0.000013544721283497789
             },
             "exampleSites": [
                 "stanford.edu",
@@ -112,7 +126,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
@@ -138,8 +152,8 @@
     },
     "nameservers": [
         "ns-537.awsdns-03.net",
+        "ns-1849.awsdns-39.co.uk",
         "ns-348.awsdns-43.com",
-        "ns-1517.awsdns-61.org",
-        "ns-1849.awsdns-39.co.uk"
+        "ns-1517.awsdns-61.org"
     ]
 }

@@ -109,33 +109,6 @@
             ]
         },
         {
-            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/news\\/topic\\/article",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.nasdaq.com",
-                    "resolved": "api.nasdaq.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "ffba967aedb5279642b2eedb4e65c21f972ebd615aeac29c2537ccc5f95ca6ce"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nasdaq.com",
-                "www.nasdaq.com"
-            ]
-        },
-        {
             "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/quote\\/basic",
             "cookies": 0.0000135,
             "fingerprinting": 0,
@@ -152,7 +125,7 @@
                 }
             ],
             "responseHashes": [
-                "819ff8c2cd9978352bd965052a2ddd62030dacebd182571c0ea33321ff87c55f"
+                "593062f2b333053e35077350d5cd5f683146220c83e72f1d07e306014c4a9803"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -179,7 +152,7 @@
                 }
             ],
             "responseHashes": [
-                "7b9f16c9ea5be11bdd50c9df6c39e5e22d88c493d66b5244b9d29ea0e96640f5"
+                "240af7fc86350367868226d55fc0a8ccd41ad06b0f2ea97e25ba6f795547bf7b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -190,7 +163,7 @@
             ]
         },
         {
-            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/quote\\/indices",
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/news\\/topic\\/article",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
@@ -206,9 +179,9 @@
                 }
             ],
             "responseHashes": [
-                "cf76d017ebbc491a145d0ec03cd61db99b7d603d2cb801caff5cfba43cedf2a5"
+                "a599d79a6583f0eb9eb34ad88e4a657e1e6108720c5c6363e5f2f67b3d08964b"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -233,13 +206,40 @@
                 }
             ],
             "responseHashes": [
-                "8706633bd6942bffd95ef85c9ae747587116f910d542207d9c1ec10e53b79d30"
+                "17c07e51e1b34c65f9b367ac46b3f5d4aaf290644c92b74d93b49553da4212ef"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00001354261182811717
+                "lotame_domain_check": 0.000013544721283497789
             },
+            "exampleSites": [
+                "nasdaq.com",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/quote\\/indices",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "api.nasdaq.com",
+                    "resolved": "api.nasdaq.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4c07d36f7f9db0d992649a94ca26e322b7f414a538fd4975ac9fdf01bae46d57"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nasdaq.com",
                 "www.nasdaq.com"
@@ -248,7 +248,7 @@
         {
             "rule": "nasdaq\\.com\\.edgekey\\.net\\/index\\.php\\/form\\/XDFrame",
             "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "nd"
             ],
@@ -261,7 +261,9 @@
                     "resolved": "nd.nasdaq.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "d1f53473609a787e5b5d32e2c6e62d3a7a29b63062a80d80de07878cc16fe107"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -276,12 +278,12 @@
     "cookies": 0.0000135,
     "topInitiators": [
         {
-            "domain": "go-mpulse.net",
-            "prevalence": 0.75
+            "domain": "doubleclick.net",
+            "prevalence": 0.5
         },
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.25
+            "domain": "go-mpulse.net",
+            "prevalence": 0.5
         }
     ],
     "types": {

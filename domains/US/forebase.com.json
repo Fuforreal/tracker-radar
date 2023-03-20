@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
-        "mkt"
+        "mkt",
+        "accsrv.2.aws",
+        "accsrv.0.aws"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,11 +22,11 @@
                 "mkt"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e9fc2c4f17f7b9aefe3ca01aa76cdeaad48c94f6c6ad328aa7a2249823fc767c"
@@ -34,7 +36,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tuttojuve.com",
-                "m.tuttojuve.com"
+                "m.tuttojuve.com",
+                "www.tuttomercatoweb.com"
+            ]
+        },
+        {
+            "rule": "forebase\\.com\\/receiver\\/postreportstr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accsrv.2.aws",
+                "accsrv.0.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tuttojuve.com",
+                "m.tuttojuve.com",
+                "www.tuttomercatoweb.com"
             ]
         }
     ],
@@ -43,16 +70,25 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "forebase.ch",
+            "prevalence": 0.625
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.25
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 3,
+        "XHR": 3
     },
     "nameservers": [
-        "ns2.hostpoint.ch",
+        "ns3.hostpoint.ch",
         "ns.hostpoint.ch",
-        "ns3.hostpoint.ch"
+        "ns2.hostpoint.ch"
     ]
 }

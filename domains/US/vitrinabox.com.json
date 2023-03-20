@@ -21,7 +21,7 @@
                 "cdnstorage000"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -62,11 +62,13 @@
         {
             "rule": "vitrinabox\\.com\\/script\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "checkout"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],

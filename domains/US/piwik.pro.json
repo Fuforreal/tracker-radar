@@ -7,9 +7,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00166,
-    "sites": 245,
+    "prevalence": 0.00167,
+    "sites": 247,
     "subdomains": [
+        "airbus.containers",
         "daw.containers",
         "adac.containers",
         "infiniti-research",
@@ -25,7 +26,6 @@
         "mgb.containers",
         "bmcanalytics",
         "mojepanstwo.containers",
-        "ultrarunning.containers",
         "vng",
         "auchan",
         "amsterdam",
@@ -64,7 +64,6 @@
         "proof3.containers",
         "kadasterbv",
         "sportradar.containers",
-        "luzern.containers",
         "magix.containers",
         "login506",
         "musicweb-international.containers",
@@ -83,6 +82,7 @@
         "ugent.containers",
         "vero",
         "wienenergie.containers",
+        "airbus",
         "daw",
         "adac",
         "capio",
@@ -92,7 +92,6 @@
         "uwhealth",
         "mgb",
         "mojepanstwo",
-        "ultrarunning",
         "bona",
         "booli",
         "arkema",
@@ -112,7 +111,6 @@
         "hss",
         "proof3",
         "sportradar",
-        "luzern",
         "magix",
         "musicweb-international",
         "sanomapro",
@@ -193,10 +191,70 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "piwik\\.pro\\/2eb3309a-f4d9-4d85-b39d-1774fb7af89d\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
+            "subdomains": [
+                "airbus.containers"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "353cc54a52dd52b78d20fce48cbccbc38a8fe539400c888ff0a9bb5e2c3bf698"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stg_traffic_source_priority": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_last_interaction": {
+                    "ttl": 31536003,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_returning_visitor": {
+                    "ttl": 31536003,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "_pk_id.2eb3309a-f4d9-4d85-b39d-1774fb7af89d.9928": {
+                    "ttl": 33955203,
+                    "length": 52,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "_pk_ses.2eb3309a-f4d9-4d85-b39d-1774fb7af89d.9928": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airbus.com",
+                "aircraft.airbus.com"
+            ]
+        },
+        {
             "rule": "piwik\\.pro\\/ppms\\.js",
             "cookies": 0.0000677,
             "fingerprinting": 2,
             "subdomains": [
+                "airbus.containers",
                 "daw.containers",
                 "adac.containers",
                 "infiniti-research",
@@ -212,7 +270,6 @@
                 "mgb.containers",
                 "bmcanalytics",
                 "mojepanstwo.containers",
-                "ultrarunning.containers",
                 "vng",
                 "auchan",
                 "amsterdam",
@@ -251,7 +308,6 @@
                 "proof3.containers",
                 "kadasterbv",
                 "sportradar.containers",
-                "luzern.containers",
                 "magix.containers",
                 "login506",
                 "musicweb-international.containers",
@@ -272,24 +328,26 @@
                 "wienenergie.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 94,
-                "Navigator.prototype.mimeTypes": 94,
-                "Navigator.prototype.javaEnabled": 94,
-                "Navigator.prototype.cookieEnabled": 94,
-                "Screen.prototype.width": 94,
-                "Screen.prototype.height": 94,
-                "Date.prototype.getTime": 95,
-                "window.name": 93,
-                "Navigator.prototype.platform": 84,
-                "PerformanceTiming.prototype.navigationStart": 47,
+                "Navigator.prototype.userAgent": 88,
+                "Navigator.prototype.mimeTypes": 88,
+                "Navigator.prototype.javaEnabled": 80,
+                "Navigator.prototype.cookieEnabled": 88,
+                "Screen.prototype.width": 88,
+                "Screen.prototype.height": 88,
+                "Date.prototype.getTime": 90,
+                "Navigator.prototype.platform": 79,
+                "window.name": 88,
+                "PerformanceTiming.prototype.navigationStart": 46,
                 "Document.cookie getter": 10,
                 "Navigator.prototype.appVersion": 23,
+                "Event.prototype.timeStamp": 1,
                 "Document.cookie setter": 9,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.localStorage": 1
             },
-            "sites": 100,
-            "prevalence": 0.000677,
+            "sites": 101,
+            "prevalence": 0.000684,
             "cnames": [
                 {
                     "original": "pp.erotik.com",
@@ -319,137 +377,137 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_pk_id.23b2288b-5392-43bf-a10f-64f985c40dde.957f": {
-                    "ttl": 33955203,
-                    "length": 52,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
-                "_pk_ses.23b2288b-5392-43bf-a10f-64f985c40dde.957f": {
-                    "ttl": 1803,
-                    "length": 1,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                },
                 "_pk_id.40271453-d501-414f-8c05-ccdff13df350.7a06": {
                     "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.40271453-d501-414f-8c05-ccdff13df350.7a06": {
                     "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.662c0c39-7c5d-4564-bf9d-23fe076d0d30.e9c1": {
-                    "ttl": 33955204,
+                    "ttl": 33955216,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.662c0c39-7c5d-4564-bf9d-23fe076d0d30.e9c1": {
-                    "ttl": 1804,
+                    "ttl": 1816,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.de74dce7-5fa7-4557-b225-1c5a9db15494.c644": {
-                    "ttl": 33955201,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.de74dce7-5fa7-4557-b225-1c5a9db15494.c644": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.9c274648-bc4a-4a24-99e2-9a6731dcd485.5aae": {
                     "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.9c274648-bc4a-4a24-99e2-9a6731dcd485.5aae": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.8812c7ea-7d54-416c-a686-c0e49ec3af76.e2df": {
-                    "ttl": 33955207,
+                    "ttl": 33955214,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.8812c7ea-7d54-416c-a686-c0e49ec3af76.e2df": {
-                    "ttl": 1807,
+                    "ttl": 1814,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.75F238FA-3C1D-4694-83E2-C278C421DEB5.8f86": {
-                    "ttl": 33955201,
+                    "ttl": 33955200,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.75F238FA-3C1D-4694-83E2-C278C421DEB5.8f86": {
-                    "ttl": 1801,
+                    "ttl": 1800,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "_pk_id.8bda5495-3d5b-40c3-a4ac-3636b5895400.d8ba": {
+                    "ttl": 33955207,
+                    "length": 52,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "_pk_ses.8bda5495-3d5b-40c3-a4ac-3636b5895400.d8ba": {
+                    "ttl": 1807,
+                    "length": 1,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.d22844d0-0279-459a-a630-78dcc2582348.e8f9": {
                     "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.d22844d0-0279-459a-a630-78dcc2582348.e8f9": {
                     "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.3aa3075a-8860-4f65-9490-80a58721570e.b28c": {
-                    "ttl": 33955206,
+                    "ttl": 33955205,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.3aa3075a-8860-4f65-9490-80a58721570e.b28c": {
-                    "ttl": 1806,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "icahn.mssm.edu",
-                "www.deutschland.de",
-                "www.triodos.nl",
-                "vng.nl",
-                "www.fastweb.it",
-                "cordis.europa.eu",
-                "home.mijngezondheid.net",
-                "www.sanomapro.fi",
+                "www.massgeneralbrigham.org",
                 "www.alcampo.es",
-                "www.gedimat.fr",
-                "www.eurogamer.net",
-                "www.kadaster.nl",
-                "www.teladoc.com",
-                "ultrarunning.com",
-                "www.caparol.de",
-                "www.hug.ch",
-                "www.nyp.org",
-                "www.muenzeoesterreich.at",
-                "www.guitar-pro.com",
-                "www.tt.com"
+                "www.airbus.com",
+                "www.svb.nl",
+                "www.magix.com",
+                "www.musicweb-international.com",
+                "www.edreams.es",
+                "www.annefrank.org",
+                "www.boell.de",
+                "www.denhaag.nl",
+                "www.ugent.be",
+                "www.e-control.at",
+                "practicalneurology.com",
+                "www.sanomapro.fi",
+                "www.uwhealth.org",
+                "cordis.europa.eu",
+                "www.eurogamer.pl",
+                "www.chatbot.com",
+                "www.triodos.nl",
+                "www.credit-agricole.pl"
             ]
         },
         {
@@ -457,6 +515,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "airbus",
                 "daw",
                 "adac",
                 "capio",
@@ -466,7 +525,6 @@
                 "uwhealth",
                 "mgb",
                 "mojepanstwo",
-                "ultrarunning",
                 "vng",
                 "auchan",
                 "amsterdam",
@@ -500,19 +558,19 @@
                 "proof3",
                 "kadasterbv",
                 "sportradar",
-                "luzern",
                 "magix",
                 "musicweb-international",
                 "rvo",
                 "sanomapro",
+                "terveystalo",
                 "testo",
                 "ugent",
                 "vero",
                 "viewsonic"
             ],
             "apis": {},
-            "sites": 75,
-            "prevalence": 0.000508,
+            "sites": 77,
+            "prevalence": 0.000521,
             "cnames": [
                 {
                     "original": "dap.amsterdam.nl",
@@ -530,26 +588,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.hella.com",
-                "www.gqmagazine.fr",
-                "www.vanityfair.fr",
-                "www.geogebra.org",
-                "www.rockpapershotgun.com",
+                "www.musicweb-international.com",
+                "autovermietung.adac.de",
                 "www.annefrank.org",
-                "www.vero.fi",
-                "www.guitar-pro.com",
-                "www.hss.edu",
-                "www.ugent.be",
+                "capio.se",
                 "www.vogue.fr",
-                "www.massgeneralbrigham.org",
-                "www.booli.se",
+                "www.e-control.at",
+                "www.mountsinai.org",
+                "www.rockpapershotgun.com",
+                "www.airbus.com",
+                "www.hella.com",
+                "www.eurogamer.es",
+                "www.gqmagazine.fr",
+                "www.emeraldcitycomiccon.com",
+                "www.drei.at",
+                "www.bona.com",
                 "www.edreams.es",
-                "vng.nl",
-                "www.fitchratings.com",
-                "www.gmf.fr",
-                "www.e-boks.com",
-                "icahn.mssm.edu",
-                "www.vg247.com"
+                "www.deutschland.de",
+                "www.testo.com",
+                "www.viewsonic.com",
+                "www.justkampers.com"
             ]
         },
         {
@@ -561,61 +619,61 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
-                "window.localStorage": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "145351bb0948628e93ec3988cd17d3747e5ffc04d908ca4ea89f6e8c20912411"
+                "b850087542bb28a66dbd7f7d0bd901a49ca43fa6ace2cfa627dcd91a18a004ad"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_pk_id.d67bd56b-16c3-4319-8904-b4548877bb6d.857c": {
-                    "ttl": 33955204,
-                    "length": 52,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "_pk_id.75c5d606-fe17-41dc-a3af-afba5c990d7b.857c": {
-                    "ttl": 33955204,
-                    "length": 52,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "_pk_ses.d67bd56b-16c3-4319-8904-b4548877bb6d.857c": {
-                    "ttl": 1804,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "_pk_ses.75c5d606-fe17-41dc-a3af-afba5c990d7b.857c": {
-                    "ttl": 1804,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
+                },
+                "_pk_id.d67bd56b-16c3-4319-8904-b4548877bb6d.857c": {
+                    "ttl": 33955206,
+                    "length": 52,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "_pk_id.75c5d606-fe17-41dc-a3af-afba5c990d7b.857c": {
+                    "ttl": 33955206,
+                    "length": 52,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "_pk_ses.d67bd56b-16c3-4319-8904-b4548877bb6d.857c": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "_pk_ses.75c5d606-fe17-41dc-a3af-afba5c990d7b.857c": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -644,38 +702,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ac73bb0b0c1c0bcb7358e0f1d6dacd7a2ba04ed9d2af4189fcd9549389050e85"
+                "2555249f94eeeba62c40f3c6ff3bdc34f271da4c74be554f78d9c5a5a1cb9ec5"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.4fc2a306-e9fc-4a7c-aedc-9b15ccc7cbea.e509": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.4fc2a306-e9fc-4a7c-aedc-9b15ccc7cbea.e509": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -779,13 +837,12 @@
                 "smartetailing",
                 "svb",
                 "teladoc-private",
-                "terveystalo",
                 "triodos",
                 "moserholding"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00019,
+            "sites": 27,
+            "prevalence": 0.000183,
             "cnames": [
                 {
                     "original": "pp.erotik.com",
@@ -806,29 +863,29 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00001354261182811717
+                "IR_gbd": 0.000013544721283497789
             },
             "exampleSites": [
-                "lokaleregelgeving.overheid.nl",
-                "www.hug.ch",
-                "www.shawbrook.co.uk",
-                "www.svb.nl",
                 "doctors.nyp.org",
-                "www.teladoc.com",
-                "www.chatbot.com",
-                "op.europa.eu",
-                "www.sozialversicherung.at",
+                "www.muenzeoesterreich.at",
                 "www.tt.com",
+                "eur-lex.europa.eu",
+                "www.summitbicycles.com",
+                "wetten.overheid.nl",
+                "www.hug.ch",
+                "www.credit-agricole.pl",
+                "cms.law",
+                "bizvibe.com",
+                "www.livechat.com",
+                "lokaleregelgeving.overheid.nl",
+                "blog.bizvibe.com",
                 "www.bowflex.com",
                 "cordis.europa.eu",
-                "blog.bizvibe.com",
-                "wetten.overheid.nl",
-                "erotik.com",
+                "www.teladoc.com",
+                "www.nyp.org",
+                "www.svb.nl",
                 "practicalneurology.com",
-                "www.schwinnfitness.com",
-                "www.credit-agricole.pl",
-                "www.livechat.com",
-                "bizvibe.com"
+                "www.schwinnfitness.com"
             ]
         },
         {
@@ -876,26 +933,26 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d513dd3f239eb28b8949413b9fa873acff14259477462edd2c74766e4fd599fc"
+                "242d53235924780632bcecb656cee565d5be459f47e07d548085a783656dd7c4"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ppms_privacy_f0483949-d65d-4b24-a9ff-82b5105d06fe": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 222,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.f0483949-d65d-4b24-a9ff-82b5105d06fe.cce6": {
-                    "ttl": 1804,
+                    "ttl": 1805,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.f0483949-d65d-4b24-a9ff-82b5105d06fe.cce6": {
-                    "ttl": 1804,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -955,14 +1012,14 @@
                 "nyp.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
+                "Document.cookie setter": 3,
                 "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
                 "Document.cookie getter": 3,
                 "Navigator.prototype.languages": 3,
-                "Navigator.prototype.doNotTrack": 3,
+                "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.appVersion": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -975,25 +1032,25 @@
                 "stg_last_interaction": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
-                    "uniqueness": 0.6666666666666666
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 1
                 },
                 "ppms_privacy_283ac5bc-49a7-4696-ac18-648eb17a43f4": {
                     "ttl": 31536001,
                     "length": 720,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_id.283ac5bc-49a7-4696-ac18-648eb17a43f4.473a": {
                     "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_ses.283ac5bc-49a7-4696-ac18-648eb17a43f4.473a": {
                     "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 }
             },
@@ -1058,18 +1115,17 @@
                 "viewsonic"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.mimeTypes": 4,
-                "Navigator.prototype.javaEnabled": 4,
-                "Navigator.prototype.cookieEnabled": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4,
-                "Date.prototype.getTime": 4,
-                "Navigator.prototype.platform": 3,
-                "window.name": 4,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.platform": 2,
+                "window.name": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Document.cookie getter": 1,
                 "Document.cookie setter": 1
             },
             "sites": 5,
@@ -1081,15 +1137,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.34ebd370-765d-4dd6-b560-27043c322556.4133": {
-                    "ttl": 33955206,
+                    "ttl": 33955208,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.34ebd370-765d-4dd6-b560-27043c322556.4133": {
-                    "ttl": 1806,
+                    "ttl": 1808,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -1123,26 +1179,26 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "cc2930d5acc9132d16c4ba920a697f3214bb13cccf7d2afc34be4c681cfeee34"
+                "3d1b34798e1f5484f5d53119f94e4042cdfd23a2b92de4a921bb02c9555ac71e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ppms_privacy_0b5594a8-b9c8-4cd6-aa25-5c578dcf91df": {
-                    "ttl": 31536007,
+                    "ttl": 31536006,
                     "length": 224,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.0b5594a8-b9c8-4cd6-aa25-5c578dcf91df.5596": {
-                    "ttl": 1808,
+                    "ttl": 1806,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.0b5594a8-b9c8-4cd6-aa25-5c578dcf91df.5596": {
-                    "ttl": 1808,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1218,21 +1274,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -1265,9 +1321,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1301,33 +1357,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.6903e509-15e0-42b4-981a-47ca92ae52d3.fdd1": {
-                    "ttl": 33955201,
+                    "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.6903e509-15e0-42b4-981a-47ca92ae52d3.fdd1": {
-                    "ttl": 1801,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1355,50 +1411,50 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "6327ada474a75702d71b152da1e53af23c5ffd34e73ab5245f026771140db6cc"
+                "dbaf5a52d5f8d94d9296632e60c70a6af2e103d643ddd00d787dee0a539c9663"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1807,
+                    "ttl": 1808,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536007,
+                    "ttl": 31536008,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536007,
+                    "ttl": 31536008,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_id.a27d2fb5-8255-4f15-94c7-cd1f4ffb0436.730e": {
-                    "ttl": 33955204,
+                    "ttl": 33955205,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.a27d2fb5-8255-4f15-94c7-cd1f4ffb0436.730e": {
-                    "ttl": 1804,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.a27d2fb5-8255-4f15-94c7-cd1f4ffb0436.f566": {
-                    "ttl": 33955206,
+                    "ttl": 33955212,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.a27d2fb5-8255-4f15-94c7-cd1f4ffb0436.f566": {
-                    "ttl": 1806,
+                    "ttl": 1812,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -1417,13 +1473,13 @@
                 "koop"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.appVersion": 2
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.appVersion": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1433,46 +1489,46 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_returning_visitor": {
-                    "ttl": 31536002,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "stg_traffic_source_priority": {
-                    "ttl": 1802,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "stg_last_interaction": {
-                    "ttl": 31536002,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
                 "_pk_id.074a5050-2272-4f8a-8a07-a14db33f270b.340a": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.3563c399-95ab-4851-b79b-4d4d85b6df10.340a": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.074a5050-2272-4f8a-8a07-a14db33f270b.340a": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_ses.3563c399-95ab-4851-b79b-4d4d85b6df10.340a": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_last_interaction": {
+                    "ttl": 31536001,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_returning_visitor": {
+                    "ttl": 31536001,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_traffic_source_priority": {
+                    "ttl": 1801,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1501,99 +1557,98 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "4050bdd1c6098b567e0ab5142b284f8e08724b3b6ecc3d09e8d9cbe70f853758",
-                "db849281ffeee467197cc277e51ccb84dde4bcf46b5fc8bc7162bf2bc84bd659"
+                "8180d4a25a6a14748aecb5304020072e2cf8186b75d02f0d25ab3adf84cf73d8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1810,
+                    "ttl": 1809,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536010,
+                    "ttl": 31536009,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536010,
+                    "ttl": 31536009,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_id.75c5d606-fe17-41dc-a3af-afba5c990d7b.857c": {
                     "ttl": 33955211,
                     "length": 52,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_id.818691ca-f861-4a08-b487-e5f75a0150bd.857c": {
                     "ttl": 33955211,
                     "length": 52,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_ses.75c5d606-fe17-41dc-a3af-afba5c990d7b.857c": {
                     "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "_pk_ses.818691ca-f861-4a08-b487-e5f75a0150bd.857c": {
                     "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "_pk_id.5288592b-b371-41ee-bfdb-ddc624ea5bce.857c": {
-                    "ttl": 33955212,
+                    "ttl": 33955211,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.d67bd56b-16c3-4319-8904-b4548877bb6d.857c": {
-                    "ttl": 33955212,
+                    "ttl": 33955211,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.7614fbb0-378b-43ea-887c-5a5031a91d48.857c": {
-                    "ttl": 33955212,
+                    "ttl": 33955211,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.a44fab52-4cc9-4af7-9a52-b360d7e10ca5.857c": {
-                    "ttl": 33955212,
+                    "ttl": 33955211,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.5288592b-b371-41ee-bfdb-ddc624ea5bce.857c": {
-                    "ttl": 1812,
+                    "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.d67bd56b-16c3-4319-8904-b4548877bb6d.857c": {
-                    "ttl": 1812,
+                    "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.7614fbb0-378b-43ea-887c-5a5031a91d48.857c": {
-                    "ttl": 1812,
+                    "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.a44fab52-4cc9-4af7-9a52-b360d7e10ca5.857c": {
-                    "ttl": 1812,
+                    "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -1612,45 +1667,46 @@
                 "opanalytics.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.languages": 2,
-                "Navigator.prototype.doNotTrack": 1,
+                "Event.prototype.timeStamp": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.doNotTrack": 1,
                 "Navigator.prototype.appVersion": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f7b5829aaecf56ec34259974dbcf45bdb5281ce464c00dd20895c660439e88ad"
+                "38350b0fda27b88051a7219d12e174a7ab7407385ef20c7e3a64ec41ac8d4791"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_traffic_source_priority": {
-                    "ttl": 1812,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
                 "ppms_privacy_71d4e5e7-e988-4cad-9c83-9fe98d5c7cbb": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 214,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
+                "stg_traffic_source_priority": {
+                    "ttl": 1818,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
                 "_pk_id.71d4e5e7-e988-4cad-9c83-9fe98d5c7cbb.17f6": {
-                    "ttl": 1812,
+                    "ttl": 1814,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.71d4e5e7-e988-4cad-9c83-9fe98d5c7cbb.17f6": {
-                    "ttl": 1812,
+                    "ttl": 1814,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1710,12 +1766,12 @@
                 "uwhealth.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 3,
                 "Document.cookie getter": 3,
                 "Document.cookie setter": 3,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.doNotTrack": 3
+                "Navigator.prototype.doNotTrack": 3,
+                "Date.prototype.getTime": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -1726,45 +1782,45 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_id.e5502698-db7c-42c8-ba51-b42434a589c6.1ad9": {
-                    "ttl": 33955201,
+                    "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.e5502698-db7c-42c8-ba51-b42434a589c6.1ad9": {
-                    "ttl": 1801,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.e5502698-db7c-42c8-ba51-b42434a589c6.a409": {
-                    "ttl": 33955201,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.e5502698-db7c-42c8-ba51-b42434a589c6.a409": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -1783,7 +1839,7 @@
                 "mgb.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 3,
                 "Document.cookie getter": 3,
                 "Document.cookie setter": 3,
@@ -1793,38 +1849,38 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "271656f6f1ced8c2b9ec7c42bde286718cdfd103b989f8b374f6f7dd2c1c697d"
+                "d2bd6cfe187ad2bbd7965ab903a18dce357fb8a1cab0adfae3c265e4c23648dd"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
                     "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "stg_last_interaction": {
                     "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_id.eb15999a-801a-420b-83fe-a6ec50f8d268.12c0": {
                     "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "_pk_ses.eb15999a-801a-420b-83fe-a6ec50f8d268.12c0": {
                     "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 }
             },
@@ -1893,10 +1949,10 @@
                 "koop"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.doNotTrack": 2,
                 "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2
             },
@@ -1909,45 +1965,45 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536005,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1805,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536005,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.7ce2a4e8-d9e0-42ea-a88f-7526a88ab44f.340a": {
-                    "ttl": 33955204,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.3563c399-95ab-4851-b79b-4d4d85b6df10.340a": {
-                    "ttl": 33955204,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.7ce2a4e8-d9e0-42ea-a88f-7526a88ab44f.340a": {
-                    "ttl": 1804,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_ses.3563c399-95ab-4851-b79b-4d4d85b6df10.340a": {
-                    "ttl": 1804,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1987,6 +2043,65 @@
             ]
         },
         {
+            "rule": "piwik\\.pro\\/6e94a634-7809-40d1-abf3-93c937d98aa3\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
+            "subdomains": [
+                "airbus.containers"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "145f5388f5488439aedc4b184cd8d2188efd1d5fb57117df8793728dd8500404"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stg_traffic_source_priority": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_last_interaction": {
+                    "ttl": 31536003,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_returning_visitor": {
+                    "ttl": 31536003,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "_pk_id.6e94a634-7809-40d1-abf3-93c937d98aa3.5c77": {
+                    "ttl": 33955203,
+                    "length": 52,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "_pk_ses.6e94a634-7809-40d1-abf3-93c937d98aa3.5c77": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airbus.com",
+                "www.airbus.com"
+            ]
+        },
+        {
             "rule": "piwik\\.pro\\/containers\\/f558164e-e388-49e0-864e-5f172552789c\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 1,
@@ -2003,7 +2118,7 @@
                 }
             ],
             "responseHashes": [
-                "efbdf131e9bf19349954406b834b4a5e6088dcda04d752364517059f1cdfa2b3"
+                "d40efcb3fcf590310c5a4ad27116aa1a74aa5aa96f225999178115e55bc2030e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2038,7 +2153,7 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1800,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2074,31 +2189,31 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "_pk_id.1e3c71bf-05a3-454c-ba34-0a71cd4ba50e.452b": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.1e3c71bf-05a3-454c-ba34-0a71cd4ba50e.452b": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2121,7 +2236,7 @@
                 "Document.cookie getter": 2,
                 "Navigator.prototype.languages": 2,
                 "Document.cookie setter": 2,
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -2132,16 +2247,16 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.40271453-d501-414f-8c05-ccdff13df350.7a06": {
-                    "ttl": 33955208,
+                    "ttl": 33955210,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.40271453-d501-414f-8c05-ccdff13df350.7a06": {
-                    "ttl": 1808,
+                    "ttl": 1810,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -2200,14 +2315,14 @@
                 "boell.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.languages": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.doNotTrack": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.languages": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.appVersion": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -2218,9 +2333,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ppms_privacy_8bd3d044-4f73-4d96-9d6c-caa138763720": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 281,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -2280,26 +2395,26 @@
                 "bona.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.languages": 1,
                 "Document.cookie setter": 2,
                 "Navigator.prototype.doNotTrack": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "439bcbf3793a790d7aebf7a092640a960097ab474221430490f94c12a295a649"
+                "cfa15074590c9dd261afdb29db2636dfef9273d5e16cc9ae473360d6e74f739b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ppms_privacy_63d14a4b-55be-4494-93b3-5699ba40b402": {
-                    "ttl": 31536002,
+                    "ttl": 31536008,
                     "length": 226,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -2374,33 +2489,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1804,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536004,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536004,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.a0224d39-57a1-46af-96fc-9d35906ebb79.1c27": {
-                    "ttl": 33955203,
+                    "ttl": 33955205,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.a0224d39-57a1-46af-96fc-9d35906ebb79.1c27": {
-                    "ttl": 1803,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2435,33 +2550,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536006,
+                    "ttl": 31536010,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1806,
+                    "ttl": 1810,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536006,
+                    "ttl": 31536010,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.51a8d1b0-1f6d-4dbd-9060-54d056f1ab45.2d35": {
-                    "ttl": 33955204,
+                    "ttl": 33955206,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.51a8d1b0-1f6d-4dbd-9060-54d056f1ab45.2d35": {
-                    "ttl": 1804,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2494,22 +2609,22 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1808,
+                    "ttl": 1807,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536008,
+                    "ttl": 31536007,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536008,
+                    "ttl": 31536007,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -2538,14 +2653,14 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "af81193f3ea05ba718985aa5afdcff817147d6f8a5fd8c7e7685657a12af6500"
+                "415a785ba6a118b568c56e23010110fed87584c03876a6a129937d44b44542a1"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ppms_privacy_18c152eb-106b-41b9-829c-1b917a3c8cff": {
                     "ttl": 31536002,
                     "length": 276,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -2615,38 +2730,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "c4a4386defc91c423a565ff0e10e38ee4157211b692ff747b4220bcbffc24929"
+                "6d28e2c253b6633bb5e2c009301d9818dbb61905e4289f7baf49967433ce8cfc"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.7cd61318-6d21-4775-b1b2-64ec78d416e1.bdac": {
                     "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.7cd61318-6d21-4775-b1b2-64ec78d416e1.bdac": {
                     "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2676,50 +2791,50 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "4301114f94a60f2f1971bce081ce65757c162f39e3b4539eae7a1e58637f1f13"
+                "3d0c01241a16e16055a7d531faf6dcbc664d8c583f4bdf7b058704f4a4ce1a8c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
                     "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
-                    "uniqueness": 0.6666666666666666
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
                     "ttl": 1806,
                     "length": 4,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.6666666666666666
                 },
                 "stg_last_interaction": {
                     "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.000020313917742175756,
-                    "uniqueness": 0.6666666666666666
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 1
                 },
                 "_pk_id.28a0a095-db17-4f24-8d11-19c9de6721cc.359a": {
-                    "ttl": 33955203,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.28a0a095-db17-4f24-8d11-19c9de6721cc.359a": {
-                    "ttl": 1803,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.28a0a095-db17-4f24-8d11-19c9de6721cc.0a2a": {
                     "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.28a0a095-db17-4f24-8d11-19c9de6721cc.0a2a": {
                     "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -2742,7 +2857,7 @@
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.languages": 2,
-                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2
@@ -2751,32 +2866,32 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f6d44e214e84954f829b97ccd30e21f9eddace640dee6f0ed295d70fd5ae901e"
+                "102d01f0cc3883fd0063eff9086264c749f9d6a557f8906c13a009bc63c893ad"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_last_interaction": {
-                    "ttl": 31536008,
+                    "ttl": 31536015,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.7bd68a14-fbc6-44f1-9d8b-1cf0cf5eb0bb.4ea8": {
-                    "ttl": 1804,
+                    "ttl": 1811,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.7bd68a14-fbc6-44f1-9d8b-1cf0cf5eb0bb.4ea8": {
-                    "ttl": 1804,
+                    "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "ppms_privacy_7bd68a14-fbc6-44f1-9d8b-1cf0cf5eb0bb": {
-                    "ttl": 31536004,
+                    "ttl": 31536011,
                     "length": 719,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -2849,26 +2964,26 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9cc735585baf404c381190725a9244d585aaaa3a2f3b4c91c1ce08eab8cdccde"
+                "767e0ba370e5cb98209c334ad830616be802414f6a4c861dead5d658540f4571"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -2930,33 +3045,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.47c318e2-85ea-486f-8e63-ff75cc8a52db.1142": {
-                    "ttl": 63072004,
+                    "ttl": 63072007,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.47c318e2-85ea-486f-8e63-ff75cc8a52db.1142": {
-                    "ttl": 1804,
+                    "ttl": 1807,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2992,31 +3107,31 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.989ac08b-cbec-4660-8de1-da3b4e13cf3e.042f": {
                     "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.989ac08b-cbec-4660-8de1-da3b4e13cf3e.042f": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3049,33 +3164,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1802,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.bd186f49-5ed7-4f57-95e6-b2a899c85864.4e8d": {
-                    "ttl": 33955202,
+                    "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.bd186f49-5ed7-4f57-95e6-b2a899c85864.4e8d": {
-                    "ttl": 1802,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3110,31 +3225,31 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.b0277674-0f67-45ac-bf63-4be83ad604c7.21d1": {
                     "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.b0277674-0f67-45ac-bf63-4be83ad604c7.21d1": {
                     "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3238,33 +3353,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1802,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.8686ad52-7b41-49fa-8f0e-9f0a60cfaee7.7119": {
-                    "ttl": 33955202,
+                    "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.8686ad52-7b41-49fa-8f0e-9f0a60cfaee7.7119": {
-                    "ttl": 1802,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3282,14 +3397,14 @@
                 "efsa.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.languages": 1,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
                 "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.appVersion": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -3302,7 +3417,7 @@
                 "ppms_privacy_cdb2708a-d4fa-4240-a574-20f1821f7650": {
                     "ttl": 31536002,
                     "length": 293,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -3362,10 +3477,9 @@
                 "rxreedpop.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -3376,34 +3490,34 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_traffic_source_priority": {
-                    "ttl": 1806,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "stg_last_interaction": {
-                    "ttl": 31536006,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "stg_returning_visitor": {
-                    "ttl": 31536006,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
                 "_pk_id.d31c786f-322e-4c1c-b730-fd48e0e6ca20.a412": {
-                    "ttl": 33955205,
+                    "ttl": 33955208,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.d31c786f-322e-4c1c-b730-fd48e0e6ca20.a412": {
-                    "ttl": 1805,
+                    "ttl": 1808,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "stg_last_interaction": {
+                    "ttl": 31536010,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "stg_returning_visitor": {
+                    "ttl": 31536010,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "stg_traffic_source_priority": {
+                    "ttl": 1810,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3436,33 +3550,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1802,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.416e5c00-f61e-4a5a-b433-b73ff465eb1a.b34e": {
-                    "ttl": 33955202,
+                    "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.416e5c00-f61e-4a5a-b433-b73ff465eb1a.b34e": {
-                    "ttl": 1802,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3480,11 +3594,11 @@
                 "rxreedpop.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -3495,34 +3609,34 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.3a94a544-ac9c-426d-9f9d-d52a38384c85.2417": {
-                    "ttl": 33955203,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.3a94a544-ac9c-426d-9f9d-d52a38384c85.2417": {
-                    "ttl": 1803,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -3539,7 +3653,7 @@
                 "rxreedpop.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -3556,32 +3670,32 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_last_interaction": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "_pk_id.3d758568-d631-4dfa-a8f1-df3eae545e8c.9c5e": {
                     "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.3d758568-d631-4dfa-a8f1-df3eae545e8c.9c5e": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -3622,11 +3736,11 @@
                 "rxreedpop.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -3637,34 +3751,34 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1809,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536009,
+                    "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536009,
+                    "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_id.fa33ee8e-9db3-4fdf-ab15-e6d67feb4031.d2ad": {
-                    "ttl": 33955209,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.fa33ee8e-9db3-4fdf-ab15-e6d67feb4031.d2ad": {
-                    "ttl": 1809,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -3693,38 +3807,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8bacc329d46b82af8c6dda8a1255b4dabc4de8c6d654d25d5327c6d8fbf0c1d9"
+                "806a04f1c8d264e9bfb4ec6e26e407aa02830a126e5ff621d9dc1b6379ab5d93"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1804,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536004,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536004,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "_pk_id.25ca911f-c1f9-44ce-bcf5-f109b5e4ed7a.9eb2": {
-                    "ttl": 33955221,
+                    "ttl": 33955222,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.25ca911f-c1f9-44ce-bcf5-f109b5e4ed7a.9eb2": {
-                    "ttl": 1821,
+                    "ttl": 1822,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3753,38 +3867,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2493fe7349f17b7fe531b616a3f71d69f498f82f43f8f8db62672b0c608230f8"
+                "31c8109188b9ab1fc1c1e2be4b1a1790c434a41a563c354e02d387ca06b75642"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1804,
+                    "ttl": 1807,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536004,
+                    "ttl": 31536007,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536004,
+                    "ttl": 31536007,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.33254335-2507-4efa-b453-3b0cbda56df0.b931": {
-                    "ttl": 33955204,
+                    "ttl": 33955207,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.33254335-2507-4efa-b453-3b0cbda56df0.b931": {
-                    "ttl": 1804,
+                    "ttl": 1807,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3840,38 +3954,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9b8f2c12158ff6fb614a009dd898fcfd665be68ba963b946eb8c73ae98d3936b"
+                "f45182854a1251560eecd94165a1965bcf5fb029fadd5ea3f620ff71823b616f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1805,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536005,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536005,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.502275d9-d10f-448a-9838-670c74a6c2c1.92fc": {
-                    "ttl": 33955204,
+                    "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.502275d9-d10f-448a-9838-670c74a6c2c1.92fc": {
-                    "ttl": 1804,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -3889,7 +4003,7 @@
                 "guitarpro.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -3904,34 +4018,34 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1802,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "_pk_id.4ab5074a-81af-49f2-8f06-00307f46f348.297a": {
                     "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.4ab5074a-81af-49f2-8f06-00307f46f348.297a": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -3971,17 +4085,15 @@
         {
             "rule": "piwik\\.pro\\/20c3fdf0-70a1-4d4a-851d-1384bb14b709\\.js",
             "cookies": 0.0000135,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "haribo.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.languages": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
@@ -3991,20 +4103,7 @@
                 "66c16453f80b980d95820087cc21205b85e171a89de9e791103c3151ae550934"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "stg_last_interaction": {
-                    "ttl": 31536002,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "ppms_privacy_20c3fdf0-70a1-4d4a-851d-1384bb14b709": {
-                    "ttl": 31536001,
-                    "length": 277,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "haribo.com",
@@ -4076,21 +4175,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1802,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -4117,7 +4216,7 @@
                 }
             ],
             "responseHashes": [
-                "5f7d4a6d33e31b59304f0c5a6f4b9665113cdea3a57bcd3d6ce45c6cf7e17599"
+                "5cceedd6736ebe92dfae27235833663b3808d59068a1bc00f6eca38eb5299299"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4130,18 +4229,16 @@
         {
             "rule": "piwik\\.pro\\/d00f7868-542c-47e7-a536-a7392ee09b38\\.js",
             "cookies": 0.0000135,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "display-logix.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.languages": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -4152,18 +4249,38 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536007,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "ppms_privacy_d00f7868-542c-47e7-a536-a7392ee09b38": {
-                    "ttl": 31536001,
+                    "ttl": 31536003,
                     "length": 179,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "herzing.edu",
+                "www.herzing.edu"
+            ]
+        },
+        {
+            "rule": "piwik\\.pro\\/d00f7868-542c-47e7-a536-a7392ee09b38\\/privacy-templates\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "display-logix.containers"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "herzing.edu",
@@ -4193,75 +4310,57 @@
             ]
         },
         {
-            "rule": "piwik\\.pro\\/d00f7868-542c-47e7-a536-a7392ee09b38\\/privacy-templates\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "display-logix.containers"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "herzing.edu",
-                "www.herzing.edu"
-            ]
-        },
-        {
             "rule": "piwik\\.pro\\/fe338bee-a564-49c9-a0d4-c558b79ceda6\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "nbtc.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.doNotTrack": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e5e2638ceff90c9747ab3f0215003d09723c3b0752f69db6a24c35573d77f350"
+            ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1805,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536005,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536005,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.fe338bee-a564-49c9-a0d4-c558b79ceda6.19a7": {
-                    "ttl": 33955205,
+                    "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.fe338bee-a564-49c9-a0d4-c558b79ceda6.19a7": {
-                    "ttl": 1805,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -4294,33 +4393,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1801,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536001,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536001,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.d4721773-e7fb-48b2-9d37-5f6a9c167bc3.a257": {
-                    "ttl": 33955216,
+                    "ttl": 33955218,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.d4721773-e7fb-48b2-9d37-5f6a9c167bc3.a257": {
-                    "ttl": 1816,
+                    "ttl": 1818,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -4350,38 +4449,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f6f4f59f7801d71af780f573d04db087ea95c9cfc10099a2f5c0088693134c1b"
+                "1c643ff55e261d3e85a35c0c276654e3720650436c31c8a08fa1f715d467e556"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
                     "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
                     "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.8bd78e1a-f110-4dca-8ba5-2e6a51d1a689.24e5": {
                     "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.8bd78e1a-f110-4dca-8ba5-2e6a51d1a689.24e5": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -4410,38 +4509,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "7d251f6285cc53c1e8303d095ba8699815dcd721f8c4471a7421ece9f820d95c"
+                "6927635ffd0d32e7076db7eef4f2da64c2f275d2c7db8ae046b3fc585c666dde"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1809,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536009,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536009,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
-                "_pk_id.5601c189-ca1e-4728-80a2-9f7d7e128eb9.be01": {
-                    "ttl": 33955217,
+                "_pk_id.5601c189-ca1e-4728-80a2-9f7d7e128eb9.4f80": {
+                    "ttl": 33955209,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
-                "_pk_ses.5601c189-ca1e-4728-80a2-9f7d7e128eb9.be01": {
-                    "ttl": 1817,
+                "_pk_ses.5601c189-ca1e-4728-80a2-9f7d7e128eb9.4f80": {
+                    "ttl": 1809,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -4459,11 +4558,11 @@
                 "proof3.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -4473,34 +4572,34 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_traffic_source_priority": {
-                    "ttl": 1811,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
                 "stg_last_interaction": {
-                    "ttl": 31536011,
+                    "ttl": 31536015,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536011,
+                    "ttl": 31536015,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
+                "stg_traffic_source_priority": {
+                    "ttl": 1815,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
                 "_pk_id.c462914d-8a35-4e7a-b665-e3e454d1fc9e.0034": {
-                    "ttl": 33955210,
+                    "ttl": 33955217,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.c462914d-8a35-4e7a-b665-e3e454d1fc9e.0034": {
-                    "ttl": 1810,
+                    "ttl": 1817,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -4534,33 +4633,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1807,
+                    "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536007,
+                    "ttl": 31536011,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536007,
+                    "ttl": 31536011,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "_pk_id.49d50c81-c5e9-11e7-aae6-0017fa104e46.27ca": {
-                    "ttl": 33955207,
+                    "ttl": 33955206,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.49d50c81-c5e9-11e7-aae6-0017fa104e46.27ca": {
-                    "ttl": 1807,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -4594,45 +4693,51 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1837,
+                    "ttl": 1812,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_externalReferrer": {
+                    "ttl": null,
+                    "length": 22,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536037,
+                    "ttl": 31536012,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536037,
+                    "ttl": 31536012,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.aa673c27-ff37-4f2a-a6b9-37fe201da36f.a01e": {
                     "ttl": 33955208,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_ses.aa673c27-ff37-4f2a-a6b9-37fe201da36f.a01e": {
                     "ttl": 1808,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.aa673c27-ff37-4f2a-a6b9-37fe201da36f.d86b": {
-                    "ttl": 33955211,
+                    "ttl": 33955210,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_ses.aa673c27-ff37-4f2a-a6b9-37fe201da36f.d86b": {
-                    "ttl": 1811,
+                    "ttl": 1810,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -4672,9 +4777,8 @@
                 "display-logix.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
                 "window.localStorage": 2
             },
@@ -4687,22 +4791,22 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_last_interaction": {
-                    "ttl": 31536007,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536007,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1807,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -4712,91 +4816,30 @@
             ]
         },
         {
-            "rule": "piwik\\.pro\\/7bb9301f-d153-48f2-a103-00f3462bfba2\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
-            "subdomains": [
-                "luzern.containers"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "7e6c59efad200ac723bec929d1d4df78250d67eca7474989b0fa4969cfaf8fa6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stg_traffic_source_priority": {
-                    "ttl": 1809,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "stg_last_interaction": {
-                    "ttl": 31536009,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "stg_returning_visitor": {
-                    "ttl": 31536009,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "_pk_id.7bb9301f-d153-48f2-a103-00f3462bfba2.291b": {
-                    "ttl": 33955209,
-                    "length": 52,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "_pk_ses.7bb9301f-d153-48f2-a103-00f3462bfba2.291b": {
-                    "ttl": 1809,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "luzern.com",
-                "www.luzern.com"
-            ]
-        },
-        {
             "rule": "piwik\\.pro\\/ffbf8d08-a0aa-4e99-859e-677922d67d09\\.sync\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 1,
             "subdomains": [
                 "macsf.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "307ad61bdedf0986b162ae424ec2f9155f880b99b87222146acedeefc741a2b4"
+                "74cd38a0e6f840b885ee952a3d21f62e148aba36355e56f180c84a56d3df6967"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -4824,27 +4867,27 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b104d877586c1be32e16a874b2ae858222b98a5107750e9816430bd3a6c56d20"
+                "43e03a13e0232995fa937c59fafd317d075bcc868af4c9571fdcf40f3c8a0275"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1804,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -4861,55 +4904,48 @@
                 "mgb.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "268e3381143f82d23f5e6067837a7a456c1ee1454f524516bc6336958a20a4bd"
+                "10af75f6b1bea53f742b0fc28fdb8cff81110f7fc1f8c113c10249f400e76b7f"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_traffic_source_priority": {
-                    "ttl": 1802,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
-                "stg_fired_380ea6a9-c896-4e1c-a7a8-2167cac50ad6_aed90de9-3cf0-46b3-afdb-6300b5549056": {
-                    "ttl": null,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                "stg_traffic_source_priority": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.41b8ae76-3079-47d5-aaf8-040ee367d152.6e67": {
-                    "ttl": 33955202,
+                    "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.41b8ae76-3079-47d5-aaf8-040ee367d152.6e67": {
-                    "ttl": 1802,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -4937,44 +4973,44 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9781e9c58b786b1249904e0303f320e55df756831c350e557afa4092bd055a94"
+                "f421cd5de6d3e89cd881b0171866605bcecf75c303c5c639c3360686c2835dd5"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
                     "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_fired_0f3ccedb-385b-468c-b12b-c26c1c7b553d_ba18b3f4-27a0-4527-bcda-19e29c1fc491": {
                     "ttl": null,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.4cb905ea-3db9-4307-8709-a429e7e69306.e5cd": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.4cb905ea-3db9-4307-8709-a429e7e69306.e5cd": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5007,33 +5043,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.7f2fd072-d2ec-454b-aaa9-c61be1d3606c.d7ea": {
-                    "ttl": 33955203,
+                    "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.7f2fd072-d2ec-454b-aaa9-c61be1d3606c.d7ea": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5064,38 +5100,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1b46cec58c143ed8fc69ba646211a0f6099b965fff29dce84f6ede78ff1cec62"
+                "cc0dee5550cdc86d68a728864ff88b94283dad7dc2533c265af9cc5f6e0750c8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536005,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1805,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536005,
+                    "ttl": 31536006,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.ef3511a6-6fee-486f-b878-337dbdc78534.1a12": {
-                    "ttl": 33955203,
+                    "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.ef3511a6-6fee-486f-b878-337dbdc78534.1a12": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5131,31 +5167,31 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "_pk_id.7b940dd4-535e-44ae-83fc-8f1c4fa00a7b.3143": {
                     "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.7b940dd4-535e-44ae-83fc-8f1c4fa00a7b.3143": {
                     "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5188,33 +5224,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.2c2ff8ee-2613-41a7-b466-e65852aeba12.2ac2": {
-                    "ttl": 33955201,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.2c2ff8ee-2613-41a7-b466-e65852aeba12.2ac2": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5250,32 +5286,12 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ppms_privacy_818f5743-b87c-45ed-ab34-a98e022ec10c": {
-                    "ttl": 31536001,
+                    "ttl": 31536003,
                     "length": 366,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sanomapro.fi",
-                "www.sanomapro.fi"
-            ]
-        },
-        {
-            "rule": "piwik\\.pro\\/818f5743-b87c-45ed-ab34-a98e022ec10c\\/privacy-templates\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sanomapro.containers"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sanomapro.fi",
@@ -5297,6 +5313,26 @@
                 "4a9814cc82bb40120c2c7948cdfebf91765062e15a281092dec77ba107bfa4b1"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sanomapro.fi",
+                "www.sanomapro.fi"
+            ]
+        },
+        {
+            "rule": "piwik\\.pro\\/818f5743-b87c-45ed-ab34-a98e022ec10c\\/privacy-templates\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sanomapro.containers"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -5329,33 +5365,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536004,
+                    "ttl": 31536007,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1804,
+                    "ttl": 1807,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536004,
+                    "ttl": 31536007,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.f931bc6d-29eb-4c8c-a8d9-bd827b4f3217.eff4": {
-                    "ttl": 33955204,
+                    "ttl": 33955207,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.f931bc6d-29eb-4c8c-a8d9-bd827b4f3217.eff4": {
-                    "ttl": 1804,
+                    "ttl": 1807,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5390,33 +5426,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536008,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1808,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536008,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.eeb18cbb-6375-4b5b-b0c2-69108529b998.06e0": {
-                    "ttl": 33955202,
+                    "ttl": 33955208,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.eeb18cbb-6375-4b5b-b0c2-69108529b998.06e0": {
-                    "ttl": 1802,
+                    "ttl": 1808,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5443,7 +5479,7 @@
                 }
             ],
             "responseHashes": [
-                "47dab81931dbbc2eb9ee8cc5af880a0583c56260adb913141a937b679564e863"
+                "7401f201327d9806f68cd846f154f9c4ce045fcc873a7084017126975cb4bd8b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5506,6 +5542,55 @@
             ]
         },
         {
+            "rule": "piwik\\.pro\\/4c2bee7e-0ec7-45d5-b36d-824c8bf9c363\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
+            "subdomains": [
+                "login506.containers"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "cf75de33154e2a9cf0071b02501bdddf575ea757797aea16a44e61a02bfce44e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stg_returning_visitor": {
+                    "ttl": 31536032,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "stg_traffic_source_priority": {
+                    "ttl": 1832,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_last_interaction": {
+                    "ttl": 31536032,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "speedweek.com",
+                "www.speedweek.com"
+            ]
+        },
+        {
             "rule": "piwik\\.pro\\/containers\\/146e6c83-9e24-4651-81ea-c8e6a32ac132\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 1,
@@ -5525,38 +5610,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "3bb801cbb7958530a19867e626132bdfb4ce55978d5d837d33f232fd474da6ba"
+                "78b5ebc664fa35957b9b48ff9f852477d9d840e8296c53ae12814c8cd94edc61"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.146e6c83-9e24-4651-81ea-c8e6a32ac132.aeaa": {
-                    "ttl": 33955203,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.146e6c83-9e24-4651-81ea-c8e6a32ac132.aeaa": {
-                    "ttl": 1803,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5568,27 +5653,41 @@
         },
         {
             "rule": "piwik\\.pro\\/8bda5495-3d5b-40c3-a4ac-3636b5895400\\.js",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 1,
             "subdomains": [
                 "svb.containers"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.appVersion": 1
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "46e666186f74fe050e9ed897def9352f1bb52cf3b2d87d52d76f00dbeaa93b33"
+                "020eb9446f48fe63aff61bc6caf6d2ca25ec06210db2035438e658ef9389b36a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pk_id.8bda5495-3d5b-40c3-a4ac-3636b5895400.d8ba": {
+                    "ttl": 33955203,
+                    "length": 52,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "_pk_ses.8bda5495-3d5b-40c3-a4ac-3636b5895400.d8ba": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "svb.nl",
@@ -5608,45 +5707,44 @@
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b880042619b028857eff693a47c0ce6911ba8fb23721e7b1c4a956a7f5c33a8b"
+                "8ac12983f5b70a4782bc35970f8b84d5f66078cc1fb64cc9675a18fc197bb9e3"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_returning_visitor": {
-                    "ttl": 31536002,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
                 "stg_traffic_source_priority": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536001,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
+                "stg_returning_visitor": {
+                    "ttl": 31536001,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "_pk_id.55d0d13b-2be3-45a8-8dea-5e8e352b7372.c147": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.55d0d13b-2be3-45a8-8dea-5e8e352b7372.c147": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5668,20 +5766,20 @@
                 "window.localStorage": 1,
                 "Document.cookie getter": 1,
                 "Document.cookie setter": 1,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ee645b29a848920c9b2159468ad492a61bf6d5204d00d95dcdfb42e7cdcf9c01"
+                "4e22bb29915fbc8224542ddf3a6d474886b63aa7c6c11ad54a85a4151b91fbd5"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -5699,48 +5797,48 @@
                 "testo.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8536c53973793312bee227f3ed39ea629f0766f9bb69f59a5cac0cb8e21222c6"
+                "96081d7c03e0d7d0281b6a0d44b483dc8761e630212e42ba7f3ec2f82b2427da"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_traffic_source_priority": {
-                    "ttl": 1806,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
                 "stg_last_interaction": {
-                    "ttl": 31536006,
+                    "ttl": 31536016,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536006,
+                    "ttl": 31536016,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
+                "stg_traffic_source_priority": {
+                    "ttl": 1816,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                },
                 "_pk_id.d45b4fee-6642-4b1d-b309-96b58d1cbb7d.c331": {
-                    "ttl": 33955203,
+                    "ttl": 33955209,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.d45b4fee-6642-4b1d-b309-96b58d1cbb7d.c331": {
-                    "ttl": 1803,
+                    "ttl": 1809,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5789,38 +5887,38 @@
                 }
             ],
             "responseHashes": [
-                "434ae0ae93ada66f01d90fe05626f0f5d850cb1d6381d0b11a9a8054e3a14f28"
+                "4ca1a76c3d02109eb53aafec6bd915d4556225c42ef7106305e688bba4a86d7b"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stg_returning_visitor": {
-                    "ttl": 31536003,
+                "stg_last_interaction": {
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
+                "stg_returning_visitor": {
+                    "ttl": 31536004,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "stg_last_interaction": {
-                    "ttl": 31536003,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.1.016b": {
                     "ttl": 33955203,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.1.016b": {
                     "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5847,7 +5945,7 @@
                 }
             ],
             "responseHashes": [
-                "d7ef0c4b2060bd32e5f9a94035f7b477f4779e2bf4e3b39851a49f313cbb0ce4"
+                "079c0ca6daf42ae4227d42657ea7afa5606f3a9f2ef08ac9228402d8834904f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5882,33 +5980,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_returning_visitor": {
-                    "ttl": 31536007,
+                    "ttl": 31536019,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_traffic_source_priority": {
-                    "ttl": 1807,
+                    "ttl": 1819,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536007,
+                    "ttl": 31536019,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.384c1d2f-1e6b-4858-8137-4514308d2e99.4a29": {
-                    "ttl": 33955210,
+                    "ttl": 33955221,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.384c1d2f-1e6b-4858-8137-4514308d2e99.4a29": {
-                    "ttl": 1810,
+                    "ttl": 1821,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -5920,7 +6018,7 @@
         },
         {
             "rule": "piwik\\.pro\\/matomo\\.js",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 2,
             "subdomains": [
                 "tweedekamer"
@@ -5996,33 +6094,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1808,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536008,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536008,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
                 },
                 "_pk_id.e1b032d5-e42b-42b5-8b73-ea4347239c3d.42de": {
-                    "ttl": 33955206,
+                    "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.e1b032d5-e42b-42b5-8b73-ea4347239c3d.42de": {
-                    "ttl": 1806,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -6049,7 +6147,7 @@
                 }
             ],
             "responseHashes": [
-                "9f8e178cc317705c0293c7d2438a340d27fbeccd9d8023d5c879bdca1f108c06"
+                "b08e2ba0771773cee61e6df03323e94302274e736cef45367e49c9c2283c83bd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6076,7 +6174,7 @@
                 }
             ],
             "responseHashes": [
-                "5f0379ccce4e76a827ccdbb47de67788adbd5f1ae0137bace219edaf0fbccafb"
+                "c87e5f6d10619d55ff90c366bc62b206b65fc3e3d79ab8769f6b47e354be1a44"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6094,8 +6192,8 @@
                 "magix.containers"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.doNotTrack": 2,
@@ -6109,22 +6207,28 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "stg_last_interaction": {
+                    "ttl": 31536010,
+                    "length": 41,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                },
                 "_pk_id.f5f97da2-88e7-42a5-8bc1-35b87e08788a.6384": {
-                    "ttl": 33955207,
+                    "ttl": 33955209,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_pk_ses.f5f97da2-88e7-42a5-8bc1-35b87e08788a.6384": {
-                    "ttl": 1807,
+                    "ttl": 1809,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
-                "stg_last_interaction": {
-                    "ttl": 31536008,
-                    "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                "ppcm_init": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -6142,10 +6246,9 @@
                 "vero.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
@@ -6185,33 +6288,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.1e115f5e-174d-46ce-8552-04aae8baf10b.0c98": {
-                    "ttl": 33955202,
+                    "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.1e115f5e-174d-46ce-8552-04aae8baf10b.0c98": {
-                    "ttl": 1802,
+                    "ttl": 1804,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -6244,22 +6347,22 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1802,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -6276,7 +6379,7 @@
                 "wienenergie.containers"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -6294,25 +6397,25 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536005,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_id.5427bfdc-8989-495e-bf6b-a195ebfbfa22.7194": {
-                    "ttl": 33955204,
+                    "ttl": 33955205,
                     "length": 42,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -6345,33 +6448,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stg_traffic_source_priority": {
-                    "ttl": 1803,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
-                    "ttl": 31536003,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_returning_visitor": {
-                    "ttl": 31536003,
+                    "ttl": 31536002,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_pk_id.49d516ae-c5e9-11e7-aae6-0017fa104e46.b995": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 52,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "_pk_ses.49d516ae-c5e9-11e7-aae6-0017fa104e46.b995": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -6407,19 +6510,19 @@
                 "stg_traffic_source_priority": {
                     "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "stg_last_interaction": {
                     "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "stg_returning_visitor": {
                     "ttl": 31536003,
                     "length": 41,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -6432,61 +6535,61 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0015,
+    "cookies": 0.00152,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6839080459770115
+            "prevalence": 0.6882352941176471
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.14655172413793102
+            "prevalence": 0.13823529411764707
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.04885057471264368
+            "prevalence": 0.05
         },
         {
             "domain": "nmo.at",
-            "prevalence": 0.04597701149425287
+            "prevalence": 0.04411764705882353
         },
         {
             "domain": "adlightning.com",
-            "prevalence": 0.028735632183908046
+            "prevalence": 0.029411764705882353
         },
         {
             "domain": "tagcommander.com",
-            "prevalence": 0.017241379310344827
-        },
-        {
-            "domain": "cookiebot.com",
-            "prevalence": 0.008620689655172414
+            "prevalence": 0.020588235294117647
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.005747126436781609
+            "prevalence": 0.01764705882352941
         },
         {
-            "domain": "msecnd.net",
-            "prevalence": 0.0028735632183908046
+            "domain": "cookiebot.com",
+            "prevalence": 0.0058823529411764705
         },
         {
-            "domain": "techlab-cdn.com",
-            "prevalence": 0.0028735632183908046
+            "domain": "e-boks.com",
+            "prevalence": 0.0029411764705882353
+        },
+        {
+            "domain": "driftt.com",
+            "prevalence": 0.0029411764705882353
         }
     ],
     "types": {
-        "Script": 306,
-        "Ping": 75,
+        "Script": 311,
+        "Ping": 77,
         "XHR": 38,
-        "Image": 30,
+        "Image": 29,
         "Document": 8,
         "Preflight": 31
     },
     "nameservers": [
+        "ns-945.awsdns-54.net",
         "ns-344.awsdns-43.com",
         "ns-1658.awsdns-15.co.uk",
-        "ns-945.awsdns-54.net",
         "ns-1249.awsdns-28.org"
     ]
 }

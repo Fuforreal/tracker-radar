@@ -26,7 +26,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ce1672ab6fe120d1e9edc23fccd6480d88941420254504ae0b45ea56d0e2167a"
+                "6205371fafc81545d2214157c30a74fbdfc16505410d4ded0dbe1c1b51117ad5"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -71,7 +71,7 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "ae8cffa0b582043be9a367f50d12862001e32e2c35457069438cc3cb263f8451"
+                "d5c62ffbe14730fbb87e0865fc5dff4b467c5d78dd93cee64ecc7b9a99a666d3"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -117,7 +117,7 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "542a81427c2883a2e9dc79bee85660c1c2a69bddc065bdf40da29a8d45953092"
+                "0fb9affb09f1348bf04eaf8925676236b8e3e9ea4ce2187711ccf2a07a31546b"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -266,72 +266,6 @@
             ]
         },
         {
-            "rule": "hcsb-2\\.de\\/wp-content\\/uploads\\/sites\\/4\\/2023\\/01\\/Topteaser-Desktop_FP-Plus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "topteaser"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "684e770453a362571395cda74c8982d0a0ec50ae0ad6de74358a3eb4e80859c1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frankenpost.de",
-                "www.frankenpost.de"
-            ]
-        },
-        {
-            "rule": "hcsb-2\\.de\\/wp-content\\/uploads\\/sites\\/4\\/2022\\/02\\/FP_Abocard_TopTeaser-1200x60px_2022\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "topteaser"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "a4e2334b8b46c011c09aa55f86bead71cf1b8f685df584d4d4575f7584fb8b7f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frankenpost.de",
-                "www.frankenpost.de"
-            ]
-        },
-        {
-            "rule": "hcsb-2\\.de\\/wp-content\\/uploads\\/sites\\/4\\/2023\\/01\\/Zeitungspaten-Landingpage_1200x60px3\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "topteaser"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "be457e25a81c986e2aec2f1b022a3c779b2e35ef5e803d1664c1dfec96d78744"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frankenpost.de",
-                "www.frankenpost.de"
-            ]
-        },
-        {
             "rule": "hcsb-2\\.de\\/wp-content\\/themes\\/astra\\/assets\\/js\\/minified\\/frontend\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -340,7 +274,7 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
-                "window.innerWidth": 3
+                "window.innerWidth": 2
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -360,11 +294,13 @@
         {
             "rule": "hcsb-2\\.de\\/wp-content\\/cache\\/asset-cleanup\\/js\\/item\\/adrotate-dyngroup-v0d4286c675413d263635e936c4408c3a23eb2e3e\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "topteaser"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 3
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -450,6 +386,29 @@
             ]
         },
         {
+            "rule": "hcsb-2\\.de\\/wp-admin\\/admin-ajax\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "topteaser"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frankenpost.de",
+                "www.frankenpost.de",
+                "www.insuedthueringen.de"
+            ]
+        },
+        {
             "rule": "hcsb-2\\.de\\/is-topteaser-desktop\\/",
             "cookies": 0,
             "fingerprinting": 1,
@@ -463,75 +422,9 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "00d1b0a76d43e66be3b86260a810149792f5b88ff0201e83b65c40ff8f8688b3"
+                "125f4766fdf18b180822174f48346ebcbde77a951e0cb7e44505c58cc80f5873"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "insuedthueringen.de",
-                "www.insuedthueringen.de"
-            ]
-        },
-        {
-            "rule": "hcsb-2\\.de\\/wp-content\\/uploads\\/sites\\/4\\/2022\\/02\\/SPP_Abocard_TopTeaser-1200x60px_2022\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "topteaser"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "22d192d92bca7ba72b83c589a1a7340c0facf683e51b8b31fd2cad105f60d28a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "insuedthueringen.de",
-                "www.insuedthueringen.de"
-            ]
-        },
-        {
-            "rule": "hcsb-2\\.de\\/wp-content\\/uploads\\/sites\\/4\\/2023\\/01\\/Topteaser-Desktop_iS-Plus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "topteaser"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "364a79566c56db91ab4d397b8d1aedf3542406019382b4762a06f0b02a7572e4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "insuedthueringen.de",
-                "www.insuedthueringen.de"
-            ]
-        },
-        {
-            "rule": "hcsb-2\\.de\\/wp-content\\/uploads\\/sites\\/4\\/2023\\/01\\/Zeitungspaten-Landingpage_1200x60px4\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "topteaser"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5bfb1db16fe49158b59ccd3fd05617faaa0892dbf6e6e159069bb8b92c436f81"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -575,12 +468,13 @@
         "Document": 4,
         "Stylesheet": 21,
         "Script": 18,
-        "Image": 16,
-        "Font": 3
+        "Image": 4,
+        "Font": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns3.inwx.eu",
-        "ns.inwx.de",
-        "ns2.inwx.de"
+        "ns2.inwx.de",
+        "ns.inwx.de"
     ]
 }

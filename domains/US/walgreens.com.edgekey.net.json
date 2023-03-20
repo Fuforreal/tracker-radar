@@ -18,7 +18,7 @@
             "resolved": "walgreens.com.edgekey.net"
         }
     ],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/css\\/walgreens\\/app\\.css",
@@ -73,7 +73,7 @@
         {
             "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/wg-assets\\/bower_components\\/jquery\\/jquery-3\\.6\\.0\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
@@ -173,7 +173,7 @@
         {
             "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/wg-assets\\/bower_components\\/slick\\/slick\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
@@ -272,7 +272,7 @@
         },
         {
             "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/bundles\\/walgreens-plugins-new\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {},
@@ -288,14 +288,7 @@
                 "a6a219748e7b04d1752a891c7a26b357f08ffe0798df91d9fb89562a74868477"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "RT": {
-                    "ttl": 604806,
-                    "length": 2,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "walgreens.com",
@@ -304,8 +297,8 @@
         },
         {
             "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/bundles\\/wgapp\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {},
             "sites": 2,
@@ -320,7 +313,20 @@
                 "f115cff5380a7a1806f7a77c461926e975e170b0e0f2fcc8460994aa6d94a670"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ai_user": {
+                    "ttl": 31536000,
+                    "length": 47,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "ai_session": {
+                    "ttl": 1800,
+                    "length": 50,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "walgreens.com",
@@ -626,81 +632,6 @@
                 "walgreens.com",
                 "photo.walgreens.com"
             ]
-        },
-        {
-            "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/bundles\\/algolialibs-bundle\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "prd-sf-cdn.wag-static.com",
-                    "resolved": "walgreens.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "6ffed6cd6172032701d12edf4aa8bc14072e1d5bcc6fc426bba6c8a7854f0658"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "walgreens.com",
-                "photo.walgreens.com"
-            ]
-        },
-        {
-            "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/bundles\\/customWCAG-WG\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "prd-sf-cdn.wag-static.com",
-                    "resolved": "walgreens.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "43b27101dbff60bc45021182e34bfb310319a145bc594bb698f9e4949b421a04"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "walgreens.com",
-                "photo.walgreens.com"
-            ]
-        },
-        {
-            "rule": "walgreens\\.com\\.edgekey\\.net\\/resources\\/wg-assets\\/bower_components\\/slick\\/ajax-loader\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "prd-sf-cdn.wag-static.com",
-                    "resolved": "walgreens.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "540bdfbad15f1c5dacc2919933bd00c6ecfa718109695a41d029609a9a955b30"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "walgreens.com",
-                "photo.walgreens.com"
-            ]
         }
     ],
     "categories": [],
@@ -714,9 +645,9 @@
     ],
     "types": {
         "Stylesheet": 12,
-        "Script": 28,
+        "Script": 24,
         "Font": 8,
-        "Image": 4,
+        "Image": 2,
         "XHR": 2
     },
     "nameservers": []

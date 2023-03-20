@@ -7,19 +7,64 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000406,
-    "sites": 6,
+    "prevalence": 0.0000474,
+    "sites": 7,
     "subdomains": [
         "smetrics",
+        "tmx",
         "metrics",
         "apps",
         "chat.prd"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
-            "rule": "td\\.com\\/b\\/ss\\/tdtdct,tdglobal\\/1\\/H\\.22\\.1\\/s0593759746645",
+            "rule": "td\\.com\\/id",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smetrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "d9321867cfd644088f41daed4aca307a5d2777ea0860f13a377011b2b3f78f50"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mbna.ca",
+                "www.tdinsurance.com"
+            ]
+        },
+        {
+            "rule": "td\\.com\\/iAHjxKveuSIqsm67",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tmx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mbna.ca",
+                "authentication.mbna.ca"
+            ]
+        },
+        {
+            "rule": "td\\.com\\/b\\/ss\\/tdtdct,tdglobal\\/1\\/H\\.22\\.1\\/s61747759379140",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
@@ -41,7 +86,7 @@
             ]
         },
         {
-            "rule": "td\\.com\\/b\\/ss\\/tdtdct,tdglobal\\/1\\/H\\.22\\.1\\/s09013819879592",
+            "rule": "td\\.com\\/b\\/ss\\/tdtdct,tdglobal\\/1\\/H\\.22\\.1\\/s64170772871752",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
@@ -244,28 +289,6 @@
             ]
         },
         {
-            "rule": "td\\.com\\/mbna-balance-transfer-tool\\/trueline-preferred\\/en\\/assets\\/img\\/mbna-tooltip\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apps"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "9dad2187df1cb8135b7bb6433851b6369709a22238fe8769afdef69cdd40d370"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mbna.ca",
-                "www.mbna.ca"
-            ]
-        },
-        {
             "rule": "td\\.com\\/chat\\/css\\/cx-theme-green\\.css",
             "cookies": 0.0000135,
             "fingerprinting": 0,
@@ -280,28 +303,6 @@
                 "de9de43af4f5db90dd8f9f8ddaa1a0b515366ae9103c9b167b40697bed00f24d"
             ],
             "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tdinsurance.com",
-                "www.tdinsurance.com"
-            ]
-        },
-        {
-            "rule": "td\\.com\\/id",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "smetrics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "479945039f12bcb75d31382a6ad832dabd622de4bb22a694256309879f7aa43b"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -372,59 +373,37 @@
                 "tdinsurance.com",
                 "www.tdinsurance.com"
             ]
-        },
-        {
-            "rule": "td\\.com\\/chat\\/css\\/images\\/chat_icon\\.svg",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "chat.prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "99e83aa003fd198889ff6bb1444ec4bcf89a6da0a9f1b7c8a020271019d8fbcb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tdinsurance.com",
-                "www.tdinsurance.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000339,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.8275862068965517
         },
         {
             "domain": "ensighten.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.1724137931034483
         }
     ],
     "types": {
-        "Image": 8,
-        "Script": 12,
+        "XHR": 6,
+        "Script": 14,
+        "Image": 4,
         "Document": 2,
         "Stylesheet": 4,
-        "XHR": 6,
         "Preflight": 2
     },
     "nameservers": [
-        "ns2.edgecastdns.net",
         "ns4.edgecastdns.net",
-        "s1ns1.td.com",
-        "s2ns2.td.com",
-        "ns1.edgecastdns.net",
         "s3ns3.td.com",
+        "ns2.edgecastdns.net",
+        "ns3.edgecastdns.net",
+        "ns1.edgecastdns.net",
+        "s2ns2.td.com",
         "s4ns4.td.com",
-        "ns3.edgecastdns.net"
+        "s1ns1.td.com"
     ]
 }

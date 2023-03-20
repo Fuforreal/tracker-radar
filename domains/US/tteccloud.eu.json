@@ -376,12 +376,15 @@
         {
             "rule": "tteccloud\\.eu\\/Scripts\\/modernizr-2\\.6\\.2\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "hc079-chat"
             ],
             "apis": {
-                "HTMLMediaElement.prototype.canPlayType": 2
+                "window.indexedDB": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
             },
             "sites": 3,
             "prevalence": 0.0000203,
@@ -470,11 +473,13 @@
         {
             "rule": "tteccloud\\.eu\\/Scripts\\/bootstrap\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "hc079-chat"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -562,12 +567,14 @@
         {
             "rule": "tteccloud\\.eu\\/Scripts\\/customerChat-helper\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "hc079-chat"
             ],
             "apis": {
+                "window.localStorage": 2,
                 "Navigator.prototype.languages": 3,
+                "window.sessionStorage": 2,
                 "Date.prototype.getTimezoneOffset": 3
             },
             "sites": 3,
@@ -588,11 +595,13 @@
         {
             "rule": "tteccloud\\.eu\\/Scripts\\/floatingChat-button\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "hc079-chat"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -751,7 +760,8 @@
                 "hc079-chat"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -870,7 +880,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2df189c9de5e3392d954fb35611134f03473c16317d2709746a02a781f1b0087"
+                "d939375c5452710e2046357fbc8a326df965888c75170693f808c1c5ef1bcded"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -972,7 +982,6 @@
         "Image": 2
     },
     "nameservers": [
-        "ns1.tteccloud.eu",
         "ns2.tteccloud.eu"
     ]
 }

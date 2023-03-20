@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000169,
-    "sites": 25,
+    "prevalence": 0.000176,
+    "sites": 26,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
@@ -17,25 +17,23 @@
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.appVersion": 1,
-                "window.devicePixelRatio": 1,
                 "Date.prototype.getTime": 1
             },
-            "sites": 13,
-            "prevalence": 0.000088,
+            "sites": 14,
+            "prevalence": 0.0000948,
             "cnames": [],
             "responseHashes": [
-                "d27c0b5793725a14c6be20f4a3794c6a0f421064bc8a88175348b58cacaa6667",
-                "2b4510463c9b9671f5768afca68c54d537678b3e2389e48aa5e077517deedcad",
-                "8f9714eda67b66cf5c87620ff0b93e86d49b0d87a5d35ced77e0b1cd31ca6a0d",
-                "5cdefe9d150e3e6f3d3b40d3add7bd330ec52f8b1943d81f8d2677a438db63e7",
+                "ffd1fc5c1b9900df0ac55b0e3f0719bbbc6896214cde715c87e15dc2da9b2522",
+                "ffe5538c608c4a3972508b78efa810f933b42a305d1e66f97bad17d8f2b28d6b",
+                "05e5297f4ad90bf695104a85828db18283994896a84c762512b26d6bd4ce5bf8",
                 "fc9916cd19b774891e59f513dd69e35fb811831fb4aa26d27c3c4aa53efa451e",
-                "b61ab57bfadfaed21940aede6963d5206667b097f931f84f364bb4be46fb2433",
-                "ac09ab0097f3bdcb9196e85c2fe4bea0b475fb49cc297ce709dcf970110d219c",
-                "faf94ed1df2d1ce7756e3bd66e1743652bc9e7c969bfc2c2c895ccfebc55c887",
-                "305146fba87836a7c99c9fb49ac5d8e0d37bf6cddb53b79199ec44d64f21d68d",
-                "66b9f6cb9f46726b443ea93dcceaf302f5ee223532ea3c66e503f1e570952d3e",
-                "63954fa465bc10aed86c70bca1b2dd04034307c32f53ad876ad539765a97c771",
-                "4d511d095bc3934a37ff062bcb74a141893c98cdabefe3ab86705d0fa4323d11"
+                "8f957b4a0366077ea7a40ea3d51249ffe1727bb35820485c93e63ab0025e1d9d",
+                "099ec0fb662fc510d8d3791524343d229e6b88a79b04f81bf2e6e543ce52a728",
+                "aa4198735e4b84d42515984ee9a2809a14d22ba8757eff3cf111c751e89449ce",
+                "c79251e98411edb7bef7a352341b022142472333a29b5d34cc4f1a57d309a4a8",
+                "c4718874b83ab652dca1709e58c69b3852c9a651cb166cbb5b2a86085bca676b",
+                "2bb48bd704b210af141c4fafce7ae56af2bc9b9fbf29e9ac4e4dd2d99eda96fd",
+                "69e69636293edb657f62d59070e7fa76e80242f7372280dd4d526b0807dc9932"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -45,8 +43,9 @@
                 "www.abendzeitung-muenchen.de",
                 "www.badische-zeitung.de",
                 "www.berliner-kurier.de",
-                "www.berliner-zeitung.de",
                 "www.berliner-woche.de",
+                "www.berliner-zeitung.de",
+                "www.heidelberg24.de",
                 "www.lr-online.de",
                 "www.moz.de",
                 "www.nordkurier.de",
@@ -84,9 +83,29 @@
                 "www.nordkurier.de",
                 "www.pz-news.de",
                 "www.schwaebische.de",
-                "www.suedkurier.de",
                 "www.suedostschweiz.ch",
+                "www.suedkurier.de",
                 "www.swp.de"
+            ]
+        },
+        {
+            "rule": "trmads\\.eu\\/css\\/fonts\\/Open_Sans\\/OpenSans-Regular\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "664bc86a83c449f366975cf98dbd56bc3ae1de3b6780060384737f96b94e9791"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heidelberg24.de",
+                "www.pz-news.de"
             ]
         }
     ],
@@ -96,27 +115,32 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5294117647058824
+            "prevalence": 0.5211267605633803
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.35294117647058826
+            "prevalence": 0.3380281690140845
         },
         {
             "domain": "usercentrics.eu",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.056338028169014086
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.058823529411764705
+            "prevalence": 0.056338028169014086
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.028169014084507043
         }
     ],
     "types": {
-        "Script": 13,
-        "Stylesheet": 13
+        "Script": 14,
+        "Stylesheet": 13,
+        "Font": 2
     },
     "nameservers": [
-        "merlin.ns.cloudflare.com",
-        "daisy.ns.cloudflare.com"
+        "daisy.ns.cloudflare.com",
+        "merlin.ns.cloudflare.com"
     ]
 }

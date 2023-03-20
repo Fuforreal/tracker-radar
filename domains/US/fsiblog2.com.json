@@ -367,13 +367,11 @@
         {
             "rule": "fsiblog2\\.com\\/wp-includes\\/js\\/jquery\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -413,13 +411,11 @@
         {
             "rule": "fsiblog2\\.com\\/wp-content\\/plugins\\/elementor-pro\\/assets\\/lib\\/smartmenus\\/jquery\\.smartmenus\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -525,11 +521,13 @@
         {
             "rule": "fsiblog2\\.com\\/wp-content\\/plugins\\/elementor\\/assets\\/js\\/frontend-modules\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -613,13 +611,11 @@
         {
             "rule": "fsiblog2\\.com\\/wp-includes\\/js\\/jquery\\/ui\\/core\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -741,7 +737,8 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -851,15 +848,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_ga": {
-                    "ttl": 63072001,
-                    "length": 27,
-                    "prevalence": 0.000006771305914058585,
+                    "ttl": 63072000,
+                    "length": 26,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "_gid": {
-                    "ttl": 86401,
+                    "ttl": 86400,
                     "length": 27,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -1062,7 +1059,7 @@
         "Font": 14
     },
     "nameservers": [
-        "jake.ns.cloudflare.com",
-        "lisa.ns.cloudflare.com"
+        "lisa.ns.cloudflare.com",
+        "jake.ns.cloudflare.com"
     ]
 }

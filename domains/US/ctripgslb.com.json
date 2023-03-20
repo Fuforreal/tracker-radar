@@ -50,6 +50,35 @@
             ]
         },
         {
+            "rule": "ctripgslb\\.com\\/restapi\\/soa2\\/18088\\/getAppConfig\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "slb-05-xy5-rb5-c11990-osonly"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "m.trip.com",
+                    "resolved": "slb-05-xy5-rb5-c11990-osonly.ctripgslb.com"
+                }
+            ],
+            "responseHashes": [
+                "c6c7f24f61f418e1824bfc50502614e1af2dab12541e0a254725adab11205d54",
+                "a7ec3574fbbe6167f0f478303ffc48f83bb41a7b0cde5da281b77603861053e4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "us.trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
             "rule": "ctripgslb\\.com\\/images\\/home-background\\/head-banner-bg-new-1024\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -73,35 +102,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "trip.com",
-                "www.trip.com"
-            ]
-        },
-        {
-            "rule": "ctripgslb\\.com\\/restapi\\/soa2\\/18088\\/getAppConfig\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "slb-05-xy5-rb5-c11990-osonly"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "m.trip.com",
-                    "resolved": "slb-05-xy5-rb5-c11990-osonly.ctripgslb.com"
-                }
-            ],
-            "responseHashes": [
-                "01a4c566ca34f4f081ad0792938e335b71de3a87d587cb628a1c1458cce6a004",
-                "738411360310e8d695ebbd45b9b9be0736d7d00af01aed8d68edc1f939e4ca5c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trip.com",
-                "us.trip.com",
                 "www.trip.com"
             ]
         },
@@ -155,9 +155,9 @@
         "Preflight": 3
     },
     "nameservers": [
-        "dns1.zdnscloud.info",
-        "cns1.zdnscloud.net",
         "vns1.zdnscloud.biz",
-        "ins1.zdnscloud.com"
+        "ins1.zdnscloud.com",
+        "cns1.zdnscloud.net",
+        "dns1.zdnscloud.info"
     ]
 }

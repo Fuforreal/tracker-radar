@@ -21,13 +21,14 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 1,
-                "window.sessionStorage": 1
+                "window.sessionStorage": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "0281242ba2de3fa8fe5f4a6d141e6fe170bcea951831c4d639f1bfcb0fced3d2"
+                "bc2325ee6caa67e3650fe5db0c56f2ac5e07911462642f829589cd51e02a9f70"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -151,14 +152,11 @@
         {
             "rule": "nychealthandhospitals\\.org\\/wp-content\\/themes\\/bigdrop-theme\\/inc\\/js\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -220,11 +218,17 @@
         {
             "rule": "nychealthandhospitals\\.org\\/wp-content\\/themes\\/bigdrop-theme\\/dist\\/js\\/global\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1,
+                "Element.prototype.getClientRects": 1,
+                "Document.cookie getter": 1,
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -291,8 +295,8 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.devicePixelRatio": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -331,7 +335,7 @@
             ]
         },
         {
-            "rule": "nychealthandhospitals\\.org\\/wp-content\\/themes\\/bigdrop-theme\\/dist\\/fonts\\/\\/b290e775-e0f9-4980-914b-a4c32a5e3e36\\.woff2",
+            "rule": "nychealthandhospitals\\.org\\/wp-content\\/themes\\/bigdrop-theme\\/dist\\/fonts\\/\\/d513e15e-8f35-4129-ad05-481815e52625\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -342,7 +346,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "6050dcdd522cb55187fdb05be5032993703f7e9761240703fca0adc18cfdeb8f"
+                "8baf2c7dfb6b4ce0e34c66ac78953365fc06c6666fe5075bcf3d890ac079fe8d"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -375,7 +379,7 @@
             ]
         },
         {
-            "rule": "nychealthandhospitals\\.org\\/wp-content\\/themes\\/bigdrop-theme\\/dist\\/fonts\\/\\/d513e15e-8f35-4129-ad05-481815e52625\\.woff2",
+            "rule": "nychealthandhospitals\\.org\\/wp-content\\/themes\\/bigdrop-theme\\/dist\\/fonts\\/\\/b290e775-e0f9-4980-914b-a4c32a5e3e36\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -386,7 +390,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8baf2c7dfb6b4ce0e34c66ac78953365fc06c6666fe5075bcf3d890ac079fe8d"
+                "6050dcdd522cb55187fdb05be5032993703f7e9761240703fca0adc18cfdeb8f"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -449,7 +453,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Element.prototype.getClientRects": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -499,7 +504,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "3ce262a07b03bab3957d17b4919657d35a5237c230a66b6f22a441a2e83b785c"
+                "7c5380e572346ca202058a5ff564261e9d383772d0f8809d4c90b4cc207200dc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -517,8 +522,9 @@
                 "www"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.sessionStorage": 2
+                "Date.prototype.getTime": 1,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -557,28 +563,6 @@
             ]
         },
         {
-            "rule": "nychealthandhospitals\\.org\\/wp-content\\/plugins\\/flow-flow\\/assets\\/carousel\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bd6d122d423ff3fe8057050515926de4129b5f3b318dac5db39275eb61cec948"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyc.gov",
-                "www1.nyc.gov"
-            ]
-        },
-        {
             "rule": "nychealthandhospitals\\.org\\/wp-content\\/plugins\\/flow-flow\\/assets\\/video\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -591,6 +575,28 @@
             "cnames": [],
             "responseHashes": [
                 "7050c2484beec0edfa5da8d17e20b97386c53782e31ba4188a0029a1679ccad2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www1.nyc.gov"
+            ]
+        },
+        {
+            "rule": "nychealthandhospitals\\.org\\/wp-content\\/plugins\\/flow-flow\\/assets\\/carousel\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "bd6d122d423ff3fe8057050515926de4129b5f3b318dac5db39275eb61cec948"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -641,7 +647,7 @@
         "XHR": 2
     },
     "nameservers": [
-        "hhc-ns1.nychhc.org",
-        "hhc-ns3.nychhc.org"
+        "hhc-ns3.nychhc.org",
+        "hhc-ns1.nychhc.org"
     ]
 }

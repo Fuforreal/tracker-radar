@@ -9,14 +9,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000454,
-    "sites": 67,
+    "prevalence": 0.000481,
+    "sites": 71,
     "subdomains": [
         "resources.digital-cloud",
-        "three-resources.digital",
-        "three-udc.digital",
         "resources.digital-cloud-ibm",
         "resources.digital-cloud-uk",
+        "three-resources.digital",
+        "three-udc.digital",
+        "ubt-lb.digital-cloud-uk",
         "resources.digital-cloud-prem"
     ],
     "cnames": [],
@@ -77,39 +78,39 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536003,
+                    "ttl": 31536024,
                     "length": 5,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "kampyle_userid": {
-                    "ttl": 31536004,
+                    "ttl": 31536024,
                     "length": 39,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536004,
+                    "ttl": 31536024,
                     "length": 13,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536004,
+                    "ttl": 31536024,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536004,
+                    "ttl": 31536024,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "kampyleUserPercentile": {
-                    "ttl": 31536012,
-                    "length": 16,
-                    "prevalence": 0.000006771305914058585,
+                    "ttl": 31536008,
+                    "length": 17,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -305,6 +306,97 @@
             ]
         },
         {
+            "rule": "medallia\\.eu\\/wdceu\\/6912\\/onsite\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "resources.digital-cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "c54075393d7071fedbe6722d35cbc00dc5a9e070241bd3e8cdeb79978c6ff4ee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "st.com",
+                "community.st.com",
+                "www.st.com"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/wdceu\\/6912\\/onsite\\/generic1678985203642\\.js",
+            "cookies": 0.00000677,
+            "fingerprinting": 2,
+            "subdomains": [
+                "resources.digital-cloud"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "NavigatorUAData.prototype.platform": 1,
+                "Navigator.prototype.platform": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.cookieEnabled": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "d8774447a1760d9ace421e116eb3a20437fb0543c0a77a3fa20deae1cdfce7df"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mdLogger": {
+                    "ttl": 31536008,
+                    "length": 5,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "kampyle_userid": {
+                    "ttl": 31536008,
+                    "length": 39,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "kampyleUserSession": {
+                    "ttl": 31536008,
+                    "length": 13,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "kampyleSessionPageCounter": {
+                    "ttl": 31536008,
+                    "length": 1,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "kampyleUserSessionsCount": {
+                    "ttl": 31536008,
+                    "length": 1,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "st.com",
+                "community.st.com",
+                "www.st.com"
+            ]
+        },
+        {
             "rule": "medallia\\.eu\\/wdceu\\/26446\\/onsite\\/embed\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -312,7 +404,7 @@
                 "resources.digital-cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -332,98 +424,6 @@
         },
         {
             "rule": "medallia\\.eu\\/wdceu\\/26446\\/onsite\\/generic1677223881882\\.js",
-            "cookies": 0.0000271,
-            "fingerprinting": 2,
-            "subdomains": [
-                "resources.digital-cloud"
-            ],
-            "apis": {
-                "window.localStorage": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4,
-                "Document.cookie getter": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Screen.prototype.height": 4,
-                "Screen.prototype.width": 4,
-                "NavigatorUAData.prototype.platform": 4,
-                "Navigator.prototype.platform": 4,
-                "Date.prototype.getTimezoneOffset": 4,
-                "Navigator.prototype.cookieEnabled": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "83e2a8e786cc178a562aac471744f850b714213d34bb700234dd0e58ad99a918"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "mdLogger": {
-                    "ttl": 31536010,
-                    "length": 5,
-                    "prevalence": 0.00002708522365623434,
-                    "uniqueness": 0.25
-                },
-                "kampyle_userid": {
-                    "ttl": 31536010,
-                    "length": 39,
-                    "prevalence": 0.00002708522365623434,
-                    "uniqueness": 1
-                },
-                "kampyleUserSession": {
-                    "ttl": 31536010,
-                    "length": 13,
-                    "prevalence": 0.00002708522365623434,
-                    "uniqueness": 1
-                },
-                "kampyleSessionPageCounter": {
-                    "ttl": 31536010,
-                    "length": 1,
-                    "prevalence": 0.00002708522365623434,
-                    "uniqueness": 0.25
-                },
-                "kampyleUserSessionsCount": {
-                    "ttl": 31536010,
-                    "length": 1,
-                    "prevalence": 0.00002708522365623434,
-                    "uniqueness": 0.25
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "talktalk.co.uk",
-                "community.talktalk.co.uk",
-                "new.talktalk.co.uk",
-                "www.talktalk.co.uk"
-            ]
-        },
-        {
-            "rule": "medallia\\.eu\\/wdceu\\/6912\\/onsite\\/embed\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "resources.digital-cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "92fccc6ffd73b718ba51757c0e959d8a1e7fd3ff898d3215037c2b60625af271"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "st.com",
-                "community.st.com",
-                "www.st.com"
-            ]
-        },
-        {
-            "rule": "medallia\\.eu\\/wdceu\\/6912\\/onsite\\/generic1677842389846\\.js",
             "cookies": 0.0000203,
             "fingerprinting": 2,
             "subdomains": [
@@ -440,53 +440,246 @@
                 "NavigatorUAData.prototype.platform": 3,
                 "Navigator.prototype.platform": 3,
                 "Date.prototype.getTimezoneOffset": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.cookieEnabled": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "83e2a8e786cc178a562aac471744f850b714213d34bb700234dd0e58ad99a918"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mdLogger": {
+                    "ttl": 31536009,
+                    "length": 5,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 0.3333333333333333
+                },
+                "kampyle_userid": {
+                    "ttl": 31536009,
+                    "length": 39,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 1
+                },
+                "kampyleUserSession": {
+                    "ttl": 31536009,
+                    "length": 13,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 1
+                },
+                "kampyleSessionPageCounter": {
+                    "ttl": 31536009,
+                    "length": 1,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 0.3333333333333333
+                },
+                "kampyleUserSessionsCount": {
+                    "ttl": 31536009,
+                    "length": 1,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "talktalk.co.uk",
+                "community.talktalk.co.uk",
+                "new.talktalk.co.uk",
+                "www.talktalk.co.uk"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/wdceuibm\\/2398\\/onsite\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "resources.digital-cloud-ibm"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "be601e2dcb8e43e55206fbb1527a04815b047cef631cfaf7b72f27ad916b8580"
+                "e063c43c5ba147c2101b5e9e8d47ccdc37c4ed8c78e2c905506aa7bef738cda3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ibm.com",
+                "developer.ibm.com",
+                "www.ibm.com"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/wdceuibm\\/2398\\/onsite\\/generic1678121327103\\.js",
+            "cookies": 0.0000203,
+            "fingerprinting": 2,
+            "subdomains": [
+                "resources.digital-cloud-ibm"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.width": 3,
+                "NavigatorUAData.prototype.platform": 3,
+                "Navigator.prototype.platform": 3,
+                "Date.prototype.getTimezoneOffset": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "27862769aa65f04e6440565b649c4d2e606dd3bb7fe8c4c7bb476fd3ae24cd9d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
                     "ttl": 31536004,
                     "length": 5,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "kampyle_userid": {
                     "ttl": 31536004,
                     "length": 39,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
                     "ttl": 31536004,
                     "length": 13,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
                     "ttl": 31536004,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "kampyleUserSessionsCount": {
                     "ttl": 31536004,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "st.com",
-                "community.st.com",
-                "www.st.com"
+                "ibm.com",
+                "developer.ibm.com",
+                "www.ibm.com"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/wdcuk\\/79546\\/onsite\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "resources.digital-cloud-uk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "480f76322a7ce018af85011ea639e58f72ffec390dec80457fe74e58d85db8e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airgas.com",
+                "locations.airgas.com",
+                "www.airgas.com"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/wdcuk\\/79546\\/onsite\\/generic1678719809910\\.js",
+            "cookies": 0.0000203,
+            "fingerprinting": 2,
+            "subdomains": [
+                "resources.digital-cloud-uk"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.width": 3,
+                "NavigatorUAData.prototype.platform": 3,
+                "Navigator.prototype.platform": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.cookieEnabled": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "4c7f23cae10a0b2ab0b52cd78f61f7168fa776c9164c6116974f2223d8044b70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mdLogger": {
+                    "ttl": 31536003,
+                    "length": 5,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 0.3333333333333333
+                },
+                "kampyle_userid": {
+                    "ttl": 31536003,
+                    "length": 39,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 1
+                },
+                "kampyleUserSession": {
+                    "ttl": 31536003,
+                    "length": 13,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 1
+                },
+                "kampyleSessionPageCounter": {
+                    "ttl": 31536003,
+                    "length": 1,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 0.3333333333333333
+                },
+                "kampyleUserSessionsCount": {
+                    "ttl": 31536003,
+                    "length": 1,
+                    "prevalence": 0.000020317081925246682,
+                    "uniqueness": 0.3333333333333333
+                },
+                "DECLINED_DATE": {
+                    "ttl": 31536004,
+                    "length": 13,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "SUBMITTED_DATE": {
+                    "ttl": 31536004,
+                    "length": 13,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airgas.com",
+                "locations.airgas.com",
+                "www.airgas.com"
             ]
         },
         {
@@ -570,6 +763,28 @@
             ]
         },
         {
+            "rule": "medallia\\.eu\\/api\\/targeting\\/property\\/wdcuk_79546\\/identity\\/anonymous",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ubt-lb.digital-cloud-uk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "0d951394d5837a9d368ddf022a9c4cb60cf9832c846995acf926835eb36a260c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airgas.com",
+                "www.airgas.com"
+            ]
+        },
+        {
             "rule": "medallia\\.eu\\/wdceu\\/28864\\/onsite\\/generic1644239413940\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 1,
@@ -594,33 +809,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536004,
+                    "ttl": 31536005,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536003,
+                    "ttl": 31536005,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -930,33 +1145,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536010,
+                    "ttl": 31536014,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536010,
+                    "ttl": 31536014,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536010,
+                    "ttl": 31536014,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536010,
+                    "ttl": 31536014,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536010,
+                    "ttl": 31536014,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -980,7 +1195,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "32776809f243cfb40765816065173b846a5cf7452dc35aad2f7aae606ecd05db"
+                "fcaa17da094eb8c759dcfab9cb839ae8a2bc3d11a34c91150818e220d7fca1e5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -991,7 +1206,7 @@
             ]
         },
         {
-            "rule": "medallia\\.eu\\/wdceu\\/125130\\/onsite\\/generic1678708847487\\.js",
+            "rule": "medallia\\.eu\\/wdceu\\/125130\\/onsite\\/generic1678808601100\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
@@ -1008,51 +1223,57 @@
                 "NavigatorUAData.prototype.platform": 2,
                 "Navigator.prototype.platform": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.cookieEnabled": 2
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a312085264ebaaf4fb4214326074a32e494926a7aca1d76a75145fd58648b64d"
+                "9da1f0d91fe5f38210bf8dab25c09f1b05036fdc3c8d3f4a0d47ecfe4fdbd923"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536013,
+                    "ttl": 31536016,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536013,
+                    "ttl": 31536016,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536013,
+                    "ttl": 31536016,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536013,
+                    "ttl": 31536016,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536013,
+                    "ttl": 31536016,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserPercentile": {
-                    "ttl": 31536013,
+                    "ttl": 31536016,
                     "length": 16,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
+                },
+                "kampylePageLoadedTimestamp": {
+                    "ttl": 31536016,
+                    "length": 13,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -1060,6 +1281,50 @@
             "exampleSites": [
                 "congstar.de",
                 "www.congstar.de"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/md-form\\/website\\/1\\.11\\.0\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources.digital-cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "cc3959f1e06215345c1477f1db16be5981f5b7634c67b33d727d41042029abff"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "congstar.de",
+                "www.vitality.co.uk"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/md-form\\/website\\/1\\.11\\.0\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources.digital-cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "5be0ce3bbf854356c9b1274755cac1ab88ce4adc252c894708264955226247c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "congstar.de",
+                "www.vitality.co.uk"
             ]
         },
         {
@@ -1117,39 +1382,39 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536015,
+                    "ttl": 31536007,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536015,
+                    "ttl": 31536007,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536015,
+                    "ttl": 31536007,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536015,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536015,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserPercentile": {
-                    "ttl": 31536015,
-                    "length": 17,
-                    "prevalence": 0.00001354261182811717,
+                    "ttl": 31536007,
+                    "length": 18,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -1223,8 +1488,7 @@
                 "NavigatorUAData.prototype.platform": 2,
                 "Navigator.prototype.platform": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.cookieEnabled": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1235,45 +1499,39 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536017,
+                    "ttl": 31536016,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536017,
+                    "ttl": 31536016,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536017,
+                    "ttl": 31536016,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536017,
+                    "ttl": 31536016,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536017,
+                    "ttl": 31536016,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserPercentile": {
-                    "ttl": 31536017,
+                    "ttl": 31536016,
                     "length": 17,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "kampylePageLoadedTimestamp": {
-                    "ttl": 31536017,
-                    "length": 13,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -1281,6 +1539,26 @@
             "exampleSites": [
                 "fitflop.com",
                 "www.fitflop.com"
+            ]
+        },
+        {
+            "rule": "medallia\\.eu\\/wdceuprem\\/33519\\/onsite\\/onsiteData\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources.digital-cloud-prem"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxybingo.com",
+                "www.foxybingo.com"
             ]
         },
         {
@@ -1339,31 +1617,31 @@
                 "mdLogger": {
                     "ttl": 31536001,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
                     "ttl": 31536001,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
                     "ttl": 31536001,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
                     "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
                     "ttl": 31536001,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1376,13 +1654,11 @@
         {
             "rule": "medallia\\.eu\\/wdceu\\/82654\\/onsite\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "resources.digital-cloud"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1399,22 +1675,22 @@
         },
         {
             "rule": "medallia\\.eu\\/wdceu\\/82654\\/onsite\\/generic1674550990652\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 2,
             "subdomains": [
                 "resources.digital-cloud"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "NavigatorUAData.prototype.platform": 2,
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "NavigatorUAData.prototype.platform": 1,
+                "Navigator.prototype.platform": 1,
+                "Date.prototype.getTimezoneOffset": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1427,32 +1703,32 @@
                 "mdLogger": {
                     "ttl": 31536004,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "kampyle_userid": {
                     "ttl": 31536004,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
                     "ttl": 31536004,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
                     "ttl": 31536004,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "kampyleUserSessionsCount": {
                     "ttl": 31536004,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -1475,7 +1751,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8757d614ebc49991b83904b853843fe9a5b901ecdc0dbcb11696ead84db6a1a3"
+                "ac2fb60a3d518f9b7da8882c24ce2ba144f8113e8e3d2ab9bef90dc2f13c4d2a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1486,7 +1762,7 @@
             ]
         },
         {
-            "rule": "medallia\\.eu\\/wdceu\\/172976\\/onsite\\/generic1677526096646\\.js",
+            "rule": "medallia\\.eu\\/wdceu\\/172976\\/onsite\\/generic1678978902724\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
@@ -1509,38 +1785,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e7e4f93a6002d382c7eed292a81f22fc0996f9ecf9a21877a9460cf2dc2830ec"
+                "18a41cb597399e9623ff16070a6b64c8a70ffd81cdb2f2225146853225579dab"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1548,94 +1824,6 @@
             "exampleSites": [
                 "hilti.com",
                 "www.hilti.com"
-            ]
-        },
-        {
-            "rule": "medallia\\.eu\\/wdceuibm\\/2398\\/onsite\\/embed\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "resources.digital-cloud-ibm"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e063c43c5ba147c2101b5e9e8d47ccdc37c4ed8c78e2c905506aa7bef738cda3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ibm.com",
-                "www.ibm.com"
-            ]
-        },
-        {
-            "rule": "medallia\\.eu\\/wdceuibm\\/2398\\/onsite\\/generic1678121327103\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 2,
-            "subdomains": [
-                "resources.digital-cloud-ibm"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "NavigatorUAData.prototype.platform": 2,
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTimezoneOffset": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "27862769aa65f04e6440565b649c4d2e606dd3bb7fe8c4c7bb476fd3ae24cd9d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "mdLogger": {
-                    "ttl": 31536008,
-                    "length": 5,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "kampyle_userid": {
-                    "ttl": 31536008,
-                    "length": 39,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "kampyleUserSession": {
-                    "ttl": 31536008,
-                    "length": 13,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "kampyleSessionPageCounter": {
-                    "ttl": 31536008,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "kampyleUserSessionsCount": {
-                    "ttl": 31536008,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ibm.com",
-                "www.ibm.com"
             ]
         },
         {
@@ -1654,71 +1842,6 @@
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "intellicast.com",
-                "www.wunderground.com"
-            ]
-        },
-        {
-            "rule": "medallia\\.eu\\/wdceuibm\\/5699\\/onsite\\/generic1677695222842\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 2,
-            "subdomains": [
-                "resources.digital-cloud-ibm"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "NavigatorUAData.prototype.platform": 2,
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.cookieEnabled": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "82588b07833bf519baa424cbaa27511d2213492be5ea5884a8378138521f4a60"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "mdLogger": {
-                    "ttl": 31536010,
-                    "length": 5,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "kampyle_userid": {
-                    "ttl": 31536010,
-                    "length": 39,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "kampyleUserSession": {
-                    "ttl": 31536010,
-                    "length": 13,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "kampyleSessionPageCounter": {
-                    "ttl": 31536010,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "kampyleUserSessionsCount": {
-                    "ttl": 31536010,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                }
-            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "intellicast.com",
@@ -1779,33 +1902,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536005,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -1868,33 +1991,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536006,
+                    "ttl": 31536007,
                     "length": 5,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "kampyle_userid": {
-                    "ttl": 31536006,
+                    "ttl": 31536007,
                     "length": 39,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536006,
+                    "ttl": 31536007,
                     "length": 13,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536006,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536006,
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 }
             },
@@ -1919,7 +2042,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "7579635bf33aa6f0adc39d30f082dca956c3baad0207899ea4950f16fa0fd764"
+                "d257931adcba4acdec650d60f213885fb868ed8f28a7a060bbc39c7ce6e292dd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1930,7 +2053,7 @@
             ]
         },
         {
-            "rule": "medallia\\.eu\\/wdcuk\\/74860\\/onsite\\/generic1678297345934\\.js",
+            "rule": "medallia\\.eu\\/wdcuk\\/74860\\/onsite\\/generic1678982870971\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -1952,7 +2075,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b9c45ba28f6e7c43df5d8708ed58b9e7d4f1dc4f7067abe0becda108c22ef425"
+                "ce37ac07d56ad36dfb80cbdb3bc9585dfe8033a25e1a1d678d300f06aab45abe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1965,13 +2088,11 @@
         {
             "rule": "medallia\\.eu\\/wdcuk\\/46821\\/onsite\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "resources.digital-cloud-uk"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1988,24 +2109,12 @@
         },
         {
             "rule": "medallia\\.eu\\/wdcuk\\/46821\\/onsite\\/generic1678210358408\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 2,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "resources.digital-cloud-uk"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "NavigatorUAData.prototype.platform": 2,
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.cookieEnabled": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -2013,44 +2122,7 @@
                 "976988bc1ab1d0c180d05c83951763236e2fb7c97c1cf06aebd39f2619fa56ab"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "mdLogger": {
-                    "ttl": 31536006,
-                    "length": 5,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "kampyle_userid": {
-                    "ttl": 31536006,
-                    "length": 39,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "kampyleUserSession": {
-                    "ttl": 31536006,
-                    "length": 13,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "kampyleSessionPageCounter": {
-                    "ttl": 31536006,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "kampyleUserSessionsCount": {
-                    "ttl": 31536006,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                },
-                "kampyleUserPercentile": {
-                    "ttl": 31536006,
-                    "length": 17,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "selfridges.com",
@@ -2135,33 +2207,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536003,
+                    "ttl": 31536008,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536003,
+                    "ttl": 31536008,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536003,
+                    "ttl": 31536008,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536003,
+                    "ttl": 31536008,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536003,
+                    "ttl": 31536008,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2185,7 +2257,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9a785dc3f5446f88d0c1e1ae25eed9b3f8289e0a45f851822409da7b8373cc75"
+                "9ea7e520b5810fee256b7d7e2828bfcc9a548ba0a8697efe2545f45acd6397ae"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2196,7 +2268,7 @@
             ]
         },
         {
-            "rule": "medallia\\.eu\\/wdceu\\/119187\\/onsite\\/generic1678088554569\\.js",
+            "rule": "medallia\\.eu\\/wdceu\\/119187\\/onsite\\/generic1678961099549\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
@@ -2219,38 +2291,38 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9e8a28ceb7859024970ec80784fbe2f70bdc3694895e7cc55fcac9c211ab391a"
+                "9abc785272a79dacca63e7f3bd40e4e7c7d539c2841786be515833b77769e6f8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536020,
+                    "ttl": 31536028,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536020,
+                    "ttl": 31536028,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536020,
+                    "ttl": 31536028,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536020,
+                    "ttl": 31536028,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536020,
+                    "ttl": 31536028,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -2272,7 +2344,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0e16af5fd3a9df78f8893ed9b08870f42d118741dcd034258927a56879028e2c"
+                "5a425f6ae2a906b4209c4ec521c6a7eac3cb5bf9915a595647e69fb3c632a52d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2290,13 +2362,13 @@
                 "resources.digital-cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "4d7be6bb99287555b86b93bc97f652fedb43ad3109050929bedf217f17c6a1e9"
+                "7fd41ecd67e57de0726c0cf425bdd3d51186a5eabb27b04226561653be6700c6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2307,7 +2379,7 @@
             ]
         },
         {
-            "rule": "medallia\\.eu\\/wdceu\\/8528\\/onsite\\/generic1678726042859\\.js",
+            "rule": "medallia\\.eu\\/wdceu\\/8528\\/onsite\\/generic1678876990852\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
@@ -2331,44 +2403,44 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "24e183f01e0de946f0ae8f10469eef20e74c6b2fbb685d00e45ff58e0ed74570"
+                "4f9a83d977b0ffdc245f367be82dd789c429769779de7ec324306df3b70eff44"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "mdLogger": {
-                    "ttl": 31536011,
+                    "ttl": 31536013,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyle_userid": {
-                    "ttl": 31536011,
+                    "ttl": 31536013,
                     "length": 39,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleUserSession": {
-                    "ttl": 31536011,
+                    "ttl": 31536013,
                     "length": 13,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "kampyleSessionPageCounter": {
-                    "ttl": 31536011,
+                    "ttl": 31536013,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserSessionsCount": {
-                    "ttl": 31536011,
+                    "ttl": 31536013,
                     "length": 1,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "kampyleUserPercentile": {
-                    "ttl": 31536011,
-                    "length": 17,
-                    "prevalence": 0.00001354261182811717,
+                    "ttl": 31536013,
+                    "length": 18,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -2379,7 +2451,7 @@
             ]
         },
         {
-            "rule": "medallia\\.eu\\/md-form\\/website\\/1\\.11\\.0\\/index\\.html",
+            "rule": "medallia\\.eu\\/wdceu\\/8528\\/forms\\/7082\\/formDataV2_1678790921634_en\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2390,29 +2462,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "cc3959f1e06215345c1477f1db16be5981f5b7634c67b33d727d41042029abff"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vitality.co.uk",
-                "www.vitality.co.uk"
-            ]
-        },
-        {
-            "rule": "medallia\\.eu\\/wdceu\\/8528\\/forms\\/7082\\/formDataV2_1678726042106_en\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "resources.digital-cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fdc737449d5f88865558302c956aa3807bde0f5c267dcd8d256b5b9bf4bea542"
+                "d75128886d26897e5deb8afddeee86cfd5c699f78eb9b716bba8015aab0cc63c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2445,28 +2495,6 @@
             ]
         },
         {
-            "rule": "medallia\\.eu\\/md-form\\/website\\/1\\.11\\.0\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "resources.digital-cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5be0ce3bbf854356c9b1274755cac1ab88ce4adc252c894708264955226247c8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vitality.co.uk",
-                "www.vitality.co.uk"
-            ]
-        },
-        {
             "rule": "medallia\\.eu\\/wdceu\\/8528\\/onsite\\/domains-configuration\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2491,58 +2519,58 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000386,
+    "cookies": 0.000379,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7318840579710145
+            "prevalence": 0.7172413793103448
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.10144927536231885
+            "prevalence": 0.10344827586206896
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.06521739130434782
+            "prevalence": 0.0896551724137931
         },
         {
             "domain": "kampyle.com",
-            "prevalence": 0.028985507246376812
+            "prevalence": 0.020689655172413793
         },
         {
             "domain": "3gateway.net",
-            "prevalence": 0.014492753623188406
+            "prevalence": 0.013793103448275862
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.014492753623188406
+            "prevalence": 0.013793103448275862
         },
         {
             "domain": "s81c.com",
-            "prevalence": 0.014492753623188406
+            "prevalence": 0.013793103448275862
         },
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.014492753623188406
+            "prevalence": 0.013793103448275862
         },
         {
             "domain": "wunderground.com",
-            "prevalence": 0.007246376811594203
+            "prevalence": 0.006896551724137931
         },
         {
             "domain": "dynatrace.com",
-            "prevalence": 0.007246376811594203
+            "prevalence": 0.006896551724137931
         }
     ],
     "types": {
-        "Script": 100,
-        "XHR": 50,
+        "Script": 106,
+        "XHR": 54,
         "Image": 4,
         "Document": 2
     },
     "nameservers": [
-        "ns-1002.awsdns-61.net",
         "ns-1113.awsdns-11.org",
+        "ns-1002.awsdns-61.net",
         "ns-269.awsdns-33.com",
         "ns-1666.awsdns-16.co.uk"
     ]

@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "vistana-web-static\\.s3\\.amazonaws\\.com\\/vistana-web\\/consumable\\/header\\/production\\/css\\/utility_nav\\.css",
@@ -281,8 +281,9 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.innerWidth": 1,
-                "window.localStorage": 1
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -441,13 +442,9 @@
         {
             "rule": "vistana-web-static\\.s3\\.amazonaws\\.com\\/react-apps\\/destinations-header-nav\\/prod\\/static\\/js\\/2\\.c4ce5ef6\\.chunk\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -485,12 +482,9 @@
         {
             "rule": "vistana-web-static\\.s3\\.amazonaws\\.com\\/react-apps\\/destinations-header-nav\\/prod\\/static\\/js\\/main\\.f64c2475\\.chunk\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "window.localStorage": 1,
-                "window.sessionStorage": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -545,9 +539,9 @@
         "XHR": 2
     },
     "nameservers": [
-        "ns-328.awsdns-41.com",
-        "ns-1173.awsdns-18.org",
         "ns-1620.awsdns-10.co.uk",
-        "ns-674.awsdns-20.net"
+        "ns-1173.awsdns-18.org",
+        "ns-674.awsdns-20.net",
+        "ns-328.awsdns-41.com"
     ]
 }

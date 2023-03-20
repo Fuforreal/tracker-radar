@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000616,
-    "sites": 91,
+    "prevalence": 0.000623,
+    "sites": 92,
     "subdomains": [
         "cdn",
         "client-context",
         "c.client-context",
-        "beam"
+        "beam",
+        "relay"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,17 +24,17 @@
                 "cdn"
             ],
             "apis": {
+                "window.sessionStorage": 4,
+                "window.localStorage": 4,
                 "Navigator.prototype.userAgent": 4,
                 "Navigator.prototype.appName": 4,
-                "window.sessionStorage": 3,
-                "window.localStorage": 3,
-                "window.innerWidth": 3
+                "window.innerWidth": 4
             },
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "715927e77bda38a16e1fb0bde82056a3d5ff804be8b1fea3240ab8fc4507b326"
+                "62cd11626859d0e8210e857644725daf776aa8962922a747634ff9a813e82acd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -54,12 +55,12 @@
             ],
             "apis": {
                 "window.sessionStorage": 24,
-                "window.localStorage": 25,
-                "Navigator.prototype.userAgent": 25,
-                "Date.prototype.getTime": 25,
-                "Navigator.prototype.appName": 25,
+                "window.localStorage": 24,
+                "Navigator.prototype.userAgent": 23,
+                "Date.prototype.getTime": 23,
+                "Navigator.prototype.appName": 19,
                 "window.innerWidth": 21,
-                "Document.cookie getter": 25,
+                "Document.cookie getter": 22,
                 "Navigator.prototype.cookieEnabled": 18,
                 "Document.cookie setter": 17,
                 "NavigatorUAData.prototype.getHighEntropyValues": 18,
@@ -68,60 +69,59 @@
                 "Navigator.prototype.language": 18,
                 "Screen.prototype.width": 18,
                 "Screen.prototype.height": 18,
-                "Navigator.prototype.connection": 5,
+                "Navigator.prototype.connection": 6,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 18
             },
             "sites": 25,
             "prevalence": 0.000169,
             "cnames": [],
             "responseHashes": [
-                "a3bf3c19f8b52fd3e710d4554646c627fc38e7ce38e3f871491e86fa4ff4bb46",
-                "660c0e84d606f21f2cc9a4247cf325f69018153f0fc887a7e58206c69db7114c",
-                "a3941d262e3db9769e5827fa4d5893f821913c1c46eed5fba256f395145a55a4"
+                "462ecf3a65d34caf4812507913f0a811811bd495a5c30356173fef9eccdee27b",
+                "3ac5bb61608e4a96af5d74912117b86fdec2ae99c6c96249bc10224db4e4a969"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592002,
+                    "ttl": 2592003,
                     "length": 16,
-                    "prevalence": 0.00010834089462493736,
-                    "uniqueness": 0.0625
+                    "prevalence": 0.00009481304898448452,
+                    "uniqueness": 0.07142857142857142
                 },
                 "_lr_retry_request": {
-                    "ttl": 3608,
+                    "ttl": 3610,
                     "length": 4,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_lr_env_src_ats": {
-                    "ttl": 2592008,
+                    "ttl": 2592010,
                     "length": 5,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "deco.journaldesfemmes.fr",
+                "forum.lefigaro.fr",
+                "hugolescargot.journaldesfemmes.fr",
+                "immobilier.lefigaro.fr",
+                "www.linternaute.fr",
                 "www.journaldunet.fr",
                 "www.linternaute.com",
-                "sante-medecine.journaldesfemmes.fr",
-                "www.journaldunet.com",
-                "immobilier.lefigaro.fr",
-                "hugolescargot.journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr",
-                "www.journaldesfemmes.fr",
-                "bricolage.linternaute.com",
-                "www.linternaute.fr",
-                "cuisine.journaldesfemmes.fr",
-                "forum.lefigaro.fr",
-                "www.cadremploi.fr",
-                "copainsdavant.linternaute.com",
-                "www.lachainemeteo.com",
-                "viadeo.journaldunet.com",
-                "www.commentcamarche.net",
                 "etudiant.lefigaro.fr",
-                "www.phonandroid.com"
+                "www.commentcamarche.net",
+                "copainsdavant.linternaute.com",
+                "deco.journaldesfemmes.fr",
+                "linternaute.com",
+                "avis-deces.linternaute.com",
+                "bricolage.linternaute.com",
+                "www.phonandroid.com",
+                "www.journaldesfemmes.fr",
+                "www.cadremploi.fr",
+                "www.lachainemeteo.com",
+                "forums.commentcamarche.net",
+                "sante.journaldesfemmes.fr",
+                "droit-finances.commentcamarche.com"
             ]
         },
         {
@@ -174,12 +174,10 @@
             "prevalence": 0.000122,
             "cnames": [],
             "responseHashes": [
-                "ea49e0e5a057582f2c8abf3442d53ebad1ff6ba509620ed9dcb2821a0060618b",
-                "4f6044836467cee0555db42232480bc90aff3d9ec92364c26d5e6e385cdf7746",
-                "c9e27cfa005c53f05ac51c4b0beef16fdcb046167d7cf1d09a56cc68859ae1b4",
-                "6bd1b1cf0d5743712a3c39714a52a7df70df5c157032dfa4956e2e689680855c",
-                "494aaa998ddfbafebe75e87251e7407de96c9bfbc3c5d5c80c69c44e323c094f",
-                "d4baa63cf5f9c20aa7e1d6c1cb9c4990444caadcc665ee1552a35c0168068e7d"
+                "8c003d06de339b3e570c05049c0c8322155b6d25cd35c6b08acd522f72cb2900",
+                "a1a64543e6bb1b6ef095191dbeaa88c1050738e69a974f6d717a4d42c83a0a29",
+                "9585d0817e8f7010c888bec508c232befb2ebd762b9eb4e1e53d4bc580330901",
+                "d4add2e69fa0f1092cb83c4c4073444e5372721e189400f4e186419b99399429"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -213,8 +211,8 @@
                 "beam"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.000122,
+            "sites": 19,
+            "prevalence": 0.000129,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -238,7 +236,8 @@
                 "www.journaldunet.com",
                 "www.journaldunet.fr",
                 "www.linternaute.com",
-                "www.linternaute.fr"
+                "www.linternaute.fr",
+                "www.meteofrance.com"
             ]
         },
         {
@@ -249,18 +248,18 @@
                 "cdn"
             ],
             "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.appName": 2,
-                "Document.cookie getter": 2
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.appName": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a3bf3c19f8b52fd3e710d4554646c627fc38e7ce38e3f871491e86fa4ff4bb46"
+                "462ecf3a65d34caf4812507913f0a811811bd495a5c30356173fef9eccdee27b"
             ],
             "type": "Other",
             "firstPartyCookies": {},
@@ -287,7 +286,7 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "46014945dfbd49da7390939527270b32bce6767d7c617e4af54de705c04b4068"
+                "e47ea2f0aa475aeeaa79cfbd74908f8764feddb0df308d1e970154d807e967d7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -314,7 +313,7 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "cc648ce56eff97df4d139b9ff297d7292a14e05c29ab0792147532553e84f8f5"
+                "1427e4ecc71d635847f75ff366ac6a5cafd74f5ebfd34f256a6dc53f96140f95"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -343,7 +342,7 @@
             "prevalence": 0.0000406,
             "cnames": [],
             "responseHashes": [
-                "ad9be8dfd73cbf89edab97bbd0847870f6a2f2b7ab22483daba2f080eb7c0ed1"
+                "bb3901e6c034399bb8b94fd2511123e065c3f27a50ee584cedc74a5a43ba1c35"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -355,6 +354,33 @@
                 "www.parents.fr",
                 "www.regal.fr",
                 "www.santemagazine.fr"
+            ]
+        },
+        {
+            "rule": "hubvisor\\.io\\/wrapper\\/01BYK28ENND8X5G8K0AJ2DPK2B\\/hubvisor\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e47ea2f0aa475aeeaa79cfbd74908f8764feddb0df308d1e970154d807e967d7"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "20minutes.fr",
+                "www.20minutes.fr"
             ]
         },
         {
@@ -374,7 +400,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ab3d5df7787574601b0d987a126e718539ba76b3b1970be9a38e391b19661812"
+                "a00c5adce7e9cbdca67660bc969af139e0b6cab9ac95a3c7719e7de6984e1765"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -382,6 +408,28 @@
             "exampleSites": [
                 "boursier.com",
                 "www.boursier.com"
+            ]
+        },
+        {
+            "rule": "hubvisor\\.io\\/v1\\/bid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "relay"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "2226cce0714bbaa8a2172dadc4be314c42000e26ec72b58c701ccd0297177afd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commentcamarche.net",
+                "www.linternaute.com"
             ]
         },
         {
@@ -395,14 +443,14 @@
                 "window.sessionStorage": 3,
                 "window.localStorage": 3,
                 "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3,
+                "Date.prototype.getTime": 2,
                 "Navigator.prototype.appName": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "8b4cfb277ab0ac4fa1b130d53b7b7df7f7836e6eeb90f9929bc6b1e2d4600fab"
+                "82c51d7d4dc9dbbda41965a6fdec52396f7c1ed25c3f12a3238b60b6d6b3cb90"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -431,7 +479,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f5421c6f5c1d7340ec5f272529449878cf5961b7ac2754d330e1cebdee82aa5e"
+                "fe327064abd0b15f1c4b4044661aa96ce46ef60bbe8c4abf16bd1c516058a38c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -460,7 +508,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d50fec25329e0c0908ef8e28e33e89d6a2fd874cd89492241cbc41c69a6ea7cd"
+                "97b5a83551f3ec3a64e32edf1daebf9c7782d34e91359b90282cc4f15551f2e6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -478,16 +526,16 @@
                 "cdn"
             ],
             "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.appName": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9fc8fe239a496cd49d8574881aa33c7ef7fd842e2a290a01ca6a8483e7a63689"
+                "285c071a13c898a2ecdf29b7a52544068bb315904e35cfc6a7dfe23846608ea9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -505,23 +553,24 @@
                 "cdn"
             ],
             "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2
+                "window.sessionStorage": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appName": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "cc4c60c4f8c3cb957a417b846bb8ec11f3a9974474b66080c3fecf931507a5d4"
+                "9860abb77a0018d810d5b2c691fff570cbe20ea9a440d86753825e2bde3589ad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "largus.fr",
-                "www.largus.fr"
+                "www.largus.fr",
+                "www.leboncoin.fr"
             ]
         },
         {
@@ -542,7 +591,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0a6c56082ddae0b8423dfce8fbf40e143e6b07e1a39a8017ffd5cfb1e3a2f41d"
+                "b05465841d44cf299d03d5d10c1238fd1d24302445cb944708472effe4dd2fa6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -560,17 +609,17 @@
                 "cdn"
             ],
             "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.appName": 2
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.appName": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5f156e312784b0e9fadcd85b28e47f92e1f27df2a1cfe23c1b5fe894c898aee3"
+                "17b0847c27aea7e102580fae62a8e7715eb1ade94a3a346eeea726de2dc29210"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -583,42 +632,43 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00021,
+    "cookies": 0.000203,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4485981308411215
+            "prevalence": 0.49056603773584906
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3644859813084112
+            "prevalence": 0.36792452830188677
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.1308411214953271
+            "prevalence": 0.0660377358490566
         },
         {
             "domain": "ccmbg.com",
-            "prevalence": 0.028037383177570093
+            "prevalence": 0.04716981132075472
         },
         {
             "domain": "dmcdn.net",
-            "prevalence": 0.018691588785046728
+            "prevalence": 0.018867924528301886
         },
         {
             "domain": "s-sfr.fr",
-            "prevalence": 0.009345794392523364
+            "prevalence": 0.009433962264150943
         }
     ],
     "types": {
-        "Script": 58,
-        "Fetch": 54,
-        "Other": 2
+        "Script": 59,
+        "Fetch": 55,
+        "Other": 4,
+        "XHR": 2
     },
     "nameservers": [
+        "ns-cloud-c1.googledomains.com",
         "ns-cloud-c2.googledomains.com",
         "ns-cloud-c3.googledomains.com",
-        "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c1.googledomains.com"
+        "ns-cloud-c4.googledomains.com"
     ]
 }

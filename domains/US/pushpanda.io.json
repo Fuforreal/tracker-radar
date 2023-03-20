@@ -8,7 +8,8 @@
     "sites": 5,
     "subdomains": [
         "cdn",
-        "app"
+        "app",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -16,15 +17,16 @@
         {
             "rule": "pushpanda\\.io\\/sdk\\/sdk\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "Navigator.prototype.language": 4,
-                "Notification.permission": 3,
+                "Notification.permission": 4,
                 "window.localStorage": 4,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.onLine": 1
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -63,6 +65,28 @@
             ]
         },
         {
+            "rule": "pushpanda\\.io\\/clients\\/tB5TbvAROm0RaUbwbN7l\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "f7f337fba4ee2596d234cc1dc6eda854852ca1410f8b2502b70d1c9183927f19"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engelberg.ch",
+                "www.engelberg.ch"
+            ]
+        },
+        {
             "rule": "pushpanda\\.io\\/sdk\\/pp\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -70,8 +94,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "7f855e1a5d9f68f00bcd662a48fef9789f9b8e1df7142e55c4d320e2a3e9d53f"
@@ -81,8 +105,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "engelberg.ch",
+                "www.engelberg.ch",
                 "www.obertauern.com",
                 "www.skiwelt.at"
+            ]
+        },
+        {
+            "rule": "pushpanda\\.io\\/assets\\/notification-5038\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b9019b790ca89b1e926198da8ac88bbcbe161a9c1ab26b2616ee0caa4c1c1958"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engelberg.ch",
+                "www.engelberg.ch"
             ]
         },
         {
@@ -93,13 +140,60 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "29e629289ee1431d5f4a5446136332508ae65352b9a6703763525131052638b7"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engelberg.ch",
+                "www.engelberg.ch",
+                "www.obertauern.com",
+                "www.skiwelt.at"
+            ]
+        },
+        {
+            "rule": "pushpanda\\.io\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "0b5ff4d61f70f09f09b0a96a652e72a6da2cbeb750c66447b45d45de2656a2cb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "engelberg.ch",
+                "www.obertauern.com",
+                "www.skiwelt.at"
+            ]
+        },
+        {
+            "rule": "pushpanda\\.io\\/fonts\\/pushpanda\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "c8aa45b47f320c0b8f8d68931896b9772d2e3a3d347cb0d89e1dee1be0f1e935"
+            ],
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -181,18 +275,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7857142857142857
+            "prevalence": 0.8125
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.21428571428571427
+            "prevalence": 0.1875
         }
     ],
     "types": {
         "Script": 4,
-        "Fetch": 6,
-        "Stylesheet": 3,
-        "Image": 5
+        "Fetch": 11,
+        "Stylesheet": 4,
+        "Image": 8,
+        "Font": 3
     },
     "nameservers": [
         "cortney.ns.cloudflare.com",

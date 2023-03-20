@@ -163,16 +163,13 @@
         {
             "rule": "jppadmin\\.com\\/wp-includes\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "architecturaldigest",
                 "motor1",
                 "thisoldhouse"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 3,
-                "Event.prototype.timeStamp": 3
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -216,15 +213,13 @@
         {
             "rule": "jppadmin\\.com\\/wp-includes\\/js\\/jquery\\/ui\\/core\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "architecturaldigest",
                 "motor1",
                 "thisoldhouse"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -368,13 +363,15 @@
         {
             "rule": "jppadmin\\.com\\/wp-content\\/themes\\/jpp-theme\\/assets\\/js\\/dist\\/scripts\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "architecturaldigest",
                 "motor1",
                 "thisoldhouse"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 3
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -547,13 +544,15 @@
         {
             "rule": "jppadmin\\.com\\/wp-content\\/themes\\/jpp-theme\\/assets\\/js\\/badge\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "architecturaldigest",
                 "motor1",
                 "thisoldhouse"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -584,7 +583,7 @@
         "Script": 43
     },
     "nameservers": [
-        "pdns14.domaincontrol.com",
-        "pdns13.domaincontrol.com"
+        "pdns13.domaincontrol.com",
+        "pdns14.domaincontrol.com"
     ]
 }

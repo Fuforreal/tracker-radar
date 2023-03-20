@@ -11,7 +11,7 @@
         "ndownloader"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "figstatic\\.com\\/static\\/ceda12662447564ac34163cf9d3971d5675533e5\\/0\\.ed9ab4672ec39801bbd2\\.js",
@@ -64,15 +64,15 @@
         {
             "rule": "figstatic\\.com\\/static\\/ceda12662447564ac34163cf9d3971d5675533e5\\/3\\.5da52086b660869fd826\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 3,
             "subdomains": [
                 "widgets-p-eu"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.devicePixelRatio": 4,
-                "window.outerWidth": 4,
-                "window.outerHeight": 4
+                "Navigator.prototype.userAgent": 3,
+                "window.devicePixelRatio": 3,
+                "window.outerWidth": 3,
+                "window.outerHeight": 3
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -122,14 +122,12 @@
                 "widgets-p-eu"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "e62be28f2c4e0b8b198fa90178384c71b4d73aaeca0757d682cceb1d9df67c3e"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -147,7 +145,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "URL.createObjectURL": 2
+                "URL.createObjectURL": 2,
+                "CanvasRenderingContext2D.prototype.measureText": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -218,13 +217,55 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "bb2a9e35319e687e0b8fadd19d4636e1eb4532f9b6f2138dd7ee87da200b5b27"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "plos.org",
                 "journals.plos.org"
+            ]
+        },
+        {
+            "rule": "figstatic\\.com\\/files\\/2388847\\/preview\\/2388847\\/preview\\.pdf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ndownloader"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plos.org",
+                "journals.plos.org"
+            ]
+        },
+        {
+            "rule": "figstatic\\.com\\/files\\/8569465\\/preview\\/8569465\\/preview\\.pdf",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ndownloader"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acs.org",
+                "pubs.acs.org"
             ]
         }
     ],
@@ -244,12 +285,13 @@
     "types": {
         "Script": 22,
         "Other": 2,
-        "Fetch": 2
+        "Fetch": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1046.awsdns-02.org",
         "ns-1850.awsdns-39.co.uk",
+        "ns-533.awsdns-02.net",
         "ns-348.awsdns-43.com",
-        "ns-533.awsdns-02.net"
+        "ns-1046.awsdns-02.org"
     ]
 }

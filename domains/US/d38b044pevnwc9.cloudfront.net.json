@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/5ae81c8\\.js",
@@ -37,10 +37,16 @@
         },
         {
             "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/f5d3d27\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -48,7 +54,14 @@
                 "50b40c23262afaa7ab9e85f9012618e7a01f4f0e09ec5a4c4ba6d77cbb39cb36"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "i18n_redirected": {
+                    "ttl": 31536004,
+                    "length": 2,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cutout.pro",
@@ -78,11 +91,14 @@
         {
             "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/19cbd33\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
+                "window.devicePixelRatio": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "window.localStorage": 2,
                 "window.innerHeight": 2,
-                "window.innerWidth": 1
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -121,9 +137,13 @@
         {
             "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/480788b\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.onLine": 2,
+                "window.sessionStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -151,46 +171,6 @@
                 "e8453689a6762567f2569572edc1b4c0d736d8acf0e706800b39d05d00dac146"
             ],
             "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cutout.pro",
-                "www.cutout.pro"
-            ]
-        },
-        {
-            "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/css\\/55e4e7a\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "92e376f4b3208dfd467e1b566e9d4575b8f2cedd363356c1b3bd08347c506300"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cutout.pro",
-                "www.cutout.pro"
-            ]
-        },
-        {
-            "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/82e930b\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3e5737bdc97e14ce3e8eadc46ea27ccc104710c755f26f013da5e56672545a7"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -319,6 +299,46 @@
             ]
         },
         {
+            "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/css\\/55e4e7a\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "92e376f4b3208dfd467e1b566e9d4575b8f2cedd363356c1b3bd08347c506300"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cutout.pro",
+                "www.cutout.pro"
+            ]
+        },
+        {
+            "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/cutout-web\\/v2\\.3\\.59\\/82e930b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3e5737bdc97e14ce3e8eadc46ea27ccc104710c755f26f013da5e56672545a7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cutout.pro",
+                "www.cutout.pro"
+            ]
+        },
+        {
             "rule": "d38b044pevnwc9\\.cloudfront\\.net\\/site\\/en\\/assets\\/image\\/moveW\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -383,7 +403,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "first party",
@@ -396,9 +416,9 @@
         "Image": 20
     },
     "nameservers": [
-        "ns-1133.awsdns-13.org",
-        "ns-586.awsdns-09.net",
         "ns-1806.awsdns-33.co.uk",
+        "ns-586.awsdns-09.net",
+        "ns-1133.awsdns-13.org",
         "ns-132.awsdns-16.com"
     ]
 }

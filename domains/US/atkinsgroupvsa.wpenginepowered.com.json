@@ -213,12 +213,9 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/themes\\/vsa\\/js\\/jquery-1\\.9\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -236,9 +233,11 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/themes\\/vsa\\/js\\/bootstrap\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -256,11 +255,9 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/themes\\/vsa\\/js\\/jquery\\.sliderPro\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -281,7 +278,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.innerWidth": 2
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -343,8 +341,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -646,10 +644,10 @@
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "window.indexedDB": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "window.indexedDB": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -668,12 +666,9 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-includes\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Element.prototype.getClientRects": 1,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -730,6 +725,26 @@
         },
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/sitepress-multilingual-cms\\/res\\/js\\/jquery\\.cookie\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1f7e0fc0541ef13ade8dfbd9de3a7e2a6d0d66f125a89a80e0f76d2a92f26306"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "visitsanantonio.com",
+                "www.visitsanantonio.com"
+            ]
+        },
+        {
+            "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/sitepress-multilingual-cms\\/res\\/js\\/cookies\\/language-cookie\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [],
@@ -740,37 +755,17 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "1f7e0fc0541ef13ade8dfbd9de3a7e2a6d0d66f125a89a80e0f76d2a92f26306"
+                "f767f42765a143586abafcd5f1ec1221274c58264b311bd14ea2bae8c25252ad"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "wp-wpml_current_language": {
-                    "ttl": 86402,
+                    "ttl": 86409,
                     "length": 2,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "visitsanantonio.com",
-                "www.visitsanantonio.com"
-            ]
-        },
-        {
-            "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/sitepress-multilingual-cms\\/res\\/js\\/cookies\\/language-cookie\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "f767f42765a143586abafcd5f1ec1221274c58264b311bd14ea2bae8c25252ad"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "visitsanantonio.com",
@@ -820,11 +815,9 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/revslider\\/public\\/assets\\/js\\/jquery\\.themepunch\\.tools\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -842,11 +835,9 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/revslider\\/public\\/assets\\/js\\/jquery\\.themepunch\\.revolution\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -867,7 +858,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1051,7 +1043,7 @@
             "apis": {
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1172,11 +1164,9 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/bound360-campaign-code-generator\\/assets\\/js\\/jquery\\.themepunch\\.tools\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1194,12 +1184,9 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/bound360-campaign-code-generator\\/assets\\/js\\/jquery\\.themepunch\\.revolution\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1217,9 +1204,11 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/bound360-campaign-code-generator\\/assets\\/js\\/extensions\\/revolution\\.extension\\.actions\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1277,9 +1266,11 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/bound360-campaign-code-generator\\/assets\\/js\\/extensions\\/revolution\\.extension\\.layeranimation\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1297,9 +1288,11 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/bound360-campaign-code-generator\\/assets\\/js\\/extensions\\/revolution\\.extension\\.migration\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1317,9 +1310,12 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/bound360-campaign-code-generator\\/assets\\/js\\/extensions\\/revolution\\.extension\\.navigation\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1340,7 +1336,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.innerHeight": 1
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1379,9 +1375,11 @@
         {
             "rule": "atkinsgroupvsa\\.wpenginepowered\\.com\\/wp-content\\/plugins\\/bound360-campaign-code-generator\\/assets\\/js\\/extensions\\/revolution\\.extension\\.video\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],

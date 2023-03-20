@@ -17,6 +17,27 @@
     "resources": [
         {
             "rule": "goeuro\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtcollector"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omio.com",
+                "www.omio.com",
+                "www.omio.es"
+            ]
+        },
+        {
+            "rule": "goeuro\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
             "cookies": 0.0000271,
             "fingerprinting": 0,
             "subdomains": [
@@ -38,27 +59,6 @@
                 "www.omio.com",
                 "www.omio.es"
             ]
-        },
-        {
-            "rule": "goeuro\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
-            "cookies": 0.0000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rtcollector"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "omio.com",
-                "www.omio.com",
-                "www.omio.es"
-            ]
         }
     ],
     "categories": [],
@@ -67,12 +67,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6428571428571429
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.35714285714285715
         }
     ],
     "types": {
-        "XHR": 4,
-        "Preflight": 3
+        "Preflight": 3,
+        "XHR": 4
     },
     "nameservers": [
         "sofia.ns.cloudflare.com",

@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000826,
-    "sites": 122,
+    "prevalence": 0.000806,
+    "sites": 119,
     "subdomains": [
         "news.bellmedia",
         "v.bellmedia",
+        "service.mbna",
+        "authorization.mbna",
+        "signin.shaw",
         "media-www.canadiantire",
         "apim.canadiantire",
-        "services-v2.radio-canada",
-        "api.honda",
+        "services-v3.radio-canada",
+        "images-v2.radio-canada",
+        "s-v2.radio-canada",
+        "img.src",
         "app.pcfinancial",
         "assets.shoppersdrugmart",
         "api.shoppersdrugmart",
@@ -32,7 +37,6 @@
         "api.atmosphere",
         "metrics.bnc",
         "metrics.nbc",
-        "media-triangle.canadiantire",
         "assets.groupetva",
         "san.cbc",
         "thumbnails.cbc",
@@ -44,26 +48,20 @@
         "asset.ctv",
         "images.homedepot",
         "api.homedepot",
-        "analytics.ml.homedepot",
         "static.kbb",
         "assets-platform.loblaws",
-        "api.sportchek",
         "asset.noovo",
         "track.opentable",
         "api-no-cache.qub",
         "sports.bellmedia",
         "tsnimages.tsn",
-        "signin.shaw",
         "www.loyalty.shoppersdrugmart",
+        "api.sportchek",
         "api.tangerine",
         "tvan",
         "i.walmartimages"
     ],
     "cnames": [
-        {
-            "original": "analytics.ml.homedepot.ca",
-            "resolved": "analytics.ml.homedepot.ca.edgekey.net"
-        },
         {
             "original": "api-no-cache.qub.ca",
             "resolved": "api-no-cache.qub.ca.edgekey.net"
@@ -75,10 +73,6 @@
         {
             "original": "api.homedepot.ca",
             "resolved": "api.homedepot.ca.edgekey.net"
-        },
-        {
-            "original": "api.honda.ca",
-            "resolved": "api.honda.ca.edgekey.net"
         },
         {
             "original": "api.shoppersdrugmart.ca",
@@ -129,6 +123,10 @@
             "resolved": "assets.shoppersdrugmart.ca.edgekey.net"
         },
         {
+            "original": "authorization.mbna.ca",
+            "resolved": "authorization.mbna.ca.edgekey.net"
+        },
+        {
             "original": "beta.ctvnews.ca",
             "resolved": "news.bellmedia.ca.edgekey.net"
         },
@@ -161,12 +159,16 @@
             "resolved": "images.homedepot.ca.edgekey.net"
         },
         {
-            "original": "mdt.crateandbarrel.ca",
-            "resolved": "mdt.crateandbarrel.ca.edgekey.net"
+            "original": "images.radio-canada.ca",
+            "resolved": "images-v2.radio-canada.ca.edgekey.net"
         },
         {
-            "original": "media-triangle.canadiantire.ca",
-            "resolved": "media-triangle.canadiantire.ca.edgekey.net"
+            "original": "img.src.ca",
+            "resolved": "img.src.ca.edgekey.net"
+        },
+        {
+            "original": "mdt.crateandbarrel.ca",
+            "resolved": "mdt.crateandbarrel.ca.edgekey.net"
         },
         {
             "original": "media-www.canadiantire.ca",
@@ -181,12 +183,20 @@
             "resolved": "metrics.nbc.ca.edgekey.net"
         },
         {
+            "original": "s.radio-canada.ca",
+            "resolved": "s-v2.radio-canada.ca.edgekey.net"
+        },
+        {
             "original": "san.shaw.ca",
             "resolved": "san.shaw.ca.edgekey.net"
         },
         {
+            "original": "service.mbna.ca",
+            "resolved": "service.mbna.ca.edgekey.net"
+        },
+        {
             "original": "services.radio-canada.ca",
-            "resolved": "services-v2.radio-canada.ca.edgekey.net"
+            "resolved": "services-v3.radio-canada.ca.edgekey.net"
         },
         {
             "original": "signin.shaw.ca",
@@ -261,7 +271,7 @@
     "resources": [
         {
             "rule": "ca\\.edgekey\\.net\\/HGETALL\\/urn:ctv:weather",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "news.bellmedia"
@@ -276,20 +286,20 @@
                 }
             ],
             "responseHashes": [
-                "aa68300f3bca13abe7af91ce11f521d04d4ab5a240ddc32c8375d86ae9891ca4",
-                "b2719b79a991158d95944e93c35f3d259d68059402bca2d275fedc80a73ca698",
-                "fe7ad5b91e083470c85530e7ffa6a16d086fff6884d7d61afea710d6b928af89",
-                "58eb0d665286b1267972380781209cb8b80e211e1050a415f57e2dccb3ad337b",
-                "d03508ceb7db1755d89936e5606d122df237dd954c79774fa3c3907bef8b7cc0",
-                "d00d8bb688dcbcbc0aa33dec28cfe2c65a955e3d65a5ac60ef413fce33f4fa83",
-                "9d149947c97e4af5206687a7c64ae72c136f5a8f54a9c226316c77842d042356",
-                "3cc6a9a3cc26faec992d46ced43846b0d9096ea320599b7fc37151aa6b31af50",
-                "d8f90e9a314275ef23d654f6c33d54afa5288fac17d88cb07a4be299b5e772b7",
-                "808e2648c1fb1ecd55b93ba7954bb3e4786b3277e0761e16f5d876301b191ffb",
-                "3d4c7e21a75f333085f6e49c02888515f51ea35988208f965debb9e37dce415a",
-                "3d0f17dc1b6b413b7a66215e04186bf6c6b2363bb57f7a6a472c6b514e27033e",
-                "a33b7c4928bd806b0f28d0678785d42a123233f99d137a6ccc6de73b4d8cf541",
-                "94c2976b885cb265620223d09c949429a0e111a8e53b3f6d01ef927c27a1b295"
+                "d6815578cc61841b5448c1bd47a8164c78bb873fbf3d41342b4c0f9204ca66f1",
+                "3555aebe0e2a31b02eb42a50135c46114f2cba4ca8d36e74302eb70b07120736",
+                "18e15bbcf50dbe3dd1aa4266b501434ff375a30e4973e8c7a37676a1c59194d1",
+                "344f3db90097a7bc53e18356df765540c613486329998f0bdc47cccae9fd27b4",
+                "34d422b0273c0e0e3fa19b7d122daaf48c273203eecc01ed6877831540a1cbdf",
+                "dfe08ad78bc653381b77a5a6fc0d8dfca74a38dfb305c848c6ca601b09395be1",
+                "ba5fb1a9b8a757b4687238664c7bc6f6020c526861975d49c5f03ada98ba1f9a",
+                "acbcbcb375a62f2fc44b75694b1b25fbec28291678998232c450e38d4b9aa997",
+                "fbd0684b1acf07845af6d4764a8051eea78d4ce0bc5f7ef7fda8ded9190fc4fa",
+                "99b270865f9da62e6e7098f2eedb0d3c7086000e98eaeb02a09e7f5b08b45562",
+                "ed1e59df35d3e4d06f3f40a264197089d5ffa0028bf5df35201c0f949f8db12e",
+                "271742e58f00b32131366d798e60941b80dfb2e375695397a1508f9d53a79bb6",
+                "f9b9f7f125d0507e23e9bcb7d352eec3710fb451c0b8a50b2476fabc5728849e",
+                "c9c8a23bd0aae2b4d9ee04f51197efbb267c71d06d46cdbbd2a4f10bdcefea01"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -390,7 +400,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/etc\\.clientlibs\\/clientlibs\\/granite\\/jquery\\.min\\.772fb04d4ce536dfb06c17e789ad4dbd\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "news.bellmedia"
             ],
@@ -444,8 +454,8 @@
                 }
             ],
             "responseHashes": [
-                "976546f013eed5afb39d59b5a236ec888095335d4bd3932ef0069ae1841ee423",
-                "c3f71d542656fa0835d15106408ec065d630c8bc05078915d8b58202ba28956e"
+                "c3f71d542656fa0835d15106408ec065d630c8bc05078915d8b58202ba28956e",
+                "976546f013eed5afb39d59b5a236ec888095335d4bd3932ef0069ae1841ee423"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -485,8 +495,8 @@
                 }
             ],
             "responseHashes": [
-                "d2370625ecc1ec6319a50eb9ee80892351790e9ee3546b4cdbdd9e6a8c12d74e",
-                "c986afd07a4082d65befeef18869a4cd5e00f3ac6e8228d49658802c7453a1b8"
+                "c986afd07a4082d65befeef18869a4cd5e00f3ac6e8228d49658802c7453a1b8",
+                "d2370625ecc1ec6319a50eb9ee80892351790e9ee3546b4cdbdd9e6a8c12d74e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -750,6 +760,42 @@
             ]
         },
         {
+            "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/images\\/weather-icons\\/26\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "news.bellmedia"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000745,
+            "cnames": [
+                {
+                    "original": "beta.ctvnews.ca",
+                    "resolved": "news.bellmedia.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e9a66fbe9878b8387de9a42d7a606b7beb9dfc99912e282377b006831e40b340"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "bc.ctvnews.ca",
+                "kitchener.ctvnews.ca",
+                "london.ctvnews.ca",
+                "montreal.ctvnews.ca",
+                "ottawa.ctvnews.ca",
+                "regina.ctvnews.ca",
+                "saskatoon.ctvnews.ca",
+                "toronto.ctvnews.ca",
+                "windsor.ctvnews.ca",
+                "www.ctvnews.ca"
+            ]
+        },
+        {
             "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/images\\/weather-icons\\/not-available\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -790,9 +836,44 @@
             ]
         },
         {
+            "rule": "ca\\.edgekey\\.net\\/vidi-player\\/1\\.9\\.24\\/lib\\/jwplayer\\/jwplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "v.bellmedia"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000677,
+            "cnames": [
+                {
+                    "original": "webapps.9c9media.com",
+                    "resolved": "v.bellmedia.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1604851710fbd4c91716919f1d1df3a0f8e60f41aae07bd708ca96062252ddd4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "calgary.ctvnews.ca",
+                "cp24.com",
+                "edmonton.ctvnews.ca",
+                "kitchener.ctvnews.ca",
+                "london.ctvnews.ca",
+                "regina.ctvnews.ca",
+                "vancouverisland.ctvnews.ca",
+                "www.bnnbloomberg.ca",
+                "www.cp24.com"
+            ]
+        },
+        {
             "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/js\\/jquery-1\\.7\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "news.bellmedia"
             ],
@@ -831,7 +912,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/js\\/jquery\\.cookie\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "news.bellmedia"
             ],
@@ -850,7 +931,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "test": 0.000006771305914058585
+                "test": 0.0000067723606417488944
             },
             "exampleSites": [
                 "ctvnews.ca",
@@ -1005,7 +1086,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "test": 0.000006771305914058585
+                "test": 0.0000067723606417488944
             },
             "exampleSites": [
                 "ctvnews.ca",
@@ -1450,81 +1531,6 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/vidi-player\\/1\\.9\\.24\\/lib\\/jwplayer\\/jwplayer\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "v.bellmedia"
-            ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000677,
-            "cnames": [
-                {
-                    "original": "webapps.9c9media.com",
-                    "resolved": "v.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "1604851710fbd4c91716919f1d1df3a0f8e60f41aae07bd708ca96062252ddd4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ctvnews.ca",
-                "calgary.ctvnews.ca",
-                "cp24.com",
-                "edmonton.ctvnews.ca",
-                "kitchener.ctvnews.ca",
-                "london.ctvnews.ca",
-                "regina.ctvnews.ca",
-                "vancouverisland.ctvnews.ca",
-                "www.bnnbloomberg.ca",
-                "www.cp24.com"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/documents\\/WeatherCityList\\.txt",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 15,
-            "prevalence": 0.000102,
-            "cnames": [
-                {
-                    "original": "beta.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "e6f00de636afa21ccd44508ba1c8d648d54b6be94b4106b24f2f422b69a17137"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ctvnews.ca",
-                "bc.ctvnews.ca",
-                "calgary.ctvnews.ca",
-                "edmonton.ctvnews.ca",
-                "kitchener.ctvnews.ca",
-                "london.ctvnews.ca",
-                "montreal.ctvnews.ca",
-                "ottawa.ctvnews.ca",
-                "regina.ctvnews.ca",
-                "saskatoon.ctvnews.ca",
-                "toronto.ctvnews.ca",
-                "vancouverisland.ctvnews.ca",
-                "windsor.ctvnews.ca",
-                "winnipeg.ctvnews.ca",
-                "www.ctvnews.ca"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/config\\/vidi-chromecast\\/v2\\/ctvnews\\/web-prod\\.json",
             "cookies": 0.0000474,
             "fingerprinting": 0,
@@ -1589,6 +1595,46 @@
             ]
         },
         {
+            "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/documents\\/WeatherCityList\\.txt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "news.bellmedia"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [
+                {
+                    "original": "beta.ctvnews.ca",
+                    "resolved": "news.bellmedia.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e6f00de636afa21ccd44508ba1c8d648d54b6be94b4106b24f2f422b69a17137"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "bc.ctvnews.ca",
+                "calgary.ctvnews.ca",
+                "edmonton.ctvnews.ca",
+                "kitchener.ctvnews.ca",
+                "london.ctvnews.ca",
+                "montreal.ctvnews.ca",
+                "ottawa.ctvnews.ca",
+                "regina.ctvnews.ca",
+                "saskatoon.ctvnews.ca",
+                "toronto.ctvnews.ca",
+                "vancouverisland.ctvnews.ca",
+                "windsor.ctvnews.ca",
+                "winnipeg.ctvnews.ca",
+                "www.ctvnews.ca"
+            ]
+        },
+        {
             "rule": "ca\\.edgekey\\.net\\/vidi-player\\/1\\.9\\.24\\/lib\\/comscore\\/comscore-js-6\\.3\\.1\\.181004\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1596,8 +1642,8 @@
                 "v.bellmedia"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000677,
+            "sites": 9,
+            "prevalence": 0.000061,
             "cnames": [
                 {
                     "original": "webapps.9c9media.com",
@@ -1616,7 +1662,6 @@
                 "cp24.com",
                 "edmonton.ctvnews.ca",
                 "kitchener.ctvnews.ca",
-                "london.ctvnews.ca",
                 "regina.ctvnews.ca",
                 "vancouverisland.ctvnews.ca",
                 "www.bnnbloomberg.ca",
@@ -1631,8 +1676,8 @@
                 "v.bellmedia"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [
                 {
                     "original": "webapps.9c9media.com",
@@ -1647,6 +1692,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ctvnews.ca",
+                "calgary.ctvnews.ca",
                 "cp24.com",
                 "edmonton.ctvnews.ca",
                 "kitchener.ctvnews.ca",
@@ -1663,8 +1709,8 @@
                 "v.bellmedia"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000474,
+            "sites": 8,
+            "prevalence": 0.0000542,
             "cnames": [
                 {
                     "original": "webapps.9c9media.com",
@@ -1679,6 +1725,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ctvnews.ca",
+                "calgary.ctvnews.ca",
                 "cp24.com",
                 "edmonton.ctvnews.ca",
                 "kitchener.ctvnews.ca",
@@ -1688,36 +1735,68 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/vidi-player\\/1\\.9\\.24\\/lib\\/jwplayer\\/polyfills\\.webvtt\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "ca\\.edgekey\\.net\\/waw\\/idp\\/js\\/td_common_153\\.js",
+            "cookies": 0.00000677,
+            "fingerprinting": 3,
             "subdomains": [
-                "v.bellmedia"
+                "service.mbna"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [
                 {
-                    "original": "webapps.9c9media.com",
-                    "resolved": "v.bellmedia.ca.edgekey.net"
+                    "original": "service.mbna.ca",
+                    "resolved": "service.mbna.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "21939df91566cf06472adf6452c0e591e6c3aa0f5d6c1352a540ba149f9cab3e"
+                "beebd612d622b6012982306f6d5b5aa421c5a1746f8de95e3fbdfe31438d1f3b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ctvnews.ca",
-                "vancouverisland.ctvnews.ca"
+                "mbna.ca",
+                "authentication.mbna.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/as\\/authorization\\.oauth2",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "authorization.mbna",
+                "signin.shaw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "authorization.mbna.ca",
+                    "resolved": "authorization.mbna.ca.edgekey.net"
+                },
+                {
+                    "original": "signin.shaw.ca",
+                    "resolved": "signin.shaw.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7edeac7f0a1dd35e38be98c289ad7910fc8414f2514a4ebcd75467b628835ba9"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mbna.ca",
+                "www.shaw.ca"
             ]
         },
         {
             "rule": "ca\\.edgekey\\.net\\/weatherProjecter\\.49_26005*-123_109\\.Vancouver\\.html",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "news.bellmedia"
             ],
@@ -1731,7 +1810,7 @@
                 }
             ],
             "responseHashes": [
-                "4cfc60a3f574ff9a9ae17094e5748df2101745713f978e4b194a401451ef80c1"
+                "478b9b466a653b4663b4426eed50c7f655481f9ccf1fa5175ab71e41f610f9bd"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -1739,38 +1818,6 @@
             "exampleSites": [
                 "ctvnews.ca",
                 "bc.ctvnews.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/images\\/weather-icons\\/26\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000474,
-            "cnames": [
-                {
-                    "original": "beta.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "e9a66fbe9878b8387de9a42d7a606b7beb9dfc99912e282377b006831e40b340"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ctvnews.ca",
-                "bc.ctvnews.ca",
-                "edmonton.ctvnews.ca",
-                "kitchener.ctvnews.ca",
-                "london.ctvnews.ca",
-                "toronto.ctvnews.ca",
-                "www.ctvnews.ca"
             ]
         },
         {
@@ -1810,7 +1857,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [
                 {
                     "original": "static.ctvnews.ca",
@@ -1873,7 +1920,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [
                 {
                     "original": "static.ctvnews.ca",
@@ -1988,13 +2035,13 @@
         {
             "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/js\\/detectMobile\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "news.bellmedia"
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [
                 {
                     "original": "static.ctvnews.ca",
@@ -2062,9 +2109,7 @@
                     "resolved": "news.bellmedia.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2232,7 +2277,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [
                 {
                     "original": "static.ctvnews.ca",
@@ -2511,8 +2556,8 @@
                 }
             ],
             "responseHashes": [
-                "6a61ac75540b057baa343774fa398e92ac32c45ce4f27fb02cfdc2601110765d",
-                "f9bfe98fdceb05654a0b354ffdc8ba2ffdaa3c9b14de0c1c459db12f159befc1"
+                "9b328cf9b8ab3d3bf0323249695847d248ae123fdde205d864af38f77d557b3b",
+                "df9e20f480a07c9dfcbd7bdc46f86a90953779071d563151784c1e566ade1484"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2557,31 +2602,31 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/images\\/weather-icons\\/29\\.svg",
+            "rule": "ca\\.edgekey\\.net\\/vidi-player\\/1\\.9\\.24\\/lib\\/jwplayer\\/polyfills\\.webvtt\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "news.bellmedia"
+                "v.bellmedia"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [
                 {
-                    "original": "beta.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
+                    "original": "webapps.9c9media.com",
+                    "resolved": "v.bellmedia.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "bc3a25af34e04241495ce10fa0311d99ebbb0343d2b10f06b3ad4690dc857b2f"
+                "21939df91566cf06472adf6452c0e591e6c3aa0f5d6c1352a540ba149f9cab3e"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ctvnews.ca",
-                "regina.ctvnews.ca",
-                "saskatoon.ctvnews.ca"
+                "cp24.com",
+                "vancouverisland.ctvnews.ca"
             ]
         },
         {
@@ -2666,7 +2711,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-desktop-cat1\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-aspot-desktop\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2682,7 +2727,7 @@
                 }
             ],
             "responseHashes": [
-                "be15821f878908d77f5abf77207ebb9a6b722ae5c147135c02b97fdde48bfd7a"
+                "93b93b2e1477b4df03ff0b75db7141584ecce1fbfa83f02e0817b30d35e098c8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2693,7 +2738,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-mobile-cattile1\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-aspot-mobile\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2709,7 +2754,7 @@
                 }
             ],
             "responseHashes": [
-                "7acf924fdeedc59b60ad43ea06de02f2b4c48cc94e32c868c766bf982e700127"
+                "4ae14d77fa112a51838962d9d28869d99a169c40345e9e4bc210e3e8405f11e5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2720,7 +2765,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-desktop-cat2\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-uslim-dollarrush-en\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2736,7 +2781,7 @@
                 }
             ],
             "responseHashes": [
-                "2332224e3c8d37bf48cde87b31f8e4e2acead1dd69544989fb6e5f50f39f9031"
+                "ea7c621242f56c29b7a5d15394cbbfa4cb11534daf342b3075cb75e0700a3a6e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2747,7 +2792,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-mobile-cattile2\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-desktop-cat1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2763,7 +2808,7 @@
                 }
             ],
             "responseHashes": [
-                "204cdf1aa17d489326f080f2f156c3a78743913ad8409627cca2f341257b7fb8"
+                "4b085beb1f90dfd5227c8eb8ef7c812ffd2d75e82fefd13b6763aba4e206df94"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2774,7 +2819,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-desktop-cat3\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-mobile-cat1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2790,7 +2835,7 @@
                 }
             ],
             "responseHashes": [
-                "7883bb0320908e9debedb2c8991680f1f9c3a80e43f7944878284448cf07be53"
+                "d7ec4bd69f1da04c3c9ce898be7343d206d5c72fb49bf79886baa3da530e70f3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2801,7 +2846,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-mobile-cattile3\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-desktop-cat2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2817,7 +2862,7 @@
                 }
             ],
             "responseHashes": [
-                "8f9ddefd0d146ee3f42d15472280b777ce9ab34ef8593c46c25d97b3a1465c0b"
+                "b397bb873bf2856d5cb883a0cec9c453bc8c2a072001f9f2085ab5ef28fb822a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2828,7 +2873,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-desktop-cat4\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-mobile-cat2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2844,7 +2889,7 @@
                 }
             ],
             "responseHashes": [
-                "883ad352cf3c53531f0276281bb3cad528a672b15b7b16b179cdbb0ce14fe82a"
+                "d1860c84e54b0b34ef669ac0226f9a3526ad938c9e066e42a7a79a9fa43c2f30"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2855,7 +2900,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-mobile-cattile4\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-desktop-cat3\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2871,7 +2916,7 @@
                 }
             ],
             "responseHashes": [
-                "5cd5b2074a5663023378352ab5c7c865cc66d7564efc047a4d40333afea2a5a9"
+                "8281e168ef79638125d01590ee9ca1d96de2bd2d262852421a9cae77a3363f6b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2882,7 +2927,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-desktop-cat5\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-mobile-cat3\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2898,7 +2943,7 @@
                 }
             ],
             "responseHashes": [
-                "8651f8f87a40ca623e9af5740d80d802d5778e6676d93a6a6d9bdf96bf13641d"
+                "2ad96e8ef108fae3ef791f001b0dc856c9c1bc0e3463a17786a7d0da54a58ffb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2909,7 +2954,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-mobile-cattile5\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-desktop-cat4\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2925,7 +2970,88 @@
                 }
             ],
             "responseHashes": [
-                "0c21cb2c754a65f59c9e2b9418b0c9d002af2ee20ed791ec46eecabd7a8abd2d"
+                "584177c163b30c41744917a2f8e4c4d61a71673cf2dd69f1de41f93c3fbc47f7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadiantire.ca",
+                "www.canadiantire.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-mobile-cat4\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-www.canadiantire"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "media-www.canadiantire.ca",
+                    "resolved": "media-www.canadiantire.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "17891bffefb7c91f6c2a2b71b5ec5039aba4af33caa7d3b462793df03112c382"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadiantire.ca",
+                "www.canadiantire.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-desktop-cat5\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-www.canadiantire"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "media-www.canadiantire.ca",
+                    "resolved": "media-www.canadiantire.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1a63d3420d8954d8a67e83202a0ccb93699295439953dea3e23ed08d70f913b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadiantire.ca",
+                "www.canadiantire.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-mobile-cat5\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-www.canadiantire"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "media-www.canadiantire.ca",
+                    "resolved": "media-www.canadiantire.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ff6885d67e9727e171ffef2dbfb137223c803e803a162af99879620f49530589"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3044,7 +3170,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-desktop-flyer-en\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-desktop-flyer-en\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3060,7 +3186,7 @@
                 }
             ],
             "responseHashes": [
-                "224b9dd0ea6a98601a5732a44e9c2e03335be8e0ad8eff10efc09086aac79d89"
+                "f0716530598f4b3f311eb8804862352cf5a2898094c3d061c7a2bd706ab137ba"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3071,7 +3197,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-categorytile-mobile-flyer-en\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/12\\/odp-2023-312hp-categorytile-mobile-flyer-en\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3087,7 +3213,7 @@
                 }
             ],
             "responseHashes": [
-                "123fe21fc3c53c8b38bb367a660751d4191ade4f387d9cf4e39a616a4fc8d472"
+                "8500261d8ef436ff5784b89c7868cd61a455378c4c9e254474df96226ed3e454"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3098,7 +3224,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/category-content\\/2022\\/canadiantire-ca-home-pets-2022-\\/ctc-2023-d1111-home-guide-banners-slim-banner\\.png",
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/06\\/odp-2023-306hp-slim-triangleselect-en\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3114,7 +3240,34 @@
                 }
             ],
             "responseHashes": [
-                "8fbd982cb1d99e44572834c6fd8dd7efafb76fa3a9f0322f18884b51f24bf2d5"
+                "54b636204e24462182f01a4ef445bc2cb96ca095a538223a80afe47516e93224"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadiantire.ca",
+                "www.canadiantire.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/10\\/odp-2023-310hp-slim-ctapp\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-www.canadiantire"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "media-www.canadiantire.ca",
+                    "resolved": "media-www.canadiantire.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1406fd930696de26c56aa5ff25becaeea80c12effd96a201d9c6c5b2161f2188"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3301,7 +3454,7 @@
                 }
             ],
             "responseHashes": [
-                "17db3348b07203e5f6fb44bab13b30d367a70c9753f14d0a8bbb00b5314dcc68"
+                "d0592b6fe2bd3eb9d8e564c7ccc5639bc635e56d0346707db0e2cc9a9a0a2f1b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3353,34 +3506,7 @@
                 }
             ],
             "responseHashes": [
-                "5ea4127b73d5c29a7f94feb91eb4c7dc9f343d8207d474ef50e826076797b369"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "canadiantire.ca",
-                "www.canadiantire.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/v1\\/store\\/store\\/33",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim.canadiantire"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "apim.canadiantire.ca",
-                    "resolved": "apim.canadiantire.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "d6b200d85b189fcd9de8b0e4230da183bd4b7d4d34b3fc084f0c655865fd6648"
+                "5df9bc61549e7a01b4c0bda8cfa80ebcdacd916ec296b3e9ee96b73a4fe237b7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3408,6 +3534,33 @@
             ],
             "responseHashes": [],
             "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadiantire.ca",
+                "www.canadiantire.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/v1\\/store\\/store\\/33",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim.canadiantire"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "apim.canadiantire.ca",
+                    "resolved": "apim.canadiantire.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "97fa02efe27fcc34d4613d192bfe287e44fa5e70403fd0c76ec6981cd42d6561"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -3666,7 +3819,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/cp24\\/img\\/newWeather\\/16\\.png",
+            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/cp24\\/img\\/newWeather\\/33\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3682,7 +3835,7 @@
                 }
             ],
             "responseHashes": [
-                "60852e22a1911b5f9bd602680592eb189727cffc06e6d04c4c55c7e8b14e4cdb"
+                "ee8b5d21611867993ce2b0d42f0c9b5facab2926d2a1807f3b993a226db3f3e6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3693,7 +3846,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/cp24\\/img\\/newWeather\\/10\\.png",
+            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/cp24\\/img\\/newWeather\\/32\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3709,61 +3862,7 @@
                 }
             ],
             "responseHashes": [
-                "72b041595b5469b6f25f02463a1a8108d547de688df49441377bf8066004c56b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cp24.com",
-                "www.cp24.com"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/cp24\\/img\\/newWeather\\/38\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "42445ff1696e71074de7ed3a655b60758f3a76d2837755c42005bbca04c6dbf9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cp24.com",
-                "www.cp24.com"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/cp24\\/img\\/newWeather\\/103\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "72b041595b5469b6f25f02463a1a8108d547de688df49441377bf8066004c56b"
+                "ee8b5d21611867993ce2b0d42f0c9b5facab2926d2a1807f3b993a226db3f3e6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3776,7 +3875,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/js\\/videoUtil\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "news.bellmedia"
             ],
@@ -3828,36 +3927,6 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/js\\/videoNavigation\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
-            "cnames": [
-                {
-                    "original": "static.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "7421b5154d3db840b39726026541bd919843ec9d8269426b5e901757e9ab3d99"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cp24.com",
-                "ctvnews.ca",
-                "kitchener.ctvnews.ca",
-                "vancouverisland.ctvnews.ca",
-                "www.cp24.com"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/config\\/vidi-chromecast\\/v2\\/cp24\\/web-prod\\.json",
             "cookies": 0.0000135,
             "fingerprinting": 0,
@@ -3881,6 +3950,36 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cp24.com",
+                "www.cp24.com"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/js\\/videoNavigation\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "news.bellmedia"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [
+                {
+                    "original": "static.ctvnews.ca",
+                    "resolved": "news.bellmedia.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7421b5154d3db840b39726026541bd919843ec9d8269426b5e901757e9ab3d99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cp24.com",
+                "ctvnews.ca",
+                "kitchener.ctvnews.ca",
+                "vancouverisland.ctvnews.ca",
                 "www.cp24.com"
             ]
         },
@@ -4128,33 +4227,6 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/img\\/gallery-icon\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "dd2a257a7dd751d94b4fcd08e383a0439016a2a5cecc4d451e1e066f780f5eb2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cp24.com",
-                "www.cp24.com"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/img\\/videoClipPlayIcon\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -4237,7 +4309,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/weatherProjecter\\.43_6799*-79_7600\\.Toronto\\.html",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "news.bellmedia"
@@ -4252,8 +4324,8 @@
                 }
             ],
             "responseHashes": [
-                "751577064762fa12da7b4f6595824fb1e43e22b67ee92d73f777bdffee2409d3",
-                "e05e6da7bf697def25ad4e3ff030dd57841cf3e1980a64f32f955242cd36feef"
+                "8c96f67972c902f894dde5f3df5c64db99caac15c7637c0f456c77df2063c310",
+                "f78567c19e0600647e4bde8c37017b6a41d105d154f97f96dc7ca94af9422a28"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -4296,11 +4368,38 @@
             ]
         },
         {
+            "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/images\\/weather-icons\\/29\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "news.bellmedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "beta.ctvnews.ca",
+                    "resolved": "news.bellmedia.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bc3a25af34e04241495ce10fa0311d99ebbb0343d2b10f06b3ad4690dc857b2f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "vancouverisland.ctvnews.ca"
+            ]
+        },
+        {
             "rule": "ca\\.edgekey\\.net\\/ott\\/subscription\\/v2\\/gem\\/catalog\\/promoted-product-plans",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4308,7 +4407,7 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
@@ -4327,7 +4426,7 @@
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4335,7 +4434,7 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
@@ -4354,7 +4453,7 @@
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4362,7 +4461,7 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
@@ -4377,11 +4476,848 @@
             ]
         },
         {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_600,h_1800\\/v1\\/auto-promo\\/tuile\\/perso\\/ici-toutv-jvqm-s2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a6acafe639999a775d6383a772b783b828532c852938a36abe4260967a07d84a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/16x9\\/trudeua-pdp-bc-ingerence-chine-reax\\.JPG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "41e907d3904980842a18f6f72767924e355921ccf7b8f376e80710e66537edd1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/essentiels-info\\/16x9\\/vladimir-poutine\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a4ad294f7e07357778564ad660b1a00455831dca461d7e211a4b5c0acfc2266b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/16x9\\/attaque-couteau-montreal-policiers\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b5901436001cde1d36c4a66c909f75ba27d4d4bad6ff0000290de29156da96ce"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/16x9\\/michael-duheme-grc\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f27bbd37e8877c7a11b563c5bbb550c3c626bd2a05a867f6e6e57b77672196be"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/transit\\/16x9\\/drapeaux-acadiens-geant-a-st-louis-de-kent-44363\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ef7f482d5b26d8caedad88f7f3051e47cc6550fd1ff4ed21f7696d36f8533dff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/sports\\/16x9\\/hockey-canada-irfan-chaudhry\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "845b344b6aab2550ccb5f92cf129555294ceca06b3b5a5256360b66e50171805"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-premiere\\/16x9\\/motomarine\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d30f6e55d9d7e735959fedec00c978d331dde99514c3a9f8e14b753310e0f9cf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/16x9\\/campement-ville-marie-montreal-itinerants\\.JPG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "060312953ad304558abea671e37978d08cda82cc77bb766b1a3fca7354cb0412"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_180\\/v1\\/ici-regions\\/1x1\\/comment-fonctionnent-feux-artifice\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "0a681ad6b7df070e7ba2793eb900965b2f5339b978cef4d7054a7406a3fcee76"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_180\\/v1\\/ici-info\\/sports\\/1x1\\/hockey-lnh-canadien-montreal-panthers-floride-allen-tkachuk-sunrise-2023\\.JPG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f02f4cf58abf213b028972883f7fd1e18195265a1e305a43f648bf1d8cdcfe5c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_180\\/v1\\/ici-info\\/sports\\/1x1\\/boxe-gym-jean-pascal-michael-eifert-laval-2023\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f4e2fd8c85e08a616b2b1d3c52016565c4e11e253ae8257ed929d8c26a90ec6d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_180\\/v1\\/ici-info\\/1x1\\/tentative-de-meurtre\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bf48ca98cdd50024337483a29953c0f7f62a71a92934e631dfe5209f3933ab87"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_635\\/v1\\/ici-info\\/sports\\/16x9\\/webdiffusion-coupe-monde-natation-artistique\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "28c2c6245dfb4c6cb18967f26033225eda8e40d512a5cb781d7e5a0d0c39cecb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/16x9\\/andre-desmarais-robert-jeffrey-orr-paul-desmarais-jr-power-corporation\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "73a33663d415214db398cad60545f6e84c4ca1565245ef16b162258ea0c6e390"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_480\\/v1\\/ici-info\\/16x9\\/trois-morts-rosemont-petite-patrie-arme-blanche-17-mars-2023-78828\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6c9d7a3753abd87e104e520fec8c833526b983e1a53a9fe55dd34bac03d2335f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_635\\/v1\\/ici-info\\/16x9\\/hockey-junior-aa-lotbiniere-bellechasse\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "fae7363d3fef7cbf1531edd11541e82db1ec55fafa32547c49bd3e8edd86a5e5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-info\\/sports\\/16x9\\/podium-laurence-st-germain-sprite-logo\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1e47038468b9ff643f9a50e454bd1f87c970c2841c24f46026bb064a0a6cc3cd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-info\\/sports\\/16x9\\/fifa-logo\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "43a64a167b1a341a6722cf6ccd0656a9de061305e7a400fe454e8ccd8c623a4d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-info\\/sports\\/16x9\\/mikael-kingsbury-ski-acrobatique-73929\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "636f9cc7d0b7cd31140d46bc4d8e3564ce21ea5f9a92d28aead93000d843b0e5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-info\\/sports\\/16x9\\/hockey-canada-irfan-chaudhry\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "378529618670d3319c1d156a0f7a77174be3af7614732088962d90d47024ccac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_635\\/v1\\/ici-info\\/16x9\\/claude-fournier-cineaste-canada-deces-biographie-cinema\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "749f9c9a55c7b3cd46303b37a0228ca1f4443afb2a8d46dc4f94444fbad168d5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-info\\/16x9\\/claude-fournier-cinema-quebec-canada-cineaste-deces\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2cbcc4b81028fc2f79d973cf8a3da8117d7bd851c3ce75392f5bdcedebb01d03"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-info\\/16x9\\/etienne-galloy-haute-demolition-raphael-massicotte-jean-philippe-baril-guerard\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ddb04bafb388d687b436b121044f10426af288476543a2237fc4d9587a18d733"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-premiere\\/16x9\\/tum-isabelle-boulay\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f30cfc133af73d438c426ba1c6ca8763401886ea7c78ce7ab2793ab59878835a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_352\\/v1\\/ici-info\\/16x9\\/rick-allen-def-leppard\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "87910beb80c95e514c0cb3836ec5ee96a8d1b61935e4ce3f556f8076c58b1872"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_640\\/v1\\/auto-promo\\/parallax\\/1x1\\/radio-canada-ohdio-oh-enfants-a-bord\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "08515a8afeb71a49c5fef606499c5a9276b6e6d6302c9614e780dae56469ac0e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/mp\\/visitorAPI_2_5_0\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "s.radio-canada.ca",
+                    "resolved": "s-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "47216fa7f462e8346f286b080ba62df2b4570a64cb1e73b2d1d549448cc6cc2a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/mp\\/appMeasurement_2_21_0\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "s.radio-canada.ca",
+                    "resolved": "s-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "99ca0493f375bb2258f1f8abebaff6cf633b2181d7e706e977e1bc1931dba8e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/mp\\/modules\\.socialbar\\.executer\\.6\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "s.radio-canada.ca",
+                    "resolved": "s-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "81d3004262990a152ed9c7d516efeeb36cb7281586d813fff8ee5aaa5b1ff7fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_2240\\/v1\\/auto-promo\\/parallax\\/16x9\\/radio-canada-ohdio-oh-enfants-a-bord\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6441b6206aa1370dec2b392bfde72552851df3d63636f08948b0dca69fbd9da2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
             "rule": "ca\\.edgekey\\.net\\/neuro\\/sphere\\/v1\\/live-schedules\\/tele\\/8\\/premiere\\/8\\/icimusique\\/8",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4389,7 +5325,7 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [],
@@ -4406,7 +5342,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4414,11 +5350,11 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "86fb784b1a13e67fa9a5a49884110107b9894cde7b30e09585a185f4c1628ebe"
+                "6fd98339fb3efb07baa16313b9f42fb54a4463e22631c4b3683143cbf73b6a4d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4433,7 +5369,7 @@
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4441,7 +5377,7 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [],
@@ -4458,7 +5394,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4466,7 +5402,7 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
@@ -4481,11 +5417,200 @@
             ]
         },
         {
+            "rule": "ca\\.edgekey\\.net\\/widgets-perso\\/pivot-core\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "s.radio-canada.ca",
+                    "resolved": "s-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "14fc432e79796ea54a6c90d91b9871fa547ca04ca8fcd053c04c4ce3952bbf15"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/ouglo\\/emission\\/480x270\\/brokenwood\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img.src"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "img.src.ca",
+                    "resolved": "img.src.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b9fa85c7a55ded6052a8bc4acf997652787bea2080772700427a23ff7e07fbb3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_240\\/v1\\/audio\\/emission\\/16x9\\/le-15-18-emission-premiere\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f3c6424fdf99130780f2b01c957c6bbfb54895d89eb0018f2c885b29beffdb2c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_240\\/v1\\/audio\\/emission\\/16x9\\/nouveaux-sons-ici-musique-82707\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bd362578d7744004ec53e62af84a4922257b664bc0fa45ffb2b652f0702e022d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_240\\/v1\\/ici-tou-tv\\/emissions\\/16x9\\/louisette-dussault-une-voix-heureusement-detournee\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "cfcad4a84ba8929428f4d8bd12d1e5151cf9911cb86dd10818781fdd16d64027"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/q_auto,w_240\\/v1\\/audio\\/emission\\/16x9\\/toute-une-musique-visuel-moteur-primaire\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "images.radio-canada.ca",
+                    "resolved": "images-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f15b3d8550d021bc7792dc60bff40872e9ca266adad2ecd0edb810ccaa960015"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/mp\\/lotame_3rd_party_audience\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-v2.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "s.radio-canada.ca",
+                    "resolved": "s-v2.radio-canada.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f44de03fa92955551e34b2d918635c1c1b660f93b060f35900ba79d2b51ce465"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
             "rule": "ca\\.edgekey\\.net\\/bff\\/perso\\/graphql",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4493,11 +5618,11 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "03137262cceeb6f6d03da222d15c485bb56a81d6850073410d503fe01c04b131"
+                "bfb3a1a1142d77638fb18490e7946efcc46ae544c769ab905f5b8040848d7ee5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4512,7 +5637,7 @@
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "services-v2.radio-canada"
+                "services-v3.radio-canada"
             ],
             "apis": {},
             "sites": 2,
@@ -4520,7 +5645,7 @@
             "cnames": [
                 {
                     "original": "services.radio-canada.ca",
-                    "resolved": "services-v2.radio-canada.ca.edgekey.net"
+                    "resolved": "services-v3.radio-canada.ca.edgekey.net"
                 }
             ],
             "responseHashes": [],
@@ -4685,7 +5810,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/js\\/articlePlayerNavigation\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "news.bellmedia"
             ],
@@ -4916,62 +6041,6 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/geodata\\/provinces",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.honda"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [
-                {
-                    "original": "api.honda.ca",
-                    "resolved": "api.honda.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "5ea02cc8ce0ae46b75ef4be4e28f5061583d1de659a8f9247d065e04bbd7e2f6",
-                "f70a20c8c737cbf1ddd2230517ebe331998f6430ef3b46eb3fef6fb8bf4d0215"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "honda.ca",
-                "motorcycle.honda.ca",
-                "www.honda.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/content\\/dam\\/ctvnews\\/images\\/weather-icons\\/14\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "beta.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "3b40d700ed085807d6184ad1fd75173964e425fda9ad9e84c523dab2100e609a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ctvnews.ca",
-                "windsor.ctvnews.ca"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/inet\\/banking\\/v2\\.0\\/configuration\\/channels\\/PCF_SECURESITE_WEB",
             "cookies": 0,
             "fingerprinting": 0,
@@ -5013,7 +6082,7 @@
                 }
             ],
             "responseHashes": [
-                "ed4e64a29eae69991c6bd61484b6f70d69159104108d7ae219f82c5bc5ea6948"
+                "cf8c7f3d4acf00611a10c5828ac5e3ec3cf28c3449a0fbb8392d707cfcd41fc0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -5078,7 +6147,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.apollo\\.20b54a308c72ed8cbe06\\.js",
             "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
             ],
@@ -5239,7 +6308,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.clsx\\.7ae47ab042340dbe1700\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5265,8 +6334,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.core-js\\.d2f2c1cc5d7a816c0b8e\\.js",
-            "cookies": 0.00000677,
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.core-js\\.977bd18df97a0b48987c\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5281,7 +6350,7 @@
                 }
             ],
             "responseHashes": [
-                "c3a5107a47632e2bf40b1978694860c25453e98096ce8bc064e000da108593e9"
+                "b43cf37168804e35abf16211e35cb4a323dd45fd835ff58afcccc961795c092f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5293,7 +6362,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.create-react-context\\.e0e124769e389caef736\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5320,7 +6389,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.css-loader\\.77041eed65f980f678cc\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5347,7 +6416,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.deep-equal\\.6715b53d8f24f51620f9\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5374,7 +6443,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.define-properties\\.8e4b6480dded30f43bba\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5400,8 +6469,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.dom-helpers\\.5ce70acb8130b68c5684\\.js",
-            "cookies": 0.00000677,
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.dom-helpers\\.6a67bdb0f76a10db67c7\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5416,7 +6485,7 @@
                 }
             ],
             "responseHashes": [
-                "4a9fafc5c1a4be52e42eb8ceadf5e716e4870c5babea97042e4fc25cf3c5e24e"
+                "7eb3bcb3add09cd24b757459415f1e2229c5ab78293eb8ad856ba7bb7eb0d546"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5428,7 +6497,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.exenv\\.56b851d9d6901a838e5a\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5455,7 +6524,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.fast-json-stable-stringify\\.8ee8f2b52f0a0cfed9b0\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5482,7 +6551,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.formatjs\\.caa44a7f3a08647616df\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5509,7 +6578,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.function-bind\\.4e8fa32d5239bcbe1051\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5536,7 +6605,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.functions-have-names\\.2587e9f74eb23a06d10c\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5563,7 +6632,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.get-intrinsic\\.d55e4708695c49374114\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5589,8 +6658,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.google-maps-react\\.9dc8a4c6052a4232cacc\\.js",
-            "cookies": 0.00000677,
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.google-maps-react\\.3fd4a893cb2a5c36bc4b\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5605,7 +6674,7 @@
                 }
             ],
             "responseHashes": [
-                "6a0c6afc563d873949047b6032676a6f6bf8d8cddf0ac1515f0af211282753f8"
+                "d16ce1db28d3398d81038331ad8063868a701a80205f18e532b28e9a542e360e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5617,7 +6686,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.graphql-tag\\.bbef7ce9e7d72c4ad325\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5644,7 +6713,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.graphql\\.05d266d6166ef7c8fefb\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5671,7 +6740,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.gud\\.2ed55e8ceb34f09d89e2\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5698,7 +6767,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.has-property-descriptors\\.0efeab8bcc2191e66bdd\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5725,7 +6794,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.has-symbols\\.88c45b90ab2706be2d32\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5752,7 +6821,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.has-tostringtag\\.92640753c8b183bd7483\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5779,7 +6848,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.has\\.b5a4eb220c515e767553\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5806,7 +6875,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.hoist-non-react-statics\\.e3801f1e58f0257ca395\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5833,7 +6902,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.hot-loader\\.c58f0d380f5d0d3227db\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5860,8 +6929,8 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.html-dom-parser\\.895b3e604712b928211b\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
             ],
@@ -5887,7 +6956,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.html-react-parser\\.97b6acf3789da7367c2a\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5914,7 +6983,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.ieee754\\.343fe2eb530d6704d03e\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5941,7 +7010,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.inline-style-parser\\.f307d0cfbd011139f26b\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5968,7 +7037,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.intl-format-cache\\.0b8dcc03908e0aced7d2\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -5995,7 +7064,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.intl-messageformat-parser\\.d9d4e8eea4f79c00c60e\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6022,7 +7091,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.intl-messageformat\\.65b55a25e1aa4d72c088\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6048,8 +7117,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.invariant\\.1ad6c9bd831673904a35\\.js",
-            "cookies": 0.00000677,
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.invariant\\.3695e1dc90bedf7b9235\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6064,7 +7133,7 @@
                 }
             ],
             "responseHashes": [
-                "6acc8a300ded263485108fdf67a80443361cdbfaca253cb322b84950efafc4ad"
+                "a0d3426954dbcafabd01df9b0d79fa3212620c5d2e856442c6f4f1c9a41ac9cc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6076,7 +7145,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.is-arguments\\.bd22d760047b0e9507db\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6103,7 +7172,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.is-date-object\\.ee4e5e4b3f9f301da933\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6130,7 +7199,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.is-regex\\.f0ca93d25be5a8f3b71f\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6157,7 +7226,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.isarray\\.e49b4d10d089652eb89e\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6184,7 +7253,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.isomorphic-unfetch\\.004dfbec2044447ce15b\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6211,7 +7280,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.js-cookie\\.fe9488eb9bde6fbfde21\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6238,7 +7307,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.jwt-decode\\.2a438a59dbe8cbeaf18d\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6265,7 +7334,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.lds\\.83ad75b8ff339db06b83\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6292,7 +7361,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.object-assign\\.d7ac051dc0f60c0ec6da\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6319,7 +7388,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.object-is\\.7de774cf50964a3f9f0f\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6346,7 +7415,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.object-keys\\.11ab782dd252b041147b\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6373,8 +7442,8 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.popper\\.js\\.610f77c216a73fa24b0a\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
             ],
@@ -6400,7 +7469,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.process\\.9697962055b1572ae0e0\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6427,7 +7496,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.prop-types\\.bc55ea3ca2e715942361\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6454,7 +7523,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-datepicker\\.c3245132d7ab90359bb6\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6481,8 +7550,8 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-device-detect\\.7cd23fe757514fd6417b\\.js",
-            "cookies": 0.00000677,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
             ],
@@ -6508,7 +7577,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-error-boundary\\.768cd344a139ca75ad99\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6535,7 +7604,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-fast-compare\\.cc2a3d9cb3cb9da40028\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6561,8 +7630,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-gpt\\.beb99ca011e26e5cd6f7\\.js",
-            "cookies": 0.00000677,
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-gpt\\.322f0224f67468a56045\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6577,7 +7646,7 @@
                 }
             ],
             "responseHashes": [
-                "3d0afb86adbe96c04534f7de32cddad22b339b05f8a877e5b4063ca312953415"
+                "1e24569c2849df3ca467d0ccb2a2e7d513ebf46538eaf1070343568e6cabf9e4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6589,7 +7658,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-helmet\\.2af08e4f4a87364f17ad\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6615,8 +7684,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-hook-form\\.1ca4058ede4ba90e9e11\\.js",
-            "cookies": 0.00000677,
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-hook-form\\.a197e1931f757be21098\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6631,7 +7700,7 @@
                 }
             ],
             "responseHashes": [
-                "7d4f11e800d366a2a666ee36d134de7d677f5e6b02833e558afd5b786da30ab6"
+                "381ef926b670b56bdcdb71a88ede92b05ff6a8b6770e954adc7c5aca2f91a91e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6642,8 +7711,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-hooks-compose\\.a8440bcb2bce5f9b8971\\.js",
-            "cookies": 0.00000677,
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-hooks-compose\\.dedf815fbf8fc33733e9\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6658,7 +7727,7 @@
                 }
             ],
             "responseHashes": [
-                "d58ce546e96b10a592ac9e67fe4d1e970e6ae9c71e4d665f17c0def553a52714"
+                "3f6595b46823c74b2c1f202f5f6e26f4bc1821dfba0df740070bcf7a8f245902"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -6670,7 +7739,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-indiana-drag-scroll\\.73ccbd6642984409d213\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
@@ -6939,7 +8008,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-transition-group\\.f96ffbf805417bdf8dcc\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.react-transition-group\\.c4355d77b832f5db7293\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6955,7 +8024,7 @@
                 }
             ],
             "responseHashes": [
-                "5a85aa3f4ed5b2c538eaa11ae6a9cc229001820f9b80a1ac35a4e6601cf23ac5"
+                "a49bf581c368d57db465620f679f2a63e979c208d2f3e147bf44dc9f23867451"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7101,7 +8170,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.sdm\\.bb922e2bb24b06fc4bf3\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.sdm\\.e9bfca79dca75e7a3d54\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7117,7 +8186,7 @@
                 }
             ],
             "responseHashes": [
-                "876f9d36f2ed65a3281d1bdfa4454abf25c36206e45941e42b21d8e3940f5031"
+                "d933cf66d8e9fd972a55fae0bb38dbbb396d854209792aa5a076bbf53b455c6a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7130,7 +8199,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.sentry\\.f6ac7858c5b9bab407b4\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
             ],
@@ -7292,7 +8361,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.ua-parser-js\\.5af3e2220292afc0c603\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "assets.shoppersdrugmart"
             ],
@@ -7371,7 +8440,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.use-places-autocomplete\\.5d1b12e17fd7100a06a2\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.vendor\\.use-places-autocomplete\\.ccf3ce43818e0fdc64d1\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7387,7 +8456,7 @@
                 }
             ],
             "responseHashes": [
-                "d4235336baad02935da5a5078da2d139c320dac82f11578d8ae784830e4adfcd"
+                "7b9cd8d91e75c8a0cfebe601301ea639c090cad364ba96a71b4562dbced5b589"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7506,34 +8575,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~checkout~contentfulPage~favouritesPlp~footer~landing~mA~nav~orderConfirmation~pdp~plp~qs~searchPlp~yC\\.185e012303126e229ba3\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "assets.shoppersdrugmart"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.shoppersdrugmart.ca",
-                    "resolved": "assets.shoppersdrugmart.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "dfa6e5121b7e951b0d22abc37b36f0f4acb9cdc3d480b7ca3740dfdce5f85b6e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shoppersdrugmart.ca",
-                "shop.shoppersdrugmart.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~checkout~contentfulPage~favouritesPlp~footer~landing~mA~orderConfirmation~pdp~plp~qs~searchPlp~yC\\.2627e0c9f963b6284dca\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~checkout~contentfulPage~favouritesPlp~footer~landing~mA~nav~orderConfirmation~pdp~plp~qs~searchPlp~yC\\.fd704d503d804a0efae3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7549,7 +8591,7 @@
                 }
             ],
             "responseHashes": [
-                "f43eb7d3cec244843f6f3424ff11fdd5708a3ea7141879895c8b8ba955019f1a"
+                "1e1d03217515f588ae743f7dcdcc81413adc2fc74c7ab9d028f6d57df62fd0d5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7560,7 +8602,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~checkout~contentfulPage~favouritesPlp~landing~mA~nav~orderConfirmation~pdp~plp~qs~searchPlp~yC\\.755bc51c5f065c64d041\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~checkout~contentfulPage~favouritesPlp~footer~landing~mA~orderConfirmation~pdp~plp~qs~searchPlp~yC\\.76ca0fc8978539ffd99a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7576,7 +8618,7 @@
                 }
             ],
             "responseHashes": [
-                "0a0325a8144b215776593606bf8a7ebc82e39a60442aba4e62cc55f1f2908edf"
+                "2dc44e400a71ec214f6e6b1a77e5d652dad9a3ddb44b9f974b563e61fd724cf9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7587,7 +8629,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~contentfulPage~favouritesPlp~landing~pdp~plp~qs~searchPlp\\.74dc66ab03153510a1f7\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~checkout~contentfulPage~favouritesPlp~landing~mA~nav~orderConfirmation~pdp~plp~qs~searchPlp~yC\\.aeb1329da222f8fa7b0c\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7603,7 +8645,61 @@
                 }
             ],
             "responseHashes": [
-                "4e09e58c549c53b1d2cda4cb6c85104b30c2185659cf61245a426bb16d23d313"
+                "4703e15fafc8d7620c6c9d76a1d1c3738a0e3cb78e2d45a89fb5a96ab1362223"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppersdrugmart.ca",
+                "shop.shoppersdrugmart.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~checkout~contentfulPage~favouritesPlp~landing~mA~orderConfirmation~pdp~plp~qs~searchPlp\\.dbb37867246475811f91\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.shoppersdrugmart"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "assets.shoppersdrugmart.ca",
+                    "resolved": "assets.shoppersdrugmart.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3c093ae13860686b471e298428db17c6722ab643a769f205e15a8be3fbf16e34"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppersdrugmart.ca",
+                "shop.shoppersdrugmart.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.bag~contentfulPage~favouritesPlp~landing~pdp~plp~qs~searchPlp\\.c411f8d8900a095db233\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.shoppersdrugmart"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "assets.shoppersdrugmart.ca",
+                    "resolved": "assets.shoppersdrugmart.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e73f5a1928b9a23ac33117c39b7472e4c7727ffa48d43ab62fa65df4e7b2200e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7641,33 +8737,6 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.checkout~contentfulPage~favouritesPlp~landing~mA~orderConfirmation~pdp~plp~qs~searchPlp\\.dbb37867246475811f91\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.shoppersdrugmart"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.shoppersdrugmart.ca",
-                    "resolved": "assets.shoppersdrugmart.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "3c093ae13860686b471e298428db17c6722ab643a769f205e15a8be3fbf16e34"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shoppersdrugmart.ca",
-                "shop.shoppersdrugmart.ca"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.checkout~contentfulPage~favouritesPlp~landing~pdp~plp~qs~searchPlp\\.719aab80db79e24cc744\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -7695,7 +8764,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.contentfulPage~favouritesPlp~landing~pdp~plp~qs~searchPlp\\.c5d1812672131f47b4e1\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.contentfulPage~favouritesPlp~landing~pdp~plp~qs~searchPlp\\.0e7781f344b3218dd64d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7711,7 +8780,7 @@
                 }
             ],
             "responseHashes": [
-                "3d30634376706fc1b13fe0dc1af6e19067f718f318aa843b538a991f746c6af6"
+                "fe79c29d88d5d2b895895d177762c190dffba9c27c4554d4207e4dc393bad6f5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7722,7 +8791,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.contentfulPage~favouritesPlp~landing~plp~qs~searchPlp\\.8a01771ce05bb5f6f5e1\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.contentfulPage~favouritesPlp~landing~plp~qs~searchPlp\\.c48ff142dee9a418ac89\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7738,7 +8807,7 @@
                 }
             ],
             "responseHashes": [
-                "4bdc5d024b82a56be0340d190e9bf8d2451e9330f61aba3fa86b2cff6cab1fcf"
+                "1584dc800ad806e8c3bcf3045a843d0d6ca831a2f76c6dfc475779e20f235e03"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7776,7 +8845,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.favouritesPlp~landing~plp~qs~searchPlp\\.96f36b1d295035418d63\\.js",
+            "rule": "ca\\.edgekey\\.net\\/bb-react-frontend\\/production\\/sdm\\.favouritesPlp~landing~plp~qs~searchPlp\\.8f2ed2dd07ef3fdb6f59\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -7792,7 +8861,7 @@
                 }
             ],
             "responseHashes": [
-                "c473010470e600f44d5a9ed136c0baf92894a4157b58e2bfc712ef8ecb1c646a"
+                "cbbf14d7984af5dfe07769b53cf692fbbcfc486711b5ba7e0f538aabe45dc6f8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -8232,6 +9301,55 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/sp\\/h",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sp.shoppersdrugmart",
+                "sp.loblaws",
+                "sp.nofrills",
+                "sp.pcoptimum",
+                "sp.realcanadiansuperstore"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000406,
+            "cnames": [
+                {
+                    "original": "sp.shoppersdrugmart.ca",
+                    "resolved": "sp.shoppersdrugmart.ca.edgekey.net"
+                },
+                {
+                    "original": "sp.loblaws.ca",
+                    "resolved": "sp.loblaws.ca.edgekey.net"
+                },
+                {
+                    "original": "sp.nofrills.ca",
+                    "resolved": "sp.nofrills.ca.edgekey.net"
+                },
+                {
+                    "original": "sp.pcoptimum.ca",
+                    "resolved": "sp.pcoptimum.ca.edgekey.net"
+                },
+                {
+                    "original": "sp.realcanadiansuperstore.ca",
+                    "resolved": "sp.realcanadiansuperstore.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppersdrugmart.ca",
+                "shop.shoppersdrugmart.ca",
+                "www.loblaws.ca",
+                "www.nofrills.ca",
+                "www.pcoptimum.ca",
+                "www.realcanadiansuperstore.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/sp\\/h",
             "cookies": 0.0000406,
             "fingerprinting": 0,
             "subdomains": [
@@ -8282,55 +9400,6 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/sp\\/h",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sp.shoppersdrugmart",
-                "sp.loblaws",
-                "sp.nofrills",
-                "sp.pcoptimum",
-                "sp.realcanadiansuperstore"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [
-                {
-                    "original": "sp.shoppersdrugmart.ca",
-                    "resolved": "sp.shoppersdrugmart.ca.edgekey.net"
-                },
-                {
-                    "original": "sp.loblaws.ca",
-                    "resolved": "sp.loblaws.ca.edgekey.net"
-                },
-                {
-                    "original": "sp.nofrills.ca",
-                    "resolved": "sp.nofrills.ca.edgekey.net"
-                },
-                {
-                    "original": "sp.pcoptimum.ca",
-                    "resolved": "sp.pcoptimum.ca.edgekey.net"
-                },
-                {
-                    "original": "sp.realcanadiansuperstore.ca",
-                    "resolved": "sp.realcanadiansuperstore.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shoppersdrugmart.ca",
-                "shop.shoppersdrugmart.ca",
-                "www.loblaws.ca",
-                "www.nofrills.ca",
-                "www.pcoptimum.ca",
-                "www.realcanadiansuperstore.ca"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/bb-prod-marketing-image\\/site-icons\\/2020-site-icons\\/ico-prescriptions\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -8346,9 +9415,7 @@
                     "resolved": "assets.beauty.shoppersdrugmart.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "c9bb71b8e06c58e02de623e9df724d314a8a21da556786924ebb5b858d630e0a"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -8373,9 +9440,7 @@
                     "resolved": "assets.beauty.shoppersdrugmart.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "904f621f69fa5699224f49e3e9cb3573f063fdd0ac13a16901f97292df84fe1e"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -8400,9 +9465,7 @@
                     "resolved": "assets.beauty.shoppersdrugmart.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "b2dd170edac7c7749062aad953e9c5fd67b85897e1e1d0227ba399c87225b823"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -8427,63 +9490,7 @@
                     "resolved": "assets.beauty.shoppersdrugmart.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "e26acfc7f3c3ba916fb23d85baa055ad450ff7440fd08be3038908cc711007a5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shoppersdrugmart.ca",
-                "shop.shoppersdrugmart.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bb-prod-marketing-image\\/site-icons\\/2020-site-icons\\/chevron-right\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.beauty.shoppersdrugmart"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.beauty.shoppersdrugmart.ca",
-                    "resolved": "assets.beauty.shoppersdrugmart.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "a182e2bda8133a67f3651c11a9c5b4d8a7b98c7f97584f55251c0cea089ed35e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shoppersdrugmart.ca",
-                "shop.shoppersdrugmart.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bb-prod-marketing-image\\/heart\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets.beauty.shoppersdrugmart"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "assets.beauty.shoppersdrugmart.ca",
-                    "resolved": "assets.beauty.shoppersdrugmart.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "40dbbba3439c3aa8bcdef283732a72c27b0e82e1181510932ba11fc8ee6461ac"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -8577,7 +9584,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/turbotax\\.intuit\\.ca\\/assets\\/scripts\\/analytics\\/s_code\\.min\\.js",
-            "cookies": 0.0000203,
+            "cookies": 0.00000677,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn.ctg.intuit"
@@ -8686,7 +9693,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/cky\\/webcam\\/600_wpg_live_eye\\.jpg",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [
                 "news.bellmedia"
@@ -8701,7 +9708,7 @@
                 }
             ],
             "responseHashes": [
-                "32558e7c127160b2d447af24c0e75d47649c8df730ee70bf849ad12fdacca6ea"
+                "7a4f44e0461c8595b1bba0a7134844692cf61218f74b3bea53519db6d4289289"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -8753,7 +9760,7 @@
                 }
             ],
             "responseHashes": [
-                "d29e428b30ae207a167ff2d56e3fb702789398edf57a361b4bcc2d17b0756b36"
+                "184d06658bf322434a42862a9edc7d2b3015b65a84ed4ba0bf1020af85769a7d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -8875,141 +9882,6 @@
             "exampleSites": [
                 "bnnbloomberg.ca",
                 "www.bnnbloomberg.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/01\\/-triangle-5820-tbd-threshold-bn-ultraslim-desktop-en\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media-triangle.canadiantire"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "media-triangle.canadiantire.ca",
-                    "resolved": "media-triangle.canadiantire.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "c609a123bf1590d890c79d5c585f8a35e7945191af27314c94eef56ed64f9ae5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "canadiantire.ca",
-                "www.canadiantire.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-aspot-desktop\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media-www.canadiantire"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "media-www.canadiantire.ca",
-                    "resolved": "media-www.canadiantire.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "93d7ba6cc736ba9cc3b25f22292702c0b8d56a383d0d20732be5e84b581d00a7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "canadiantire.ca",
-                "www.canadiantire.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-aspot-mobile\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media-www.canadiantire"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "media-www.canadiantire.ca",
-                    "resolved": "media-www.canadiantire.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "f941fefffb5211ce28678af099f91861d0ab5e79e593069ea5f0b5add32414f2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "canadiantire.ca",
-                "www.canadiantire.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-aspot-flyer-desktop-en\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media-www.canadiantire"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "media-www.canadiantire.ca",
-                    "resolved": "media-www.canadiantire.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "7b8f47f4c330ff3b1d252534eff2f20dbd5989771865c5283c5c6085534c1824"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "canadiantire.ca",
-                "www.canadiantire.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/banners\\/promo-content\\/2023\\/11\\/odp-2023-311hp-aspot-flyer-mobile-en\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "media-www.canadiantire"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "media-www.canadiantire.ca",
-                    "resolved": "media-www.canadiantire.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "571381fb5ddec6c347c7499e0123f0b36687fe19cc644a143170d5e985203467"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "canadiantire.ca",
-                "www.canadiantire.ca"
             ]
         },
         {
@@ -9349,7 +10221,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/1\\.6448647\\.1678488010!\\/fileImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/help-wanted-sign-in-banff-alta\\.jpg",
+            "rule": "ca\\.edgekey\\.net\\/1\\.6782019\\.1679061353!\\/fileImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/police-spvm-rosemont-heart-institute\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -9365,7 +10237,7 @@
                 }
             ],
             "responseHashes": [
-                "8d6ff5a709edce5e2155e79557960243f2327928516bf2a83938454329b56c83"
+                "bc0bbb09a7c3ff7de5614492d1e4a64f3f4b1f14dc5dcf4d28449058cb7c64c2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -9376,34 +10248,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/1\\.6775772\\.1678494343!\\/fileImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/fallow-field-in-front-of-mountain-range-in-arizona\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "san.cbc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "i.cbc.ca",
-                    "resolved": "san.cbc.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "2ca5aad96d52d69f48b7dbad51f2ee0f2ee13bb815a5d239da396a218be48f59"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/maven_legacy\\/thumbnails\\/468\\/1003\\/AfghanDog_5000kbps_1280x720_2181270083619\\.jpg",
+            "rule": "ca\\.edgekey\\.net\\/maven_legacy\\/thumbnails\\/65\\/23\\/DUNCOMBE_UN_UKRAINE_mpx\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -9419,7 +10264,7 @@
                 }
             ],
             "responseHashes": [
-                "ad8c8e0e63923b6c220001bfc93e0c62514621fa57d7e246b989c8ae18b57060"
+                "db53ddacabaa3ed996c6db6a77e26915c9838579c8084ce32c82370e47908966"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -9430,7 +10275,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/1\\.5903749\\.1678552189!\\/fileImage\\/httpImage\\/image\\.JPG_gen\\/derivatives\\/16x9_460\\/tyson-graber\\.JPG",
+            "rule": "ca\\.edgekey\\.net\\/1\\.6770894\\.1678219700!\\/cpImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/foreign-interference-20230306\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -9446,7 +10291,7 @@
                 }
             ],
             "responseHashes": [
-                "1fb79727460f4f4f6f19115e7625350f4e25e5900e6723220845e9093970e0fa"
+                "3a1c2e554b4f1c72ea3ae26acdfa9011254165652ac2d5b84f63612395791794"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -9457,7 +10302,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/1\\.6767797\\.1677879282!\\/fileImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/roxham-road\\.jpg",
+            "rule": "ca\\.edgekey\\.net\\/1\\.3645730\\.1679064671!\\/fileImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/baby-skunk-calgary\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -9473,7 +10318,7 @@
                 }
             ],
             "responseHashes": [
-                "eb04b5c8b442302fbb7585b465eb9df5992b56a7835b4d424928ea99939a639e"
+                "ec85f0e56af00ec26a45986326563beea64eb9f44fe2ff1a141d34b4cb0bc99a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -9484,7 +10329,115 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/maven_legacy\\/thumbnails\\/148\\/183\\/CAS_GOODWIN_FLOODS_10MR_0001_concatenated_153203_frame_22243\\.jpg",
+            "rule": "ca\\.edgekey\\.net\\/1\\.6388467\\.1679072771!\\/fileImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/weather-winter-spring-melt-thaw-ottawa-river\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san.cbc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "i.cbc.ca",
+                    "resolved": "san.cbc.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b8bd7e7481650ac65ccd38ffaae68407acc48b6106959ef31887ad869251c4c7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/1\\.6694996\\.1671722612!\\/fileImage\\/httpImage\\/image\\.JPG_gen\\/derivatives\\/16x9_460\\/the-fall-of-wellington\\.JPG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san.cbc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "i.cbc.ca",
+                    "resolved": "san.cbc.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "24b155e0136751aeb90cc4c377e2d521b9539d328661f741b828d8bac57f88ab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/1\\.6781415\\.1679054306!\\/fileImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/parkdale-outdoor-community-fridge\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san.cbc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "i.cbc.ca",
+                    "resolved": "san.cbc.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8a7a2910d974b480111f596b5d06c64b0463fd09055f1ee4e79c6ee0565eaba5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/1\\.6781083\\.1678993491!\\/fileImage\\/httpImage\\/image\\.JPG_gen\\/derivatives\\/16x9_460\\/kingston-encampment\\.JPG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san.cbc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "i.cbc.ca",
+                    "resolved": "san.cbc.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c16239f1e03df3573c204e8f5c99b571c7de273c1606add052c8c58e7a8818f8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/maven_legacy\\/thumbnails\\/250\\/82\\/RAW_FREDDY_AFTERMATH_v2_5000kbps_1280x720_2183180867839\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -9500,61 +10453,7 @@
                 }
             ],
             "responseHashes": [
-                "e8fba80a61771c1273af9ef46bfa2bed7b718c54942951f13fe7920351c2a536"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/1\\.6666924\\.1678459593!\\/cumulusImage\\/httpImage\\/image\\.jpg_gen\\/derivatives\\/16x9_460\\/whitchurch-stouffville-drone-scenics\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "san.cbc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "i.cbc.ca",
-                    "resolved": "san.cbc.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "a4fd16ffe7e3eb95866cc2a96ff7950a622ce74bb3c1391874158299baa3a531"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/maven_legacy\\/thumbnails\\/327\\/887\\/ski_lift_rescue_xcode_mix_773_frame_928\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thumbnails.cbc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "thumbnails.cbc.ca",
-                    "resolved": "thumbnails.cbc.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "7c6e43b47f32b03cdcb0c856423ac69b5f9dc24b2c4f943f8eff9b837979df02"
+                "3aa8851c6c2e91015dee3cf19664006182cc49cf109974ea183742a104b148a7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -9581,7 +10480,7 @@
                 }
             ],
             "responseHashes": [
-                "34af013b0ab9b5d1d4594589fc26f5e25b1a4318f00df0263a471a751be1c8f5"
+                "342b2baa313a15a7c63e9521f248d90a8f0945c7636beb9d6fcc81380e732628"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -9589,87 +10488,6 @@
             "exampleSites": [
                 "costcobusinesscentre.ca",
                 "www.costcobusinesscentre.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/img\\/ctvnews-breakingnews-bg\\.jpg",
-            "cookies": 0.00000677,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cp24.com",
-                "www.cp24.com"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/img\\/breakingNewsHeader\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "a6fc0d053449f28fbbae329ac604b0c83f79812d3536ed0a33d0bc62ccd8fb0c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cp24.com",
-                "www.cp24.com"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/bellmedia\\/common\\/img\\/breakingnewsTag\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "news.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "static.ctvnews.ca",
-                    "resolved": "news.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "60fde084326b75ad205a19f491dd03e6b99079a9d9735518d0f6c8aba597ec31"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cp24.com",
-                "www.cp24.com"
             ]
         },
         {
@@ -9689,7 +10507,7 @@
                 }
             ],
             "responseHashes": [
-                "0c82830b01c1e954ea4e334772fdda7411605ff36b02c0f5484907518dd8545f"
+                "6aa79b5cbdd482bcec0adaab3f4da76dffa82a921ef31ee81d5978bd65c43f8f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -9767,10 +10585,8 @@
                     "resolved": "mdt.crateandbarrel.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -9794,33 +10610,10 @@
                     "resolved": "mdt.crateandbarrel.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crateandbarrel.ca",
-                "www.crateandbarrel.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/rsv11hdp\\/v1\\/identify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mdt.crateandbarrel"
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "mdt.crateandbarrel.ca",
-                    "resolved": "mdt.crateandbarrel.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -9848,6 +10641,31 @@
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crateandbarrel.ca",
+                "www.crateandbarrel.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/rsv11hdp\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mdt.crateandbarrel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "mdt.crateandbarrel.ca",
+                    "resolved": "mdt.crateandbarrel.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -9937,38 +10755,6 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tags.creditkarma",
-                "digital-chat.fido"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "tags.creditkarma.ca",
-                    "resolved": "tags.creditkarma.ca.edgekey.net"
-                },
-                {
-                    "original": "chat.fido.ca",
-                    "resolved": "digital-chat.fido.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "7545732ba29ec5b15ca41dcf3a944fe693e76f461b2bd49c29b1ab4fa2e954e3"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "creditkarma.ca",
-                "www.fido.ca"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/bundle\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -9993,6 +10779,38 @@
             "exampleSites": [
                 "creditkarma.ca",
                 "www.creditkarma.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tags.creditkarma",
+                "digital-chat.fido"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "tags.creditkarma.ca",
+                    "resolved": "tags.creditkarma.ca.edgekey.net"
+                },
+                {
+                    "original": "chat.fido.ca",
+                    "resolved": "digital-chat.fido.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "abc0ca225a90c684b803a15b748812801ba1484e3fca7c9b8eae197d64f3f12c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "creditkarma.ca",
+                "www.fido.ca"
             ]
         },
         {
@@ -10642,34 +11460,9 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics.ml.homedepot"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "analytics.ml.homedepot.ca",
-                    "resolved": "analytics.ml.homedepot.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "homedepot.ca",
-                "www.homedepot.ca"
-            ]
-        },
-        {
             "rule": "ca\\.edgekey\\.net\\/Scripts\\/GPS_V02\\/jquery-3\\.4\\.1\\.bundle\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static.kbb"
             ],
@@ -10695,7 +11488,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/Scripts\\/GPS_V02\\/layout\\.bundle\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 1,
             "subdomains": [
                 "static.kbb"
@@ -11223,7 +12016,7 @@
                 }
             ],
             "responseHashes": [
-                "490e366e2c689a42bd1e8dc4d871f1705ffa7823917a1c3970f36be99d66694c"
+                "f6fc039987649974dcfae836a087ca925b1a4187c4690f4d9b256375d327190c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -11231,85 +12024,6 @@
             "exampleSites": [
                 "loblaws.ca",
                 "www.loblaws.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/cds\\/customer\\/authorization\\/sso\\/3-party-cookie\\/enabled",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.sportchek"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.sportchek.ca",
-                    "resolved": "api.sportchek.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "39d160e97e2bea07b0cf1c647259ffa4f0bd07069dba4e6c19a22d38b408510f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marks.com",
-                "www.marks.com"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/cds\\/customer\\/authorization\\/sso\\/check-cookie",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.sportchek"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.sportchek.ca",
-                    "resolved": "api.sportchek.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marks.com",
-                "www.marks.com"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/cds\\/customer\\/authorization\\/sso\\/check-cookie",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.sportchek"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.sportchek.ca",
-                    "resolved": "api.sportchek.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "929701ed632814943e3df803ddd9e3f179ccf889c0ad7b7f3392bd8d109b174f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marks.com",
-                "www.marks.com"
             ]
         },
         {
@@ -11529,8 +12243,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/marketing\\/sojern",
-            "cookies": 0,
+            "rule": "ca\\.edgekey\\.net\\/marketing\\/signal",
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [
                 "track.opentable"
@@ -11554,8 +12268,8 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/marketing\\/signal",
-            "cookies": 0,
+            "rule": "ca\\.edgekey\\.net\\/marketing\\/sojern",
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [
                 "track.opentable"
@@ -11580,7 +12294,7 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/marketing\\/meta",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [
                 "track.opentable"
@@ -11644,9 +12358,7 @@
                     "resolved": "api-no-cache.qub.ca.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -11658,7 +12370,7 @@
         {
             "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/vendor\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "sports.bellmedia"
             ],
@@ -11700,7 +12412,8 @@
                 }
             ],
             "responseHashes": [
-                "0002a4e012eae66d2304ccecb54b6236e1983d322dc8c8f827c6f678626a0974"
+                "b54d5d607e02e5ffd7adbc49ee93ebac8f08c1338b8199e650d1fcd45a11fbbf",
+                "cf92e20624358e89ac4b35f5eb309c3ffafb60cb0fb477189787b1efe39ee0e0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -11729,7 +12442,7 @@
             ],
             "responseHashes": [
                 "4d00b6864ed70eea30e9a3ad5987008fef4f3777fb4d596bf99f0153552f5465",
-                "f68dc9f040ad737f331b343fb74eb0ed0a465ab2a8267af24537fab7236c9ccd"
+                "29d5016754cebca4fcbb5d1b0dfc284108c564eaae8c5630e31076d5a1af31b2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -11757,8 +12470,8 @@
                 }
             ],
             "responseHashes": [
-                "22d86b650288dad9a41172ec73da2edb39aa52ad62f79a277dfd9ee2133dbe1c",
-                "052f0b43e13ed27da507079548c3a329e78f4bf1faf1244ef5ec81d11c5c899d"
+                "c09c41ef8a240276bcc56a7c5c0cf31b5b69fff93efa024394013f628219cf1f",
+                "9be4eeccc47a46b5a2418a8cf3ecd2c6bc6b103a384bcff3a8877a07ad440a02"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -11894,34 +12607,7 @@
                 }
             ],
             "responseHashes": [
-                "78bf1a11eced054223d0143157bdaf200f572ba5624ae58cca2872d7115f148d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rds.ca",
-                "www.tsn.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.4\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sports.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "sports.bellmedia.ca",
-                    "resolved": "sports.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "304904a7a0ac2e34895c1c89b3ddba726be2ef7545ef455f3c2b3fe85e404bb7"
+                "c7b495a43e1c7949464f633ba2b04eb4c0059385d22c588f269b90c88753926f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -11948,7 +12634,7 @@
                 }
             ],
             "responseHashes": [
-                "d90d76c000c1fd7a438fce68cda12b3e90bdc1a0413b85a3571f9af47c90c8ed"
+                "a17bc2c0b66d62a1a6981734eba19b958324dca327d9fc5a9d3dc3f395a90d2d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -11975,34 +12661,7 @@
                 }
             ],
             "responseHashes": [
-                "24e9beb823d05ca7dcc2b6da11605dee450b469e28b292c6ffa924c684f339b1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rds.ca",
-                "www.tsn.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.7\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sports.bellmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "sports.bellmedia.ca",
-                    "resolved": "sports.bellmedia.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "e81ba68fd122ac641ad250962c59923f1cda00209ba9ea2cb37bb2857467706f"
+                "4f47cebe2acbfe9811d92b582d97300d815ead18647fcfc8f81100bbd9a54b81"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -12040,7 +12699,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.16\\.min\\.js",
+            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.9\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -12056,7 +12715,7 @@
                 }
             ],
             "responseHashes": [
-                "ff92517878c30d4c87ec890dbd7e8045637608d618166ea818dcb78a9189ba98"
+                "102ff0ff9bd4a50e264875a10d0ee12062b451f7461af65d7814fa5ceae45408"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -12067,7 +12726,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.30\\.min\\.js",
+            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.10\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -12083,7 +12742,7 @@
                 }
             ],
             "responseHashes": [
-                "d13c747f19751b81111b93f02096b747e533dfd5911955deffb50615efc9ba82"
+                "4cdfa1c5a3daa3ca64d35ee2c3515fd523e77fa5d30c414564db6b256897a101"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -12094,7 +12753,7 @@
             ]
         },
         {
-            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.42\\.min\\.js",
+            "rule": "ca\\.edgekey\\.net\\/widgets\\/prod\\/widgets\\.44\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -12110,7 +12769,7 @@
                 }
             ],
             "responseHashes": [
-                "40cd23ff71e718a58e664c74f5dce9f9211f3379aec6331a839afe3bb7d5df9f"
+                "d8dbf260f929759a371fce93f932b982f08ed3368e2a2d6ef81e5b222f7fe3a9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -12118,38 +12777,11 @@
             "exampleSites": [
                 "rds.ca",
                 "www.tsn.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/as\\/authorization\\.oauth2",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "signin.shaw"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "signin.shaw.ca",
-                    "resolved": "signin.shaw.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "75d9745986dff75888e2120d6e43f0192a20009235e1b56ba3c2382921a4fe9d"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shaw.ca",
-                "www.shaw.ca"
             ]
         },
         {
             "rule": "ca\\.edgekey\\.net\\/assets\\/css\\/shaw-ca\\.css",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 0,
             "subdomains": [
                 "signin.shaw"
@@ -12272,8 +12904,8 @@
                 }
             ],
             "responseHashes": [
-                "51d93b2ee1a919f64c3d295bb313a0627167d6231fedfe20dcdf22130ee76dbe",
-                "6cab147f3a3d640e8b3cc62ea570ed3cd82809e980fef978f56c6c2001cde3ff"
+                "f39f08d8c0cc21f9fd7457f8dda541dc417c91b3d690f267fd65f51fe3558948",
+                "504dad5b1076f2a19a2fd9300af90b780ddf98a1a14f6daabe18525eeebf6efc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -12326,7 +12958,7 @@
                 }
             ],
             "responseHashes": [
-                "8390999e210e0ee8127e89a6d50b1f0e14bc9ec8d54391cde5a2ca534ba3026b"
+                "b5435cf454f9f43f8f37b4f763f9175ceab199d76c0bf2e6d1d4b236a2e1dacf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -12334,6 +12966,31 @@
             "exampleSites": [
                 "sportchek.ca",
                 "www.sportchek.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgekey\\.net\\/prd\\/v1\\/public-content\\/search\\/user-token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.tangerine"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "api.tangerine.ca",
+                    "resolved": "api.tangerine.ca.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tangerine.ca",
+                "www.tangerine.ca"
             ]
         },
         {
@@ -12365,31 +13022,6 @@
         },
         {
             "rule": "ca\\.edgekey\\.net\\/prd\\/v1\\/public-content\\/search\\/user-token",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.tangerine"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.tangerine.ca",
-                    "resolved": "api.tangerine.ca.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tangerine.ca",
-                "www.tangerine.ca"
-            ]
-        },
-        {
-            "rule": "ca\\.edgekey\\.net\\/prd\\/v1\\/public-content\\/search\\/user-token",
             "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
@@ -12405,7 +13037,7 @@
                 }
             ],
             "responseHashes": [
-                "3eb153b0d7aa73e55a8a897cc6556a2693fbd4fc2706e6c3276634c7783aff8a"
+                "ca2a40186f2248a3bb8089f1fbc43b4454084648a3cd0ec31df5f169d8304c23"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -12742,58 +13374,58 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000488,
+    "cookies": 0.00044,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7786116322701688
+            "prevalence": 0.7445255474452555
         },
         {
             "domain": "bellmedia.ca",
-            "prevalence": 0.07879924953095685
+            "prevalence": 0.10218978102189781
         },
         {
             "domain": "lowescdn.com",
-            "prevalence": 0.0450281425891182
+            "prevalence": 0.043795620437956206
         },
         {
             "domain": "ctvnews.ca",
-            "prevalence": 0.028142589118198873
-        },
-        {
-            "domain": "tru.am",
-            "prevalence": 0.01125703564727955
-        },
-        {
-            "domain": "otstatic.com",
-            "prevalence": 0.01125703564727955
+            "prevalence": 0.02737226277372263
         },
         {
             "domain": "loblaws.ca",
-            "prevalence": 0.009380863039399626
+            "prevalence": 0.016423357664233577
+        },
+        {
+            "domain": "tru.am",
+            "prevalence": 0.012773722627737226
+        },
+        {
+            "domain": "otstatic.com",
+            "prevalence": 0.012773722627737226
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.010948905109489052
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.0075046904315197
-        },
-        {
-            "domain": "optimizely.com",
-            "prevalence": 0.0075046904315197
+            "prevalence": 0.0072992700729927005
         },
         {
             "domain": "lpsnmedia.net",
-            "prevalence": 0.00375234521575985
+            "prevalence": 0.0036496350364963502
         }
     ],
     "types": {
-        "XHR": 132,
-        "Script": 711,
+        "XHR": 125,
+        "Script": 721,
         "Stylesheet": 128,
-        "Image": 320,
+        "Image": 371,
         "Font": 85,
         "Document": 15,
-        "Preflight": 42,
-        "Fetch": 18,
+        "Preflight": 40,
+        "Fetch": 16,
         "Media": 2
     },
     "nameservers": []

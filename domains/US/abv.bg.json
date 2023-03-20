@@ -40,14 +40,11 @@
         {
             "rule": "abv\\.bg\\/banners\\/js\\/jquery-3\\.1\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "bimg"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -65,11 +62,13 @@
         {
             "rule": "abv\\.bg\\/banners\\/inhouse\\/sinoptik\\/news_blok\\/block_news\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "bimg"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -96,7 +95,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "fb03a09597239adfc0e144dd34b9b7dcff2f7fd43f3aaa7e02acfa94c24af6c9"
+                "dcec653afaec6462149ad266395753400fcb15a387f8f904f254c7c94253adc7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -153,7 +152,7 @@
         "Image": 2
     },
     "nameservers": [
-        "ns1.netinfo.bg",
-        "ns.netinfo.bg"
+        "ns.netinfo.bg",
+        "ns1.netinfo.bg"
     ]
 }

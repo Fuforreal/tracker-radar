@@ -182,9 +182,9 @@
                 "wbstatic"
             ],
             "apis": {
-                "window.sessionStorage": 1,
-                "window.localStorage": 2,
+                "window.sessionStorage": 2,
                 "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
                 "HTMLCanvasElement.prototype.toDataURL": 2
             },
             "sites": 2,
@@ -250,13 +250,11 @@
         {
             "rule": "webullfintech\\.com\\/v1\\/webull-us-g\\/react\\.858fc28652b43594e61c\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "wbstatic"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -367,7 +365,7 @@
                 "wbstatic"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -386,13 +384,17 @@
         {
             "rule": "webullfintech\\.com\\/v1\\/webull-us-g\\/sentry\\.283eba8c858894101fe2\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "wbstatic"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "Navigator.prototype.userAgent": 1
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.hardwareConcurrency": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -585,28 +587,6 @@
             ]
         },
         {
-            "rule": "webullfintech\\.com\\/assets\\/fonts\\/OpenSans-Bold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wbstatic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ffa36fedba039dcf0537d51c0fbf412c9f36480db9c5ce2ffe835ea4490b5b26"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webull.com",
-                "www.webull.com"
-            ]
-        },
-        {
             "rule": "webullfintech\\.com\\/api\\/4\\/envelope\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -643,6 +623,50 @@
                 "dee002849c63960738481b9a6b3ca3cc1105ea9aca8cae252cbfb9c0f3d0902c"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webull.com",
+                "www.webull.com"
+            ]
+        },
+        {
+            "rule": "webullfintech\\.com\\/assets\\/fonts\\/OpenSans-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wbstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "ffa36fedba039dcf0537d51c0fbf412c9f36480db9c5ce2ffe835ea4490b5b26"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webull.com",
+                "www.webull.com"
+            ]
+        },
+        {
+            "rule": "webullfintech\\.com\\/api\\/market\\/region\\/id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "quotes-gw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -713,28 +737,6 @@
             ]
         },
         {
-            "rule": "webullfintech\\.com\\/api\\/market\\/region\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "quotes-gw"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webull.com",
-                "www.webull.com"
-            ]
-        },
-        {
             "rule": "webullfintech\\.com\\/api\\/urcs\\/v1\\/advert\\/list",
             "cookies": 0,
             "fingerprinting": 0,
@@ -763,7 +765,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9871794871794872
+        },
+        {
+            "domain": "pinimg.com",
+            "prevalence": 0.01282051282051282
         }
     ],
     "types": {

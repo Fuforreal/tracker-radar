@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
         "show"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "revico\\.jp\\/providejs\\/tagmanager\\.js",
@@ -20,7 +20,8 @@
                 "show"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -39,13 +40,11 @@
         {
             "rule": "revico\\.jp\\/lib\\/jquery\\/dist\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "show"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -92,6 +91,7 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "window.localStorage": 2,
+                "Event.prototype.timeStamp": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
@@ -103,9 +103,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "revico-visitor-id": {
-                    "ttl": 315363613,
+                    "ttl": 315360013,
                     "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -151,7 +151,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ef46e6cf41e7ce87a61497d2fa577c70718ed711faa2185ba9aec8aecad02755"
+                "aa708c92f5d536bb9f6602ea800319d13e57237fc75752b40031fb68eaa30dbf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -249,15 +249,16 @@
         },
         {
             "rule": "revico\\.jp\\/js\\/put_revico_cookie\\/put_revico_cookie\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "show"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "window.localStorage": 1,
-                "Document.cookie setter": 1
+                "Event.prototype.timeStamp": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -268,9 +269,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "revico-visitor-id": {
-                    "ttl": 315363613,
+                    "ttl": 315360013,
                     "length": 36,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -292,7 +293,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d0f11b85fa099d27095a1469e1ba2efeff4643bb7f8f74ce8eb31c8c3a49dfe8"
+                "9bccb37a11f97a602ce632f2cedad07e8a4d278e61437b4e79874e09c834eac5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -319,7 +320,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "revico-visitor-id": 0.000020313917742175756
+                "revico-visitor-id": 0.000027089442566995578
             },
             "exampleSites": [
                 "workman.jp",
@@ -338,13 +339,13 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "aa51e420169331b3981f8c0420b1fb9ebfd90dfd4efb41b8ec3266c21f40ca0c"
+                "0a7c49946f43ff2b990b5e9e45e7a4f87b456f9550056bf4a449127f1701cd20"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "workman.jp",
+                "mouse-jp.co.jp",
                 "www.mouse-jp.co.jp"
             ]
         },
@@ -360,35 +361,13 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d0cbb0fc1fcf1e4d6f79a8d8e5750cf47a8bf4b35909f56d1b69030511263ba8"
+                "42db641997c9833c6b99bdf252e2a8df3bc49f76ab105de1bd9d23d36fffe111"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "workman.jp",
-                "www.mouse-jp.co.jp"
-            ]
-        },
-        {
-            "rule": "revico\\.jp\\/api\\/rating\\/rich_snippet\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "show"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b5a7feaa3cafb4be933c38ecc5b625869add801efb278f1f215106518c0ab77b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "workman.jp",
+                "mouse-jp.co.jp",
                 "www.mouse-jp.co.jp"
             ]
         },
@@ -417,20 +396,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000203,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
-        },
-        {
-            "domain": "ajax.googleapis.com",
-            "prevalence": 0.25
+            "prevalence": 1
         }
     ],
     "types": {
         "Script": 10,
-        "XHR": 12,
+        "XHR": 10,
         "Preflight": 2,
         "Stylesheet": 4,
         "Document": 2,

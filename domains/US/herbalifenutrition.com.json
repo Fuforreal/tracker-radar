@@ -82,14 +82,11 @@
         {
             "rule": "herbalifenutrition\\.com\\/etc\\.clientlibs\\/clientlibs\\/granite\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "services"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Element.prototype.getClientRects": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -134,8 +131,9 @@
                 "services"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Element.prototype.getClientRects": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -291,7 +289,7 @@
                 "services"
             ],
             "apis": {
-                "window.sessionStorage": 2
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -446,7 +444,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "66c47725c1840666f533ebee8796f5a379161eccba5f27887772630497393ae3"
+            ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},

@@ -243,13 +243,11 @@
         {
             "rule": "parkrun\\.com\\/wp-content\\/themes\\/parkrun\\/scripts\\/jquery\\.cookiesdirective\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Date.prototype.getTime": 3
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -267,12 +265,17 @@
         },
         {
             "rule": "parkrun\\.com\\/wp-content\\/themes\\/parkrun\\/scripts\\/parkrunTheme\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.appName": 2
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -280,7 +283,14 @@
                 "7b6b8e5c5c8d83f4cd47ede3d11074e11bba84bfb460451dbe9dc48fdef70967"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookiesDisclosureCount": {
+                    "ttl": 86404,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "parkrun.com.au",
@@ -445,7 +455,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000677,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "first party",
@@ -458,9 +468,9 @@
         "Image": 29
     },
     "nameservers": [
-        "ns-1576.awsdns-05.co.uk",
-        "ns-1301.awsdns-34.org",
+        "ns-483.awsdns-60.com",
         "ns-665.awsdns-19.net",
-        "ns-483.awsdns-60.com"
+        "ns-1301.awsdns-34.org",
+        "ns-1576.awsdns-05.co.uk"
     ]
 }

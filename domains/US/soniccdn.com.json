@@ -64,14 +64,11 @@
         {
             "rule": "soniccdn\\.com\\/js\\/jquery-3\\.6\\.1\\.min\\.6409c75134c3b\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "statics2"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 2,
-                "Event.prototype.timeStamp": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -89,14 +86,11 @@
         {
             "rule": "soniccdn\\.com\\/js\\/jquery-ui\\.min\\.6409c75134c3b\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "statics2"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -160,11 +154,13 @@
         {
             "rule": "soniccdn\\.com\\/js\\/general\\.6409c75134c3b\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "statics2"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],

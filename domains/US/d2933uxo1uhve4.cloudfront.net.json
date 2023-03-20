@@ -13,18 +13,27 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "d2933uxo1uhve4\\.cloudfront\\.net\\/js\\/notify-visitors-1\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "ecd93dad9c2ca699c8d84c4b1e43f84e142e6712b179296495ac3231c78e1e0f"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -49,9 +58,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-983.awsdns-58.net",
         "ns-146.awsdns-18.com",
         "ns-1625.awsdns-11.co.uk",
+        "ns-983.awsdns-58.net",
         "ns-1323.awsdns-37.org"
     ]
 }

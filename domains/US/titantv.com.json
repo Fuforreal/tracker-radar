@@ -24,7 +24,7 @@
                 "whatson"
             ],
             "apis": {
-                "Date.prototype.getTime": 5
+                "Date.prototype.getTime": 4
             },
             "sites": 8,
             "prevalence": 0.0000542,
@@ -52,14 +52,11 @@
         {
             "rule": "titantv\\.com\\/bundles\\/jquery",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "whatson"
             ],
-            "apis": {
-                "Date.prototype.getTime": 5,
-                "Event.prototype.timeStamp": 4
-            },
+            "apis": {},
             "sites": 5,
             "prevalence": 0.0000339,
             "cnames": [],
@@ -85,8 +82,9 @@
                 "whatson"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Date.prototype.getTime": 5
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4,
+                "Event.prototype.timeStamp": 4
             },
             "sites": 5,
             "prevalence": 0.0000339,
@@ -108,11 +106,13 @@
         {
             "rule": "titantv\\.com\\/bundles\\/whatsOnJsNoConflict",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "whatson"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 5
+            },
             "sites": 5,
             "prevalence": 0.0000339,
             "cnames": [],
@@ -192,10 +192,10 @@
             "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "afc3948cd3d7ee12e19453e8123af21dc63e355bc9d52680444ec9e931016a98",
-                "bb81ae1ab106f2dadd4d1c48dc4dec85247193502c581cbf2c848b7359157433",
-                "4c087652e4037467ebef4ff8e7036c44916597502e452cd4a0a82763199581b7",
-                "f519dba9948c4328f1a4025a3715cbfe678cd1b1a9012c033300c29c41dd3841"
+                "074bb363c13e501470cd745eb6f5baafa24f7c01d203b3269b09f7fe21f2d364",
+                "9d5ecfc250f612395b542bb9f32fdf6d7b6190da0726744175a10f5cf4bb2859",
+                "ed8e7284df4437691ad7070b38f1f55804e1547118f651a3c9e7dba3b38b78fa",
+                "daeddd397de76940743ac8abfb9a01a27d7d8b6b59106c90f632a2240945c3ec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -366,7 +366,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "4e4c7afb3148670f2eb21c858a5ff32e9ff90513e3384d4c2e146dccbed2b626"
+                "c77cf69f4c47da9fab4c1020fff26bc3fa0783b739adfb319be731e04e3a7dbf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -388,7 +388,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ca61edf22d8baf8d3f99e031b0fb877cd93646aed6fe44f00cd7651b64415f89"
+                "6ca7c10e86fcbc5e1363c2ed25d0a8ca0c87702fe5c31758034029652818dde5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -417,9 +417,9 @@
         "Fetch": 4
     },
     "nameservers": [
-        "ns-1675.awsdns-17.co.uk",
+        "ns-1356.awsdns-41.org",
         "ns-36.awsdns-04.com",
-        "ns-900.awsdns-48.net",
-        "ns-1356.awsdns-41.org"
+        "ns-1675.awsdns-17.co.uk",
+        "ns-900.awsdns-48.net"
     ]
 }

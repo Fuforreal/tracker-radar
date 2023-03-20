@@ -438,13 +438,11 @@
         {
             "rule": "nalog\\.ru\\/js\\/ul2018\\/vendor\\/jquery-3\\.1\\.1\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "data"
             ],
-            "apis": {
-                "Element.prototype.getClientRects": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -467,6 +465,7 @@
                 "data"
             ],
             "apis": {
+                "Element.prototype.getClientRects": 1,
                 "window.innerWidth": 1
             },
             "sites": 2,
@@ -491,10 +490,10 @@
                 "data"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.plugins": 2,
-                "HTMLMediaElement.prototype.canPlayType": 1
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.plugins": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -535,13 +534,11 @@
         {
             "rule": "nalog\\.ru\\/js\\/ul2018\\/vendor\\/jquery\\.formstyler\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "data"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -559,11 +556,13 @@
         {
             "rule": "nalog\\.ru\\/js\\/ul2018\\/vendor\\/select2\\.full\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "data"
             ],
-            "apis": {},
+            "apis": {
+                "Element.prototype.getClientRects": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -668,15 +667,12 @@
         },
         {
             "rule": "nalog\\.ru\\/js\\/ul2018\\/vendor\\/jquery\\.cookie\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "data"
             ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -684,14 +680,7 @@
                 "a074eb836d0e2f7d1952a93dc3d7f20a8e001e900d1a26d2223fde7ae0996723"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "nalog.ru.rrnew.popup_anket_a_ul2018_2019_02_06": {
-                    "ttl": 86400000005,
-                    "length": 1,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nalog.gov.ru",
@@ -701,14 +690,11 @@
         {
             "rule": "nalog\\.ru\\/js\\/ul2018\\/vendor\\/jquery\\.magnific-popup\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "data"
             ],
-            "apis": {
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -747,12 +733,15 @@
         },
         {
             "rule": "nalog\\.ru\\/js\\/ul2018\\/script_me\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
             "subdomains": [
                 "data"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -760,7 +749,14 @@
                 "40fd9aea1eedba31623168c2daab5eddb382ee87c53e62a93ae444d279f5e35e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "nalog.ru.rrnew.popup_anket_a_ul2018_2019_02_06": {
+                    "ttl": 86400000002,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nalog.gov.ru",
@@ -1037,13 +1033,13 @@
                 "waSessionId": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "waUserId": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -1108,10 +1104,8 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "74ebaefdfbd36b02363aae10e1291be8d6716e144431fed668c7941a35644b6b"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1130,8 +1124,10 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "74ebaefdfbd36b02363aae10e1291be8d6716e144431fed668c7941a35644b6b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1217,8 +1213,8 @@
         "Stylesheet": 40,
         "Script": 40,
         "Image": 18,
-        "XHR": 2,
         "Preflight": 2,
+        "XHR": 2,
         "Media": 2
     },
     "nameservers": [

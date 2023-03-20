@@ -4,14 +4,62 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000115,
-    "sites": 17,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
-        "rum"
+        "rum",
+        "rumcollector"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "uptime\\.com\\/static\\/rum\\/compiled\\/v2\\/rum\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c06e0fc24d82e0dd606d0c0a4e2331ea2175c7025f5beee8dfa836b67742db99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diesel.com",
+                "shop.diesel.com"
+            ]
+        },
+        {
+            "rule": "uptime\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rumcollector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "a57dadcc3234d0d6ddfcae8a728cd3f62454053c5f06a15ecc9f74710f0ad0bd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diesel.com",
+                "shop.diesel.com"
+            ]
+        },
         {
             "rule": "uptime\\.com\\/static\\/rum\\/compiled\\/rum\\.js",
             "cookies": 0,
@@ -20,12 +68,13 @@
                 "rum"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7
+                "Navigator.prototype.userAgent": 8
             },
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
+                "11ae264ee255c2787d319032139206573422959d56feb1205af6711be9d5af9e",
                 "92283fec1fc7a7a8d3c13a4eb9595b409873b8ca28d9aceeaf29a809d16d0ef5"
             ],
             "type": "Script",
@@ -52,10 +101,11 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
-                "80e5bed8abe6565cca6546c035015b5aa7f5989e9beff4736d47a8052793f7c7"
+                "80e5bed8abe6565cca6546c035015b5aa7f5989e9beff4736d47a8052793f7c7",
+                "e8dc051cac81ea5e30899600db6c085894f31a248ab46ace77d3b1756d58e730"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -79,20 +129,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.5
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.1
+            "prevalence": 0.07142857142857142
         }
     ],
     "types": {
-        "Script": 9,
-        "XHR": 9
+        "Script": 11,
+        "XHR": 11
     },
     "nameservers": [
         "ns-650.awsdns-17.net",

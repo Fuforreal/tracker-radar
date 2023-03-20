@@ -9,13 +9,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000813,
-    "sites": 12,
+    "prevalence": 0.0000948,
+    "sites": 14,
     "subdomains": [
         "6n4r1rnzpa.execute-api",
         "d-vtexf2ykgi.execute-api",
         "d-9tv6fr4kw7.execute-api",
-        "cognito-identity"
+        "cognito-identity",
+        "dataplane.rum"
     ],
     "cnames": [
         {
@@ -122,7 +123,7 @@
                 }
             ],
             "responseHashes": [
-                "b900c6398630b946894fc0b018a2d807eddb59a47bb2e89c02f7cc0d70f2776e"
+                "f9e0b420c7d1b82a2f047667309a28a1680f1720a05bf24a1235eea699066611"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -168,10 +169,8 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "13d6386ef4dd503944514c977c5677041b2358581d91ef38124e61fc483ebda8"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -190,8 +189,30 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
+            "responseHashes": [
+                "4468e192b054a45ef592a6ff74db0b5a3a9578fa0688562e4de248cadbf4ebea"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telenor.se",
+                "www.telenor.se"
+            ]
+        },
+        {
+            "rule": "eu-north-1\\.amazonaws\\.com\\/appmonitors\\/c053bfb5-0543-4c73-9d09-6e6dcb875394",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dataplane.rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -208,41 +229,31 @@
     "topInitiators": [
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.5384615384615384
+            "prevalence": 0.5
         },
         {
             "domain": "first party",
-            "prevalence": 0.23076923076923078
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "medialinq.se",
+            "prevalence": 0.125
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.15384615384615385
+            "prevalence": 0.125
         },
         {
             "domain": "compileit.com",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.0625
         }
     ],
     "types": {
         "XHR": 2,
         "Script": 2,
         "Image": 2,
-        "Fetch": 4,
+        "Fetch": 6,
         "Preflight": 4
     },
-    "nameservers": [
-        "pdns3.ultradns.org",
-        "u3.amazonaws.com",
-        "ns2.p31.dynect.net",
-        "u6.amazonaws.com",
-        "ns4.p31.dynect.net",
-        "u4.amazonaws.com",
-        "pdns1.ultradns.net",
-        "ns1.p31.dynect.net",
-        "u2.amazonaws.com",
-        "pdns5.ultradns.info",
-        "ns3.p31.dynect.net",
-        "u5.amazonaws.com",
-        "u1.amazonaws.com"
-    ]
+    "nameservers": []
 }

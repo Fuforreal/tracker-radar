@@ -8,7 +8,7 @@
     "sites": 5,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "bokepcuy\\.mom\\/",
@@ -16,13 +16,15 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2f51de6c3d0310f090222302d7df91340516282a622ad034d9dd8b812d355d0c"
+                "f16223d8d928a521e1b0b53d81888336e1eab9ee47808390f070981f2a6a1f24"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -178,8 +180,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.devicePixelRatio": 2
+                "Navigator.prototype.userAgent": 1,
+                "window.devicePixelRatio": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -196,7 +198,7 @@
             ]
         },
         {
-            "rule": "bokepcuy\\.mom\\/cdn-cgi\\/challenge-platform\\/h\\/b\\/scripts\\/alpha\\/invisible\\.js",
+            "rule": "bokepcuy\\.mom\\/cdn-cgi\\/challenge-platform\\/h\\/g\\/scripts\\/alpha\\/invisible\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -205,7 +207,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0412fed593ed768adc9d840ed2b5bc558afa8826da47a5ee15e0c61974833264"
+                "aafa5fdb2ac036d6930f14b820f89780bd09dceef46d48479d48b7d9f6f77e52"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -616,7 +618,7 @@
             ]
         },
         {
-            "rule": "bokepcuy\\.mom\\/cdn-cgi\\/challenge-platform\\/h\\/b\\/scripts\\/pica\\.js",
+            "rule": "bokepcuy\\.mom\\/cdn-cgi\\/challenge-platform\\/h\\/g\\/scripts\\/pica\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -625,9 +627,29 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "503d8244d604b9625e52a3966d67091253f2781d2cac9bf367b620d6e9ef7735"
+                "58587df2fbad02d4287dcee6c06ce6158d48641f3a3fb48d83a95502b9a77160"
             ],
             "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bokepcuy.cam",
+                "bokepcuy.me"
+            ]
+        },
+        {
+            "rule": "bokepcuy\\.mom\\/ngx_pagespeed_beacon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "dccd5a4d4fd6ec5a7baa3e8e7b9a5a96e7bfde7d21737bf0480d17a66a541c2b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -671,10 +693,11 @@
         "Font": 2,
         "Script": 4,
         "Image": 40,
-        "Other": 2
+        "Other": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "thomas.ns.cloudflare.com",
-        "leia.ns.cloudflare.com"
+        "leia.ns.cloudflare.com",
+        "thomas.ns.cloudflare.com"
     ]
 }

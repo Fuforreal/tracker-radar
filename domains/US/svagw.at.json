@@ -10,16 +10,19 @@
         "cobrowsing"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "svagw\\.at\\/surfly\\.js",
             "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cobrowsing"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -59,11 +62,13 @@
         {
             "rule": "svagw\\.at\\/3rdpartycookietest\\/",
             "cookies": 0.0000135,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cobrowsing"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],

@@ -53,10 +53,10 @@
                 "assets"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.appName": 1,
                 "window.localStorage": 2
             },
             "sites": 2,
@@ -135,8 +135,12 @@
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "a60b53d4a95de8ca7a7ac8c35e5cc2207f1ec0c612c02713e9eca996fa382be0",
+                "19bedae81b116dc113d7818d68a7cb179baea85ce16430b493c41cb9b98f624e",
+                "d4c5bccf189860c4925564fcf02bb496505a25cbdb786db7268f5b67e1ebb518"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -159,12 +163,8 @@
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [
-                "a60b53d4a95de8ca7a7ac8c35e5cc2207f1ec0c612c02713e9eca996fa382be0",
-                "19bedae81b116dc113d7818d68a7cb179baea85ce16430b493c41cb9b98f624e",
-                "d4c5bccf189860c4925564fcf02bb496505a25cbdb786db7268f5b67e1ebb518"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -182,16 +182,16 @@
                 "assets"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
-                "Navigator.prototype.languages": 4,
-                "window.localStorage": 4,
-                "HTMLCanvasElement.prototype.toDataURL": 3,
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 3,
                 "Event.prototype.timeStamp": 2,
+                "window.localStorage": 4,
                 "Document.cookie getter": 2,
                 "CanvasRenderingContext2D.prototype.getImageData": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Date.prototype.getTime": 4,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
+                "HTMLCanvasElement.prototype.toDataURL": 3,
+                "Navigator.prototype.languages": 3,
+                "Date.prototype.getTimezoneOffset": 4
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -222,34 +222,10 @@
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "batteryjunction.com",
-                "www.batteryjunction.com",
-                "www.genecards.org",
-                "www.sunandski.com"
-            ]
-        },
-        {
-            "rule": "kayako\\.com\\/api\\/v1\\/conversations\\/starter",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "batteryjunction",
-                "genecards",
-                "sunandski"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
             "responseHashes": [
-                "16963786795945d9ee88e92546e887eff2072389aebca87fa668d324715928b9",
-                "6d97d179eb7c7ef1e84587ab764524f38ef9ef641bc669621604e22e7a1445f7",
-                "c951379c37326a79a3e64646c2c3f35743bfcefdf766eb8d364ad771dd7cf7e5"
+                "6f24db39d98bae97c1e8aaff14665e9520d8d9dbca6bdb7923fcca5dac38eb9e",
+                "2ce5a2820eb53c1346f23cc01dbc7ba41e445ea2470c34273416d6602852e39a",
+                "96407299592edf42da9267fbfc1b6e9f48966aadd42d66fe5e684d967c2dfcbc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -262,7 +238,7 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/api\\/v1\\/locales",
+            "rule": "kayako\\.com\\/api\\/v1\\/conversations\\/starter",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -304,6 +280,30 @@
                 "ace141bfe7eb0f8132519d9afb5a568feca83c7b0b8126950ffba60bf596ef9b"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "batteryjunction.com",
+                "www.batteryjunction.com",
+                "www.genecards.org",
+                "www.sunandski.com"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/api\\/v1\\/locales",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "batteryjunction",
+                "genecards",
+                "sunandski"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -364,30 +364,6 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/api\\/v1\\/privacy",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "batteryjunction",
-                "genecards",
-                "sunandski"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "batteryjunction.com",
-                "www.batteryjunction.com",
-                "www.genecards.org",
-                "www.sunandski.com"
-            ]
-        },
-        {
             "rule": "kayako\\.com\\/messenger\\/pattern-1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -410,7 +386,7 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/api\\/v1\\/conversations",
+            "rule": "kayako\\.com\\/api\\/v1\\/privacy",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -458,29 +434,31 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/avatar\\/get\\/8019ed1c-6b92-5084-811d-97a0efa16321",
+            "rule": "kayako\\.com\\/api\\/v1\\/conversations",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "batteryjunction"
+                "batteryjunction",
+                "genecards",
+                "sunandski"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [
-                "7f7312544f7baa0a58ea3e04977d5524b858ff6372fea0aa8a3515b9d6ec1971"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "batteryjunction.com",
-                "www.batteryjunction.com"
+                "www.batteryjunction.com",
+                "www.genecards.org",
+                "www.sunandski.com"
             ]
         },
         {
-            "rule": "kayako\\.com\\/avatar\\/get\\/806ea1a6-8adb-5726-87f3-882ed744673a",
+            "rule": "kayako\\.com\\/avatar\\/get\\/15926d97-0a2e-5127-a73e-52e59ae95808",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -491,7 +469,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e11775bf437c60c95fde9b7ea8db6d9527d85072d06b5d3aa8bec50d92308906"
+                "b2fc798009430f8d07f5665345e3abe55e2c3dd6ad81f987c746e48ce2adc287"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -514,6 +492,28 @@
             "cnames": [],
             "responseHashes": [
                 "2eb7d73de41ef99b5a499b42fb7f228e7fc54eeccbc4f333ff233ebd01678d7d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "batteryjunction.com",
+                "www.batteryjunction.com"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/avatar\\/get\\/1aac8d60-5223-5f16-ba20-19c360c8892f",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "batteryjunction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e11775bf437c60c95fde9b7ea8db6d9527d85072d06b5d3aa8bec50d92308906"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -708,7 +708,7 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/avatar\\/get\\/b3f934f1-b44d-5e74-9856-66367a5ebd42",
+            "rule": "kayako\\.com\\/avatar\\/get\\/6cc91853-f502-5d52-b4d3-a4597c1d863c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -719,7 +719,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "dba264dd447cd1d5479b5ff1ff16c9a57aa658320bdff5746e61b42b3ffac7e0"
+                "870ee967be391ed85172200bb5c3ed8399d24c8f3acc636be83aee1475894ba2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -730,7 +730,7 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/avatar\\/get\\/5b71f47d-0f94-5681-869d-01d91b5fd7cb",
+            "rule": "kayako\\.com\\/avatar\\/get\\/99d2321c-4089-5d7a-bf36-9a28c63647ae",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -741,7 +741,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "eca0945855b8d00044f43ef883ae16e50175b746397beff90714bad55f75a7f1"
+                "7c57588a5d43b82ddee5bf062025195dc2a37a0d86beb5bef1f94bfef8cc45c5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -752,7 +752,7 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/avatar\\/get\\/c53c8cc2-71f5-5197-a0c1-626df51814c9",
+            "rule": "kayako\\.com\\/avatar\\/get\\/9d42df20-cfbe-561c-9b08-a71620eb80d0",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -763,7 +763,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b686f909e21d9e376a8d901b93d9dea1028ca9a4d3e3aab0ece36ccab7a5914d"
+                "e7ea98fead84264ad97d30f8d9bf20a12e0a575596ee7c999d1342a0a8f1d1a0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -785,7 +785,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f5b8955b0ed59a2c72b6ae456327199ce8cae0b911e8e0e7c55fd34325903343"
+                "70754f64dc6d030553d907d687595f34a3c362cf7cc3856c728f20e00b13bd1f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -824,24 +824,28 @@
     "topInitiators": [
         {
             "domain": "kayakocdn.com",
-            "prevalence": 0.7058823529411765
+            "prevalence": 0.631578947368421
         },
         {
             "domain": "first party",
-            "prevalence": 0.29411764705882354
+            "prevalence": 0.3157894736842105
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
         "Stylesheet": 2,
         "Script": 8,
         "Image": 32,
-        "Preflight": 26,
-        "XHR": 26
+        "XHR": 26,
+        "Preflight": 26
     },
     "nameservers": [
-        "ns-355.awsdns-44.com",
-        "ns-980.awsdns-58.net",
         "ns-1727.awsdns-23.co.uk",
-        "ns-1487.awsdns-57.org"
+        "ns-355.awsdns-44.com",
+        "ns-1487.awsdns-57.org",
+        "ns-980.awsdns-58.net"
     ]
 }

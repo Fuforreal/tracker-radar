@@ -806,10 +806,10 @@
                 "play"
             ],
             "apis": {
-                "Navigator.prototype.product": 6,
-                "Navigator.prototype.userAgent": 6,
-                "Date.prototype.getTime": 7,
-                "Event.prototype.timeStamp": 6
+                "Date.prototype.getTime": 6,
+                "Event.prototype.timeStamp": 5,
+                "Navigator.prototype.product": 4,
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 7,
             "prevalence": 0.0000474,
@@ -838,9 +838,9 @@
                 "play"
             ],
             "apis": {
+                "Navigator.prototype.maxTouchPoints": 5,
                 "window.innerWidth": 6,
-                "window.innerHeight": 6,
-                "Navigator.prototype.maxTouchPoints": 6
+                "window.innerHeight": 6
             },
             "sites": 7,
             "prevalence": 0.0000474,
@@ -896,9 +896,7 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "4992cdb7d536938cda09f94638cc8b96431e1d59f3ccff88493364116fabaa82"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -988,14 +986,11 @@
         {
             "rule": "libsyn\\.com\\/p\\/assets\\/platform\\/customplayer\\/jquery\\.nanoscroller\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Navigator.prototype.appName": 3,
-                "Navigator.prototype.userAgent": 3
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
@@ -1192,13 +1187,11 @@
         {
             "rule": "libsyn\\.com\\/p\\/assets\\/platform\\/websuite\\/js\\/jquery\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "ssl-static"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1216,11 +1209,13 @@
         {
             "rule": "libsyn\\.com\\/p\\/assets\\/platform\\/websuite\\/js\\/bootstrap\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "ssl-static"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1238,13 +1233,11 @@
         {
             "rule": "libsyn\\.com\\/p\\/assets\\/platform\\/websuite\\/js\\/jquery\\.smartmenus\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "ssl-static"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -1414,6 +1407,28 @@
             ]
         },
         {
+            "rule": "libsyn\\.com\\/secure\\/item\\/26209887\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b33109ea20f78703fc17c0ee6bdc2d66dbe0835294926d785003db1b93af1d4e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spglobal.com",
+                "www.spglobal.com"
+            ]
+        },
+        {
             "rule": "libsyn\\.com\\/secure\\/item\\/26183238\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1458,20 +1473,22 @@
             ]
         },
         {
-            "rule": "libsyn\\.com\\/secure\\/item\\/26160885\\/",
+            "rule": "libsyn\\.com\\/embed\\/episode\\/id\\/26209887\\/height\\/90\\/theme\\/custom\\/thumbnail\\/yes\\/direction\\/backward\\/render-playlist\\/no\\/custom-color\\/000000\\/menu\\/no\\/20659985",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "assets"
+                "html5-player"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "b33109ea20f78703fc17c0ee6bdc2d66dbe0835294926d785003db1b93af1d4e"
+                "ec4585fff95913740b55427b52107a1db5d89860d6b52a0ad3c1309101c2fd21"
             ],
-            "type": "Image",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1528,30 +1545,6 @@
             ]
         },
         {
-            "rule": "libsyn\\.com\\/embed\\/episode\\/id\\/26160885\\/height\\/90\\/theme\\/custom\\/thumbnail\\/yes\\/direction\\/backward\\/render-playlist\\/no\\/custom-color\\/000000\\/menu\\/no\\/20659985",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "html5-player"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3b7e93d13493b537a2fcc6e1b9f0aade84ea5cfa0217277f6aaa962423fd09f5"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "spglobal.com",
-                "www.spglobal.com"
-            ]
-        },
-        {
             "rule": "libsyn\\.com\\/p\\/assets\\/c\\/5\\/5\\/1\\/c551e5db62664882e5bbc093207a2619\\/height_428_width_230_TheEssentialPod_NewLogo\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1596,7 +1589,7 @@
             ]
         },
         {
-            "rule": "libsyn\\.com\\/secure\\/item\\/26118066\\/",
+            "rule": "libsyn\\.com\\/secure\\/item\\/26259669\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1669,7 +1662,8 @@
                 "html5-player"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1692,27 +1686,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6222222222222222
+            "prevalence": 0.5925925925925926
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.29333333333333333
+            "prevalence": 0.3055555555555556
         },
         {
             "domain": "cpnshows.com",
-            "prevalence": 0.044444444444444446
+            "prevalence": 0.05555555555555555
         },
         {
             "domain": "dempart.site",
-            "prevalence": 0.017777777777777778
+            "prevalence": 0.018518518518518517
         },
         {
             "domain": "stitcher.com",
-            "prevalence": 0.017777777777777778
+            "prevalence": 0.018518518518518517
         },
         {
             "domain": "charismapodcastnetwork.com",
-            "prevalence": 0.0044444444444444444
+            "prevalence": 0.009259259259259259
         }
     ],
     "types": {
@@ -1724,12 +1718,14 @@
         "Document": 8
     },
     "nameservers": [
-        "ns4.libsyn.com",
         "ns5.dnsmadeeasy.com",
+        "ns6.dnsmadeeasy.com",
         "ns7.dnsmadeeasy.com",
-        "ns3.libsyn.com",
         "ns2.libsyn.com",
         "ns1.libsyn.com",
-        "ns6.dnsmadeeasy.com"
+        "ns3.libsyn.com",
+        "ns4.libsyn.com",
+        "ns5.libsyn.com",
+        "ns6.libsyn.com"
     ]
 }

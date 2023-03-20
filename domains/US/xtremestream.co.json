@@ -22,7 +22,8 @@
                 "xporn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -41,12 +42,14 @@
         {
             "rule": "xtremestream\\.co\\/player\\/devtools-detector\\/lib\\/devtools-detector\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "magixz",
                 "xporn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -83,6 +86,29 @@
                 "pinayflixtv.com",
                 "xporn.to"
             ]
+        },
+        {
+            "rule": "xtremestream\\.co\\/player\\/no_video\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "magixz",
+                "xporn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "2727d19216f882bcf7c476da2e79bb2360092b37d508268c9ed39b113a81bb82"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pinayflixtv.com",
+                "xporn.to"
+            ]
         }
     ],
     "categories": [],
@@ -95,11 +121,11 @@
         }
     ],
     "types": {
-        "Document": 2,
+        "Document": 4,
         "Script": 4
     },
     "nameservers": [
-        "amy.ns.cloudflare.com",
-        "stan.ns.cloudflare.com"
+        "stan.ns.cloudflare.com",
+        "amy.ns.cloudflare.com"
     ]
 }

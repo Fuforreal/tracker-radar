@@ -63,13 +63,11 @@
         {
             "rule": "punchout2go\\.com\\/common\\/jslib\\/0\\.0\\.9\\/libs\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "public"
             ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -109,11 +107,13 @@
         {
             "rule": "punchout2go\\.com\\/common\\/jslib\\/0\\.0\\.9\\/po2go\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "public"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -144,8 +144,8 @@
     },
     "nameservers": [
         "pdns88.ultradns.org",
+        "pdns88.ultradns.com",
         "pdns88.ultradns.net",
-        "pdns88.ultradns.biz",
-        "pdns88.ultradns.com"
+        "pdns88.ultradns.biz"
     ]
 }

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000745,
-    "sites": 11,
+    "prevalence": 0.0000813,
+    "sites": 12,
     "subdomains": [
-        "direct"
+        "direct",
+        "direct-collect"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +21,8 @@
                 "direct"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
+            "sites": 7,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -32,6 +33,7 @@
                 "securelogin.synchronybank.com",
                 "skims.com",
                 "www.allbirds.com",
+                "www.carters.com",
                 "www.nespresso.com",
                 "www.primary.com"
             ]
@@ -44,13 +46,14 @@
                 "direct"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "04fd79ac16e3f2abca2b6e900da149abc0ebaeaa8cda936369d3cece942a4b55",
-                "e48aefc4b420640a823172b344f3e798ec5e0a3155bf6a3d766cc74d1b7f72e6",
-                "b6fcb0682d93c30c203050bbb79eb1b1de787c7bcd8ffaa25b2c50b233ad0b58"
+                "6b272f18eb39d8a1b8f1d6ebf28973edf4ede1aaed75cef5c8d6d9bc5d16c452",
+                "ff256f1045ed0a2dfe01d63a216234fed4c6b264bbe5c10acf05fa475d10e771",
+                "b8b0c42d0877557bb3f498f6986e090b0fc86323265d4fd882581c7fce2afa02",
+                "a2e9119ab851366750ce4921b134c5a88c46ddbf1bc5ca803ab324f44257bcc6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -59,7 +62,30 @@
                 "nuts.com",
                 "securelogin.synchronybank.com",
                 "skims.com",
-                "www.allbirds.com"
+                "www.allbirds.com",
+                "www.carters.com"
+            ]
+        },
+        {
+            "rule": "dy-api\\.com\\/v2\\/collect\\/user\\/engagement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct-collect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carters.com",
+                "www.carters.com"
             ]
         },
         {
@@ -74,8 +100,8 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "d3613b0f8625ef755355008ab3941a016513d7b3eba012c93504223b2c4966e2",
-                "ed7ca58acbdb8f6357e16b519cc67ce83ec14d6056c79dd67361d001da99a8ec"
+                "495196f533d72bf8cca96bee983f0651f02c4405b97ef03e192cf9d475881578",
+                "9fc5536772141668ef83e7a52faf3ae794f5799e588db899988f1b42863dcfa8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -93,26 +119,26 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5384615384615384
+            "prevalence": 0.6129032258064516
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.38461538461538464
+            "prevalence": 0.3225806451612903
         },
         {
             "domain": "trackjs.com",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.06451612903225806
         }
     ],
     "types": {
-        "Preflight": 6,
-        "XHR": 4,
+        "Preflight": 7,
+        "XHR": 7,
         "Fetch": 3
     },
     "nameservers": [
         "ns-1111.awsdns-10.org",
         "ns-1608.awsdns-09.co.uk",
-        "ns-687.awsdns-21.net",
-        "ns-365.awsdns-45.com"
+        "ns-365.awsdns-45.com",
+        "ns-687.awsdns-21.net"
     ]
 }

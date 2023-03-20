@@ -14,13 +14,15 @@
     "resources": [
         {
             "rule": "2checkout\\.com\\/content\\/check_affiliate_v2\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "secure"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -29,7 +31,14 @@
                 "e91906e4c98e7c27c46e97e4325067d80dd5c595c7f18a3cc5104464db51888d"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_avgCheck": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013544721283497789,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "revouninstaller.com",
@@ -50,7 +59,7 @@
         "Script": 2
     },
     "nameservers": [
-        "dns2.cscdns.net",
-        "dns1.cscdns.net"
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
     ]
 }

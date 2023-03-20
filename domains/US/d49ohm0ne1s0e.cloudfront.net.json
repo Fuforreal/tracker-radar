@@ -38,9 +38,11 @@
         {
             "rule": "d49ohm0ne1s0e\\.cloudfront\\.net\\/layouts\\/dragon\\/js\\/bootstrap-3-3-6\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -57,15 +59,15 @@
         },
         {
             "rule": "d49ohm0ne1s0e\\.cloudfront\\.net\\/layouts\\/dragon\\/js\\/versioned\\/combined\\/combined_3_min_eccbc87e4b5ce2fe28308fd9f2a7baf3\\.js\\.gz",
-            "cookies": 0.0000135,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
                 "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
                 "Navigator.prototype.appVersion": 2,
-                "window.innerHeight": 2
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 1,
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -74,14 +76,7 @@
                 "17d992c593d23db89e536feb0134233623ba53e04a1fca095dde942ea99af573"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "poll-bar": {
-                    "ttl": 604800,
-                    "length": 109,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "oliverwicks.com",
@@ -113,7 +108,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "first party",
@@ -131,8 +126,8 @@
     },
     "nameservers": [
         "ns-1770.awsdns-29.co.uk",
+        "ns-1277.awsdns-31.org",
         "ns-879.awsdns-45.net",
-        "ns-201.awsdns-25.com",
-        "ns-1277.awsdns-31.org"
+        "ns-201.awsdns-25.com"
     ]
 }

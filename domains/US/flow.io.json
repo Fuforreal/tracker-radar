@@ -41,15 +41,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 3,
+                    "ttl": 5,
                     "length": 9,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 0.3333333333333333
                 },
                 "_f60_session": {
-                    "ttl": 2724710400004,
+                    "ttl": 2724710400007,
                     "length": 64,
-                    "prevalence": 0.000020313917742175756,
+                    "prevalence": 0.000020317081925246682,
                     "uniqueness": 1
                 }
             },
@@ -77,7 +77,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_f60_session": 0.00006771305914058585
+                "_f60_session": 0.00007449596705923783
             },
             "exampleSites": [
                 "madeincookware.com",
@@ -111,11 +111,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_f60_session": 0.00007448436505464443,
-                "IR_gbd": 0.00002708522365623434,
-                "_li_dcdm_c": 0.00001354261182811717,
-                "_schn": 0.000006771305914058585,
-                "dy_fs_page": 0.000006771305914058585
+                "_f60_session": 0.00008126832770098673,
+                "IR_gbd": 0.00003386180320874447,
+                "_schn": 0.000027089442566995578,
+                "_li_dcdm_c": 0.000013544721283497789,
+                "dy_fs_page": 0.0000067723606417488944
             },
             "exampleSites": [
                 "madeincookware.com",
@@ -135,13 +135,11 @@
         {
             "rule": "flow\\.io\\/country-picker\\/js\\/v0\\/country-picker\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -158,19 +156,19 @@
         },
         {
             "rule": "flow\\.io\\/spartan\\/js\\/v0\\/flow\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "shopify-cdn"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
                 "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1
+                "PerformanceTiming.prototype.navigationStart": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -180,16 +178,16 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "cookies.js": {
-                    "ttl": 2,
-                    "length": 9,
-                    "prevalence": 0.000006771305914058585,
+                "_f60_session": {
+                    "ttl": 31536005,
+                    "length": 64,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
-                "_f60_session": {
-                    "ttl": 31536003,
-                    "length": 64,
-                    "prevalence": 0.000006771305914058585,
+                "cookies.js": {
+                    "ttl": 1,
+                    "length": 9,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -211,7 +209,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a4608cdb2647e0f931e42a01ded0c6aac59c24346aeed4f8761478a39e2b4958"
+                "e2d1a186ea7ae6b5f1a6c0ed3534f9f2a4662af19083e52a69493189f59e5a1b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -233,9 +231,29 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "63096bd6f0565e13cd95bf26217a57b83469d0516b4592816ae3b813aaf41b76"
+                "73794aaf745ec12d6fede58e85052777a5d9918d08cc8cf80e47a525f0d13aa4"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spartan.com",
+                "www.spartan.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/spartan\\/countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -258,27 +276,6 @@
                 "ff7bb622e7f134d5c31114191b905fe1b724352435b5fc60ed3ebd1b243f928f"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "spartan.com",
-                "race.spartan.com",
-                "www.spartan.com"
-            ]
-        },
-        {
-            "rule": "flow\\.io\\/spartan\\/countries",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -314,13 +311,13 @@
                 "cookies.js": {
                     "ttl": 1,
                     "length": 9,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_f60_session": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 64,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -342,7 +339,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a54e7883ab5d2b7d1b98210f1edeae3c1b62c6a427c971fea46f3263c044d8cd"
+                "7e6ede4da05cda36fc179c6bbb6129a98be497496195459894d7582ba7a66faa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -364,7 +361,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "9f07fb88c7224ad293597ded815d20984e829194ea7d40154d6f3166d3983606"
+                "ab81f838ad23eef5261566c3f0829283a5975ca8afa403c4a35b89c01356745b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -425,13 +422,13 @@
                 "cookies.js": {
                     "ttl": 0,
                     "length": 9,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_f60_session": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 64,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -453,7 +450,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0954b5354ece6be1bc0a671db24b98bf102a227efda2d15ced09bb4fee3d1a9d"
+                "e862f6addfaa1b4594a2118ce9173c22a9e3171179d2df45ad2a434108ff3399"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -475,7 +472,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "7051f6bbb21b920854032e0a6b5c2c9f3c418a966b09f6102aaa9a75d01379d4"
+                "99ec2c3f22210dfb4ab367e94200de41d25e16026df92c3006c14fc918367eba"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -512,13 +509,13 @@
                 "cookies.js": {
                     "ttl": 0,
                     "length": 9,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_f60_session": {
-                    "ttl": 31536001,
+                    "ttl": 31536002,
                     "length": 64,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -540,7 +537,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ff36c998946908029b1d5fdcae4db54601e8fb54364f55d4740f67536d6f9fc8"
+                "b6c6bdd3ae72c019ac99e9d05704d78824d97da9130f8f1c5a688e7eee3b4b10"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -562,7 +559,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "61a205acdbf5e5cee32867997fac88e0501085944c4a7bf197fb846e5e3bac2c"
+                "fbe8e3f619a4e04b2efa5bd2b3984d45937944ebe3cd05c1118dfca156727573"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -597,15 +594,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 7,
+                    "ttl": 8,
                     "length": 9,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 },
                 "_f60_session": {
-                    "ttl": 31536009,
+                    "ttl": 31536011,
                     "length": 64,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -627,7 +624,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "bcc1093d5ffe69e9135567bf7f623a143ef96cbba9e15fc89797d7c46d8338f5"
+                "a1ea7bfa8d5417df0f7c88120393bfb6bdc42846a70ac37957e47f6096bb6dee"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -649,7 +646,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "369eba2625a7ddc844ecf2c6f64dfebcb9c8bacb720a599143852d2e7aa0858d"
+                "14ee8c4c2b1a7c0e1ed564fd22b207c7fef822db99ad8dc72cfc7ce0ebf4ef6d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -682,9 +679,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 7,
+                    "ttl": 5,
                     "length": 9,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 0.5
                 }
             },
@@ -706,7 +703,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "fe6db37810b2e38fa8e63514c7901dfb30f0ea7761e3ae5cdd0f1ec2086744ec"
+                "8d9943a8d9875c96ce8dc717d4a987b9883bedea38a852bd1938562ce6dc28b2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -728,7 +725,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "7271c37c73e804d7e971070b4bd5d8d0970fd8d6ace80c2864dcc8853cf315fc"
+                "2f1c81c2c9c17264330181278d945f5c3ed6a0e292fe7bf3204dd8b388133516"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -750,7 +747,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e202983fef1bdb0d1bd1642dc947d983a52bf99fc2e3ccd0b27a48c1044c094b"
+                "f64d85de591f3d5477a2b04b0915dc6f534df88681c09b758eca1d8c7fc15000"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -772,7 +769,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5a55cbcfcbfc5a4b6284c019b3f6d86cc0e17bcded59b8b69475b055d4fd2999"
+                "90877330aa77b7c2c2d9e2e71fdc8f06fe2364ff73ea00f4134b46e934bbfd75"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -791,10 +788,10 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "PerformanceTiming.prototype.navigationStart": 2
             },
@@ -807,15 +804,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_f60_session": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 64,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 },
                 "cookies.js": {
-                    "ttl": -1,
+                    "ttl": 0,
                     "length": 9,
-                    "prevalence": 0.000006771305914058585,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
@@ -837,7 +834,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "31bdac72bcc58faa4613a626f80a9fbb747f777be1d149f690261582f90cc8aa"
+                "9eea551c3fb460c38f2c0ca65d22eb98a96ebb4e9658680432f5ffb091579852"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -859,7 +856,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0791854b31c534f08b29e2eb596e8a2d2e2cc474a59ddbc52be8ffab600d7626"
+                "0ce51938bfe8b3424aad69c95cc955da7e69c3c151bb64a174d92dc01f5343ec"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -894,15 +891,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": -1,
+                    "ttl": 0,
                     "length": 9,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "_f60_session": {
-                    "ttl": 31536001,
+                    "ttl": 31536003,
                     "length": 64,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.000013544721283497789,
                     "uniqueness": 1
                 }
             },
@@ -924,7 +921,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8bcedb2aeb4c9c1d62182c05185bd96dd2070c51f93cfac39afdc4b028f5dded"
+                "cc01a949b74d4452072c7df5787b1823bdb11928fd24bcfb5f394a11266973f3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -946,7 +943,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "4163caec25d8db0615dd0b70ba87e3b944ead4249b0e8a5aca13246e3e5c61db"
+                "a39b29412b53eb6428fd87e9d48d08e798bcbf3f7200acf663045bf926fcfb63"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -959,34 +956,34 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000142,
+    "cookies": 0.000149,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.47959183673469385
+            "prevalence": 0.4895833333333333
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.4387755102040816
+            "prevalence": 0.4270833333333333
         },
         {
             "domain": "nogin.com",
-            "prevalence": 0.04081632653061224
+            "prevalence": 0.041666666666666664
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.02040816326530612
+            "prevalence": 0.020833333333333332
         },
         {
             "domain": "yottaa.com",
-            "prevalence": 0.02040816326530612
+            "prevalence": 0.020833333333333332
         }
     ],
     "types": {
         "Script": 21,
         "Image": 28,
         "XHR": 39,
-        "Preflight": 3
+        "Preflight": 2
     },
     "nameservers": [
         "rocky.ns.cloudflare.com",

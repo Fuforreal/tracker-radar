@@ -26,7 +26,8 @@
             "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "ba59e28dd8c36537f32dd9a1889bbbc1bf36e0563b0f29bd50655fbb93a42539"
+                "ba59e28dd8c36537f32dd9a1889bbbc1bf36e0563b0f29bd50655fbb93a42539",
+                "12e3bd01e158608c4a9ab5da6ec11219310df369bbd68a772029a18a9918dbdd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,14 +44,18 @@
         },
         {
             "rule": "mediaad\\.org\\/static\\/fingerprint\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
             "subdomains": [
                 "mediacdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
             "sites": 9,
-            "prevalence": 0.0000609,
+            "prevalence": 0.000061,
             "cnames": [],
             "responseHashes": [
                 "0461ea13631a27215fb77c57508c5256acbf71cc30c6927130cfe7a9f982b9bd"
@@ -93,56 +98,6 @@
             ]
         },
         {
-            "rule": "mediaad\\.org\\/v1\\/events\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "ifilo.net",
-                "tamasha.com",
-                "www.khabaronline.ir",
-                "www.my-ahangha.ir",
-                "www.namasha.com"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/v1\\/events\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "ifilo.net",
-                "tamasha.com",
-                "www.khabaronline.ir",
-                "www.my-ahangha.ir",
-                "www.namasha.com"
-            ]
-        },
-        {
             "rule": "mediaad\\.org\\/6\\/27\\/image\\/MediaAd\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -163,6 +118,75 @@
                 "harfetaze.com",
                 "www.my-ahangha.ir",
                 "www.shahrekhabar.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/9\\/25\\/image\\/125bff2ea6b476bde8d62a381319ceb8b430af7b_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "55c05613ebf77cb20741b6c17d29cc26bec0406b97cab2c9d7850e842783aaa3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harfetaze.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/3\\/1\\/image\\/1882fec608832a181e3784f7ed7dbfb00a347d13_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "d9d1cbfbfa2d44d3c98d0ea3c1bb0a47a49d6619ea2e8199b81c381a94a9692f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harfetaze.com",
+                "www.my-ahangha.ir",
+                "www.namasha.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/3\\/14\\/image\\/4640e2c3ad3433c0cf13d57471df2b205c88f54e_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "aa830bbac6bcd7be33c11f37432a5209159340e39c6775292e38c6322d51c1f7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harfetaze.com",
+                "www.my-ahangha.ir",
+                "www.namasha.com",
+                "www.varzesh3.com"
             ]
         },
         {
@@ -188,159 +212,55 @@
             ]
         },
         {
-            "rule": "mediaad\\.org\\/1\\/11\\/image\\/d0743753f6a180782d6564abbe8d36e55a89ecd1_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3b969601231a2de0649276ad2e554b9be38a3f4d91d27dd20a9487751c4a819f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "www.my-ahangha.ir"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/1\\/11\\/image\\/5fb0dd2113d237725957cec9b459d19dae7be6bb_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b6b35fd58f32b26895058bbafa6ba42887e95592bb4171944aad31d044c25441"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "www.my-ahangha.ir"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/3\\/13\\/image\\/e75b6e3a8e6fe9b679bc2f5367fc4d5e040150df_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fc27abcbd518018b1f137ccf7493af9526d726157ba915b27594c153f4425a10"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "www.my-ahangha.ir"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/1\\/11\\/image\\/df0a3849615f419eb1cf6615c1147c80fdea94bb_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "dd69e4f5c8e76eb22aa8af5c4bae5a752515a7b855a5512452e923a7732c7c2b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "www.my-ahangha.ir"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/1\\/11\\/image\\/79b943320f2c11246b29cdfe537afe967db5c9f8_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "67b5e897aeabe928fe2f08d3a5aa069f0064e55d95f63c7d0a85398a1ccf2f45"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "www.my-ahangha.ir"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/3\\/13\\/image\\/b55b7b79a71ba17b58320193dba1d85065e92501_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fa566c901d892d2491bdb4639f57111f947d1ef4e6ecfd985379fbd03be97213"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harfetaze.com",
-                "www.khabaronline.ir"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/v1\\/events\\/session\\/10",
+            "rule": "mediaad\\.org\\/v1\\/events\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "harfetaze.com",
-                "ifilo.net"
+                "ifilo.net",
+                "tamasha.com",
+                "www.my-ahangha.ir",
+                "www.namasha.com"
             ]
         },
         {
-            "rule": "mediaad\\.org\\/3\\/13\\/image\\/ca5c05653eeabe76123b6f4c6932f7b1941c5ed1_375x250\\.webp",
+            "rule": "mediaad\\.org\\/v1\\/events\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harfetaze.com",
+                "ifilo.net",
+                "tamasha.com",
+                "www.my-ahangha.ir",
+                "www.namasha.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/1\\/8\\/image\\/8cdbba2c79bc81b61e7fbe9a2de1bba8165e8259_375x250\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -351,19 +271,19 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "4d5976406b165f57c09f8f7d0d238e657b6017000c2fcd56fe770ad5d3087209"
+                "3bac8b7175a766e434ee06acb31e0dc8ed142398acdd8cf42fc3075f9545b1c0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "harfetaze.com",
-                "www.khabaronline.ir",
+                "www.my-ahangha.ir",
                 "www.varzesh3.com"
             ]
         },
         {
-            "rule": "mediaad\\.org\\/3\\/5\\/image\\/3a351662ddf48e47a3f30b990c0f37ffa4023347_375x250\\.webp",
+            "rule": "mediaad\\.org\\/9\\/25\\/image\\/8e3c7a1649badb7a445aaa219dbc8a847ad93b4d_375x250\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -374,14 +294,58 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5135144191fd48fe8d8c4c3db0034ba82535fb1b893e82e48e60ab628f3d752a"
+                "cb067d86844cc9b0324433fdd1a03c1cf4b76d5dedc74a7386bfbec37f800302"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "harfetaze.com",
-                "www.my-ahangha.ir"
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/3\\/14\\/image\\/1c09fb48dee63817e72bcf5bbb1d33be4f9ebd43_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "9c1efb3058599a8588239153d118d37d1b321c1dc9672dbf3dd888cb039bc891"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harfetaze.com",
+                "www.shahrekhabar.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/3\\/14\\/image\\/07fa079f3b39e452dbcdc832f67e668604948caa_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "63e5ae4c04c6b13b1c073384e6c46336577ca8252448013180961010f17d78af"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harfetaze.com",
+                "www.shahrekhabar.com"
             ]
         },
         {
@@ -392,8 +356,8 @@
                 "mediacdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "56ad5a00deffddc16d418cafadd6f972d3d78276acd49aec39da3ae6ed8d0dca"
@@ -403,7 +367,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ifilo.net",
-                "www.my-ahangha.ir",
                 "www.namasha.com"
             ]
         },
@@ -415,8 +378,8 @@
                 "mediacdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "767237165c216d31f800e5059549bd1d1dbe6807ba70122a1e4fcec5338fc5a6"
@@ -426,36 +389,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ifilo.net",
-                "www.my-ahangha.ir",
                 "www.namasha.com"
             ]
         },
         {
-            "rule": "mediaad\\.org\\/3\\/9\\/image\\/00d7bbdb7224edd19975f9475c6dd0626ce9db78_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
-            "cnames": [],
-            "responseHashes": [
-                "b04bdd44fe0313ce73f7611bdad43a8e8018ca6d60f2c3f9ba3a2c99d46fbd75"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tamasha.com",
-                "www.namasha.com",
-                "www.shahrekhabar.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/2\\/27\\/image\\/4b22fb20821bacd99a4e3e3736d085ab7751e9ba_375x250\\.webp",
+            "rule": "mediaad\\.org\\/1\\/28\\/image\\/acd33be391a766112b05dc5d27e0a4c8f483dbca_375x250\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -466,7 +404,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2d47139f713d9636b24a8324db4b03ab03c7ac4bcb103661211e957cdfd07733"
+                "00f2ab8fc8660582ccdd6b004124095cfc98cd935051724df24cc08e2f4e180d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -497,28 +435,6 @@
             ]
         },
         {
-            "rule": "mediaad\\.org\\/3\\/13\\/image\\/3ea4ecc2bd6b0767c424a7df7e223e9eefd46f59_375x250\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mediacdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fddd1df9bed43605b2b4f3359429b0be66e0f17757e4363278f943d842b18dbd"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "khabaronline.ir",
-                "www.varzesh3.com"
-            ]
-        },
-        {
             "rule": "mediaad\\.org\\/serve\\/www\\.my-ahangha\\.ir\\/loader\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -533,7 +449,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "65097e57498707dcd2b880870e9f981d2a606ddcd8a48ed08d5a9326fd637d34"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -544,7 +462,7 @@
         },
         {
             "rule": "mediaad\\.org\\/v1\\/www\\.my-ahangha\\.ir\\/serve",
-            "cookies": 0.0000135,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
@@ -553,13 +471,11 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "1fe08878127bbeadd696b1bde631dec3508a0242f271834581ee6e49636bf6c0"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "MEDIAAD_USER_ID": 0.000006771305914058585
+                "MEDIAAD_USER_ID": 0.000013544721283497789
             },
             "exampleSites": [
                 "my-ahangha.ir",
@@ -568,7 +484,7 @@
         },
         {
             "rule": "mediaad\\.org\\/v1\\/www\\.my-ahangha\\.ir\\/serve",
-            "cookies": 0,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
@@ -577,11 +493,13 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f179a08405b994cb4f991a16c22a3190c4dd575c0626fd5a7a290695ce8a509a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "MEDIAAD_USER_ID": 0.000006771305914058585
+                "MEDIAAD_USER_ID": 0.000013544721283497789
             },
             "exampleSites": [
                 "my-ahangha.ir",
@@ -600,7 +518,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a6f577969b4f71add1ecd68ceef74781f01fe88ca081baa49e85717b1b31eaaa"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -631,7 +549,30 @@
             ]
         },
         {
-            "rule": "mediaad\\.org\\/1\\/11\\/image\\/79b943320f2c11246b29cdfe537afe967db5c9f8_o_450x300\\.jpeg",
+            "rule": "mediaad\\.org\\/1\\/23\\/image\\/ef42780fd00f5e5871f150eaf4555907b143381f_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "5de39beccf6b51381996ca2fd34051908341c4de64e63e2ecca46a0a9285d7b0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "my-ahangha.ir",
+                "www.my-ahangha.ir",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/2\\/23\\/image\\/f430cebae5650744dfdd8298767120d21a45ea1e_375x250\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -642,7 +583,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "74d9cf0b258d9eb67500986a71dbe25ed47dec980052eeb3f7ce011c3552de1a"
+                "dccf21b8ba0b4d90ba4c6fe5090a35a985b7852154604d383414f7b7c9fba474"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -650,6 +591,73 @@
             "exampleSites": [
                 "my-ahangha.ir",
                 "www.my-ahangha.ir"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/3\\/5\\/image\\/734dd5e2afe8d5dd5b3fe1b86a7c8c33c8b8e30d_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "053750b723dfcbe31bec6638c45df71653073c8673b1f2c891ab8e5c480ed39d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "my-ahangha.ir",
+                "www.my-ahangha.ir"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/1\\/29\\/image\\/b171e3f64833cfef2c2960269734808a2ca3e4ae_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "20deadba5191930b8d39568c8f063f73e2d65a0764aa25cb210ad92ecf3a12b8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "my-ahangha.ir",
+                "www.my-ahangha.ir",
+                "www.shahrekhabar.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/1\\/18\\/image\\/0219a62388d8c4a0cf615bf55a51251f60e593d4_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "f55eb3a04286a4b23880b5643c2474fba046bdc08114a519809639ca2f9cb72e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "my-ahangha.ir",
+                "www.varzesh3.com"
             ]
         },
         {
@@ -675,7 +683,7 @@
             ]
         },
         {
-            "rule": "mediaad\\.org\\/7\\/27\\/image\\/9c90daea36793fcbe4ab9b0a0a8fd0b63b21307c_375x250\\.webp",
+            "rule": "mediaad\\.org\\/1\\/24\\/image\\/9bee0ce187d3cd41397a83d280dda548efa8742b_375x250\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -686,13 +694,35 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "d2ef4b94ad3258bdd8b8df41d7a70ba430197c1f156748d828a1288f9eccec1b"
+                "0450ddbf86078b774cf88f60005d22bc97c70107e299480ea3401d84073a33fd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "namasha.com",
+                "shahrekhabar.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/3\\/1\\/image\\/1dd78ced98e01dcc4e8adbfc257592dd64ab545b_375x250\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediacdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "3b946bb12008a4c676bdc2e2f001995d20994e930285a4b9d8ea0e86381303bc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shahrekhabar.com",
                 "www.varzesh3.com"
             ]
         },
@@ -708,7 +738,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "dfb48f5c02c95258b180d203caa8b2608f19da579281007f3aa70f490d14ae8f"
+                "cf48e54b485794f8f3d9da42a5c79666acfdb19499367a4f6a15507d5a6dc3d2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -720,6 +750,26 @@
         },
         {
             "rule": "mediaad\\.org\\/v1\\/varzesh3\\.com\\/serve",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "varzesh3.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/v2\\/events\\/varzesh3\\.com\\/page\\/loaded",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -753,26 +803,6 @@
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "varzesh3.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/v2\\/events\\/varzesh3\\.com\\/page\\/loaded",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -809,31 +839,35 @@
     "topInitiators": [
         {
             "domain": "sanjagh.com",
-            "prevalence": 0.569620253164557
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.2911392405063291
-        },
-        {
-            "domain": "tapsell.ir",
-            "prevalence": 0.0759493670886076
+            "prevalence": 0.44329896907216493
         },
         {
             "domain": "55online.news",
-            "prevalence": 0.0379746835443038
+            "prevalence": 0.24742268041237114
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.21649484536082475
+        },
+        {
+            "domain": "tapsell.ir",
+            "prevalence": 0.061855670103092786
         },
         {
             "domain": "intrack.ir",
-            "prevalence": 0.02531645569620253
+            "prevalence": 0.020618556701030927
+        },
+        {
+            "domain": "mybrandstat.com",
+            "prevalence": 0.010309278350515464
         }
     ],
     "types": {
         "Script": 9,
         "Document": 9,
-        "Image": 48,
-        "XHR": 16,
-        "Preflight": 14
+        "Image": 53,
+        "XHR": 13,
+        "Preflight": 13
     },
     "nameservers": [
         "sima.ns.cloudflare.com",

@@ -13,15 +13,9 @@
         "static",
         "mediaserver",
         "ssp",
-        "analytics",
-        "geo",
         "statsmp"
     ],
     "cnames": [
-        {
-            "original": "analytics.emol.com",
-            "resolved": "analytics.emol.cl"
-        },
         {
             "original": "ssp.emol.com",
             "resolved": "ssp.emol.cl"
@@ -31,7 +25,7 @@
             "resolved": "statsmp.emol.cl"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "emol\\.cl\\/emol50\\/css\\/font-awesome\\.min\\.css",
@@ -102,14 +96,11 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/jquery-1\\.11\\.2\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 2,
-                "window.innerWidth": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -127,13 +118,11 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/jquery-ui\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -172,14 +161,14 @@
         },
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/funcionesComun\\.min\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -242,13 +231,26 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/videojs-ie8\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 3,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTimezoneOffset": 2,
-                "Date.prototype.getTime": 2
+                "window.name": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "window.screenX": 1,
+                "window.screenY": 1,
+                "window.outerWidth": 1,
+                "window.outerHeight": 1,
+                "window.devicePixelRatio": 1,
+                "window.screenLeft": 1,
+                "window.screenTop": 1,
+                "window.indexedDB": 1,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -272,8 +274,10 @@
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.languages": 1,
+                "Event.prototype.timeStamp": 1,
                 "HTMLMediaElement.prototype.canPlayType": 1
             },
             "sites": 2,
@@ -293,11 +297,14 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/videojs-contrib-hls\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaSource.isTypeSupported": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -337,11 +344,13 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/Youtube\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -358,19 +367,17 @@
         },
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/encuestas\\.min\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Document.cookie setter": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "37fa0f702bfe36bfa28ea6398692731bb847cfa2d886e69fdffd6b5e0f93d461"
+                "559eb3eda32555fecfce702f41e1c8c9542edaffa512fbd5091108603d7e94ec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -405,13 +412,11 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/notificaciones\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "window.sessionStorage": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -451,13 +456,11 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/comment\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -541,13 +544,11 @@
         {
             "rule": "emol\\.cl\\/emol50\\/js\\/jquery\\.lazy\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "window.devicePixelRatio": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
@@ -651,16 +652,15 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/other\\/lleison\\/display2023313\\.js",
-            "cookies": 0.00000677,
+            "rule": "emol\\.cl\\/other\\/lleison\\/display2023317\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "mediaserver"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -669,14 +669,7 @@
                 "ef6a8763ffab9b50d3549c4ec4aa280da82bd6379b3380e9a4b21f91ae570d31"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "55332": {
-                    "ttl": 43204,
-                    "length": 1,
-                    "prevalence": 0.000006771305914058585,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "emol.com",
@@ -691,7 +684,7 @@
                 "mediaserver"
             ],
             "apis": {
-                "window.innerWidth": 1
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -994,7 +987,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/11\\/file_20230311015240\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/16\\/file_20230316195242\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1005,7 +998,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "34c296c6ea8d914ce48f97193d4d99be717c46aee683b91fac775ebda28de5ba"
+                "fb440597aaba6f9bf1773d9e22da07e5b22525617d17ead4a9e423762d2aeef2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1016,7 +1009,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/10\\/file_20230310185913\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/15\\/file_20230315092255\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1027,7 +1020,73 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ad9e482d5bf7edb223643252392420a3a37ecdfbc281956f74016d1ae7d2da0c"
+                "771f7bd25996a3243026490fb02b7532bb48ae6744bd3fdf55ee136cd9881fdb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/Pandora\\/2023\\/03\\/16\\/file_20230316162111\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "d862ee77187c4da824f8b83f23acbc59a43cda6a8df69a2decee2cff58f5700b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/Pandora\\/2023\\/03\\/16\\/file_20230316081920\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "3ad7ec1344d3a7bc9834dc08d397bfa89a7ffaa815070d996598859ecfff0b2a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/01\\/file_20230301121933\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "672a3ca58994ca23bb128c2ebbbbbf50e5e6b3d39db312c433bea602d3cf2141"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1082,7 +1141,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/10\\/file_20230310184322\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/16\\/file_20230316112829\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1093,7 +1152,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e70390e52d9a1760d477ef978b0f40357a92489b024c134861f183f519076096"
+                "d61f1602f2c597977aeb82e22e3f0185766f36f9e9c303328473f5749fd56af3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1104,7 +1163,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/11\\/file_20230311102338\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/16\\/file_20230316140336\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1115,7 +1174,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "efa6c9510ad61679e8b0c1e4f167ab419fa4bc9f3345f07dc08719f195db72ee"
+                "573b7fd9c9b4bfb6582e3ebe5b323ebe00bd6ae47ad013894ad3034ab4668fec"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1126,7 +1185,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/09\\/file_20230309201544\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/16\\/file_20230316163754\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1137,7 +1196,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e4ccee5e9dbe0d131c5fe5f1ec275d5e66c89aa492fd3d2d18d439bfbfc46dd7"
+                "e0a2e17cc4f99294c43bfb12bd8f0de745945d29365055f07e1bb1197e6550b8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1148,7 +1207,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/13\\/file_20230313001421_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317101114_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1159,7 +1218,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8f8560e997d82073637667f0848a3d5b0b82f5c8f97185e87f8b016143507b1d"
+                "5030157e44aed6d022bb5bbe8f0cabe97698168b7c25d71c3da21cb86d4343a3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1170,7 +1229,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/13\\/file_20230313010742_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317042842_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1181,7 +1240,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "7ad9e5f8a913d460e920108f214d9b8a3599a6e11bb64c51ca5107dd2485fcf2"
+                "b7043a58a045395631b1233bef40519caf489681f068ef0e04bc0fc03dc8a78f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1192,7 +1251,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/13\\/file_20230313020139_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317105553_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1203,7 +1262,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f9924b05af403d9f555d0d46e73e1e67980839e21bfc0886d9c326625ed8388b"
+                "b3455f3c324dfeb86807548124e5bc8736a91da209cd70811515f45896b80f26"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1214,7 +1273,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/13\\/file_20230313011632_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317133640_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1225,7 +1284,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "f08f22d4259c6c8f10db8f47a8177e5d551bee2659d57f72523e92d505017873"
+                "f0a0fbf27703e08a8d3172fb275655834675c6322963c0a1b5f16dbde5880345"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1236,7 +1295,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/12\\/file_20230312235824_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317153624_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1247,7 +1306,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "0bc661072778e1925a271bf8968f8cb3ea5b9bea3a324dd042e8d8b1fcf109ff"
+                "8221a3fee0c0a4da68db8aa8f9ffc8a5fa77856a14a6b822ec12b2ebab46dcd3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1258,7 +1317,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/13\\/file_20230313065604_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317121100_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1269,7 +1328,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "5c9bdaf7a2822d0a33c5ed15985e543365d0614418db7089cef9f52a7ce368cd"
+                "260453070a1ad573889be96d60cae9e40dd12019687a27a4ddc44d2ba5c8be20"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1280,7 +1339,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/09\\/file_20230309173438_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317011503_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1291,7 +1350,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "27f91e0d9d0b1ea4ec1f7a9f5a82a4d4b5184fac392a94c94eada536865281fc"
+                "74d3c64067eccbf84426ab9c0b1a4a3b5645d3afafc3f83d3f59aeb0f7f38af4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1302,7 +1361,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/11\\/file_20230311211346_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317112630_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1313,7 +1372,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "4f49fb96de3b945763875fff5142b7b9397ab29f9c69063d64f4ec5fb15cadf6"
+                "529a05a982ab2ade3fea6279ec3be66dcc2e952012e4ec65d96fdbb90f894409"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1324,7 +1383,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/13\\/file_20230313084531_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317133555_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1335,7 +1394,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "ff9552112092a2e861a81a2a233eea262d79c987b9d61c1a6ba868f468c963b3"
+                "ebb019c915ad294ea0c84d941fd622a4159e9fed342031e18af868879953a04f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1346,7 +1405,7 @@
             ]
         },
         {
-            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/13\\/file_20230313071641_0lx0\\.jpg",
+            "rule": "emol\\.cl\\/emol50\\/Fotos\\/2023\\/03\\/17\\/file_20230317072620_0lx0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1357,7 +1416,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "47dff75fd76d15dff460d2b70015fe8373b6c73c990580615947bb66c935ef36"
+                "8452a7806d904f4c4b94f40a4cb4b362a43d28f4100d5789617908795db30d11"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1550,19 +1609,17 @@
         },
         {
             "rule": "emol\\.cl\\/rtracker\\/ofs\\.rtt\\.js",
-            "cookies": 0.0000135,
+            "cookies": 0.00000677,
             "fingerprinting": 1,
             "subdomains": [
                 "mediaserver"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "window.innerHeight": 2
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "window.innerHeight": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -1573,221 +1630,30 @@
             "type": "Script",
             "firstPartyCookies": {
                 "rts_uuid": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 18,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "rts_sessid": {
                     "ttl": 1800,
-                    "length": 33,
-                    "prevalence": 0.00001354261182811717,
+                    "length": 32,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 },
                 "rts_cfg": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 10,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0000067723606417488944,
+                    "uniqueness": 1
                 },
                 "context-session-id": {
-                    "ttl": 1805,
+                    "ttl": 1803,
                     "length": 36,
-                    "prevalence": 0.00001354261182811717,
+                    "prevalence": 0.0000067723606417488944,
                     "uniqueness": 1
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/emol50\\/img\\/logo_amarillas_bus_input\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ec9ba0c8b24df82c9530d0811bca9b4498a8bb092157e2c5c77faa28fa23997a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/css\\/rtbTmpl\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "ssp.emol.com",
-                    "resolved": "ssp.emol.cl"
-                }
-            ],
-            "responseHashes": [
-                "b05cd1bdf889a77de37199c6d902942e847790520f0ebaafc8c71a7bd0165a2a"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/CampaignServer\\/Campaigns",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "ssp.emol.com",
-                    "resolved": "ssp.emol.cl"
-                }
-            ],
-            "responseHashes": [
-                "e845e1239ef1c84205b408017e7912534fcf8ceacc2e5e05498919991216bd42"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/news",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "analytics.emol.com",
-                    "resolved": "analytics.emol.cl"
-                }
-            ],
-            "responseHashes": [
-                "04f2eb5ff85b9fff58943c1c82c2454538136df8839490508b2128d195030bec"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/emol50\\/css\\/estilos_login_social\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0fac83ad103082c2d89dd68be2285822af0317bea2b4a366809087988227503a"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/emol50\\/fonts\\/emol_n_icons\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "8c11b1cfec346a645dd75226cee51b73a1eb1c4ce31c6c84fccb1d6b6c44ed71"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/emol50\\/fonts\\/fontawesome-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bc36d8430af2c255a9c1184f86f8a07f2a5ec4455d9d981f032f6bba2287d752"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "emol\\.cl\\/social\\/geo\\/lookup\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "geo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "519a78d94cdc7c8638b2ac3ee3421565874a995b905ff2dfe4d7fd6e363d3f76"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "emol.com",
@@ -1824,26 +1690,25 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.00000677,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9399141630901288
+            "prevalence": 0.963963963963964
         },
         {
             "domain": "emol.cl",
-            "prevalence": 0.060085836909871244
+            "prevalence": 0.036036036036036036
         }
     ],
     "types": {
-        "Stylesheet": 18,
-        "Script": 60,
-        "Image": 66,
-        "XHR": 6,
-        "Font": 4
+        "Stylesheet": 14,
+        "Script": 58,
+        "Image": 70,
+        "XHR": 2
     },
     "nameservers": [
-        "rose.ns.cloudflare.com",
-        "aragorn.ns.cloudflare.com"
+        "aragorn.ns.cloudflare.com",
+        "rose.ns.cloudflare.com"
     ]
 }
